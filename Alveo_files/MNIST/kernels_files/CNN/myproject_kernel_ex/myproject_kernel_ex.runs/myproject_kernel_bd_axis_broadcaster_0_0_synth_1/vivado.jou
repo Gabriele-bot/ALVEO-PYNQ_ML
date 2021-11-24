@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Nov 23 21:14:06 2021
+# Process ID: 15686
+# Current directory: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_broadcaster_0_0_synth_1
+# Command line: vivado -log myproject_kernel_bd_axis_broadcaster_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source myproject_kernel_bd_axis_broadcaster_0_0.tcl
+# Log file: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_broadcaster_0_0_synth_1/myproject_kernel_bd_axis_broadcaster_0_0.vds
+# Journal file: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_broadcaster_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source myproject_kernel_bd_axis_broadcaster_0_0.tcl -notrace

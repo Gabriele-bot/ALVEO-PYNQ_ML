@@ -1,0 +1,574 @@
+
+*** Running vivado
+    with args -log ulp.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ulp.tcl
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source ulp.tcl -notrace
+INFO: Dispatch client connection id - 33617
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xo/ip_repo/fastmachinelearning_kernel_myproject_kernel_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2020.1/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2020.1/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axis_clk_metadata_adapter:1.0'. The one found in IP location '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/other_ipdefs/axis_clk_metadata_adapter_v1_0' will take precedence over the same IP in location /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/ii_infra_ipdefs/axis_clk_metadata_adapter_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_clk_metadata_adapter:1.0'. The one found in IP location '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/other_ipdefs/axi_clk_metadata_adapter_v1_0' will take precedence over the same IP in location /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/ii_infra_ipdefs/axi_clk_metadata_adapter_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:clk_metadata_adapter:1.0'. The one found in IP location '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/other_ipdefs/clk_metadata_adapter_v1_0' will take precedence over the same IP in location /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/ii_infra_ipdefs/clk_metadata_adapter_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:shell_utils_build_info:1.0'. The one found in IP location '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/other_ipdefs/shell_utils_build_info_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+Command: synth_design -top ulp -part xcu50-fsvh2104-2-e -mode out_of_context
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ulp.bd
+
+WARNING: [Vivado_Tcl 4-393] The 'Implementation' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ulp.bd
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu50'
+INFO: [Device 21-403] Loading part xcu50-fsvh2104-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5058
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3169.711 ; gain = 134.715 ; free physical = 7988 ; free virtual = 12159
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ulp' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:1766]
+INFO: [Synth 8-6157] synthesizing module 'SLR0_imp_NYMDU0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ulp_axi_gpio_null_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_axi_gpio_null_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_axi_gpio_null_0' (1#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_axi_gpio_null_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'gpio_io_o' of module 'ulp_axi_gpio_null_0' is unconnected for instance 'axi_gpio_null' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:246]
+WARNING: [Synth 8-7071] port 'gpio_io_t' of module 'ulp_axi_gpio_null_0' is unconnected for instance 'axi_gpio_null' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:246]
+WARNING: [Synth 8-7023] instance 'axi_gpio_null' of module 'ulp_axi_gpio_null_0' has 22 connections declared, but only 20 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:246]
+INFO: [Synth 8-6157] synthesizing module 'ulp_axi_vip_ctrl_userpf_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_axi_vip_ctrl_userpf_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_axi_vip_ctrl_userpf_0' (2#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_axi_vip_ctrl_userpf_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_interconnect_axilite_user_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3292]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_G77R79' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:889]
+INFO: [Synth 8-6157] synthesizing module 'ulp_m00_regslice_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_m00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_m00_regslice_0' (3#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_m00_regslice_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'ulp_m00_regslice_0' is unconnected for instance 'm00_regslice' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:1048]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'ulp_m00_regslice_0' is unconnected for instance 'm00_regslice' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:1048]
+WARNING: [Synth 8-7023] instance 'm00_regslice' of module 'ulp_m00_regslice_0' has 40 connections declared, but only 38 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:1048]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_G77R79' (4#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:889]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1SCZP4G' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:1089]
+INFO: [Synth 8-6157] synthesizing module 'ulp_auto_cc_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_auto_cc_0' (5#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_m01_regslice_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_m01_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_m01_regslice_0' (6#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_m01_regslice_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'ulp_m01_regslice_0' is unconnected for instance 'm01_regslice' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:1314]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'ulp_m01_regslice_0' is unconnected for instance 'm01_regslice' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:1314]
+WARNING: [Synth 8-7023] instance 'm01_regslice' of module 'ulp_m01_regslice_0' has 40 connections declared, but only 38 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:1314]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1SCZP4G' (7#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:1089]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_14WTDU7' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:1355]
+INFO: [Synth 8-6157] synthesizing module 'ulp_s00_regslice_10' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_s00_regslice_10_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_s00_regslice_10' (8#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_s00_regslice_10_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_14WTDU7' (9#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:1355]
+INFO: [Synth 8-6157] synthesizing module 'ulp_xbar_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_xbar_0' (10#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_interconnect_axilite_user_0' (11#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3292]
+INFO: [Synth 8-6157] synthesizing module 'ulp_regslice_control_userpf_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_regslice_control_userpf_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_regslice_control_userpf_0' (12#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_regslice_control_userpf_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SLR0_imp_NYMDU0' (13#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:12]
+INFO: [Synth 8-6157] synthesizing module 'SLR1_imp_1UA2LF1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:413]
+INFO: [Synth 8-6157] synthesizing module 'ulp_axi_gpio_null_1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_axi_gpio_null_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_axi_gpio_null_1' (14#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_axi_gpio_null_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'gpio_io_o' of module 'ulp_axi_gpio_null_1' is unconnected for instance 'axi_gpio_null' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:575]
+WARNING: [Synth 8-7071] port 'gpio_io_t' of module 'ulp_axi_gpio_null_1' is unconnected for instance 'axi_gpio_null' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:575]
+WARNING: [Synth 8-7023] instance 'axi_gpio_null' of module 'ulp_axi_gpio_null_1' has 22 connections declared, but only 20 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:575]
+INFO: [Synth 8-6157] synthesizing module 'ulp_axi_vip_ctrl_userpf_1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_axi_vip_ctrl_userpf_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_axi_vip_ctrl_userpf_1' (15#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_axi_vip_ctrl_userpf_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_interconnect_axilite_user_1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3764]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1MXEOQC' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:1565]
+INFO: [Synth 8-6157] synthesizing module 'ulp_s00_regslice_11' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_s00_regslice_11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_s00_regslice_11' (16#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_s00_regslice_11_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'ulp_s00_regslice_11' is unconnected for instance 's00_regslice' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:1724]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'ulp_s00_regslice_11' is unconnected for instance 's00_regslice' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:1724]
+WARNING: [Synth 8-7023] instance 's00_regslice' of module 'ulp_s00_regslice_11' has 40 connections declared, but only 38 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:1724]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1MXEOQC' (17#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:1565]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_interconnect_axilite_user_1' (18#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3764]
+INFO: [Synth 8-6157] synthesizing module 'ulp_regslice_control_userpf_1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_regslice_control_userpf_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_regslice_control_userpf_1' (19#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_regslice_control_userpf_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SLR1_imp_1UA2LF1' (20#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:413]
+INFO: [Synth 8-6157] synthesizing module 'ulp_axi_vip_data_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_axi_vip_data_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_axi_vip_data_0' (21#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_axi_vip_data_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_debug_bridge_xsdbm_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_debug_bridge_xsdbm_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_debug_bridge_xsdbm_0' (22#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_debug_bridge_xsdbm_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_hmss_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_hmss_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_hmss_0_0' (23#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_hmss_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'S01_AXI_bresp' of module 'ulp_hmss_0_0' is unconnected for instance 'hmss_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:2756]
+WARNING: [Synth 8-7071] port 'S01_AXI_rresp' of module 'ulp_hmss_0_0' is unconnected for instance 'hmss_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:2756]
+WARNING: [Synth 8-7023] instance 'hmss_0' of module 'ulp_hmss_0_0' has 99 connections declared, but only 97 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:2756]
+INFO: [Synth 8-6157] synthesizing module 'ulp_ii_level0_wire_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_ii_level0_wire_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_ii_level0_wire_0' (24#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_ii_level0_wire_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'ULP_M_AXI_CTRL_MGMT_00_arprot' of module 'ulp_ii_level0_wire_0' is unconnected for instance 'ii_level0_wire' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:2854]
+WARNING: [Synth 8-7071] port 'ULP_M_AXI_CTRL_MGMT_00_awprot' of module 'ulp_ii_level0_wire_0' is unconnected for instance 'ii_level0_wire' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:2854]
+WARNING: [Synth 8-7071] port 'ULP_M_AXI_CTRL_MGMT_00_wstrb' of module 'ulp_ii_level0_wire_0' is unconnected for instance 'ii_level0_wire' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:2854]
+WARNING: [Synth 8-7023] instance 'ii_level0_wire' of module 'ulp_ii_level0_wire_0' has 278 connections declared, but only 275 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:2854]
+INFO: [Synth 8-6157] synthesizing module 'interrupt_concat_imp_1RAQO40' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:723]
+INFO: [Synth 8-6157] synthesizing module 'ulp_workaround_cr1039626_orgate_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_workaround_cr1039626_orgate_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_workaround_cr1039626_orgate_0' (25#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_workaround_cr1039626_orgate_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_xlconcat_interrupt_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_0/synth/ulp_xlconcat_interrupt_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 32 - type: integer 
+	Parameter IN1_WIDTH bound to: 32 - type: integer 
+	Parameter IN2_WIDTH bound to: 32 - type: integer 
+	Parameter IN3_WIDTH bound to: 32 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 128 - type: integer 
+	Parameter NUM_PORTS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (26#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconcat_interrupt_0' (27#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_0/synth/ulp_xlconcat_interrupt_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'ulp_xlconcat_interrupt_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_0_0/synth/ulp_xlconcat_interrupt_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat__parameterized0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 32 - type: integer 
+	Parameter NUM_PORTS bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat__parameterized0' (27#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconcat_interrupt_0_0' (28#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_0_0/synth/ulp_xlconcat_interrupt_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'ulp_xlconcat_interrupt_1_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_1_0/synth/ulp_xlconcat_interrupt_1_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconcat_interrupt_1_0' (29#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_1_0/synth/ulp_xlconcat_interrupt_1_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'ulp_xlconcat_interrupt_2_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_2_0/synth/ulp_xlconcat_interrupt_2_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconcat_interrupt_2_0' (30#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_2_0/synth/ulp_xlconcat_interrupt_2_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'ulp_xlconcat_interrupt_3_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_3_0/synth/ulp_xlconcat_interrupt_3_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconcat_interrupt_3_0' (31#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_3_0/synth/ulp_xlconcat_interrupt_3_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'ulp_xlconstant_gnd_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_xlconstant_gnd_0/synth/ulp_xlconstant_gnd_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 0 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (32#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconstant_gnd_0' (33#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_xlconstant_gnd_0/synth/ulp_xlconstant_gnd_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'ulp_xlconstant_gnd128_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_xlconstant_gnd128_0/synth/ulp_xlconstant_gnd128_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CONST_WIDTH bound to: 128 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (33#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconstant_gnd128_0' (34#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_xlconstant_gnd128_0/synth/ulp_xlconstant_gnd128_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'interrupt_concat_imp_1RAQO40' (35#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:723]
+INFO: [Synth 8-6157] synthesizing module 'ulp_myproject_kernel_1_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_myproject_kernel_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_myproject_kernel_1_0' (36#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_myproject_kernel_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ulp_proc_sys_reset_ctrl_slr0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_proc_sys_reset_ctrl_slr0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_proc_sys_reset_ctrl_slr0_0' (37#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_proc_sys_reset_ctrl_slr0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'ulp_proc_sys_reset_ctrl_slr0_0' is unconnected for instance 'proc_sys_reset_ctrl_slr0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3171]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ulp_proc_sys_reset_ctrl_slr0_0' is unconnected for instance 'proc_sys_reset_ctrl_slr0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3171]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ulp_proc_sys_reset_ctrl_slr0_0' is unconnected for instance 'proc_sys_reset_ctrl_slr0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3171]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'ulp_proc_sys_reset_ctrl_slr0_0' is unconnected for instance 'proc_sys_reset_ctrl_slr0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3171]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_ctrl_slr0' of module 'ulp_proc_sys_reset_ctrl_slr0_0' has 10 connections declared, but only 6 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3171]
+INFO: [Synth 8-6157] synthesizing module 'ulp_proc_sys_reset_ctrl_slr1_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_proc_sys_reset_ctrl_slr1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_proc_sys_reset_ctrl_slr1_0' (38#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_proc_sys_reset_ctrl_slr1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'ulp_proc_sys_reset_ctrl_slr1_0' is unconnected for instance 'proc_sys_reset_ctrl_slr1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3178]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ulp_proc_sys_reset_ctrl_slr1_0' is unconnected for instance 'proc_sys_reset_ctrl_slr1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3178]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ulp_proc_sys_reset_ctrl_slr1_0' is unconnected for instance 'proc_sys_reset_ctrl_slr1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3178]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'ulp_proc_sys_reset_ctrl_slr1_0' is unconnected for instance 'proc_sys_reset_ctrl_slr1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3178]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_ctrl_slr1' of module 'ulp_proc_sys_reset_ctrl_slr1_0' has 10 connections declared, but only 6 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3178]
+INFO: [Synth 8-6157] synthesizing module 'ulp_proc_sys_reset_kernel2_slr0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_proc_sys_reset_kernel2_slr0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_proc_sys_reset_kernel2_slr0_0' (39#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_proc_sys_reset_kernel2_slr0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'ulp_proc_sys_reset_kernel2_slr0_0' is unconnected for instance 'proc_sys_reset_kernel2_slr0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3185]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ulp_proc_sys_reset_kernel2_slr0_0' is unconnected for instance 'proc_sys_reset_kernel2_slr0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3185]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ulp_proc_sys_reset_kernel2_slr0_0' is unconnected for instance 'proc_sys_reset_kernel2_slr0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3185]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'ulp_proc_sys_reset_kernel2_slr0_0' is unconnected for instance 'proc_sys_reset_kernel2_slr0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3185]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_kernel2_slr0' of module 'ulp_proc_sys_reset_kernel2_slr0_0' has 10 connections declared, but only 6 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3185]
+INFO: [Synth 8-6157] synthesizing module 'ulp_proc_sys_reset_kernel2_slr1_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_proc_sys_reset_kernel2_slr1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_proc_sys_reset_kernel2_slr1_0' (40#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_proc_sys_reset_kernel2_slr1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'ulp_proc_sys_reset_kernel2_slr1_0' is unconnected for instance 'proc_sys_reset_kernel2_slr1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3192]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ulp_proc_sys_reset_kernel2_slr1_0' is unconnected for instance 'proc_sys_reset_kernel2_slr1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3192]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ulp_proc_sys_reset_kernel2_slr1_0' is unconnected for instance 'proc_sys_reset_kernel2_slr1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3192]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'ulp_proc_sys_reset_kernel2_slr1_0' is unconnected for instance 'proc_sys_reset_kernel2_slr1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3192]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_kernel2_slr1' of module 'ulp_proc_sys_reset_kernel2_slr1_0' has 10 connections declared, but only 6 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3192]
+INFO: [Synth 8-6157] synthesizing module 'ulp_proc_sys_reset_kernel_slr0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_proc_sys_reset_kernel_slr0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_proc_sys_reset_kernel_slr0_0' (41#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_proc_sys_reset_kernel_slr0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'ulp_proc_sys_reset_kernel_slr0_0' is unconnected for instance 'proc_sys_reset_kernel_slr0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3199]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ulp_proc_sys_reset_kernel_slr0_0' is unconnected for instance 'proc_sys_reset_kernel_slr0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3199]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ulp_proc_sys_reset_kernel_slr0_0' is unconnected for instance 'proc_sys_reset_kernel_slr0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3199]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_kernel_slr0' of module 'ulp_proc_sys_reset_kernel_slr0_0' has 10 connections declared, but only 7 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3199]
+INFO: [Synth 8-6157] synthesizing module 'ulp_proc_sys_reset_kernel_slr1_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_proc_sys_reset_kernel_slr1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_proc_sys_reset_kernel_slr1_0' (42#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_proc_sys_reset_kernel_slr1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'ulp_proc_sys_reset_kernel_slr1_0' is unconnected for instance 'proc_sys_reset_kernel_slr1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3207]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ulp_proc_sys_reset_kernel_slr1_0' is unconnected for instance 'proc_sys_reset_kernel_slr1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3207]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ulp_proc_sys_reset_kernel_slr1_0' is unconnected for instance 'proc_sys_reset_kernel_slr1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3207]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'ulp_proc_sys_reset_kernel_slr1_0' is unconnected for instance 'proc_sys_reset_kernel_slr1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3207]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_kernel_slr1' of module 'ulp_proc_sys_reset_kernel_slr1_0' has 10 connections declared, but only 6 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:3207]
+INFO: [Synth 8-6157] synthesizing module 'ulp_satellite_gpio_slice_1_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_satellite_gpio_slice_1_0/synth/ulp_satellite_gpio_slice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 2 - type: integer 
+	Parameter DIN_FROM bound to: 1 - type: integer 
+	Parameter DIN_TO bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (43#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_satellite_gpio_slice_1_0' (44#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_satellite_gpio_slice_1_0/synth/ulp_satellite_gpio_slice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'ulp_ulp_ucs_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_ulp_ucs_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_ulp_ucs_0' (45#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_ulp_ucs_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_user_debug_bridge_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_user_debug_bridge_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_user_debug_bridge_0' (46#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-5050-gabribot-X570-AORUS-ELITE/realtime/ulp_user_debug_bridge_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp' (47#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/synth/ulp.v:1766]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3222.586 ; gain = 187.590 ; free physical = 8057 ; free virtual = 12228
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3238.430 ; gain = 203.434 ; free physical = 8054 ; free virtual = 12225
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3238.430 ; gain = 203.434 ; free physical = 8054 ; free virtual = 12225
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3238.430 ; gain = 0.000 ; free physical = 8046 ; free virtual = 12217
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_ii_level0_wire_0/ulp_ii_level0_wire_0/ulp_ii_level0_wire_0_in_context.xdc] for cell 'ii_level0_wire'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_ii_level0_wire_0/ulp_ii_level0_wire_0/ulp_ii_level0_wire_0_in_context.xdc] for cell 'ii_level0_wire'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_user_debug_bridge_0/ulp_user_debug_bridge_0/ulp_user_debug_bridge_0_in_context.xdc] for cell 'user_debug_bridge'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_user_debug_bridge_0/ulp_user_debug_bridge_0/ulp_user_debug_bridge_0_in_context.xdc] for cell 'user_debug_bridge'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_debug_bridge_xsdbm_0/ulp_debug_bridge_xsdbm_0/ulp_debug_bridge_xsdbm_0_in_context.xdc] for cell 'debug_bridge_xsdbm'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_debug_bridge_xsdbm_0/ulp_debug_bridge_xsdbm_0/ulp_debug_bridge_xsdbm_0_in_context.xdc] for cell 'debug_bridge_xsdbm'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/ulp_hmss_0_0/ulp_hmss_0_0_in_context.xdc] for cell 'hmss_0'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/ulp_hmss_0_0/ulp_hmss_0_0_in_context.xdc] for cell 'hmss_0'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_axi_vip_data_0/ulp_axi_vip_data_0/ulp_axi_vip_data_0_in_context.xdc] for cell 'axi_vip_data'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_axi_vip_data_0/ulp_axi_vip_data_0/ulp_axi_vip_data_0_in_context.xdc] for cell 'axi_vip_data'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_ulp_ucs_0/ulp_ulp_ucs_0/ulp_ulp_ucs_0_in_context.xdc] for cell 'ulp_ucs'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_ulp_ucs_0/ulp_ulp_ucs_0/ulp_ulp_ucs_0_in_context.xdc] for cell 'ulp_ucs'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_proc_sys_reset_ctrl_slr0_0/ulp_proc_sys_reset_ctrl_slr0_0/ulp_proc_sys_reset_ctrl_slr0_0_in_context.xdc] for cell 'proc_sys_reset_ctrl_slr0'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_proc_sys_reset_ctrl_slr0_0/ulp_proc_sys_reset_ctrl_slr0_0/ulp_proc_sys_reset_ctrl_slr0_0_in_context.xdc] for cell 'proc_sys_reset_ctrl_slr0'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_proc_sys_reset_ctrl_slr1_0/ulp_proc_sys_reset_ctrl_slr1_0/ulp_proc_sys_reset_ctrl_slr0_0_in_context.xdc] for cell 'proc_sys_reset_ctrl_slr1'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_proc_sys_reset_ctrl_slr1_0/ulp_proc_sys_reset_ctrl_slr1_0/ulp_proc_sys_reset_ctrl_slr0_0_in_context.xdc] for cell 'proc_sys_reset_ctrl_slr1'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_proc_sys_reset_kernel_slr0_0/ulp_proc_sys_reset_kernel_slr0_0/ulp_proc_sys_reset_kernel_slr0_0_in_context.xdc] for cell 'proc_sys_reset_kernel_slr0'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_proc_sys_reset_kernel_slr0_0/ulp_proc_sys_reset_kernel_slr0_0/ulp_proc_sys_reset_kernel_slr0_0_in_context.xdc] for cell 'proc_sys_reset_kernel_slr0'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_proc_sys_reset_kernel_slr1_0/ulp_proc_sys_reset_kernel_slr1_0/ulp_proc_sys_reset_kernel_slr0_0_in_context.xdc] for cell 'proc_sys_reset_kernel_slr1'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_proc_sys_reset_kernel_slr1_0/ulp_proc_sys_reset_kernel_slr1_0/ulp_proc_sys_reset_kernel_slr0_0_in_context.xdc] for cell 'proc_sys_reset_kernel_slr1'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_proc_sys_reset_kernel2_slr0_0/ulp_proc_sys_reset_kernel2_slr0_0/ulp_proc_sys_reset_kernel2_slr0_0_in_context.xdc] for cell 'proc_sys_reset_kernel2_slr0'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_proc_sys_reset_kernel2_slr0_0/ulp_proc_sys_reset_kernel2_slr0_0/ulp_proc_sys_reset_kernel2_slr0_0_in_context.xdc] for cell 'proc_sys_reset_kernel2_slr0'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_proc_sys_reset_kernel2_slr1_0/ulp_proc_sys_reset_kernel2_slr1_0/ulp_proc_sys_reset_kernel2_slr0_0_in_context.xdc] for cell 'proc_sys_reset_kernel2_slr1'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_proc_sys_reset_kernel2_slr1_0/ulp_proc_sys_reset_kernel2_slr1_0/ulp_proc_sys_reset_kernel2_slr0_0_in_context.xdc] for cell 'proc_sys_reset_kernel2_slr1'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_workaround_cr1039626_orgate_0/ulp_workaround_cr1039626_orgate_0/ulp_workaround_cr1039626_orgate_0_in_context.xdc] for cell 'interrupt_concat/workaround_cr1039626_orgate'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_workaround_cr1039626_orgate_0/ulp_workaround_cr1039626_orgate_0/ulp_workaround_cr1039626_orgate_0_in_context.xdc] for cell 'interrupt_concat/workaround_cr1039626_orgate'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_axi_gpio_null_0/ulp_axi_gpio_null_0/ulp_axi_gpio_null_0_in_context.xdc] for cell 'SLR0/axi_gpio_null'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_axi_gpio_null_0/ulp_axi_gpio_null_0/ulp_axi_gpio_null_0_in_context.xdc] for cell 'SLR0/axi_gpio_null'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_axi_vip_ctrl_userpf_0/ulp_axi_vip_ctrl_userpf_0/ulp_axi_vip_ctrl_userpf_0_in_context.xdc] for cell 'SLR0/axi_vip_ctrl_userpf'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_axi_vip_ctrl_userpf_0/ulp_axi_vip_ctrl_userpf_0/ulp_axi_vip_ctrl_userpf_0_in_context.xdc] for cell 'SLR0/axi_vip_ctrl_userpf'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_regslice_control_userpf_0/ulp_regslice_control_userpf_0/ulp_regslice_control_userpf_0_in_context.xdc] for cell 'SLR0/regslice_control_userpf'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_regslice_control_userpf_0/ulp_regslice_control_userpf_0/ulp_regslice_control_userpf_0_in_context.xdc] for cell 'SLR0/regslice_control_userpf'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_axi_gpio_null_1/ulp_axi_gpio_null_1/ulp_axi_gpio_null_0_in_context.xdc] for cell 'SLR1/axi_gpio_null'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_axi_gpio_null_1/ulp_axi_gpio_null_1/ulp_axi_gpio_null_0_in_context.xdc] for cell 'SLR1/axi_gpio_null'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_axi_vip_ctrl_userpf_1/ulp_axi_vip_ctrl_userpf_1/ulp_axi_vip_ctrl_userpf_0_in_context.xdc] for cell 'SLR1/axi_vip_ctrl_userpf'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_axi_vip_ctrl_userpf_1/ulp_axi_vip_ctrl_userpf_1/ulp_axi_vip_ctrl_userpf_0_in_context.xdc] for cell 'SLR1/axi_vip_ctrl_userpf'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_regslice_control_userpf_1/ulp_regslice_control_userpf_1/ulp_regslice_control_userpf_1_in_context.xdc] for cell 'SLR1/regslice_control_userpf'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_regslice_control_userpf_1/ulp_regslice_control_userpf_1/ulp_regslice_control_userpf_1_in_context.xdc] for cell 'SLR1/regslice_control_userpf'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_xbar_0/ulp_xbar_0/ulp_xbar_0_in_context.xdc] for cell 'SLR0/interconnect_axilite_user/xbar'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_xbar_0/ulp_xbar_0/ulp_xbar_0_in_context.xdc] for cell 'SLR0/interconnect_axilite_user/xbar'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_myproject_kernel_1_0/dcp/ulp_myproject_kernel_1_0/myproject_kernel_in_context.xdc] for cell 'myproject_kernel_1'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_myproject_kernel_1_0/dcp/ulp_myproject_kernel_1_0/myproject_kernel_in_context.xdc] for cell 'myproject_kernel_1'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_s00_regslice_10/ulp_s00_regslice_10/ulp_s00_regslice_12_in_context.xdc] for cell 'SLR0/interconnect_axilite_user/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_s00_regslice_10/ulp_s00_regslice_10/ulp_s00_regslice_12_in_context.xdc] for cell 'SLR0/interconnect_axilite_user/s00_couplers/s00_regslice'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_m00_regslice_0/ulp_m00_regslice_0/ulp_m00_regslice_2_in_context.xdc] for cell 'SLR0/interconnect_axilite_user/m00_couplers/m00_regslice'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_m00_regslice_0/ulp_m00_regslice_0/ulp_m00_regslice_2_in_context.xdc] for cell 'SLR0/interconnect_axilite_user/m00_couplers/m00_regslice'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_m01_regslice_0/ulp_m01_regslice_0/ulp_m01_regslice_0_in_context.xdc] for cell 'SLR0/interconnect_axilite_user/m01_couplers/m01_regslice'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_m01_regslice_0/ulp_m01_regslice_0/ulp_m01_regslice_0_in_context.xdc] for cell 'SLR0/interconnect_axilite_user/m01_couplers/m01_regslice'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_auto_cc_0/ulp_auto_cc_0/ulp_auto_cc_0_in_context.xdc] for cell 'SLR0/interconnect_axilite_user/m01_couplers/auto_cc'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_auto_cc_0/ulp_auto_cc_0/ulp_auto_cc_0_in_context.xdc] for cell 'SLR0/interconnect_axilite_user/m01_couplers/auto_cc'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_s00_regslice_11/ulp_s00_regslice_11/ulp_m00_regslice_2_in_context.xdc] for cell 'SLR1/interconnect_axilite_user/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_s00_regslice_11/ulp_s00_regslice_11/ulp_m00_regslice_2_in_context.xdc] for cell 'SLR1/interconnect_axilite_user/s00_couplers/s00_regslice'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ulp_ooc.xdc]
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ulp_ooc.xdc]
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3329.965 ; gain = 0.000 ; free physical = 7937 ; free virtual = 12108
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.33 . Memory (MB): peak = 3335.902 ; gain = 5.938 ; free physical = 7930 ; free virtual = 12101
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 3335.902 ; gain = 300.906 ; free physical = 8028 ; free virtual = 12199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu50-fsvh2104-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 3335.902 ; gain = 300.906 ; free physical = 8028 ; free virtual = 12199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for ii_level0_wire. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for user_debug_bridge. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for debug_bridge_xsdbm. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for hmss_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for axi_vip_data. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for satellite_gpio_slice_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ulp_ucs. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for proc_sys_reset_ctrl_slr0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for proc_sys_reset_ctrl_slr1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for proc_sys_reset_kernel_slr0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for proc_sys_reset_kernel_slr1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for proc_sys_reset_kernel2_slr0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for proc_sys_reset_kernel2_slr1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for interrupt_concat/xlconcat_interrupt. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for interrupt_concat/xlconcat_interrupt_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for interrupt_concat/xlconcat_interrupt_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for interrupt_concat/xlconcat_interrupt_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for interrupt_concat/xlconcat_interrupt_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for interrupt_concat/xlconstant_gnd. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for interrupt_concat/workaround_cr1039626_orgate. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for interrupt_concat/xlconstant_gnd128. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SLR0/axi_gpio_null. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SLR0/axi_vip_ctrl_userpf. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SLR0/interconnect_axilite_user. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SLR0/regslice_control_userpf. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SLR1/axi_gpio_null. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SLR1/axi_vip_ctrl_userpf. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SLR1/interconnect_axilite_user. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SLR1/regslice_control_userpf. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SLR0/interconnect_axilite_user/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for myproject_kernel_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SLR0/interconnect_axilite_user/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SLR0/interconnect_axilite_user/m00_couplers/m00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SLR0/interconnect_axilite_user/m01_couplers/m01_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SLR0/interconnect_axilite_user/m01_couplers/auto_cc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SLR1/interconnect_axilite_user/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 3335.902 ; gain = 300.906 ; free physical = 8028 ; free virtual = 12199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 3335.902 ; gain = 300.906 ; free physical = 8030 ; free virtual = 12202
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 5952 (col length:93)
+BRAMs: 2688 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 3335.902 ; gain = 300.906 ; free physical = 8013 ; free virtual = 12189
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 3701.582 ; gain = 666.586 ; free physical = 7487 ; free virtual = 11664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 3702.582 ; gain = 667.586 ; free physical = 7486 ; free virtual = 11663
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 3723.629 ; gain = 688.633 ; free physical = 7483 ; free virtual = 11660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 3729.566 ; gain = 694.570 ; free physical = 7483 ; free virtual = 11660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 3729.566 ; gain = 694.570 ; free physical = 7483 ; free virtual = 11660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 3729.566 ; gain = 694.570 ; free physical = 7483 ; free virtual = 11660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 3729.566 ; gain = 694.570 ; free physical = 7483 ; free virtual = 11660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 3729.566 ; gain = 694.570 ; free physical = 7483 ; free virtual = 11660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 3729.566 ; gain = 694.570 ; free physical = 7483 ; free virtual = 11660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |ulp_axi_vip_data_0                |         1|
+|2     |ulp_debug_bridge_xsdbm_0          |         1|
+|3     |ulp_hmss_0_0                      |         1|
+|4     |ulp_ii_level0_wire_0              |         1|
+|5     |ulp_myproject_kernel_1_0          |         1|
+|6     |ulp_proc_sys_reset_ctrl_slr0_0    |         1|
+|7     |ulp_proc_sys_reset_ctrl_slr1_0    |         1|
+|8     |ulp_proc_sys_reset_kernel2_slr0_0 |         1|
+|9     |ulp_proc_sys_reset_kernel2_slr1_0 |         1|
+|10    |ulp_proc_sys_reset_kernel_slr0_0  |         1|
+|11    |ulp_proc_sys_reset_kernel_slr1_0  |         1|
+|12    |ulp_ulp_ucs_0                     |         1|
+|13    |ulp_user_debug_bridge_0           |         1|
+|14    |ulp_xbar_0                        |         1|
+|15    |ulp_m00_regslice_0                |         1|
+|16    |ulp_auto_cc_0                     |         1|
+|17    |ulp_m01_regslice_0                |         1|
+|18    |ulp_s00_regslice_10               |         1|
+|19    |ulp_axi_gpio_null_0               |         1|
+|20    |ulp_axi_vip_ctrl_userpf_0         |         1|
+|21    |ulp_regslice_control_userpf_0     |         1|
+|22    |ulp_s00_regslice_11               |         1|
+|23    |ulp_axi_gpio_null_1               |         1|
+|24    |ulp_axi_vip_ctrl_userpf_1         |         1|
+|25    |ulp_regslice_control_userpf_1     |         1|
+|26    |ulp_workaround_cr1039626_orgate_0 |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |ulp_auto_cc                     |     1|
+|2     |ulp_axi_gpio_null               |     2|
+|4     |ulp_axi_vip_ctrl_userpf         |     2|
+|6     |ulp_axi_vip_data                |     1|
+|7     |ulp_debug_bridge_xsdbm          |     1|
+|8     |ulp_hmss_0                      |     1|
+|9     |ulp_ii_level0_wire              |     1|
+|10    |ulp_m00_regslice                |     1|
+|11    |ulp_m01_regslice                |     1|
+|12    |ulp_myproject_kernel_1          |     1|
+|13    |ulp_proc_sys_reset_ctrl_slr0    |     1|
+|14    |ulp_proc_sys_reset_ctrl_slr1    |     1|
+|15    |ulp_proc_sys_reset_kernel2_slr0 |     1|
+|16    |ulp_proc_sys_reset_kernel2_slr1 |     1|
+|17    |ulp_proc_sys_reset_kernel_slr0  |     1|
+|18    |ulp_proc_sys_reset_kernel_slr1  |     1|
+|19    |ulp_regslice_control_userpf     |     2|
+|21    |ulp_s00_regslice                |     2|
+|23    |ulp_ulp_ucs                     |     1|
+|24    |ulp_user_debug_bridge           |     1|
+|25    |ulp_workaround_cr1039626_orgate |     1|
+|26    |ulp_xbar                        |     1|
++------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 3729.566 ; gain = 694.570 ; free physical = 7483 ; free virtual = 11660
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 3729.566 ; gain = 597.098 ; free physical = 7518 ; free virtual = 11695
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 3729.574 ; gain = 694.570 ; free physical = 7518 ; free virtual = 11695
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3729.574 ; gain = 0.000 ; free physical = 7589 ; free virtual = 11766
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3787.066 ; gain = 0.000 ; free physical = 7502 ; free virtual = 11679
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+118 Infos, 57 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:59 . Memory (MB): peak = 3799.035 ; gain = 1642.215 ; free physical = 7636 ; free virtual = 11813
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Coretcl 2-1174] Renamed 43 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 24 00:01:17 2021...

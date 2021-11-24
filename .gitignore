@@ -1,0 +1,9 @@
+/NN_train
+/MNIST_Test
+/Data
+X_train.npy
+X_test.npy
+y_train.npy
+y_test.npy
+
+*.tar.gz

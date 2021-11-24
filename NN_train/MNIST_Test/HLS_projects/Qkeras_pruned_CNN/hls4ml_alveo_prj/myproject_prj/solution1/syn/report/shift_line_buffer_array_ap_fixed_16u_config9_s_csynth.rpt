@@ -1,0 +1,248 @@
+
+
+================================================================
+== Vivado HLS Report for 'shift_line_buffer_array_ap_fixed_16u_config9_s'
+================================================================
+* Date:           Mon Nov 22 19:56:02 2021
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: virtexuplus
+* Target device:  xcu50-fsvh2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 4.00 ns | 0.611 ns |   0.50 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+--------+-----+
+|         Name        | BRAM_18K| DSP48E|    FF   |   LUT  | URAM|
++---------------------+---------+-------+---------+--------+-----+
+|DSP                  |        -|      -|        -|       -|    -|
+|Expression           |        -|      -|        -|       -|    -|
+|FIFO                 |        -|      -|        -|       -|    -|
+|Instance             |        -|      -|        -|       -|    -|
+|Memory               |        0|      -|     1024|     512|    -|
+|Multiplexer          |        -|      -|        -|       -|    -|
+|Register             |        -|      -|        1|       -|    -|
++---------------------+---------+-------+---------+--------+-----+
+|Total                |        0|      0|     1025|     512|    0|
++---------------------+---------+-------+---------+--------+-----+
+|Available SLR        |     1344|   2976|   871680|  435840|  320|
++---------------------+---------+-------+---------+--------+-----+
+|Utilization SLR (%)  |        0|      0|    ~0   |   ~0   |    0|
++---------------------+---------+-------+---------+--------+-----+
+|Available            |     2688|   5952|  1743360|  871680|  640|
++---------------------+---------+-------+---------+--------+-----+
+|Utilization (%)      |        0|      0|    ~0   |   ~0   |    0|
++---------------------+---------+-------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    +------------------------------+--------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |            Memory            |                            Module                            | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +------------------------------+--------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |line_buffer_Array_V_3_0_0_U   |shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio  |        0|  64|  32|    0|    11|    3|     1|           33|
+    |line_buffer_Array_V_3_0_1_U   |shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio  |        0|  64|  32|    0|    11|    3|     1|           33|
+    |line_buffer_Array_V_3_0_2_U   |shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio  |        0|  64|  32|    0|    11|    3|     1|           33|
+    |line_buffer_Array_V_3_0_3_U   |shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio  |        0|  64|  32|    0|    11|    3|     1|           33|
+    |line_buffer_Array_V_3_0_4_U   |shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio  |        0|  64|  32|    0|    11|    3|     1|           33|
+    |line_buffer_Array_V_3_0_5_U   |shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio  |        0|  64|  32|    0|    11|    3|     1|           33|
+    |line_buffer_Array_V_3_0_6_U   |shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio  |        0|  64|  32|    0|    11|    3|     1|           33|
+    |line_buffer_Array_V_3_0_7_U   |shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio  |        0|  64|  32|    0|    11|    3|     1|           33|
+    |line_buffer_Array_V_3_0_8_U   |shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio  |        0|  64|  32|    0|    11|    3|     1|           33|
+    |line_buffer_Array_V_3_0_9_U   |shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio  |        0|  64|  32|    0|    11|    3|     1|           33|
+    |line_buffer_Array_V_3_0_10_U  |shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio  |        0|  64|  32|    0|    11|    3|     1|           33|
+    |line_buffer_Array_V_3_0_11_U  |shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio  |        0|  64|  32|    0|    11|    3|     1|           33|
+    |line_buffer_Array_V_3_0_12_U  |shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio  |        0|  64|  32|    0|    11|    3|     1|           33|
+    |line_buffer_Array_V_3_0_13_U  |shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio  |        0|  64|  32|    0|    11|    3|     1|           33|
+    |line_buffer_Array_V_3_0_14_U  |shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio  |        0|  64|  32|    0|    11|    3|     1|           33|
+    |line_buffer_Array_V_3_0_15_U  |shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio  |        0|  64|  32|    0|    11|    3|     1|           33|
+    +------------------------------+--------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |Total                         |                                                              |        0|1024| 512|    0|   176|   48|    16|          528|
+    +------------------------------+--------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    +-----------+---+----+-----+-----------+
+    |    Name   | FF| LUT| Bits| Const Bits|
+    +-----------+---+----+-----+-----------+
+    |ap_CS_fsm  |  1|   0|    1|          0|
+    +-----------+---+----+-----+-----------+
+    |Total      |  1|   0|    1|          0|
+    +-----------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+------------------------------------------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |                  Source Object                 |    C Type    |
++-------------------------+-----+-----+------------+------------------------------------------------+--------------+
+|ap_clk                   |  in |    1| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_rst                   |  in |    1| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_start                 |  in |    1| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_done                  | out |    1| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_idle                  | out |    1| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_ready                 | out |    1| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_0              | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_1              | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_2              | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_3              | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_4              | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_5              | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_6              | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_7              | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_8              | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_9              | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_10             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_11             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_12             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_13             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_14             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_15             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_16             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_17             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_18             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_19             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_20             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_21             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_22             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_23             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_24             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_25             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_26             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_27             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_28             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_29             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_30             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_31             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_32             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_33             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_34             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_35             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_36             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_37             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_38             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_39             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_40             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_41             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_42             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_43             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_44             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_45             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_46             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_47             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_48             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_49             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_50             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_51             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_52             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_53             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_54             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_55             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_56             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_57             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_58             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_59             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_60             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_61             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_62             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_return_63             | out |    3| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|ap_ce                    |  in |    1| ap_ctrl_hs | shift_line_buffer<array<ap_fixed,16u>,config9> | return value |
+|in_elem_data_0_V_read    |  in |    3|   ap_none  |              in_elem_data_0_V_read             |    scalar    |
+|in_elem_data_1_V_read    |  in |    3|   ap_none  |              in_elem_data_1_V_read             |    scalar    |
+|in_elem_data_2_V_read    |  in |    3|   ap_none  |              in_elem_data_2_V_read             |    scalar    |
+|in_elem_data_3_V_read    |  in |    3|   ap_none  |              in_elem_data_3_V_read             |    scalar    |
+|in_elem_data_4_V_read    |  in |    3|   ap_none  |              in_elem_data_4_V_read             |    scalar    |
+|in_elem_data_5_V_read    |  in |    3|   ap_none  |              in_elem_data_5_V_read             |    scalar    |
+|in_elem_data_6_V_read    |  in |    3|   ap_none  |              in_elem_data_6_V_read             |    scalar    |
+|in_elem_data_7_V_read    |  in |    3|   ap_none  |              in_elem_data_7_V_read             |    scalar    |
+|in_elem_data_8_V_read    |  in |    3|   ap_none  |              in_elem_data_8_V_read             |    scalar    |
+|in_elem_data_9_V_read    |  in |    3|   ap_none  |              in_elem_data_9_V_read             |    scalar    |
+|in_elem_data_10_V_read   |  in |    3|   ap_none  |             in_elem_data_10_V_read             |    scalar    |
+|in_elem_data_11_V_read   |  in |    3|   ap_none  |             in_elem_data_11_V_read             |    scalar    |
+|in_elem_data_12_V_read   |  in |    3|   ap_none  |             in_elem_data_12_V_read             |    scalar    |
+|in_elem_data_13_V_read   |  in |    3|   ap_none  |             in_elem_data_13_V_read             |    scalar    |
+|in_elem_data_14_V_read   |  in |    3|   ap_none  |             in_elem_data_14_V_read             |    scalar    |
+|in_elem_data_15_V_read   |  in |    3|   ap_none  |             in_elem_data_15_V_read             |    scalar    |
+|kernel_window_16_V_read  |  in |    3|   ap_none  |             kernel_window_16_V_read            |    scalar    |
+|kernel_window_17_V_read  |  in |    3|   ap_none  |             kernel_window_17_V_read            |    scalar    |
+|kernel_window_18_V_read  |  in |    3|   ap_none  |             kernel_window_18_V_read            |    scalar    |
+|kernel_window_19_V_read  |  in |    3|   ap_none  |             kernel_window_19_V_read            |    scalar    |
+|kernel_window_20_V_read  |  in |    3|   ap_none  |             kernel_window_20_V_read            |    scalar    |
+|kernel_window_21_V_read  |  in |    3|   ap_none  |             kernel_window_21_V_read            |    scalar    |
+|kernel_window_22_V_read  |  in |    3|   ap_none  |             kernel_window_22_V_read            |    scalar    |
+|kernel_window_23_V_read  |  in |    3|   ap_none  |             kernel_window_23_V_read            |    scalar    |
+|kernel_window_24_V_read  |  in |    3|   ap_none  |             kernel_window_24_V_read            |    scalar    |
+|kernel_window_25_V_read  |  in |    3|   ap_none  |             kernel_window_25_V_read            |    scalar    |
+|kernel_window_26_V_read  |  in |    3|   ap_none  |             kernel_window_26_V_read            |    scalar    |
+|kernel_window_27_V_read  |  in |    3|   ap_none  |             kernel_window_27_V_read            |    scalar    |
+|kernel_window_28_V_read  |  in |    3|   ap_none  |             kernel_window_28_V_read            |    scalar    |
+|kernel_window_29_V_read  |  in |    3|   ap_none  |             kernel_window_29_V_read            |    scalar    |
+|kernel_window_30_V_read  |  in |    3|   ap_none  |             kernel_window_30_V_read            |    scalar    |
+|kernel_window_31_V_read  |  in |    3|   ap_none  |             kernel_window_31_V_read            |    scalar    |
+|kernel_window_48_V_read  |  in |    3|   ap_none  |             kernel_window_48_V_read            |    scalar    |
+|kernel_window_49_V_read  |  in |    3|   ap_none  |             kernel_window_49_V_read            |    scalar    |
+|kernel_window_50_V_read  |  in |    3|   ap_none  |             kernel_window_50_V_read            |    scalar    |
+|kernel_window_51_V_read  |  in |    3|   ap_none  |             kernel_window_51_V_read            |    scalar    |
+|kernel_window_52_V_read  |  in |    3|   ap_none  |             kernel_window_52_V_read            |    scalar    |
+|kernel_window_53_V_read  |  in |    3|   ap_none  |             kernel_window_53_V_read            |    scalar    |
+|kernel_window_54_V_read  |  in |    3|   ap_none  |             kernel_window_54_V_read            |    scalar    |
+|kernel_window_55_V_read  |  in |    3|   ap_none  |             kernel_window_55_V_read            |    scalar    |
+|kernel_window_56_V_read  |  in |    3|   ap_none  |             kernel_window_56_V_read            |    scalar    |
+|kernel_window_57_V_read  |  in |    3|   ap_none  |             kernel_window_57_V_read            |    scalar    |
+|kernel_window_58_V_read  |  in |    3|   ap_none  |             kernel_window_58_V_read            |    scalar    |
+|kernel_window_59_V_read  |  in |    3|   ap_none  |             kernel_window_59_V_read            |    scalar    |
+|kernel_window_60_V_read  |  in |    3|   ap_none  |             kernel_window_60_V_read            |    scalar    |
+|kernel_window_61_V_read  |  in |    3|   ap_none  |             kernel_window_61_V_read            |    scalar    |
+|kernel_window_62_V_read  |  in |    3|   ap_none  |             kernel_window_62_V_read            |    scalar    |
+|kernel_window_63_V_read  |  in |    3|   ap_none  |             kernel_window_63_V_read            |    scalar    |
++-------------------------+-----+-----+------------+------------------------------------------------+--------------+
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root VersionMajor="1" VersionMinor="15">
+  <GenAppInfo Name="" Version="" CL="0" TimeStamp=""/>
+  <DSA Vendor="xilinx.com" BoardId="" Name="myproject_kernel" VersionMajor="1" VersionMinor="0" Description="" FeatureRomTimestamp="0" DcpLogicFunctionStripped="false" DcpEncrypt="false" Unified="true" Fixed="true" DefaultOutputType="unknown">
+    <Build UsesPR="false" PlatformState="pre_synth" AcceleratorBinaryContent="bitstream"/>
+    <Board Name="" Vendor="" Part="">
+      <Images>
+        <Img Type="HDPI" File=""/>
+        <Img Type="MDPI" File=""/>
+        <Img Type="LDPI" File=""/>
+      </Images>
+    </Board>
+    <Devices>
+      <Device Name="" Type="">
+        <Core Name="" Type="" ComputeUnits="0"/>
+      </Device>
+    </Devices>
+    <Files/>
+  </DSA>
+</Root>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdx:platform sdx:vendor="xilinx.com"
+              sdx:library="sdx"
+              sdx:name="myproject_kernel"
+              sdx:version="1.0"
+              sdx:schemaVersion="1.0"
+              xmlns:sdx="http://www.xilinx.com/sdx">
+    <sdx:description>
+myproject_kernel
+    </sdx:description>
+    <sdx:systemConfigurations sdx:defaultConfiguration="myproject_kernel">
+        <sdx:configuration sdx:name="myproject_kernel"
+                           sdx:displayName="myproject_kernel"
+                           sdx:defaultProcessorGroup="mydomain"
+                           sdx:runtimes="cpp">
+            <sdx:description>myproject_kernel</sdx:description>
+            <sdx:bootImages sdx:default="standard">
+                <sdx:image sdx:name="standard"
+                            sdx:bif="myproject_kernel/boot/myproject_kernel.bif"
+                            sdx:readme="myproject_kernel/boot/generic.readme"
+                            />
+            </sdx:bootImages>
+            <sdx:processorGroup sdx:name="mydomain"
+                                sdx:displayName="mydomain"
+                                sdx:cpuType="control_microblaze_0"
+                                sdx:cpuInstance="control_microblaze_0">
+                <sdx:os sdx:name="standalone"
+                        sdx:displayName="standalone"
+                        sdx:bspLibraryPaths="myproject_kernel/mydomain/bsplib/lib"
+                        sdx:bspIncludePaths="myproject_kernel/mydomain/bspinclude/include"
+                        sdx:bspConfig="myproject_kernel/mydomain/system.mss"
+                />
+            </sdx:processorGroup>
+        </sdx:configuration>
+    </sdx:systemConfigurations>
+</sdx:platform>

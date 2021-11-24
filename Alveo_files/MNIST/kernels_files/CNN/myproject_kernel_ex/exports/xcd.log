@@ -1,0 +1,24 @@
+Tue Nov 23 23:54:46 2021: Server was asked to start on port: '33617'
+Tue Nov 23 23:54:46 2021: Server is using token UUID: '605af8bc-5969-43b1-9139-f369d9bf163c'
+Tue Nov 23 23:54:46 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Tue Nov 23 23:54:46 2021: Attempting to start server on port '33617'
+Tue Nov 23 23:54:46 2021: XCD main fifo: created main fifo '/tmp/xcdmain605af8bc-5969-43b1-9139-f369d9bf163c', fd read = 13
+Tue Nov 23 23:54:46 2021: Running Dispatch Server
+Tue Nov 23 23:54:46 2021: Version 2.0.0
+Tue Nov 23 23:54:55 2021: Dispatch Server: Accepted socket connection from client
+Tue Nov 23 23:54:55 2021: EXCHANGE_TOKEN received, server token: 605af8bc-5969-43b1-9139-f369d9bf163c, passed token: 605af8bc-5969-43b1-9139-f369d9bf163c
+Tue Nov 23 23:54:55 2021: SESSION_MGR: creating session with session uuid: '048c8552-b201-4e7c-b85c-4080b57e2ca3' and name 'v++_link_myproject_kernel'
+Tue Nov 23 23:55:05 2021: Dispatch Server: Accepted socket connection from client
+Tue Nov 23 23:55:07 2021: Dispatch Server: Accepted socket connection from client
+Tue Nov 23 23:55:18 2021: Dispatch Server: Accepted socket connection from client
+Tue Nov 23 23:57:05 2021: Dispatch Server: Accepted socket connection from client
+Tue Nov 23 23:57:05 2021: Dispatch Server: Accepted socket connection from client
+Tue Nov 23 23:57:05 2021: Dispatch Server: Accepted socket connection from client
+Tue Nov 23 23:57:05 2021: Dispatch Server: Accepted socket connection from client
+Tue Nov 23 23:58:17 2021: Dispatch Server: Accepted socket connection from client
+Tue Nov 23 23:58:17 2021: Dispatch Server: Accepted socket connection from client
+Tue Nov 23 23:58:53 2021: Dispatch Server: Accepted socket connection from client
+Wed Nov 24 00:00:08 2021: Dispatch Server: Accepted socket connection from client
+Wed Nov 24 00:01:27 2021: Dispatch Server: Accepted socket connection from client
+Wed Nov 24 00:39:06 2021: Dispatch Server: Accepted socket connection from client
+Wed Nov 24 00:39:06 2021: SESSION_MGR: closing session for UUID '048c8552-b201-4e7c-b85c-4080b57e2ca3' with name 'v++_link_myproject_kernel'

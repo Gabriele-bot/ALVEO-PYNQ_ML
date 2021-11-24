@@ -1,0 +1,933 @@
+TRACE::2021-11-23.20:49:34::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:34::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:34::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:35::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:35::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:35::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:35::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-11-23.20:49:35::SCWPlatform::Opened new HwDB with name myproject_kernel
+TRACE::2021-11-23.20:49:35::SCWWriter::formatted JSON is {
+	"platformName":	"myproject_kernel",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Fixed",
+	"platformDesc":	"myproject_kernel",
+	"platHandOff":	"<platformDir>.hdf",
+	"platIntHandOff":	"<platformDir>/hw/myproject_kernel.dsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2021-11-23.20:49:35::SCWWriter::formatted JSON is {
+	"platformName":	"myproject_kernel",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Fixed",
+	"platformDesc":	"myproject_kernel",
+	"platHandOff":	"<platformDir>.hdf",
+	"platIntHandOff":	"<platformDir>/hw/myproject_kernel.dsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"myproject_kernel",
+	"systems":	[{
+			"systemName":	"myproject_kernel",
+			"systemDesc":	"myproject_kernel",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"myproject_kernel"
+		}]
+}
+TRACE::2021-11-23.20:49:35::SCWPlatform::Boot application domains not present, creating them
+TRACE::2021-11-23.20:49:35::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2021-11-23.20:49:35::SCWWriter::formatted JSON is {
+	"platformName":	"myproject_kernel",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Fixed",
+	"platformDesc":	"myproject_kernel",
+	"platHandOff":	"<platformDir>.hdf",
+	"platIntHandOff":	"<platformDir>/hw/myproject_kernel.dsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"myproject_kernel",
+	"systems":	[{
+			"systemName":	"myproject_kernel",
+			"systemDesc":	"myproject_kernel",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"myproject_kernel"
+		}]
+}
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:36::SCWDomain::checking for install qemu data   : 
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:36::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-11-23.20:49:36::SCWMssOS::No sw design opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::mss does not exists at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::Creating sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::Adding the swdes entry, created swdb /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss with des name /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::updating the scw layer changes to swdes at   /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::Writing mss at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::Completed writing the mss file at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp
+TRACE::2021-11-23.20:49:36::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2021-11-23.20:49:36::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2021-11-23.20:49:36::SCWMssOS::Completed writing the mss file at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp
+TRACE::2021-11-23.20:49:36::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2021-11-23.20:49:36::SCWMssOS::Saving the mss changes /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-11-23.20:49:36::SCWMssOS::Running validate of swdbs.
+KEYINFO::2021-11-23.20:49:36::SCWMssOS::Could not open the swdb for /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+KEYINFO::2021-11-23.20:49:36::SCWMssOS::Could not open the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss is not found
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Cleared the swdb table entry
+TRACE::2021-11-23.20:49:36::SCWMssOS::Adding the swdes entry, mss present, able to open swdb /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss with des name system
+TRACE::2021-11-23.20:49:36::SCWMssOS::Writing the mss file completed /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::Commit changes completed.
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:36::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:36::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:36::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWWriter::formatted JSON is {
+	"platformName":	"myproject_kernel",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Fixed",
+	"platformDesc":	"myproject_kernel",
+	"platHandOff":	"<platformDir>.hdf",
+	"platIntHandOff":	"<platformDir>/hw/myproject_kernel.dsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"myproject_kernel",
+	"systems":	[{
+			"systemName":	"myproject_kernel",
+			"systemDesc":	"myproject_kernel",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"myproject_kernel",
+			"sysActiveDom":	"mydomain",
+			"sysDefaultDom":	"mydomain",
+			"domains":	[{
+					"domainName":	"mydomain",
+					"domainDispName":	"mydomain",
+					"domainDesc":	"mydomain",
+					"processors":	"control_microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"8237e99b076338ec5d03dc0efd6bc006",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2021-11-23.20:49:36::SCWPlatform::Started generating the artifacts platform myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-11-23.20:49:36::SCWPlatform::Started generating the artifacts for system configuration myproject_kernel
+LOG::2021-11-23.20:49:36::SCWSystem::Checking the domain mydomain
+LOG::2021-11-23.20:49:36::SCWSystem::Not a boot domain 
+LOG::2021-11-23.20:49:36::SCWSystem::Started Processing the domain mydomain
+TRACE::2021-11-23.20:49:36::SCWDomain::Generating domain artifcats
+TRACE::2021-11-23.20:49:36::SCWMssOS::Generating standalone artifcats
+TRACE::2021-11-23.20:49:36::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:36::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::Completed writing the mss file at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp
+TRACE::2021-11-23.20:49:36::SCWMssOS::Mss edits present, copying mssfile into export location /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-11-23.20:49:36::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-11-23.20:49:36::SCWDomain::Skipping the build for domain :  mydomain
+TRACE::2021-11-23.20:49:36::SCWMssOS::skipping the bsp build ... 
+TRACE::2021-11-23.20:49:36::SCWMssOS::Copying to export directory.
+TRACE::2021-11-23.20:49:36::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-11-23.20:49:36::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2021-11-23.20:49:36::SCWSystem::Completed Processing the domain mydomain
+LOG::2021-11-23.20:49:36::SCWSystem::Completed Processing the sysconfig myproject_kernel
+LOG::2021-11-23.20:49:36::SCWPlatform::Completed generating the artifacts for system configuration myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Started preparing the platform 
+TRACE::2021-11-23.20:49:36::SCWSystem::Writing the bif file for system config myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWSystem::dir created 
+TRACE::2021-11-23.20:49:36::SCWSystem::Writing the bif 
+TRACE::2021-11-23.20:49:36::SCWPlatform::Started writing the spfm file 
+TRACE::2021-11-23.20:49:36::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-11-23.20:49:36::SCWPlatform::Completed generating the platform
+TRACE::2021-11-23.20:49:36::SCWMssOS::Saving the mss changes /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-11-23.20:49:36::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-11-23.20:49:36::SCWMssOS::Commit changes completed.
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:36::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:36::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:36::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWWriter::formatted JSON is {
+	"platformName":	"myproject_kernel",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Fixed",
+	"platformDesc":	"myproject_kernel",
+	"platHandOff":	"<platformDir>.hdf",
+	"platIntHandOff":	"<platformDir>/hw/myproject_kernel.dsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"myproject_kernel",
+	"systems":	[{
+			"systemName":	"myproject_kernel",
+			"systemDesc":	"myproject_kernel",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"myproject_kernel",
+			"sysActiveDom":	"mydomain",
+			"sysDefaultDom":	"mydomain",
+			"domains":	[{
+					"domainName":	"mydomain",
+					"domainDispName":	"mydomain",
+					"domainDesc":	"mydomain",
+					"processors":	"control_microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"8237e99b076338ec5d03dc0efd6bc006",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-11-23.20:49:36::SCWPlatform::updated the xpfm file.
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:36::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::Saving the mss changes /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-11-23.20:49:36::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-11-23.20:49:36::SCWMssOS::Commit changes completed.
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:36::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:36::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:36::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWWriter::formatted JSON is {
+	"platformName":	"myproject_kernel",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Fixed",
+	"platformDesc":	"myproject_kernel",
+	"platHandOff":	"<platformDir>.hdf",
+	"platIntHandOff":	"<platformDir>/hw/myproject_kernel.dsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"myproject_kernel",
+	"systems":	[{
+			"systemName":	"myproject_kernel",
+			"systemDesc":	"myproject_kernel",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"myproject_kernel",
+			"sysActiveDom":	"mydomain",
+			"sysDefaultDom":	"mydomain",
+			"domains":	[{
+					"domainName":	"mydomain",
+					"domainDispName":	"mydomain",
+					"domainDesc":	"mydomain",
+					"processors":	"control_microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"8237e99b076338ec5d03dc0efd6bc006",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:36::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:36::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+LOG::2021-11-23.20:49:36::SCWPlatform::Started generating the artifacts platform myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-11-23.20:49:36::SCWPlatform::Started generating the artifacts for system configuration myproject_kernel
+LOG::2021-11-23.20:49:36::SCWSystem::Checking the domain mydomain
+LOG::2021-11-23.20:49:36::SCWSystem::Not a boot domain 
+LOG::2021-11-23.20:49:36::SCWSystem::Started Processing the domain mydomain
+TRACE::2021-11-23.20:49:36::SCWDomain::Generating domain artifcats
+TRACE::2021-11-23.20:49:36::SCWMssOS::Generating standalone artifcats
+TRACE::2021-11-23.20:49:36::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:36::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:36::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:36::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::Completed writing the mss file at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp
+TRACE::2021-11-23.20:49:36::SCWMssOS::Mss edits present, copying mssfile into export location /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:36::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-11-23.20:49:36::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-11-23.20:49:36::SCWDomain::Building the domain as part of full build :  mydomain
+TRACE::2021-11-23.20:49:36::SCWMssOS::doing bsp build ... 
+TRACE::2021-11-23.20:49:36::SCWMssOS::System Command Ran  cd  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp ; bash -c "make  " 
+TRACE::2021-11-23.20:49:36::SCWMssOS::Running Make include in control_microblaze_0/libsrc/gpio_v4_6/src
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::make -C control_microblaze_0/libsrc/gpio_v4_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-
+TRACE::2021-11-23.20:49:36::SCWMssOS::ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunctio
+TRACE::2021-11-23.20:49:36::SCWMssOS::n-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Running Make include in control_microblaze_0/libsrc/standalone_v7_2/src
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::make -C control_microblaze_0/libsrc/standalone_v7_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIV
+TRACE::2021-11-23.20:49:36::SCWMssOS::ER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ff
+TRACE::2021-11-23.20:49:36::SCWMssOS::unction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Running Make include in control_microblaze_0/libsrc/cpu_v2_11/src
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::make -C control_microblaze_0/libsrc/cpu_v2_11/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-
+TRACE::2021-11-23.20:49:36::SCWMssOS::ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunctio
+TRACE::2021-11-23.20:49:36::SCWMssOS::n-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Running Make include in control_microblaze_0/libsrc/bram_v4_4/src
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::make -C control_microblaze_0/libsrc/bram_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-
+TRACE::2021-11-23.20:49:36::SCWMssOS::ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunctio
+TRACE::2021-11-23.20:49:36::SCWMssOS::n-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Running Make libs in control_microblaze_0/libsrc/gpio_v4_6/src
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::make -C control_microblaze_0/libsrc/gpio_v4_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar"
+TRACE::2021-11-23.20:49:36::SCWMssOS:: "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-s
+TRACE::2021-11-23.20:49:36::SCWMssOS::ections -fdata-sections -Wall -Wextra"
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Compiling gpio
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Running Make libs in control_microblaze_0/libsrc/standalone_v7_2/src
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::make -C control_microblaze_0/libsrc/standalone_v7_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=
+TRACE::2021-11-23.20:49:36::SCWMssOS::mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunc
+TRACE::2021-11-23.20:49:36::SCWMssOS::tion-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2021-11-23.20:49:36::SCWMssOS::Compiling standalone
+
+TRACE::2021-11-23.20:49:38::SCWMssOS::Running Make libs in control_microblaze_0/libsrc/cpu_v2_11/src
+
+TRACE::2021-11-23.20:49:38::SCWMssOS::make -C control_microblaze_0/libsrc/cpu_v2_11/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar"
+TRACE::2021-11-23.20:49:38::SCWMssOS:: "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-s
+TRACE::2021-11-23.20:49:38::SCWMssOS::ections -fdata-sections -Wall -Wextra"
+
+TRACE::2021-11-23.20:49:38::SCWMssOS::Compiling cpu
+
+TRACE::2021-11-23.20:49:38::SCWMssOS::Running Make libs in control_microblaze_0/libsrc/bram_v4_4/src
+
+TRACE::2021-11-23.20:49:38::SCWMssOS::make -C control_microblaze_0/libsrc/bram_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar"
+TRACE::2021-11-23.20:49:38::SCWMssOS:: "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-s
+TRACE::2021-11-23.20:49:38::SCWMssOS::ections -fdata-sections -Wall -Wextra"
+
+TRACE::2021-11-23.20:49:38::SCWMssOS::Compiling bram
+
+TRACE::2021-11-23.20:49:38::SCWMssOS::Finished building libraries
+
+TRACE::2021-11-23.20:49:38::SCWMssOS::Copying to export directory.
+TRACE::2021-11-23.20:49:38::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-11-23.20:49:38::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2021-11-23.20:49:38::SCWSystem::Completed Processing the domain mydomain
+LOG::2021-11-23.20:49:38::SCWSystem::Completed Processing the sysconfig myproject_kernel
+LOG::2021-11-23.20:49:38::SCWPlatform::Completed generating the artifacts for system configuration myproject_kernel
+TRACE::2021-11-23.20:49:38::SCWPlatform::Started preparing the platform 
+TRACE::2021-11-23.20:49:38::SCWSystem::Writing the bif file for system config myproject_kernel
+TRACE::2021-11-23.20:49:38::SCWSystem::dir created 
+TRACE::2021-11-23.20:49:38::SCWSystem::Writing the bif 
+TRACE::2021-11-23.20:49:38::SCWPlatform::Started writing the spfm file 
+TRACE::2021-11-23.20:49:38::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-11-23.20:49:38::SCWPlatform::Completed generating the platform
+TRACE::2021-11-23.20:49:38::SCWMssOS::Saving the mss changes /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:38::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-11-23.20:49:38::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-11-23.20:49:38::SCWMssOS::Commit changes completed.
+TRACE::2021-11-23.20:49:38::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:38::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:38::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:38::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:38::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:38::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:38::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:38::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:38::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:38::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:38::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:38::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:38::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:38::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:38::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:38::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:38::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:38::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:38::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:38::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:38::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:38::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:38::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:38::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:38::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:38::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:38::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:38::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:38::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:38::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:38::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:38::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:38::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:38::SCWWriter::formatted JSON is {
+	"platformName":	"myproject_kernel",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Fixed",
+	"platformDesc":	"myproject_kernel",
+	"platHandOff":	"<platformDir>.hdf",
+	"platIntHandOff":	"<platformDir>/hw/myproject_kernel.dsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"myproject_kernel",
+	"systems":	[{
+			"systemName":	"myproject_kernel",
+			"systemDesc":	"myproject_kernel",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"myproject_kernel",
+			"sysActiveDom":	"mydomain",
+			"sysDefaultDom":	"mydomain",
+			"domains":	[{
+					"domainName":	"mydomain",
+					"domainDispName":	"mydomain",
+					"domainDesc":	"mydomain",
+					"processors":	"control_microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"8237e99b076338ec5d03dc0efd6bc006",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-11-23.20:49:38::SCWPlatform::updated the xpfm file.
+TRACE::2021-11-23.20:49:38::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:38::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:38::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:38::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:38::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:38::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:38::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:38::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:38::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:38::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:38::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+LOG::2021-11-23.20:49:41::SCWPlatform::Started generating the artifacts platform myproject_kernel
+TRACE::2021-11-23.20:49:41::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-11-23.20:49:41::SCWPlatform::Started generating the artifacts for system configuration myproject_kernel
+LOG::2021-11-23.20:49:41::SCWSystem::Checking the domain mydomain
+LOG::2021-11-23.20:49:41::SCWSystem::Not a boot domain 
+LOG::2021-11-23.20:49:41::SCWSystem::Started Processing the domain mydomain
+TRACE::2021-11-23.20:49:41::SCWDomain::Generating domain artifcats
+TRACE::2021-11-23.20:49:41::SCWMssOS::Generating standalone artifcats
+TRACE::2021-11-23.20:49:41::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-11-23.20:49:41::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:41::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:41::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:41::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:41::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:41::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:41::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:41::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:41::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:41::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:41::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:41::SCWMssOS::Completed writing the mss file at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp
+TRACE::2021-11-23.20:49:41::SCWMssOS::Mss edits present, copying mssfile into export location /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:41::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-11-23.20:49:41::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-11-23.20:49:41::SCWDomain::Building the domain as part of full build :  mydomain
+TRACE::2021-11-23.20:49:41::SCWMssOS::doing bsp build ... 
+TRACE::2021-11-23.20:49:41::SCWMssOS::System Command Ran  cd  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp ; bash -c "make  " 
+TRACE::2021-11-23.20:49:41::SCWMssOS::Running Make include in control_microblaze_0/libsrc/gpio_v4_6/src
+
+TRACE::2021-11-23.20:49:41::SCWMssOS::make -C control_microblaze_0/libsrc/gpio_v4_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-
+TRACE::2021-11-23.20:49:41::SCWMssOS::ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunctio
+TRACE::2021-11-23.20:49:41::SCWMssOS::n-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2021-11-23.20:49:41::SCWMssOS::Running Make include in control_microblaze_0/libsrc/standalone_v7_2/src
+
+TRACE::2021-11-23.20:49:41::SCWMssOS::make -C control_microblaze_0/libsrc/standalone_v7_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIV
+TRACE::2021-11-23.20:49:41::SCWMssOS::ER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ff
+TRACE::2021-11-23.20:49:41::SCWMssOS::unction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2021-11-23.20:49:41::SCWMssOS::Running Make include in control_microblaze_0/libsrc/cpu_v2_11/src
+
+TRACE::2021-11-23.20:49:41::SCWMssOS::make -C control_microblaze_0/libsrc/cpu_v2_11/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-
+TRACE::2021-11-23.20:49:41::SCWMssOS::ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunctio
+TRACE::2021-11-23.20:49:41::SCWMssOS::n-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2021-11-23.20:49:41::SCWMssOS::Running Make include in control_microblaze_0/libsrc/bram_v4_4/src
+
+TRACE::2021-11-23.20:49:41::SCWMssOS::make -C control_microblaze_0/libsrc/bram_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-
+TRACE::2021-11-23.20:49:41::SCWMssOS::ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunctio
+TRACE::2021-11-23.20:49:41::SCWMssOS::n-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2021-11-23.20:49:41::SCWMssOS::Running Make libs in control_microblaze_0/libsrc/gpio_v4_6/src
+
+TRACE::2021-11-23.20:49:41::SCWMssOS::make -C control_microblaze_0/libsrc/gpio_v4_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar"
+TRACE::2021-11-23.20:49:41::SCWMssOS:: "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-s
+TRACE::2021-11-23.20:49:41::SCWMssOS::ections -fdata-sections -Wall -Wextra"
+
+TRACE::2021-11-23.20:49:41::SCWMssOS::Compiling gpio
+
+TRACE::2021-11-23.20:49:41::SCWMssOS::Running Make libs in control_microblaze_0/libsrc/standalone_v7_2/src
+
+TRACE::2021-11-23.20:49:41::SCWMssOS::make -C control_microblaze_0/libsrc/standalone_v7_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=
+TRACE::2021-11-23.20:49:41::SCWMssOS::mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunc
+TRACE::2021-11-23.20:49:41::SCWMssOS::tion-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2021-11-23.20:49:41::SCWMssOS::Compiling standalone
+
+TRACE::2021-11-23.20:49:43::SCWMssOS::Running Make libs in control_microblaze_0/libsrc/cpu_v2_11/src
+
+TRACE::2021-11-23.20:49:43::SCWMssOS::make -C control_microblaze_0/libsrc/cpu_v2_11/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar"
+TRACE::2021-11-23.20:49:43::SCWMssOS:: "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-s
+TRACE::2021-11-23.20:49:43::SCWMssOS::ections -fdata-sections -Wall -Wextra"
+
+TRACE::2021-11-23.20:49:43::SCWMssOS::Compiling cpu
+
+TRACE::2021-11-23.20:49:43::SCWMssOS::Running Make libs in control_microblaze_0/libsrc/bram_v4_4/src
+
+TRACE::2021-11-23.20:49:43::SCWMssOS::make -C control_microblaze_0/libsrc/bram_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar"
+TRACE::2021-11-23.20:49:43::SCWMssOS:: "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-s
+TRACE::2021-11-23.20:49:43::SCWMssOS::ections -fdata-sections -Wall -Wextra"
+
+TRACE::2021-11-23.20:49:43::SCWMssOS::Compiling bram
+
+TRACE::2021-11-23.20:49:43::SCWMssOS::Finished building libraries
+
+TRACE::2021-11-23.20:49:43::SCWMssOS::Copying to export directory.
+TRACE::2021-11-23.20:49:43::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-11-23.20:49:43::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2021-11-23.20:49:43::SCWSystem::Completed Processing the domain mydomain
+LOG::2021-11-23.20:49:43::SCWSystem::Completed Processing the sysconfig myproject_kernel
+LOG::2021-11-23.20:49:43::SCWPlatform::Completed generating the artifacts for system configuration myproject_kernel
+TRACE::2021-11-23.20:49:43::SCWPlatform::Started preparing the platform 
+TRACE::2021-11-23.20:49:43::SCWSystem::Writing the bif file for system config myproject_kernel
+TRACE::2021-11-23.20:49:43::SCWSystem::dir created 
+TRACE::2021-11-23.20:49:43::SCWSystem::Writing the bif 
+TRACE::2021-11-23.20:49:43::SCWPlatform::Started writing the spfm file 
+TRACE::2021-11-23.20:49:43::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-11-23.20:49:43::SCWPlatform::Completed generating the platform
+TRACE::2021-11-23.20:49:43::SCWMssOS::Saving the mss changes /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:43::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-11-23.20:49:43::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-11-23.20:49:43::SCWMssOS::Commit changes completed.
+TRACE::2021-11-23.20:49:43::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:43::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:43::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:43::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:43::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:43::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:43::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:43::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:43::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:43::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:43::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:43::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:43::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:43::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:43::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:43::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:43::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:43::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:43::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:43::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:43::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:43::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:43::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:43::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:43::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:43::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:43::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:43::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:43::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:43::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:43::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:43::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:43::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:43::SCWWriter::formatted JSON is {
+	"platformName":	"myproject_kernel",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Fixed",
+	"platformDesc":	"myproject_kernel",
+	"platHandOff":	"<platformDir>.hdf",
+	"platIntHandOff":	"<platformDir>/hw/myproject_kernel.dsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"myproject_kernel",
+	"systems":	[{
+			"systemName":	"myproject_kernel",
+			"systemDesc":	"myproject_kernel",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"myproject_kernel",
+			"sysActiveDom":	"mydomain",
+			"sysDefaultDom":	"mydomain",
+			"domains":	[{
+					"domainName":	"mydomain",
+					"domainDispName":	"mydomain",
+					"domainDesc":	"mydomain",
+					"processors":	"control_microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"8237e99b076338ec5d03dc0efd6bc006",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-11-23.20:49:43::SCWPlatform::updated the xpfm file.
+TRACE::2021-11-23.20:49:43::SCWPlatform::Trying to open the hw design at /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.hdf
+TRACE::2021-11-23.20:49:43::SCWPlatform::DSA given /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:43::SCWPlatform::DSA absoulate path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:43::SCWPlatform::DSA directory /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw
+TRACE::2021-11-23.20:49:43::SCWPlatform:: Platform Path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/hw/myproject_kernel.dsa
+TRACE::2021-11-23.20:49:43::SCWPlatform:: Unique name xilinx.com::myproject_kernel:1.0
+TRACE::2021-11-23.20:49:43::SCWPlatform::Trying to set the existing hwdb with name myproject_kernel
+TRACE::2021-11-23.20:49:43::SCWPlatform::Opened existing hwdb myproject_kernel
+TRACE::2021-11-23.20:49:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-23.20:49:43::SCWMssOS::Checking the sw design at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss
+TRACE::2021-11-23.20:49:43::SCWMssOS::DEBUG:  swdes dump  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss|system||
+
+TRACE::2021-11-23.20:49:43::SCWMssOS::Sw design exists and opened at  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/control_microblaze_0/mydomain/bsp/system.mss

@@ -1,0 +1,131 @@
+
+
+================================================================
+== Vivado HLS Report for 'shift_line_buffer_array_ap_ufixed_1u_config2_s'
+================================================================
+* Date:           Mon Nov 22 19:53:38 2021
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: virtexuplus
+* Target device:  xcu50-fsvh2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 4.00 ns | 1.222 ns |   0.50 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.22>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%kernel_window_8_V_read_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %kernel_window_8_V_read)" [firmware/nnet_utils/nnet_conv_stream.h:209]   --->   Operation 2 'read' 'kernel_window_8_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%kernel_window_7_V_read_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %kernel_window_7_V_read)" [firmware/nnet_utils/nnet_conv_stream.h:209]   --->   Operation 3 'read' 'kernel_window_7_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%kernel_window_5_V_read_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %kernel_window_5_V_read)" [firmware/nnet_utils/nnet_conv_stream.h:209]   --->   Operation 4 'read' 'kernel_window_5_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%kernel_window_4_V_read_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %kernel_window_4_V_read)" [firmware/nnet_utils/nnet_conv_stream.h:209]   --->   Operation 5 'read' 'kernel_window_4_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%kernel_window_2_V_read_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %kernel_window_2_V_read)" [firmware/nnet_utils/nnet_conv_stream.h:209]   --->   Operation 6 'read' 'kernel_window_2_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%kernel_window_1_V_read_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %kernel_window_1_V_read)" [firmware/nnet_utils/nnet_conv_stream.h:209]   --->   Operation 7 'read' 'kernel_window_1_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%in_elem_data_V_read_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %in_elem_data_V_read)" [firmware/nnet_utils/nnet_conv_stream.h:209]   --->   Operation 8 'read' 'in_elem_data_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str10) nounwind" [firmware/nnet_utils/nnet_conv_stream.h:214]   --->   Operation 9 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str46) nounwind" [firmware/nnet_utils/nnet_conv_stream.h:227]   --->   Operation 10 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.61ns)   --->   "%DataOut_V = call i8 @"_ssdm_op_MemShiftRead.[28 x i8]P"(i8* getelementptr inbounds ([28 x i8]* @line_buffer_Array_V_1_0_0, i64 0, i64 27), i8 %in_elem_data_V_read_1, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:231]   --->   Operation 11 'memshiftread' 'DataOut_V' <Predicate = true> <Delay = 0.61> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 0.61> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 8> <Depth = 28> <ShiftMem>
+ST_1 : Operation 12 [1/1] (0.61ns)   --->   "%DataOut_V_1 = call i8 @"_ssdm_op_MemShiftRead.[28 x i8]P"(i8* getelementptr inbounds ([28 x i8]* @line_buffer_Array_V_1_1_0, i64 0, i64 27), i8 %DataOut_V, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:231]   --->   Operation 12 'memshiftread' 'DataOut_V_1' <Predicate = true> <Delay = 0.61> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 0.61> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 8> <Depth = 28> <ShiftMem>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%mrv_s = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8 } undef, i8 %kernel_window_1_V_read_1, 0" [firmware/nnet_utils/nnet_conv_stream.h:236]   --->   Operation 13 'insertvalue' 'mrv_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_s, i8 %kernel_window_4_V_read_1, 1" [firmware/nnet_utils/nnet_conv_stream.h:236]   --->   Operation 14 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_1, i8 %kernel_window_7_V_read_1, 2" [firmware/nnet_utils/nnet_conv_stream.h:236]   --->   Operation 15 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%mrv_3 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_2, i8 %kernel_window_2_V_read_1, 3" [firmware/nnet_utils/nnet_conv_stream.h:236]   --->   Operation 16 'insertvalue' 'mrv_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%mrv_4 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_3, i8 %DataOut_V_1, 4" [firmware/nnet_utils/nnet_conv_stream.h:236]   --->   Operation 17 'insertvalue' 'mrv_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%mrv_5 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_4, i8 %kernel_window_5_V_read_1, 5" [firmware/nnet_utils/nnet_conv_stream.h:236]   --->   Operation 18 'insertvalue' 'mrv_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%mrv_6 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_5, i8 %DataOut_V, 6" [firmware/nnet_utils/nnet_conv_stream.h:236]   --->   Operation 19 'insertvalue' 'mrv_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%mrv_7 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_6, i8 %kernel_window_8_V_read_1, 7" [firmware/nnet_utils/nnet_conv_stream.h:236]   --->   Operation 20 'insertvalue' 'mrv_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%mrv_8 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_7, i8 %in_elem_data_V_read_1, 8" [firmware/nnet_utils/nnet_conv_stream.h:236]   --->   Operation 21 'insertvalue' 'mrv_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "ret { i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_8" [firmware/nnet_utils/nnet_conv_stream.h:236]   --->   Operation 22 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4ns, clock uncertainty: 0.5ns.
+
+ <State 1>: 1.22ns
+The critical path consists of the following:
+	wire read on port 'in_elem_data_V_read' (firmware/nnet_utils/nnet_conv_stream.h:209) [14]  (0 ns)
+	'memshiftread' operation ('DataOut.V', firmware/nnet_utils/nnet_conv_stream.h:231) [17]  (0.611 ns)
+	'memshiftread' operation ('DataOut.V', firmware/nnet_utils/nnet_conv_stream.h:231) [18]  (0.611 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

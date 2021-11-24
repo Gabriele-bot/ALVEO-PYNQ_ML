@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+
+<html>
+<!-- Styles -->
+<style>
+    #chartdiv {
+      width: 100%;
+      height: 1000px;
+    }
+</style>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>OPTraceViewer</title>
+  <script src="https://www.amcharts.com/lib/3/amcharts.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/serial.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/gantt.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/themes/light.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js">
+  </script>
+  <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all"/>
+
+  <form name="userInputForm" action="javascript:userInputFormCallback()">
+    <fieldset>
+    <legend>Graph Filters:</legend>
+    <table style="width:100%">
+      <col width="50"></col>
+      <col width="20"></col>
+      <col width="60"></col>
+      <tr>
+        <td style="text-align: center"; colspan="3"><input type="number" name="userDurationFilterSecInput" id="userDurationFilterSecInput" value="2" min="0" max="6000" step="1"> sec</td>
+        <td>Filter out run durations lower than this value</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td style="text-align: center"><input type="checkbox" name="userGroupPidSortSelected" id="userGroupPidSortSelected"></td>
+        <td>Group sort by process ID</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#0099ff"></td>
+        <td style="text-align: center"><input type="checkbox" name="userRollupSelected" id="userRollupSelected"></td>
+        <td>Show rollup entries</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#8dc49f"></td>
+        <td style="text-align: center"><input type="checkbox" name="userIndividualEntrySelected" id="userIndividualEntrySelected"></td>
+        <td>Show individual entries</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#cd82ad"></td>
+        <td style="text-align: center"><input type="checkbox" name="userCheckpointEntrySelected" id="userCheckpointEntrySelected"></td>
+        <td>Show checkpoints entry</td>
+      </tr>
+       <tr>
+        <td></td>
+        <td bgcolor="#b9783f"></td>
+        <td style="text-align: center"><input type="checkbox" name="userReportEntrySelected" id="userReportEntrySelected"></td>
+        <td>Show report entry</td>
+      </tr>
+
+    </table>
+    <br>
+    <input name="Submit" type="submit" value="Update Graph">
+    </fieldset>
+  </form> 
+
+  <div id="chartdiv">
+  </div>
+
+  <script>
+  </script>
+
+</head>
+
+
+<body>
+<table id="myDynamicTable" cellpadding="2" cellspacing="2" border="1" onclick="tester()">
+  <tr>
+  <td>Task</td>
+  <td>Start</td>
+  <td>Duration</td>
+  </tr>
+</table>
+<script>
+  // Default User Selected variables
+  var m_secondFilter = 1;
+  var m_groupPidSort = true;
+  var m_showRollup = true;
+  var m_showIndividualEntry = false;
+  var m_showCheckpointEntry = false;
+  var m_showReportEntry = false;
+
+  function SetDefaultUserValues()
+  {
+    document.getElementById("userDurationFilterSecInput").value = m_secondFilter;
+    document.getElementById("userGroupPidSortSelected").checked = m_groupPidSort;
+    document.getElementById("userRollupSelected").checked = m_showRollup;
+    document.getElementById("userIndividualEntrySelected").checked = m_showIndividualEntry;
+    document.getElementById("userCheckpointEntrySelected").checked = m_showCheckpointEntry;
+    document.getElementById("userReportEntrySelected").checked = m_showReportEntry;
+  }
+
+  window.onload = function(){
+    SetDefaultUserValues();
+  }
+
+
+
+
+  // Header
+  var header = "Keyword|pid|Entry|SrcFile|Catagory|TimeStampMSec|Action|Task|Tags|Misc";
+                         
+  // Insert Raw Data Here
+  // Note: Do not change the following signature. 
+  var csvData =    [
+      "[OPTRACE]|3444|10|run|cpp|1637708098678|START|OCL_LINK|",
+      "[OPTRACE]|3444|11|setupBinaryForLink|cpp|1637708098679|START|Create Binary|",
+      "[OPTRACE]|3444|12||cpp|1637708098679|END|Create Binary|",
+      "[OPTRACE]|3444|13|setupBinaryForLink|cpp|1637708098679|START|Extract Kernels|",
+      "[OPTRACE]|3444|14||cpp|1637708098821|END|Extract Kernels|",
+      "[OPTRACE]|3444|15|launchStep_|cpp|1637708098871|START|Launch Step: system_link|",
+      "[OPTRACE]|3444|16||cpp|1637708105004|END|Launch Step: system_link|",
+      "[OPTRACE]|3444|17|launchStep_|cpp|1637708105004|START|Launch Step: cf2sw|",
+      "[OPTRACE]|3444|18||cpp|1637708105704|END|Launch Step: cf2sw|",
+      "[OPTRACE]|3444|19|launchStep_|cpp|1637708105704|START|Launch Step: rtd2_system_diagram|",
+      "[OPTRACE]|3444|1|main|cpp|1637708085385|START|v++|ROLLUP_0",
+      "[OPTRACE]|3444|20||cpp|1637708106313|END|Launch Step: rtd2_system_diagram|",
+      "[OPTRACE]|3444|21|launchStep_|cpp|1637708106313|START|Launch Step: vpl|",
+      "[OPTRACE]|3444|280||cpp|1637710745260|END|Launch Step: vpl|",
+      "[OPTRACE]|3444|281|launchStep_|cpp|1637710745260|START|Launch Step: rtdgen|",
+      "[OPTRACE]|3444|282|launchCf2sw_|cpp|1637710745264|START|Launch cf2sw|",
+      "[OPTRACE]|3444|283||cpp|1637710746015|END|Launch cf2sw|",
+      "[OPTRACE]|3444|284|writeSystemDiagram|cpp|1637710746015|START|writeSystemDiagram|",
+      "[OPTRACE]|3444|285||cpp|1637710746020|END|writeSystemDiagram|",
+      "[OPTRACE]|3444|286||cpp|1637710746020|END|Launch Step: rtdgen|",
+      "[OPTRACE]|3444|287|launchStep_|cpp|1637710746021|START|Launch Step: xclbinutil|",
+      "[OPTRACE]|3444|288||cpp|1637710746161|END|Launch Step: xclbinutil|",
+      "[OPTRACE]|3444|289|launchStep_|cpp|1637710746161|START|Launch Step: xclbinutilinfo|",
+      "[OPTRACE]|3444|290||cpp|1637710746460|END|Launch Step: xclbinutilinfo|",
+      "[OPTRACE]|3444|291|launchStep_|cpp|1637710746460|START|Launch Step: generate_sc_driver|",
+      "[OPTRACE]|3444|292||cpp|1637710746461|END|Launch Step: generate_sc_driver|",
+      "[OPTRACE]|3444|293||cpp|1637710746462|END|OCL_LINK|",
+      "[OPTRACE]|3444|294||cpp|1637710746658|END|v++|",
+      "[OPTRACE]|3444|2|run|cpp|1637708085385|START|Validate Kernels|",
+      "[OPTRACE]|3444|3||cpp|1637708085632|END|Validate Kernels|",
+      "[OPTRACE]|3444|4|prepareProject|cpp|1637708085676|START|Create Solution|",
+      "[OPTRACE]|3444|5||cpp|1637708096726|END|Create Solution|",
+      "[OPTRACE]|3444|6|prepareProject|cpp|1637708096726|START|Add Device|",
+      "[OPTRACE]|3444|7|addDevice|cpp|1637708096727|START|Find & Load Device|",
+      "[OPTRACE]|3444|8||cpp|1637708096894|END|Find & Load Device|",
+      "[OPTRACE]|3444|9||cpp|1637708098655|END|Add Device|",
+      "[OPTRACE]|3865|22|main|cpp|1637708107488|START|vpl|",
+      "[OPTRACE]|3865|23|runPlatformLinker|cpp|1637708107519|START|runPlatformLinker|",
+      "[OPTRACE]|3865|24|setupBinaryForLink|cpp|1637708107519|START|Create Solution|",
+      "[OPTRACE]|3865|25||cpp|1637708107522|END|Create Solution|",
+      "[OPTRACE]|3865|26|setupBinaryForLink|cpp|1637708107522|START|Add platform|",
+      "[OPTRACE]|3865|276|runPlatformLinker|cpp|1637710745146|START|Generate Resource Availability Report|",
+      "[OPTRACE]|3865|277||cpp|1637710745147|END|Generate Resource Availability Report|",
+      "[OPTRACE]|3865|278||cpp|1637710745147|END|runPlatformLinker|",
+      "[OPTRACE]|3865|279||cpp|1637710745254|END|vpl|",
+      "[OPTRACE]|3865|27||cpp|1637708109421|END|Add platform|",
+      "[OPTRACE]|3865|28|setupBinaryForLink|cpp|1637708109421|START|Create Binary|",
+      "[OPTRACE]|3865|29||cpp|1637708109421|END|Create Binary|",
+      "[OPTRACE]|3865|30|setupBinaryForLink|cpp|1637708109421|START|Create Kernels|",
+      "[OPTRACE]|3865|31||cpp|1637708109422|END|Create Kernels|",
+      "[OPTRACE]|3865|32|runPlatformLinker|cpp|1637708109429|START|Process Kernels|",
+      "[OPTRACE]|3865|33||cpp|1637708109429|END|Process Kernels|",
+      "[OPTRACE]|3865|34|runPlatformLinker|cpp|1637708109429|START|Process Kernel Debug|",
+      "[OPTRACE]|3865|35||cpp|1637708109429|END|Process Kernel Debug|",
+      "[OPTRACE]|3865|36|runPlatformLinker|cpp|1637708109429|START|Set Kernel Debug|",
+      "[OPTRACE]|3865|37||cpp|1637708109429|END|Set Kernel Debug|",
+      "[OPTRACE]|3865|38|runPlatformLinker|cpp|1637708109429|START|Set Miscellaneous|",
+      "[OPTRACE]|3865|39||cpp|1637708109429|END|Set Miscellaneous|",
+      "[OPTRACE]|3865|40|run|cpp|1637708109429|START|Extract Platform|",
+      "[OPTRACE]|3865|41||cpp|1637708110755|END|Extract Platform|",
+      "[OPTRACE]|3968|42|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/vpl.tcl|vivado_impl|1637708118287|START|Implementation|ROLLUP_1",
+      "[OPTRACE]|3968|43|ipirun.tcl|vpl|1637708118317|START|ipirun|ROLLUP_0",
+      "[OPTRACE]|3968|44|ipirun.tcl|vpl|1637708118318|END|ipirun|",
+      "[OPTRACE]|3968|45|ipirun.tcl|vpl|1637708118336|START|Source pre_sys_link Tcl script|",
+      "[OPTRACE]|3968|46|ipirun.tcl|vpl|1637708118337|END|Source pre_sys_link Tcl script|",
+      "[OPTRACE]|3968|47|ipirun.tcl|vpl|1637708118337|START|Create project|",
+      "[OPTRACE]|3968|48|ipirun.tcl|vpl|1637708120280|END|Create project|",
+      "[OPTRACE]|3968|49|ipirun.tcl|vpl|1637708120284|START|Create IP caching environment|",
+      "[OPTRACE]|3968|50|ipirun.tcl|vpl|1637708124145|END|Create IP caching environment|",
+      "[OPTRACE]|3968|51|ipirun.tcl|vpl|1637708124145|START|Import/add dynamic BD|",
+      "[OPTRACE]|3968|52|ipirun.tcl|vpl|1637708136223|END|Import/add dynamic BD|",
+      "[OPTRACE]|3968|53|ipirun.tcl|vpl|1637708136223|START|Open BD and insert kernels|",
+      "[OPTRACE]|3968|54|ipirun.tcl|vpl|1637708177602|END|Open BD and insert kernels|",
+      "[OPTRACE]|3968|55|ipirun.tcl|vpl|1637708177603|START|Add debug/profiling support|",
+      "[OPTRACE]|3968|56|ipirun.tcl|vpl|1637708177675|END|Add debug/profiling support|",
+      "[OPTRACE]|3968|57|ipirun.tcl|vpl|1637708177675|START|IPI address assignments|",
+      "[OPTRACE]|3968|58|ipirun.tcl|vpl|1637708177682|END|IPI address assignments|",
+      "[OPTRACE]|3968|59|ipirun.tcl|vpl|1637708177683|START|Sourcing hardware platform post_sys_link Tcl script|",
+      "[OPTRACE]|3968|60|ipirun.tcl|vpl|1637708177732|END|Sourcing hardware platform post_sys_link Tcl script|",
+      "[OPTRACE]|3968|61|ipirun.tcl|vpl|1637708177735|START|Save BD|",
+      "[OPTRACE]|3968|62|ipirun.tcl|vpl|1637708177829|END|Save BD|",
+      "[OPTRACE]|3968|63|ipirun.tcl|vpl|1637708177829|START|Create address map and debug IP profile files|",
+      "[OPTRACE]|3968|64|ipirun.tcl|vpl|1637708177840|END|Create address map and debug IP profile files|",
+      "[OPTRACE]|3968|65|ipirun.tcl|vpl|1637708177840|START|Generate output products|",
+      "[OPTRACE]|3968|66|ipirun.tcl|vpl|1637708217093|END|Generate output products|",
+      "[OPTRACE]|3968|67|ipirun.tcl|vpl|1637708217096|START|Source report_commands_tcl|",
+      "[OPTRACE]|3968|68|ipirun.tcl|vpl|1637708217215|END|Source report_commands_tcl|",
+      "[OPTRACE]|3968|69|ipirun.tcl|vpl|1637708217215|START|Source synth_props_tcl|",
+      "[OPTRACE]|4393|114|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1637708288545|END|synth_design|",
+      "[OPTRACE]|4393|115|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1637708288545|START|Write IP Cache|",
+      "[OPTRACE]|4393|119|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1637708289015|END|Write IP Cache|",
+      "[OPTRACE]|4393|120|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1637708289015|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|4393|122|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1637708289088|END|write_checkpoint|",
+      "[OPTRACE]|4393|123|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1637708289088|START|synth reports|REPORT",
+      "[OPTRACE]|4393|124|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1637708289238|END|synth reports|",
+      "[OPTRACE]|4393|125|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1637708289571|END|bd_22c0_clk_kernel_adapt_0_synth_1|",
+      "[OPTRACE]|4393|72|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1637708225598|START|bd_22c0_clk_kernel_adapt_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|4393|75|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1637708225599|START|Creating in-memory project|",
+      "[OPTRACE]|4393|84|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1637708230751|END|Creating in-memory project|",
+      "[OPTRACE]|4393|85|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1637708230752|START|Adding files|",
+      "[OPTRACE]|4393|94|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1637708230924|END|Adding files|",
+      "[OPTRACE]|4393|95|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1637708230925|START|Configure IP Cache|",
+      "[OPTRACE]|4393|96|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1637708230927|END|Configure IP Cache|",
+      "[OPTRACE]|4393|97|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1637708230927|START|synth_design|",
+      "[OPTRACE]|4394|102|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1637708287980|END|synth_design|",
+      "[OPTRACE]|4394|103|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1637708287981|START|Write IP Cache|",
+      "[OPTRACE]|4394|106|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1637708288448|END|Write IP Cache|",
+      "[OPTRACE]|4394|107|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1637708288448|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|4394|110|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1637708288522|END|write_checkpoint|",
+      "[OPTRACE]|4394|111|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1637708288522|START|synth reports|REPORT",
+      "[OPTRACE]|4394|116|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1637708288682|END|synth reports|",
+      "[OPTRACE]|4394|118|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1637708289007|END|bd_22c0_clk_hbm_adapt_0_synth_1|",
+      "[OPTRACE]|4394|73|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1637708225598|START|bd_22c0_clk_hbm_adapt_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|4394|74|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1637708225599|START|Creating in-memory project|",
+      "[OPTRACE]|4394|78|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1637708230675|END|Creating in-memory project|",
+      "[OPTRACE]|4394|79|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1637708230675|START|Adding files|",
+      "[OPTRACE]|4394|86|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1637708230859|END|Adding files|",
+      "[OPTRACE]|4394|87|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1637708230860|START|Configure IP Cache|",
+      "[OPTRACE]|4394|88|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1637708230861|END|Configure IP Cache|",
+      "[OPTRACE]|4394|89|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1637708230861|START|synth_design|",
+      "[OPTRACE]|4395|104|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1637708288013|END|synth_design|",
+      "[OPTRACE]|4395|105|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1637708288014|START|Write IP Cache|",
+      "[OPTRACE]|4395|108|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1637708288468|END|Write IP Cache|",
+      "[OPTRACE]|4395|109|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1637708288468|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|4395|112|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1637708288544|END|write_checkpoint|",
+      "[OPTRACE]|4395|113|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1637708288544|START|synth reports|REPORT",
+      "[OPTRACE]|4395|117|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1637708288700|END|synth reports|",
+      "[OPTRACE]|4395|121|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1637708289036|END|bd_22c0_clk_kernel2_adapt_0_synth_1|",
+      "[OPTRACE]|4395|70|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1637708225588|START|bd_22c0_clk_kernel2_adapt_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|4395|71|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1637708225588|START|Creating in-memory project|",
+      "[OPTRACE]|4395|82|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1637708230702|END|Creating in-memory project|",
+      "[OPTRACE]|4395|83|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1637708230702|START|Adding files|",
+      "[OPTRACE]|4395|90|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1637708230881|END|Adding files|",
+      "[OPTRACE]|4395|91|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1637708230882|START|Configure IP Cache|",
+      "[OPTRACE]|4395|92|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1637708230882|END|Configure IP Cache|",
+      "[OPTRACE]|4395|93|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1637708230883|START|synth_design|",
+      "[OPTRACE]|4396|100|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.tcl|vivado_synth|1637708231395|END|Configure IP Cache|",
+      "[OPTRACE]|4396|101|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.tcl|vivado_synth|1637708231395|START|synth_design|",
+      "[OPTRACE]|4396|142|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.tcl|vivado_synth|1637708319904|END|synth_design|",
+      "[OPTRACE]|4396|143|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.tcl|vivado_synth|1637708319904|START|Write IP Cache|",
+      "[OPTRACE]|4396|144|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.tcl|vivado_synth|1637708322293|END|Write IP Cache|",
+      "[OPTRACE]|4396|145|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.tcl|vivado_synth|1637708322296|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|4396|146|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.tcl|vivado_synth|1637708323563|END|write_checkpoint|",
+      "[OPTRACE]|4396|147|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.tcl|vivado_synth|1637708323563|START|synth reports|REPORT",
+      "[OPTRACE]|4396|148|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.tcl|vivado_synth|1637708323748|END|synth reports|",
+      "[OPTRACE]|4396|149|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.tcl|vivado_synth|1637708324779|END|bd_85ad_interconnect1_0_0_synth_1|",
+      "[OPTRACE]|4396|76|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.tcl|vivado_synth|1637708225602|START|bd_85ad_interconnect1_0_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|4396|77|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.tcl|vivado_synth|1637708225602|START|Creating in-memory project|",
+      "[OPTRACE]|4396|80|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.tcl|vivado_synth|1637708230701|END|Creating in-memory project|",
+      "[OPTRACE]|4396|81|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.tcl|vivado_synth|1637708230701|START|Adding files|",
+      "[OPTRACE]|4396|98|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.tcl|vivado_synth|1637708231351|END|Adding files|",
+      "[OPTRACE]|4396|99|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.tcl|vivado_synth|1637708231352|START|Configure IP Cache|",
+      "[OPTRACE]|4822|128|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1637708297818|START|bd_22c0_clk_kernel_cont_adapt_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|4822|129|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1637708297819|START|Creating in-memory project|",
+      "[OPTRACE]|4822|132|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1637708302862|END|Creating in-memory project|",
+      "[OPTRACE]|4822|133|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1637708302862|START|Adding files|",
+      "[OPTRACE]|4822|138|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1637708303026|END|Adding files|",
+      "[OPTRACE]|4822|139|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1637708303027|START|Configure IP Cache|",
+      "[OPTRACE]|4822|140|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1637708303030|END|Configure IP Cache|",
+      "[OPTRACE]|4822|141|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1637708303030|END|bd_22c0_clk_kernel_cont_adapt_0_synth_1|",
+      "[OPTRACE]|4824|126|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_cont_adapt_0_synth_1/bd_22c0_clk_kernel2_cont_adapt_0.tcl|vivado_synth|1637708297785|START|bd_22c0_clk_kernel2_cont_adapt_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|4824|127|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_cont_adapt_0_synth_1/bd_22c0_clk_kernel2_cont_adapt_0.tcl|vivado_synth|1637708297785|START|Creating in-memory project|",
+      "[OPTRACE]|4824|130|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_cont_adapt_0_synth_1/bd_22c0_clk_kernel2_cont_adapt_0.tcl|vivado_synth|1637708302815|END|Creating in-memory project|",
+      "[OPTRACE]|4824|131|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_cont_adapt_0_synth_1/bd_22c0_clk_kernel2_cont_adapt_0.tcl|vivado_synth|1637708302815|START|Adding files|",
+      "[OPTRACE]|4824|134|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_cont_adapt_0_synth_1/bd_22c0_clk_kernel2_cont_adapt_0.tcl|vivado_synth|1637708302980|END|Adding files|",
+      "[OPTRACE]|4824|135|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_cont_adapt_0_synth_1/bd_22c0_clk_kernel2_cont_adapt_0.tcl|vivado_synth|1637708302981|START|Configure IP Cache|",
+      "[OPTRACE]|4824|136|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_cont_adapt_0_synth_1/bd_22c0_clk_kernel2_cont_adapt_0.tcl|vivado_synth|1637708302984|END|Configure IP Cache|",
+      "[OPTRACE]|4824|137|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_cont_adapt_0_synth_1/bd_22c0_clk_kernel2_cont_adapt_0.tcl|vivado_synth|1637708302984|END|bd_22c0_clk_kernel2_cont_adapt_0_synth_1|",
+      "[OPTRACE]|4913|150|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/ulp_hmss_0_0.tcl|vivado_synth|1637708333230|START|ulp_hmss_0_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|4913|151|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/ulp_hmss_0_0.tcl|vivado_synth|1637708333230|START|Creating in-memory project|",
+      "[OPTRACE]|4913|152|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/ulp_hmss_0_0.tcl|vivado_synth|1637708338081|END|Creating in-memory project|",
+      "[OPTRACE]|4913|153|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/ulp_hmss_0_0.tcl|vivado_synth|1637708338081|START|Adding files|",
+      "[OPTRACE]|4913|154|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/ulp_hmss_0_0.tcl|vivado_synth|1637708340154|END|Adding files|",
+      "[OPTRACE]|4913|155|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/ulp_hmss_0_0.tcl|vivado_synth|1637708340157|START|Configure IP Cache|",
+      "[OPTRACE]|4913|156|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/ulp_hmss_0_0.tcl|vivado_synth|1637708340170|END|Configure IP Cache|",
+      "[OPTRACE]|4913|157|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/ulp_hmss_0_0.tcl|vivado_synth|1637708340170|START|synth_design|",
+      "[OPTRACE]|4913|158|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/ulp_hmss_0_0.tcl|vivado_synth|1637708398248|END|synth_design|",
+      "[OPTRACE]|4913|159|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/ulp_hmss_0_0.tcl|vivado_synth|1637708398248|START|Write IP Cache|",
+      "[OPTRACE]|4913|160|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/ulp_hmss_0_0.tcl|vivado_synth|1637708399070|END|Write IP Cache|",
+      "[OPTRACE]|4913|161|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/ulp_hmss_0_0.tcl|vivado_synth|1637708399071|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|4913|162|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/ulp_hmss_0_0.tcl|vivado_synth|1637708399389|END|write_checkpoint|",
+      "[OPTRACE]|4913|163|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/ulp_hmss_0_0.tcl|vivado_synth|1637708399390|START|synth reports|REPORT",
+      "[OPTRACE]|4913|164|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/ulp_hmss_0_0.tcl|vivado_synth|1637708399548|END|synth reports|",
+      "[OPTRACE]|4913|165|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/ulp_hmss_0_0.tcl|vivado_synth|1637708399996|END|ulp_hmss_0_0_synth_1|",
+      "[OPTRACE]|5050|166|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1637708408455|START|my_rm_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|5050|167|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1637708408456|START|Creating in-memory project|",
+      "[OPTRACE]|5050|168|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1637708413300|END|Creating in-memory project|",
+      "[OPTRACE]|5050|169|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1637708413300|START|Adding files|",
+      "[OPTRACE]|5050|170|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1637708417839|END|Adding files|",
+      "[OPTRACE]|5050|171|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1637708417848|START|synth_design|",
+      "[OPTRACE]|5050|172|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1637708476936|END|synth_design|",
+      "[OPTRACE]|5050|173|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1637708476957|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|5050|174|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1637708477295|END|write_checkpoint|",
+      "[OPTRACE]|5050|175|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1637708477295|START|synth reports|REPORT",
+      "[OPTRACE]|5050|176|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1637708477295|END|synth reports|",
+      "[OPTRACE]|5050|177|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1637708477747|END|my_rm_synth_1|",
+      "[OPTRACE]|5281|178|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708487807|START|Implementation|ROLLUP_1",
+      "[OPTRACE]|5281|179|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708487807|START|Phase: Init Design|ROLLUP_AUTO",
+      "[OPTRACE]|5281|180|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708487808|START|Design Initialization: pre hook|",
+      "[OPTRACE]|5281|181|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708487825|END|Design Initialization: pre hook|",
+      "[OPTRACE]|5281|182|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708487825|START|create in-memory project|",
+      "[OPTRACE]|5281|183|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708489218|END|create in-memory project|",
+      "[OPTRACE]|5281|184|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708489219|START|set parameters|",
+      "[OPTRACE]|5281|185|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708492709|END|set parameters|",
+      "[OPTRACE]|5281|186|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708492709|START|add files|",
+      "[OPTRACE]|5281|187|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708497655|START|read constraints: implementation|",
+      "[OPTRACE]|5281|188|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708497656|END|read constraints: implementation|",
+      "[OPTRACE]|5281|189|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708497656|END|add files|",
+      "[OPTRACE]|5281|190|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708497656|START|link_design|",
+      "[OPTRACE]|5281|191|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708675956|END|link_design|",
+      "[OPTRACE]|5281|192|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708675956|START|gray box cells|",
+      "[OPTRACE]|5281|193|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708675956|END|gray box cells|",
+      "[OPTRACE]|5281|194|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708675957|START|Design Initialization: post hook|",
+      "[OPTRACE]|5281|195|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708676017|END|Design Initialization: post hook|",
+      "[OPTRACE]|5281|196|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708676017|START|init_design_reports|REPORT",
+      "[OPTRACE]|5281|197|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708676017|END|init_design_reports|",
+      "[OPTRACE]|5281|198|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708676017|START|init_design_write_hwdef|",
+      "[OPTRACE]|5281|199|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708677602|END|init_design_write_hwdef|",
+      "[OPTRACE]|5281|200|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708677603|END|Phase: Init Design|",
+      "[OPTRACE]|5281|201|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708677603|START|Phase: Opt Design|ROLLUP_AUTO",
+      "[OPTRACE]|5281|202|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708677603|START|Opt Design: pre hook|",
+      "[OPTRACE]|5281|203|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708687316|END|Opt Design: pre hook|",
+      "[OPTRACE]|5281|204|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708687317|START|read constraints: opt_design|",
+      "[OPTRACE]|5281|205|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708687317|END|read constraints: opt_design|",
+      "[OPTRACE]|5281|206|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708687317|START|opt_design|",
+      "[OPTRACE]|5281|207|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708801043|END|opt_design|",
+      "[OPTRACE]|5281|208|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708801043|START|read constraints: opt_design_post|",
+      "[OPTRACE]|5281|209|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708801043|END|read constraints: opt_design_post|",
+      "[OPTRACE]|5281|210|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708801043|START|Opt Design: post hook|",
+      "[OPTRACE]|5281|211|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708801055|END|Opt Design: post hook|",
+      "[OPTRACE]|5281|212|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708801055|START|opt_design reports|REPORT",
+      "[OPTRACE]|5281|213|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708801055|END|opt_design reports|",
+      "[OPTRACE]|5281|214|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708801056|END|Phase: Opt Design|",
+      "[OPTRACE]|5281|215|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708801056|START|Phase: Place Design|ROLLUP_AUTO",
+      "[OPTRACE]|5281|216|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708801056|START|Place Design: pre hook|",
+      "[OPTRACE]|5281|217|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708801087|END|Place Design: pre hook|",
+      "[OPTRACE]|5281|218|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708801087|START|read constraints: place_design|",
+      "[OPTRACE]|5281|219|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708801087|END|read constraints: place_design|",
+      "[OPTRACE]|5281|220|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708801087|START|implement_debug_core|",
+      "[OPTRACE]|5281|221|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708801101|END|implement_debug_core|",
+      "[OPTRACE]|5281|222|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637708801101|START|place_design|",
+      "[OPTRACE]|5281|223|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709452930|END|place_design|",
+      "[OPTRACE]|5281|224|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709452930|START|read constraints: place_design_post|",
+      "[OPTRACE]|5281|225|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709452930|END|read constraints: place_design_post|",
+      "[OPTRACE]|5281|226|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709452930|START|Place Design: post hook|",
+      "[OPTRACE]|5281|227|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709453327|END|Place Design: post hook|",
+      "[OPTRACE]|5281|228|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709453327|START|place_design reports|REPORT",
+      "[OPTRACE]|5281|229|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709453327|END|place_design reports|",
+      "[OPTRACE]|5281|230|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709453327|END|Phase: Place Design|",
+      "[OPTRACE]|5281|231|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709453327|START|Phase: Physical Opt Design|ROLLUP_AUTO",
+      "[OPTRACE]|5281|232|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709453327|START|read constraints: phys_opt_design|",
+      "[OPTRACE]|5281|233|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709453327|END|read constraints: phys_opt_design|",
+      "[OPTRACE]|5281|234|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709453327|START|phys_opt_design|",
+      "[OPTRACE]|5281|235|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709588548|END|phys_opt_design|",
+      "[OPTRACE]|5281|236|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709588549|START|read constraints: phys_opt_design_post|",
+      "[OPTRACE]|5281|237|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709588549|END|read constraints: phys_opt_design_post|",
+      "[OPTRACE]|5281|238|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709588549|START|phys_opt_design report|REPORT",
+      "[OPTRACE]|5281|239|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709588549|END|phys_opt_design report|",
+      "[OPTRACE]|5281|240|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709588549|END|Phase: Physical Opt Design|",
+      "[OPTRACE]|5281|241|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709588549|START|Phase: Route Design|ROLLUP_AUTO",
+      "[OPTRACE]|5281|242|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709588550|START|read constraints: route_design|",
+      "[OPTRACE]|5281|243|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709588550|END|read constraints: route_design|",
+      "[OPTRACE]|5281|244|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637709588550|START|route_design|",
+      "[OPTRACE]|5281|245|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710227796|END|route_design|",
+      "[OPTRACE]|5281|246|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710227796|START|read constraints: route_design_post|",
+      "[OPTRACE]|5281|247|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710227796|END|read constraints: route_design_post|",
+      "[OPTRACE]|5281|248|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710227796|START|Route Design: post hook|",
+      "[OPTRACE]|5281|249|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710279067|END|Route Design: post hook|",
+      "[OPTRACE]|5281|250|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710279067|START|Route Design: write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|5281|251|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710336003|END|Route Design: write_checkpoint|",
+      "[OPTRACE]|5281|252|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710336003|START|route_design reports|REPORT",
+      "[OPTRACE]|5281|253|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710343128|END|route_design reports|",
+      "[OPTRACE]|5281|254|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710343128|START|route_design misc|",
+      "[OPTRACE]|5281|255|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710343129|START|route_design write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|5281|256|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710343129|END|route_design write_checkpoint|",
+      "[OPTRACE]|5281|257|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710343129|END|route_design misc|",
+      "[OPTRACE]|5281|258|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710343129|END|Phase: Route Design|",
+      "[OPTRACE]|5281|259|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710343129|START|Phase: Write Bitstream|ROLLUP_AUTO",
+      "[OPTRACE]|5281|260|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710343129|START|write_bitstream setup|",
+      "[OPTRACE]|5281|261|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710343129|START|Write Bitstream: pre hook|",
+      "[OPTRACE]|5281|262|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710343130|END|Write Bitstream: pre hook|",
+      "[OPTRACE]|5281|263|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710343130|START|read constraints: write_bitstream|",
+      "[OPTRACE]|5281|264|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710343130|END|read constraints: write_bitstream|",
+      "[OPTRACE]|5281|265|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710343131|END|write_bitstream setup|",
+      "[OPTRACE]|5281|266|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710343131|START|write_bitstream|",
+      "[OPTRACE]|5281|267|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710739194|END|write_bitstream|",
+      "[OPTRACE]|5281|268|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710739194|START|write_bitstream misc|",
+      "[OPTRACE]|5281|269|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710739194|START|read constraints: write_bitstream_post|",
+      "[OPTRACE]|5281|270|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710739194|END|read constraints: write_bitstream_post|",
+      "[OPTRACE]|5281|271|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710739194|START|Write Bitstream: post hook|",
+      "[OPTRACE]|5281|272|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710739196|END|Write Bitstream: post hook|",
+      "[OPTRACE]|5281|273|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710739201|END|write_bitstream misc|",
+      "[OPTRACE]|5281|274|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710739201|END|Phase: Write Bitstream|",
+      "[OPTRACE]|5281|275|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1637710739201|END|Implementation|"
+      ];
+
+  var legendData = [
+  { "title": "Report Generation",
+    "color": "#b9783f"
+  }, {
+    "title": "Write Checkpoint",
+    "color": "#cd82ad"
+  },
+  {
+    "title": "Incomplete Data",
+    "color": "#cc4748"
+  } ];
+
+  // -- Convert Raw data into something we can use ---------------------------
+  console.log("Convert log data (%s entries) to Javascript 'JSON' objects...", csvData.length);
+  var jsonData = csvArrayToJSON(header, csvData, "|");
+
+  // -- Clean up the JSON objects --------------------------------------------
+  for (var i = 0; i < jsonData.length; i++) {
+    jsonData[i].Action = jsonData[i].Action.toUpperCase();
+    jsonData[i].Tags = jsonData[i].Tags.toUpperCase();
+    jsonData[i].Tags = jsonData[i].Tags.trim();
+    jsonData[i].TimeStampMSec = parseInt(jsonData[i].TimeStampMSec, 10);
+    jsonData[i].pid = parseInt(jsonData[i].pid, 10);
+  }
+
+  // -- Sort JSON array ------------------------------------------------------
+  console.log("Sorting JSON objects (%s objects) according to timestamps...", jsonData.length);
+  jsonData.sort(compareByTimeStamp);
+
+  // Record the PID grouping order
+  var pidOrder = new Map();
+  for (var i = 0; i < jsonData.length; i++) {
+    if (pidOrder.has(jsonData[i].pid) == false) {
+      pidOrder.set(jsonData[i].pid, i);    // Simple ordering (lower is first)
+    }
+  }
+
+  // -- Create secondary data array for the chart data array -----------------
+  console.log("Preparing graph data...");
+
+  // Task limits
+  var m_startTS = 0;      // Earliest Timestamp
+  var m_endTS = 0;        // Latest Timestamp
+
+  if (jsonData.length > 0) {
+    m_startTS = jsonData[0].TimeStampMSec;
+    m_endTS = jsonData[jsonData.length - 1].TimeStampMSec;
+  }
+
+
+  var chartData = [ ];   // Empty JSON array
+
+
+  populateChartData();
+  tableCreate( chartData );
+
+  filterChartEntries();
+
+  // -- Search for "holes"
+  // -- Sort by common PID
+  // -- Create groupings by process
+
+  console.log("done");
+
+  var chart = AmCharts.makeChart("chartdiv", {
+    "type": "gantt",
+    "theme": "light",
+    "titles": [
+    { "text": "OPTrace", "size": 15}],
+    "marginRight": 70,
+    "period": "fff",                                     // X-Axis
+    "balloonDateFormat": "JJ:NN:SS",
+    "columnWidth": 0.5,                                 // Bar thickness
+    "valueAxis": {
+      "type": "numeric",
+      "title": "Time [HH:MM::SS]",
+      "duration": "ss",
+      "durationUnits": { DD: 'd. ', hh: ':', mm: ':', ss: '' },
+    },
+    "brightnessStep": 10,
+    "graph": {
+      "fillAlphas": 1,
+      "labelFunction": barLabelCallBack,
+      "labelText": " ",
+      "labelPosition": "right",
+      "balloonFunction": ballonLabelCallBack,
+      "balloonText": "<p align='left'> Task: [[task]]<br/>Start:[[start]]<br/>End:[[end]]<br/>Duration:[[duration]]</p>",
+      "bulletField": "bullet",
+      "bulletSize": 8
+    },
+    "rotate": true,
+    "categoryField": "category",
+    "segmentsField": "segments",
+    "colorField": "color",
+    "startDate": "2015-01-01 00:00:00",
+    "startField": "start",
+    "endField": "end",
+    "durationField": "duration",
+    "dataProvider": chartData,
+    "valueScrollbar": {
+      "autoGridCount": true
+    },
+    "chartScrollbar": {
+      "enable": true
+    },
+    "chartCursor": {
+      "cursorColor": "#55bb76",
+      "valueBalloonsEnabled": false,
+      "cursorAlpha": 0.1,
+      "valueLineAlpha": 0.5,
+      "valueLineBalloonEnabled": true,
+      "valueLineEnabled": true,
+      "zoomable": true,
+      "valueZoomable": true,
+      "fullWidth": true
+    },
+    "legend": {
+      "data": legendData,
+    },
+    "export": {
+      "enabled": true
+    }
+  });
+
+  // =========================================================================
+  // Call back methods
+  // =========================================================================
+function ballonLabelCallBack( _graphDataItem )
+{
+  var start = _graphDataItem.values.open;
+  var end = _graphDataItem.values.value;
+  var duration = end - start;
+
+  var result = "<p align='left'>Task: " + _graphDataItem.category + "<br/>Start: " + secondsToHHMMSS(start) + "<br/>End: " + secondsToHHMMSS( end ) + "<br/>Duration: " + secondsToHHMMSS( duration ) + "</p>";
+  return result;
+}
+
+
+function barLabelCallBack( _graphDataItem )
+{
+   var duration = _graphDataItem.values.value - _graphDataItem.values.open;
+
+   return secondsToHHMMSS( duration);
+}
+
+
+function userInputFormCallback()
+{
+  // Second filter
+  m_secondFilter = document.getElementById("userDurationFilterSecInput").value;
+  console.log("Setting second filter to: " + m_secondFilter + " seconds");
+
+  // Group PID Sort
+  m_groupPidSort = document.getElementById("userGroupPidSortSelected").checked;
+  console.log("Group PID filter is set to: " + m_groupPidSort);
+
+  // Rollup filter
+  m_showRollup = document.getElementById("userRollupSelected").checked;
+  console.log("Rollup filter is set to: " + m_showRollup);
+
+  // Individual filter
+  m_showIndividualEntry = document.getElementById("userIndividualEntrySelected").checked;
+  console.log("Individual filter is set to: " + m_showIndividualEntry);
+
+  // Checkpoint Report Entries filter
+  m_showCheckpointEntry = document.getElementById("userCheckpointEntrySelected").checked;
+  console.log("Checkpoint Entry filter is set to: " + m_showCheckpointEntry);
+
+  // Checkpoint Report Entries filter
+  m_showReportEntry = document.getElementById("userReportEntrySelected").checked;
+  console.log("Report Entry filter is set to: " + m_showReportEntry);
+
+  populateChartData();
+  filterChartEntries()
+  chart.dataProvider = chartData;
+  chart.validateData();
+}
+
+  // =========================================================================
+  // Utilities
+  // =========================================================================
+
+
+function populateChartData()
+{
+  chartData = [ ];
+  if (m_groupPidSort == false) {
+    jsonData.sort(compareByTimeStamp);
+  } else {
+    jsonData.sort(compareByGroupTimeStamp);
+  }
+
+  for (var i = 0; i < jsonData.length; i++) {
+    var timestamp = parseInt(jsonData[0].TimeStampMSec, 10);
+
+    if (m_startTS > timestamp) m_startTS = timestamp;
+    if (m_endTS < timestamp) m_endTS = timestamp;
+
+    for (var i = 0; i < jsonData.length; i++) {
+      switch (jsonData[i].Action) {
+      case "START":
+        var categoryEntry = { };
+        categoryEntry["category"] = jsonData[i].Task;
+        categoryEntry["pid"] = jsonData[i].pid;
+
+        var segmentEntry = { };
+        // Normalize entry and convert to seconds
+        segmentEntry["start"] = (jsonData[i].TimeStampMSec - m_startTS) / 1000;
+        segmentEntry["color"] = getTaskBarColor(jsonData[i].Tags)
+        segmentEntry["task"] = jsonData[i].Task;
+        segmentEntry["tags"] = jsonData[i].Tags;
+        segmentEntry["duration"] = -1;
+
+        categoryEntry["segments"] = [ ];
+        categoryEntry["segments"].push(segmentEntry);
+        chartData.push(categoryEntry);
+        break;
+
+      case "END":
+        var catagory = findCatagory(jsonData[i].pid, jsonData[i].Task, chartData);
+        if (catagory != null) {
+          var segmentsEntry = catagory.segments[0];
+          segmentsEntry["end"] = (jsonData[i].TimeStampMSec - m_startTS) / 1000;
+          segmentsEntry["duration"] = segmentsEntry.end - segmentsEntry.start;
+        } else {
+          console.log("Null entry found: pid:%s, Task: %s", jsonData[i].pid, jsonData[i].Task);
+        }
+
+        break;
+
+      default:
+        console.log("Default");
+        break;
+      }
+    }
+  }
+}
+
+function filterChartEntries()
+{
+  for(var i = chartData.length - 1; i >= 0; i--) {
+    var segment = chartData[i].segments[0];
+
+    // -- Remove entries less than 1 seconds
+    if ( segment["duration"] == -1) {
+      segment["bullet"] = "xError";
+      segment["color"] = "#cc4748";
+      segment["duration"] = ((m_endTS - m_startTS) / 1000) - segment["start"];
+    } else if (segment["duration"] <  m_secondFilter) {
+      chartData.splice(i, 1);
+      continue;
+    }
+  
+
+    // Filter by tags
+    var bHasRollup = false;
+    var bHasCheckpoint = false;
+    var bHasReport = false;
+
+    var tags = segment["tags"];
+    console.log("Tag: " + tags);
+    if (tags.search(/ROLLUP_/i) != -1) { bHasRollup = true; }
+    if (tags.search(/CHECKPOINT/i) != -1) { bHasCheckpoint = true; }
+    if (tags.search(/REPORT/i) != -1) { bHasReport = true; }
+
+    var bRemoveEntry = false;
+
+    // Remove rollups
+    if ((m_showRollup == false) && (bHasRollup == true)) {
+      bRemoveEntry = true;
+    }
+    
+    // Remove checkpoints    
+    if ((m_showCheckpointEntry == false) && (bHasCheckpoint == true)) {
+      bRemoveEntry = true;
+    }
+
+    // Remove reports
+    if ((m_showReportEntry == false) && (bHasReport == true)) {
+      bRemoveEntry = true;
+    }
+
+    // Remove individual entry
+    if (((m_showIndividualEntry == false) && 
+         ((bHasRollup == false) &&
+          (bHasCheckpoint == false) &&
+          (bHasReport == false)))) {
+      bRemoveEntry = true;
+    }
+
+    if (bRemoveEntry == true) {
+      chartData.splice(i, 1);
+      continue;
+    }
+  }
+
+  console.log("ChartData.length: " + chartData.length);
+}
+
+
+function getTaskBarColor( _tags )
+{
+  if (_tags == null)
+    return "#8dc49f";
+
+  if (_tags.search(/ROLLUP_AUTO/i) != -1){ return "#0099ff"; }
+  if (_tags.search(/ROLLUP_0/i) != -1)   { return "#006699"; }
+  if (_tags.search(/ROLLUP_1/i) != -1)   { return "#009933"; }
+  if (_tags.search(/ROLLUP_2/i) != -1)   { return "#66ccff"; }
+  if (_tags.search(/REPORT/i) != -1)     { return "#b9783f"; }
+  if (_tags.search(/CHECKPOINT/i) != -1) { return "#cd82ad"; }
+
+  return "#8dc49f"
+}
+
+
+function tableCreate( _chartData ){
+    var myTableDiv = document.getElementById("myDynamicTable");
+
+
+    for ( var i = 0; i < _chartData.length; i++) {
+      var tr = myTableDiv.insertRow();
+
+      var td_task = tr.insertCell();
+      td_task.appendChild(document.createTextNode( _chartData[i].category ));
+
+      var segmentEntry = _chartData[i].segments;
+      var td_start = tr.insertCell();
+      td_start.appendChild(document.createTextNode( secondsToHHMMSS(segmentEntry[0].start) ));
+
+      var td_duration = tr.insertCell();
+      td_duration.appendChild(document.createTextNode( secondsToHHMMSS(segmentEntry[0].duration) ));
+
+    }
+}
+
+function secondsToHHMMSS( _seconds )
+{
+  var hours = Math.floor(_seconds / 3600);
+  var minutes = Math.floor(_seconds % 3600 / 60);
+  var seconds = Math.floor(_seconds % 3600 % 60);
+
+  var result = hours + ":" + (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds; 
+
+  return result;
+}
+
+
+  function findCatagory(_pid, _category, _catagoryArray) {
+    for (var i = (_catagoryArray.length - 1); i >= 0; i--) {
+      if (_pid == _catagoryArray[i].pid) {
+        if (_catagoryArray[i].category == _category) {
+          return  _catagoryArray[i];
+        }
+      }
+    }
+    return null;
+  }
+
+
+  // Compares the timestamps between to JSON objects
+  function compareByTimeStamp(_a, _b) {
+    if (_a.TimeStampMSec < _b.TimeStampMSec) return -1;
+    if (_a.TimeStampMSec > _b.TimeStampMSec) return 1;
+
+    if (_a.pid == _b.pid) {
+      if ((_a.Action == "START") && (_b.Action == "END")) return -1;
+      if ((_a.Action == "END") && (_b.Action == "START")) return 1;
+
+      if(_a.Entry < _b.Entry) return -1;
+      if(_a.Entry > _b.Entry) return 1;
+    }
+
+    return 0;
+  }
+
+
+  // Compares the timestamps between to JSON objects
+  function compareByGroupTimeStamp(_a, _b) {
+    if (pidOrder.get(_a.pid) < pidOrder.get(_b.pid)) return -1;
+
+    if (pidOrder.get(_a.pid) > pidOrder.get(_b.pid)) return 1;
+
+    return compareByTimeStamp(_a, _b);
+  }
+
+
+  // Return array of string values, or NULL if CSV string not well formed.
+  function CSVtoArray(_text, _sep) {
+    // Regex expressions
+    var re_valid_default = /^\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*(?:,\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*)*$/;
+    var re_value_default = /(?!\s*$)\s*(?:'([^'\\]*(?:\\[\S\s][^'\\]*)*)'|"([^"\\]*(?:\\[\S\s][^"\\]*)*)"|([^,'"\s\\]*(?:\s+[^,'"\s\\]+)*))\s*(?:,|$)/g;
+    var re_special_default = /,\s*$/;
+
+    // Algorithm:
+    //   1) Convert regex expression to a string.
+    //   2) Remove leading regex escape character (e.g., '\')
+    //   3) Remove training regex escape character(s) (e.g., '\' or "\g")
+    //   4) Replace the comma (',') character witht he new delimiter character
+    //   5) Build the regex command
+
+    // Check delimiter, if special insert escapes
+    if (_sep == "|") _sep = "\\|";
+
+    var re_valid = new RegExp(re_valid_default.toString().substr(1).slice(0, -1).replace(/,/g, _sep));
+    var re_value = new RegExp(re_value_default.toString().substr(1).slice(0, -2).replace(/,/g, _sep), 'g');
+    var re_special = new RegExp(re_special_default.toString().substr(1).slice(0, -1).replace(/,/g, _sep));
+
+    // Validate the input string to determine if it is well formed
+    if (!re_valid.test(_text)) return null;
+
+    var a = [ ];                     // Initialize array to receive values.
+    _text.replace(re_value,           // "Walk" the string using replace with callback.
+                  function(m0, m1, m2, m3) {
+                      // Remove backslash from \' in single quoted values.
+                      if      (m1 !== undefined) a.push(m1.replace(/\\'/g, "'"));
+                      // Remove backslash from \" in double quoted values.
+                      else if (m2 !== undefined) a.push(m2.replace(/\\"/g, '"'));
+                      else if (m3 !== undefined) a.push(m3);
+                      return ''; // Return empty string.
+                  });
+
+    // Handle special case of empty last value.
+    if (re_special.test(_text)) a.push('');
+
+    return a;
+  };
+
+
+  // Converts the given CSV array & header into a JSON array
+  function csvArrayToJSON(_header, _csvArray, _sep) {
+    var result = [ ];
+    var headers = CSVtoArray(_header, _sep);
+
+    for (var i = 0; i < _csvArray.length; i++) {
+
+      var obj = { };
+      var currentline = CSVtoArray(_csvArray[i], _sep);
+
+      for (var j = 0; j < headers.length; j++) {
+        obj[headers[j]] = currentline[j];
+      }
+
+      result.push(obj);
+
+    }
+
+    return result; //JavaScript object
+  }
+
+
+</script>
+</body>
+
+</html>
+

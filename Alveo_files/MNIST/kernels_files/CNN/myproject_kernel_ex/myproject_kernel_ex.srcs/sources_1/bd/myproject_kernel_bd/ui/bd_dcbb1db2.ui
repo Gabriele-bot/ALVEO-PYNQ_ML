@@ -1,0 +1,30 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-279,-79",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port m00_axi -pg 1 -lvl 3 -x 600 -y 240 -defaultsOSRD
+preplace port s_axi_control -pg 1 -lvl 0 -x 0 -y 250 -defaultsOSRD
+preplace port ap_clk -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port ap_rst_n -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace inst control -pg 1 -lvl 1 -x 180 -y 260 -defaultsOSRD
+preplace inst dma_0 -pg 1 -lvl 2 -x 450 -y 260 -defaultsOSRD
+preplace inst myproject_axi_0 -pg 1 -lvl 1 -x 180 -y 90 -defaultsOSRD
+preplace netloc ap_clk 1 0 2 30 350 330J
+preplace netloc ap_rst_n 1 0 2 20 170 320J
+preplace netloc control_m00_cmd 1 1 1 330 250n
+preplace netloc dma_0_m00_axi 1 2 1 N 240
+preplace netloc dma_0_m00_sts 1 0 3 40 340 NJ 340 570
+preplace netloc s_axi_control 1 0 1 NJ 250
+preplace netloc dma_0_m00_axis 1 0 3 30 10 NJ 10 570
+preplace netloc myproject_axi_0_out_r 1 1 1 330 90n
+levelinfo -pg 1 0 180 450 600
+pagesize -pg 1 -db -bbox -sgen -150 0 710 360
+"
+}
+{
+   "da_bram_cntlr_cnt":"3",
+   "da_clkrst_cnt":"1"
+}
