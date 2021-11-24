@@ -2,11 +2,11 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Tue Nov 23 10:33:20 2021
-# Process ID: 27081
-# Current directory: /home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj
-# Command line: vivado -mode batch -source axi_stream_kernel.tcl
-# Log file: /home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/vivado.log
-# Journal file: /home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/vivado.jou
+# Start of session at: Wed Nov 24 02:30:42 2021
+# Process ID: 6258
+# Current directory: /home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj
+# Command line: vivado -mode batch -source axi_stream_kernel2.tcl -nolog
+# Log file: 
+# Journal file: /home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/vivado.jou
 #-----------------------------------------------------------
-source axi_stream_kernel.tcl
+source axi_stream_kernel2.tcl
