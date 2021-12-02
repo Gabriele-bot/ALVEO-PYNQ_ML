@@ -1,15 +1,21 @@
 # ALVEO_ML
 
-Here are presented an example of FPGA neural network inference deployed on alveo u50 board with Vivado 2020.1 .  
+Here is presented an example of FPGA neural network inference deployed on alveo u50 board with Vivado 2020.1 .  
 
 ## Install alveo drivers
-First XRT (Xilinx Runtime) must be installed, to do so run the following commands (**`UG1393`** User Guide by Xilinx).  
+
+XRT_<version>.deb file can be built from source or downloaded from the Xilinx website (eg. [u50](https://www.xilinx.com/products/boards-and-kits/alveo/u50.html#gettingStarted)).  
+To build it form source follow the steps highlighted [at this link](https://xilinx.github.io/XRT/master/html/build.html).  
+
+### Use pre-compiled files
+
+First XRT (Xilinx Runtime) must be installed, to do so run the following commands (**`UG1370`** User Guide by Xilinx).  
 ```
 cd Drivers/XRT/  
 sudo -H apt install ./xrt_202010.2.6.655_18.04-amd64-xrt.deb  
 cd ../..
 ```
-Than the platform files mus be installed.  
+Than the platform files must be installed.  
 ```
 cd Drivers/Platform/Xilinx_u50-gen3x16-xdma-201920.3-2784799_18.04_deb  
 sudo apt install ./*.deb  
