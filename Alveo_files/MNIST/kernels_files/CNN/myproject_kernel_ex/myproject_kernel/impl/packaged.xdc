@@ -11,7 +11,7 @@
 
 current_instance myproject_kernel_bd_i/control/microblaze_0/U0
 set_false_path -through [get_ports -scoped_to_current_instance Reset]
-create_waiver -type CDC -id {CDC-26} -user "microblaze" -desc "Invalid LUTRAM collision warning" -tags "12436" -scope -internal -to [get_pins -quiet {LOCKSTEP_Out_reg[*]/R}] -timestamp "Tue Nov 23 20:24:01 GMT 2021"
+create_waiver -type CDC -id {CDC-26} -user "microblaze" -desc "Invalid LUTRAM collision warning" -tags "12436" -scope -internal -to [get_pins -quiet {LOCKSTEP_Out_reg[*]/R}] -timestamp "Mon Dec  6 10:40:31 GMT 2021"
 
 
 ####################################################################################

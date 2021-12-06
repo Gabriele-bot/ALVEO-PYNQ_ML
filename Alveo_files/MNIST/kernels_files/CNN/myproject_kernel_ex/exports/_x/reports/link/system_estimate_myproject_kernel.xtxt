@@ -2,13 +2,13 @@
 Version:    v++ v2020.1 (64-bit)
 Build:      SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 Copyright:  Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-Created:    Wed Nov 24 00:39:06 2021
+Created:    Mon Dec  6 12:32:08 2021
 ===============================================================================
 
 -------------------------------------------------------------------------------
 Design Name:             myproject_kernel
 Target Device:           xilinx:u50:gen3x16_xdma:201920.3
-Target Clock:            300.000000MHz
+Target Clock:            250MHz
 Total number of kernels: 1
 -------------------------------------------------------------------------------
 

@@ -9,13 +9,13 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Tue Nov 23 23:54:45 2021",
- "timestampMillis": "1637708085710",
+ "dateTimestamp": "Mon Dec  6 11:45:15 2021",
+ "timestampMillis": "1638787515377",
  "buildStep": {
-  "cmdId": "a30a72ab-342c-4989-a87e-6d2a95f85cb9",
+  "cmdId": "cb67649a-ce60-47d8-b27d-4e378dbfefae",
   "name": "v++",
   "logFile": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/link.steps.log",
-  "commandLine": "/tools/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/v++  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw --platform xilinx_u50_gen3x16_xdma_201920_3 --link myproject_kernel.xo -omyproject_kernel.xclbin ",
+  "commandLine": "/tools/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/v++  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw --platform xilinx_u50_gen3x16_xdma_201920_3 --link myproject_kernel.xo -omyproject_kernel.xclbin --kernel_frequency 250 -j 14 ",
   "args": [
    "-t",
    "hw",
@@ -23,7 +23,11 @@
    "xilinx_u50_gen3x16_xdma_201920_3",
    "--link",
    "myproject_kernel.xo",
-   "-omyproject_kernel.xclbin"
+   "-omyproject_kernel.xclbin",
+   "--kernel_frequency",
+   "250",
+   "-j",
+   "14"
   ],
   "iniFiles": [],
   "cwd": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports"
@@ -33,10 +37,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov 23 23:54:45 2021",
- "timestampMillis": "1637708085710",
+ "dateTimestamp": "Mon Dec  6 11:45:15 2021",
+ "timestampMillis": "1638787515377",
  "status": {
-  "cmdId": "a30a72ab-342c-4989-a87e-6d2a95f85cb9",
+  "cmdId": "cb67649a-ce60-47d8-b27d-4e378dbfefae",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +48,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Tue Nov 23 23:54:58 2021",
- "timestampMillis": "1637708098821",
+ "dateTimestamp": "Mon Dec  6 11:45:28 2021",
+ "timestampMillis": "1638787528371",
  "buildSummary": {
   "hardwarePlatform": "xilinx_u50_gen3x16_xdma_201920_3.xpfm",
   "hardwareDsa": "hw.xsa",
@@ -86,10 +90,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Tue Nov 23 23:54:58 2021",
- "timestampMillis": "1637708098871",
+ "dateTimestamp": "Mon Dec  6 11:45:28 2021",
+ "timestampMillis": "1638787528413",
  "buildStep": {
-  "cmdId": "1a8fe65e-527e-4ea0-8548-b681c19ac5c2",
+  "cmdId": "5ffabfe9-ecef-4de6-87bf-cc5ea9199733",
   "name": "system_link",
   "logFile": "",
   "commandLine": "system_link --xo /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.xo --xpfm /opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm --target hw --output_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int --temp_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link",
@@ -113,10 +117,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov 23 23:54:58 2021",
- "timestampMillis": "1637708098872",
+ "dateTimestamp": "Mon Dec  6 11:45:28 2021",
+ "timestampMillis": "1638787528413",
  "status": {
-  "cmdId": "1a8fe65e-527e-4ea0-8548-b681c19ac5c2",
+  "cmdId": "5ffabfe9-ecef-4de6-87bf-cc5ea9199733",
   "state": "CS_RUNNING"
  }
 }
@@ -124,10 +128,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov 23 23:55:05 2021",
- "timestampMillis": "1637708105004",
+ "dateTimestamp": "Mon Dec  6 11:45:34 2021",
+ "timestampMillis": "1638787534546",
  "status": {
-  "cmdId": "1a8fe65e-527e-4ea0-8548-b681c19ac5c2",
+  "cmdId": "5ffabfe9-ecef-4de6-87bf-cc5ea9199733",
   "state": "CS_PASSED"
  }
 }
@@ -135,10 +139,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Tue Nov 23 23:55:05 2021",
- "timestampMillis": "1637708105005",
+ "dateTimestamp": "Mon Dec  6 11:45:34 2021",
+ "timestampMillis": "1638787534547",
  "buildStep": {
-  "cmdId": "f5c14d0a-5ed1-4143-9c4a-fec41ccdc491",
+  "cmdId": "b58e1bac-07f4-4e17-b622-ad1469a1654e",
   "name": "cf2sw",
   "logFile": "",
   "commandLine": "cf2sw -sdsl /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/sdsl.dat -rtd /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/cf2sw.rtd -xclbin /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xclbin_orig.xml -o /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xclbin_orig.1.xml",
@@ -160,10 +164,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov 23 23:55:05 2021",
- "timestampMillis": "1637708105005",
+ "dateTimestamp": "Mon Dec  6 11:45:34 2021",
+ "timestampMillis": "1638787534548",
  "status": {
-  "cmdId": "f5c14d0a-5ed1-4143-9c4a-fec41ccdc491",
+  "cmdId": "b58e1bac-07f4-4e17-b622-ad1469a1654e",
   "state": "CS_RUNNING"
  }
 }
@@ -171,10 +175,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov 23 23:55:05 2021",
- "timestampMillis": "1637708105703",
+ "dateTimestamp": "Mon Dec  6 11:45:35 2021",
+ "timestampMillis": "1638787535247",
  "status": {
-  "cmdId": "f5c14d0a-5ed1-4143-9c4a-fec41ccdc491",
+  "cmdId": "b58e1bac-07f4-4e17-b622-ad1469a1654e",
   "state": "CS_PASSED"
  }
 }
@@ -182,10 +186,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Tue Nov 23 23:55:05 2021",
- "timestampMillis": "1637708105704",
+ "dateTimestamp": "Mon Dec  6 11:45:35 2021",
+ "timestampMillis": "1638787535248",
  "buildStep": {
-  "cmdId": "99b28389-5439-4d40-897d-e661a86f3dcc",
+  "cmdId": "14a9c976-1943-4b30-838b-55be2ea584fe",
   "name": "rtd2_system_diagram",
   "logFile": "",
   "commandLine": "rtd2SystemDiagram",
@@ -198,10 +202,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov 23 23:55:05 2021",
- "timestampMillis": "1637708105705",
+ "dateTimestamp": "Mon Dec  6 11:45:35 2021",
+ "timestampMillis": "1638787535248",
  "status": {
-  "cmdId": "99b28389-5439-4d40-897d-e661a86f3dcc",
+  "cmdId": "14a9c976-1943-4b30-838b-55be2ea584fe",
   "state": "CS_RUNNING"
  }
 }
@@ -209,8 +213,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Nov 23 23:55:06 2021",
- "timestampMillis": "1637708106312",
+ "dateTimestamp": "Mon Dec  6 11:45:35 2021",
+ "timestampMillis": "1638787535859",
  "report": {
   "path": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/systemDiagramModel.json",
   "name": "",
@@ -222,10 +226,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov 23 23:55:06 2021",
- "timestampMillis": "1637708106313",
+ "dateTimestamp": "Mon Dec  6 11:45:35 2021",
+ "timestampMillis": "1638787535859",
  "status": {
-  "cmdId": "99b28389-5439-4d40-897d-e661a86f3dcc",
+  "cmdId": "14a9c976-1943-4b30-838b-55be2ea584fe",
   "state": "CS_PASSED"
  }
 }
@@ -233,18 +237,22 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Tue Nov 23 23:55:06 2021",
- "timestampMillis": "1637708106314",
+ "dateTimestamp": "Mon Dec  6 11:45:35 2021",
+ "timestampMillis": "1638787535860",
  "buildStep": {
-  "cmdId": "9cfb4aaa-5da0-41b8-a3c1-ddd1eb69bb31",
+  "cmdId": "14b7434f-f26b-4264-8909-2a4f0b28808f",
   "name": "vpl",
   "logFile": "",
-  "commandLine": "vpl -t hw -f xilinx_u50_gen3x16_xdma_201920_3 --remote_ip_cache /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/.ipcache --output_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int --log_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/logs/link --report_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link --config /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/vplConfig.ini -k /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link --no-info --iprepo /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xo/ip_repo/fastmachinelearning_kernel_myproject_kernel_1_0 --messageDb /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/run_link/vpl.pb /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/dr.bd.tcl",
+  "commandLine": "vpl -t hw -f xilinx_u50_gen3x16_xdma_201920_3 -j 14 --kernel_frequency 250 --remote_ip_cache /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/.ipcache --output_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int --log_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/logs/link --report_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link --config /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/vplConfig.ini -k /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link --no-info --iprepo /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xo/ip_repo/fastmachinelearning_kernel_myproject_kernel_1_0 --messageDb /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/run_link/vpl.pb /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/dr.bd.tcl",
   "args": [
    "-t",
    "hw",
    "-f",
    "xilinx_u50_gen3x16_xdma_201920_3",
+   "-j",
+   "14",
+   "--kernel_frequency",
+   "250",
    "--remote_ip_cache",
    "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/.ipcache",
    "--output_dir",
@@ -281,10 +289,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov 23 23:55:06 2021",
- "timestampMillis": "1637708106314",
+ "dateTimestamp": "Mon Dec  6 11:45:35 2021",
+ "timestampMillis": "1638787535861",
  "status": {
-  "cmdId": "9cfb4aaa-5da0-41b8-a3c1-ddd1eb69bb31",
+  "cmdId": "14b7434f-f26b-4264-8909-2a4f0b28808f",
   "state": "CS_RUNNING"
  }
 }
@@ -292,13 +300,13 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Tue Nov 23 23:55:07 2021",
- "timestampMillis": "1637708107521",
+ "dateTimestamp": "Mon Dec  6 11:45:37 2021",
+ "timestampMillis": "1638787537097",
  "buildStep": {
-  "cmdId": "c20d59df-5137-43c6-90a1-533757e9ff17",
+  "cmdId": "4c813dd0-3568-4165-b1e5-485db709e4fe",
   "name": "vpl",
   "logFile": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/link.steps.log",
-  "commandLine": "/tools/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/vpl -t hw -f xilinx_u50_gen3x16_xdma_201920_3 --remote_ip_cache /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/.ipcache --output_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int --log_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/logs/link --report_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link --config /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/vplConfig.ini -k /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link --no-info --iprepo /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xo/ip_repo/fastmachinelearning_kernel_myproject_kernel_1_0 --messageDb /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/run_link/vpl.pb /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/dr.bd.tcl ",
+  "commandLine": "/tools/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/vpl -t hw -f xilinx_u50_gen3x16_xdma_201920_3 -j 14 --kernel_frequency 250 --remote_ip_cache /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/.ipcache --output_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int --log_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/logs/link --report_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link --config /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/vplConfig.ini -k /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link --no-info --iprepo /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xo/ip_repo/fastmachinelearning_kernel_myproject_kernel_1_0 --messageDb /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/run_link/vpl.pb /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/dr.bd.tcl ",
   "args": [],
   "iniFiles": [],
   "cwd": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/run_link"
@@ -308,10 +316,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov 23 23:55:07 2021",
- "timestampMillis": "1637708107521",
+ "dateTimestamp": "Mon Dec  6 11:45:37 2021",
+ "timestampMillis": "1638787537097",
  "status": {
-  "cmdId": "c20d59df-5137-43c6-90a1-533757e9ff17",
+  "cmdId": "4c813dd0-3568-4165-b1e5-485db709e4fe",
   "state": "CS_RUNNING"
  }
 }
@@ -319,8 +327,8 @@
 <ENTRY>
 {
  "type": "ET_VivadoProject",
- "dateTimestamp": "Tue Nov 23 23:55:10 2021",
- "timestampMillis": "1637708110768",
+ "dateTimestamp": "Mon Dec  6 11:45:40 2021",
+ "timestampMillis": "1638787540392",
  "vivadoProject": {
   "openDir": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl",
   "openScript": "openprj.tcl",
@@ -331,10 +339,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Tue Nov 23 23:55:10 2021",
- "timestampMillis": "1637708110769",
+ "dateTimestamp": "Mon Dec  6 11:45:40 2021",
+ "timestampMillis": "1638787540392",
  "buildStep": {
-  "cmdId": "20352247-6555-407c-ab38-c0797e128552",
+  "cmdId": "aad2383f-49bb-4cf3-9abb-8a90b39d8cea",
   "name": "vivado",
   "logFile": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/vivado.log",
   "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
@@ -359,10 +367,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Nov 23 23:55:10 2021",
- "timestampMillis": "1637708110770",
+ "dateTimestamp": "Mon Dec  6 11:45:40 2021",
+ "timestampMillis": "1638787540393",
  "status": {
-  "cmdId": "20352247-6555-407c-ab38-c0797e128552",
+  "cmdId": "aad2383f-49bb-4cf3-9abb-8a90b39d8cea",
   "state": "CS_RUNNING"
  }
 }
@@ -370,10 +378,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Nov 24 00:39:05 2021",
- "timestampMillis": "1637710745074",
+ "dateTimestamp": "Mon Dec  6 12:32:06 2021",
+ "timestampMillis": "1638790326737",
  "status": {
-  "cmdId": "20352247-6555-407c-ab38-c0797e128552",
+  "cmdId": "aad2383f-49bb-4cf3-9abb-8a90b39d8cea",
   "state": "CS_PASSED"
  }
 }
@@ -381,8 +389,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed Nov 24 00:39:05 2021",
- "timestampMillis": "1637710745111",
+ "dateTimestamp": "Mon Dec  6 12:32:06 2021",
+ "timestampMillis": "1638790326769",
  "report": {
   "path": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link/syn/ulp_hmss_0_0_utilization_synth.rpt",
   "name": "",
@@ -394,34 +402,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed Nov 24 00:39:05 2021",
- "timestampMillis": "1637710745112",
- "report": {
-  "path": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link/syn/bd_22c0_clk_kernel_adapt_0_utilization_synth.rpt",
-  "name": "",
-  "fileType": "TEXT",
-  "reportType": "GLOBAL_REPORT_UTILIZATION"
- }
-}
-</ENTRY>
-<ENTRY>
-{
- "type": "ET_Report",
- "dateTimestamp": "Wed Nov 24 00:39:05 2021",
- "timestampMillis": "1637710745112",
- "report": {
-  "path": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link/syn/bd_22c0_clk_kernel2_adapt_0_utilization_synth.rpt",
-  "name": "",
-  "fileType": "TEXT",
-  "reportType": "GLOBAL_REPORT_UTILIZATION"
- }
-}
-</ENTRY>
-<ENTRY>
-{
- "type": "ET_Report",
- "dateTimestamp": "Wed Nov 24 00:39:05 2021",
- "timestampMillis": "1637710745112",
+ "dateTimestamp": "Mon Dec  6 12:32:06 2021",
+ "timestampMillis": "1638790326769",
  "report": {
   "path": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link/syn/bd_22c0_clk_hbm_adapt_0_utilization_synth.rpt",
   "name": "",
@@ -433,8 +415,34 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed Nov 24 00:39:05 2021",
- "timestampMillis": "1637710745113",
+ "dateTimestamp": "Mon Dec  6 12:32:06 2021",
+ "timestampMillis": "1638790326770",
+ "report": {
+  "path": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link/syn/bd_22c0_clk_kernel_adapt_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Dec  6 12:32:06 2021",
+ "timestampMillis": "1638790326770",
+ "report": {
+  "path": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link/syn/bd_22c0_clk_kernel2_adapt_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Dec  6 12:32:06 2021",
+ "timestampMillis": "1638790326770",
  "report": {
   "path": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link/syn/bd_85ad_interconnect1_0_0_utilization_synth.rpt",
   "name": "",
@@ -446,8 +454,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed Nov 24 00:39:05 2021",
- "timestampMillis": "1637710745146",
+ "dateTimestamp": "Mon Dec  6 12:32:06 2021",
+ "timestampMillis": "1638790326776",
  "report": {
   "path": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link/imp/hw_bb_locked_timing_summary_routed.rpt",
   "name": "",
@@ -459,10 +467,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Nov 24 00:39:05 2021",
- "timestampMillis": "1637710745254",
+ "dateTimestamp": "Mon Dec  6 12:32:06 2021",
+ "timestampMillis": "1638790326913",
  "status": {
-  "cmdId": "c20d59df-5137-43c6-90a1-533757e9ff17",
+  "cmdId": "4c813dd0-3568-4165-b1e5-485db709e4fe",
   "state": "CS_PASSED"
  }
 }
@@ -470,10 +478,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Nov 24 00:39:05 2021",
- "timestampMillis": "1637710745259",
+ "dateTimestamp": "Mon Dec  6 12:32:06 2021",
+ "timestampMillis": "1638790326919",
  "status": {
-  "cmdId": "9cfb4aaa-5da0-41b8-a3c1-ddd1eb69bb31",
+  "cmdId": "14b7434f-f26b-4264-8909-2a4f0b28808f",
   "state": "CS_PASSED"
  }
 }
@@ -481,10 +489,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Wed Nov 24 00:39:05 2021",
- "timestampMillis": "1637710745260",
+ "dateTimestamp": "Mon Dec  6 12:32:06 2021",
+ "timestampMillis": "1638790326919",
  "buildStep": {
-  "cmdId": "f353376b-dff5-4515-9d83-459450458a73",
+  "cmdId": "c15d39eb-bd21-4b40-89c7-0c938121a72f",
   "name": "rtdgen",
   "logFile": "",
   "commandLine": "rtdgen",
@@ -497,10 +505,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Nov 24 00:39:05 2021",
- "timestampMillis": "1637710745261",
+ "dateTimestamp": "Mon Dec  6 12:32:06 2021",
+ "timestampMillis": "1638790326920",
  "status": {
-  "cmdId": "f353376b-dff5-4515-9d83-459450458a73",
+  "cmdId": "c15d39eb-bd21-4b40-89c7-0c938121a72f",
   "state": "CS_RUNNING"
  }
 }
@@ -508,8 +516,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed Nov 24 00:39:05 2021",
- "timestampMillis": "1637710745263",
+ "dateTimestamp": "Mon Dec  6 12:32:06 2021",
+ "timestampMillis": "1638790326921",
  "report": {
   "path": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel_xml.rtd",
   "name": "",
@@ -521,10 +529,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Wed Nov 24 00:39:05 2021",
- "timestampMillis": "1637710745264",
+ "dateTimestamp": "Mon Dec  6 12:32:06 2021",
+ "timestampMillis": "1638790326921",
  "buildStep": {
-  "cmdId": "00e7b608-f0f9-4d02-bbee-8112217c2fd2",
+  "cmdId": "29c9bfef-2c8f-4f29-bbbc-35422c62ddbd",
   "name": "cf2sw",
   "logFile": "",
   "commandLine": "cf2sw -a /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/address_map.xml -sdsl /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/sdsl.dat -xclbin /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xclbin_orig.xml -rtd /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.rtd -o /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.xml",
@@ -548,10 +556,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Nov 24 00:39:05 2021",
- "timestampMillis": "1637710745264",
+ "dateTimestamp": "Mon Dec  6 12:32:06 2021",
+ "timestampMillis": "1638790326922",
  "status": {
-  "cmdId": "00e7b608-f0f9-4d02-bbee-8112217c2fd2",
+  "cmdId": "29c9bfef-2c8f-4f29-bbbc-35422c62ddbd",
   "state": "CS_RUNNING"
  }
 }
@@ -559,10 +567,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746014",
+ "dateTimestamp": "Mon Dec  6 12:32:07 2021",
+ "timestampMillis": "1638790327661",
  "status": {
-  "cmdId": "00e7b608-f0f9-4d02-bbee-8112217c2fd2",
+  "cmdId": "29c9bfef-2c8f-4f29-bbbc-35422c62ddbd",
   "state": "CS_PASSED"
  }
 }
@@ -570,8 +578,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746018",
+ "dateTimestamp": "Mon Dec  6 12:32:07 2021",
+ "timestampMillis": "1638790327664",
  "report": {
   "path": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/systemDiagramModelSlrBaseAddress.json",
   "name": "",
@@ -583,10 +591,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746018",
+ "dateTimestamp": "Mon Dec  6 12:32:07 2021",
+ "timestampMillis": "1638790327665",
  "buildStep": {
-  "cmdId": "5e5d9a4c-515a-44e0-b3f7-fcf489206f61",
+  "cmdId": "47e9b798-70d0-4c4b-98af-51e1a705d26d",
   "name": "rtdgen",
   "logFile": "",
   "commandLine": "writeSystemDiagram",
@@ -602,10 +610,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746019",
+ "dateTimestamp": "Mon Dec  6 12:32:07 2021",
+ "timestampMillis": "1638790327665",
  "status": {
-  "cmdId": "5e5d9a4c-515a-44e0-b3f7-fcf489206f61",
+  "cmdId": "47e9b798-70d0-4c4b-98af-51e1a705d26d",
   "state": "CS_RUNNING"
  }
 }
@@ -613,10 +621,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746019",
+ "dateTimestamp": "Mon Dec  6 12:32:07 2021",
+ "timestampMillis": "1638790327665",
  "status": {
-  "cmdId": "5e5d9a4c-515a-44e0-b3f7-fcf489206f61",
+  "cmdId": "47e9b798-70d0-4c4b-98af-51e1a705d26d",
   "state": "CS_PASSED"
  }
 }
@@ -624,10 +632,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746020",
+ "dateTimestamp": "Mon Dec  6 12:32:07 2021",
+ "timestampMillis": "1638790327666",
  "status": {
-  "cmdId": "f353376b-dff5-4515-9d83-459450458a73",
+  "cmdId": "c15d39eb-bd21-4b40-89c7-0c938121a72f",
   "state": "CS_PASSED"
  }
 }
@@ -635,10 +643,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746021",
+ "dateTimestamp": "Mon Dec  6 12:32:07 2021",
+ "timestampMillis": "1638790327666",
  "buildStep": {
-  "cmdId": "131882e0-d19e-4f51-839f-4e46df03befd",
+  "cmdId": "25431b3c-1d37-476d-b2bc-33c6f7aa6bfd",
   "name": "xclbinutil",
   "logFile": "",
   "commandLine": "xclbinutil --add-section BITSTREAM:RAW:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.rtd --append-section :JSON:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel_xml.rtd --add-section BUILD_METADATA:JSON:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.xml --add-section SYSTEM_METADATA:RAW:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u50_gen3x16_xdma_201920_3 --output /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.xclbin",
@@ -675,10 +683,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746022",
+ "dateTimestamp": "Mon Dec  6 12:32:07 2021",
+ "timestampMillis": "1638790327667",
  "status": {
-  "cmdId": "131882e0-d19e-4f51-839f-4e46df03befd",
+  "cmdId": "25431b3c-1d37-476d-b2bc-33c6f7aa6bfd",
   "state": "CS_RUNNING"
  }
 }
@@ -686,10 +694,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746160",
+ "dateTimestamp": "Mon Dec  6 12:32:07 2021",
+ "timestampMillis": "1638790327785",
  "status": {
-  "cmdId": "131882e0-d19e-4f51-839f-4e46df03befd",
+  "cmdId": "25431b3c-1d37-476d-b2bc-33c6f7aa6bfd",
   "state": "CS_PASSED"
  }
 }
@@ -697,10 +705,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746161",
+ "dateTimestamp": "Mon Dec  6 12:32:07 2021",
+ "timestampMillis": "1638790327786",
  "buildStep": {
-  "cmdId": "dece3434-0943-4230-a3c2-65488ba93c27",
+  "cmdId": "439f4ad3-8353-4b0d-b6a6-0d841a121007",
   "name": "xclbinutilinfo",
   "logFile": "",
   "commandLine": "xclbinutil --quiet --force --info /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.xclbin.info --input /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.xclbin",
@@ -720,10 +728,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746162",
+ "dateTimestamp": "Mon Dec  6 12:32:07 2021",
+ "timestampMillis": "1638790327786",
  "status": {
-  "cmdId": "dece3434-0943-4230-a3c2-65488ba93c27",
+  "cmdId": "439f4ad3-8353-4b0d-b6a6-0d841a121007",
   "state": "CS_RUNNING"
  }
 }
@@ -731,10 +739,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746459",
+ "dateTimestamp": "Mon Dec  6 12:32:08 2021",
+ "timestampMillis": "1638790328091",
  "status": {
-  "cmdId": "dece3434-0943-4230-a3c2-65488ba93c27",
+  "cmdId": "439f4ad3-8353-4b0d-b6a6-0d841a121007",
   "state": "CS_PASSED"
  }
 }
@@ -742,10 +750,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746460",
+ "dateTimestamp": "Mon Dec  6 12:32:08 2021",
+ "timestampMillis": "1638790328092",
  "buildStep": {
-  "cmdId": "3fe5988d-dd78-4f8e-a4c8-52331d5fc8ff",
+  "cmdId": "3680d372-da15-4fe0-a3b5-4680288456eb",
   "name": "generate_sc_driver",
   "logFile": "",
   "commandLine": "",
@@ -758,10 +766,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746461",
+ "dateTimestamp": "Mon Dec  6 12:32:08 2021",
+ "timestampMillis": "1638790328093",
  "status": {
-  "cmdId": "3fe5988d-dd78-4f8e-a4c8-52331d5fc8ff",
+  "cmdId": "3680d372-da15-4fe0-a3b5-4680288456eb",
   "state": "CS_RUNNING"
  }
 }
@@ -769,10 +777,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746461",
+ "dateTimestamp": "Mon Dec  6 12:32:08 2021",
+ "timestampMillis": "1638790328093",
  "status": {
-  "cmdId": "3fe5988d-dd78-4f8e-a4c8-52331d5fc8ff",
+  "cmdId": "3680d372-da15-4fe0-a3b5-4680288456eb",
   "state": "CS_PASSED"
  }
 }
@@ -780,8 +788,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746463",
+ "dateTimestamp": "Mon Dec  6 12:32:08 2021",
+ "timestampMillis": "1638790328094",
  "report": {
   "path": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link/system_estimate_myproject_kernel.xtxt",
   "name": "",
@@ -793,8 +801,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746657",
+ "dateTimestamp": "Mon Dec  6 12:32:08 2021",
+ "timestampMillis": "1638790328313",
  "report": {
   "path": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link/v++_link_myproject_kernel_guidance.html",
   "name": "",
@@ -806,8 +814,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746658",
+ "dateTimestamp": "Mon Dec  6 12:32:08 2021",
+ "timestampMillis": "1638790328314",
  "report": {
   "path": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/v++_link_myproject_kernel_guidance.pb",
   "name": "",
@@ -819,8 +827,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746659",
+ "dateTimestamp": "Mon Dec  6 12:32:08 2021",
+ "timestampMillis": "1638790328314",
  "report": {
   "path": "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/logs/optraceViewer.html",
   "name": "",
@@ -832,10 +840,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Nov 24 00:39:06 2021",
- "timestampMillis": "1637710746659",
+ "dateTimestamp": "Mon Dec  6 12:32:08 2021",
+ "timestampMillis": "1638790328315",
  "status": {
-  "cmdId": "a30a72ab-342c-4989-a87e-6d2a95f85cb9",
+  "cmdId": "cb67649a-ce60-47d8-b27d-4e378dbfefae",
   "state": "CS_PASSED"
  }
 }

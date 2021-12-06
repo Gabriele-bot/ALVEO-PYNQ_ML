@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vitis Analyzer v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# 
+# Start of session at: Mon Dec  6 12:32:25 2021
+# Process ID: 13504
+# Current directory: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports
+# Command line: vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command.
+# Log file: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/vitis_analyzer.log
+# Journal file: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/vitis_analyzer.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting vitis_analyzer at Mon Dec  6 12:32:51 2021...

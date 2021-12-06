@@ -1,12 +1,8 @@
-Starting vitis. This could take few seconds...XILINX_XRT      : /opt/xilinx/xrt
-PATH            : /opt/xilinx/xrt/bin:/tools/Xilinx/Vitis/2020.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2020.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2020.1/gnu/microblaze/linux_toolchain/lin64_be/bin:/tools/Xilinx/Vitis/2020.1/gnu/arm/lin/bin:/tools/Xilinx/Vivado/2020.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2020.1/bin:/tools/Xilinx/Vivado/2020.1/ids_lite/ISE/bin/lin64:/tools/Xilinx/Vitis/2020.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2020.1/gnu/arm/lin/bin:/tools/Xilinx/Vitis/2020.1/gnu/microblaze/linux_toolchain/nt64_be/bin:/tools/Xilinx/Vitis/2020.1/gnu/microblaze/linux_toolchain/nt64_le/bin:/tools/Xilinx/Vitis/2020.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2020.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2020.1/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2020.1/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2020.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vivado/2020.1/tps/lnx64/python-2.7.16:/tools/Xilinx/Vivado/2020.1/tps/lnx64/python-2.7.16/bin:/tools/Xilinx/Vivado/2020.1/tps/lnx64/python-2.7.16/lib:/tools/Xilinx/Vivado/2020.1/tps/lnx64/python-2.7.16/lib/python2.7/lib-tk:/tools/Xilinx/Vivado/2020.1/tps/lnx64/python-2.7.16/lib/python2.7/site-packages::/tools/Xilinx/Vivado/2020.1/bin:/tools/Xilinx/Vivado/2020.1/tps/lnx64/jre9.0.4/bin:/home/gabri-bot/anaconda3/condabin:/opt/cactus/bin:/home/gabri-bot/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/rocm/bin:/opt/rocm/rocprofiler/bin:/opt/rocm/opencl/bin
-LD_LIBRARY_PATH : /opt/xilinx/xrt/lib:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o:/tools/Xilinx/Vivado/2020.1/tps/lnx64/python-2.7.16/lib:/tools/Xilinx/Vivado/2020.1/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vivado/2020.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vivado/2020.1/lib/lnx64.o:/tools/Xilinx/Vivado/2020.1/tps/lnx64/jre9.0.4/lib/:/tools/Xilinx/Vivado/2020.1/tps/lnx64/jre9.0.4/lib//server:/opt/cactus/lib::/tools/Xilinx/Vivado/2020.1/bin/../lnx64/tools/dot/lib:/tools/Xilinx/Vivado/2020.1/bin/../lnx64/tools/dot/lib:/tools/Xilinx/Vitis/2020.1/bin/../lnx64/tools/dot/lib
-PYTHONPATH     : /opt/xilinx/xrt/python:/tools/Xilinx/Vivado/2020.1/tps/lnx64/python-2.7.16:/tools/Xilinx/Vivado/2020.1/tps/lnx64/python-2.7.16/bin:/tools/Xilinx/Vivado/2020.1/tps/lnx64/python-2.7.16/lib:/tools/Xilinx/Vivado/2020.1/tps/lnx64/python-2.7.16/lib/python2.7/lib-tk:/tools/Xilinx/Vivado/2020.1/tps/lnx64/python-2.7.16/lib/python2.7/site-packages:/tools/Xilinx/Vivado/2020.1/tps/lnx64/python-2.7.16:/tools/Xilinx/Vivado/2020.1/tps/lnx64/python-2.7.16/bin:/tools/Xilinx/Vivado/2020.1/tps/lnx64/python-2.7.16/lib:/tools/Xilinx/Vivado/2020.1/tps/lnx64/python-2.7.16/lib/python2.7/lib-tk:/tools/Xilinx/Vivado/2020.1/tps/lnx64/python-2.7.16/lib/python2.7/site-packages:
-WARNING: Using incubator modules: jdk.incubator.httpclient
+Starting vitis. This could take few seconds...WARNING: Using incubator modules: jdk.incubator.httpclient
 done
-INFO: [Hsi 55-2053] elapsed time for repository (/tools/Xilinx/Vitis/2020.1/data/embeddedsw) loading 1 seconds
+INFO: [Hsi 55-2053] elapsed time for repository (/tools/Xilinx/Vitis/2020.1/data/embeddedsw) loading 0 seconds
 Opening the hardware design, this may take few seconds.
-Gtk-Message: 20:49:35.962: Failed to load module "canberra-gtk-module"
+Gtk-Message: 11:17:53.593: Failed to load module "canberra-gtk-module"
 /tools/Xilinx/Vitis/2020.1/gnu/microblaze/lin
 Building the BSP Library for domain  - mydomain on processor control_microblaze_0
 Running Make include in control_microblaze_0/libsrc/gpio_v4_6/src
@@ -71,8 +67,8 @@ Compiling bram
 
 Finished building libraries
 
-20:49:39 **** Build of project myproject_kernel ****
-buildplatform.sh 45015 myproject_kernel  
+11:17:57 **** Build of project myproject_kernel ****
+buildplatform.sh 39797 myproject_kernel  
 Building the BSP Library for domain  - mydomain on processor control_microblaze_0
 Running Make include in control_microblaze_0/libsrc/gpio_v4_6/src
 
@@ -136,9 +132,9 @@ Compiling bram
 Finished building libraries
 
 
-20:49:46 Build Finished (took 6s.926ms)
+11:18:04 Build Finished (took 7s.16ms)
 
-20:49:46 **** Build of configuration Debug for project myproject_kernel_control ****
+11:18:04 **** Build of configuration Debug for project myproject_kernel_control ****
 make all 
 Building file: ../src/kernel_control.c
 Invoking: MicroBlaze gcc compiler
@@ -161,7 +157,7 @@ mb-size myproject_kernel_control.elf  |tee "myproject_kernel_control.elf.size"
 Finished building: myproject_kernel_control.elf.size
  
 
-20:49:47 Build Finished (took 162ms)
+11:18:04 Build Finished (took 161ms)
 
 
 

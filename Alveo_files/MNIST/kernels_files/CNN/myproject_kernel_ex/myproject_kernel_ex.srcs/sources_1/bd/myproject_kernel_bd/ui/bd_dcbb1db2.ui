@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-279,-79",
+   "Default View_TopLeft":"-482,-230",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:9.0 TLS
 #  -string -flagsOSRD
@@ -18,8 +18,8 @@ preplace netloc control_m00_cmd 1 1 1 330 250n
 preplace netloc dma_0_m00_axi 1 2 1 N 240
 preplace netloc dma_0_m00_sts 1 0 3 40 340 NJ 340 570
 preplace netloc s_axi_control 1 0 1 NJ 250
-preplace netloc dma_0_m00_axis 1 0 3 30 10 NJ 10 570
 preplace netloc myproject_axi_0_out_r 1 1 1 330 90n
+preplace netloc dma_0_m00_axis 1 0 3 30 10 NJ 10 570
 levelinfo -pg 1 0 180 450 600
 pagesize -pg 1 -db -bbox -sgen -150 0 710 360
 "

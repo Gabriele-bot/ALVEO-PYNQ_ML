@@ -2,54 +2,54 @@ INFO: [v++ 60-1306] Additional information associated with this v++ link can be 
 	Reports: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link
 	Log files: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/logs/link
 INFO: [v++ 60-1657] Initializing dispatch client.
-INFO: [v++ 60-1548] Creating build summary session with primary output /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.xclbin.link_summary, at Tue Nov 23 23:54:55 2021
-INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Tue Nov 23 23:54:55 2021
-INFO: [v++ 60-1315] Creating rulecheck session with output '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link/v++_link_myproject_kernel_guidance.html', at Tue Nov 23 23:54:56 2021
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.xclbin.link_summary, at Mon Dec  6 11:45:25 2021
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Mon Dec  6 11:45:25 2021
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link/v++_link_myproject_kernel_guidance.html', at Mon Dec  6 11:45:26 2021
 INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm
 INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/hw.xsa'
 INFO: [v++ 60-629] Linking for hardware target
 INFO: [v++ 60-423]   Target device: xilinx_u50_gen3x16_xdma_201920_3
 INFO: [v++ 60-1332] Run 'run_link' status: Not started
-INFO: [v++ 60-1443] [23:54:58] Run run_link: Step system_link: Started
+INFO: [v++ 60-1443] [11:45:28] Run run_link: Step system_link: Started
 INFO: [v++ 60-1453] Command Line: system_link --xo /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.xo --xpfm /opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm --target hw --output_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int --temp_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link
 INFO: [v++ 60-1454] Run Directory: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/run_link
-INFO: [SYSTEM_LINK 60-1316] Initiating connection to rulecheck server, at Tue Nov 23 23:54:59 2021
+INFO: [SYSTEM_LINK 60-1316] Initiating connection to rulecheck server, at Mon Dec  6 11:45:29 2021
 INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.xo
 INFO: [SYSTEM_LINK 82-53] Creating IP database /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
-INFO: [SYSTEM_LINK 82-38] [23:55:00] build_xd_ip_db started: /tools/Xilinx/Vitis/2020.1/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/hw.hpfm -clkid 0 -ip /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/iprepo/fastmachinelearning_kernel_myproject_kernel_1_0,myproject_kernel -o /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
-INFO: [SYSTEM_LINK 82-37] [23:55:02] build_xd_ip_db finished successfully
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1432.367 ; gain = 0.000 ; free physical = 12932 ; free virtual = 16550
+INFO: [SYSTEM_LINK 82-38] [11:45:29] build_xd_ip_db started: /tools/Xilinx/Vitis/2020.1/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/hw.hpfm -clkid 0 -ip /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/iprepo/fastmachinelearning_kernel_myproject_kernel_1_0,myproject_kernel -o /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [11:45:31] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1368.367 ; gain = 0.000 ; free physical = 25411 ; free virtual = 31771
 INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
 INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
-INFO: [SYSTEM_LINK 82-38] [23:55:02] cfgen started: /tools/Xilinx/Vitis/2020.1/bin/cfgen -dmclkid 0 -r /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [11:45:31] cfgen started: /tools/Xilinx/Vitis/2020.1/bin/cfgen -dmclkid 0 -r /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
 INFO: [CFGEN 83-0] Kernel Specs: 
 INFO: [CFGEN 83-0]   kernel: myproject_kernel, num: 1  {myproject_kernel_1}
 INFO: [CFGEN 83-2226] Inferring mapping for argument myproject_kernel_1.in_r to HBM[0]
 INFO: [CFGEN 83-2226] Inferring mapping for argument myproject_kernel_1.out_r to HBM[0]
-INFO: [SYSTEM_LINK 82-37] [23:55:03] cfgen finished successfully
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1432.367 ; gain = 0.000 ; free physical = 12931 ; free virtual = 16550
+INFO: [SYSTEM_LINK 82-37] [11:45:33] cfgen finished successfully
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1368.367 ; gain = 0.000 ; free physical = 25410 ; free virtual = 31771
 INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
-INFO: [SYSTEM_LINK 82-38] [23:55:03] cf2bd started: /tools/Xilinx/Vitis/2020.1/bin/cf2bd  --linux --trace_buffer 1024 --input_file /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/_sysl/.xsd --temp_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link --output_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int --target_bd ulp.bd
+INFO: [SYSTEM_LINK 82-38] [11:45:33] cf2bd started: /tools/Xilinx/Vitis/2020.1/bin/cf2bd  --linux --trace_buffer 1024 --input_file /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/_sysl/.xsd --temp_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link --output_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int --target_bd ulp.bd
 INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml -r /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
 INFO: [CF2BD 82-28] cf2xd finished successfully
 INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -bd ulp.bd -dn dr -dp /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link/_sysl/.xsd
 INFO: [CF2BD 82-28] cf_xsd finished successfully
-INFO: [SYSTEM_LINK 82-37] [23:55:04] cf2bd finished successfully
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1432.367 ; gain = 0.000 ; free physical = 12921 ; free virtual = 16547
-INFO: [v++ 60-1441] [23:55:04] Run run_link: Step system_link: Completed
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1339.559 ; gain = 0.000 ; free physical = 12951 ; free virtual = 16573
-INFO: [v++ 60-1443] [23:55:05] Run run_link: Step cf2sw: Started
+INFO: [SYSTEM_LINK 82-37] [11:45:34] cf2bd finished successfully
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1368.367 ; gain = 0.000 ; free physical = 25404 ; free virtual = 31769
+INFO: [v++ 60-1441] [11:45:34] Run run_link: Step system_link: Completed
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1339.559 ; gain = 0.000 ; free physical = 25434 ; free virtual = 31795
+INFO: [v++ 60-1443] [11:45:34] Run run_link: Step cf2sw: Started
 INFO: [v++ 60-1453] Command Line: cf2sw -sdsl /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/sdsl.dat -rtd /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/cf2sw.rtd -xclbin /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xclbin_orig.xml -o /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xclbin_orig.1.xml
 INFO: [v++ 60-1454] Run Directory: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/run_link
-INFO: [v++ 60-1441] [23:55:05] Run run_link: Step cf2sw: Completed
-Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.69 . Memory (MB): peak = 1339.559 ; gain = 0.000 ; free physical = 12951 ; free virtual = 16574
-INFO: [v++ 60-1443] [23:55:05] Run run_link: Step rtd2_system_diagram: Started
+INFO: [v++ 60-1441] [11:45:35] Run run_link: Step cf2sw: Completed
+Time (s): cpu = 00:00:00.67 ; elapsed = 00:00:00.70 . Memory (MB): peak = 1339.559 ; gain = 0.000 ; free physical = 25434 ; free virtual = 31794
+INFO: [v++ 60-1443] [11:45:35] Run run_link: Step rtd2_system_diagram: Started
 INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram
 INFO: [v++ 60-1454] Run Directory: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/run_link
-INFO: [v++ 60-1441] [23:55:06] Run run_link: Step rtd2_system_diagram: Completed
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.62 . Memory (MB): peak = 1339.559 ; gain = 0.000 ; free physical = 12583 ; free virtual = 16207
-INFO: [v++ 60-1443] [23:55:06] Run run_link: Step vpl: Started
-INFO: [v++ 60-1453] Command Line: vpl -t hw -f xilinx_u50_gen3x16_xdma_201920_3 --remote_ip_cache /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/.ipcache --output_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int --log_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/logs/link --report_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link --config /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/vplConfig.ini -k /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link --no-info --iprepo /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xo/ip_repo/fastmachinelearning_kernel_myproject_kernel_1_0 --messageDb /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/run_link/vpl.pb /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/dr.bd.tcl
+INFO: [v++ 60-1441] [11:45:35] Run run_link: Step rtd2_system_diagram: Completed
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.61 . Memory (MB): peak = 1339.559 ; gain = 0.000 ; free physical = 25073 ; free virtual = 31433
+INFO: [v++ 60-1443] [11:45:35] Run run_link: Step vpl: Started
+INFO: [v++ 60-1453] Command Line: vpl -t hw -f xilinx_u50_gen3x16_xdma_201920_3 -j 14 --kernel_frequency 250 --remote_ip_cache /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/.ipcache --output_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int --log_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/logs/link --report_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link --config /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/vplConfig.ini -k /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link --no-info --iprepo /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xo/ip_repo/fastmachinelearning_kernel_myproject_kernel_1_0 --messageDb /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/run_link/vpl.pb /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/dr.bd.tcl
 INFO: [v++ 60-1454] Run Directory: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/run_link
 
 ****** vpl v2020.1 (64-bit)
@@ -59,143 +59,143 @@ INFO: [v++ 60-1454] Run Directory: /home/gabri-bot/Vivado_projects/myproject_ker
 INFO: [VPL 60-839] Read in kernel information from file '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/kernel_info.dat'.
 INFO: [VPL 60-423]   Target device: xilinx_u50_gen3x16_xdma_201920_3
 INFO: [VPL 60-1032] Extracting hardware platform to /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform
-[23:55:18] Run vpl: Step create_project: Started
+[11:45:46] Run vpl: Step create_project: Started
 Creating Vivado project.
-[23:55:20] Run vpl: Step create_project: Completed
-[23:55:20] Run vpl: Step create_bd: Started
-[23:56:17] Run vpl: Step create_bd: Completed
-[23:56:17] Run vpl: Step update_bd: Started
-[23:56:17] Run vpl: Step update_bd: Completed
-[23:56:17] Run vpl: Step generate_target: Started
-[23:56:57] Run vpl: Step generate_target: Completed
-[23:56:57] Run vpl: Step config_hw_runs: Started
-[23:56:58] Run vpl: Step config_hw_runs: Completed
-[23:56:58] Run vpl: Step synth: Started
-[23:57:29] Block-level synthesis in progress, 0 of 7 jobs complete, 4 jobs running.
-[23:57:59] Block-level synthesis in progress, 0 of 7 jobs complete, 4 jobs running.
-[23:58:29] Block-level synthesis in progress, 5 of 7 jobs complete, 1 job running.
-[23:59:00] Block-level synthesis in progress, 6 of 7 jobs complete, 1 job running.
-[23:59:30] Block-level synthesis in progress, 6 of 7 jobs complete, 1 job running.
-[00:00:00] Block-level synthesis in progress, 7 of 7 jobs complete, 0 jobs running.
-[00:00:30] Top-level synthesis in progress.
-[00:01:00] Top-level synthesis in progress.
-[00:01:21] Run vpl: Step synth: Completed
-[00:01:21] Run vpl: Step impl: Started
-[00:04:51] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 00h 09m 44s 
+[11:45:49] Run vpl: Step create_project: Completed
+[11:45:49] Run vpl: Step create_bd: Started
+[11:46:47] Run vpl: Step create_bd: Completed
+[11:46:47] Run vpl: Step update_bd: Started
+[11:46:47] Run vpl: Step update_bd: Completed
+[11:46:47] Run vpl: Step generate_target: Started
+[11:47:27] Run vpl: Step generate_target: Completed
+[11:47:27] Run vpl: Step config_hw_runs: Started
+[11:47:28] Run vpl: Step config_hw_runs: Completed
+[11:47:28] Run vpl: Step synth: Started
+[11:47:59] Block-level synthesis in progress, 0 of 7 jobs complete, 4 jobs running.
+[11:48:29] Block-level synthesis in progress, 0 of 7 jobs complete, 4 jobs running.
+[11:48:59] Block-level synthesis in progress, 5 of 7 jobs complete, 1 job running.
+[11:49:29] Block-level synthesis in progress, 6 of 7 jobs complete, 1 job running.
+[11:49:59] Block-level synthesis in progress, 6 of 7 jobs complete, 1 job running.
+[11:50:29] Block-level synthesis in progress, 6 of 7 jobs complete, 1 job running.
+[11:50:59] Top-level synthesis in progress.
+[11:51:29] Top-level synthesis in progress.
+[11:52:03] Run vpl: Step synth: Completed
+[11:52:03] Run vpl: Step impl: Started
+[11:56:04] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 00h 10m 27s 
 
-[00:04:51] Starting logic optimization..
-[00:05:22] Phase 1 Retarget
-[00:05:52] Phase 2 Constant propagation
-[00:05:52] Phase 3 Sweep
-[00:06:22] Phase 4 BUFG optimization
-[00:06:22] Phase 5 Shift Register Optimization
-[00:06:22] Phase 6 Post Processing Netlist
-[00:06:52] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 02m 00s 
+[11:56:04] Starting logic optimization..
+[11:56:34] Phase 1 Retarget
+[11:56:34] Phase 2 Constant propagation
+[11:56:34] Phase 3 Sweep
+[11:57:04] Phase 4 BUFG optimization
+[11:57:04] Phase 5 Shift Register Optimization
+[11:57:35] Phase 6 Post Processing Netlist
+[11:58:05] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 02m 00s 
 
-[00:06:52] Starting logic placement..
-[00:07:22] Phase 1 Placer Initialization
-[00:07:22] Phase 1.1 Placer Initialization Netlist Sorting
-[00:08:22] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-[00:09:22] Phase 1.3 Build Placer Netlist Model
-[00:10:23] Phase 1.4 Constrain Clocks/Macros
-[00:10:23] Phase 2 Global Placement
-[00:10:23] Phase 2.1 Floorplanning
-[00:10:23] Phase 2.1.1 Partition Driven Placement
-[00:10:23] Phase 2.1.1.1 PBP: Partition Driven Placement
-[00:10:53] Phase 2.1.1.2 PBP: Clock Region Placement
-[00:10:53] Phase 2.1.1.3 PBP: Compute Congestion
-[00:10:53] Phase 2.1.1.4 PBP: UpdateTiming
-[00:10:53] Phase 2.1.1.5 PBP: Add part constraints
-[00:11:23] Phase 2.2 Global Placement Core
-[00:13:23] Phase 2.2.1 Physical Synthesis In Placer
-[00:14:23] Phase 3 Detail Placement
-[00:14:23] Phase 3.1 Commit Multi Column Macros
-[00:14:23] Phase 3.2 Commit Most Macros & LUTRAMs
-[00:14:23] Phase 3.3 Area Swap Optimization
-[00:14:54] Phase 3.4 Pipeline Register Optimization
-[00:14:54] Phase 3.5 IO Cut Optimizer
-[00:14:54] Phase 3.6 Fast Optimization
-[00:14:54] Phase 3.7 Small Shape DP
-[00:14:54] Phase 3.7.1 Small Shape Clustering
-[00:14:54] Phase 3.7.2 Flow Legalize Slice Clusters
-[00:15:24] Phase 3.7.3 Slice Area Swap
-[00:15:24] Phase 3.8 Place Remaining
-[00:15:54] Phase 3.9 Re-assign LUT pins
-[00:15:54] Phase 3.10 Pipeline Register Optimization
-[00:15:54] Phase 3.11 Fast Optimization
-[00:15:54] Phase 4 Post Placement Optimization and Clean-Up
-[00:15:54] Phase 4.1 Post Commit Optimization
-[00:16:24] Phase 4.1.1 Post Placement Optimization
-[00:16:24] Phase 4.1.1.1 BUFG Insertion
-[00:16:24] Phase 1 Physical Synthesis Initialization
-[00:16:54] Phase 4.1.1.2 BUFG Replication
-[00:16:54] Phase 4.1.1.3 Replication
-[00:16:54] Phase 4.2 Post Placement Cleanup
-[00:17:24] Phase 4.3 Placer Reporting
-[00:17:24] Phase 4.4 Final Placement Cleanup
-[00:19:55] Finished 4th of 6 tasks (FPGA logic placement). Elapsed time: 00h 13m 03s 
+[11:58:05] Starting logic placement..
+[11:58:05] Phase 1 Placer Initialization
+[11:58:05] Phase 1.1 Placer Initialization Netlist Sorting
+[11:59:35] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+[12:00:35] Phase 1.3 Build Placer Netlist Model
+[12:01:05] Phase 1.4 Constrain Clocks/Macros
+[12:01:35] Phase 2 Global Placement
+[12:01:35] Phase 2.1 Floorplanning
+[12:01:35] Phase 2.1.1 Partition Driven Placement
+[12:01:35] Phase 2.1.1.1 PBP: Partition Driven Placement
+[12:01:35] Phase 2.1.1.2 PBP: Clock Region Placement
+[12:02:06] Phase 2.1.1.3 PBP: Compute Congestion
+[12:02:06] Phase 2.1.1.4 PBP: UpdateTiming
+[12:02:06] Phase 2.1.1.5 PBP: Add part constraints
+[12:02:06] Phase 2.2 Global Placement Core
+[12:06:07] Phase 2.2.1 Physical Synthesis In Placer
+[12:07:07] Phase 3 Detail Placement
+[12:07:07] Phase 3.1 Commit Multi Column Macros
+[12:07:07] Phase 3.2 Commit Most Macros & LUTRAMs
+[12:07:07] Phase 3.3 Area Swap Optimization
+[12:07:07] Phase 3.4 Pipeline Register Optimization
+[12:07:07] Phase 3.5 IO Cut Optimizer
+[12:07:07] Phase 3.6 Fast Optimization
+[12:07:07] Phase 3.7 Small Shape DP
+[12:07:07] Phase 3.7.1 Small Shape Clustering
+[12:07:37] Phase 3.7.2 Flow Legalize Slice Clusters
+[12:07:37] Phase 3.7.3 Slice Area Swap
+[12:08:07] Phase 3.8 Place Remaining
+[12:08:07] Phase 3.9 Re-assign LUT pins
+[12:08:07] Phase 3.10 Pipeline Register Optimization
+[12:08:07] Phase 3.11 Fast Optimization
+[12:08:37] Phase 4 Post Placement Optimization and Clean-Up
+[12:08:37] Phase 4.1 Post Commit Optimization
+[12:08:37] Phase 4.1.1 Post Placement Optimization
+[12:09:07] Phase 4.1.1.1 BUFG Insertion
+[12:09:07] Phase 1 Physical Synthesis Initialization
+[12:09:07] Phase 4.1.1.2 BUFG Replication
+[12:09:37] Phase 4.1.1.3 Replication
+[12:09:37] Phase 4.2 Post Placement Cleanup
+[12:10:08] Phase 4.3 Placer Reporting
+[12:10:08] Phase 4.4 Final Placement Cleanup
+[12:12:38] Finished 4th of 6 tasks (FPGA logic placement). Elapsed time: 00h 14m 33s 
 
-[00:19:55] Starting logic routing..
-[00:20:25] Phase 1 Build RT Design
-[00:23:56] Phase 2 Router Initialization
-[00:23:56] Phase 2.1 Create Timer
-[00:23:56] Phase 2.2 Fix Topology Constraints
-[00:24:26] Phase 2.3 Pre Route Cleanup
-[00:24:26] Phase 2.4 Global Clock Net Routing
-[00:24:26] Phase 2.5 Update Timing
-[00:25:26] Phase 2.6 Update Timing for Bus Skew
-[00:25:26] Phase 2.6.1 Update Timing
-[00:25:56] Phase 3 Initial Routing
-[00:25:56] Phase 4 Rip-up And Reroute
-[00:25:56] Phase 4.1 Global Iteration 0
-[00:27:27] Phase 4.2 Global Iteration 1
-[00:28:27] Phase 4.3 Global Iteration 2
-[00:28:57] Phase 5 Delay and Skew Optimization
-[00:28:57] Phase 5.1 Delay CleanUp
-[00:28:57] Phase 5.1.1 Update Timing
-[00:29:27] Phase 5.2 Clock Skew Optimization
-[00:29:27] Phase 6 Post Hold Fix
-[00:29:27] Phase 6.1 Hold Fix Iter
-[00:29:27] Phase 6.1.1 Update Timing
-[00:29:27] Phase 7 Leaf Clock Prog Delay Opt
-[00:29:57] Phase 8 Route finalize
-[00:29:57] Phase 9 Verifying routed nets
-[00:29:57] Phase 10 Depositing Routes
-[00:30:27] Phase 11 Post Router Timing
-[00:30:27] Finished 5th of 6 tasks (FPGA routing). Elapsed time: 00h 10m 32s 
+[12:12:38] Starting logic routing..
+[12:13:08] Phase 1 Build RT Design
+[12:16:39] Phase 2 Router Initialization
+[12:16:39] Phase 2.1 Create Timer
+[12:16:39] Phase 2.2 Fix Topology Constraints
+[12:17:09] Phase 2.3 Pre Route Cleanup
+[12:17:09] Phase 2.4 Global Clock Net Routing
+[12:17:09] Phase 2.5 Update Timing
+[12:18:10] Phase 2.6 Update Timing for Bus Skew
+[12:18:10] Phase 2.6.1 Update Timing
+[12:18:40] Phase 3 Initial Routing
+[12:18:40] Phase 4 Rip-up And Reroute
+[12:18:40] Phase 4.1 Global Iteration 0
+[12:20:10] Phase 4.2 Global Iteration 1
+[12:21:10] Phase 4.3 Global Iteration 2
+[12:21:41] Phase 5 Delay and Skew Optimization
+[12:21:41] Phase 5.1 Delay CleanUp
+[12:21:41] Phase 5.1.1 Update Timing
+[12:21:41] Phase 5.2 Clock Skew Optimization
+[12:21:41] Phase 6 Post Hold Fix
+[12:21:41] Phase 6.1 Hold Fix Iter
+[12:22:11] Phase 6.1.1 Update Timing
+[12:22:11] Phase 7 Leaf Clock Prog Delay Opt
+[12:22:41] Phase 8 Route finalize
+[12:22:41] Phase 9 Verifying routed nets
+[12:22:41] Phase 10 Depositing Routes
+[12:23:11] Phase 11 Post Router Timing
+[12:23:11] Finished 5th of 6 tasks (FPGA routing). Elapsed time: 00h 10m 32s 
 
-[00:30:27] Starting bitstream generation..
-[00:33:58] Creating bitmap...
-[00:38:29] Writing bitstream ./level0_i_ulp_my_rm_partial.bit...
-[00:38:29] Finished 6th of 6 tasks (FPGA bitstream generation). Elapsed time: 00h 08m 02s 
-[00:39:04] Run vpl: Step impl: Completed
-[00:39:05] Run vpl: FINISHED. Run Status: impl Complete!
-INFO: [v++ 60-1441] [00:39:05] Run run_link: Step vpl: Completed
-Time (s): cpu = 00:00:13 ; elapsed = 00:43:59 . Memory (MB): peak = 1339.559 ; gain = 0.000 ; free physical = 9383 ; free virtual = 13407
-INFO: [v++ 60-1443] [00:39:05] Run run_link: Step rtdgen: Started
+[12:23:11] Starting bitstream generation..
+[12:26:42] Creating bitmap...
+[12:31:43] Writing bitstream ./level0_i_ulp_my_rm_partial.bit...
+[12:31:43] Finished 6th of 6 tasks (FPGA bitstream generation). Elapsed time: 00h 08m 32s 
+[12:32:06] Run vpl: Step impl: Completed
+[12:32:06] Run vpl: FINISHED. Run Status: impl Complete!
+INFO: [v++ 60-1441] [12:32:06] Run run_link: Step vpl: Completed
+Time (s): cpu = 00:00:14 ; elapsed = 00:46:31 . Memory (MB): peak = 1339.559 ; gain = 0.000 ; free physical = 21412 ; free virtual = 28767
+INFO: [v++ 60-1443] [12:32:06] Run run_link: Step rtdgen: Started
 INFO: [v++ 60-1453] Command Line: rtdgen
 INFO: [v++ 60-1454] Run Directory: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/run_link
 INFO: [v++ 60-991] clock name 'clk_kernel2_in' (clock ID '1') is being mapped to clock name 'KERNEL_CLK' in the xclbin
 INFO: [v++ 60-991] clock name 'clk_kernel_in' (clock ID '0') is being mapped to clock name 'DATA_CLK' in the xclbin
 INFO: [v++ 60-991] clock name 'hbm_aclk' (clock ID '') is being mapped to clock name 'hbm_aclk' in the xclbin
-INFO: [v++ 60-1230] The compiler selected the following frequencies for the runtime controllable kernel clock(s) and scalable system clock(s): System (SYSTEM) clock: hbm_aclk = 450, Kernel (KERNEL) clock: clk_kernel2_in = 500, Kernel (DATA) clock: clk_kernel_in = 300
+INFO: [v++ 60-1230] The compiler selected the following frequencies for the runtime controllable kernel clock(s) and scalable system clock(s): System (SYSTEM) clock: hbm_aclk = 450, Kernel (KERNEL) clock: clk_kernel2_in = 500, Kernel (DATA) clock: clk_kernel_in = 250
 INFO: [v++ 60-1453] Command Line: cf2sw -a /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/address_map.xml -sdsl /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/sdsl.dat -xclbin /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xclbin_orig.xml -rtd /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.rtd -o /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.xml
 INFO: [v++ 60-1652] Cf2sw returned exit code: 0
 INFO: [v++ 60-2311] HPISystemDiagram::writeSystemDiagramAfterRunningVivado, rtdInputFilePath: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.rtd
 INFO: [v++ 60-2312] HPISystemDiagram::writeSystemDiagramAfterRunningVivado, systemDiagramOutputFilePath: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/systemDiagramModelSlrBaseAddress.json
 INFO: [v++ 60-1618] Launching 
-INFO: [v++ 60-1441] [00:39:06] Run run_link: Step rtdgen: Completed
-Time (s): cpu = 00:00:00.72 ; elapsed = 00:00:00.76 . Memory (MB): peak = 1339.559 ; gain = 0.000 ; free physical = 9376 ; free virtual = 13405
-INFO: [v++ 60-1443] [00:39:06] Run run_link: Step xclbinutil: Started
+INFO: [v++ 60-1441] [12:32:07] Run run_link: Step rtdgen: Completed
+Time (s): cpu = 00:00:00.70 ; elapsed = 00:00:00.75 . Memory (MB): peak = 1339.559 ; gain = 0.000 ; free physical = 21419 ; free virtual = 28774
+INFO: [v++ 60-1443] [12:32:07] Run run_link: Step xclbinutil: Started
 INFO: [v++ 60-1453] Command Line: xclbinutil --add-section BITSTREAM:RAW:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.rtd --append-section :JSON:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel_xml.rtd --add-section BUILD_METADATA:JSON:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.xml --add-section SYSTEM_METADATA:RAW:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u50_gen3x16_xdma_201920_3 --output /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.xclbin
 INFO: [v++ 60-1454] Run Directory: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/run_link
-XRT Build Version: 2.6.0 (Vitis)
-       Build Date: 2020-05-07 15:30:09
-          Hash ID: 9d35aca9e6be09a5402ec036a5607d26e74e01cc
+XRT Build Version: 2.6.655 (2020.1)
+       Build Date: 2020-05-22 12:05:03
+          Hash ID: 2d6bfe4ce91051d4e5b499d38fc493586dd4859a
 Creating a default 'in-memory' xclbin image.
 
 Section: 'BITSTREAM'(0) was successfully added.
-Size   : 31274372 bytes
+Size   : 32422500 bytes
 Format : RAW
 File   : '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/partial.bit'
 
@@ -217,7 +217,7 @@ Format : JSON
 File   : '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel_xml.rtd'
 
 Section: 'BUILD_METADATA'(14) was successfully added.
-Size   : 1674 bytes
+Size   : 1705 bytes
 Format : JSON
 File   : '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel_build.rtd'
 
@@ -227,7 +227,7 @@ Format : RAW
 File   : '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.xml'
 
 Section: 'SYSTEM_METADATA'(22) was successfully added.
-Size   : 10394 bytes
+Size   : 10423 bytes
 Format : RAW
 File   : '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/systemDiagramModelSlrBaseAddress.json'
 
@@ -238,20 +238,20 @@ File   : 'partition_metadata'
 Section: 'IP_LAYOUT'(8) was successfully appended to.
 Format : JSON
 File   : 'ip_layout'
-Successfully wrote (31308928 bytes) to the output file: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.xclbin
+Successfully wrote (32457145 bytes) to the output file: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.xclbin
 Leaving xclbinutil.
-INFO: [v++ 60-1441] [00:39:06] Run run_link: Step xclbinutil: Completed
-Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1339.559 ; gain = 0.000 ; free physical = 9346 ; free virtual = 13406
-INFO: [v++ 60-1443] [00:39:06] Run run_link: Step xclbinutilinfo: Started
+INFO: [v++ 60-1441] [12:32:07] Run run_link: Step xclbinutil: Completed
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1339.559 ; gain = 0.000 ; free physical = 21388 ; free virtual = 28774
+INFO: [v++ 60-1443] [12:32:07] Run run_link: Step xclbinutilinfo: Started
 INFO: [v++ 60-1453] Command Line: xclbinutil --quiet --force --info /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.xclbin.info --input /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.xclbin
 INFO: [v++ 60-1454] Run Directory: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/run_link
-INFO: [v++ 60-1441] [00:39:06] Run run_link: Step xclbinutilinfo: Completed
-Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.30 . Memory (MB): peak = 1339.559 ; gain = 0.000 ; free physical = 9346 ; free virtual = 13407
-INFO: [v++ 60-1443] [00:39:06] Run run_link: Step generate_sc_driver: Started
+INFO: [v++ 60-1441] [12:32:08] Run run_link: Step xclbinutilinfo: Completed
+Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.30 . Memory (MB): peak = 1339.559 ; gain = 0.000 ; free physical = 21389 ; free virtual = 28775
+INFO: [v++ 60-1443] [12:32:08] Run run_link: Step generate_sc_driver: Started
 INFO: [v++ 60-1453] Command Line: 
 INFO: [v++ 60-1454] Run Directory: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/run_link
-INFO: [v++ 60-1441] [00:39:06] Run run_link: Step generate_sc_driver: Completed
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1339.559 ; gain = 0.000 ; free physical = 9346 ; free virtual = 13407
+INFO: [v++ 60-1441] [12:32:08] Run run_link: Step generate_sc_driver: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1339.559 ; gain = 0.000 ; free physical = 21389 ; free virtual = 28774
 INFO: [v++ 60-244] Generating system estimate report...
 INFO: [v++ 60-1092] Generated system estimate report: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link/system_estimate_myproject_kernel.xtxt
 INFO: [v++ 60-586] Created /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.ltx
@@ -264,5 +264,5 @@ INFO: [v++ 60-1307] Run completed. Additional information can be found in:
 
 INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
     vitis_analyzer /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.xclbin.link_summary 
-INFO: [v++ 60-791] Total elapsed time: 0h 44m 21s
+INFO: [v++ 60-791] Total elapsed time: 0h 46m 52s
 INFO: [v++ 60-1653] Closing dispatch client.

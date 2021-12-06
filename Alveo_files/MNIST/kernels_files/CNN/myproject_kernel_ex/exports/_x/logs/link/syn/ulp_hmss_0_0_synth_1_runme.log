@@ -9,7 +9,7 @@
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source ulp_hmss_0_0.tcl -notrace
-INFO: Dispatch client connection id - 33617
+INFO: Dispatch client connection id - 33283
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xo/ip_repo/fastmachinelearning_kernel_myproject_kernel_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
@@ -28,16 +28,16 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu50'
 INFO: [Device 21-403] Loading part xcu50-fsvh2104-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 4921
+INFO: [Synth 8-7075] Helper process launched with PID 15613
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3132.371 ; gain = 134.715 ; free physical = 8049 ; free virtual = 12214
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3131.371 ; gain = 134.715 ; free physical = 19839 ; free virtual = 27123
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'ulp_hmss_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/synth/ulp_hmss_0_0.v:84]
 INFO: [Synth 8-6157] synthesizing module 'bd_85ad' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:10]
-INFO: [Synth 8-6157] synthesizing module 'bd_85ad_axi_apb_bridge_inst_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_axi_apb_bridge_inst_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_axi_apb_bridge_inst_0' (1#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_axi_apb_bridge_inst_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'bd_85ad_hbm_inst_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_hbm_inst_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_hbm_inst_0' (2#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_hbm_inst_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_85ad_axi_apb_bridge_inst_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_axi_apb_bridge_inst_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_axi_apb_bridge_inst_0' (1#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_axi_apb_bridge_inst_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_85ad_hbm_inst_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_hbm_inst_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_hbm_inst_0' (2#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_hbm_inst_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'AXI_00_RDATA_PARITY' of module 'bd_85ad_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:553]
 WARNING: [Synth 8-7071] port 'AXI_00_RID' of module 'bd_85ad_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:553]
 WARNING: [Synth 8-7071] port 'AXI_00_BID' of module 'bd_85ad_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:553]
@@ -45,8 +45,8 @@ WARNING: [Synth 8-7071] port 'AXI_01_RDATA_PARITY' of module 'bd_85ad_hbm_inst_0
 WARNING: [Synth 8-7071] port 'AXI_01_RID' of module 'bd_85ad_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:553]
 WARNING: [Synth 8-7071] port 'AXI_01_BID' of module 'bd_85ad_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:553]
 WARNING: [Synth 8-7023] instance 'hbm_inst' of module 'bd_85ad_hbm_inst_0' has 80 connections declared, but only 74 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:553]
-INFO: [Synth 8-6157] synthesizing module 'bd_85ad_hbm_reset_sync_SLR0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_hbm_reset_sync_SLR0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_hbm_reset_sync_SLR0_0' (3#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_hbm_reset_sync_SLR0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_85ad_hbm_reset_sync_SLR0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_hbm_reset_sync_SLR0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_hbm_reset_sync_SLR0_0' (3#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_hbm_reset_sync_SLR0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_85ad_hbm_reset_sync_SLR0_0' is unconnected for instance 'hbm_reset_sync_SLR0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:628]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_85ad_hbm_reset_sync_SLR0_0' is unconnected for instance 'hbm_reset_sync_SLR0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:628]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_85ad_hbm_reset_sync_SLR0_0' is unconnected for instance 'hbm_reset_sync_SLR0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:628]
@@ -91,29 +91,29 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [/home/gabri
 	Parameter NUM_PORTS bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (4#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_init_concat_0' (5#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/ip/ip_9/synth/bd_85ad_init_concat_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_85ad_init_reduce_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_init_reduce_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_init_reduce_0' (6#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_init_reduce_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_85ad_init_reduce_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_init_reduce_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_init_reduce_0' (6#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_init_reduce_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'init_logic_imp_KAN0DP' (7#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:896]
 INFO: [Synth 8-6157] synthesizing module 'path_0_imp_1VLZ12L' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:916]
-INFO: [Synth 8-6157] synthesizing module 'bd_85ad_interconnect1_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_interconnect1_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_interconnect1_0_0' (8#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_interconnect1_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'bd_85ad_slice1_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_slice1_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_slice1_0_0' (9#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_slice1_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_85ad_interconnect1_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_interconnect1_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_interconnect1_0_0' (8#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_interconnect1_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_85ad_slice1_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_slice1_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_slice1_0_0' (9#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_slice1_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'bd_85ad_slice1_0_0' is unconnected for instance 'slice1_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:1294]
 WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'bd_85ad_slice1_0_0' is unconnected for instance 'slice1_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:1294]
 WARNING: [Synth 8-7023] instance 'slice1_0' of module 'bd_85ad_slice1_0_0' has 68 connections declared, but only 66 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:1294]
 INFO: [Synth 8-6155] done synthesizing module 'path_0_imp_1VLZ12L' (10#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:916]
 INFO: [Synth 8-6157] synthesizing module 'path_1_imp_HHIY0J' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:1363]
-INFO: [Synth 8-6157] synthesizing module 'bd_85ad_interconnect0_1_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_interconnect0_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_interconnect0_1_0' (11#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_interconnect0_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'bd_85ad_slice0_1_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_slice0_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_slice0_1_0' (12#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_slice0_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_85ad_interconnect0_1_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_interconnect0_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_interconnect0_1_0' (11#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_interconnect0_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_85ad_slice0_1_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_slice0_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_slice0_1_0' (12#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_slice0_1_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'bd_85ad_slice0_1_0' is unconnected for instance 'slice0_1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:1761]
 WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'bd_85ad_slice0_1_0' is unconnected for instance 'slice0_1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:1761]
 WARNING: [Synth 8-7023] instance 'slice0_1' of module 'bd_85ad_slice0_1_0' has 68 connections declared, but only 66 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:1761]
 INFO: [Synth 8-6155] done synthesizing module 'path_1_imp_HHIY0J' (13#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:1363]
-INFO: [Synth 8-6157] synthesizing module 'bd_85ad_vip_S00_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_vip_S00_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_vip_S00_0' (14#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_vip_S00_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_85ad_vip_S00_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_vip_S00_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_vip_S00_0' (14#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_vip_S00_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'bd_85ad_vip_S00_0' is unconnected for instance 'vip_S00' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:780]
 WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'bd_85ad_vip_S00_0' is unconnected for instance 'vip_S00' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:780]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'bd_85ad_vip_S00_0' is unconnected for instance 'vip_S00' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:780]
@@ -123,8 +123,8 @@ WARNING: [Synth 8-7071] port 'm_axi_arcache' of module 'bd_85ad_vip_S00_0' is un
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'bd_85ad_vip_S00_0' is unconnected for instance 'vip_S00' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:780]
 WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'bd_85ad_vip_S00_0' is unconnected for instance 'vip_S00' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:780]
 WARNING: [Synth 8-7023] instance 'vip_S00' of module 'bd_85ad_vip_S00_0' has 64 connections declared, but only 56 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:780]
-INFO: [Synth 8-6157] synthesizing module 'bd_85ad_vip_S01_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_vip_S01_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_vip_S01_0' (15#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-4913-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_vip_S01_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_85ad_vip_S01_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_vip_S01_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_vip_S01_0' (15#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/.Xil/Vivado-15606-gabribot-X570-AORUS-ELITE/realtime/bd_85ad_vip_S01_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'bd_85ad_vip_S01_0' is unconnected for instance 'vip_S01' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:837]
 WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'bd_85ad_vip_S01_0' is unconnected for instance 'vip_S01' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:837]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'bd_85ad_vip_S01_0' is unconnected for instance 'vip_S01' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:837]
@@ -137,18 +137,18 @@ WARNING: [Synth 8-7023] instance 'vip_S01' of module 'bd_85ad_vip_S01_0' has 64 
 INFO: [Synth 8-6155] done synthesizing module 'bd_85ad' (16#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/synth/bd_85ad.v:10]
 INFO: [Synth 8-6155] done synthesizing module 'ulp_hmss_0_0' (17#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/synth/ulp_hmss_0_0.v:84]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3180.277 ; gain = 182.621 ; free physical = 8105 ; free virtual = 12272
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3179.277 ; gain = 182.621 ; free physical = 19896 ; free virtual = 27182
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3200.121 ; gain = 202.465 ; free physical = 8105 ; free virtual = 12271
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3199.121 ; gain = 202.465 ; free physical = 19897 ; free virtual = 27182
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3200.121 ; gain = 202.465 ; free physical = 8105 ; free virtual = 12271
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3199.121 ; gain = 202.465 ; free physical = 19897 ; free virtual = 27182
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3200.121 ; gain = 0.000 ; free physical = 8098 ; free virtual = 12264
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3199.121 ; gain = 0.000 ; free physical = 19890 ; free virtual = 27175
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -177,13 +177,13 @@ Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x
 Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3282.688 ; gain = 0.000 ; free physical = 7990 ; free virtual = 12156
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3281.688 ; gain = 0.000 ; free physical = 19774 ; free virtual = 27061
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3282.688 ; gain = 0.000 ; free physical = 7989 ; free virtual = 12155
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3281.688 ; gain = 0.000 ; free physical = 19773 ; free virtual = 27060
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3282.688 ; gain = 285.031 ; free physical = 8082 ; free virtual = 12248
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 3281.688 ; gain = 285.031 ; free physical = 19861 ; free virtual = 27148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -191,7 +191,7 @@ Start Loading Part and Timing Information
 Loading part: xcu50-fsvh2104-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3282.688 ; gain = 285.031 ; free physical = 8082 ; free virtual = 12248
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 3281.688 ; gain = 285.031 ; free physical = 19860 ; free virtual = 27148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -209,10 +209,10 @@ Applied set_property DONT_TOUCH = true for inst/path_1/slice0_1. (constraint fil
 Applied set_property DONT_TOUCH = true for inst/init_logic/init_concat. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/init_logic/init_reduce. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3282.688 ; gain = 285.031 ; free physical = 8082 ; free virtual = 12248
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 3281.688 ; gain = 285.031 ; free physical = 19861 ; free virtual = 27148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3282.688 ; gain = 285.031 ; free physical = 8084 ; free virtual = 12251
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 3281.688 ; gain = 285.031 ; free physical = 19863 ; free virtual = 27151
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -234,25 +234,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 3282.688 ; gain = 285.031 ; free physical = 8068 ; free virtual = 12239
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 3281.688 ; gain = 285.031 ; free physical = 19847 ; free virtual = 27139
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 3658.305 ; gain = 660.648 ; free physical = 7538 ; free virtual = 11711
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 3657.398 ; gain = 660.742 ; free physical = 19296 ; free virtual = 26593
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 3659.305 ; gain = 661.648 ; free physical = 7537 ; free virtual = 11710
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 3658.398 ; gain = 661.742 ; free physical = 19295 ; free virtual = 26593
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 3679.344 ; gain = 681.688 ; free physical = 7534 ; free virtual = 11707
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 3678.438 ; gain = 681.781 ; free physical = 19292 ; free virtual = 26589
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -270,37 +270,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3685.281 ; gain = 687.625 ; free physical = 7534 ; free virtual = 11707
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 3684.375 ; gain = 687.719 ; free physical = 19291 ; free virtual = 26589
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3685.281 ; gain = 687.625 ; free physical = 7534 ; free virtual = 11707
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 3684.375 ; gain = 687.719 ; free physical = 19291 ; free virtual = 26589
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3685.281 ; gain = 687.625 ; free physical = 7534 ; free virtual = 11707
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 3684.375 ; gain = 687.719 ; free physical = 19291 ; free virtual = 26588
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3685.281 ; gain = 687.625 ; free physical = 7534 ; free virtual = 11707
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 3684.375 ; gain = 687.719 ; free physical = 19291 ; free virtual = 26588
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3685.281 ; gain = 687.625 ; free physical = 7534 ; free virtual = 11707
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 3684.375 ; gain = 687.719 ; free physical = 19291 ; free virtual = 26588
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3685.281 ; gain = 687.625 ; free physical = 7534 ; free virtual = 11707
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 3684.375 ; gain = 687.719 ; free physical = 19291 ; free virtual = 26588
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -338,23 +338,23 @@ Report Cell Usage:
 |10    |bd_85ad_vip_S01             |     1|
 +------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3685.281 ; gain = 687.625 ; free physical = 7534 ; free virtual = 11707
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 3684.375 ; gain = 687.719 ; free physical = 19291 ; free virtual = 26588
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:38 . Memory (MB): peak = 3685.281 ; gain = 605.059 ; free physical = 7573 ; free virtual = 11746
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3685.289 ; gain = 687.625 ; free physical = 7573 ; free virtual = 11746
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 3684.375 ; gain = 605.152 ; free physical = 19329 ; free virtual = 26627
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 3684.383 ; gain = 687.719 ; free physical = 19329 ; free virtual = 26627
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3685.289 ; gain = 0.000 ; free physical = 7643 ; free virtual = 11817
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3684.383 ; gain = 0.000 ; free physical = 19401 ; free virtual = 26698
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3740.812 ; gain = 0.000 ; free physical = 7555 ; free virtual = 11729
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3739.906 ; gain = 0.000 ; free physical = 19313 ; free virtual = 26610
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 54 Infos, 40 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:58 . Memory (MB): peak = 3754.750 ; gain = 1595.457 ; free physical = 7685 ; free virtual = 11858
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:01:00 . Memory (MB): peak = 3753.844 ; gain = 1594.551 ; free physical = 19443 ; free virtual = 26741
 INFO: [Common 17-600] The following parameters have non-default value.
 general.maxThreads
 INFO: [Common 17-1381] The checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/ulp_hmss_0_0.dcp' has been generated.
@@ -363,4 +363,4 @@ INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ulp_hmss_0_0, c
 INFO: [Coretcl 2-1174] Renamed 15 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/ulp_hmss_0_0_synth_1/ulp_hmss_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ulp_hmss_0_0_utilization_synth.rpt -pb ulp_hmss_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 23 23:59:59 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  6 11:50:38 2021...

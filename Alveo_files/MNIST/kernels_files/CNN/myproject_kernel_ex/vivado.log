@@ -2,15 +2,15 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Tue Nov 23 20:48:37 2021
-# Process ID: 5557
+# Start of session at: Mon Dec  6 11:16:56 2021
+# Process ID: 1367
 # Current directory: /home/gabri-bot/Vivado_projects/myproject_kernel_ex
-# Command line: vivado -notrace -source /home/gabri-bot/Vivado_projects/TEST_kernel/TEST_kernel.srcs/sources_1/ip/myproject_kernel/myproject_kernel_ex.tcl
+# Command line: vivado -notrace -source /home/gabri-bot/Vivado_projects/Test_kernel/Test_kernel.srcs/sources_1/ip/myproject_kernel/myproject_kernel_ex.tcl
 # Log file: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/vivado.log
 # Journal file: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/vivado.jou
 #-----------------------------------------------------------
 start_gui
-source /home/gabri-bot/Vivado_projects/TEST_kernel/TEST_kernel.srcs/sources_1/ip/myproject_kernel/myproject_kernel_ex.tcl -notrace
+source /home/gabri-bot/Vivado_projects/Test_kernel/Test_kernel.srcs/sources_1/ip/myproject_kernel/myproject_kernel_ex.tcl -notrace
 INFO: [open_example_project] Creating new example project...
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
@@ -32,7 +32,7 @@ Setting ies.simulate.ncsim.more_options to -SVSEED 1
 Setting xcelium.simulate.xmsim.more_options to -SVSEED 1
 Setting vcs.simulate.vcs.more_options to +ntb_random_seed=1
 Setting riviera.simulate.asim.more_options to -sv_seed 1
-get_ipdefs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 7228.969 ; gain = 0.000 ; free physical = 9546 ; free virtual = 14500
+get_ipdefs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 7230.402 ; gain = 0.000 ; free physical = 24440 ; free virtual = 30206
 Wrote  : </home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/myproject_kernel_bd.bd> 
 WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
 INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-2] myproject_kernel_bd_axi_bram_ctrl_0_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
@@ -347,26 +347,32 @@ INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Activ
 INFO: [exportsim-Tcl-29] Script generated: '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.ip_user_files/sim_scripts/myproject_kernel_bd/activehdl/myproject_kernel_bd.sh'
 INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)...
 INFO: [exportsim-Tcl-29] Script generated: '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.ip_user_files/sim_scripts/myproject_kernel_bd/xcelium/myproject_kernel_bd.sh'
-export_ip_user_files: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 7512.797 ; gain = 0.000 ; free physical = 8887 ; free virtual = 14122
+export_ip_user_files: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 7501.223 ; gain = 0.000 ; free physical = 23817 ; free virtual = 29823
 INFO: [open_example_project] Open Example Project completed
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
 update_compile_order -fileset sources_1
 WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-delete_bd_objs [get_bd_intf_nets dma_0_m00_axis] [get_bd_intf_nets example_op_0_m_axis] [get_bd_cells example_op_0]
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-set_property  ip_repo_paths  /home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj [current_project]
+set_property  ip_repo_paths  /home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects [current_project]
 update_ip_catalog
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects'.
 WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
 WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+delete_bd_objs [get_bd_intf_nets dma_0_m00_axis] [get_bd_intf_nets example_op_0_m_axis] [get_bd_cells example_op_0]
 startgroup
 create_bd_cell -type ip -vlnv xilinx.com:hls:myproject_axi:1.0 myproject_axi_0
 endgroup
-set_property location {1 225 80} [get_bd_cells myproject_axi_0]
-set_property location {1 206 75} [get_bd_cells myproject_axi_0]
-connect_bd_intf_net [get_bd_intf_pins myproject_axi_0/in_r] -boundary_type upper [get_bd_intf_pins dma_0/m00_axis]
 connect_bd_intf_net [get_bd_intf_pins myproject_axi_0/out_r] -boundary_type upper [get_bd_intf_pins dma_0/s00_axis]
+connect_bd_intf_net [get_bd_intf_pins myproject_axi_0/in_r] -boundary_type upper [get_bd_intf_pins dma_0/m00_axis]
 apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/ap_clk (250 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins myproject_axi_0/ap_clk]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 dma_0/axi_dma_0
+endgroup
+set_property -dict [list CONFIG.c_include_sg {0} CONFIG.c_sg_include_stscntrl_strm {0}] [get_bd_cells dma_0/axi_dma_0]
+startgroup
+set_property -dict [list CONFIG.c_single_interface {1}] [get_bd_cells dma_0/axi_datamover_0]
+endgroup
+delete_bd_objs [get_bd_cells dma_0/axi_dma_0]
 regenerate_bd_layout
 validate_bd_design
 # --------------------------------------------
@@ -380,6 +386,7 @@ INFO: [BD 41-1662] The design 'myproject_kernel_bd.bd' is already validated. The
 WARNING: [BD 41-597] NET <ap_done_vector_dout> has no source
 Wrote  : </home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/myproject_kernel_bd.bd> 
 Wrote  : </home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ui/bd_dcbb1db2.ui> 
+Wrote  : </home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ui/bd_26c3b5f7.ui> 
 WARNING: [BD 41-2384] Width mismatch when connecting pin: '/control/microblaze_0_exchange_memory/axi_bram_ctrl_0_bram/addra'(32) to pin: '/control/microblaze_0_exchange_memory/axi_bram_ctrl_0/bram_addr_a'(12) - Only lower order bits will be connected.
 WARNING: [BD 41-166] Source port for the net:ap_done_vector_dout is NULL! Connection will be grounded!
 VHDL Output written to : /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v
@@ -387,57 +394,59 @@ WARNING: [BD 41-2384] Width mismatch when connecting pin: '/control/microblaze_0
 WARNING: [BD 41-166] Source port for the net:ap_done_vector_dout is NULL! Connection will be grounded!
 VHDL Output written to : /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/sim/myproject_kernel_bd.v
 VHDL Output written to : /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/hdl/myproject_kernel_bd_wrapper.v
+Wrote  : </home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ui/bd_dcbb1db2.ui> 
+Wrote  : </home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ui/bd_26c3b5f7.ui> 
 WARNING: [IP_Flow 19-519] IP 'myproject_kernel_bd_myproject_axi_0_0' detected a language mismatch between 'VHDL Simulation Wrapper' and 'Verilog Simulation' output products. Please check with the IP provider to see if this is expected.
 INFO: [BD 41-1029] Generation completed for the IP Integrator block myproject_axi_0 .
 Exporting to file /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/hw_handoff/myproject_kernel_bd.hwh
 Generated Block Design Tcl file /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/hw_handoff/myproject_kernel_bd_bd.tcl
 Generated Hardware Definition File /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.hwdef
-[Tue Nov 23 21:09:30 2021] Launched myproject_kernel_bd_axi_crossbar_1_0_synth_1, myproject_kernel_bd_axi_register_slice_0_0_synth_1, myproject_kernel_bd_axi_gpio_0_0_synth_1, myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_synth_1, myproject_kernel_bd_ilmb_v10_0_synth_1, myproject_kernel_bd_ilmb_bram_if_cntlr_0_synth_1, myproject_kernel_bd_dlmb_v10_0_synth_1, myproject_kernel_bd_dlmb_bram_if_cntlr_0_synth_1, myproject_kernel_bd_axi_datamover_0_0_synth_1, myproject_kernel_bd_microblaze_0_0_synth_1, myproject_kernel_bd_axi_bram_ctrl_0_0_synth_1, myproject_kernel_bd_axi_crossbar_0_0_synth_1, myproject_kernel_bd_proc_sys_reset_0_0_synth_1, myproject_kernel_bd_axi_bram_ctrl_0_bram_0_synth_1, myproject_kernel_bd_myproject_axi_0_0_synth_1, myproject_kernel_bd_axis_broadcaster_0_0_synth_1, myproject_kernel_bd_axis_combiner_0_0_synth_1, myproject_kernel_bd_axis_dwidth_cnv_0_0_synth_1, myproject_kernel_bd_axis_subset_cnv_cmd_0_0_synth_1, myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1...
+[Mon Dec  6 11:24:55 2021] Launched myproject_kernel_bd_axi_crossbar_1_0_synth_1, myproject_kernel_bd_axi_gpio_0_0_synth_1, myproject_kernel_bd_axi_register_slice_0_0_synth_1, myproject_kernel_bd_axi_crossbar_0_0_synth_1, myproject_kernel_bd_axis_broadcaster_0_0_synth_1, myproject_kernel_bd_ilmb_v10_0_synth_1, myproject_kernel_bd_proc_sys_reset_0_0_synth_1, myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_synth_1, myproject_kernel_bd_axis_combiner_0_0_synth_1, myproject_kernel_bd_axi_bram_ctrl_0_0_synth_1, myproject_kernel_bd_microblaze_0_0_synth_1, myproject_kernel_bd_axi_datamover_0_0_synth_1, myproject_kernel_bd_axis_dwidth_cnv_0_0_synth_1, myproject_kernel_bd_axis_subset_cnv_cmd_0_0_synth_1, myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1, myproject_kernel_bd_ilmb_bram_if_cntlr_0_synth_1, myproject_kernel_bd_axi_bram_ctrl_0_bram_0_synth_1, myproject_kernel_bd_dlmb_bram_if_cntlr_0_synth_1, myproject_kernel_bd_dlmb_v10_0_synth_1, myproject_kernel_bd_myproject_axi_0_0_synth_1...
 Run output will be captured here:
 myproject_kernel_bd_axi_crossbar_1_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_crossbar_1_0_synth_1/runme.log
-myproject_kernel_bd_axi_register_slice_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_register_slice_0_0_synth_1/runme.log
 myproject_kernel_bd_axi_gpio_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_gpio_0_0_synth_1/runme.log
-myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_synth_1/runme.log
-myproject_kernel_bd_ilmb_v10_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_ilmb_v10_0_synth_1/runme.log
-myproject_kernel_bd_ilmb_bram_if_cntlr_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_ilmb_bram_if_cntlr_0_synth_1/runme.log
-myproject_kernel_bd_dlmb_v10_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_dlmb_v10_0_synth_1/runme.log
-myproject_kernel_bd_dlmb_bram_if_cntlr_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_dlmb_bram_if_cntlr_0_synth_1/runme.log
-myproject_kernel_bd_axi_datamover_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_datamover_0_0_synth_1/runme.log
-myproject_kernel_bd_microblaze_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_microblaze_0_0_synth_1/runme.log
-myproject_kernel_bd_axi_bram_ctrl_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_bram_ctrl_0_0_synth_1/runme.log
+myproject_kernel_bd_axi_register_slice_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_register_slice_0_0_synth_1/runme.log
 myproject_kernel_bd_axi_crossbar_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_crossbar_0_0_synth_1/runme.log
-myproject_kernel_bd_proc_sys_reset_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_proc_sys_reset_0_0_synth_1/runme.log
-myproject_kernel_bd_axi_bram_ctrl_0_bram_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_bram_ctrl_0_bram_0_synth_1/runme.log
-myproject_kernel_bd_myproject_axi_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_myproject_axi_0_0_synth_1/runme.log
 myproject_kernel_bd_axis_broadcaster_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_broadcaster_0_0_synth_1/runme.log
+myproject_kernel_bd_ilmb_v10_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_ilmb_v10_0_synth_1/runme.log
+myproject_kernel_bd_proc_sys_reset_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_proc_sys_reset_0_0_synth_1/runme.log
+myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_synth_1/runme.log
 myproject_kernel_bd_axis_combiner_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_combiner_0_0_synth_1/runme.log
+myproject_kernel_bd_axi_bram_ctrl_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_bram_ctrl_0_0_synth_1/runme.log
+myproject_kernel_bd_microblaze_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_microblaze_0_0_synth_1/runme.log
+myproject_kernel_bd_axi_datamover_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_datamover_0_0_synth_1/runme.log
 myproject_kernel_bd_axis_dwidth_cnv_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_dwidth_cnv_0_0_synth_1/runme.log
 myproject_kernel_bd_axis_subset_cnv_cmd_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_subset_cnv_cmd_0_0_synth_1/runme.log
 myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1/runme.log
-[Tue Nov 23 21:09:30 2021] Launched synth_1...
+myproject_kernel_bd_ilmb_bram_if_cntlr_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_ilmb_bram_if_cntlr_0_synth_1/runme.log
+myproject_kernel_bd_axi_bram_ctrl_0_bram_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_bram_ctrl_0_bram_0_synth_1/runme.log
+myproject_kernel_bd_dlmb_bram_if_cntlr_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_dlmb_bram_if_cntlr_0_synth_1/runme.log
+myproject_kernel_bd_dlmb_v10_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_dlmb_v10_0_synth_1/runme.log
+myproject_kernel_bd_myproject_axi_0_0_synth_1: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_myproject_axi_0_0_synth_1/runme.log
+[Mon Dec  6 11:24:55 2021] Launched synth_1...
 Run output will be captured here: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/runme.log
 wait_on_run [get_runs synth_1]
-[Tue Nov 23 21:09:30 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:09:35 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:09:40 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:09:45 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:09:55 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:10:05 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:10:15 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:10:25 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:10:45 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:11:05 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:11:26 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:11:46 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:12:26 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:13:06 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:13:46 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:14:26 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:15:46 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:17:06 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:18:26 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:19:47 2021] Waiting for synth_1 to finish...
-[Tue Nov 23 21:22:27 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:24:55 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:25:01 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:25:06 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:25:11 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:25:21 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:25:31 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:25:41 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:25:51 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:26:11 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:26:31 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:26:51 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:27:11 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:27:51 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:28:31 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:29:11 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:29:51 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:31:11 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:32:31 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:33:52 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:35:12 2021] Waiting for synth_1 to finish...
+[Mon Dec  6 11:37:52 2021] Waiting for synth_1 to finish...
 
 *** Running vivado
     with args -log myproject_kernel.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source myproject_kernel.tcl
@@ -450,7 +459,7 @@ wait_on_run [get_runs synth_1]
 
 source myproject_kernel.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
 Command: synth_design -top myproject_kernel -part xcu50-fsvh2104-2-e -mode out_of_context
 Starting synth_design
@@ -459,9 +468,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu50'
 INFO: [Device 21-403] Loading part xcu50-fsvh2104-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 17903
+INFO: [Synth 8-7075] Helper process launched with PID 12825
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3013.375 ; gain = 127.715 ; free physical = 9492 ; free virtual = 11912
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3012.219 ; gain = 125.715 ; free physical = 21625 ; free virtual = 27800
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'myproject_kernel' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/imports/myproject_kernel.v:7]
 	Parameter C_S_AXI_CONTROL_ADDR_WIDTH bound to: 12 - type: integer 
@@ -470,28 +479,28 @@ INFO: [Synth 8-6157] synthesizing module 'myproject_kernel' [/home/gabri-bot/Viv
 	Parameter C_M00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:1462]
 INFO: [Synth 8-6157] synthesizing module 'control_imp_KNNMP0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:12]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_microblaze_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_microblaze_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_microblaze_0_0' (1#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_microblaze_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_microblaze_0_0' (1#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_microblaze_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'myproject_kernel_bd_microblaze_0_0' is unconnected for instance 'microblaze_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:292]
 WARNING: [Synth 8-7071] port 'M0_AXIS_TLAST' of module 'myproject_kernel_bd_microblaze_0_0' is unconnected for instance 'microblaze_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:292]
 WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'myproject_kernel_bd_microblaze_0_0' has 81 connections declared, but only 79 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:292]
 INFO: [Synth 8-6157] synthesizing module 'microblaze_0_exchange_memory_imp_1G572G7' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:786]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axi_bram_ctrl_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axi_bram_ctrl_0_0' (2#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axi_bram_ctrl_0_bram_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_bram_ctrl_0_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axi_bram_ctrl_0_bram_0' (3#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_bram_ctrl_0_bram_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axi_bram_ctrl_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axi_bram_ctrl_0_0' (2#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axi_bram_ctrl_0_bram_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_bram_ctrl_0_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axi_bram_ctrl_0_bram_0' (3#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_bram_ctrl_0_bram_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'rsta_busy' of module 'myproject_kernel_bd_axi_bram_ctrl_0_bram_0' is unconnected for instance 'axi_bram_ctrl_0_bram' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:1067]
 WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_0_bram' of module 'myproject_kernel_bd_axi_bram_ctrl_0_bram_0' has 8 connections declared, but only 7 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:1067]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axi_crossbar_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_crossbar_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axi_crossbar_0_0' (4#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_crossbar_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axi_crossbar_1_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_crossbar_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axi_crossbar_1_0' (5#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_crossbar_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axi_crossbar_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_crossbar_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axi_crossbar_0_0' (4#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_crossbar_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axi_crossbar_1_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_crossbar_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axi_crossbar_1_0' (5#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_crossbar_1_0_stub.v:6]
 WARNING: [Synth 8-689] width (3) of port connection 'm_axi_arprot' does not match port width (6) of module 'myproject_kernel_bd_axi_crossbar_1_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:1120]
 WARNING: [Synth 8-689] width (3) of port connection 'm_axi_awprot' does not match port width (6) of module 'myproject_kernel_bd_axi_crossbar_1_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:1124]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axi_gpio_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axi_gpio_0_0' (6#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axi_register_slice_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_register_slice_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axi_register_slice_0_0' (7#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_register_slice_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axi_gpio_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axi_gpio_0_0' (6#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axi_register_slice_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_register_slice_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axi_register_slice_0_0' (7#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_register_slice_0_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_xlslice_ap_start_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_xlslice_ap_start_0/synth/myproject_kernel_bd_xlslice_ap_start_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 	Parameter DIN_WIDTH bound to: 3 - type: integer 
@@ -508,26 +517,26 @@ INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameter
 INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_xlslice_init_done_0' (10#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_xlslice_init_done_0/synth/myproject_kernel_bd_xlslice_init_done_0.v:57]
 INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_exchange_memory_imp_1G572G7' (11#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:786]
 INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_QQQ3KK' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:1227]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_dlmb_bram_if_cntlr_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_dlmb_bram_if_cntlr_0' (12#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0' (13#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_dlmb_bram_if_cntlr_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_dlmb_bram_if_cntlr_0' (12#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0' (13#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'rsta_busy' of module 'myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0' is unconnected for instance 'dlmb_bram_if_cntlr_bram' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:1373]
 WARNING: [Synth 8-7071] port 'rstb_busy' of module 'myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0' is unconnected for instance 'dlmb_bram_if_cntlr_bram' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:1373]
 WARNING: [Synth 8-7023] instance 'dlmb_bram_if_cntlr_bram' of module 'myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0' has 16 connections declared, but only 14 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:1373]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_dlmb_v10_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_dlmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_dlmb_v10_0' (14#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_dlmb_v10_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_dlmb_v10_0' (14#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_dlmb_v10_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'myproject_kernel_bd_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:1388]
 WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'myproject_kernel_bd_dlmb_v10_0' has 25 connections declared, but only 24 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:1388]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_ilmb_bram_if_cntlr_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_ilmb_bram_if_cntlr_0' (15#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_ilmb_v10_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_ilmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_ilmb_v10_0' (16#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_ilmb_bram_if_cntlr_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_ilmb_bram_if_cntlr_0' (15#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_ilmb_v10_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_ilmb_v10_0' (16#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_ilmb_v10_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'myproject_kernel_bd_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:1434]
 WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'myproject_kernel_bd_ilmb_v10_0' has 25 connections declared, but only 24 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:1434]
 INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_QQQ3KK' (17#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:1227]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_proc_sys_reset_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_proc_sys_reset_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_proc_sys_reset_0_0' (18#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_proc_sys_reset_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_proc_sys_reset_0_0' (18#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_proc_sys_reset_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'myproject_kernel_bd_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:436]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'myproject_kernel_bd_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:436]
 WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'myproject_kernel_bd_proc_sys_reset_0_0' has 10 connections declared, but only 8 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:436]
@@ -565,45 +574,45 @@ WARNING: [Synth 8-7071] port 'TRACE_valid_instr' of module 'control_imp_KNNMP0' 
 WARNING: [Synth 8-7071] port 'ap_start' of module 'control_imp_KNNMP0' is unconnected for instance 'control' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:1686]
 WARNING: [Synth 8-7023] instance 'control' of module 'control_imp_KNNMP0' has 59 connections declared, but only 28 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:1686]
 INFO: [Synth 8-6157] synthesizing module 'dma_0_imp_1KN9I6N' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:447]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axi_datamover_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_datamover_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axi_datamover_0_0' (20#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_datamover_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axi_datamover_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_datamover_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axi_datamover_0_0' (20#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axi_datamover_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mm2s_err' of module 'myproject_kernel_bd_axi_datamover_0_0' is unconnected for instance 'axi_datamover_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:667]
 WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'myproject_kernel_bd_axi_datamover_0_0' is unconnected for instance 'axi_datamover_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:667]
 WARNING: [Synth 8-7071] port 's2mm_err' of module 'myproject_kernel_bd_axi_datamover_0_0' is unconnected for instance 'axi_datamover_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:667]
 WARNING: [Synth 8-7023] instance 'axi_datamover_0' of module 'myproject_kernel_bd_axi_datamover_0_0' has 67 connections declared, but only 64 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:667]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axis_broadcaster_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_broadcaster_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axis_broadcaster_0_0' (21#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_broadcaster_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axis_combiner_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_combiner_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axis_combiner_0_0' (22#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_combiner_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axis_dwidth_cnv_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_dwidth_cnv_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axis_dwidth_cnv_0_0' (23#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_dwidth_cnv_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axis_subset_cnv_cmd_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_subset_cnv_cmd_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axis_subset_cnv_cmd_0_0' (24#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_subset_cnv_cmd_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_subset_cnv_sts_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axis_subset_cnv_sts_0_0' (25#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_subset_cnv_sts_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axis_broadcaster_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_broadcaster_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axis_broadcaster_0_0' (21#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_broadcaster_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axis_combiner_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_combiner_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axis_combiner_0_0' (22#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_combiner_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axis_dwidth_cnv_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_dwidth_cnv_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axis_dwidth_cnv_0_0' (23#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_dwidth_cnv_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axis_subset_cnv_cmd_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_subset_cnv_cmd_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axis_subset_cnv_cmd_0_0' (24#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_subset_cnv_cmd_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_subset_cnv_sts_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axis_subset_cnv_sts_0_0' (25#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_axis_subset_cnv_sts_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'sparse_tkeep_removed' of module 'myproject_kernel_bd_axis_subset_cnv_sts_0_0' is unconnected for instance 'axis_subset_cnv_sts_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:772]
 WARNING: [Synth 8-7023] instance 'axis_subset_cnv_sts_0' of module 'myproject_kernel_bd_axis_subset_cnv_sts_0_0' has 12 connections declared, but only 11 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:772]
 INFO: [Synth 8-6155] done synthesizing module 'dma_0_imp_1KN9I6N' (26#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:447]
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_myproject_axi_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_myproject_axi_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_myproject_axi_0_0' (27#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-17839-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_myproject_axi_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_myproject_axi_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_myproject_axi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_myproject_axi_0_0' (27#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/.Xil/Vivado-12772-gabribot-X570-AORUS-ELITE/realtime/myproject_kernel_bd_myproject_axi_0_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd' (28#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/synth/myproject_kernel_bd.v:1462]
 WARNING: [Synth 8-7071] port 'm00_axi_aruser' of module 'myproject_kernel_bd' is unconnected for instance 'myproject_kernel_bd_i' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/imports/myproject_kernel.v:97]
 WARNING: [Synth 8-7071] port 'm00_axi_awuser' of module 'myproject_kernel_bd' is unconnected for instance 'myproject_kernel_bd_i' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/imports/myproject_kernel.v:97]
 WARNING: [Synth 8-7023] instance 'myproject_kernel_bd_i' of module 'myproject_kernel_bd' has 52 connections declared, but only 50 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/imports/myproject_kernel.v:97]
 INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel' (29#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/imports/myproject_kernel.v:7]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3067.281 ; gain = 181.621 ; free physical = 9550 ; free virtual = 11973
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3066.125 ; gain = 179.621 ; free physical = 21704 ; free virtual = 27880
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3082.125 ; gain = 196.465 ; free physical = 9545 ; free virtual = 11967
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3083.969 ; gain = 197.465 ; free physical = 21699 ; free virtual = 27875
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3082.125 ; gain = 196.465 ; free physical = 9545 ; free virtual = 11967
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3083.969 ; gain = 197.465 ; free physical = 21699 ; free virtual = 27875
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3082.125 ; gain = 0.000 ; free physical = 9538 ; free virtual = 11961
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3083.969 ; gain = 0.000 ; free physical = 21693 ; free virtual = 27869
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -659,13 +668,13 @@ Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_
 Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3240.719 ; gain = 0.000 ; free physical = 9439 ; free virtual = 11864
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3240.625 ; gain = 0.000 ; free physical = 21590 ; free virtual = 27766
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3246.656 ; gain = 5.938 ; free physical = 9438 ; free virtual = 11863
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3246.562 ; gain = 5.938 ; free physical = 21590 ; free virtual = 27765
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3246.656 ; gain = 360.996 ; free physical = 9523 ; free virtual = 11950
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3246.562 ; gain = 360.059 ; free physical = 21675 ; free virtual = 27851
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -673,7 +682,7 @@ Start Loading Part and Timing Information
 Loading part: xcu50-fsvh2104-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3246.656 ; gain = 360.996 ; free physical = 9523 ; free virtual = 11950
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3246.562 ; gain = 360.059 ; free physical = 21675 ; free virtual = 27851
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -702,10 +711,10 @@ Applied set_property DONT_TOUCH = true for myproject_kernel_bd_i/dma_0/axis_subs
 Applied set_property DONT_TOUCH = true for myproject_kernel_bd_i/dma_0/axis_subset_cnv_sts_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for myproject_kernel_bd_i/myproject_axi_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 3246.656 ; gain = 360.996 ; free physical = 9523 ; free virtual = 11949
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3246.562 ; gain = 360.059 ; free physical = 21675 ; free virtual = 27851
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 3246.656 ; gain = 360.996 ; free physical = 9524 ; free virtual = 11951
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3246.562 ; gain = 360.059 ; free physical = 21677 ; free virtual = 27854
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -727,25 +736,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 3246.656 ; gain = 360.996 ; free physical = 9511 ; free virtual = 11942
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 3246.562 ; gain = 360.059 ; free physical = 21665 ; free virtual = 27845
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 3568.891 ; gain = 683.230 ; free physical = 8939 ; free virtual = 11408
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 3569.062 ; gain = 682.559 ; free physical = 21138 ; free virtual = 27318
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 3568.891 ; gain = 683.230 ; free physical = 8939 ; free virtual = 11408
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 3570.062 ; gain = 683.559 ; free physical = 21137 ; free virtual = 27317
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 3595.930 ; gain = 710.270 ; free physical = 8936 ; free virtual = 11406
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 3590.102 ; gain = 703.598 ; free physical = 21135 ; free virtual = 27315
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -763,37 +772,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3595.930 ; gain = 710.270 ; free physical = 8937 ; free virtual = 11407
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 3596.039 ; gain = 709.535 ; free physical = 21135 ; free virtual = 27315
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3595.930 ; gain = 710.270 ; free physical = 8937 ; free virtual = 11407
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 3596.039 ; gain = 709.535 ; free physical = 21135 ; free virtual = 27315
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3595.930 ; gain = 710.270 ; free physical = 8937 ; free virtual = 11407
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 3596.039 ; gain = 709.535 ; free physical = 21135 ; free virtual = 27315
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3595.930 ; gain = 710.270 ; free physical = 8937 ; free virtual = 11407
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 3596.039 ; gain = 709.535 ; free physical = 21135 ; free virtual = 27315
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3595.930 ; gain = 710.270 ; free physical = 8937 ; free virtual = 11407
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 3596.039 ; gain = 709.535 ; free physical = 21135 ; free virtual = 27315
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3595.930 ; gain = 710.270 ; free physical = 8937 ; free virtual = 11407
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 3596.039 ; gain = 709.535 ; free physical = 21135 ; free virtual = 27315
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -851,29 +860,29 @@ Report Cell Usage:
 |20    |myproject_kernel_bd_proc_sys_reset_0        |     1|
 +------+--------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3595.930 ; gain = 710.270 ; free physical = 8937 ; free virtual = 11407
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 3596.039 ; gain = 709.535 ; free physical = 21135 ; free virtual = 27315
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 3595.930 ; gain = 545.738 ; free physical = 8972 ; free virtual = 11441
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3595.938 ; gain = 710.270 ; free physical = 8972 ; free virtual = 11441
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 3596.039 ; gain = 546.941 ; free physical = 21171 ; free virtual = 27351
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 3596.047 ; gain = 709.535 ; free physical = 21171 ; free virtual = 27351
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3595.938 ; gain = 0.000 ; free physical = 9045 ; free virtual = 11515
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3596.047 ; gain = 0.000 ; free physical = 21242 ; free virtual = 27422
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 Generating merged BMM file for the design top 'myproject_kernel'...
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3873.570 ; gain = 0.000 ; free physical = 8882 ; free virtual = 11365
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3873.648 ; gain = 0.000 ; free physical = 21156 ; free virtual = 27337
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 76 Infos, 61 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:01:02 . Memory (MB): peak = 3873.570 ; gain = 1739.273 ; free physical = 9011 ; free virtual = 11494
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:01:01 . Memory (MB): peak = 3873.648 ; gain = 1724.508 ; free physical = 21285 ; free virtual = 27466
 INFO: [Common 17-1381] The checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/myproject_kernel.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file myproject_kernel_utilization_synth.rpt -pb myproject_kernel_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 23 21:23:31 2021...
-[Tue Nov 23 21:23:37 2021] synth_1 finished
-wait_on_run: Time (s): cpu = 00:00:26 ; elapsed = 00:14:07 . Memory (MB): peak = 7683.902 ; gain = 0.000 ; free physical = 11179 ; free virtual = 13660
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  6 11:40:00 2021...
+[Mon Dec  6 11:40:07 2021] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:26 ; elapsed = 00:15:12 . Memory (MB): peak = 7696.859 ; gain = 0.000 ; free physical = 23465 ; free virtual = 29640
 open_run synth_1 -name synth_1
 Design is defaulting to impl run constrset: constrs_1
 Design is defaulting to synth run part: xcu50-fsvh2104-2-e
@@ -898,7 +907,7 @@ INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects
 INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_dwidth_cnv_0_0/myproject_kernel_bd_axis_dwidth_cnv_0_0.dcp' for cell 'myproject_kernel_bd_i/dma_0/axis_dwidth_cnv_0'
 INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_0/myproject_kernel_bd_axis_subset_cnv_cmd_0_0.dcp' for cell 'myproject_kernel_bd_i/dma_0/axis_subset_cnv_cmd_0'
 INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/myproject_kernel_bd_axis_subset_cnv_sts_0_0.dcp' for cell 'myproject_kernel_bd_i/dma_0/axis_subset_cnv_sts_0'
-Netlist sorting complete. Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.32 . Memory (MB): peak = 8484.270 ; gain = 0.000 ; free physical = 10079 ; free virtual = 12570
+Netlist sorting complete. Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.31 . Memory (MB): peak = 8520.051 ; gain = 0.000 ; free physical = 22377 ; free virtual = 28553
 INFO: [Netlist 29-17] Analyzing 2543 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2020.1
@@ -933,22 +942,22 @@ INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell myproject_kernel
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell myproject_kernel_bd_i/control/microblaze_0_local_memory/dlmb_bram_if_cntlr_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 Generating merged BMM file for the design top 'myproject_kernel'...
 INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/Debug/myproject_kernel_control.elf 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8949.734 ; gain = 0.000 ; free physical = 9941 ; free virtual = 12433
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8959.504 ; gain = 0.000 ; free physical = 22245 ; free virtual = 28421
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 90 instances were transformed.
   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 10 instances
   LUT6_2 => LUT6_2 (LUT5, LUT6): 64 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
 
-open_run: Time (s): cpu = 00:00:34 ; elapsed = 00:00:30 . Memory (MB): peak = 8966.574 ; gain = 1282.672 ; free physical = 9512 ; free virtual = 12030
+open_run: Time (s): cpu = 00:00:33 ; elapsed = 00:00:29 . Memory (MB): peak = 8982.254 ; gain = 1285.395 ; free physical = 21705 ; free virtual = 27884
 rename_ref -prefix_all myproject_kernel_
 INFO: [Coretcl 2-1174] Renamed 1169 cell refs.
-rename_ref: Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 10301.883 ; gain = 1078.996 ; free physical = 8102 ; free virtual = 10784
+rename_ref: Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 10258.383 ; gain = 1261.738 ; free physical = 20529 ; free virtual = 26721
 write_checkpoint /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/packaged.dcp
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-480] Writing timing data to binary archive.
 INFO: [Common 17-1381] The checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/packaged.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 10370.918 ; gain = 69.035 ; free physical = 8015 ; free virtual = 10709
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 10327.418 ; gain = 69.035 ; free physical = 20407 ; free virtual = 26619
 write_xdc /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/packaged.xdc
 close_design
 package_project_dcp_and_xdc /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/packaged.dcp /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/packaged.xdc /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel fastmachinelearning kernel myproject_kernel
@@ -976,6 +985,71 @@ package_xo  -xo_path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports
 WARNING: [Vivado 12-4404] The CPU emulation flow in v++ is only supported when using a packaged XO file that contains C-model files, none were found.
 WARNING: [Vivado 12-7038] The bus parameter 'ap_clk.FREQ_HZ' has been detected in the kernel IP 'myproject_kernel'. This may cause validation errors in v++ if a target platform has a different default kernel clock frequency. If validation errors do occur in v++, please edit and re-generate the kernel IP 'myproject_kernel' to remove the bus parameter 'ap_clk.FREQ_HZ'
 # Complete: RTL Kernel Packaging of Netlist
-close_project
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xcu50-fsvh2104-2-e
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_myproject_axi_0_0/myproject_kernel_bd_myproject_axi_0_0.dcp' for cell 'myproject_kernel_bd_i/myproject_axi_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_microblaze_0_0/myproject_kernel_bd_microblaze_0_0.dcp' for cell 'myproject_kernel_bd_i/control/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_proc_sys_reset_0_0/myproject_kernel_bd_proc_sys_reset_0_0.dcp' for cell 'myproject_kernel_bd_i/control/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_bram_ctrl_0_0/myproject_kernel_bd_axi_bram_ctrl_0_0.dcp' for cell 'myproject_kernel_bd_i/control/microblaze_0_exchange_memory/axi_bram_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_bram_ctrl_0_bram_0/myproject_kernel_bd_axi_bram_ctrl_0_bram_0.dcp' for cell 'myproject_kernel_bd_i/control/microblaze_0_exchange_memory/axi_bram_ctrl_0_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_crossbar_0_0/myproject_kernel_bd_axi_crossbar_0_0.dcp' for cell 'myproject_kernel_bd_i/control/microblaze_0_exchange_memory/axi_crossbar_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_crossbar_1_0/myproject_kernel_bd_axi_crossbar_1_0.dcp' for cell 'myproject_kernel_bd_i/control/microblaze_0_exchange_memory/axi_crossbar_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_gpio_0_0/myproject_kernel_bd_axi_gpio_0_0.dcp' for cell 'myproject_kernel_bd_i/control/microblaze_0_exchange_memory/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_register_slice_0_0/myproject_kernel_bd_axi_register_slice_0_0.dcp' for cell 'myproject_kernel_bd_i/control/microblaze_0_exchange_memory/axi_register_slice_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_dlmb_bram_if_cntlr_0/myproject_kernel_bd_dlmb_bram_if_cntlr_0.dcp' for cell 'myproject_kernel_bd_i/control/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0.dcp' for cell 'myproject_kernel_bd_i/control/microblaze_0_local_memory/dlmb_bram_if_cntlr_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_dlmb_v10_0/myproject_kernel_bd_dlmb_v10_0.dcp' for cell 'myproject_kernel_bd_i/control/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_ilmb_bram_if_cntlr_0/myproject_kernel_bd_ilmb_bram_if_cntlr_0.dcp' for cell 'myproject_kernel_bd_i/control/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_ilmb_v10_0/myproject_kernel_bd_ilmb_v10_0.dcp' for cell 'myproject_kernel_bd_i/control/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_datamover_0_0/myproject_kernel_bd_axi_datamover_0_0.dcp' for cell 'myproject_kernel_bd_i/dma_0/axi_datamover_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_broadcaster_0_0/myproject_kernel_bd_axis_broadcaster_0_0.dcp' for cell 'myproject_kernel_bd_i/dma_0/axis_broadcaster_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_combiner_0_0/myproject_kernel_bd_axis_combiner_0_0.dcp' for cell 'myproject_kernel_bd_i/dma_0/axis_combiner_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_dwidth_cnv_0_0/myproject_kernel_bd_axis_dwidth_cnv_0_0.dcp' for cell 'myproject_kernel_bd_i/dma_0/axis_dwidth_cnv_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_0/myproject_kernel_bd_axis_subset_cnv_cmd_0_0.dcp' for cell 'myproject_kernel_bd_i/dma_0/axis_subset_cnv_cmd_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/myproject_kernel_bd_axis_subset_cnv_sts_0_0.dcp' for cell 'myproject_kernel_bd_i/dma_0/axis_subset_cnv_sts_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.31 . Memory (MB): peak = 10327.418 ; gain = 0.000 ; free physical = 20531 ; free virtual = 26772
+INFO: [Netlist 29-17] Analyzing 2543 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_microblaze_0_0/myproject_kernel_bd_microblaze_0_0.xdc] for cell 'myproject_kernel_bd_i/control/microblaze_0/U0'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_microblaze_0_0/myproject_kernel_bd_microblaze_0_0.xdc] for cell 'myproject_kernel_bd_i/control/microblaze_0/U0'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_gpio_0_0/myproject_kernel_bd_axi_gpio_0_0_board.xdc] for cell 'myproject_kernel_bd_i/control/microblaze_0_exchange_memory/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_gpio_0_0/myproject_kernel_bd_axi_gpio_0_0_board.xdc] for cell 'myproject_kernel_bd_i/control/microblaze_0_exchange_memory/axi_gpio_0/U0'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_gpio_0_0/myproject_kernel_bd_axi_gpio_0_0.xdc] for cell 'myproject_kernel_bd_i/control/microblaze_0_exchange_memory/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_gpio_0_0/myproject_kernel_bd_axi_gpio_0_0.xdc] for cell 'myproject_kernel_bd_i/control/microblaze_0_exchange_memory/axi_gpio_0/U0'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_dlmb_v10_0/myproject_kernel_bd_dlmb_v10_0.xdc] for cell 'myproject_kernel_bd_i/control/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_dlmb_v10_0/myproject_kernel_bd_dlmb_v10_0.xdc] for cell 'myproject_kernel_bd_i/control/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_proc_sys_reset_0_0/myproject_kernel_bd_proc_sys_reset_0_0_board.xdc] for cell 'myproject_kernel_bd_i/control/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_proc_sys_reset_0_0/myproject_kernel_bd_proc_sys_reset_0_0_board.xdc] for cell 'myproject_kernel_bd_i/control/proc_sys_reset_0/U0'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_proc_sys_reset_0_0/myproject_kernel_bd_proc_sys_reset_0_0.xdc] for cell 'myproject_kernel_bd_i/control/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_proc_sys_reset_0_0/myproject_kernel_bd_proc_sys_reset_0_0.xdc] for cell 'myproject_kernel_bd_i/control/proc_sys_reset_0/U0'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_datamover_0_0/myproject_kernel_bd_axi_datamover_0_0.xdc] for cell 'myproject_kernel_bd_i/dma_0/axi_datamover_0/U0'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_datamover_0_0/myproject_kernel_bd_axi_datamover_0_0.xdc] for cell 'myproject_kernel_bd_i/dma_0/axi_datamover_0/U0'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/imports/myproject_kernel_user.xdc]
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/imports/myproject_kernel_user.xdc]
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_register_slice_0_0/myproject_kernel_bd_axi_register_slice_0_0_clocks.xdc] for cell 'myproject_kernel_bd_i/control/microblaze_0_exchange_memory/axi_register_slice_0/inst'
+WARNING: [Vivado 12-180] No cells matched '.*15.*_multi/.*/common.srl_fifo_0/asyncclear_.*'. [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_register_slice_0_0/myproject_kernel_bd_axi_register_slice_0_0_clocks.xdc:10]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter REF_PIN_NAME=~CLR -of_objects [get_cells -hierarchical -regexp .*15.*_multi/.*/common.srl_fifo_0/asyncclear_.*]'. [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_register_slice_0_0/myproject_kernel_bd_axi_register_slice_0_0_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_register_slice_0_0/myproject_kernel_bd_axi_register_slice_0_0_clocks.xdc:10]
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_register_slice_0_0/myproject_kernel_bd_axi_register_slice_0_0_clocks.xdc] for cell 'myproject_kernel_bd_i/control/microblaze_0_exchange_memory/axi_register_slice_0/inst'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_datamover_0_0/myproject_kernel_bd_axi_datamover_0_0_clocks.xdc] for cell 'myproject_kernel_bd_i/dma_0/axi_datamover_0/U0'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_datamover_0_0/myproject_kernel_bd_axi_datamover_0_0_clocks.xdc] for cell 'myproject_kernel_bd_i/dma_0/axi_datamover_0/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell myproject_kernel_bd_i/control/microblaze_0_local_memory/dlmb_bram_if_cntlr_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell myproject_kernel_bd_i/control/microblaze_0_local_memory/dlmb_bram_if_cntlr_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell myproject_kernel_bd_i/control/microblaze_0_local_memory/dlmb_bram_if_cntlr_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell myproject_kernel_bd_i/control/microblaze_0_local_memory/dlmb_bram_if_cntlr_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Generating merged BMM file for the design top 'myproject_kernel'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/Debug/myproject_kernel_control.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 10327.418 ; gain = 0.000 ; free physical = 20420 ; free virtual = 26660
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 90 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 10 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 64 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 10327.418 ; gain = 0.000 ; free physical = 20283 ; free virtual = 26544
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 23 21:26:10 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  6 11:43:34 2021...

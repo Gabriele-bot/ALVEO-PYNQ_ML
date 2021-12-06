@@ -1,12 +1,12 @@
-20:49:33 INFO  : Registering command handlers for Vitis TCF services
-20:49:34 INFO  : Successfully done query RDI_DATADIR 
-20:49:34 INFO  : Adding '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/imports/repo' as a new local repository.
-20:49:35 INFO  : Platform repository initialization has completed.
-20:49:36 INFO  : plnx-install-location is set to ''
-20:49:36 INFO  : Result from executing command 'getProjects': myproject_kernel
-20:49:36 INFO  : Result from executing command 'getPlatforms': 
-20:49:38 INFO  : Result from executing command 'getProjects': myproject_kernel
-20:49:38 INFO  : Result from executing command 'getPlatforms': myproject_kernel|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/myproject_kernel.xpfm
-20:49:38 INFO  : Result from executing command 'reportPlatform': {myproject_kernel={mydomain={Os=standalone, DomainName=mydomain, CpuType=control_microblaze_0, CpuInstance=control_microblaze_0}}}
-20:49:38 INFO  : Result from executing command 'reportPlatform': {myproject_kernel={mydomain={Os=standalone, DomainName=mydomain, CpuType=control_microblaze_0, CpuInstance=control_microblaze_0}}}
-20:49:46 INFO  : Checking for BSP changes to sync application flags for project 'myproject_kernel_control'...
+11:17:51 INFO  : Registering command handlers for Vitis TCF services
+11:17:51 INFO  : Successfully done query RDI_DATADIR 
+11:17:51 INFO  : Adding '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/imports/repo' as a new local repository.
+11:17:52 INFO  : Platform repository initialization has completed.
+11:17:53 INFO  : plnx-install-location is set to ''
+11:17:53 INFO  : Result from executing command 'getProjects': myproject_kernel
+11:17:53 INFO  : Result from executing command 'getPlatforms': 
+11:17:56 INFO  : Result from executing command 'getProjects': myproject_kernel
+11:17:56 INFO  : Result from executing command 'getPlatforms': myproject_kernel|/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/myproject_kernel.xpfm
+11:17:56 INFO  : Result from executing command 'reportPlatform': {myproject_kernel={mydomain={Os=standalone, DomainName=mydomain, CpuType=control_microblaze_0, CpuInstance=control_microblaze_0}}}
+11:17:56 INFO  : Result from executing command 'reportPlatform': {myproject_kernel={mydomain={Os=standalone, DomainName=mydomain, CpuType=control_microblaze_0, CpuInstance=control_microblaze_0}}}
+11:18:04 INFO  : Checking for BSP changes to sync application flags for project 'myproject_kernel_control'...

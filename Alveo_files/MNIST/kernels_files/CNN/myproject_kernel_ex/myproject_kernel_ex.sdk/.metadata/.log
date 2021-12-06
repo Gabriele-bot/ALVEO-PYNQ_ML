@@ -1,42 +1,42 @@
-!SESSION 2021-11-23 20:49:31.573 -----------------------------------------------
+!SESSION 2021-12-06 11:17:49.251 -----------------------------------------------
 eclipse.buildId=2020.1
 java.version=9.0.4
 java.vendor=Oracle Corporation
 BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
-Framework arguments:  -application com.xilinx.sdx.cmdline.service 45015
-Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.sdx.cmdline.service 45015 -data /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk
+Framework arguments:  -application com.xilinx.sdx.cmdline.service 39797
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.sdx.cmdline.service 39797 -data /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:33.881
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:51.521
 !MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:34.244
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:51.878
 !MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:34.245
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:51.879
 !MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:34.246
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:51.879
 !MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /tools/Xilinx/Vitis/2020.1/data]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:34.254
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:51.887
 !MESSAGE XSCT Command: [::hsi::utils::add_repo "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/imports/repo"], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:34.261
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:51.895
 !MESSAGE XSCT command with result: [::hsi::utils::add_repo "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/imports/repo"], Result: [null, ]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:36.003
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:53.639
 !MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode batch], Thread: Thread-16
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:36.004
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:53.640
 !MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode batch], Result: [null, ]. Thread: Thread-16
 
-!ENTRY org.eclipse.cdt.core 1 0 2021-11-23 20:49:36.079
+!ENTRY org.eclipse.cdt.core 1 0 2021-12-06 11:17:53.716
 !MESSAGE Indexed 'myproject_kernel' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:38.676
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:56.360
 !MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:38.689
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:56.372
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"zynqmp_pmufw": {"userdefname": "ZynqMP PMU Firmware",
 "description": "Platform Management Unit Firmware for ZynqMP.",
 "supp_proc": "psu_pmu",
@@ -325,16 +325,16 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:38.707
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:56.389
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:38.791
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:56.474
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Result: [null, ]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:38.792
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:56.475
 !MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:38.798
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:56.480
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Result: [null, {"control_microblaze_0": {"hier_name": "control_microblaze_0",
 "type": "microblaze",
 "version": "11.0",
@@ -467,79 +467,79 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:38.870
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:56.552
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa -os standalone -processor control_microblaze_0 -app kernel_control -sw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/system.mss -arch {}], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:38.873
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:56.555
 !MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa -os standalone -processor control_microblaze_0 -app kernel_control -sw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/system.mss -arch {}], Result: [null, 1]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.164
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:56.848
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss ], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.165
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:56.850
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss ], Result: [null, ]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.166
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:56.850
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.167
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:56.851
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss], Result: [null, {"procname": "control_microblaze_0",
 "osname": "standalone",
 "osver": "7.2",
 }]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.411
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.095
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa control_microblaze_0 C_USE_REORDER_INSTR], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.412
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.096
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa control_microblaze_0 C_USE_REORDER_INSTR], Result: [null, 1]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.412
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.097
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa control_microblaze_0 C_ENDIANNESS], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.413
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.098
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa control_microblaze_0 C_ENDIANNESS], Result: [null, 1]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.414
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.099
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa control_microblaze_0 C_USE_BARREL], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.415
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.100
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa control_microblaze_0 C_USE_BARREL], Result: [null, 0]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.415
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.100
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa control_microblaze_0 C_USE_PCMP_INSTR], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.416
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.101
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa control_microblaze_0 C_USE_PCMP_INSTR], Result: [null, 1]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.417
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.102
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa control_microblaze_0 C_USE_DIV], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.417
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.103
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa control_microblaze_0 C_USE_DIV], Result: [null, 0]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.418
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.103
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa control_microblaze_0 C_USE_FPU], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.419
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.104
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa control_microblaze_0 C_USE_FPU], Result: [null, 0]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.420
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.105
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa control_microblaze_0 C_USE_HW_MUL], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.420
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.106
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa control_microblaze_0 C_USE_HW_MUL], Result: [null, 0]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.421
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.106
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa control_microblaze_0 C_AREA_OPTIMIZED], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.421
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.107
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa control_microblaze_0 C_AREA_OPTIMIZED], Result: [null, 0]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.426
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.113
 !MESSAGE XSCT Command: [hsi::utils::get_supported_os -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.434
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.119
 !MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Result: [null, {"control_microblaze_0": {"freertos10_xilinx_v1_6": {"name": "freertos10_xilinx",
 "version": "1.6",
 "desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.3.0",
@@ -557,28 +557,28 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.435
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.120
 !MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.435
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.121
 !MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss], Result: [null, ]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.436
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.122
 !MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.437
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.123
 !MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss], Result: [null, {}]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.437
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.123
 !MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa control_microblaze_0], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.438
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.124
 !MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa control_microblaze_0], Result: [null, control_microblaze_0_exchange_memory_axi_bram_ctrl_0 control_microblaze_0_exchange_memory_axi_gpio_0 control_microblaze_0_local_memory_dlmb_bram_if_cntlr control_microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.439
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.124
 !MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.440
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.126
 !MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss], Result: [null, {"control_microblaze_0_exchange_memory_axi_bram_ctrl_0": {"name": "bram",
 "ver": "4.4",
 },
@@ -596,10 +596,10 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.441
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.127
 !MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.493
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.178
 !MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Result: [null, {"control_microblaze_0": {"version": "11.0",
 "driver_info": {"generic": {"name": "generic",
 "version": "2.0 2.1",
@@ -814,103 +814,103 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.494
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.179
 !MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.495
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.180
 !MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss], Result: [null, ]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.495
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.181
 !MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.496
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.181
 !MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss], Result: [null, {}]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.522
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.205
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.523
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.206
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Result: [null, ]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.523
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.206
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.523
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.206
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss], Result: [null, ]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.524
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.207
 !MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa -sw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss -app kernel_control -processor control_microblaze_0 -os standalone -dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/src], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.547
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.230
 !MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa -sw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss -app kernel_control -processor control_microblaze_0 -os standalone -dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/src], Result: [null, ]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.585
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.279
 !MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/_ide/bitstream}], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.586
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.280
 !MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/_ide/bitstream}], Result: [null, ]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.588
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.283
 !MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.589
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.284
 !MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Result: [null, {"device": "xcu50",
 "family": "virtexuplusHBM",
-"timestamp": "Tue Nov 23 20:49:26 2021",
+"timestamp": "Mon Dec  6 11:17:44 2021",
 "vivado_version": "2020.1",
 "part": "xcu50-fsvh2104-2-e",
 }]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.618
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.318
 !MESSAGE XSCT Command: [::hsi::utils::closesw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss], Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:39.619
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:17:57.319
 !MESSAGE XSCT command with result: [::hsi::utils::closesw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/system.mss], Result: [null, ]. Thread: Thread-26
 
-!ENTRY com.xilinx.sdk.utils 1 0 2021-11-23 20:49:39.640
+!ENTRY com.xilinx.sdk.utils 1 0 2021-12-06 11:17:57.340
 !MESSAGE Generating MD5 hash for file: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/system.mss ...
 
-!ENTRY org.eclipse.cdt.core 1 0 2021-11-23 20:49:39.661
+!ENTRY org.eclipse.cdt.core 1 0 2021-12-06 11:17:57.363
 !MESSAGE Indexed 'myproject_kernel_control_system' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY org.eclipse.cdt.core 1 0 2021-11-23 20:49:39.944
-!MESSAGE Indexed 'myproject_kernel_control' (1 sources, 2 headers) in 0.236 sec: 45 declarations; 115 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!ENTRY org.eclipse.cdt.core 1 0 2021-12-06 11:17:57.632
+!MESSAGE Indexed 'myproject_kernel_control' (1 sources, 2 headers) in 0.227 sec: 45 declarations; 115 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:46.795
-!MESSAGE XSCT Command: [::hsi::utils::closehw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Thread: Worker-4: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:18:04.571
+!MESSAGE XSCT Command: [::hsi::utils::closehw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:46.801
-!MESSAGE XSCT command with result: [::hsi::utils::closehw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Result: [null, ]. Thread: Worker-4: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:18:04.577
+!MESSAGE XSCT command with result: [::hsi::utils::closehw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Result: [null, ]. Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:46.801
-!MESSAGE XSCT Command: [::hsi::utils::openhw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Thread: Worker-4: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:18:04.577
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:46.881
-!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Result: [null, ]. Thread: Worker-4: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:18:04.671
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa], Result: [null, ]. Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:46.882
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/system.mss ], Thread: Worker-4: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:18:04.671
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/system.mss ], Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:46.883
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/system.mss ], Result: [null, ]. Thread: Worker-4: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:18:04.673
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/system.mss ], Result: [null, ]. Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:46.883
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/system.mss], Thread: Worker-4: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:18:04.673
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/system.mss], Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:46.884
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:18:04.674
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/hw/myproject_kernel.dsa /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/system.mss], Result: [null, {"procname": "control_microblaze_0",
 "osname": "standalone",
 "osver": "7.2",
-}]. Thread: Worker-4: Building selected projects in workspace
+}]. Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 1 0 2021-11-23 20:49:46.884
+!ENTRY com.xilinx.sdk.utils 1 0 2021-12-06 11:18:04.674
 !MESSAGE Generating MD5 hash for file: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/system.mss ...
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:46.886
-!MESSAGE XSCT Command: [::hsi::utils::closesw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/system.mss], Thread: Worker-4: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:18:04.677
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/system.mss], Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 20:49:46.887
-!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/system.mss], Result: [null, ]. Thread: Worker-4: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2021-12-06 11:18:04.678
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/system.mss], Result: [null, ]. Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY org.eclipse.core.resources 2 10035 2021-11-23 20:49:47.545
+!ENTRY org.eclipse.core.resources 2 10035 2021-12-06 11:18:05.367
 !MESSAGE The workspace will exit with unsaved changes in this session.
