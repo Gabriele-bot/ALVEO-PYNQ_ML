@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'shift_line_buffer_array_ap_fixed_16u_config5_s'
 ================================================================
-* Date:           Mon Nov 22 19:53:40 2021
+* Date:           Mon Dec  6 16:53:36 2021
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        myproject_prj
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  | 4.00 ns | 0.611 ns |   0.50 ns  |
+    |ap_clk  | 3.33 ns | 0.611 ns |   0.42 ns  |
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -214,7 +214,7 @@ ST_1 : Operation 131 [1/1] (0.00ns)   --->   "ret { i3, i3, i3, i3, i3, i3, i3, 
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 4ns, clock uncertainty: 0.5ns.
+Target clock period: 3.33ns, clock uncertainty: 0.417ns.
 
  <State 1>: 0.611ns
 The critical path consists of the following:

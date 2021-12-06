@@ -23,14 +23,14 @@
 
 // Function declaration/Interface pragmas to match RTL Kernel
 extern "C" void myproject_kernel (
-    int* in_r,
-    int* out_r
+    int* CNN_in,
+    int* CNN_out
 ) {
 
-    #pragma HLS INTERFACE m_axi port=in_r offset=slave bundle=m00_axi
-    #pragma HLS INTERFACE m_axi port=out_r offset=slave bundle=m00_axi
-    #pragma HLS INTERFACE s_axilite port=in_r bundle=control
-    #pragma HLS INTERFACE s_axilite port=out_r bundle=control
+    #pragma HLS INTERFACE m_axi port=CNN_in offset=slave bundle=m00_axi
+    #pragma HLS INTERFACE m_axi port=CNN_out offset=slave bundle=m01_axi
+    #pragma HLS INTERFACE s_axilite port=CNN_in bundle=control
+    #pragma HLS INTERFACE s_axilite port=CNN_out bundle=control
     #pragma HLS INTERFACE s_axilite port=return bundle=control
     #pragma HLS INTERFACE ap_ctrl_hs port=return
 
@@ -47,7 +47,7 @@ extern "C" void myproject_kernel (
 
 
     // Assign input to a buffer
-    memcpy(m00_axi_input_buffer, (int*) in_r, m00_axi_length*sizeof(int));
+    memcpy(m00_axi_input_buffer, (int*) CNN_in, m00_axi_length*sizeof(int));
 
     // Add 1 to input buffer and assign to output buffer.
     for (unsigned int i = 0; i < m00_axi_length; i++) {
@@ -55,7 +55,28 @@ extern "C" void myproject_kernel (
     }
 
     // assign output buffer out to memory
-    memcpy((int*) in_r, m00_axi_output_buffer, m00_axi_length*sizeof(int));
+    memcpy((int*) CNN_in, m00_axi_output_buffer, m00_axi_length*sizeof(int));
+
+
+    // Create input and output buffers for interface m01_axi
+    int m01_axi_input_buffer[BUFFER_WORD_SIZE];
+    int m01_axi_output_buffer[BUFFER_WORD_SIZE];
+
+
+    // length is specified in number of words.
+    unsigned int m01_axi_length = 4096;
+
+
+    // Assign input to a buffer
+    memcpy(m01_axi_input_buffer, (int*) CNN_out, m01_axi_length*sizeof(int));
+
+    // Add 1 to input buffer and assign to output buffer.
+    for (unsigned int i = 0; i < m01_axi_length; i++) {
+      m01_axi_output_buffer[i] = m01_axi_input_buffer[i]  + 1;
+    }
+
+    // assign output buffer out to memory
+    memcpy((int*) CNN_out, m01_axi_output_buffer, m01_axi_length*sizeof(int));
 
 
 }

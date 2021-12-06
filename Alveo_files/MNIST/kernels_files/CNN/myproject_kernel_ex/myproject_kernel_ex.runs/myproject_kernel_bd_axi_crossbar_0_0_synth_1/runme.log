@@ -10,7 +10,7 @@
 
 source myproject_kernel_bd_axi_crossbar_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/myproject_prj'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
 Command: synth_design -top myproject_kernel_bd_axi_crossbar_0_0 -part xcu50-fsvh2104-2-e -mode out_of_context
 Starting synth_design
@@ -19,12 +19,12 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu50'
 INFO: [Device 21-403] Loading part xcu50-fsvh2104-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8049
+INFO: [Synth 8-7075] Helper process launched with PID 3062
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 3001.188 ; gain = 125.715 ; free physical = 16411 ; free virtual = 22453
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 3001.316 ; gain = 126.715 ; free physical = 8306 ; free virtual = 17147
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axi_crossbar_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_crossbar_0_0/synth/myproject_kernel_bd_axi_crossbar_0_0.v:59]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_axi_crossbar' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axi_crossbar_0_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_crossbar_0_0/synth/myproject_kernel_bd_axi_crossbar_0_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_axi_crossbar' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 	Parameter C_FAMILY bound to: virtexuplusHBM - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 2 - type: integer 
 	Parameter C_NUM_MASTER_SLOTS bound to: 1 - type: integer 
@@ -73,7 +73,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_axi_crossbar' [/h
 	Parameter P_LEN bound to: 8 - type: integer 
 	Parameter P_LOCK bound to: 1 - type: integer 
 	Parameter P_FAMILY bound to: rtl - type: string 
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 2 - type: integer 
 	Parameter C_NUM_MASTER_SLOTS bound to: 1 - type: integer 
@@ -126,7 +126,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' [/
 	Parameter P_FULLY_REG bound to: 1 - type: integer 
 	Parameter P_R_REG_CONFIG bound to: 1 - type: integer 
 	Parameter P_DECERR bound to: 2'b11 
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_addr_decoder' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_addr_decoder' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_NUM_TARGETS bound to: 1 - type: integer 
 	Parameter C_NUM_TARGETS_LOG bound to: 1 - type: integer 
@@ -140,31 +140,31 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_addr_decoder' [/h
 	Parameter C_TARGET_QUAL bound to: 2'b01 
 	Parameter C_RESOLUTION bound to: 2 - type: integer 
 	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 30'b000000000000000000000000000000 
 	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
 	Parameter C_FAMILY bound to: rtl - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_addr_decoder' (3#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_addr_decoder' (3#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 2 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (4#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (4#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 2 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 39 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (4#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_decerr_slave' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (4#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_decerr_slave' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
@@ -179,8 +179,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_decerr_slave' [/h
 	Parameter P_AXI4 bound to: 0 - type: integer 
 	Parameter P_AXI3 bound to: 1 - type: integer 
 	Parameter P_AXILITE bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_decerr_slave' (5#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_addr_arbiter_sasd' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_decerr_slave' (5#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_addr_arbiter_sasd' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_NUM_S bound to: 2 - type: integer 
 	Parameter C_NUM_S_LOG bound to: 1 - type: integer 
@@ -188,69 +188,69 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_addr_arbiter_sasd
 	Parameter C_GRANT_ENC bound to: 1 - type: integer 
 	Parameter C_ARB_PRIORITY bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter P_PRIO_MASK bound to: 2'b00 
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 2 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 64 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (5#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_addr_arbiter_sasd' (6#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_splitter' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (5#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_addr_arbiter_sasd' (6#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_splitter' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 	Parameter C_NUM_M bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_splitter' (7#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_splitter__parameterized0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_splitter' (7#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_splitter__parameterized0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 	Parameter C_NUM_M bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_splitter__parameterized0' (7#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_splitter__parameterized0' (7#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 2 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (7#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (7#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice' (8#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice' (8#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 2 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' (8#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' (9#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_axi_crossbar' (10#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axi_crossbar_0_0' (11#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_crossbar_0_0/synth/myproject_kernel_bd_axi_crossbar_0_0.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' (8#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' (9#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_axi_crossbar' (10#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axi_crossbar_0_0' (11#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_crossbar_0_0/synth/myproject_kernel_bd_axi_crossbar_0_0.v:59]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 3148.031 ; gain = 272.559 ; free physical = 16294 ; free virtual = 22345
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 3148.191 ; gain = 273.590 ; free physical = 8218 ; free virtual = 17069
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 3165.844 ; gain = 290.371 ; free physical = 16308 ; free virtual = 22359
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 3163.035 ; gain = 288.434 ; free physical = 8177 ; free virtual = 17028
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 3165.844 ; gain = 290.371 ; free physical = 16309 ; free virtual = 22360
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 3163.035 ; gain = 288.434 ; free physical = 8177 ; free virtual = 17028
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3165.844 ; gain = 0.000 ; free physical = 16435 ; free virtual = 22487
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3163.035 ; gain = 0.000 ; free physical = 8144 ; free virtual = 16995
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_crossbar_0_0/myproject_kernel_bd_axi_crossbar_0_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_crossbar_0_0/myproject_kernel_bd_axi_crossbar_0_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_crossbar_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_crossbar_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_crossbar_0_0/myproject_kernel_bd_axi_crossbar_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_crossbar_0_0/myproject_kernel_bd_axi_crossbar_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_crossbar_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_crossbar_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3321.594 ; gain = 0.000 ; free physical = 15920 ; free virtual = 21972
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3324.785 ; gain = 0.000 ; free physical = 7749 ; free virtual = 16708
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3321.594 ; gain = 0.000 ; free physical = 15919 ; free virtual = 21971
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3324.785 ; gain = 0.000 ; free physical = 7746 ; free virtual = 16705
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 3321.594 ; gain = 446.121 ; free physical = 16008 ; free virtual = 22060
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 3324.785 ; gain = 450.184 ; free physical = 7825 ; free virtual = 16788
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -258,17 +258,17 @@ Start Loading Part and Timing Information
 Loading part: xcu50-fsvh2104-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 3321.594 ; gain = 446.121 ; free physical = 16008 ; free virtual = 22060
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 3324.785 ; gain = 450.184 ; free physical = 7825 ; free virtual = 16788
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_crossbar_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_crossbar_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 3321.594 ; gain = 446.121 ; free physical = 16006 ; free virtual = 22058
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 3324.785 ; gain = 450.184 ; free physical = 7825 ; free virtual = 16788
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 3321.594 ; gain = 446.121 ; free physical = 15999 ; free virtual = 22052
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 3324.785 ; gain = 450.184 ; free physical = 7818 ; free virtual = 16780
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -301,25 +301,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 3321.594 ; gain = 446.121 ; free physical = 16005 ; free virtual = 22065
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 3324.785 ; gain = 450.184 ; free physical = 7783 ; free virtual = 16748
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:57 . Memory (MB): peak = 3568.609 ; gain = 693.137 ; free physical = 18479 ; free virtual = 24531
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:59 . Memory (MB): peak = 3567.973 ; gain = 693.371 ; free physical = 10166 ; free virtual = 19123
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:57 . Memory (MB): peak = 3596.641 ; gain = 721.168 ; free physical = 18457 ; free virtual = 24509
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:59 . Memory (MB): peak = 3596.004 ; gain = 721.402 ; free physical = 10101 ; free virtual = 19058
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:57 . Memory (MB): peak = 3612.656 ; gain = 737.184 ; free physical = 18403 ; free virtual = 24456
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:59 . Memory (MB): peak = 3612.020 ; gain = 737.418 ; free physical = 10076 ; free virtual = 19033
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -337,37 +337,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:59 . Memory (MB): peak = 3612.656 ; gain = 737.184 ; free physical = 18265 ; free virtual = 24318
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:01:01 . Memory (MB): peak = 3612.020 ; gain = 737.418 ; free physical = 10035 ; free virtual = 18999
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:59 . Memory (MB): peak = 3612.656 ; gain = 737.184 ; free physical = 18265 ; free virtual = 24317
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:01:01 . Memory (MB): peak = 3612.020 ; gain = 737.418 ; free physical = 10035 ; free virtual = 18999
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:59 . Memory (MB): peak = 3612.656 ; gain = 737.184 ; free physical = 18265 ; free virtual = 24317
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:01:01 . Memory (MB): peak = 3612.020 ; gain = 737.418 ; free physical = 10033 ; free virtual = 18998
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:59 . Memory (MB): peak = 3612.656 ; gain = 737.184 ; free physical = 18265 ; free virtual = 24317
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:01:01 . Memory (MB): peak = 3612.020 ; gain = 737.418 ; free physical = 10033 ; free virtual = 18998
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:59 . Memory (MB): peak = 3612.656 ; gain = 737.184 ; free physical = 18264 ; free virtual = 24316
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:01:01 . Memory (MB): peak = 3612.020 ; gain = 737.418 ; free physical = 10031 ; free virtual = 18996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:59 . Memory (MB): peak = 3612.656 ; gain = 737.184 ; free physical = 18265 ; free virtual = 24317
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:01:01 . Memory (MB): peak = 3612.020 ; gain = 737.418 ; free physical = 10031 ; free virtual = 18996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -393,27 +393,27 @@ Report Cell Usage:
 |8     |FDSE |     1|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:59 . Memory (MB): peak = 3612.656 ; gain = 737.184 ; free physical = 18265 ; free virtual = 24317
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:01:01 . Memory (MB): peak = 3612.020 ; gain = 737.418 ; free physical = 10031 ; free virtual = 18996
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:54 . Memory (MB): peak = 3612.656 ; gain = 581.434 ; free physical = 18302 ; free virtual = 24354
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:59 . Memory (MB): peak = 3612.664 ; gain = 737.184 ; free physical = 18302 ; free virtual = 24354
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:56 . Memory (MB): peak = 3612.020 ; gain = 575.668 ; free physical = 10070 ; free virtual = 19034
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:01:01 . Memory (MB): peak = 3612.027 ; gain = 737.418 ; free physical = 10070 ; free virtual = 19034
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3620.656 ; gain = 0.000 ; free physical = 18492 ; free virtual = 24545
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3620.020 ; gain = 0.000 ; free physical = 10092 ; free virtual = 19053
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3686.391 ; gain = 0.000 ; free physical = 18256 ; free virtual = 24308
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3685.754 ; gain = 0.000 ; free physical = 10009 ; free virtual = 18966
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 48 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:01:14 . Memory (MB): peak = 3686.391 ; gain = 1537.281 ; free physical = 18371 ; free virtual = 24424
-INFO: [Common 17-1381] The checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_crossbar_0_0_synth_1/myproject_kernel_bd_axi_crossbar_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:17 . Memory (MB): peak = 3685.754 ; gain = 1538.516 ; free physical = 10143 ; free virtual = 19099
+INFO: [Common 17-1381] The checkpoint '/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_crossbar_0_0_synth_1/myproject_kernel_bd_axi_crossbar_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP myproject_kernel_bd_axi_crossbar_0_0, cache-ID = df2a267a627e91fe
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP myproject_kernel_bd_axi_crossbar_0_0, cache-ID = 3e1bfc6a56e8d4b7
 INFO: [Coretcl 2-1174] Renamed 7 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_crossbar_0_0_synth_1/myproject_kernel_bd_axi_crossbar_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axi_crossbar_0_0_synth_1/myproject_kernel_bd_axi_crossbar_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file myproject_kernel_bd_axi_crossbar_0_0_utilization_synth.rpt -pb myproject_kernel_bd_axi_crossbar_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  6 11:26:20 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  6 17:09:18 2021...

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Project Version="1" Minor="7" DIGEST="">
+	<TOOL_VERSION Version="2020.1"/>
+	<MODE Name="Pre-Synthesis"/>
+	<SYSTEMINFO BOARD="" PART="xcu50-fsvh2104-2-e" ARCH="virtexuplusHBM" PACKAGE="fsvh2104" DEVICE="xcu50" SPEED="-2"/>
+	<HIERARCHY Name="myproject_kernel"/>
+	<File Type="HW_HANDOFF" Name="myproject_kernel_bd.hwh" src_db="myproject_kernel_bd.hwdef" DESIGN_HIERARCHY="myproject_kernel_bd_i" BD_TYPE="DEFAULT_BD">
+	</File>
+	<File Type="BD_TCL" Name="myproject_kernel_bd_bd.tcl" src_db="myproject_kernel_bd.hwdef">
+	</File>
+	<USEDRESOURCES/>
+</Project>
+

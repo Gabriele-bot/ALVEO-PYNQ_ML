@@ -98,11 +98,10 @@ module dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_s (
         res_stream_V_data_9_V_write
 );
 
-parameter    ap_ST_fsm_state1 = 5'd1;
-parameter    ap_ST_fsm_pp0_stage0 = 5'd2;
-parameter    ap_ST_fsm_state4 = 5'd4;
-parameter    ap_ST_fsm_state5 = 5'd8;
-parameter    ap_ST_fsm_state6 = 5'd16;
+parameter    ap_ST_fsm_state1 = 4'd1;
+parameter    ap_ST_fsm_pp0_stage0 = 4'd2;
+parameter    ap_ST_fsm_state4 = 4'd4;
+parameter    ap_ST_fsm_state5 = 4'd8;
 
 input   ap_clk;
 input   ap_rst;
@@ -226,7 +225,7 @@ reg res_stream_V_data_9_V_write;
 reg    real_start;
 reg    start_once_reg;
 reg    ap_done_reg;
-(* fsm_encoding = "none" *) reg   [4:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [3:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    internal_ap_ready;
 reg    data_stream_V_data_0_V_blk_n;
@@ -249,7 +248,7 @@ reg    data_stream_V_data_13_V_blk_n;
 reg    data_stream_V_data_14_V_blk_n;
 reg    data_stream_V_data_15_V_blk_n;
 reg    res_stream_V_data_0_V_blk_n;
-wire    ap_CS_fsm_state6;
+wire    ap_CS_fsm_state5;
 reg    res_stream_V_data_1_V_blk_n;
 reg    res_stream_V_data_2_V_blk_n;
 reg    res_stream_V_data_3_V_blk_n;
@@ -261,33 +260,22 @@ reg    res_stream_V_data_8_V_blk_n;
 reg    res_stream_V_data_9_V_blk_n;
 reg   [4:0] i_in_0_reg_1816;
 wire   [0:0] icmp_ln41_fu_2234_p2;
-reg   [0:0] icmp_ln41_reg_8350;
+reg   [0:0] icmp_ln41_reg_8360;
 wire    ap_block_state2_pp0_stage0_iter0;
-wire    io_acc_block_signal_op843;
+wire    io_acc_block_signal_op842;
 reg    ap_block_state3_pp0_stage0_iter1;
 reg    ap_block_pp0_stage0_11001;
 wire   [4:0] i_in_fu_2240_p2;
-reg   [4:0] i_in_reg_8354;
+reg   [4:0] i_in_reg_8364;
 reg    ap_enable_reg_pp0_iter0;
 wire    ap_CS_fsm_state4;
-reg   [11:0] tmp_data_0_V_reg_10359;
-wire    ap_CS_fsm_state5;
-wire    grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_ready;
-wire    grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_done;
-reg   [11:0] tmp_data_1_V_reg_10364;
-reg   [11:0] tmp_data_2_V_reg_10369;
-reg   [11:0] tmp_data_3_V_reg_10374;
-reg   [11:0] tmp_data_4_V_reg_10379;
-reg   [11:0] tmp_data_5_V_reg_10384;
-reg   [11:0] tmp_data_6_V_reg_10389;
-reg   [11:0] tmp_data_7_V_reg_10394;
-reg   [11:0] tmp_data_8_V_reg_10399;
-reg   [11:0] tmp_data_9_V_reg_10404;
 reg    ap_block_state1;
 reg    ap_block_pp0_stage0_subdone;
 reg    ap_condition_pp0_exit_iter0_state2;
 wire    grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_start;
+wire    grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_done;
 wire    grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_idle;
+wire    grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_ready;
 wire   [11:0] grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_0;
 wire   [11:0] grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_1;
 wire   [11:0] grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_2;
@@ -700,8 +688,8 @@ reg   [2:0] data_396_V_24_fu_1730;
 reg   [2:0] data_397_V_24_fu_1734;
 reg   [2:0] data_398_V_24_fu_1738;
 reg   [2:0] data_399_V_24_fu_1742;
-wire    io_acc_block_signal_op1690;
-reg   [4:0] ap_NS_fsm;
+wire    io_acc_block_signal_op1689;
+reg   [3:0] ap_NS_fsm;
 reg    ap_idle_pp0;
 wire    ap_enable_pp0;
 
@@ -709,7 +697,7 @@ wire    ap_enable_pp0;
 initial begin
 #0 start_once_reg = 1'b0;
 #0 ap_done_reg = 1'b0;
-#0 ap_CS_fsm = 5'd1;
+#0 ap_CS_fsm = 4'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
 #0 ap_enable_reg_pp0_iter0 = 1'b0;
 #0 grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_start_reg = 1'b0;
@@ -1148,7 +1136,7 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((ap_continue == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if (((io_acc_block_signal_op1690 == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+        end else if ((~((io_acc_block_signal_op1689 == 1'b0) | (grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state5))) begin
             ap_done_reg <= 1'b1;
         end
     end
@@ -1205,8 +1193,8 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln41_reg_8350 == 1'd0))) begin
-        i_in_0_reg_1816 <= i_in_reg_8354;
+    if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln41_reg_8360 == 1'd0))) begin
+        i_in_0_reg_1816 <= i_in_reg_8364;
     end else if ((~((real_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1))) begin
         i_in_0_reg_1816 <= 5'd0;
     end
@@ -1739,28 +1727,13 @@ end
 
 always @ (posedge ap_clk) begin
     if (((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        i_in_reg_8354 <= i_in_fu_2240_p2;
+        i_in_reg_8364 <= i_in_fu_2240_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        icmp_ln41_reg_8350 <= icmp_ln41_fu_2234_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state5) & (grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_done == 1'b1))) begin
-        tmp_data_0_V_reg_10359 <= grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_0;
-        tmp_data_1_V_reg_10364 <= grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_1;
-        tmp_data_2_V_reg_10369 <= grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_2;
-        tmp_data_3_V_reg_10374 <= grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_3;
-        tmp_data_4_V_reg_10379 <= grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_4;
-        tmp_data_5_V_reg_10384 <= grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_5;
-        tmp_data_6_V_reg_10389 <= grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_6;
-        tmp_data_7_V_reg_10394 <= grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_7;
-        tmp_data_8_V_reg_10399 <= grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_8;
-        tmp_data_9_V_reg_10404 <= grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_9;
+        icmp_ln41_reg_8360 <= icmp_ln41_fu_2234_p2;
     end
 end
 
@@ -1773,7 +1746,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((io_acc_block_signal_op1690 == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+    if ((~((io_acc_block_signal_op1689 == 1'b0) | (grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state5))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = ap_done_reg;
@@ -1797,8 +1770,8 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (icmp_ln41_reg_8350 == 1'd0) & (1'b0 == ap_block_pp0_stage0))) begin
-        ap_phi_mux_i_in_0_phi_fu_1820_p4 = i_in_reg_8354;
+    if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (icmp_ln41_reg_8360 == 1'd0) & (1'b0 == ap_block_pp0_stage0))) begin
+        ap_phi_mux_i_in_0_phi_fu_1820_p4 = i_in_reg_8364;
     end else begin
         ap_phi_mux_i_in_0_phi_fu_1820_p4 = i_in_0_reg_1816;
     end
@@ -2061,7 +2034,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((io_acc_block_signal_op1690 == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+    if ((~((io_acc_block_signal_op1689 == 1'b0) | (grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state5))) begin
         internal_ap_ready = 1'b1;
     end else begin
         internal_ap_ready = 1'b0;
@@ -2077,7 +2050,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
+    if ((1'b1 == ap_CS_fsm_state5)) begin
         res_stream_V_data_0_V_blk_n = res_stream_V_data_0_V_full_n;
     end else begin
         res_stream_V_data_0_V_blk_n = 1'b1;
@@ -2085,7 +2058,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((io_acc_block_signal_op1690 == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+    if ((~((io_acc_block_signal_op1689 == 1'b0) | (grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state5))) begin
         res_stream_V_data_0_V_write = 1'b1;
     end else begin
         res_stream_V_data_0_V_write = 1'b0;
@@ -2093,7 +2066,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
+    if ((1'b1 == ap_CS_fsm_state5)) begin
         res_stream_V_data_1_V_blk_n = res_stream_V_data_1_V_full_n;
     end else begin
         res_stream_V_data_1_V_blk_n = 1'b1;
@@ -2101,7 +2074,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((io_acc_block_signal_op1690 == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+    if ((~((io_acc_block_signal_op1689 == 1'b0) | (grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state5))) begin
         res_stream_V_data_1_V_write = 1'b1;
     end else begin
         res_stream_V_data_1_V_write = 1'b0;
@@ -2109,7 +2082,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
+    if ((1'b1 == ap_CS_fsm_state5)) begin
         res_stream_V_data_2_V_blk_n = res_stream_V_data_2_V_full_n;
     end else begin
         res_stream_V_data_2_V_blk_n = 1'b1;
@@ -2117,7 +2090,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((io_acc_block_signal_op1690 == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+    if ((~((io_acc_block_signal_op1689 == 1'b0) | (grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state5))) begin
         res_stream_V_data_2_V_write = 1'b1;
     end else begin
         res_stream_V_data_2_V_write = 1'b0;
@@ -2125,7 +2098,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
+    if ((1'b1 == ap_CS_fsm_state5)) begin
         res_stream_V_data_3_V_blk_n = res_stream_V_data_3_V_full_n;
     end else begin
         res_stream_V_data_3_V_blk_n = 1'b1;
@@ -2133,7 +2106,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((io_acc_block_signal_op1690 == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+    if ((~((io_acc_block_signal_op1689 == 1'b0) | (grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state5))) begin
         res_stream_V_data_3_V_write = 1'b1;
     end else begin
         res_stream_V_data_3_V_write = 1'b0;
@@ -2141,7 +2114,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
+    if ((1'b1 == ap_CS_fsm_state5)) begin
         res_stream_V_data_4_V_blk_n = res_stream_V_data_4_V_full_n;
     end else begin
         res_stream_V_data_4_V_blk_n = 1'b1;
@@ -2149,7 +2122,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((io_acc_block_signal_op1690 == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+    if ((~((io_acc_block_signal_op1689 == 1'b0) | (grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state5))) begin
         res_stream_V_data_4_V_write = 1'b1;
     end else begin
         res_stream_V_data_4_V_write = 1'b0;
@@ -2157,7 +2130,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
+    if ((1'b1 == ap_CS_fsm_state5)) begin
         res_stream_V_data_5_V_blk_n = res_stream_V_data_5_V_full_n;
     end else begin
         res_stream_V_data_5_V_blk_n = 1'b1;
@@ -2165,7 +2138,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((io_acc_block_signal_op1690 == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+    if ((~((io_acc_block_signal_op1689 == 1'b0) | (grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state5))) begin
         res_stream_V_data_5_V_write = 1'b1;
     end else begin
         res_stream_V_data_5_V_write = 1'b0;
@@ -2173,7 +2146,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
+    if ((1'b1 == ap_CS_fsm_state5)) begin
         res_stream_V_data_6_V_blk_n = res_stream_V_data_6_V_full_n;
     end else begin
         res_stream_V_data_6_V_blk_n = 1'b1;
@@ -2181,7 +2154,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((io_acc_block_signal_op1690 == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+    if ((~((io_acc_block_signal_op1689 == 1'b0) | (grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state5))) begin
         res_stream_V_data_6_V_write = 1'b1;
     end else begin
         res_stream_V_data_6_V_write = 1'b0;
@@ -2189,7 +2162,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
+    if ((1'b1 == ap_CS_fsm_state5)) begin
         res_stream_V_data_7_V_blk_n = res_stream_V_data_7_V_full_n;
     end else begin
         res_stream_V_data_7_V_blk_n = 1'b1;
@@ -2197,7 +2170,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((io_acc_block_signal_op1690 == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+    if ((~((io_acc_block_signal_op1689 == 1'b0) | (grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state5))) begin
         res_stream_V_data_7_V_write = 1'b1;
     end else begin
         res_stream_V_data_7_V_write = 1'b0;
@@ -2205,7 +2178,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
+    if ((1'b1 == ap_CS_fsm_state5)) begin
         res_stream_V_data_8_V_blk_n = res_stream_V_data_8_V_full_n;
     end else begin
         res_stream_V_data_8_V_blk_n = 1'b1;
@@ -2213,7 +2186,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((io_acc_block_signal_op1690 == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+    if ((~((io_acc_block_signal_op1689 == 1'b0) | (grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state5))) begin
         res_stream_V_data_8_V_write = 1'b1;
     end else begin
         res_stream_V_data_8_V_write = 1'b0;
@@ -2221,7 +2194,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
+    if ((1'b1 == ap_CS_fsm_state5)) begin
         res_stream_V_data_9_V_blk_n = res_stream_V_data_9_V_full_n;
     end else begin
         res_stream_V_data_9_V_blk_n = 1'b1;
@@ -2229,7 +2202,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((io_acc_block_signal_op1690 == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+    if ((~((io_acc_block_signal_op1689 == 1'b0) | (grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state5))) begin
         res_stream_V_data_9_V_write = 1'b1;
     end else begin
         res_stream_V_data_9_V_write = 1'b0;
@@ -2266,17 +2239,10 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state5;
         end
         ap_ST_fsm_state5 : begin
-            if (((1'b1 == ap_CS_fsm_state5) & (grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state6;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state5;
-            end
-        end
-        ap_ST_fsm_state6 : begin
-            if (((io_acc_block_signal_op1690 == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+            if ((~((io_acc_block_signal_op1689 == 1'b0) | (grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state5))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state6;
+                ap_NS_fsm = ap_ST_fsm_state5;
             end
         end
         default : begin
@@ -2293,16 +2259,14 @@ assign ap_CS_fsm_state4 = ap_CS_fsm[32'd2];
 
 assign ap_CS_fsm_state5 = ap_CS_fsm[32'd3];
 
-assign ap_CS_fsm_state6 = ap_CS_fsm[32'd4];
-
 assign ap_block_pp0_stage0 = ~(1'b1 == 1'b1);
 
 always @ (*) begin
-    ap_block_pp0_stage0_11001 = ((io_acc_block_signal_op843 == 1'b0) & (ap_enable_reg_pp0_iter1 == 1'b1));
+    ap_block_pp0_stage0_11001 = ((io_acc_block_signal_op842 == 1'b0) & (ap_enable_reg_pp0_iter1 == 1'b1));
 end
 
 always @ (*) begin
-    ap_block_pp0_stage0_subdone = ((io_acc_block_signal_op843 == 1'b0) & (ap_enable_reg_pp0_iter1 == 1'b1));
+    ap_block_pp0_stage0_subdone = ((io_acc_block_signal_op842 == 1'b0) & (ap_enable_reg_pp0_iter1 == 1'b1));
 end
 
 always @ (*) begin
@@ -2312,7 +2276,7 @@ end
 assign ap_block_state2_pp0_stage0_iter0 = ~(1'b1 == 1'b1);
 
 always @ (*) begin
-    ap_block_state3_pp0_stage0_iter1 = (io_acc_block_signal_op843 == 1'b0);
+    ap_block_state3_pp0_stage0_iter1 = (io_acc_block_signal_op842 == 1'b0);
 end
 
 assign ap_enable_pp0 = (ap_idle_pp0 ^ 1'b1);
@@ -2325,29 +2289,29 @@ assign i_in_fu_2240_p2 = (ap_phi_mux_i_in_0_phi_fu_1820_p4 + 5'd1);
 
 assign icmp_ln41_fu_2234_p2 = ((ap_phi_mux_i_in_0_phi_fu_1820_p4 == 5'd25) ? 1'b1 : 1'b0);
 
-assign io_acc_block_signal_op1690 = (res_stream_V_data_9_V_full_n & res_stream_V_data_8_V_full_n & res_stream_V_data_7_V_full_n & res_stream_V_data_6_V_full_n & res_stream_V_data_5_V_full_n & res_stream_V_data_4_V_full_n & res_stream_V_data_3_V_full_n & res_stream_V_data_2_V_full_n & res_stream_V_data_1_V_full_n & res_stream_V_data_0_V_full_n);
+assign io_acc_block_signal_op1689 = (res_stream_V_data_9_V_full_n & res_stream_V_data_8_V_full_n & res_stream_V_data_7_V_full_n & res_stream_V_data_6_V_full_n & res_stream_V_data_5_V_full_n & res_stream_V_data_4_V_full_n & res_stream_V_data_3_V_full_n & res_stream_V_data_2_V_full_n & res_stream_V_data_1_V_full_n & res_stream_V_data_0_V_full_n);
 
-assign io_acc_block_signal_op843 = (data_stream_V_data_9_V_empty_n & data_stream_V_data_8_V_empty_n & data_stream_V_data_7_V_empty_n & data_stream_V_data_6_V_empty_n & data_stream_V_data_5_V_empty_n & data_stream_V_data_4_V_empty_n & data_stream_V_data_3_V_empty_n & data_stream_V_data_2_V_empty_n & data_stream_V_data_1_V_empty_n & data_stream_V_data_15_V_empty_n & data_stream_V_data_14_V_empty_n & data_stream_V_data_13_V_empty_n & data_stream_V_data_12_V_empty_n & data_stream_V_data_11_V_empty_n & data_stream_V_data_10_V_empty_n & data_stream_V_data_0_V_empty_n);
+assign io_acc_block_signal_op842 = (data_stream_V_data_9_V_empty_n & data_stream_V_data_8_V_empty_n & data_stream_V_data_7_V_empty_n & data_stream_V_data_6_V_empty_n & data_stream_V_data_5_V_empty_n & data_stream_V_data_4_V_empty_n & data_stream_V_data_3_V_empty_n & data_stream_V_data_2_V_empty_n & data_stream_V_data_1_V_empty_n & data_stream_V_data_15_V_empty_n & data_stream_V_data_14_V_empty_n & data_stream_V_data_13_V_empty_n & data_stream_V_data_12_V_empty_n & data_stream_V_data_11_V_empty_n & data_stream_V_data_10_V_empty_n & data_stream_V_data_0_V_empty_n);
 
-assign res_stream_V_data_0_V_din = tmp_data_0_V_reg_10359;
+assign res_stream_V_data_0_V_din = grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_0;
 
-assign res_stream_V_data_1_V_din = tmp_data_1_V_reg_10364;
+assign res_stream_V_data_1_V_din = grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_1;
 
-assign res_stream_V_data_2_V_din = tmp_data_2_V_reg_10369;
+assign res_stream_V_data_2_V_din = grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_2;
 
-assign res_stream_V_data_3_V_din = tmp_data_3_V_reg_10374;
+assign res_stream_V_data_3_V_din = grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_3;
 
-assign res_stream_V_data_4_V_din = tmp_data_4_V_reg_10379;
+assign res_stream_V_data_4_V_din = grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_4;
 
-assign res_stream_V_data_5_V_din = tmp_data_5_V_reg_10384;
+assign res_stream_V_data_5_V_din = grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_5;
 
-assign res_stream_V_data_6_V_din = tmp_data_6_V_reg_10389;
+assign res_stream_V_data_6_V_din = grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_6;
 
-assign res_stream_V_data_7_V_din = tmp_data_7_V_reg_10394;
+assign res_stream_V_data_7_V_din = grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_7;
 
-assign res_stream_V_data_8_V_din = tmp_data_8_V_reg_10399;
+assign res_stream_V_data_8_V_din = grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_8;
 
-assign res_stream_V_data_9_V_din = tmp_data_9_V_reg_10404;
+assign res_stream_V_data_9_V_din = grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828_ap_return_9;
 
 assign start_out = real_start;
 

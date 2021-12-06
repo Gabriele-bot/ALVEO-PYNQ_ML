@@ -3,8 +3,10 @@ vlib riviera
 
 vlib riviera/xilinx_vip
 vlib riviera/xpm
-vlib riviera/microblaze_v11_0_3
+vlib riviera/axi_lite_ipif_v3_0_4
+vlib riviera/mdm_v3_2_18
 vlib riviera/xil_defaultlib
+vlib riviera/microblaze_v11_0_3
 vlib riviera/axi_bram_ctrl_v4_1_3
 vlib riviera/generic_baseblocks_v2_1_0
 vlib riviera/axi_infrastructure_v1_1_0
@@ -12,7 +14,6 @@ vlib riviera/axi_register_slice_v2_1_21
 vlib riviera/fifo_generator_v13_2_5
 vlib riviera/axi_data_fifo_v2_1_20
 vlib riviera/axi_crossbar_v2_1_22
-vlib riviera/axi_lite_ipif_v3_0_4
 vlib riviera/lib_cdc_v1_0_2
 vlib riviera/interrupt_control_v3_1_4
 vlib riviera/axi_gpio_v2_0_23
@@ -42,8 +43,10 @@ vlib riviera/xlconcat_v2_1_3
 
 vmap xilinx_vip riviera/xilinx_vip
 vmap xpm riviera/xpm
-vmap microblaze_v11_0_3 riviera/microblaze_v11_0_3
+vmap axi_lite_ipif_v3_0_4 riviera/axi_lite_ipif_v3_0_4
+vmap mdm_v3_2_18 riviera/mdm_v3_2_18
 vmap xil_defaultlib riviera/xil_defaultlib
+vmap microblaze_v11_0_3 riviera/microblaze_v11_0_3
 vmap axi_bram_ctrl_v4_1_3 riviera/axi_bram_ctrl_v4_1_3
 vmap generic_baseblocks_v2_1_0 riviera/generic_baseblocks_v2_1_0
 vmap axi_infrastructure_v1_1_0 riviera/axi_infrastructure_v1_1_0
@@ -51,7 +54,6 @@ vmap axi_register_slice_v2_1_21 riviera/axi_register_slice_v2_1_21
 vmap fifo_generator_v13_2_5 riviera/fifo_generator_v13_2_5
 vmap axi_data_fifo_v2_1_20 riviera/axi_data_fifo_v2_1_20
 vmap axi_crossbar_v2_1_22 riviera/axi_crossbar_v2_1_22
-vmap axi_lite_ipif_v3_0_4 riviera/axi_lite_ipif_v3_0_4
 vmap lib_cdc_v1_0_2 riviera/lib_cdc_v1_0_2
 vmap interrupt_control_v3_1_4 riviera/interrupt_control_v3_1_4
 vmap axi_gpio_v2_0_23 riviera/axi_gpio_v2_0_23
@@ -98,6 +100,15 @@ vlog -work xpm  -sv2k12 "+incdir+../../../../myproject_kernel_ex.srcs/sources_1/
 vcom -work xpm -93 \
 "/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_VCOMP.vhd" \
 
+vcom -work axi_lite_ipif_v3_0_4 -93 \
+"../../../../myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
+
+vcom -work mdm_v3_2_18 -93 \
+"../../../../myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/e9fa/hdl/mdm_v3_2_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -93 \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_mdm_1_0/sim/myproject_kernel_bd_mdm_1_0.vhd" \
+
 vcom -work microblaze_v11_0_3 -93 \
 "../../../../myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/1efc/hdl/microblaze_v11_0_vh_rfs.vhd" \
 
@@ -137,9 +148,6 @@ vlog -work axi_crossbar_v2_1_22  -v2k5 "+incdir+../../../../myproject_kernel_ex.
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/ec67/hdl" "+incdir+../../../../myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2020.1/data/xilinx_vip/include" \
 "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_crossbar_0_0/sim/myproject_kernel_bd_axi_crossbar_0_0.v" \
 "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_crossbar_1_0/sim/myproject_kernel_bd_axi_crossbar_1_0.v" \
-
-vcom -work axi_lite_ipif_v3_0_4 -93 \
-"../../../../myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
 
 vcom -work lib_cdc_v1_0_2 -93 \
 "../../../../myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
@@ -258,6 +266,35 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../myproject_kernel_ex.srcs/s
 "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tlast_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v" \
 "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/top_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v" \
 "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/sim/myproject_kernel_bd_axis_subset_cnv_sts_0_0.v" \
+
+vcom -work xil_defaultlib -93 \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_datamover_0_1/sim/myproject_kernel_bd_axi_datamover_0_1.vhd" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/ec67/hdl" "+incdir+../../../../myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2020.1/data/xilinx_vip/include" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_broadcaster_0_1/hdl/tdata_myproject_kernel_bd_axis_broadcaster_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_broadcaster_0_1/hdl/tuser_myproject_kernel_bd_axis_broadcaster_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_broadcaster_0_1/hdl/top_myproject_kernel_bd_axis_broadcaster_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_broadcaster_0_1/sim/myproject_kernel_bd_axis_broadcaster_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_combiner_0_1/sim/myproject_kernel_bd_axis_combiner_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_dwidth_cnv_0_1/sim/myproject_kernel_bd_axis_dwidth_cnv_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/hdl/tdata_myproject_kernel_bd_axis_subset_cnv_cmd_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/hdl/tuser_myproject_kernel_bd_axis_subset_cnv_cmd_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/hdl/tstrb_myproject_kernel_bd_axis_subset_cnv_cmd_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/hdl/tkeep_myproject_kernel_bd_axis_subset_cnv_cmd_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/hdl/tid_myproject_kernel_bd_axis_subset_cnv_cmd_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/hdl/tdest_myproject_kernel_bd_axis_subset_cnv_cmd_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/hdl/tlast_myproject_kernel_bd_axis_subset_cnv_cmd_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/hdl/top_myproject_kernel_bd_axis_subset_cnv_cmd_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/sim/myproject_kernel_bd_axis_subset_cnv_cmd_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/hdl/tdata_myproject_kernel_bd_axis_subset_cnv_sts_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/hdl/tuser_myproject_kernel_bd_axis_subset_cnv_sts_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/hdl/tstrb_myproject_kernel_bd_axis_subset_cnv_sts_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/hdl/tkeep_myproject_kernel_bd_axis_subset_cnv_sts_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/hdl/tid_myproject_kernel_bd_axis_subset_cnv_sts_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/hdl/tdest_myproject_kernel_bd_axis_subset_cnv_sts_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/hdl/tlast_myproject_kernel_bd_axis_subset_cnv_sts_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/hdl/top_myproject_kernel_bd_axis_subset_cnv_sts_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/sim/myproject_kernel_bd_axis_subset_cnv_sts_0_1.v" \
 "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_register_slice_0_0/sim/myproject_kernel_bd_axis_register_slice_0_0.v" \
 
 vcom -work xbip_utils_v3_0_10 -93 \
@@ -291,6 +328,15 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../myproject_kernel_ex.srcs/s
 "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_xlconcat_0_0/sim/myproject_kernel_bd_xlconcat_0_0.v" \
 "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_xlslice_0_0/sim/myproject_kernel_bd_xlslice_0_0.v" \
 "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_register_slice_1_0/sim/myproject_kernel_bd_axis_register_slice_1_0.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_register_slice_0_1/sim/myproject_kernel_bd_axis_register_slice_0_1.v" \
+
+vcom -work xil_defaultlib -93 \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_c_addsub_0_1/sim/myproject_kernel_bd_c_addsub_0_1.vhd" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/ec67/hdl" "+incdir+../../../../myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2020.1/data/xilinx_vip/include" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_xlconcat_0_1/sim/myproject_kernel_bd_xlconcat_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_xlslice_0_1/sim/myproject_kernel_bd_xlslice_0_1.v" \
+"../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_register_slice_1_1/sim/myproject_kernel_bd_axis_register_slice_1_1.v" \
 "../../../bd/myproject_kernel_bd/sim/myproject_kernel_bd.v" \
 
 vlog -work xil_defaultlib \

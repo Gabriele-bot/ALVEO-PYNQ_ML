@@ -20,7 +20,7 @@ C_DEPS += \
 src/%.o: ../src/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MicroBlaze gcc compiler'
-	mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"$@" -I/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/bspinclude/include -mlittle-endian -mxl-pattern-compare -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"$@" -I/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/bspinclude/include -mlittle-endian -mxl-pattern-compare -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

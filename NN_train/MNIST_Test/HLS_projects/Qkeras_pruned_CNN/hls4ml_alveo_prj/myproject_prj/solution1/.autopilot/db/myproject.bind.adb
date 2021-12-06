@@ -329,14 +329,14 @@
 						<id>286</id>
 						<name>layer2_out_V_data_0_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -377,14 +377,14 @@
 						<id>289</id>
 						<name>layer2_out_V_data_1_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -425,14 +425,14 @@
 						<id>292</id>
 						<name>layer2_out_V_data_2_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -473,14 +473,14 @@
 						<id>295</id>
 						<name>layer2_out_V_data_3_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -521,14 +521,14 @@
 						<id>298</id>
 						<name>layer2_out_V_data_4_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -569,14 +569,14 @@
 						<id>301</id>
 						<name>layer2_out_V_data_5_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -617,14 +617,14 @@
 						<id>304</id>
 						<name>layer2_out_V_data_6_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -665,14 +665,14 @@
 						<id>307</id>
 						<name>layer2_out_V_data_7_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -713,14 +713,14 @@
 						<id>310</id>
 						<name>layer2_out_V_data_8_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -761,14 +761,14 @@
 						<id>313</id>
 						<name>layer2_out_V_data_9_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -809,14 +809,14 @@
 						<id>316</id>
 						<name>layer2_out_V_data_10_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -857,14 +857,14 @@
 						<id>319</id>
 						<name>layer2_out_V_data_11_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -905,14 +905,14 @@
 						<id>322</id>
 						<name>layer2_out_V_data_12_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -953,14 +953,14 @@
 						<id>325</id>
 						<name>layer2_out_V_data_13_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1001,14 +1001,14 @@
 						<id>328</id>
 						<name>layer2_out_V_data_14_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1049,14 +1049,14 @@
 						<id>331</id>
 						<name>layer2_out_V_data_15_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1097,14 +1097,14 @@
 						<id>334</id>
 						<name>layer3_out_V_data_0_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>62</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1145,14 +1145,14 @@
 						<id>337</id>
 						<name>layer3_out_V_data_1_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>62</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1193,14 +1193,14 @@
 						<id>340</id>
 						<name>layer3_out_V_data_2_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>62</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1241,14 +1241,14 @@
 						<id>343</id>
 						<name>layer3_out_V_data_3_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>62</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1289,14 +1289,14 @@
 						<id>346</id>
 						<name>layer3_out_V_data_4_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>62</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1337,14 +1337,14 @@
 						<id>349</id>
 						<name>layer3_out_V_data_5_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>62</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1385,14 +1385,14 @@
 						<id>352</id>
 						<name>layer3_out_V_data_6_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>62</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1433,14 +1433,14 @@
 						<id>355</id>
 						<name>layer3_out_V_data_7_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>62</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1481,14 +1481,14 @@
 						<id>358</id>
 						<name>layer3_out_V_data_8_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>62</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1529,14 +1529,14 @@
 						<id>361</id>
 						<name>layer3_out_V_data_9_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>62</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1577,14 +1577,14 @@
 						<id>364</id>
 						<name>layer3_out_V_data_10_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>62</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1625,14 +1625,14 @@
 						<id>367</id>
 						<name>layer3_out_V_data_11_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>62</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1673,14 +1673,14 @@
 						<id>370</id>
 						<name>layer3_out_V_data_12_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>62</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1721,14 +1721,14 @@
 						<id>373</id>
 						<name>layer3_out_V_data_13_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>62</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1769,14 +1769,14 @@
 						<id>376</id>
 						<name>layer3_out_V_data_14_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>62</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1817,14 +1817,14 @@
 						<id>379</id>
 						<name>layer3_out_V_data_15_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>62</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1865,14 +1865,14 @@
 						<id>382</id>
 						<name>layer4_out_V_data_0_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>66</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1913,14 +1913,14 @@
 						<id>385</id>
 						<name>layer4_out_V_data_1_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>66</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1961,14 +1961,14 @@
 						<id>388</id>
 						<name>layer4_out_V_data_2_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>66</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2009,14 +2009,14 @@
 						<id>391</id>
 						<name>layer4_out_V_data_3_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>66</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2057,14 +2057,14 @@
 						<id>394</id>
 						<name>layer4_out_V_data_4_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>66</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2105,14 +2105,14 @@
 						<id>397</id>
 						<name>layer4_out_V_data_5_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>66</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2153,14 +2153,14 @@
 						<id>400</id>
 						<name>layer4_out_V_data_6_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>66</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2201,14 +2201,14 @@
 						<id>403</id>
 						<name>layer4_out_V_data_7_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>66</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2249,14 +2249,14 @@
 						<id>406</id>
 						<name>layer4_out_V_data_8_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>66</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2297,14 +2297,14 @@
 						<id>409</id>
 						<name>layer4_out_V_data_9_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>66</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2345,14 +2345,14 @@
 						<id>412</id>
 						<name>layer4_out_V_data_10_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>66</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2393,14 +2393,14 @@
 						<id>415</id>
 						<name>layer4_out_V_data_11_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>66</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2441,14 +2441,14 @@
 						<id>418</id>
 						<name>layer4_out_V_data_12_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>66</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2489,14 +2489,14 @@
 						<id>421</id>
 						<name>layer4_out_V_data_13_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>66</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2537,14 +2537,14 @@
 						<id>424</id>
 						<name>layer4_out_V_data_14_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>66</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2585,14 +2585,14 @@
 						<id>427</id>
 						<name>layer4_out_V_data_15_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>66</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2633,14 +2633,14 @@
 						<id>430</id>
 						<name>layer5_out_V_data_0_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>70</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2681,14 +2681,14 @@
 						<id>433</id>
 						<name>layer5_out_V_data_1_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>70</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2729,14 +2729,14 @@
 						<id>436</id>
 						<name>layer5_out_V_data_2_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>70</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2777,14 +2777,14 @@
 						<id>439</id>
 						<name>layer5_out_V_data_3_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>70</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2825,14 +2825,14 @@
 						<id>442</id>
 						<name>layer5_out_V_data_4_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>70</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2873,14 +2873,14 @@
 						<id>445</id>
 						<name>layer5_out_V_data_5_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>70</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2921,14 +2921,14 @@
 						<id>448</id>
 						<name>layer5_out_V_data_6_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>70</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2969,14 +2969,14 @@
 						<id>451</id>
 						<name>layer5_out_V_data_7_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>70</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3017,14 +3017,14 @@
 						<id>454</id>
 						<name>layer5_out_V_data_8_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>70</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3065,14 +3065,14 @@
 						<id>457</id>
 						<name>layer5_out_V_data_9_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>70</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3113,14 +3113,14 @@
 						<id>460</id>
 						<name>layer5_out_V_data_10_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>70</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3161,14 +3161,14 @@
 						<id>463</id>
 						<name>layer5_out_V_data_11_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>70</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3209,14 +3209,14 @@
 						<id>466</id>
 						<name>layer5_out_V_data_12_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>70</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3257,14 +3257,14 @@
 						<id>469</id>
 						<name>layer5_out_V_data_13_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>70</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3305,14 +3305,14 @@
 						<id>472</id>
 						<name>layer5_out_V_data_14_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>70</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3353,14 +3353,14 @@
 						<id>475</id>
 						<name>layer5_out_V_data_15_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>70</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3401,14 +3401,14 @@
 						<id>478</id>
 						<name>layer6_out_V_data_0_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>74</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3449,14 +3449,14 @@
 						<id>481</id>
 						<name>layer6_out_V_data_1_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>74</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3497,14 +3497,14 @@
 						<id>484</id>
 						<name>layer6_out_V_data_2_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>74</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3545,14 +3545,14 @@
 						<id>487</id>
 						<name>layer6_out_V_data_3_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>74</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3593,14 +3593,14 @@
 						<id>490</id>
 						<name>layer6_out_V_data_4_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>74</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3641,14 +3641,14 @@
 						<id>493</id>
 						<name>layer6_out_V_data_5_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>74</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3689,14 +3689,14 @@
 						<id>496</id>
 						<name>layer6_out_V_data_6_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>74</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3737,14 +3737,14 @@
 						<id>499</id>
 						<name>layer6_out_V_data_7_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>74</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3785,14 +3785,14 @@
 						<id>502</id>
 						<name>layer6_out_V_data_8_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>74</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3833,14 +3833,14 @@
 						<id>505</id>
 						<name>layer6_out_V_data_9_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>74</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3881,14 +3881,14 @@
 						<id>508</id>
 						<name>layer6_out_V_data_10_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>74</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3929,14 +3929,14 @@
 						<id>511</id>
 						<name>layer6_out_V_data_11_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>74</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3977,14 +3977,14 @@
 						<id>514</id>
 						<name>layer6_out_V_data_12_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>74</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4025,14 +4025,14 @@
 						<id>517</id>
 						<name>layer6_out_V_data_13_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>74</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4073,14 +4073,14 @@
 						<id>520</id>
 						<name>layer6_out_V_data_14_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>74</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4121,14 +4121,14 @@
 						<id>523</id>
 						<name>layer6_out_V_data_15_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>74</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4169,14 +4169,14 @@
 						<id>526</id>
 						<name>layer7_out_V_data_0_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4217,14 +4217,14 @@
 						<id>529</id>
 						<name>layer7_out_V_data_1_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4265,14 +4265,14 @@
 						<id>532</id>
 						<name>layer7_out_V_data_2_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4313,14 +4313,14 @@
 						<id>535</id>
 						<name>layer7_out_V_data_3_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4361,14 +4361,14 @@
 						<id>538</id>
 						<name>layer7_out_V_data_4_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4409,14 +4409,14 @@
 						<id>541</id>
 						<name>layer7_out_V_data_5_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4457,14 +4457,14 @@
 						<id>544</id>
 						<name>layer7_out_V_data_6_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4505,14 +4505,14 @@
 						<id>547</id>
 						<name>layer7_out_V_data_7_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4553,14 +4553,14 @@
 						<id>550</id>
 						<name>layer7_out_V_data_8_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4601,14 +4601,14 @@
 						<id>553</id>
 						<name>layer7_out_V_data_9_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4649,14 +4649,14 @@
 						<id>556</id>
 						<name>layer7_out_V_data_10_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4697,14 +4697,14 @@
 						<id>559</id>
 						<name>layer7_out_V_data_11_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4745,14 +4745,14 @@
 						<id>562</id>
 						<name>layer7_out_V_data_12_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4793,14 +4793,14 @@
 						<id>565</id>
 						<name>layer7_out_V_data_13_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4841,14 +4841,14 @@
 						<id>568</id>
 						<name>layer7_out_V_data_14_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4889,14 +4889,14 @@
 						<id>571</id>
 						<name>layer7_out_V_data_15_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4937,14 +4937,14 @@
 						<id>574</id>
 						<name>layer8_out_V_data_0_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>82</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4985,14 +4985,14 @@
 						<id>577</id>
 						<name>layer8_out_V_data_1_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>82</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5033,14 +5033,14 @@
 						<id>580</id>
 						<name>layer8_out_V_data_2_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>82</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5081,14 +5081,14 @@
 						<id>583</id>
 						<name>layer8_out_V_data_3_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>82</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5129,14 +5129,14 @@
 						<id>586</id>
 						<name>layer8_out_V_data_4_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>82</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5177,14 +5177,14 @@
 						<id>589</id>
 						<name>layer8_out_V_data_5_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>82</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5225,14 +5225,14 @@
 						<id>592</id>
 						<name>layer8_out_V_data_6_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>82</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5273,14 +5273,14 @@
 						<id>595</id>
 						<name>layer8_out_V_data_7_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>82</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5321,14 +5321,14 @@
 						<id>598</id>
 						<name>layer8_out_V_data_8_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>82</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5369,14 +5369,14 @@
 						<id>601</id>
 						<name>layer8_out_V_data_9_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>82</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5417,14 +5417,14 @@
 						<id>604</id>
 						<name>layer8_out_V_data_10_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>82</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5465,14 +5465,14 @@
 						<id>607</id>
 						<name>layer8_out_V_data_11_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>82</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5513,14 +5513,14 @@
 						<id>610</id>
 						<name>layer8_out_V_data_12_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>82</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5561,14 +5561,14 @@
 						<id>613</id>
 						<name>layer8_out_V_data_13_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>82</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5609,14 +5609,14 @@
 						<id>616</id>
 						<name>layer8_out_V_data_14_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>82</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5657,14 +5657,14 @@
 						<id>619</id>
 						<name>layer8_out_V_data_15_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>82</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5705,14 +5705,14 @@
 						<id>622</id>
 						<name>layer9_out_V_data_0_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>86</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5753,14 +5753,14 @@
 						<id>625</id>
 						<name>layer9_out_V_data_1_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>86</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5801,14 +5801,14 @@
 						<id>628</id>
 						<name>layer9_out_V_data_2_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>86</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5849,14 +5849,14 @@
 						<id>631</id>
 						<name>layer9_out_V_data_3_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>86</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5897,14 +5897,14 @@
 						<id>634</id>
 						<name>layer9_out_V_data_4_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>86</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5945,14 +5945,14 @@
 						<id>637</id>
 						<name>layer9_out_V_data_5_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>86</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5993,14 +5993,14 @@
 						<id>640</id>
 						<name>layer9_out_V_data_6_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>86</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6041,14 +6041,14 @@
 						<id>643</id>
 						<name>layer9_out_V_data_7_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>86</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6089,14 +6089,14 @@
 						<id>646</id>
 						<name>layer9_out_V_data_8_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>86</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6137,14 +6137,14 @@
 						<id>649</id>
 						<name>layer9_out_V_data_9_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>86</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6185,14 +6185,14 @@
 						<id>652</id>
 						<name>layer9_out_V_data_10_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>86</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6233,14 +6233,14 @@
 						<id>655</id>
 						<name>layer9_out_V_data_11_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>86</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6281,14 +6281,14 @@
 						<id>658</id>
 						<name>layer9_out_V_data_12_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>86</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6329,14 +6329,14 @@
 						<id>661</id>
 						<name>layer9_out_V_data_13_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>86</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6377,14 +6377,14 @@
 						<id>664</id>
 						<name>layer9_out_V_data_14_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>86</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6425,14 +6425,14 @@
 						<id>667</id>
 						<name>layer9_out_V_data_15_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>86</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6473,14 +6473,14 @@
 						<id>670</id>
 						<name>layer11_out_V_data_0_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>90</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6521,14 +6521,14 @@
 						<id>673</id>
 						<name>layer11_out_V_data_1_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>90</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6569,14 +6569,14 @@
 						<id>676</id>
 						<name>layer11_out_V_data_2_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>90</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6617,14 +6617,14 @@
 						<id>679</id>
 						<name>layer11_out_V_data_3_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>90</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6665,14 +6665,14 @@
 						<id>682</id>
 						<name>layer11_out_V_data_4_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>90</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6713,14 +6713,14 @@
 						<id>685</id>
 						<name>layer11_out_V_data_5_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>90</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6761,14 +6761,14 @@
 						<id>688</id>
 						<name>layer11_out_V_data_6_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>90</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6809,14 +6809,14 @@
 						<id>691</id>
 						<name>layer11_out_V_data_7_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>90</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6857,14 +6857,14 @@
 						<id>694</id>
 						<name>layer11_out_V_data_8_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>90</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6905,14 +6905,14 @@
 						<id>697</id>
 						<name>layer11_out_V_data_9_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>90</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6953,14 +6953,14 @@
 						<id>700</id>
 						<name>layer12_out_V_data_0_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7001,14 +7001,14 @@
 						<id>703</id>
 						<name>layer12_out_V_data_1_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7049,14 +7049,14 @@
 						<id>706</id>
 						<name>layer12_out_V_data_2_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7097,14 +7097,14 @@
 						<id>709</id>
 						<name>layer12_out_V_data_3_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7145,14 +7145,14 @@
 						<id>712</id>
 						<name>layer12_out_V_data_4_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7193,14 +7193,14 @@
 						<id>715</id>
 						<name>layer12_out_V_data_5_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7241,14 +7241,14 @@
 						<id>718</id>
 						<name>layer12_out_V_data_6_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7289,14 +7289,14 @@
 						<id>721</id>
 						<name>layer12_out_V_data_7_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7337,14 +7337,14 @@
 						<id>724</id>
 						<name>layer12_out_V_data_8_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7385,14 +7385,14 @@
 						<id>727</id>
 						<name>layer12_out_V_data_9_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7433,14 +7433,14 @@
 						<id>730</id>
 						<name>_ln60</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7510,14 +7510,14 @@
 						<id>731</id>
 						<name>_ln64</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>64</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7592,14 +7592,14 @@
 						<id>732</id>
 						<name>_ln68</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>68</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7674,14 +7674,14 @@
 						<id>733</id>
 						<name>_ln72</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>72</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7808,14 +7808,14 @@
 						<id>734</id>
 						<name>_ln76</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>76</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8024,14 +8024,14 @@
 						<id>735</id>
 						<name>_ln80</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>80</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8106,14 +8106,14 @@
 						<id>736</id>
 						<name>_ln84</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>84</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8188,14 +8188,14 @@
 						<id>737</id>
 						<name>_ln88</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>88</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8322,14 +8322,14 @@
 						<id>738</id>
 						<name>_ln92</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>92</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8400,14 +8400,14 @@
 						<id>739</id>
 						<name>_ln96</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>96</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8470,14 +8470,14 @@
 						<id>740</id>
 						<name>_ln98</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8542,14 +8542,14 @@
 						<id>741</id>
 						<name>_ln100</name>
 						<fileName>firmware/myproject.cpp</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>myproject</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14254,8 +14254,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>2374</mMinLatency>
-			<mMaxLatency>2375</mMaxLatency>
+			<mMinLatency>3160</mMinLatency>
+			<mMaxLatency>3161</mMaxLatency>
 			<mIsDfPipe>1</mIsDfPipe>
 			<mDfPipe class_id="23" tracking_level="1" version="0" object_id="_926">
 				<port_list class_id="24" tracking_level="0" version="0">

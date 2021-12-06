@@ -4,3 +4,10 @@
 # frequencies. This constraints file is not used in normal top-down 
 # synthesis (the default flow of Vivado)
 
+create_clock -period 33.333 [get_ports Dbg_Clk]
+create_clock -period 33.333 [get_ports Dbg_Update]
+set_clock_groups -asynchronous -group [get_clocks -of_objects [get_ports Dbg_Clk]]
+set_clock_groups -asynchronous -group [get_clocks -of_objects [get_ports Dbg_Update]]
+set_clock_groups -logically_exclusive \
+  -group [get_clocks -of_objects [get_ports Dbg_Clk]] \
+  -group [get_clocks -of_objects [get_ports Dbg_Update]]

@@ -14,15 +14,15 @@ extern "C" {
 #define KERNEL_VENDOR  "fastmachinelearning"
 #define KERNEL_LIBRARY "kernel"
 
-#define NUM_M_AXI      1
+#define NUM_M_AXI      2
 #define NUM_CLOCKS     1
 #define NUM_INPUT_ARGS 0
-#define NUM_CHAN       1
+#define NUM_CHAN       2
 #define NUM_STREAMS    0
 
 #define CONTROL_OFFSET 0x000
 #define AXI00_PTR0_OFFSET 0x010
-#define AXI00_PTR1_OFFSET 0x01c
+#define AXI01_PTR0_OFFSET 0x01c
 #define END_OF_REG_OFFSET 0x028
 
 
@@ -93,17 +93,17 @@ static const int argc = 3;
 static const arg_t argv[] = {
   { "Control", type_control, S_AXI_CONTROL },
   { "m00_axi", type_intptr, 0 },
-  { "m00_axi", type_intptr, 0 }
+  { "m01_axi", type_intptr, 1 }
 };
 
 // Number of arguments for each interface
 static const unsigned int num_args[] = {
-  2
+  1, 1
 };
 
 // Offset to first argument for each interface
 static const unsigned int offsets[] = {
-  0x010
+  0x010, 0x01c
 };
 
 #ifdef __cplusplus

@@ -1,13 +1,13 @@
-Mon Dec  6 11:45:26 2021: Server was asked to start on port: '43027'
-Mon Dec  6 11:45:26 2021: Server is using token UUID: '2307650e-abfe-4707-8d22-ae8954c45d3d'
-Mon Dec  6 11:45:26 2021: Attempting to start server on port '43027'
-Mon Dec  6 11:45:26 2021: XRC main fifo: created main fifo '/tmp/xrcmain2307650e-abfe-4707-8d22-ae8954c45d3d', fd read = 13
-Mon Dec  6 11:45:26 2021: Running Rule Check Server
-Mon Dec  6 11:45:26 2021: Version 1.6.1
-Mon Dec  6 11:45:26 2021: Rule Check Server: Accepted socket connection from client
-Mon Dec  6 11:45:26 2021: EXCHANGE_TOKEN received, server token: 2307650e-abfe-4707-8d22-ae8954c45d3d, passed token: 2307650e-abfe-4707-8d22-ae8954c45d3d
-Mon Dec  6 11:45:26 2021: SESSION_MGR: creating session with session uuid: 'eb715865-4d3b-40cb-9901-dc1c7a5e2133' and name 'v++_link_myproject_kernel'
-Mon Dec  6 11:45:29 2021: Rule Check Server: Accepted socket connection from client
-Mon Dec  6 11:45:46 2021: Rule Check Server: Accepted socket connection from client
-Mon Dec  6 11:52:10 2021: Rule Check Server: Accepted socket connection from client
-Mon Dec  6 12:32:08 2021: SESSION_MGR: closing session for UUID 'eb715865-4d3b-40cb-9901-dc1c7a5e2133' with name 'v++_link_myproject_kernel'
+Mon Dec  6 19:31:20 2021: Server was asked to start on port: '43009'
+Mon Dec  6 19:31:20 2021: Server is using token UUID: '3d192c27-89f9-4afc-84a9-3c9abab0f6b9'
+Mon Dec  6 19:31:20 2021: Attempting to start server on port '43009'
+Mon Dec  6 19:31:20 2021: XRC main fifo: created main fifo '/tmp/xrcmain3d192c27-89f9-4afc-84a9-3c9abab0f6b9', fd read = 13
+Mon Dec  6 19:31:20 2021: Running Rule Check Server
+Mon Dec  6 19:31:20 2021: Version 1.6.1
+Mon Dec  6 19:31:20 2021: Rule Check Server: Accepted socket connection from client
+Mon Dec  6 19:31:20 2021: EXCHANGE_TOKEN received, server token: 3d192c27-89f9-4afc-84a9-3c9abab0f6b9, passed token: 3d192c27-89f9-4afc-84a9-3c9abab0f6b9
+Mon Dec  6 19:31:20 2021: SESSION_MGR: creating session with session uuid: '7a01c7f2-a940-4fd9-95a2-54d57e54f0ac' and name 'v++_link_myproject_kernel'
+Mon Dec  6 19:31:23 2021: Rule Check Server: Accepted socket connection from client
+Mon Dec  6 19:31:41 2021: Rule Check Server: Accepted socket connection from client
+Mon Dec  6 19:38:18 2021: Rule Check Server: Accepted socket connection from client
+Mon Dec  6 20:17:24 2021: SESSION_MGR: closing session for UUID '7a01c7f2-a940-4fd9-95a2-54d57e54f0ac' with name 'v++_link_myproject_kernel'

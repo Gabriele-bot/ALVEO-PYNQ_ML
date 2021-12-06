@@ -8,7 +8,9 @@ module myproject_kernel #(
   parameter integer C_S_AXI_CONTROL_ADDR_WIDTH = 12,
   parameter integer C_S_AXI_CONTROL_DATA_WIDTH = 32,
   parameter integer C_M00_AXI_ADDR_WIDTH       = 64,
-  parameter integer C_M00_AXI_DATA_WIDTH       = 32
+  parameter integer C_M00_AXI_DATA_WIDTH       = 32,
+  parameter integer C_M01_AXI_ADDR_WIDTH       = 64,
+  parameter integer C_M01_AXI_DATA_WIDTH       = 32
 )
 (
   // System Signals
@@ -60,6 +62,26 @@ module myproject_kernel #(
   output wire                                    m00_axi_rready       ,
   input  wire [C_M00_AXI_DATA_WIDTH-1:0]         m00_axi_rdata        ,
   input  wire                                    m00_axi_rlast        ,
+  // AXI4 master interface m01_axi
+  output wire                                    m01_axi_awvalid      ,
+  input  wire                                    m01_axi_awready      ,
+  output wire [C_M01_AXI_ADDR_WIDTH-1:0]         m01_axi_awaddr       ,
+  output wire [8-1:0]                            m01_axi_awlen        ,
+  output wire                                    m01_axi_wvalid       ,
+  input  wire                                    m01_axi_wready       ,
+  output wire [C_M01_AXI_DATA_WIDTH-1:0]         m01_axi_wdata        ,
+  output wire [C_M01_AXI_DATA_WIDTH/8-1:0]       m01_axi_wstrb        ,
+  output wire                                    m01_axi_wlast        ,
+  input  wire                                    m01_axi_bvalid       ,
+  output wire                                    m01_axi_bready       ,
+  output wire                                    m01_axi_arvalid      ,
+  input  wire                                    m01_axi_arready      ,
+  output wire [C_M01_AXI_ADDR_WIDTH-1:0]         m01_axi_araddr       ,
+  output wire [8-1:0]                            m01_axi_arlen        ,
+  input  wire                                    m01_axi_rvalid       ,
+  output wire                                    m01_axi_rready       ,
+  input  wire [C_M01_AXI_DATA_WIDTH-1:0]         m01_axi_rdata        ,
+  input  wire                                    m01_axi_rlast        ,
   // AXI4-Lite slave interface
   input  wire                                    s_axi_control_awvalid,
   output wire                                    s_axi_control_awready,
@@ -77,7 +99,17 @@ module myproject_kernel #(
   output wire [2-1:0]                            s_axi_control_rresp  ,
   output wire                                    s_axi_control_bvalid ,
   input  wire                                    s_axi_control_bready ,
-  output wire [2-1:0]                            s_axi_control_bresp  
+  output wire [2-1:0]                            s_axi_control_bresp  ,
+  input  wire                                    bscan_0_drck         ,
+  input  wire                                    bscan_0_reset        ,
+  input  wire                                    bscan_0_sel          ,
+  input  wire                                    bscan_0_capture      ,
+  input  wire                                    bscan_0_shift        ,
+  input  wire                                    bscan_0_update       ,
+  input  wire                                    bscan_0_tdi          ,
+  input  wire                                    bscan_0_tck          ,
+  input  wire                                    bscan_0_bscanid_en   ,
+  output wire                                    bscan_0_tdo          
 );
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -144,7 +176,46 @@ myproject_kernel_bd myproject_kernel_bd_i (
   .m00_axi_rready        ( m00_axi_rready        ),
   .m00_axi_rdata         ( m00_axi_rdata         ),
   .m00_axi_rlast         ( m00_axi_rlast         ),
-  .m00_axi_rresp         ( 2'b0                  )
+  .m00_axi_rresp         ( 2'b0                  ),
+  .m01_axi_awvalid       ( m01_axi_awvalid       ),
+  .m01_axi_awready       ( m01_axi_awready       ),
+  .m01_axi_awaddr        ( m01_axi_awaddr        ),
+  .m01_axi_awlen         ( m01_axi_awlen         ),
+  .m01_axi_awsize        (                       ),
+  .m01_axi_awprot        (                       ),
+  .m01_axi_awburst       (                       ),
+  .m01_axi_awcache       (                       ),
+  .m01_axi_wvalid        ( m01_axi_wvalid        ),
+  .m01_axi_wready        ( m01_axi_wready        ),
+  .m01_axi_wdata         ( m01_axi_wdata         ),
+  .m01_axi_wstrb         ( m01_axi_wstrb         ),
+  .m01_axi_wlast         ( m01_axi_wlast         ),
+  .m01_axi_bvalid        ( m01_axi_bvalid        ),
+  .m01_axi_bready        ( m01_axi_bready        ),
+  .m01_axi_bresp         ( 2'b0                  ),
+  .m01_axi_arvalid       ( m01_axi_arvalid       ),
+  .m01_axi_arready       ( m01_axi_arready       ),
+  .m01_axi_araddr        ( m01_axi_araddr        ),
+  .m01_axi_arlen         ( m01_axi_arlen         ),
+  .m01_axi_arsize        (                       ),
+  .m01_axi_arprot        (                       ),
+  .m01_axi_arburst       (                       ),
+  .m01_axi_arcache       (                       ),
+  .m01_axi_rvalid        ( m01_axi_rvalid        ),
+  .m01_axi_rready        ( m01_axi_rready        ),
+  .m01_axi_rdata         ( m01_axi_rdata         ),
+  .m01_axi_rlast         ( m01_axi_rlast         ),
+  .m01_axi_rresp         ( 2'b0                  ),
+  .bscan_0_drck          ( bscan_0_drck          ),
+  .bscan_0_reset         ( bscan_0_reset         ),
+  .bscan_0_sel           ( bscan_0_sel           ),
+  .bscan_0_capture       ( bscan_0_capture       ),
+  .bscan_0_shift         ( bscan_0_shift         ),
+  .bscan_0_update        ( bscan_0_update        ),
+  .bscan_0_tdi           ( bscan_0_tdi           ),
+  .bscan_0_tck           ( bscan_0_tck           ),
+  .bscan_0_bscanid_en    ( bscan_0_bscanid_en    ),
+  .bscan_0_tdo           ( bscan_0_tdo           )
 );
 
 endmodule

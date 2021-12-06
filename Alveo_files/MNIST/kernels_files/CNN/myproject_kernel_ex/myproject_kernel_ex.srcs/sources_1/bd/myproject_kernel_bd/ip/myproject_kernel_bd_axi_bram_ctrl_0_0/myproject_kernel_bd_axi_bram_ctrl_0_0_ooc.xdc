@@ -52,6 +52,6 @@
 # #########################################################
 
 
-create_clock -period 4 -name s_axi_aclk [get_ports s_axi_aclk]
+create_clock -period 3.333 -name s_axi_aclk [get_ports s_axi_aclk]
 
 

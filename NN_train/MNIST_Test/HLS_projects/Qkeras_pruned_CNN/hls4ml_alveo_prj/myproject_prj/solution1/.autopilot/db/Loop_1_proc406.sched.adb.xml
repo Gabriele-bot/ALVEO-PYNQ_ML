@@ -973,21 +973,6 @@ _ifconv:48  %or_ln603_1 = or i1 %and_ln585, %and_ln582
 </operation>
 
 <operation id="67" st_id="4" stage="1" lat="1">
-<core>Sel</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="64" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
-<![CDATA[
-_ifconv:49  %select_ln603_2 = select i1 %or_ln603, i8 %select_ln603, i8 %select_ln603_1
-
-]]></Node>
-<StgValue><ssdm name="select_ln603_2"/></StgValue>
-</operation>
-
-<operation id="68" st_id="4" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1001,8 +986,27 @@ _ifconv:50  %or_ln603_2 = or i1 %or_ln603, %or_ln603_1
 ]]></Node>
 <StgValue><ssdm name="or_ln603_2"/></StgValue>
 </operation>
+</state>
 
-<operation id="69" st_id="4" stage="1" lat="1">
+<state id="5" st_id="5">
+
+<operation id="68" st_id="5" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="or_ln603_2" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="64" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
+<![CDATA[
+_ifconv:49  %select_ln603_2 = select i1 %or_ln603, i8 %select_ln603, i8 %select_ln603_1
+
+]]></Node>
+<StgValue><ssdm name="select_ln603_2"/></StgValue>
+</operation>
+
+<operation id="69" st_id="5" stage="1" lat="1">
 <core>Sel</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1016,9 +1020,6 @@ _ifconv:51  %tmp_data_0_V = select i1 %or_ln603_2, i8 %select_ln603_2, i8 0
 ]]></Node>
 <StgValue><ssdm name="tmp_data_0_V"/></StgValue>
 </operation>
-</state>
-
-<state id="5" st_id="5">
 
 <operation id="70" st_id="5" stage="1" lat="1">
 <core>FIFO_SRL</core>

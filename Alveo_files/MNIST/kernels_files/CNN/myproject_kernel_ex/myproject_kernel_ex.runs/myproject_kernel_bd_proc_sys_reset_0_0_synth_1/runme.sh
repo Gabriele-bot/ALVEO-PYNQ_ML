@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_proc_sys_reset_0_0_synth_1'
+HD_PWD='/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_proc_sys_reset_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

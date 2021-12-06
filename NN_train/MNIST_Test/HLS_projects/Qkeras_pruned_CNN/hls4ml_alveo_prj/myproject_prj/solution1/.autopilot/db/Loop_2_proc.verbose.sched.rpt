@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'Loop_2_proc'
 ================================================================
-* Date:           Mon Nov 22 19:55:36 2021
+* Date:           Mon Dec  6 16:55:32 2021
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        myproject_prj
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  | 4.00 ns | 3.395 ns |   0.50 ns  |
+    |ap_clk  | 3.33 ns | 2.730 ns |   0.42 ns  |
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |       41|       41| 0.164 us | 0.164 us |   41|   41|   none  |
+    |       41|       41| 0.137 us | 0.137 us |   41|   41|   none  |
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -138,14 +138,14 @@ ST_3 : Operation 52 [1/1] (0.00ns) (grouped into LUT with out node or_ln_i)   --
 ST_3 : Operation 53 [1/1] (0.00ns) (grouped into LUT with out node or_ln_i)   --->   "%or_ln949 = or i1 %and_ln949, %a" [firmware/myproject_axi.cpp:39]   --->   Operation 53 'or' 'or_ln949' <Predicate = (!icmp_ln935)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 54 [1/1] (0.12ns) (out node of the LUT)   --->   "%or_ln_i = call i32 @_ssdm_op_BitConcatenate.i32.i31.i1(i31 0, i1 %or_ln949)" [firmware/myproject_axi.cpp:39]   --->   Operation 54 'bitconcatenate' 'or_ln_i' <Predicate = (!icmp_ln935)> <Delay = 0.12>
 ST_3 : Operation 55 [1/1] (0.85ns)   --->   "%icmp_ln958 = icmp sgt i32 %lsb_index, 0" [firmware/myproject_axi.cpp:39]   --->   Operation 55 'icmp' 'icmp_ln958' <Predicate = (!icmp_ln935)> <Delay = 0.85> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 56 [1/1] (0.88ns)   --->   "%add_ln958 = add nsw i32 -25, %sub_ln944" [firmware/myproject_axi.cpp:39]   --->   Operation 56 'add' 'add_ln958' <Predicate = (!icmp_ln935)> <Delay = 0.88> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 57 [1/1] (0.88ns)   --->   "%sub_ln958 = sub i32 25, %sub_ln944" [firmware/myproject_axi.cpp:39]   --->   Operation 57 'sub' 'sub_ln958' <Predicate = (!icmp_ln935)> <Delay = 0.88> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
-State 4 <SV = 3> <Delay = 3.39>
-ST_4 : Operation 56 [1/1] (0.00ns) (grouped into LUT with out node m_2)   --->   "%m = zext i16 %tmp_V_4 to i64" [firmware/myproject_axi.cpp:39]   --->   Operation 56 'zext' 'm' <Predicate = (!icmp_ln958 & !icmp_ln935)> <Delay = 0.00>
-ST_4 : Operation 57 [1/1] (0.00ns) (grouped into LUT with out node m_2)   --->   "%zext_ln957_1 = zext i16 %tmp_V_4 to i32" [firmware/myproject_axi.cpp:39]   --->   Operation 57 'zext' 'zext_ln957_1' <Predicate = (icmp_ln958 & !icmp_ln935)> <Delay = 0.00>
-ST_4 : Operation 58 [1/1] (0.88ns)   --->   "%add_ln958 = add nsw i32 -25, %sub_ln944" [firmware/myproject_axi.cpp:39]   --->   Operation 58 'add' 'add_ln958' <Predicate = (icmp_ln958 & !icmp_ln935)> <Delay = 0.88> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 59 [1/1] (0.00ns) (grouped into LUT with out node m_2)   --->   "%lshr_ln958 = lshr i32 %zext_ln957_1, %add_ln958" [firmware/myproject_axi.cpp:39]   --->   Operation 59 'lshr' 'lshr_ln958' <Predicate = (icmp_ln958 & !icmp_ln935)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 1.05> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 60 [1/1] (0.00ns) (grouped into LUT with out node m_2)   --->   "%zext_ln958 = zext i32 %lshr_ln958 to i64" [firmware/myproject_axi.cpp:39]   --->   Operation 60 'zext' 'zext_ln958' <Predicate = (icmp_ln958 & !icmp_ln935)> <Delay = 0.00>
-ST_4 : Operation 61 [1/1] (0.88ns)   --->   "%sub_ln958 = sub i32 25, %sub_ln944" [firmware/myproject_axi.cpp:39]   --->   Operation 61 'sub' 'sub_ln958' <Predicate = (!icmp_ln958 & !icmp_ln935)> <Delay = 0.88> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+State 4 <SV = 3> <Delay = 2.51>
+ST_4 : Operation 58 [1/1] (0.00ns) (grouped into LUT with out node m_2)   --->   "%m = zext i16 %tmp_V_4 to i64" [firmware/myproject_axi.cpp:39]   --->   Operation 58 'zext' 'm' <Predicate = (!icmp_ln958 & !icmp_ln935)> <Delay = 0.00>
+ST_4 : Operation 59 [1/1] (0.00ns) (grouped into LUT with out node m_2)   --->   "%zext_ln957_1 = zext i16 %tmp_V_4 to i32" [firmware/myproject_axi.cpp:39]   --->   Operation 59 'zext' 'zext_ln957_1' <Predicate = (icmp_ln958 & !icmp_ln935)> <Delay = 0.00>
+ST_4 : Operation 60 [1/1] (0.00ns) (grouped into LUT with out node m_2)   --->   "%lshr_ln958 = lshr i32 %zext_ln957_1, %add_ln958" [firmware/myproject_axi.cpp:39]   --->   Operation 60 'lshr' 'lshr_ln958' <Predicate = (icmp_ln958 & !icmp_ln935)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 1.05> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 61 [1/1] (0.00ns) (grouped into LUT with out node m_2)   --->   "%zext_ln958 = zext i32 %lshr_ln958 to i64" [firmware/myproject_axi.cpp:39]   --->   Operation 61 'zext' 'zext_ln958' <Predicate = (icmp_ln958 & !icmp_ln935)> <Delay = 0.00>
 ST_4 : Operation 62 [1/1] (0.00ns) (grouped into LUT with out node m_2)   --->   "%zext_ln958_1 = zext i32 %sub_ln958 to i64" [firmware/myproject_axi.cpp:39]   --->   Operation 62 'zext' 'zext_ln958_1' <Predicate = (!icmp_ln958 & !icmp_ln935)> <Delay = 0.00>
 ST_4 : Operation 63 [1/1] (0.00ns) (grouped into LUT with out node m_2)   --->   "%shl_ln958 = shl i64 %m, %zext_ln958_1" [firmware/myproject_axi.cpp:39]   --->   Operation 63 'shl' 'shl_ln958' <Predicate = (!icmp_ln958 & !icmp_ln935)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 1.05> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 64 [1/1] (0.00ns) (grouped into LUT with out node m_2)   --->   "%m_1 = select i1 %icmp_ln958, i64 %zext_ln958, i64 %shl_ln958" [firmware/myproject_axi.cpp:39]   --->   Operation 64 'select' 'm_1' <Predicate = (!icmp_ln935)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
@@ -172,7 +172,7 @@ ST_5 : Operation 80 [1/1] (0.00ns)   --->   "br label %0" [firmware/myproject_ax
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 4ns, clock uncertainty: 0.5ns.
+Target clock period: 3.33ns, clock uncertainty: 0.417ns.
 
  <State 1>: 0.603ns
 The critical path consists of the following:
@@ -195,10 +195,9 @@ The critical path consists of the following:
 	'or' operation ('or_ln949', firmware/myproject_axi.cpp:39) [61]  (0 ns)
 	blocking operation 0.122 ns on control path)
 
- <State 4>: 3.4ns
+ <State 4>: 2.51ns
 The critical path consists of the following:
-	'add' operation ('add_ln958', firmware/myproject_axi.cpp:39) [66]  (0.88 ns)
-	'lshr' operation ('lshr_ln958', firmware/myproject_axi.cpp:39) [67]  (0 ns)
+	'shl' operation ('shl_ln958', firmware/myproject_axi.cpp:39) [71]  (0 ns)
 	'select' operation ('m', firmware/myproject_axi.cpp:39) [72]  (0 ns)
 	'add' operation ('m', firmware/myproject_axi.cpp:39) [74]  (1.15 ns)
 	'select' operation ('select_ln964', firmware/myproject_axi.cpp:39) [78]  (0.303 ns)

@@ -917,14 +917,14 @@
 						<id>65</id>
 						<name>_ln38</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>38</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1002,14 +1002,14 @@
 						<id>68</id>
 						<name>icmp_ln38</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>38</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1051,14 +1051,14 @@
 						<id>70</id>
 						<name>i</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>38</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1100,14 +1100,14 @@
 						<id>71</id>
 						<name>_ln38</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>38</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1150,14 +1150,14 @@
 						<id>76</id>
 						<name>empty_209</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1214,14 +1214,14 @@
 						<id>77</id>
 						<name>tmp_data_0_V</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1262,14 +1262,14 @@
 						<id>78</id>
 						<name>tmp_data_1_V</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1310,14 +1310,14 @@
 						<id>79</id>
 						<name>tmp_data_2_V</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1358,14 +1358,14 @@
 						<id>80</id>
 						<name>tmp_data_3_V</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1406,14 +1406,14 @@
 						<id>81</id>
 						<name>tmp_data_4_V</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1454,14 +1454,14 @@
 						<id>82</id>
 						<name>tmp_data_5_V</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1502,14 +1502,14 @@
 						<id>83</id>
 						<name>tmp_data_6_V</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1550,14 +1550,14 @@
 						<id>84</id>
 						<name>tmp_data_7_V</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1598,14 +1598,14 @@
 						<id>85</id>
 						<name>tmp_data_8_V</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1646,14 +1646,14 @@
 						<id>86</id>
 						<name>tmp_data_9_V</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1694,14 +1694,14 @@
 						<id>87</id>
 						<name>tmp_data_10_V</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1742,14 +1742,14 @@
 						<id>88</id>
 						<name>tmp_data_11_V</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1790,14 +1790,14 @@
 						<id>89</id>
 						<name>tmp_data_12_V</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1838,14 +1838,14 @@
 						<id>90</id>
 						<name>tmp_data_13_V</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1886,14 +1886,14 @@
 						<id>91</id>
 						<name>tmp_data_14_V</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1934,14 +1934,14 @@
 						<id>92</id>
 						<name>tmp_data_15_V</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1982,14 +1982,14 @@
 						<id>93</id>
 						<name>res_V_data_0_V_write_ln50</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>50</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2062,14 +2062,14 @@
 						<id>95</id>
 						<name>_ln38</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>38</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2110,14 +2110,14 @@
 						<id>97</id>
 						<name>_ln52</name>
 						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
+						<fileDirectory>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</fileDirectory>
 						<lineNumber>52</lineNumber>
 						<contextFuncName>linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;12, 6, 0, 0, 0&amp;gt;, 16&amp;gt;, linear_config3&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
+								<first>/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>

@@ -2,11 +2,19 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="myproject_kernel_bd" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1638786292"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1638786292"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1638786292"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1638786292"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1638806866"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1638806866"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1638806866"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1638806866"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="ip/myproject_kernel_bd_mdm_1_0/myproject_kernel_bd_mdm_1_0.xci" Type="IP">
+        <Instance HierarchyPath="control/mdm_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
       <File Name="ip/myproject_kernel_bd_microblaze_0_0/myproject_kernel_bd_microblaze_0_0.xci" Type="IP">
         <Instance HierarchyPath="control/microblaze_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
@@ -169,6 +177,54 @@
       </File>
       <File Name="ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/myproject_kernel_bd_axis_subset_cnv_sts_0_0.xci" Type="IP">
         <Instance HierarchyPath="dma_0/axis_subset_cnv_sts_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/myproject_kernel_bd_axi_datamover_0_1/myproject_kernel_bd_axi_datamover_0_1.xci" Type="IP">
+        <Instance HierarchyPath="dma_1/axi_datamover_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/myproject_kernel_bd_axis_broadcaster_0_1/myproject_kernel_bd_axis_broadcaster_0_1.xci" Type="IP">
+        <Instance HierarchyPath="dma_1/axis_broadcaster_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/myproject_kernel_bd_axis_combiner_0_1/myproject_kernel_bd_axis_combiner_0_1.xci" Type="IP">
+        <Instance HierarchyPath="dma_1/axis_combiner_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/myproject_kernel_bd_axis_dwidth_cnv_0_1/myproject_kernel_bd_axis_dwidth_cnv_0_1.xci" Type="IP">
+        <Instance HierarchyPath="dma_1/axis_dwidth_cnv_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/myproject_kernel_bd_axis_subset_cnv_cmd_0_1.xci" Type="IP">
+        <Instance HierarchyPath="dma_1/axis_subset_cnv_cmd_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/myproject_kernel_bd_axis_subset_cnv_sts_0_1.xci" Type="IP">
+        <Instance HierarchyPath="dma_1/axis_subset_cnv_sts_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

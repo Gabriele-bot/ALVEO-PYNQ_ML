@@ -19,7 +19,19 @@ proc edit_core {core} {
   set_property value        32           $bifparam
   set_property value_source constant     $bifparam
 
+  set bif      [::ipx::get_bus_interfaces -of $core  "m01_axi"] 
+  set bifparam [::ipx::add_bus_parameter -quiet "MAX_BURST_LENGTH" $bif]
+  set_property value        256          $bifparam
+  set_property value_source constant     $bifparam
+  set bifparam [::ipx::add_bus_parameter -quiet "NUM_READ_OUTSTANDING" $bif]
+  set_property value        32           $bifparam
+  set_property value_source constant     $bifparam
+  set bifparam [::ipx::add_bus_parameter -quiet "NUM_WRITE_OUTSTANDING" $bif]
+  set_property value        32           $bifparam
+  set_property value_source constant     $bifparam
+
   ::ipx::associate_bus_interfaces -busif "m00_axi" -clock "ap_clk" $core
+  ::ipx::associate_bus_interfaces -busif "m01_axi" -clock "ap_clk" $core
   ::ipx::associate_bus_interfaces -busif "s_axi_control" -clock "ap_clk" $core
 
   # Specify the freq_hz parameter 
@@ -31,6 +43,8 @@ proc edit_core {core} {
   set_property value_resolve_type user $clkbifparam
   # set value_resolve_type 'immediate' if the frequency cannot change. 
   # set_property value_resolve_type immediate $clkbifparam
+  ::ipx::infer_bus_interfaces "xilinx.com:interface:bscan_rtl:1.0" $core
+  ::ipx::remove_bus_interface bscan_0_reset $core
   set mem_map    [::ipx::add_memory_map -quiet "s_axi_control" $core]
   set addr_block [::ipx::add_address_block -quiet "reg0" $mem_map]
 
@@ -81,17 +95,17 @@ proc edit_core {core} {
     set_property DESCRIPTION {Reserved.  0s on read.} $field
     set_property READ_ACTION {modify} $field
 
-  set reg      [::ipx::add_register -quiet "in_r" $addr_block]
+  set reg      [::ipx::add_register -quiet "CNN_in" $addr_block]
   set_property address_offset 0x010 $reg
   set_property size           [expr {8*8}]   $reg
   set regparam [::ipx::add_register_parameter -quiet {ASSOCIATED_BUSIF} $reg] 
   set_property value m00_axi $regparam 
 
-  set reg      [::ipx::add_register -quiet "out_r" $addr_block]
+  set reg      [::ipx::add_register -quiet "CNN_out" $addr_block]
   set_property address_offset 0x01c $reg
   set_property size           [expr {8*8}]   $reg
   set regparam [::ipx::add_register_parameter -quiet {ASSOCIATED_BUSIF} $reg] 
-  set_property value m00_axi $regparam 
+  set_property value m01_axi $regparam 
 
   set_property slave_memory_map_ref "s_axi_control" [::ipx::get_bus_interfaces -of $core "s_axi_control"]
 
@@ -104,7 +118,7 @@ proc edit_core {core} {
 
 proc package_project {path_to_packaged kernel_vendor kernel_library kernel_name} {
   set core [::ipx::package_project -root_dir $path_to_packaged -vendor $kernel_vendor -library $kernel_library -taxonomy "/KernelIP" -import_files -set_current false ]
-  foreach user_parameter [list C_S_AXI_CONTROL_ADDR_WIDTH C_S_AXI_CONTROL_DATA_WIDTH C_M00_AXI_ADDR_WIDTH C_M00_AXI_DATA_WIDTH] {
+  foreach user_parameter [list C_S_AXI_CONTROL_ADDR_WIDTH C_S_AXI_CONTROL_DATA_WIDTH C_M00_AXI_ADDR_WIDTH C_M00_AXI_DATA_WIDTH C_M01_AXI_ADDR_WIDTH C_M01_AXI_DATA_WIDTH] {
     ::ipx::remove_user_parameter $user_parameter $core
   }
   ::ipx::create_xgui_files $core

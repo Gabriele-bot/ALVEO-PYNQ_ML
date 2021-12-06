@@ -1,24 +1,28 @@
-Mon Dec  6 11:45:16 2021: Server was asked to start on port: '33283'
-Mon Dec  6 11:45:16 2021: Server is using token UUID: '4b90622c-7fa9-4b84-9833-1f58430d9c65'
-Mon Dec  6 11:45:16 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
-Mon Dec  6 11:45:16 2021: Attempting to start server on port '33283'
-Mon Dec  6 11:45:16 2021: XCD main fifo: created main fifo '/tmp/xcdmain4b90622c-7fa9-4b84-9833-1f58430d9c65', fd read = 13
-Mon Dec  6 11:45:16 2021: Running Dispatch Server
-Mon Dec  6 11:45:16 2021: Version 2.0.0
-Mon Dec  6 11:45:25 2021: Dispatch Server: Accepted socket connection from client
-Mon Dec  6 11:45:25 2021: EXCHANGE_TOKEN received, server token: 4b90622c-7fa9-4b84-9833-1f58430d9c65, passed token: 4b90622c-7fa9-4b84-9833-1f58430d9c65
-Mon Dec  6 11:45:25 2021: SESSION_MGR: creating session with session uuid: '9790a905-38e1-401c-b384-51d1813dd2a8' and name 'v++_link_myproject_kernel'
-Mon Dec  6 11:45:35 2021: Dispatch Server: Accepted socket connection from client
-Mon Dec  6 11:45:37 2021: Dispatch Server: Accepted socket connection from client
-Mon Dec  6 11:45:46 2021: Dispatch Server: Accepted socket connection from client
-Mon Dec  6 11:47:36 2021: Dispatch Server: Accepted socket connection from client
-Mon Dec  6 11:47:36 2021: Dispatch Server: Accepted socket connection from client
-Mon Dec  6 11:47:36 2021: Dispatch Server: Accepted socket connection from client
-Mon Dec  6 11:47:36 2021: Dispatch Server: Accepted socket connection from client
-Mon Dec  6 11:48:50 2021: Dispatch Server: Accepted socket connection from client
-Mon Dec  6 11:48:50 2021: Dispatch Server: Accepted socket connection from client
-Mon Dec  6 11:49:28 2021: Dispatch Server: Accepted socket connection from client
-Mon Dec  6 11:50:47 2021: Dispatch Server: Accepted socket connection from client
-Mon Dec  6 11:52:10 2021: Dispatch Server: Accepted socket connection from client
-Mon Dec  6 12:32:07 2021: Dispatch Server: Accepted socket connection from client
-Mon Dec  6 12:32:08 2021: SESSION_MGR: closing session for UUID '9790a905-38e1-401c-b384-51d1813dd2a8' with name 'v++_link_myproject_kernel'
+Mon Dec  6 19:31:10 2021: Server was asked to start on port: '35905'
+Mon Dec  6 19:31:10 2021: Server is using token UUID: '4e2fc6c6-5b09-43bc-9d9a-9ddeae83b67c'
+Mon Dec  6 19:31:10 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Dec  6 19:31:10 2021: Attempting to start server on port '35905'
+Mon Dec  6 19:31:10 2021: XCD main fifo: created main fifo '/tmp/xcdmain4e2fc6c6-5b09-43bc-9d9a-9ddeae83b67c', fd read = 13
+Mon Dec  6 19:31:10 2021: Running Dispatch Server
+Mon Dec  6 19:31:10 2021: Version 2.0.0
+Mon Dec  6 19:31:19 2021: Dispatch Server: Accepted socket connection from client
+Mon Dec  6 19:31:19 2021: EXCHANGE_TOKEN received, server token: 4e2fc6c6-5b09-43bc-9d9a-9ddeae83b67c, passed token: 4e2fc6c6-5b09-43bc-9d9a-9ddeae83b67c
+Mon Dec  6 19:31:19 2021: SESSION_MGR: creating session with session uuid: '139f2150-358f-4f40-b774-8941b9cebcb0' and name 'v++_link_myproject_kernel'
+Mon Dec  6 19:31:29 2021: Dispatch Server: Accepted socket connection from client
+Mon Dec  6 19:31:31 2021: Dispatch Server: Accepted socket connection from client
+Mon Dec  6 19:31:41 2021: Dispatch Server: Accepted socket connection from client
+Mon Dec  6 19:33:35 2021: Dispatch Server: Accepted socket connection from client
+Mon Dec  6 19:33:35 2021: Dispatch Server: Accepted socket connection from client
+Mon Dec  6 19:33:35 2021: Dispatch Server: Accepted socket connection from client
+Mon Dec  6 19:33:35 2021: Dispatch Server: Accepted socket connection from client
+Mon Dec  6 19:33:35 2021: Dispatch Server: Accepted socket connection from client
+Mon Dec  6 19:33:35 2021: Dispatch Server: Accepted socket connection from client
+Mon Dec  6 19:33:35 2021: Dispatch Server: Accepted socket connection from client
+Mon Dec  6 19:34:51 2021: Dispatch Server: Accepted socket connection from client
+Mon Dec  6 19:34:51 2021: Dispatch Server: Accepted socket connection from client
+Mon Dec  6 19:34:51 2021: Dispatch Server: Accepted socket connection from client
+Mon Dec  6 19:35:41 2021: Dispatch Server: Accepted socket connection from client
+Mon Dec  6 19:36:58 2021: Dispatch Server: Accepted socket connection from client
+Mon Dec  6 19:38:18 2021: Dispatch Server: Accepted socket connection from client
+Mon Dec  6 20:17:23 2021: Dispatch Server: Accepted socket connection from client
+Mon Dec  6 20:17:24 2021: SESSION_MGR: closing session for UUID '139f2150-358f-4f40-b774-8941b9cebcb0' with name 'v++_link_myproject_kernel'

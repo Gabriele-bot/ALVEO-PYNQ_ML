@@ -838,11 +838,43 @@ Loop_2_proc.exit:0  ret void
 ]]></Node>
 <StgValue><ssdm name="icmp_ln958"/></StgValue>
 </operation>
+
+<operation id="56" st_id="3" stage="1" lat="1">
+<core>AddSub</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln935" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="66" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i_ifconv:42  %add_ln958 = add nsw i32 -25, %sub_ln944
+
+]]></Node>
+<StgValue><ssdm name="add_ln958"/></StgValue>
+</operation>
+
+<operation id="57" st_id="3" stage="1" lat="1">
+<core>AddSub</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln935" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="69" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i_ifconv:45  %sub_ln958 = sub i32 25, %sub_ln944
+
+]]></Node>
+<StgValue><ssdm name="sub_ln958"/></StgValue>
+</operation>
 </state>
 
 <state id="4" st_id="4">
 
-<operation id="56" st_id="4" stage="1" lat="1">
+<operation id="58" st_id="4" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -859,7 +891,7 @@ Loop_2_proc.exit:0  ret void
 <StgValue><ssdm name="m"/></StgValue>
 </operation>
 
-<operation id="57" st_id="4" stage="1" lat="1">
+<operation id="59" st_id="4" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -876,24 +908,7 @@ Loop_2_proc.exit:0  ret void
 <StgValue><ssdm name="zext_ln957_1"/></StgValue>
 </operation>
 
-<operation id="58" st_id="4" stage="1" lat="1">
-<core>AddSub</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln958" val="1"/>
-<literal name="icmp_ln935" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="66" bw="32" op_0_bw="32" op_1_bw="32">
-<![CDATA[
-._crit_edge.i_ifconv:42  %add_ln958 = add nsw i32 -25, %sub_ln944
-
-]]></Node>
-<StgValue><ssdm name="add_ln958"/></StgValue>
-</operation>
-
-<operation id="59" st_id="4" stage="1" lat="1">
+<operation id="60" st_id="4" stage="1" lat="1">
 <core>Shift</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -910,7 +925,7 @@ Loop_2_proc.exit:0  ret void
 <StgValue><ssdm name="lshr_ln958"/></StgValue>
 </operation>
 
-<operation id="60" st_id="4" stage="1" lat="1">
+<operation id="61" st_id="4" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -925,23 +940,6 @@ Loop_2_proc.exit:0  ret void
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln958"/></StgValue>
-</operation>
-
-<operation id="61" st_id="4" stage="1" lat="1">
-<core>AddSub</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln958" val="0"/>
-<literal name="icmp_ln935" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="69" bw="32" op_0_bw="32" op_1_bw="32">
-<![CDATA[
-._crit_edge.i_ifconv:45  %sub_ln958 = sub i32 25, %sub_ln944
-
-]]></Node>
-<StgValue><ssdm name="sub_ln958"/></StgValue>
 </operation>
 
 <operation id="62" st_id="4" stage="1" lat="1">

@@ -57,7 +57,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"myproject_U0/conv_2d_cl_array_array_ap_fixed_16u_config6_U0/call_ret_shift_line_buffer_array_ap_fixed_16u_config6_s_fu_8887/call_ret_shift_line_buffer_array_ap_fixed_16u_config6_s_fu_8887_activity": {
+				"myproject_U0/conv_2d_cl_array_array_ap_fixed_16u_config6_U0/call_ret_shift_line_buffer_array_ap_fixed_16u_config6_s_fu_8892/call_ret_shift_line_buffer_array_ap_fixed_16u_config6_s_fu_8892_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

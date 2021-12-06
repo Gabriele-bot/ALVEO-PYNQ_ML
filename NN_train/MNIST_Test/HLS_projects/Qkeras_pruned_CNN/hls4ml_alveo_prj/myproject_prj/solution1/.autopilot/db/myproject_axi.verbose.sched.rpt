@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'myproject_axi'
 ================================================================
-* Date:           Mon Nov 22 19:55:37 2021
+* Date:           Mon Dec  6 16:55:33 2021
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        myproject_prj
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  | 4.00 ns | 3.494 ns |   0.50 ns  |
+    |ap_clk  | 3.33 ns | 2.916 ns |   0.42 ns  |
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
     |   min   |   max   |    min    |    max    |  min |  max |   Type   |
     +---------+---------+-----------+-----------+------+------+----------+
-    |     3137|     3137| 12.548 us | 12.548 us |  3138|  3138| dataflow |
+    |     3163|     3164| 10.542 us | 10.546 us |  3139|  3139| dataflow |
     +---------+---------+-----------+-----------+------+------+----------+
 
     + Detail: 
@@ -165,7 +165,7 @@ ST_9 : Operation 69 [1/1] (0.00ns)   --->   "ret void" [firmware/myproject_axi.c
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 4ns, clock uncertainty: 0.5ns.
+Target clock period: 3.33ns, clock uncertainty: 0.417ns.
 
  <State 1>: 0ns
 The critical path consists of the following:

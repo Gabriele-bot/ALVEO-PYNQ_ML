@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-// Date        : Mon Dec  6 11:29:22 2021
+// Date        : Mon Dec  6 17:11:02 2021
 // Host        : gabribot-X570-AORUS-ELITE running 64-bit Ubuntu 18.04.6 LTS
 // Command     : write_verilog -force -mode synth_stub
-//               /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_microblaze_0_0/myproject_kernel_bd_microblaze_0_0_stub.v
+//               /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_microblaze_0_0/myproject_kernel_bd_microblaze_0_0_stub.v
 // Design      : myproject_kernel_bd_microblaze_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xcu50-fsvh2104-2-e
@@ -20,16 +20,19 @@ module myproject_kernel_bd_microblaze_0_0(Clk, Reset, Interrupt, Interrupt_Addre
   M_AXI_DP_AWPROT, M_AXI_DP_AWVALID, M_AXI_DP_AWREADY, M_AXI_DP_WDATA, M_AXI_DP_WSTRB, 
   M_AXI_DP_WVALID, M_AXI_DP_WREADY, M_AXI_DP_BRESP, M_AXI_DP_BVALID, M_AXI_DP_BREADY, 
   M_AXI_DP_ARADDR, M_AXI_DP_ARPROT, M_AXI_DP_ARVALID, M_AXI_DP_ARREADY, M_AXI_DP_RDATA, 
-  M_AXI_DP_RRESP, M_AXI_DP_RVALID, M_AXI_DP_RREADY, Trace_Instruction, Trace_Valid_Instr, 
-  Trace_PC, Trace_Reg_Write, Trace_Reg_Addr, Trace_MSR_Reg, Trace_PID_Reg, 
+  M_AXI_DP_RRESP, M_AXI_DP_RVALID, M_AXI_DP_RREADY, Dbg_Clk, Dbg_TDI, Dbg_TDO, Dbg_Reg_En, 
+  Dbg_Shift, Dbg_Capture, Dbg_Update, Debug_Rst, Dbg_Disable, Trace_Instruction, 
+  Trace_Valid_Instr, Trace_PC, Trace_Reg_Write, Trace_Reg_Addr, Trace_MSR_Reg, Trace_PID_Reg, 
   Trace_New_Reg_Value, Trace_Exception_Taken, Trace_Exception_Kind, Trace_Jump_Taken, 
   Trace_Delay_Slot, Trace_Data_Address, Trace_Data_Write_Value, Trace_Data_Byte_Enable, 
   Trace_Data_Access, Trace_Data_Read, Trace_Data_Write, Trace_DCache_Req, Trace_DCache_Hit, 
   Trace_DCache_Rdy, Trace_DCache_Read, Trace_ICache_Req, Trace_ICache_Hit, 
   Trace_ICache_Rdy, Trace_OF_PipeRun, Trace_EX_PipeRun, Trace_MEM_PipeRun, Trace_MB_Halted, 
   Trace_Jump_Hit, M0_AXIS_TLAST, M0_AXIS_TDATA, M0_AXIS_TVALID, M0_AXIS_TREADY, 
-  S0_AXIS_TLAST, S0_AXIS_TDATA, S0_AXIS_TVALID, S0_AXIS_TREADY)
-/* synthesis syn_black_box black_box_pad_pin="Clk,Reset,Interrupt,Interrupt_Address[0:31],Interrupt_Ack[0:1],Instr_Addr[0:31],Instr[0:31],IFetch,I_AS,IReady,IWAIT,ICE,IUE,Data_Addr[0:31],Data_Read[0:31],Data_Write[0:31],D_AS,Read_Strobe,Write_Strobe,DReady,DWait,DCE,DUE,Byte_Enable[0:3],M_AXI_DP_AWADDR[31:0],M_AXI_DP_AWPROT[2:0],M_AXI_DP_AWVALID,M_AXI_DP_AWREADY,M_AXI_DP_WDATA[31:0],M_AXI_DP_WSTRB[3:0],M_AXI_DP_WVALID,M_AXI_DP_WREADY,M_AXI_DP_BRESP[1:0],M_AXI_DP_BVALID,M_AXI_DP_BREADY,M_AXI_DP_ARADDR[31:0],M_AXI_DP_ARPROT[2:0],M_AXI_DP_ARVALID,M_AXI_DP_ARREADY,M_AXI_DP_RDATA[31:0],M_AXI_DP_RRESP[1:0],M_AXI_DP_RVALID,M_AXI_DP_RREADY,Trace_Instruction[0:31],Trace_Valid_Instr,Trace_PC[0:31],Trace_Reg_Write,Trace_Reg_Addr[0:4],Trace_MSR_Reg[0:14],Trace_PID_Reg[0:7],Trace_New_Reg_Value[0:31],Trace_Exception_Taken,Trace_Exception_Kind[0:4],Trace_Jump_Taken,Trace_Delay_Slot,Trace_Data_Address[0:31],Trace_Data_Write_Value[0:31],Trace_Data_Byte_Enable[0:3],Trace_Data_Access,Trace_Data_Read,Trace_Data_Write,Trace_DCache_Req,Trace_DCache_Hit,Trace_DCache_Rdy,Trace_DCache_Read,Trace_ICache_Req,Trace_ICache_Hit,Trace_ICache_Rdy,Trace_OF_PipeRun,Trace_EX_PipeRun,Trace_MEM_PipeRun,Trace_MB_Halted,Trace_Jump_Hit,M0_AXIS_TLAST,M0_AXIS_TDATA[31:0],M0_AXIS_TVALID,M0_AXIS_TREADY,S0_AXIS_TLAST,S0_AXIS_TDATA[31:0],S0_AXIS_TVALID,S0_AXIS_TREADY" */;
+  M1_AXIS_TLAST, M1_AXIS_TDATA, M1_AXIS_TVALID, M1_AXIS_TREADY, S0_AXIS_TLAST, S0_AXIS_TDATA, 
+  S0_AXIS_TVALID, S0_AXIS_TREADY, S1_AXIS_TLAST, S1_AXIS_TDATA, S1_AXIS_TVALID, 
+  S1_AXIS_TREADY)
+/* synthesis syn_black_box black_box_pad_pin="Clk,Reset,Interrupt,Interrupt_Address[0:31],Interrupt_Ack[0:1],Instr_Addr[0:31],Instr[0:31],IFetch,I_AS,IReady,IWAIT,ICE,IUE,Data_Addr[0:31],Data_Read[0:31],Data_Write[0:31],D_AS,Read_Strobe,Write_Strobe,DReady,DWait,DCE,DUE,Byte_Enable[0:3],M_AXI_DP_AWADDR[31:0],M_AXI_DP_AWPROT[2:0],M_AXI_DP_AWVALID,M_AXI_DP_AWREADY,M_AXI_DP_WDATA[31:0],M_AXI_DP_WSTRB[3:0],M_AXI_DP_WVALID,M_AXI_DP_WREADY,M_AXI_DP_BRESP[1:0],M_AXI_DP_BVALID,M_AXI_DP_BREADY,M_AXI_DP_ARADDR[31:0],M_AXI_DP_ARPROT[2:0],M_AXI_DP_ARVALID,M_AXI_DP_ARREADY,M_AXI_DP_RDATA[31:0],M_AXI_DP_RRESP[1:0],M_AXI_DP_RVALID,M_AXI_DP_RREADY,Dbg_Clk,Dbg_TDI,Dbg_TDO,Dbg_Reg_En[0:7],Dbg_Shift,Dbg_Capture,Dbg_Update,Debug_Rst,Dbg_Disable,Trace_Instruction[0:31],Trace_Valid_Instr,Trace_PC[0:31],Trace_Reg_Write,Trace_Reg_Addr[0:4],Trace_MSR_Reg[0:14],Trace_PID_Reg[0:7],Trace_New_Reg_Value[0:31],Trace_Exception_Taken,Trace_Exception_Kind[0:4],Trace_Jump_Taken,Trace_Delay_Slot,Trace_Data_Address[0:31],Trace_Data_Write_Value[0:31],Trace_Data_Byte_Enable[0:3],Trace_Data_Access,Trace_Data_Read,Trace_Data_Write,Trace_DCache_Req,Trace_DCache_Hit,Trace_DCache_Rdy,Trace_DCache_Read,Trace_ICache_Req,Trace_ICache_Hit,Trace_ICache_Rdy,Trace_OF_PipeRun,Trace_EX_PipeRun,Trace_MEM_PipeRun,Trace_MB_Halted,Trace_Jump_Hit,M0_AXIS_TLAST,M0_AXIS_TDATA[31:0],M0_AXIS_TVALID,M0_AXIS_TREADY,M1_AXIS_TLAST,M1_AXIS_TDATA[31:0],M1_AXIS_TVALID,M1_AXIS_TREADY,S0_AXIS_TLAST,S0_AXIS_TDATA[31:0],S0_AXIS_TVALID,S0_AXIS_TREADY,S1_AXIS_TLAST,S1_AXIS_TDATA[31:0],S1_AXIS_TVALID,S1_AXIS_TREADY" */;
   input Clk;
   input Reset;
   input Interrupt;
@@ -73,6 +76,15 @@ module myproject_kernel_bd_microblaze_0_0(Clk, Reset, Interrupt, Interrupt_Addre
   input [1:0]M_AXI_DP_RRESP;
   input M_AXI_DP_RVALID;
   output M_AXI_DP_RREADY;
+  input Dbg_Clk;
+  input Dbg_TDI;
+  output Dbg_TDO;
+  input [0:7]Dbg_Reg_En;
+  input Dbg_Shift;
+  input Dbg_Capture;
+  input Dbg_Update;
+  input Debug_Rst;
+  input Dbg_Disable;
   output [0:31]Trace_Instruction;
   output Trace_Valid_Instr;
   output [0:31]Trace_PC;
@@ -107,8 +119,16 @@ module myproject_kernel_bd_microblaze_0_0(Clk, Reset, Interrupt, Interrupt_Addre
   output [31:0]M0_AXIS_TDATA;
   output M0_AXIS_TVALID;
   input M0_AXIS_TREADY;
+  output M1_AXIS_TLAST;
+  output [31:0]M1_AXIS_TDATA;
+  output M1_AXIS_TVALID;
+  input M1_AXIS_TREADY;
   input S0_AXIS_TLAST;
   input [31:0]S0_AXIS_TDATA;
   input S0_AXIS_TVALID;
   output S0_AXIS_TREADY;
+  input S1_AXIS_TLAST;
+  input [31:0]S1_AXIS_TDATA;
+  input S1_AXIS_TVALID;
+  output S1_AXIS_TREADY;
 endmodule

@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-//Date        : Mon Dec  6 11:17:43 2021
+//Date        : Mon Dec  6 17:01:15 2021
 //Host        : gabribot-X570-AORUS-ELITE running 64-bit Ubuntu 18.04.6 LTS
 //Command     : generate_target myproject_kernel_bd.bd
 //Design      : myproject_kernel_bd
@@ -43,13 +43,31 @@ module control_imp_KNNMP0
     ap_clk,
     ap_rst_n,
     ap_start,
+    bscan_0_bscanid_en,
+    bscan_0_capture,
+    bscan_0_drck,
+    bscan_0_reset,
+    bscan_0_sel,
+    bscan_0_shift,
+    bscan_0_tck,
+    bscan_0_tdi,
+    bscan_0_tdo,
+    bscan_0_tms,
+    bscan_0_update,
     m00_cmd_tdata,
     m00_cmd_tready,
     m00_cmd_tvalid,
+    m01_cmd_tdata,
+    m01_cmd_tready,
+    m01_cmd_tvalid,
     s00_sts_tdata,
     s00_sts_tlast,
     s00_sts_tready,
     s00_sts_tvalid,
+    s01_sts_tdata,
+    s01_sts_tlast,
+    s01_sts_tready,
+    s01_sts_tvalid,
     s_axi_control_araddr,
     s_axi_control_arprot,
     s_axi_control_arready,
@@ -102,13 +120,31 @@ module control_imp_KNNMP0
   input ap_clk;
   input ap_rst_n;
   output [0:0]ap_start;
+  input bscan_0_bscanid_en;
+  input bscan_0_capture;
+  input bscan_0_drck;
+  input bscan_0_reset;
+  input bscan_0_sel;
+  input bscan_0_shift;
+  input bscan_0_tck;
+  input bscan_0_tdi;
+  output bscan_0_tdo;
+  input bscan_0_tms;
+  input bscan_0_update;
   output [31:0]m00_cmd_tdata;
   input m00_cmd_tready;
   output m00_cmd_tvalid;
+  output [31:0]m01_cmd_tdata;
+  input m01_cmd_tready;
+  output m01_cmd_tvalid;
   input [31:0]s00_sts_tdata;
   input s00_sts_tlast;
   output s00_sts_tready;
   input s00_sts_tvalid;
+  input [31:0]s01_sts_tdata;
+  input s01_sts_tlast;
+  output s01_sts_tready;
+  input s01_sts_tvalid;
   input [11:0]s_axi_control_araddr;
   input [2:0]s_axi_control_arprot;
   output s_axi_control_arready;
@@ -133,9 +169,24 @@ module control_imp_KNNMP0
   wire ap_clk;
   wire ap_rst_n;
   wire [0:0]ap_rst_n_1;
+  wire bscan_0_BSCANID_EN;
+  wire bscan_0_CAPTURE;
+  wire bscan_0_DRCK;
+  wire bscan_0_RESET;
+  wire bscan_0_SEL;
+  wire bscan_0_SHIFT;
+  wire bscan_0_TCK;
+  wire bscan_0_TDI;
+  wire bscan_0_TDO;
+  wire bscan_0_TMS;
+  wire bscan_0_UPDATE;
+  wire mdm_1_Debug_SYS_Rst;
   wire [31:0]microblaze_0_M0_AXIS_TDATA;
   wire microblaze_0_M0_AXIS_TREADY;
   wire microblaze_0_M0_AXIS_TVALID;
+  wire [31:0]microblaze_0_M1_AXIS_TDATA;
+  wire microblaze_0_M1_AXIS_TREADY;
+  wire microblaze_0_M1_AXIS_TVALID;
   wire [31:0]microblaze_0_M_AXI_DP_ARADDR;
   wire [2:0]microblaze_0_M_AXI_DP_ARPROT;
   wire [0:0]microblaze_0_M_AXI_DP_ARREADY;
@@ -185,6 +236,15 @@ module control_imp_KNNMP0
   wire [0:4]microblaze_0_TRACE_REG_ADDR;
   wire microblaze_0_TRACE_REG_WRITE;
   wire microblaze_0_TRACE_VALID_INSTR;
+  wire microblaze_0_debug_CAPTURE;
+  wire microblaze_0_debug_CLK;
+  wire microblaze_0_debug_DISABLE;
+  wire [0:7]microblaze_0_debug_REG_EN;
+  wire microblaze_0_debug_RST;
+  wire microblaze_0_debug_SHIFT;
+  wire microblaze_0_debug_TDI;
+  wire microblaze_0_debug_TDO;
+  wire microblaze_0_debug_UPDATE;
   wire [0:31]microblaze_0_dlmb_1_ABUS;
   wire microblaze_0_dlmb_1_ADDRSTROBE;
   wire [0:3]microblaze_0_dlmb_1_BE;
@@ -210,6 +270,10 @@ module control_imp_KNNMP0
   wire s00_sts_TLAST;
   wire s00_sts_TREADY;
   wire s00_sts_TVALID;
+  wire [31:0]s01_sts_TDATA;
+  wire s01_sts_TLAST;
+  wire s01_sts_TREADY;
+  wire s01_sts_TVALID;
   wire [11:0]s_axi_control_ARADDR;
   wire [2:0]s_axi_control_ARPROT;
   wire s_axi_control_ARREADY;
@@ -261,13 +325,31 @@ module control_imp_KNNMP0
   assign TRACE_reg_write = microblaze_0_TRACE_REG_WRITE;
   assign TRACE_valid_instr = microblaze_0_TRACE_VALID_INSTR;
   assign ap_start[0] = microblaze_0_exchange_memory_Dout;
+  assign bscan_0_BSCANID_EN = bscan_0_bscanid_en;
+  assign bscan_0_CAPTURE = bscan_0_capture;
+  assign bscan_0_DRCK = bscan_0_drck;
+  assign bscan_0_RESET = bscan_0_reset;
+  assign bscan_0_SEL = bscan_0_sel;
+  assign bscan_0_SHIFT = bscan_0_shift;
+  assign bscan_0_TCK = bscan_0_tck;
+  assign bscan_0_TDI = bscan_0_tdi;
+  assign bscan_0_TMS = bscan_0_tms;
+  assign bscan_0_UPDATE = bscan_0_update;
+  assign bscan_0_tdo = bscan_0_TDO;
   assign m00_cmd_tdata[31:0] = microblaze_0_M0_AXIS_TDATA;
   assign m00_cmd_tvalid = microblaze_0_M0_AXIS_TVALID;
+  assign m01_cmd_tdata[31:0] = microblaze_0_M1_AXIS_TDATA;
+  assign m01_cmd_tvalid = microblaze_0_M1_AXIS_TVALID;
   assign microblaze_0_M0_AXIS_TREADY = m00_cmd_tready;
+  assign microblaze_0_M1_AXIS_TREADY = m01_cmd_tready;
   assign s00_sts_TDATA = s00_sts_tdata[31:0];
   assign s00_sts_TLAST = s00_sts_tlast;
   assign s00_sts_TVALID = s00_sts_tvalid;
   assign s00_sts_tready = s00_sts_TREADY;
+  assign s01_sts_TDATA = s01_sts_tdata[31:0];
+  assign s01_sts_TLAST = s01_sts_tlast;
+  assign s01_sts_TVALID = s01_sts_tvalid;
+  assign s01_sts_tready = s01_sts_TREADY;
   assign s_axi_control_ARADDR = s_axi_control_araddr[11:0];
   assign s_axi_control_ARPROT = s_axi_control_arprot[2:0];
   assign s_axi_control_ARVALID = s_axi_control_arvalid;
@@ -287,6 +369,28 @@ module control_imp_KNNMP0
   assign s_axi_control_rresp[1:0] = s_axi_control_RRESP;
   assign s_axi_control_rvalid = s_axi_control_RVALID;
   assign s_axi_control_wready = s_axi_control_WREADY;
+  myproject_kernel_bd_mdm_1_0 mdm_1
+       (.Dbg_Capture_0(microblaze_0_debug_CAPTURE),
+        .Dbg_Clk_0(microblaze_0_debug_CLK),
+        .Dbg_Disable_0(microblaze_0_debug_DISABLE),
+        .Dbg_Reg_En_0(microblaze_0_debug_REG_EN),
+        .Dbg_Rst_0(microblaze_0_debug_RST),
+        .Dbg_Shift_0(microblaze_0_debug_SHIFT),
+        .Dbg_TDI_0(microblaze_0_debug_TDI),
+        .Dbg_TDO_0(microblaze_0_debug_TDO),
+        .Dbg_Update_0(microblaze_0_debug_UPDATE),
+        .Debug_SYS_Rst(mdm_1_Debug_SYS_Rst),
+        .bscan_ext_bscanid_en(bscan_0_BSCANID_EN),
+        .bscan_ext_capture(bscan_0_CAPTURE),
+        .bscan_ext_drck(bscan_0_DRCK),
+        .bscan_ext_reset(bscan_0_RESET),
+        .bscan_ext_sel(bscan_0_SEL),
+        .bscan_ext_shift(bscan_0_SHIFT),
+        .bscan_ext_tck(bscan_0_TCK),
+        .bscan_ext_tdi(bscan_0_TDI),
+        .bscan_ext_tdo(bscan_0_TDO),
+        .bscan_ext_tms(bscan_0_TMS),
+        .bscan_ext_update(bscan_0_UPDATE));
   (* BMM_INFO_PROCESSOR = "microblaze-le > myproject_kernel_bd control/microblaze_0_local_memory/dlmb_bram_if_cntlr myproject_kernel_bd control/microblaze_0_exchange_memory/axi_bram_ctrl_0" *) 
   (* KEEP_HIERARCHY = "yes" *) 
   myproject_kernel_bd_microblaze_0_0 microblaze_0
@@ -300,6 +404,15 @@ module control_imp_KNNMP0
         .Data_Addr(microblaze_0_dlmb_1_ABUS),
         .Data_Read(microblaze_0_dlmb_1_READDBUS),
         .Data_Write(microblaze_0_dlmb_1_WRITEDBUS),
+        .Dbg_Capture(microblaze_0_debug_CAPTURE),
+        .Dbg_Clk(microblaze_0_debug_CLK),
+        .Dbg_Disable(microblaze_0_debug_DISABLE),
+        .Dbg_Reg_En(microblaze_0_debug_REG_EN),
+        .Dbg_Shift(microblaze_0_debug_SHIFT),
+        .Dbg_TDI(microblaze_0_debug_TDI),
+        .Dbg_TDO(microblaze_0_debug_TDO),
+        .Dbg_Update(microblaze_0_debug_UPDATE),
+        .Debug_Rst(microblaze_0_debug_RST),
         .ICE(microblaze_0_ilmb_1_CE),
         .IFetch(microblaze_0_ilmb_1_READSTROBE),
         .IReady(microblaze_0_ilmb_1_READY),
@@ -313,6 +426,9 @@ module control_imp_KNNMP0
         .M0_AXIS_TDATA(microblaze_0_M0_AXIS_TDATA),
         .M0_AXIS_TREADY(microblaze_0_M0_AXIS_TREADY),
         .M0_AXIS_TVALID(microblaze_0_M0_AXIS_TVALID),
+        .M1_AXIS_TDATA(microblaze_0_M1_AXIS_TDATA),
+        .M1_AXIS_TREADY(microblaze_0_M1_AXIS_TREADY),
+        .M1_AXIS_TVALID(microblaze_0_M1_AXIS_TVALID),
         .M_AXI_DP_ARADDR(microblaze_0_M_AXI_DP_ARADDR),
         .M_AXI_DP_ARPROT(microblaze_0_M_AXI_DP_ARPROT),
         .M_AXI_DP_ARREADY(microblaze_0_M_AXI_DP_ARREADY),
@@ -338,6 +454,10 @@ module control_imp_KNNMP0
         .S0_AXIS_TLAST(s00_sts_TLAST),
         .S0_AXIS_TREADY(s00_sts_TREADY),
         .S0_AXIS_TVALID(s00_sts_TVALID),
+        .S1_AXIS_TDATA(s01_sts_TDATA),
+        .S1_AXIS_TLAST(s01_sts_TLAST),
+        .S1_AXIS_TREADY(s01_sts_TREADY),
+        .S1_AXIS_TVALID(s01_sts_TVALID),
         .Trace_DCache_Hit(microblaze_0_TRACE_DCACHE_HIT),
         .Trace_DCache_Rdy(microblaze_0_TRACE_DCACHE_RDY),
         .Trace_DCache_Read(microblaze_0_TRACE_DCACHE_READ),
@@ -437,7 +557,7 @@ module control_imp_KNNMP0
        (.aux_reset_in(1'b1),
         .dcm_locked(1'b1),
         .ext_reset_in(ap_rst_n),
-        .mb_debug_sys_rst(1'b0),
+        .mb_debug_sys_rst(mdm_1_Debug_SYS_Rst),
         .mb_reset(proc_sys_reset_0_mb_reset),
         .peripheral_aresetn(ap_rst_n_1),
         .peripheral_reset(SYS_Rst_1),
@@ -792,6 +912,354 @@ module dma_0_imp_1KN9I6N
         .s_axis_tvalid(axis_combiner_0_M_AXIS_TVALID));
 endmodule
 
+module dma_1_imp_1AZ6IVD
+   (ap_clk,
+    ap_rst_n,
+    m00_axi_araddr,
+    m00_axi_arburst,
+    m00_axi_arcache,
+    m00_axi_arlen,
+    m00_axi_arprot,
+    m00_axi_arready,
+    m00_axi_arsize,
+    m00_axi_aruser,
+    m00_axi_arvalid,
+    m00_axi_awaddr,
+    m00_axi_awburst,
+    m00_axi_awcache,
+    m00_axi_awlen,
+    m00_axi_awprot,
+    m00_axi_awready,
+    m00_axi_awsize,
+    m00_axi_awuser,
+    m00_axi_awvalid,
+    m00_axi_bready,
+    m00_axi_bresp,
+    m00_axi_bvalid,
+    m00_axi_rdata,
+    m00_axi_rlast,
+    m00_axi_rready,
+    m00_axi_rresp,
+    m00_axi_rvalid,
+    m00_axi_wdata,
+    m00_axi_wlast,
+    m00_axi_wready,
+    m00_axi_wstrb,
+    m00_axi_wvalid,
+    m00_axis_tdata,
+    m00_axis_tkeep,
+    m00_axis_tlast,
+    m00_axis_tready,
+    m00_axis_tvalid,
+    m00_sts_tdata,
+    m00_sts_tlast,
+    m00_sts_tready,
+    m00_sts_tvalid,
+    s00_axis_tdata,
+    s00_axis_tkeep,
+    s00_axis_tlast,
+    s00_axis_tready,
+    s00_axis_tvalid,
+    s00_cmd_tdata,
+    s00_cmd_tready,
+    s00_cmd_tvalid);
+  input ap_clk;
+  input ap_rst_n;
+  output [63:0]m00_axi_araddr;
+  output [1:0]m00_axi_arburst;
+  output [3:0]m00_axi_arcache;
+  output [7:0]m00_axi_arlen;
+  output [2:0]m00_axi_arprot;
+  input m00_axi_arready;
+  output [2:0]m00_axi_arsize;
+  output [3:0]m00_axi_aruser;
+  output m00_axi_arvalid;
+  output [63:0]m00_axi_awaddr;
+  output [1:0]m00_axi_awburst;
+  output [3:0]m00_axi_awcache;
+  output [7:0]m00_axi_awlen;
+  output [2:0]m00_axi_awprot;
+  input m00_axi_awready;
+  output [2:0]m00_axi_awsize;
+  output [3:0]m00_axi_awuser;
+  output m00_axi_awvalid;
+  output m00_axi_bready;
+  input [1:0]m00_axi_bresp;
+  input m00_axi_bvalid;
+  input [31:0]m00_axi_rdata;
+  input m00_axi_rlast;
+  output m00_axi_rready;
+  input [1:0]m00_axi_rresp;
+  input m00_axi_rvalid;
+  output [31:0]m00_axi_wdata;
+  output m00_axi_wlast;
+  input m00_axi_wready;
+  output [3:0]m00_axi_wstrb;
+  output m00_axi_wvalid;
+  output [31:0]m00_axis_tdata;
+  output [3:0]m00_axis_tkeep;
+  output m00_axis_tlast;
+  input m00_axis_tready;
+  output m00_axis_tvalid;
+  output [31:0]m00_sts_tdata;
+  output m00_sts_tlast;
+  input m00_sts_tready;
+  output m00_sts_tvalid;
+  input [31:0]s00_axis_tdata;
+  input [3:0]s00_axis_tkeep;
+  input s00_axis_tlast;
+  output s00_axis_tready;
+  input s00_axis_tvalid;
+  input [31:0]s00_cmd_tdata;
+  output s00_cmd_tready;
+  input s00_cmd_tvalid;
+
+  wire ap_clk;
+  wire ap_rst_n;
+  wire [31:0]axi_datamover_0_0_M_AXIS_MM2S_TDATA;
+  wire [3:0]axi_datamover_0_0_M_AXIS_MM2S_TKEEP;
+  wire axi_datamover_0_0_M_AXIS_MM2S_TLAST;
+  wire axi_datamover_0_0_M_AXIS_MM2S_TREADY;
+  wire axi_datamover_0_0_M_AXIS_MM2S_TVALID;
+  wire [7:0]axi_datamover_0_M_AXIS_MM2S_STS_TDATA;
+  wire [0:0]axi_datamover_0_M_AXIS_MM2S_STS_TKEEP;
+  wire axi_datamover_0_M_AXIS_MM2S_STS_TLAST;
+  wire [0:0]axi_datamover_0_M_AXIS_MM2S_STS_TREADY;
+  wire axi_datamover_0_M_AXIS_MM2S_STS_TVALID;
+  wire [7:0]axi_datamover_0_M_AXIS_S2MM_STS_TDATA;
+  wire [0:0]axi_datamover_0_M_AXIS_S2MM_STS_TKEEP;
+  wire axi_datamover_0_M_AXIS_S2MM_STS_TLAST;
+  wire [1:1]axi_datamover_0_M_AXIS_S2MM_STS_TREADY;
+  wire axi_datamover_0_M_AXIS_S2MM_STS_TVALID;
+  wire [63:0]axi_datamover_0_M_AXI_ARADDR;
+  wire [1:0]axi_datamover_0_M_AXI_ARBURST;
+  wire [3:0]axi_datamover_0_M_AXI_ARCACHE;
+  wire [7:0]axi_datamover_0_M_AXI_ARLEN;
+  wire [2:0]axi_datamover_0_M_AXI_ARPROT;
+  wire axi_datamover_0_M_AXI_ARREADY;
+  wire [2:0]axi_datamover_0_M_AXI_ARSIZE;
+  wire [3:0]axi_datamover_0_M_AXI_ARUSER;
+  wire axi_datamover_0_M_AXI_ARVALID;
+  wire [63:0]axi_datamover_0_M_AXI_AWADDR;
+  wire [1:0]axi_datamover_0_M_AXI_AWBURST;
+  wire [3:0]axi_datamover_0_M_AXI_AWCACHE;
+  wire [7:0]axi_datamover_0_M_AXI_AWLEN;
+  wire [2:0]axi_datamover_0_M_AXI_AWPROT;
+  wire axi_datamover_0_M_AXI_AWREADY;
+  wire [2:0]axi_datamover_0_M_AXI_AWSIZE;
+  wire [3:0]axi_datamover_0_M_AXI_AWUSER;
+  wire axi_datamover_0_M_AXI_AWVALID;
+  wire axi_datamover_0_M_AXI_BREADY;
+  wire [1:0]axi_datamover_0_M_AXI_BRESP;
+  wire axi_datamover_0_M_AXI_BVALID;
+  wire [31:0]axi_datamover_0_M_AXI_RDATA;
+  wire axi_datamover_0_M_AXI_RLAST;
+  wire axi_datamover_0_M_AXI_RREADY;
+  wire [1:0]axi_datamover_0_M_AXI_RRESP;
+  wire axi_datamover_0_M_AXI_RVALID;
+  wire [31:0]axi_datamover_0_M_AXI_WDATA;
+  wire axi_datamover_0_M_AXI_WLAST;
+  wire axi_datamover_0_M_AXI_WREADY;
+  wire [3:0]axi_datamover_0_M_AXI_WSTRB;
+  wire axi_datamover_0_M_AXI_WVALID;
+  wire [103:0]axis_broadcaster_0_M00_AXIS_TDATA;
+  wire axis_broadcaster_0_M00_AXIS_TREADY;
+  wire [0:0]axis_broadcaster_0_M00_AXIS_TVALID;
+  wire [207:104]axis_broadcaster_0_M01_AXIS_TDATA;
+  wire axis_broadcaster_0_M01_AXIS_TREADY;
+  wire [1:1]axis_broadcaster_0_M01_AXIS_TVALID;
+  wire [15:0]axis_combiner_0_M_AXIS_TDATA;
+  wire [1:0]axis_combiner_0_M_AXIS_TKEEP;
+  wire axis_combiner_0_M_AXIS_TLAST;
+  wire axis_combiner_0_M_AXIS_TREADY;
+  wire axis_combiner_0_M_AXIS_TVALID;
+  wire [127:0]axis_dwidth_cnv_0_M_AXIS_TDATA;
+  wire axis_dwidth_cnv_0_M_AXIS_TREADY;
+  wire axis_dwidth_cnv_0_M_AXIS_TVALID;
+  wire [31:0]axis_dwidth_cnv_0_S_AXIS_TDATA;
+  wire axis_dwidth_cnv_0_S_AXIS_TREADY;
+  wire axis_dwidth_cnv_0_S_AXIS_TVALID;
+  wire [31:0]axis_subset_cnv_0_M_AXIS_TDATA;
+  wire axis_subset_cnv_0_M_AXIS_TLAST;
+  wire axis_subset_cnv_0_M_AXIS_TREADY;
+  wire axis_subset_cnv_0_M_AXIS_TVALID;
+  wire [103:0]axis_subset_cnv_cmd_0_M_AXIS_TDATA;
+  wire axis_subset_cnv_cmd_0_M_AXIS_TREADY;
+  wire axis_subset_cnv_cmd_0_M_AXIS_TVALID;
+  wire [31:0]s00_axis_TDATA;
+  wire [3:0]s00_axis_TKEEP;
+  wire s00_axis_TLAST;
+  wire s00_axis_TREADY;
+  wire s00_axis_TVALID;
+
+  assign axi_datamover_0_0_M_AXIS_MM2S_TREADY = m00_axis_tready;
+  assign axi_datamover_0_M_AXI_ARREADY = m00_axi_arready;
+  assign axi_datamover_0_M_AXI_AWREADY = m00_axi_awready;
+  assign axi_datamover_0_M_AXI_BRESP = m00_axi_bresp[1:0];
+  assign axi_datamover_0_M_AXI_BVALID = m00_axi_bvalid;
+  assign axi_datamover_0_M_AXI_RDATA = m00_axi_rdata[31:0];
+  assign axi_datamover_0_M_AXI_RLAST = m00_axi_rlast;
+  assign axi_datamover_0_M_AXI_RRESP = m00_axi_rresp[1:0];
+  assign axi_datamover_0_M_AXI_RVALID = m00_axi_rvalid;
+  assign axi_datamover_0_M_AXI_WREADY = m00_axi_wready;
+  assign axis_dwidth_cnv_0_S_AXIS_TDATA = s00_cmd_tdata[31:0];
+  assign axis_dwidth_cnv_0_S_AXIS_TVALID = s00_cmd_tvalid;
+  assign axis_subset_cnv_0_M_AXIS_TREADY = m00_sts_tready;
+  assign m00_axi_araddr[63:0] = axi_datamover_0_M_AXI_ARADDR;
+  assign m00_axi_arburst[1:0] = axi_datamover_0_M_AXI_ARBURST;
+  assign m00_axi_arcache[3:0] = axi_datamover_0_M_AXI_ARCACHE;
+  assign m00_axi_arlen[7:0] = axi_datamover_0_M_AXI_ARLEN;
+  assign m00_axi_arprot[2:0] = axi_datamover_0_M_AXI_ARPROT;
+  assign m00_axi_arsize[2:0] = axi_datamover_0_M_AXI_ARSIZE;
+  assign m00_axi_aruser[3:0] = axi_datamover_0_M_AXI_ARUSER;
+  assign m00_axi_arvalid = axi_datamover_0_M_AXI_ARVALID;
+  assign m00_axi_awaddr[63:0] = axi_datamover_0_M_AXI_AWADDR;
+  assign m00_axi_awburst[1:0] = axi_datamover_0_M_AXI_AWBURST;
+  assign m00_axi_awcache[3:0] = axi_datamover_0_M_AXI_AWCACHE;
+  assign m00_axi_awlen[7:0] = axi_datamover_0_M_AXI_AWLEN;
+  assign m00_axi_awprot[2:0] = axi_datamover_0_M_AXI_AWPROT;
+  assign m00_axi_awsize[2:0] = axi_datamover_0_M_AXI_AWSIZE;
+  assign m00_axi_awuser[3:0] = axi_datamover_0_M_AXI_AWUSER;
+  assign m00_axi_awvalid = axi_datamover_0_M_AXI_AWVALID;
+  assign m00_axi_bready = axi_datamover_0_M_AXI_BREADY;
+  assign m00_axi_rready = axi_datamover_0_M_AXI_RREADY;
+  assign m00_axi_wdata[31:0] = axi_datamover_0_M_AXI_WDATA;
+  assign m00_axi_wlast = axi_datamover_0_M_AXI_WLAST;
+  assign m00_axi_wstrb[3:0] = axi_datamover_0_M_AXI_WSTRB;
+  assign m00_axi_wvalid = axi_datamover_0_M_AXI_WVALID;
+  assign m00_axis_tdata[31:0] = axi_datamover_0_0_M_AXIS_MM2S_TDATA;
+  assign m00_axis_tkeep[3:0] = axi_datamover_0_0_M_AXIS_MM2S_TKEEP;
+  assign m00_axis_tlast = axi_datamover_0_0_M_AXIS_MM2S_TLAST;
+  assign m00_axis_tvalid = axi_datamover_0_0_M_AXIS_MM2S_TVALID;
+  assign m00_sts_tdata[31:0] = axis_subset_cnv_0_M_AXIS_TDATA;
+  assign m00_sts_tlast = axis_subset_cnv_0_M_AXIS_TLAST;
+  assign m00_sts_tvalid = axis_subset_cnv_0_M_AXIS_TVALID;
+  assign s00_axis_TDATA = s00_axis_tdata[31:0];
+  assign s00_axis_TKEEP = s00_axis_tkeep[3:0];
+  assign s00_axis_TLAST = s00_axis_tlast;
+  assign s00_axis_TVALID = s00_axis_tvalid;
+  assign s00_axis_tready = s00_axis_TREADY;
+  assign s00_cmd_tready = axis_dwidth_cnv_0_S_AXIS_TREADY;
+  myproject_kernel_bd_axi_datamover_0_1 axi_datamover_0
+       (.m_axi_mm2s_aclk(ap_clk),
+        .m_axi_mm2s_araddr(axi_datamover_0_M_AXI_ARADDR),
+        .m_axi_mm2s_arburst(axi_datamover_0_M_AXI_ARBURST),
+        .m_axi_mm2s_arcache(axi_datamover_0_M_AXI_ARCACHE),
+        .m_axi_mm2s_aresetn(ap_rst_n),
+        .m_axi_mm2s_arlen(axi_datamover_0_M_AXI_ARLEN),
+        .m_axi_mm2s_arprot(axi_datamover_0_M_AXI_ARPROT),
+        .m_axi_mm2s_arready(axi_datamover_0_M_AXI_ARREADY),
+        .m_axi_mm2s_arsize(axi_datamover_0_M_AXI_ARSIZE),
+        .m_axi_mm2s_aruser(axi_datamover_0_M_AXI_ARUSER),
+        .m_axi_mm2s_arvalid(axi_datamover_0_M_AXI_ARVALID),
+        .m_axi_mm2s_rdata(axi_datamover_0_M_AXI_RDATA),
+        .m_axi_mm2s_rlast(axi_datamover_0_M_AXI_RLAST),
+        .m_axi_mm2s_rready(axi_datamover_0_M_AXI_RREADY),
+        .m_axi_mm2s_rresp(axi_datamover_0_M_AXI_RRESP),
+        .m_axi_mm2s_rvalid(axi_datamover_0_M_AXI_RVALID),
+        .m_axi_s2mm_aclk(ap_clk),
+        .m_axi_s2mm_aresetn(ap_rst_n),
+        .m_axi_s2mm_awaddr(axi_datamover_0_M_AXI_AWADDR),
+        .m_axi_s2mm_awburst(axi_datamover_0_M_AXI_AWBURST),
+        .m_axi_s2mm_awcache(axi_datamover_0_M_AXI_AWCACHE),
+        .m_axi_s2mm_awlen(axi_datamover_0_M_AXI_AWLEN),
+        .m_axi_s2mm_awprot(axi_datamover_0_M_AXI_AWPROT),
+        .m_axi_s2mm_awready(axi_datamover_0_M_AXI_AWREADY),
+        .m_axi_s2mm_awsize(axi_datamover_0_M_AXI_AWSIZE),
+        .m_axi_s2mm_awuser(axi_datamover_0_M_AXI_AWUSER),
+        .m_axi_s2mm_awvalid(axi_datamover_0_M_AXI_AWVALID),
+        .m_axi_s2mm_bready(axi_datamover_0_M_AXI_BREADY),
+        .m_axi_s2mm_bresp(axi_datamover_0_M_AXI_BRESP),
+        .m_axi_s2mm_bvalid(axi_datamover_0_M_AXI_BVALID),
+        .m_axi_s2mm_wdata(axi_datamover_0_M_AXI_WDATA),
+        .m_axi_s2mm_wlast(axi_datamover_0_M_AXI_WLAST),
+        .m_axi_s2mm_wready(axi_datamover_0_M_AXI_WREADY),
+        .m_axi_s2mm_wstrb(axi_datamover_0_M_AXI_WSTRB),
+        .m_axi_s2mm_wvalid(axi_datamover_0_M_AXI_WVALID),
+        .m_axis_mm2s_cmdsts_aclk(ap_clk),
+        .m_axis_mm2s_cmdsts_aresetn(ap_rst_n),
+        .m_axis_mm2s_sts_tdata(axi_datamover_0_M_AXIS_MM2S_STS_TDATA),
+        .m_axis_mm2s_sts_tkeep(axi_datamover_0_M_AXIS_MM2S_STS_TKEEP),
+        .m_axis_mm2s_sts_tlast(axi_datamover_0_M_AXIS_MM2S_STS_TLAST),
+        .m_axis_mm2s_sts_tready(axi_datamover_0_M_AXIS_MM2S_STS_TREADY),
+        .m_axis_mm2s_sts_tvalid(axi_datamover_0_M_AXIS_MM2S_STS_TVALID),
+        .m_axis_mm2s_tdata(axi_datamover_0_0_M_AXIS_MM2S_TDATA),
+        .m_axis_mm2s_tkeep(axi_datamover_0_0_M_AXIS_MM2S_TKEEP),
+        .m_axis_mm2s_tlast(axi_datamover_0_0_M_AXIS_MM2S_TLAST),
+        .m_axis_mm2s_tready(axi_datamover_0_0_M_AXIS_MM2S_TREADY),
+        .m_axis_mm2s_tvalid(axi_datamover_0_0_M_AXIS_MM2S_TVALID),
+        .m_axis_s2mm_cmdsts_aresetn(ap_rst_n),
+        .m_axis_s2mm_cmdsts_awclk(ap_clk),
+        .m_axis_s2mm_sts_tdata(axi_datamover_0_M_AXIS_S2MM_STS_TDATA),
+        .m_axis_s2mm_sts_tkeep(axi_datamover_0_M_AXIS_S2MM_STS_TKEEP),
+        .m_axis_s2mm_sts_tlast(axi_datamover_0_M_AXIS_S2MM_STS_TLAST),
+        .m_axis_s2mm_sts_tready(axi_datamover_0_M_AXIS_S2MM_STS_TREADY),
+        .m_axis_s2mm_sts_tvalid(axi_datamover_0_M_AXIS_S2MM_STS_TVALID),
+        .s_axis_mm2s_cmd_tdata(axis_broadcaster_0_M00_AXIS_TDATA),
+        .s_axis_mm2s_cmd_tready(axis_broadcaster_0_M00_AXIS_TREADY),
+        .s_axis_mm2s_cmd_tvalid(axis_broadcaster_0_M00_AXIS_TVALID),
+        .s_axis_s2mm_cmd_tdata(axis_broadcaster_0_M01_AXIS_TDATA),
+        .s_axis_s2mm_cmd_tready(axis_broadcaster_0_M01_AXIS_TREADY),
+        .s_axis_s2mm_cmd_tvalid(axis_broadcaster_0_M01_AXIS_TVALID),
+        .s_axis_s2mm_tdata(s00_axis_TDATA),
+        .s_axis_s2mm_tkeep(s00_axis_TKEEP),
+        .s_axis_s2mm_tlast(s00_axis_TLAST),
+        .s_axis_s2mm_tready(s00_axis_TREADY),
+        .s_axis_s2mm_tvalid(s00_axis_TVALID));
+  myproject_kernel_bd_axis_broadcaster_0_1 axis_broadcaster_0
+       (.aclk(ap_clk),
+        .aresetn(ap_rst_n),
+        .m_axis_tdata({axis_broadcaster_0_M01_AXIS_TDATA,axis_broadcaster_0_M00_AXIS_TDATA}),
+        .m_axis_tready({axis_broadcaster_0_M01_AXIS_TREADY,axis_broadcaster_0_M00_AXIS_TREADY}),
+        .m_axis_tvalid({axis_broadcaster_0_M01_AXIS_TVALID,axis_broadcaster_0_M00_AXIS_TVALID}),
+        .s_axis_tdata(axis_subset_cnv_cmd_0_M_AXIS_TDATA),
+        .s_axis_tready(axis_subset_cnv_cmd_0_M_AXIS_TREADY),
+        .s_axis_tvalid(axis_subset_cnv_cmd_0_M_AXIS_TVALID));
+  myproject_kernel_bd_axis_combiner_0_1 axis_combiner_0
+       (.aclk(ap_clk),
+        .aresetn(ap_rst_n),
+        .m_axis_tdata(axis_combiner_0_M_AXIS_TDATA),
+        .m_axis_tkeep(axis_combiner_0_M_AXIS_TKEEP),
+        .m_axis_tlast(axis_combiner_0_M_AXIS_TLAST),
+        .m_axis_tready(axis_combiner_0_M_AXIS_TREADY),
+        .m_axis_tvalid(axis_combiner_0_M_AXIS_TVALID),
+        .s_axis_tdata({axi_datamover_0_M_AXIS_S2MM_STS_TDATA,axi_datamover_0_M_AXIS_MM2S_STS_TDATA}),
+        .s_axis_tkeep({axi_datamover_0_M_AXIS_S2MM_STS_TKEEP,axi_datamover_0_M_AXIS_MM2S_STS_TKEEP}),
+        .s_axis_tlast({axi_datamover_0_M_AXIS_S2MM_STS_TLAST,axi_datamover_0_M_AXIS_MM2S_STS_TLAST}),
+        .s_axis_tready({axi_datamover_0_M_AXIS_S2MM_STS_TREADY,axi_datamover_0_M_AXIS_MM2S_STS_TREADY}),
+        .s_axis_tvalid({axi_datamover_0_M_AXIS_S2MM_STS_TVALID,axi_datamover_0_M_AXIS_MM2S_STS_TVALID}));
+  myproject_kernel_bd_axis_dwidth_cnv_0_1 axis_dwidth_cnv_0
+       (.aclk(ap_clk),
+        .aresetn(ap_rst_n),
+        .m_axis_tdata(axis_dwidth_cnv_0_M_AXIS_TDATA),
+        .m_axis_tready(axis_dwidth_cnv_0_M_AXIS_TREADY),
+        .m_axis_tvalid(axis_dwidth_cnv_0_M_AXIS_TVALID),
+        .s_axis_tdata(axis_dwidth_cnv_0_S_AXIS_TDATA),
+        .s_axis_tready(axis_dwidth_cnv_0_S_AXIS_TREADY),
+        .s_axis_tvalid(axis_dwidth_cnv_0_S_AXIS_TVALID));
+  myproject_kernel_bd_axis_subset_cnv_cmd_0_1 axis_subset_cnv_cmd_0
+       (.aclk(ap_clk),
+        .aresetn(ap_rst_n),
+        .m_axis_tdata(axis_subset_cnv_cmd_0_M_AXIS_TDATA),
+        .m_axis_tready(axis_subset_cnv_cmd_0_M_AXIS_TREADY),
+        .m_axis_tvalid(axis_subset_cnv_cmd_0_M_AXIS_TVALID),
+        .s_axis_tdata(axis_dwidth_cnv_0_M_AXIS_TDATA),
+        .s_axis_tready(axis_dwidth_cnv_0_M_AXIS_TREADY),
+        .s_axis_tvalid(axis_dwidth_cnv_0_M_AXIS_TVALID));
+  myproject_kernel_bd_axis_subset_cnv_sts_0_1 axis_subset_cnv_sts_0
+       (.aclk(ap_clk),
+        .aresetn(ap_rst_n),
+        .m_axis_tdata(axis_subset_cnv_0_M_AXIS_TDATA),
+        .m_axis_tlast(axis_subset_cnv_0_M_AXIS_TLAST),
+        .m_axis_tready(axis_subset_cnv_0_M_AXIS_TREADY),
+        .m_axis_tvalid(axis_subset_cnv_0_M_AXIS_TVALID),
+        .s_axis_tdata(axis_combiner_0_M_AXIS_TDATA),
+        .s_axis_tkeep(axis_combiner_0_M_AXIS_TKEEP),
+        .s_axis_tlast(axis_combiner_0_M_AXIS_TLAST),
+        .s_axis_tready(axis_combiner_0_M_AXIS_TREADY),
+        .s_axis_tvalid(axis_combiner_0_M_AXIS_TVALID));
+endmodule
+
 module example_op_0_imp_T2DJSF
    (ap_clk_2,
     ap_rst_n_2,
@@ -880,6 +1348,94 @@ module example_op_0_imp_T2DJSF
         .dout(example_parallel_adder_0_dout));
 endmodule
 
+module example_op_1_imp_3SC8X5
+   (ap_clk_2,
+    ap_rst_n_2,
+    m_axis_tdata,
+    m_axis_tkeep,
+    m_axis_tlast,
+    m_axis_tready,
+    m_axis_tvalid,
+    s_axis_tdata,
+    s_axis_tkeep,
+    s_axis_tlast,
+    s_axis_tready,
+    s_axis_tvalid);
+  input ap_clk_2;
+  input ap_rst_n_2;
+  output [31:0]m_axis_tdata;
+  output [3:0]m_axis_tkeep;
+  output m_axis_tlast;
+  input m_axis_tready;
+  output m_axis_tvalid;
+  input [31:0]s_axis_tdata;
+  input [3:0]s_axis_tkeep;
+  input s_axis_tlast;
+  output s_axis_tready;
+  input s_axis_tvalid;
+
+  wire ap_clk_2_1;
+  wire ap_rst_n_2_1;
+  wire [3:0]axis_register_slice_0_M_AXIS_TKEEP;
+  wire axis_register_slice_0_M_AXIS_TLAST;
+  wire axis_register_slice_0_M_AXIS_TREADY;
+  wire axis_register_slice_0_M_AXIS_TVALID;
+  wire [31:0]axis_register_slice_0_m_axis_tdata;
+  wire [31:0]axis_register_slice_1_M_AXIS_TDATA;
+  wire [3:0]axis_register_slice_1_M_AXIS_TKEEP;
+  wire axis_register_slice_1_M_AXIS_TLAST;
+  wire axis_register_slice_1_M_AXIS_TREADY;
+  wire axis_register_slice_1_M_AXIS_TVALID;
+  wire [31:0]example_parallel_adder_0_dout;
+  wire [31:0]s_axis_1_TDATA;
+  wire [3:0]s_axis_1_TKEEP;
+  wire s_axis_1_TLAST;
+  wire s_axis_1_TREADY;
+  wire s_axis_1_TVALID;
+
+  assign ap_clk_2_1 = ap_clk_2;
+  assign ap_rst_n_2_1 = ap_rst_n_2;
+  assign axis_register_slice_1_M_AXIS_TREADY = m_axis_tready;
+  assign m_axis_tdata[31:0] = axis_register_slice_1_M_AXIS_TDATA;
+  assign m_axis_tkeep[3:0] = axis_register_slice_1_M_AXIS_TKEEP;
+  assign m_axis_tlast = axis_register_slice_1_M_AXIS_TLAST;
+  assign m_axis_tvalid = axis_register_slice_1_M_AXIS_TVALID;
+  assign s_axis_1_TDATA = s_axis_tdata[31:0];
+  assign s_axis_1_TKEEP = s_axis_tkeep[3:0];
+  assign s_axis_1_TLAST = s_axis_tlast;
+  assign s_axis_1_TVALID = s_axis_tvalid;
+  assign s_axis_tready = s_axis_1_TREADY;
+  myproject_kernel_bd_axis_register_slice_0_1 axis_register_slice_0
+       (.aclk(ap_clk_2_1),
+        .aresetn(ap_rst_n_2_1),
+        .m_axis_tdata(axis_register_slice_0_m_axis_tdata),
+        .m_axis_tkeep(axis_register_slice_0_M_AXIS_TKEEP),
+        .m_axis_tlast(axis_register_slice_0_M_AXIS_TLAST),
+        .m_axis_tready(axis_register_slice_0_M_AXIS_TREADY),
+        .m_axis_tvalid(axis_register_slice_0_M_AXIS_TVALID),
+        .s_axis_tdata(s_axis_1_TDATA),
+        .s_axis_tkeep(s_axis_1_TKEEP),
+        .s_axis_tlast(s_axis_1_TLAST),
+        .s_axis_tready(s_axis_1_TREADY),
+        .s_axis_tvalid(s_axis_1_TVALID));
+  myproject_kernel_bd_axis_register_slice_1_1 axis_register_slice_1
+       (.aclk(ap_clk_2_1),
+        .aresetn(ap_rst_n_2_1),
+        .m_axis_tdata(axis_register_slice_1_M_AXIS_TDATA),
+        .m_axis_tkeep(axis_register_slice_1_M_AXIS_TKEEP),
+        .m_axis_tlast(axis_register_slice_1_M_AXIS_TLAST),
+        .m_axis_tready(axis_register_slice_1_M_AXIS_TREADY),
+        .m_axis_tvalid(axis_register_slice_1_M_AXIS_TVALID),
+        .s_axis_tdata(example_parallel_adder_0_dout),
+        .s_axis_tkeep(axis_register_slice_0_M_AXIS_TKEEP),
+        .s_axis_tlast(axis_register_slice_0_M_AXIS_TLAST),
+        .s_axis_tready(axis_register_slice_0_M_AXIS_TREADY),
+        .s_axis_tvalid(axis_register_slice_0_M_AXIS_TVALID));
+  example_parallel_adder_0_imp_RWV8QF example_parallel_adder_0
+       (.Din(axis_register_slice_0_m_axis_tdata),
+        .dout(example_parallel_adder_0_dout));
+endmodule
+
 module example_parallel_adder_0_imp_1J8CZAZ
    (Din,
     dout);
@@ -900,6 +1456,30 @@ module example_parallel_adder_0_imp_1J8CZAZ
        (.In0(c_addsub_0_S),
         .dout(xlconcat_0_dout));
   myproject_kernel_bd_xlslice_0_0 xlslice_0
+       (.Din(axis_register_slice_0_m_axis_tdata),
+        .Dout(xlslice_0_Dout));
+endmodule
+
+module example_parallel_adder_0_imp_RWV8QF
+   (Din,
+    dout);
+  input [31:0]Din;
+  output [31:0]dout;
+
+  wire [31:0]axis_register_slice_0_m_axis_tdata;
+  wire [31:0]c_addsub_0_S;
+  wire [31:0]xlconcat_0_dout;
+  wire [31:0]xlslice_0_Dout;
+
+  assign axis_register_slice_0_m_axis_tdata = Din[31:0];
+  assign dout[31:0] = xlconcat_0_dout;
+  myproject_kernel_bd_c_addsub_0_1 c_addsub_0
+       (.A(xlslice_0_Dout),
+        .S(c_addsub_0_S));
+  myproject_kernel_bd_xlconcat_0_1 xlconcat_0
+       (.In0(c_addsub_0_S),
+        .dout(xlconcat_0_dout));
+  myproject_kernel_bd_xlslice_0_1 xlslice_0
        (.Din(axis_register_slice_0_m_axis_tdata),
         .Dout(xlslice_0_Dout));
 endmodule
@@ -1579,10 +2159,21 @@ module microblaze_0_local_memory_imp_QQQ3KK
         .Sl_Wait(microblaze_0_ilmb_bus_WAIT));
 endmodule
 
-(* CORE_GENERATION_INFO = "myproject_kernel_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=myproject_kernel_bd,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=32,numReposBlks=26,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=2,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_bram_cntlr_cnt=3,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "myproject_kernel_bd.hwdef" *) 
+(* CORE_GENERATION_INFO = "myproject_kernel_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=myproject_kernel_bd,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=47,numReposBlks=38,numNonXlnxBlks=0,numHierBlks=9,maxHierDepth=2,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_bram_cntlr_cnt=3,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "myproject_kernel_bd.hwdef" *) 
 module myproject_kernel_bd
    (ap_clk,
     ap_rst_n,
+    bscan_0_bscanid_en,
+    bscan_0_capture,
+    bscan_0_drck,
+    bscan_0_reset,
+    bscan_0_sel,
+    bscan_0_shift,
+    bscan_0_tck,
+    bscan_0_tdi,
+    bscan_0_tdo,
+    bscan_0_tms,
+    bscan_0_update,
     m00_axi_araddr,
     m00_axi_arburst,
     m00_axi_arcache,
@@ -1614,6 +2205,37 @@ module myproject_kernel_bd
     m00_axi_wready,
     m00_axi_wstrb,
     m00_axi_wvalid,
+    m01_axi_araddr,
+    m01_axi_arburst,
+    m01_axi_arcache,
+    m01_axi_arlen,
+    m01_axi_arprot,
+    m01_axi_arready,
+    m01_axi_arsize,
+    m01_axi_aruser,
+    m01_axi_arvalid,
+    m01_axi_awaddr,
+    m01_axi_awburst,
+    m01_axi_awcache,
+    m01_axi_awlen,
+    m01_axi_awprot,
+    m01_axi_awready,
+    m01_axi_awsize,
+    m01_axi_awuser,
+    m01_axi_awvalid,
+    m01_axi_bready,
+    m01_axi_bresp,
+    m01_axi_bvalid,
+    m01_axi_rdata,
+    m01_axi_rlast,
+    m01_axi_rready,
+    m01_axi_rresp,
+    m01_axi_rvalid,
+    m01_axi_wdata,
+    m01_axi_wlast,
+    m01_axi_wready,
+    m01_axi_wstrb,
+    m01_axi_wvalid,
     s_axi_control_araddr,
     s_axi_control_arprot,
     s_axi_control_arready,
@@ -1633,8 +2255,19 @@ module myproject_kernel_bd
     s_axi_control_wready,
     s_axi_control_wstrb,
     s_axi_control_wvalid);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.AP_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.AP_CLK, ASSOCIATED_BUSIF m00_axi:s_axi_control, ASSOCIATED_RESET ap_rst_n, CLK_DOMAIN myproject_kernel_bd_ap_clk, FREQ_HZ 250000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) input ap_clk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.AP_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.AP_CLK, ASSOCIATED_BUSIF m00_axi:m01_axi:s_axi_control, ASSOCIATED_RESET ap_rst_n, CLK_DOMAIN myproject_kernel_bd_ap_clk, FREQ_HZ 250000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) input ap_clk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.AP_RST_N RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.AP_RST_N, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input ap_rst_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bscan:1.0 bscan_0 BSCANID_EN" *) input bscan_0_bscanid_en;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bscan:1.0 bscan_0 CAPTURE" *) input bscan_0_capture;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bscan:1.0 bscan_0 DRCK" *) input bscan_0_drck;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bscan:1.0 bscan_0 RESET" *) input bscan_0_reset;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bscan:1.0 bscan_0 SEL" *) input bscan_0_sel;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bscan:1.0 bscan_0 SHIFT" *) input bscan_0_shift;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bscan:1.0 bscan_0 TCK" *) input bscan_0_tck;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bscan:1.0 bscan_0 TDI" *) input bscan_0_tdi;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bscan:1.0 bscan_0 TDO" *) output bscan_0_tdo;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bscan:1.0 bscan_0 TMS" *) input bscan_0_tms;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bscan:1.0 bscan_0 UPDATE" *) input bscan_0_update;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m00_axi ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m00_axi, ADDR_WIDTH 64, ARUSER_WIDTH 4, AWUSER_WIDTH 4, BUSER_WIDTH 0, CLK_DOMAIN myproject_kernel_bd_ap_clk, DATA_WIDTH 32, FREQ_HZ 250000000, HAS_BRESP 0, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 0, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 256, NUM_READ_OUTSTANDING 1, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 1, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) output [63:0]m00_axi_araddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m00_axi ARBURST" *) output [1:0]m00_axi_arburst;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m00_axi ARCACHE" *) output [3:0]m00_axi_arcache;
@@ -1666,6 +2299,37 @@ module myproject_kernel_bd
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m00_axi WREADY" *) input m00_axi_wready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m00_axi WSTRB" *) output [3:0]m00_axi_wstrb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m00_axi WVALID" *) output m00_axi_wvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m01_axi, ADDR_WIDTH 64, ARUSER_WIDTH 4, AWUSER_WIDTH 4, BUSER_WIDTH 0, CLK_DOMAIN myproject_kernel_bd_ap_clk, DATA_WIDTH 32, FREQ_HZ 250000000, HAS_BRESP 0, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 0, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 256, NUM_READ_OUTSTANDING 1, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 1, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) output [63:0]m01_axi_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi ARBURST" *) output [1:0]m01_axi_arburst;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi ARCACHE" *) output [3:0]m01_axi_arcache;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi ARLEN" *) output [7:0]m01_axi_arlen;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi ARPROT" *) output [2:0]m01_axi_arprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi ARREADY" *) input m01_axi_arready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi ARSIZE" *) output [2:0]m01_axi_arsize;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi ARUSER" *) output [3:0]m01_axi_aruser;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi ARVALID" *) output m01_axi_arvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi AWADDR" *) output [63:0]m01_axi_awaddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi AWBURST" *) output [1:0]m01_axi_awburst;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi AWCACHE" *) output [3:0]m01_axi_awcache;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi AWLEN" *) output [7:0]m01_axi_awlen;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi AWPROT" *) output [2:0]m01_axi_awprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi AWREADY" *) input m01_axi_awready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi AWSIZE" *) output [2:0]m01_axi_awsize;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi AWUSER" *) output [3:0]m01_axi_awuser;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi AWVALID" *) output m01_axi_awvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi BREADY" *) output m01_axi_bready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi BRESP" *) input [1:0]m01_axi_bresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi BVALID" *) input m01_axi_bvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi RDATA" *) input [31:0]m01_axi_rdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi RLAST" *) input m01_axi_rlast;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi RREADY" *) output m01_axi_rready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi RRESP" *) input [1:0]m01_axi_rresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi RVALID" *) input m01_axi_rvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi WDATA" *) output [31:0]m01_axi_wdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi WLAST" *) output m01_axi_wlast;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi WREADY" *) input m01_axi_wready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi WSTRB" *) output [3:0]m01_axi_wstrb;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi WVALID" *) output m01_axi_wvalid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_control, ADDR_WIDTH 12, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN myproject_kernel_bd_ap_clk, DATA_WIDTH 32, FREQ_HZ 250000000, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 1, NUM_READ_OUTSTANDING 1, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 1, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [11:0]s_axi_control_araddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control ARPROT" *) input [2:0]s_axi_control_arprot;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control ARREADY" *) output s_axi_control_arready;
@@ -1688,9 +2352,23 @@ module myproject_kernel_bd
 
   wire ap_clk;
   wire ap_rst_n;
+  wire bscan_0_BSCANID_EN;
+  wire bscan_0_CAPTURE;
+  wire bscan_0_DRCK;
+  wire bscan_0_RESET;
+  wire bscan_0_SEL;
+  wire bscan_0_SHIFT;
+  wire bscan_0_TCK;
+  wire bscan_0_TDI;
+  wire bscan_0_TDO;
+  wire bscan_0_TMS;
+  wire bscan_0_UPDATE;
   wire [31:0]control_m00_cmd_TDATA;
   wire control_m00_cmd_TREADY;
   wire control_m00_cmd_TVALID;
+  wire [31:0]control_m01_cmd_TDATA;
+  wire control_m01_cmd_TREADY;
+  wire control_m01_cmd_TVALID;
   wire [63:0]dma_0_m00_axi_ARADDR;
   wire [1:0]dma_0_m00_axi_ARBURST;
   wire [3:0]dma_0_m00_axi_ARCACHE;
@@ -1731,11 +2409,56 @@ module myproject_kernel_bd
   wire dma_0_m00_sts_TLAST;
   wire dma_0_m00_sts_TREADY;
   wire dma_0_m00_sts_TVALID;
+  wire [63:0]dma_1_m00_axi_ARADDR;
+  wire [1:0]dma_1_m00_axi_ARBURST;
+  wire [3:0]dma_1_m00_axi_ARCACHE;
+  wire [7:0]dma_1_m00_axi_ARLEN;
+  wire [2:0]dma_1_m00_axi_ARPROT;
+  wire dma_1_m00_axi_ARREADY;
+  wire [2:0]dma_1_m00_axi_ARSIZE;
+  wire [3:0]dma_1_m00_axi_ARUSER;
+  wire dma_1_m00_axi_ARVALID;
+  wire [63:0]dma_1_m00_axi_AWADDR;
+  wire [1:0]dma_1_m00_axi_AWBURST;
+  wire [3:0]dma_1_m00_axi_AWCACHE;
+  wire [7:0]dma_1_m00_axi_AWLEN;
+  wire [2:0]dma_1_m00_axi_AWPROT;
+  wire dma_1_m00_axi_AWREADY;
+  wire [2:0]dma_1_m00_axi_AWSIZE;
+  wire [3:0]dma_1_m00_axi_AWUSER;
+  wire dma_1_m00_axi_AWVALID;
+  wire dma_1_m00_axi_BREADY;
+  wire [1:0]dma_1_m00_axi_BRESP;
+  wire dma_1_m00_axi_BVALID;
+  wire [31:0]dma_1_m00_axi_RDATA;
+  wire dma_1_m00_axi_RLAST;
+  wire dma_1_m00_axi_RREADY;
+  wire [1:0]dma_1_m00_axi_RRESP;
+  wire dma_1_m00_axi_RVALID;
+  wire [31:0]dma_1_m00_axi_WDATA;
+  wire dma_1_m00_axi_WLAST;
+  wire dma_1_m00_axi_WREADY;
+  wire [3:0]dma_1_m00_axi_WSTRB;
+  wire dma_1_m00_axi_WVALID;
+  wire [31:0]dma_1_m00_axis_TDATA;
+  wire [3:0]dma_1_m00_axis_TKEEP;
+  wire dma_1_m00_axis_TLAST;
+  wire dma_1_m00_axis_TREADY;
+  wire dma_1_m00_axis_TVALID;
+  wire [31:0]dma_1_m00_sts_TDATA;
+  wire dma_1_m00_sts_TLAST;
+  wire dma_1_m00_sts_TREADY;
+  wire dma_1_m00_sts_TVALID;
   wire [31:0]example_op_0_m_axis_TDATA;
   wire [3:0]example_op_0_m_axis_TKEEP;
   wire example_op_0_m_axis_TLAST;
   wire example_op_0_m_axis_TREADY;
   wire example_op_0_m_axis_TVALID;
+  wire [31:0]example_op_1_m_axis_TDATA;
+  wire [3:0]example_op_1_m_axis_TKEEP;
+  wire example_op_1_m_axis_TLAST;
+  wire example_op_1_m_axis_TREADY;
+  wire example_op_1_m_axis_TVALID;
   wire [11:0]s_axi_control_ARADDR;
   wire [2:0]s_axi_control_ARPROT;
   wire s_axi_control_ARREADY;
@@ -1756,6 +2479,17 @@ module myproject_kernel_bd
   wire [3:0]s_axi_control_WSTRB;
   wire s_axi_control_WVALID;
 
+  assign bscan_0_BSCANID_EN = bscan_0_bscanid_en;
+  assign bscan_0_CAPTURE = bscan_0_capture;
+  assign bscan_0_DRCK = bscan_0_drck;
+  assign bscan_0_RESET = bscan_0_reset;
+  assign bscan_0_SEL = bscan_0_sel;
+  assign bscan_0_SHIFT = bscan_0_shift;
+  assign bscan_0_TCK = bscan_0_tck;
+  assign bscan_0_TDI = bscan_0_tdi;
+  assign bscan_0_TMS = bscan_0_tms;
+  assign bscan_0_UPDATE = bscan_0_update;
+  assign bscan_0_tdo = bscan_0_TDO;
   assign dma_0_m00_axi_ARREADY = m00_axi_arready;
   assign dma_0_m00_axi_AWREADY = m00_axi_awready;
   assign dma_0_m00_axi_BRESP = m00_axi_bresp[1:0];
@@ -1765,6 +2499,15 @@ module myproject_kernel_bd
   assign dma_0_m00_axi_RRESP = m00_axi_rresp[1:0];
   assign dma_0_m00_axi_RVALID = m00_axi_rvalid;
   assign dma_0_m00_axi_WREADY = m00_axi_wready;
+  assign dma_1_m00_axi_ARREADY = m01_axi_arready;
+  assign dma_1_m00_axi_AWREADY = m01_axi_awready;
+  assign dma_1_m00_axi_BRESP = m01_axi_bresp[1:0];
+  assign dma_1_m00_axi_BVALID = m01_axi_bvalid;
+  assign dma_1_m00_axi_RDATA = m01_axi_rdata[31:0];
+  assign dma_1_m00_axi_RLAST = m01_axi_rlast;
+  assign dma_1_m00_axi_RRESP = m01_axi_rresp[1:0];
+  assign dma_1_m00_axi_RVALID = m01_axi_rvalid;
+  assign dma_1_m00_axi_WREADY = m01_axi_wready;
   assign m00_axi_araddr[63:0] = dma_0_m00_axi_ARADDR;
   assign m00_axi_arburst[1:0] = dma_0_m00_axi_ARBURST;
   assign m00_axi_arcache[3:0] = dma_0_m00_axi_ARCACHE;
@@ -1787,6 +2530,28 @@ module myproject_kernel_bd
   assign m00_axi_wlast = dma_0_m00_axi_WLAST;
   assign m00_axi_wstrb[3:0] = dma_0_m00_axi_WSTRB;
   assign m00_axi_wvalid = dma_0_m00_axi_WVALID;
+  assign m01_axi_araddr[63:0] = dma_1_m00_axi_ARADDR;
+  assign m01_axi_arburst[1:0] = dma_1_m00_axi_ARBURST;
+  assign m01_axi_arcache[3:0] = dma_1_m00_axi_ARCACHE;
+  assign m01_axi_arlen[7:0] = dma_1_m00_axi_ARLEN;
+  assign m01_axi_arprot[2:0] = dma_1_m00_axi_ARPROT;
+  assign m01_axi_arsize[2:0] = dma_1_m00_axi_ARSIZE;
+  assign m01_axi_aruser[3:0] = dma_1_m00_axi_ARUSER;
+  assign m01_axi_arvalid = dma_1_m00_axi_ARVALID;
+  assign m01_axi_awaddr[63:0] = dma_1_m00_axi_AWADDR;
+  assign m01_axi_awburst[1:0] = dma_1_m00_axi_AWBURST;
+  assign m01_axi_awcache[3:0] = dma_1_m00_axi_AWCACHE;
+  assign m01_axi_awlen[7:0] = dma_1_m00_axi_AWLEN;
+  assign m01_axi_awprot[2:0] = dma_1_m00_axi_AWPROT;
+  assign m01_axi_awsize[2:0] = dma_1_m00_axi_AWSIZE;
+  assign m01_axi_awuser[3:0] = dma_1_m00_axi_AWUSER;
+  assign m01_axi_awvalid = dma_1_m00_axi_AWVALID;
+  assign m01_axi_bready = dma_1_m00_axi_BREADY;
+  assign m01_axi_rready = dma_1_m00_axi_RREADY;
+  assign m01_axi_wdata[31:0] = dma_1_m00_axi_WDATA;
+  assign m01_axi_wlast = dma_1_m00_axi_WLAST;
+  assign m01_axi_wstrb[3:0] = dma_1_m00_axi_WSTRB;
+  assign m01_axi_wvalid = dma_1_m00_axi_WVALID;
   assign s_axi_control_ARADDR = s_axi_control_araddr[11:0];
   assign s_axi_control_ARPROT = s_axi_control_arprot[2:0];
   assign s_axi_control_ARVALID = s_axi_control_arvalid;
@@ -1809,13 +2574,31 @@ module myproject_kernel_bd
   control_imp_KNNMP0 control
        (.ap_clk(ap_clk),
         .ap_rst_n(ap_rst_n),
+        .bscan_0_bscanid_en(bscan_0_BSCANID_EN),
+        .bscan_0_capture(bscan_0_CAPTURE),
+        .bscan_0_drck(bscan_0_DRCK),
+        .bscan_0_reset(bscan_0_RESET),
+        .bscan_0_sel(bscan_0_SEL),
+        .bscan_0_shift(bscan_0_SHIFT),
+        .bscan_0_tck(bscan_0_TCK),
+        .bscan_0_tdi(bscan_0_TDI),
+        .bscan_0_tdo(bscan_0_TDO),
+        .bscan_0_tms(bscan_0_TMS),
+        .bscan_0_update(bscan_0_UPDATE),
         .m00_cmd_tdata(control_m00_cmd_TDATA),
         .m00_cmd_tready(control_m00_cmd_TREADY),
         .m00_cmd_tvalid(control_m00_cmd_TVALID),
+        .m01_cmd_tdata(control_m01_cmd_TDATA),
+        .m01_cmd_tready(control_m01_cmd_TREADY),
+        .m01_cmd_tvalid(control_m01_cmd_TVALID),
         .s00_sts_tdata(dma_0_m00_sts_TDATA),
         .s00_sts_tlast(dma_0_m00_sts_TLAST),
         .s00_sts_tready(dma_0_m00_sts_TREADY),
         .s00_sts_tvalid(dma_0_m00_sts_TVALID),
+        .s01_sts_tdata(dma_1_m00_sts_TDATA),
+        .s01_sts_tlast(dma_1_m00_sts_TLAST),
+        .s01_sts_tready(dma_1_m00_sts_TREADY),
+        .s01_sts_tvalid(dma_1_m00_sts_TVALID),
         .s_axi_control_araddr(s_axi_control_ARADDR),
         .s_axi_control_arprot(s_axi_control_ARPROT),
         .s_axi_control_arready(s_axi_control_ARREADY),
@@ -1886,6 +2669,57 @@ module myproject_kernel_bd
         .s00_cmd_tdata(control_m00_cmd_TDATA),
         .s00_cmd_tready(control_m00_cmd_TREADY),
         .s00_cmd_tvalid(control_m00_cmd_TVALID));
+  dma_1_imp_1AZ6IVD dma_1
+       (.ap_clk(ap_clk),
+        .ap_rst_n(ap_rst_n),
+        .m00_axi_araddr(dma_1_m00_axi_ARADDR),
+        .m00_axi_arburst(dma_1_m00_axi_ARBURST),
+        .m00_axi_arcache(dma_1_m00_axi_ARCACHE),
+        .m00_axi_arlen(dma_1_m00_axi_ARLEN),
+        .m00_axi_arprot(dma_1_m00_axi_ARPROT),
+        .m00_axi_arready(dma_1_m00_axi_ARREADY),
+        .m00_axi_arsize(dma_1_m00_axi_ARSIZE),
+        .m00_axi_aruser(dma_1_m00_axi_ARUSER),
+        .m00_axi_arvalid(dma_1_m00_axi_ARVALID),
+        .m00_axi_awaddr(dma_1_m00_axi_AWADDR),
+        .m00_axi_awburst(dma_1_m00_axi_AWBURST),
+        .m00_axi_awcache(dma_1_m00_axi_AWCACHE),
+        .m00_axi_awlen(dma_1_m00_axi_AWLEN),
+        .m00_axi_awprot(dma_1_m00_axi_AWPROT),
+        .m00_axi_awready(dma_1_m00_axi_AWREADY),
+        .m00_axi_awsize(dma_1_m00_axi_AWSIZE),
+        .m00_axi_awuser(dma_1_m00_axi_AWUSER),
+        .m00_axi_awvalid(dma_1_m00_axi_AWVALID),
+        .m00_axi_bready(dma_1_m00_axi_BREADY),
+        .m00_axi_bresp(dma_1_m00_axi_BRESP),
+        .m00_axi_bvalid(dma_1_m00_axi_BVALID),
+        .m00_axi_rdata(dma_1_m00_axi_RDATA),
+        .m00_axi_rlast(dma_1_m00_axi_RLAST),
+        .m00_axi_rready(dma_1_m00_axi_RREADY),
+        .m00_axi_rresp(dma_1_m00_axi_RRESP),
+        .m00_axi_rvalid(dma_1_m00_axi_RVALID),
+        .m00_axi_wdata(dma_1_m00_axi_WDATA),
+        .m00_axi_wlast(dma_1_m00_axi_WLAST),
+        .m00_axi_wready(dma_1_m00_axi_WREADY),
+        .m00_axi_wstrb(dma_1_m00_axi_WSTRB),
+        .m00_axi_wvalid(dma_1_m00_axi_WVALID),
+        .m00_axis_tdata(dma_1_m00_axis_TDATA),
+        .m00_axis_tkeep(dma_1_m00_axis_TKEEP),
+        .m00_axis_tlast(dma_1_m00_axis_TLAST),
+        .m00_axis_tready(dma_1_m00_axis_TREADY),
+        .m00_axis_tvalid(dma_1_m00_axis_TVALID),
+        .m00_sts_tdata(dma_1_m00_sts_TDATA),
+        .m00_sts_tlast(dma_1_m00_sts_TLAST),
+        .m00_sts_tready(dma_1_m00_sts_TREADY),
+        .m00_sts_tvalid(dma_1_m00_sts_TVALID),
+        .s00_axis_tdata(example_op_1_m_axis_TDATA),
+        .s00_axis_tkeep(example_op_1_m_axis_TKEEP),
+        .s00_axis_tlast(example_op_1_m_axis_TLAST),
+        .s00_axis_tready(example_op_1_m_axis_TREADY),
+        .s00_axis_tvalid(example_op_1_m_axis_TVALID),
+        .s00_cmd_tdata(control_m01_cmd_TDATA),
+        .s00_cmd_tready(control_m01_cmd_TREADY),
+        .s00_cmd_tvalid(control_m01_cmd_TVALID));
   example_op_0_imp_T2DJSF example_op_0
        (.ap_clk_2(ap_clk),
         .ap_rst_n_2(ap_rst_n),
@@ -1899,4 +2733,17 @@ module myproject_kernel_bd
         .s_axis_tlast(dma_0_m00_axis_TLAST),
         .s_axis_tready(dma_0_m00_axis_TREADY),
         .s_axis_tvalid(dma_0_m00_axis_TVALID));
+  example_op_1_imp_3SC8X5 example_op_1
+       (.ap_clk_2(ap_clk),
+        .ap_rst_n_2(ap_rst_n),
+        .m_axis_tdata(example_op_1_m_axis_TDATA),
+        .m_axis_tkeep(example_op_1_m_axis_TKEEP),
+        .m_axis_tlast(example_op_1_m_axis_TLAST),
+        .m_axis_tready(example_op_1_m_axis_TREADY),
+        .m_axis_tvalid(example_op_1_m_axis_TVALID),
+        .s_axis_tdata(dma_1_m00_axis_TDATA),
+        .s_axis_tkeep(dma_1_m00_axis_TKEEP),
+        .s_axis_tlast(dma_1_m00_axis_TLAST),
+        .s_axis_tready(dma_1_m00_axis_TREADY),
+        .s_axis_tvalid(dma_1_m00_axis_TVALID));
 endmodule

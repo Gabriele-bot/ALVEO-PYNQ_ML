@@ -7,12 +7,7 @@ ifndef XILINX_XRT
 $(error environment variable XILINX_XRT is not set. Please ensure the Xilinx runtime is installed and properly sourced)
 endif
 
-ifneq ($(MAKECMDGOALS),clean)
-ifndef DEVICE
-$(error environment variable DEVICE is not set. Please set DEVICE variable to the target platform name or VLNV)
-endif
-endif
-
+DEVICE ?= xilinx:u50:gen3x16_xdma:201920.3
 VITIS_PLATFORM_VLNV := $(DEVICE)
 
 VITIS_PLATFORM := $(subst :,_,$(VITIS_PLATFORM_VLNV))

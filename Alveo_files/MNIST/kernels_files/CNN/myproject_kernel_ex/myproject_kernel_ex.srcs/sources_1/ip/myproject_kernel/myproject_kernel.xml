@@ -17,11 +17,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 06 10:14:50 UTC 2021</spirit:value>
+            <spirit:value>Mon Dec 06 16:00:43 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:08bdf359</spirit:value>
+            <spirit:value>9:3f84e232</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -36,11 +36,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 06 10:14:53 UTC 2021</spirit:value>
+            <spirit:value>Mon Dec 06 16:00:43 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:08bdf359</spirit:value>
+            <spirit:value>9:3f84e232</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -51,7 +51,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:08bdf359</spirit:value>
+            <spirit:value>9:3f84e232</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -67,29 +67,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 06 10:14:53 UTC 2021</spirit:value>
+            <spirit:value>Mon Dec 06 16:00:43 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:08bdf359</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
-      <spirit:view>
-        <spirit:name>xilinx_externalfiles</spirit:name>
-        <spirit:displayName>External Files</spirit:displayName>
-        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 06 10:15:29 UTC 2021</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:08bdf359</spirit:value>
+            <spirit:value>9:3f84e232</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -208,42 +190,6 @@
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>myproject_kernel.dcp</spirit:name>
-        <spirit:userFileType>dcp</spirit:userFileType>
-        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>myproject_kernel_stub.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>myproject_kernel_stub.vhdl</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>myproject_kernel_sim_netlist.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>myproject_kernel_sim_netlist.vhdl</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-    </spirit:fileSet>
   </spirit:fileSets>
   <spirit:description>The RTL Kernel wizard creates a Vivado shell project for RTL-based acceleration Kernels.</spirit:description>
   <spirit:parameters>
@@ -307,12 +253,12 @@
     <spirit:parameter>
       <spirit:name>DEBUG_ENABLED</spirit:name>
       <spirit:displayName>Enable MicroBlaze debug</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DEBUG_ENABLED" spirit:minimum="0" spirit:maximum="1" spirit:rangeType="long">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DEBUG_ENABLED" spirit:minimum="0" spirit:maximum="1" spirit:rangeType="long">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>TARGET_PLATFORM</spirit:name>
       <spirit:displayName>Target Platform</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TARGET_PLATFORM">Unknown</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TARGET_PLATFORM">xilinx:u50:gen3x16_xdma:201920.3</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>ARG00_NAME</spirit:name>
@@ -957,7 +903,7 @@
     <spirit:parameter>
       <spirit:name>NUM_M_AXI</spirit:name>
       <spirit:displayName>Number of AXI master interfaces</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_M_AXI" spirit:minimum="0" spirit:maximum="16" spirit:rangeType="long">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_M_AXI" spirit:minimum="0" spirit:maximum="16" spirit:rangeType="long">2</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>M00_AXI_NAME</spirit:name>
@@ -972,7 +918,7 @@
     <spirit:parameter>
       <spirit:name>M00_AXI_NUM_ARGS</spirit:name>
       <spirit:displayName>AXI master interface number of arguments #0</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M00_AXI_NUM_ARGS" spirit:minimum="1" spirit:maximum="10" spirit:rangeType="long">2</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M00_AXI_NUM_ARGS" spirit:minimum="1" spirit:maximum="10" spirit:rangeType="long">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>M00_AXI_NUM_THREADS</spirit:name>
@@ -994,7 +940,7 @@
     <spirit:parameter>
       <spirit:name>M00_AXI_ARG00_NAME</spirit:name>
       <spirit:displayName>AXI master #0 argument name #0</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.M00_AXI_ARG00_NAME">in_r</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.M00_AXI_ARG00_NAME">CNN_in</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>M00_AXI_ARG01_INTF</spirit:name>
@@ -1011,7 +957,7 @@
     <spirit:parameter>
       <spirit:name>M00_AXI_ARG01_NAME</spirit:name>
       <spirit:displayName>AXI master #0 argument name #1</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.M00_AXI_ARG01_NAME">out_r</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.M00_AXI_ARG01_NAME">axi00_ptr1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>M00_AXI_ARG02_INTF</spirit:name>
@@ -1157,7 +1103,7 @@
     <spirit:parameter>
       <spirit:name>M01_AXI_DATA_NUM_BYTES</spirit:name>
       <spirit:displayName>AXI master interface width (in bytes) #1</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M01_AXI_DATA_NUM_BYTES" spirit:choiceRef="choice_list_876c6ef1">64</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M01_AXI_DATA_NUM_BYTES" spirit:choiceRef="choice_list_876c6ef1">4</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>M01_AXI_NUM_ARGS</spirit:name>
@@ -1184,7 +1130,7 @@
     <spirit:parameter>
       <spirit:name>M01_AXI_ARG00_NAME</spirit:name>
       <spirit:displayName>AXI master #1 argument name #0</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.M01_AXI_ARG00_NAME">axi01_ptr0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.M01_AXI_ARG00_NAME">CNN_out</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>M01_AXI_ARG01_INTF</spirit:name>
@@ -4815,14 +4761,16 @@
       </xilinx:xpmLibraries>
       <xilinx:coreRevision>1</xilinx:coreRevision>
       <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.DEBUG_ENABLED" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.KERNEL_NAME" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.KERNEL_TYPE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.KERNEL_VENDOR" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.M00_AXI_ARG00_NAME" xilinx:valueSource="user"/>
-        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.M00_AXI_ARG01_NAME" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.M00_AXI_DATA_NUM_BYTES" xilinx:valueSource="user"/>
-        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.M00_AXI_NUM_ARGS" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.M01_AXI_ARG00_NAME" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.M01_AXI_DATA_NUM_BYTES" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.NUM_INPUT_ARGS" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.NUM_M_AXI" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.NUM_RESETS" xilinx:valueSource="user"/>
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>

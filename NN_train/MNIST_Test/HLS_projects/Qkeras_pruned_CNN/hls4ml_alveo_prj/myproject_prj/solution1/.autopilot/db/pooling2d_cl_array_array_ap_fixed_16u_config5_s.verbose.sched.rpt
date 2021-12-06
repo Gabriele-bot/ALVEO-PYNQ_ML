@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'pooling2d_cl_array_array_ap_fixed_16u_config5_s'
 ================================================================
-* Date:           Mon Nov 22 19:53:41 2021
+* Date:           Mon Dec  6 16:53:37 2021
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        myproject_prj
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  | 4.00 ns | 2.847 ns |   0.50 ns  |
+    |ap_clk  | 3.33 ns | 2.847 ns |   0.42 ns  |
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      679|      679| 2.716 us | 2.716 us |  679|  679|   none  |
+    |      679|      679| 2.263 us | 2.263 us |  679|  679|   none  |
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -424,7 +424,7 @@ ST_5 : Operation 328 [1/1] (0.00ns)   --->   "ret void" [firmware/nnet_utils/nne
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 4ns, clock uncertainty: 0.5ns.
+Target clock period: 3.33ns, clock uncertainty: 0.417ns.
 
  <State 1>: 0.603ns
 The critical path consists of the following:

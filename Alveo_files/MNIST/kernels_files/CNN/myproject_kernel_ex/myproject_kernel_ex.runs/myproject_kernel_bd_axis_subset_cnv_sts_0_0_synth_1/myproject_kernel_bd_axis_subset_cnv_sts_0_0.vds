@@ -2,16 +2,16 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Mon Dec  6 11:29:27 2021
-# Process ID: 10395
-# Current directory: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1
+# Start of session at: Mon Dec  6 17:07:51 2021
+# Process ID: 2632
+# Current directory: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1
 # Command line: vivado -log myproject_kernel_bd_axis_subset_cnv_sts_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source myproject_kernel_bd_axis_subset_cnv_sts_0_0.tcl
-# Log file: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1/myproject_kernel_bd_axis_subset_cnv_sts_0_0.vds
-# Journal file: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1/vivado.jou
+# Log file: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1/myproject_kernel_bd_axis_subset_cnv_sts_0_0.vds
+# Journal file: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source myproject_kernel_bd_axis_subset_cnv_sts_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/myproject_prj'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
 Command: synth_design -top myproject_kernel_bd_axis_subset_cnv_sts_0_0 -part xcu50-fsvh2104-2-e -mode out_of_context
 Starting synth_design
@@ -20,12 +20,12 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu50'
 INFO: [Device 21-403] Loading part xcu50-fsvh2104-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 10687
+INFO: [Synth 8-7075] Helper process launched with PID 2699
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2993.312 ; gain = 125.715 ; free physical = 20217 ; free virtual = 26285
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2994.312 ; gain = 125.715 ; free physical = 7060 ; free virtual = 15901
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/synth/myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'top_myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/top_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/synth/myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'top_myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/top_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:60]
 	Parameter C_FAMILY bound to: virtexuplusHBM - type: string 
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
@@ -57,7 +57,7 @@ INFO: [Synth 8-6157] synthesizing module 'top_myproject_kernel_bd_axis_subset_cn
 	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
 	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
 	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axis_subset_converter_v1_1_21_core' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/128c/hdl/axis_subset_converter_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-6157] synthesizing module 'axis_subset_converter_v1_1_21_core' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/128c/hdl/axis_subset_converter_v1_1_vl_rfs.v:62]
 	Parameter C_FAMILY bound to: virtexuplusHBM - type: string 
 	Parameter C_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
@@ -91,87 +91,87 @@ INFO: [Synth 8-6157] synthesizing module 'axis_subset_converter_v1_1_21_core' [/
 	Parameter P_SIGNAL_SET_ADD bound to: 32'b00000000000000000000000000000000 
 	Parameter P_SIGNAL_SET_REM bound to: 32'b00000000000000000000000000001000 
 	Parameter P_TLAST_CNTR_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axis_subset_converter_v1_1_21_core' (1#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/128c/hdl/axis_subset_converter_v1_1_vl_rfs.v:62]
-INFO: [Synth 8-6157] synthesizing module 'tdata_myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tdata_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'axis_subset_converter_v1_1_21_core' (1#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/128c/hdl/axis_subset_converter_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-6157] synthesizing module 'tdata_myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tdata_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
 	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'tdata_myproject_kernel_bd_axis_subset_cnv_sts_0_0' (2#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tdata_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
-INFO: [Synth 8-6157] synthesizing module 'tuser_myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tuser_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tdata_myproject_kernel_bd_axis_subset_cnv_sts_0_0' (2#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tdata_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tuser_myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tuser_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
 	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'tuser_myproject_kernel_bd_axis_subset_cnv_sts_0_0' (3#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tuser_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
-INFO: [Synth 8-6157] synthesizing module 'tid_myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tid_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tuser_myproject_kernel_bd_axis_subset_cnv_sts_0_0' (3#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tuser_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tid_myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tid_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
 	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXIS_TID_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'tid_myproject_kernel_bd_axis_subset_cnv_sts_0_0' (4#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tid_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
-INFO: [Synth 8-6157] synthesizing module 'tdest_myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tdest_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tid_myproject_kernel_bd_axis_subset_cnv_sts_0_0' (4#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tid_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tdest_myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tdest_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
 	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'tdest_myproject_kernel_bd_axis_subset_cnv_sts_0_0' (5#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tdest_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
-INFO: [Synth 8-6157] synthesizing module 'tstrb_myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tstrb_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tdest_myproject_kernel_bd_axis_subset_cnv_sts_0_0' (5#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tdest_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tstrb_myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tstrb_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
 	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'tstrb_myproject_kernel_bd_axis_subset_cnv_sts_0_0' (6#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tstrb_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
-INFO: [Synth 8-6157] synthesizing module 'tkeep_myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tkeep_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tstrb_myproject_kernel_bd_axis_subset_cnv_sts_0_0' (6#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tstrb_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tkeep_myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tkeep_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
 	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'tkeep_myproject_kernel_bd_axis_subset_cnv_sts_0_0' (7#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tkeep_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
-INFO: [Synth 8-6157] synthesizing module 'tlast_myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tlast_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tkeep_myproject_kernel_bd_axis_subset_cnv_sts_0_0' (7#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tkeep_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tlast_myproject_kernel_bd_axis_subset_cnv_sts_0_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tlast_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
 	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'tlast_myproject_kernel_bd_axis_subset_cnv_sts_0_0' (8#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tlast_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
-INFO: [Synth 8-6155] done synthesizing module 'top_myproject_kernel_bd_axis_subset_cnv_sts_0_0' (9#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/top_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:60]
-INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axis_subset_cnv_sts_0_0' (10#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/synth/myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'tlast_myproject_kernel_bd_axis_subset_cnv_sts_0_0' (8#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tlast_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'top_myproject_kernel_bd_axis_subset_cnv_sts_0_0' (9#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/top_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_kernel_bd_axis_subset_cnv_sts_0_0' (10#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/synth/myproject_kernel_bd_axis_subset_cnv_sts_0_0.v:58]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3046.219 ; gain = 178.621 ; free physical = 19281 ; free virtual = 25349
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3047.219 ; gain = 178.621 ; free physical = 8326 ; free virtual = 17167
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3062.062 ; gain = 194.465 ; free physical = 18670 ; free virtual = 24739
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3068.031 ; gain = 199.434 ; free physical = 8502 ; free virtual = 17344
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3062.062 ; gain = 194.465 ; free physical = 18670 ; free virtual = 24739
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3068.031 ; gain = 199.434 ; free physical = 8502 ; free virtual = 17344
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3062.062 ; gain = 0.000 ; free physical = 18661 ; free virtual = 24730
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3068.031 ; gain = 0.000 ; free physical = 8496 ; free virtual = 17338
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/myproject_kernel_bd_axis_subset_cnv_sts_0_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/myproject_kernel_bd_axis_subset_cnv_sts_0_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/myproject_kernel_bd_axis_subset_cnv_sts_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/myproject_kernel_bd_axis_subset_cnv_sts_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3177.688 ; gain = 0.000 ; free physical = 19251 ; free virtual = 25319
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3181.688 ; gain = 0.000 ; free physical = 8368 ; free virtual = 17209
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3177.688 ; gain = 0.000 ; free physical = 19250 ; free virtual = 25319
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3181.688 ; gain = 0.000 ; free physical = 8368 ; free virtual = 17209
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 3177.688 ; gain = 310.090 ; free physical = 19179 ; free virtual = 25248
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 3181.688 ; gain = 313.090 ; free physical = 8331 ; free virtual = 17172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -179,17 +179,17 @@ Start Loading Part and Timing Information
 Loading part: xcu50-fsvh2104-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 3177.688 ; gain = 310.090 ; free physical = 19177 ; free virtual = 25247
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 3181.688 ; gain = 313.090 ; free physical = 8330 ; free virtual = 17172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 3177.688 ; gain = 310.090 ; free physical = 19175 ; free virtual = 25245
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 3181.688 ; gain = 313.090 ; free physical = 8333 ; free virtual = 17175
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 3177.688 ; gain = 310.090 ; free physical = 19137 ; free virtual = 25207
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 3181.688 ; gain = 313.090 ; free physical = 8397 ; free virtual = 17239
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -211,25 +211,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 3177.688 ; gain = 310.090 ; free physical = 19078 ; free virtual = 25151
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 3181.688 ; gain = 313.090 ; free physical = 8297 ; free virtual = 17141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:41 . Memory (MB): peak = 3548.359 ; gain = 680.762 ; free physical = 15382 ; free virtual = 21462
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 3547.531 ; gain = 678.934 ; free physical = 6888 ; free virtual = 15853
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:41 . Memory (MB): peak = 3548.359 ; gain = 680.762 ; free physical = 15381 ; free virtual = 21461
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 3547.531 ; gain = 678.934 ; free physical = 6888 ; free virtual = 15853
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:41 . Memory (MB): peak = 3567.391 ; gain = 699.793 ; free physical = 15377 ; free virtual = 21457
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 3566.562 ; gain = 697.965 ; free physical = 6887 ; free virtual = 15852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -247,37 +247,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:43 . Memory (MB): peak = 3573.328 ; gain = 705.730 ; free physical = 15432 ; free virtual = 21513
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:44 . Memory (MB): peak = 3572.500 ; gain = 703.902 ; free physical = 6824 ; free virtual = 15790
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:43 . Memory (MB): peak = 3573.328 ; gain = 705.730 ; free physical = 15432 ; free virtual = 21513
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:44 . Memory (MB): peak = 3572.500 ; gain = 703.902 ; free physical = 6824 ; free virtual = 15790
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:43 . Memory (MB): peak = 3573.328 ; gain = 705.730 ; free physical = 15432 ; free virtual = 21513
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:44 . Memory (MB): peak = 3572.500 ; gain = 703.902 ; free physical = 6824 ; free virtual = 15790
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:43 . Memory (MB): peak = 3573.328 ; gain = 705.730 ; free physical = 15432 ; free virtual = 21512
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:44 . Memory (MB): peak = 3572.500 ; gain = 703.902 ; free physical = 6824 ; free virtual = 15790
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:43 . Memory (MB): peak = 3573.328 ; gain = 705.730 ; free physical = 15431 ; free virtual = 21512
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:44 . Memory (MB): peak = 3572.500 ; gain = 703.902 ; free physical = 6823 ; free virtual = 15790
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:43 . Memory (MB): peak = 3573.328 ; gain = 705.730 ; free physical = 15431 ; free virtual = 21512
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:44 . Memory (MB): peak = 3572.500 ; gain = 703.902 ; free physical = 6823 ; free virtual = 15790
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -296,27 +296,27 @@ Report Cell Usage:
 |1     |LUT4 |     1|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:43 . Memory (MB): peak = 3573.328 ; gain = 705.730 ; free physical = 15431 ; free virtual = 21512
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:44 . Memory (MB): peak = 3572.500 ; gain = 703.902 ; free physical = 6823 ; free virtual = 15790
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:41 . Memory (MB): peak = 3573.328 ; gain = 590.105 ; free physical = 15469 ; free virtual = 21550
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:43 . Memory (MB): peak = 3573.336 ; gain = 705.730 ; free physical = 15469 ; free virtual = 21550
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:41 . Memory (MB): peak = 3572.500 ; gain = 590.246 ; free physical = 6853 ; free virtual = 15819
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:44 . Memory (MB): peak = 3572.508 ; gain = 703.902 ; free physical = 6852 ; free virtual = 15819
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3588.266 ; gain = 0.000 ; free physical = 15503 ; free virtual = 21584
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3578.438 ; gain = 0.000 ; free physical = 6918 ; free virtual = 15884
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3621.984 ; gain = 0.000 ; free physical = 15313 ; free virtual = 21394
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3625.031 ; gain = 0.000 ; free physical = 6772 ; free virtual = 15739
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 36 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:58 . Memory (MB): peak = 3621.984 ; gain = 1474.750 ; free physical = 15441 ; free virtual = 21522
-INFO: [Common 17-1381] The checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1/myproject_kernel_bd_axis_subset_cnv_sts_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 3625.031 ; gain = 1477.797 ; free physical = 6894 ; free virtual = 15860
+INFO: [Common 17-1381] The checkpoint '/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1/myproject_kernel_bd_axis_subset_cnv_sts_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP myproject_kernel_bd_axis_subset_cnv_sts_0_0, cache-ID = ee7a22db9bf8d329
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP myproject_kernel_bd_axis_subset_cnv_sts_0_0, cache-ID = 5eb9a20d41853e35
 INFO: [Coretcl 2-1174] Renamed 2 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1/myproject_kernel_bd_axis_subset_cnv_sts_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1/myproject_kernel_bd_axis_subset_cnv_sts_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file myproject_kernel_bd_axis_subset_cnv_sts_0_0_utilization_synth.rpt -pb myproject_kernel_bd_axis_subset_cnv_sts_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  6 11:30:35 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  6 17:09:00 2021...

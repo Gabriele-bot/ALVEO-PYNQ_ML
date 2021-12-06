@@ -9,33 +9,33 @@
 <ProductFamily>virtexuplus</ProductFamily>
 <Part>xcu50-fsvh2104-2L-e</Part>
 <TopModelName>conv_2d_cl_array_array_ap_fixed_16u_config6_s</TopModelName>
-<TargetClockPeriod>4.00</TargetClockPeriod>
-<ClockUncertainty>0.50</ClockUncertainty>
+<TargetClockPeriod>3.33</TargetClockPeriod>
+<ClockUncertainty>0.42</ClockUncertainty>
 </UserAssignments>
 
 <PerformanceEstimates>
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>3.494</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.916</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>847</Best-caseLatency>
-<Average-caseLatency>847</Average-caseLatency>
-<Worst-caseLatency>847</Worst-caseLatency>
-<Best-caseRealTimeLatency>3.388 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>3.388 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>3.388 us</Worst-caseRealTimeLatency>
-<Interval-min>847</Interval-min>
-<Interval-max>847</Interval-max>
+<Best-caseLatency>1185</Best-caseLatency>
+<Average-caseLatency>1185</Average-caseLatency>
+<Worst-caseLatency>1185</Worst-caseLatency>
+<Best-caseRealTimeLatency>3.950 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>3.950 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>3.950 us</Worst-caseRealTimeLatency>
+<Interval-min>1185</Interval-min>
+<Interval-max>1185</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <ReadInputHeight_ReadInputWidth>
 <TripCount>169</TripCount>
-<Latency>845</Latency>
-<PipelineII>5</PipelineII>
-<PipelineDepth>5</PipelineDepth>
+<Latency>1183</Latency>
+<PipelineII>7</PipelineII>
+<PipelineDepth>7</PipelineDepth>
 </ReadInputHeight_ReadInputWidth>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
@@ -44,8 +44,8 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
-<FF>3717</FF>
-<LUT>17005</LUT>
+<FF>3966</FF>
+<LUT>17011</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

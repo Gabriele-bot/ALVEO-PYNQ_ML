@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'myproject_axi'" level="0">
-<item name = "Date">Mon Nov 22 19:57:36 2021
+<item name = "Date">Mon Dec  6 16:57:33 2021
 </item>
 <item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">4.00 ns, 3.494 ns, 0.50 ns</column>
+<column name="ap_clk">3.33 ns, 2.916 ns, 0.42 ns</column>
 </table>
 </item>
 </section>
@@ -24,16 +24,16 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">3137, 3137, 12.548 us, 12.548 us, 3138, 3138, dataflow</column>
+<column name="">3163, 3164, 10.542 us, 10.546 us, 3139, 3139, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="myproject_U0">myproject, 2374, 2375, 9.496 us, 9.500 us, 2355, 2355, dataflow</column>
-<column name="Loop_2_proc_U0">Loop_2_proc, 41, 41, 0.164 us, 0.164 us, 41, 41, none</column>
-<column name="Loop_1_proc406_U0">Loop_1_proc406, 3137, 3137, 12.548 us, 12.548 us, 3137, 3137, none</column>
+<column name="myproject_U0">myproject, 3160, 3161, 10.532 us, 10.536 us, 3139, 3139, dataflow</column>
+<column name="Loop_2_proc_U0">Loop_2_proc, 41, 41, 0.137 us, 0.137 us, 41, 41, none</column>
+<column name="Loop_1_proc406_U0">Loop_1_proc406, 3137, 3137, 10.456 us, 10.456 us, 3137, 3137, none</column>
 <column name="Block_myproject_axi_exit36_proc_U0">Block_myproject_axi_exit36_proc, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
 </table>
 </item>
@@ -53,7 +53,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 44, -</column>
 <column name="FIFO">1, -, 155, 659, -</column>
-<column name="Instance">364, 10, 38416, 128054, -</column>
+<column name="Instance">364, 10, 40458, 128062, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 90, -</column>
 <column name="Register">-, -, 10, -, -</column>
@@ -68,9 +68,9 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="Block_myproject_axi_exit36_proc_U0">Block_myproject_axi_exit36_proc, 0, 0, 162, 193, 0</column>
-<column name="Loop_1_proc406_U0">Loop_1_proc406, 0, 0, 236, 655, 0</column>
-<column name="Loop_2_proc_U0">Loop_2_proc, 0, 0, 147, 1028, 0</column>
-<column name="myproject_U0">myproject, 364, 10, 37871, 126178, 0</column>
+<column name="Loop_1_proc406_U0">Loop_1_proc406, 0, 0, 246, 655, 0</column>
+<column name="Loop_2_proc_U0">Loop_2_proc, 0, 0, 179, 1028, 0</column>
+<column name="myproject_U0">myproject, 364, 10, 39871, 126186, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">

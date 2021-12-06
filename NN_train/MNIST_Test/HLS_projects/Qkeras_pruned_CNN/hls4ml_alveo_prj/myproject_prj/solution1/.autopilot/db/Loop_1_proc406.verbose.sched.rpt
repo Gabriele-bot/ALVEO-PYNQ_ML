@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'Loop_1_proc406'
 ================================================================
-* Date:           Mon Nov 22 19:53:38 2021
+* Date:           Mon Dec  6 16:53:34 2021
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        myproject_prj
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  | 4.00 ns | 3.188 ns |   0.50 ns  |
+    |ap_clk  | 3.33 ns | 2.885 ns |   0.42 ns  |
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
     |   min   |   max   |    min    |    max    |  min |  max |   Type  |
     +---------+---------+-----------+-----------+------+------+---------+
-    |     3137|     3137| 12.548 us | 12.548 us |  3137|  3137|   none  |
+    |     3137|     3137| 10.456 us | 10.456 us |  3137|  3137|   none  |
     +---------+---------+-----------+-----------+------+------+---------+
 
     + Detail: 
@@ -113,7 +113,7 @@ ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%trunc_ln565 = trunc i64 %bitcast_l
 ST_3 : Operation 28 [1/1] (1.05ns)   --->   "%icmp_ln571 = icmp eq i63 %trunc_ln557, 0" [firmware/myproject_axi.cpp:27]   --->   Operation 28 'icmp' 'icmp_ln571' <Predicate = true> <Delay = 1.05> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.59> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 29 [1/1] (0.74ns)   --->   "%sub_ln575 = sub i12 1075, %zext_ln461" [firmware/myproject_axi.cpp:27]   --->   Operation 29 'sub' 'sub_ln575' <Predicate = true> <Delay = 0.74> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.74> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
-State 4 <SV = 3> <Delay = 3.18>
+State 4 <SV = 3> <Delay = 2.88>
 ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%tmp = call i53 @_ssdm_op_BitConcatenate.i53.i1.i52(i1 true, i52 %trunc_ln565)" [firmware/myproject_axi.cpp:27]   --->   Operation 30 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln569 = zext i53 %tmp to i54" [firmware/myproject_axi.cpp:27]   --->   Operation 31 'zext' 'zext_ln569' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 32 [1/1] (0.99ns)   --->   "%sub_ln461 = sub i54 0, %zext_ln569" [firmware/myproject_axi.cpp:27]   --->   Operation 32 'sub' 'sub_ln461' <Predicate = (tmp_2011)> <Delay = 0.99> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.74> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -151,11 +151,11 @@ ST_4 : Operation 63 [1/1] (1.12ns) (out node of the LUT)   --->   "%select_ln603
 ST_4 : Operation 64 [1/1] (0.12ns) (out node of the LUT)   --->   "%or_ln603 = or i1 %and_ln603, %and_ln585_1" [firmware/myproject_axi.cpp:27]   --->   Operation 64 'or' 'or_ln603' <Predicate = true> <Delay = 0.12> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 65 [1/1] (0.30ns) (out node of the LUT)   --->   "%select_ln603_1 = select i1 %and_ln585, i8 %select_ln588, i8 %trunc_ln583" [firmware/myproject_axi.cpp:27]   --->   Operation 65 'select' 'select_ln603_1' <Predicate = true> <Delay = 0.30> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.30> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_4 : Operation 66 [1/1] (0.00ns) (grouped into LUT with out node or_ln603_2)   --->   "%or_ln603_1 = or i1 %and_ln585, %and_ln582" [firmware/myproject_axi.cpp:27]   --->   Operation 66 'or' 'or_ln603_1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 67 [1/1] (0.00ns) (grouped into LUT with out node tmp_data_0_V)   --->   "%select_ln603_2 = select i1 %or_ln603, i8 %select_ln603, i8 %select_ln603_1" [firmware/myproject_axi.cpp:27]   --->   Operation 67 'select' 'select_ln603_2' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.30> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_4 : Operation 68 [1/1] (0.12ns) (out node of the LUT)   --->   "%or_ln603_2 = or i1 %or_ln603, %or_ln603_1" [firmware/myproject_axi.cpp:27]   --->   Operation 68 'or' 'or_ln603_2' <Predicate = true> <Delay = 0.12> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 69 [1/1] (0.30ns) (out node of the LUT)   --->   "%tmp_data_0_V = select i1 %or_ln603_2, i8 %select_ln603_2, i8 0" [firmware/myproject_axi.cpp:27]   --->   Operation 69 'select' 'tmp_data_0_V' <Predicate = true> <Delay = 0.30> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.30> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 67 [1/1] (0.12ns) (out node of the LUT)   --->   "%or_ln603_2 = or i1 %or_ln603, %or_ln603_1" [firmware/myproject_axi.cpp:27]   --->   Operation 67 'or' 'or_ln603_2' <Predicate = true> <Delay = 0.12> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 
-State 5 <SV = 4> <Delay = 1.45>
+State 5 <SV = 4> <Delay = 1.76>
+ST_5 : Operation 68 [1/1] (0.00ns) (grouped into LUT with out node tmp_data_0_V)   --->   "%select_ln603_2 = select i1 %or_ln603, i8 %select_ln603, i8 %select_ln603_1" [firmware/myproject_axi.cpp:27]   --->   Operation 68 'select' 'select_ln603_2' <Predicate = (or_ln603_2)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.30> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 69 [1/1] (0.30ns) (out node of the LUT)   --->   "%tmp_data_0_V = select i1 %or_ln603_2, i8 %select_ln603_2, i8 0" [firmware/myproject_axi.cpp:27]   --->   Operation 69 'select' 'tmp_data_0_V' <Predicate = true> <Delay = 0.30> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.30> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_5 : Operation 70 [1/1] (1.45ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %in_local_V_data_0_V, i8 %tmp_data_0_V)" [firmware/myproject_axi.cpp:30]   --->   Operation 70 'write' <Predicate = true> <Delay = 1.45> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
 ST_5 : Operation 71 [1/1] (0.00ns)   --->   "br label %0" [firmware/myproject_axi.cpp:23]   --->   Operation 71 'br' <Predicate = true> <Delay = 0.00>
 
@@ -163,7 +163,7 @@ ST_5 : Operation 71 [1/1] (0.00ns)   --->   "br label %0" [firmware/myproject_ax
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 4ns, clock uncertainty: 0.5ns.
+Target clock period: 3.33ns, clock uncertainty: 0.417ns.
 
  <State 1>: 0.603ns
 The critical path consists of the following:
@@ -179,18 +179,18 @@ The critical path consists of the following:
 	'fpext' operation ('d_assign_i', firmware/myproject_axi.cpp:27) [18]  (1.54 ns)
 	'icmp' operation ('icmp_ln571', firmware/myproject_axi.cpp:27) [29]  (1.06 ns)
 
- <State 4>: 3.19ns
+ <State 4>: 2.88ns
 The critical path consists of the following:
 	'add' operation ('add_ln581', firmware/myproject_axi.cpp:27) [32]  (0.745 ns)
 	'select' operation ('select_ln581', firmware/myproject_axi.cpp:27) [34]  (0.299 ns)
 	'icmp' operation ('icmp_ln603', firmware/myproject_axi.cpp:27) [41]  (0.593 ns)
 	'and' operation ('and_ln603', firmware/myproject_axi.cpp:27) [59]  (0.122 ns)
 	'select' operation ('select_ln603', firmware/myproject_axi.cpp:27) [60]  (1.13 ns)
+
+ <State 5>: 1.76ns
+The critical path consists of the following:
 	'select' operation ('select_ln603_2', firmware/myproject_axi.cpp:27) [64]  (0 ns)
 	'select' operation ('tmp.data[0].V', firmware/myproject_axi.cpp:27) [66]  (0.303 ns)
-
- <State 5>: 1.46ns
-The critical path consists of the following:
 	fifo write on port 'in_local_V_data_0_V' (firmware/myproject_axi.cpp:30) [68]  (1.46 ns)
 
 

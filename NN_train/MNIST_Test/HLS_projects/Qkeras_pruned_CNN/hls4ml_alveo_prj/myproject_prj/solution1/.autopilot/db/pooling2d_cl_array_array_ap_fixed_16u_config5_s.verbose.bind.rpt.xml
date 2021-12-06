@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'pooling2d_cl_array_array_ap_fixed_16u_config5_s'" level="0">
-<item name = "Date">Mon Nov 22 19:53:41 2021
+<item name = "Date">Mon Dec  6 16:53:37 2021
 </item>
 <item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">4.00 ns, 2.847 ns, 0.50 ns</column>
+<column name="ap_clk">3.33 ns, 2.847 ns, 0.42 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">679, 679, 2.716 us, 2.716 us, 679, 679, none</column>
+<column name="">679, 679, 2.263 us, 2.263 us, 679, 679, none</column>
 </table>
 </item>
 <item name = "Detail">

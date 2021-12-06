@@ -179,7 +179,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>0bf427a9</spirit:value>
+            <spirit:value>1a774c58</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -198,7 +198,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e48e51e9</spirit:value>
+            <spirit:value>01f6e21e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -217,7 +217,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e1ecd3b2</spirit:value>
+            <spirit:value>0b9501bc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -236,7 +236,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>59c949e4</spirit:value>
+            <spirit:value>8f45dc7d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1247,7 +1247,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/myproject_axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_ce98fb9d</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_049d585c</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1600,7 +1600,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>clk_period</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.clk_period" spirit:order="2">4</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.clk_period" spirit:order="2">3.333</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>machine</spirit:name>
@@ -1612,7 +1612,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">3137</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">3163</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
@@ -1629,15 +1629,15 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Myproject_axi</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2111221957</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2021-11-22T18:58:04Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2112061657</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-12-06T15:58:01Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="0803d8d6"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3830c4bb"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="8714cba7"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="c499dfd9"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="8e6c59ce"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="4c4c7f4a"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

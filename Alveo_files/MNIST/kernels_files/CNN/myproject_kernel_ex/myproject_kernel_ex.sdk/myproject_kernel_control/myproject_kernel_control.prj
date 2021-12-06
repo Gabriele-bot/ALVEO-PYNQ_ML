@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="ASCII"?>
-<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="myproject_kernel_control" location="/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control" platform="/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/myproject_kernel.xpfm" platformUID="xilinx.com::myproject_kernel:1.0(custom)" systemProject="myproject_kernel_control_system" sysConfig="myproject_kernel" runtime="C/C++" cpu="mydomain" cpuInstance="control_microblaze_0" os="standalone" mssSignature="70bad658f52717cd41f95e1e361de88c">
-  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1918600471" dirty="true">
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="myproject_kernel_control" location="/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control" platform="/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/myproject_kernel.xpfm" platformUID="xilinx.com::myproject_kernel:1.0(custom)" systemProject="myproject_kernel_control_system" sysConfig="myproject_kernel" runtime="C/C++" cpu="mydomain" cpuInstance="control_microblaze_0" os="standalone" mssSignature="70bad658f52717cd41f95e1e361de88c">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1146002024" dirty="true">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
     <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
-  <configuration name="Release" id="xilinx.gnu.mb.exe.release.2095684914" dirty="true">
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.175741778" dirty="true">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
   <template appTemplateName="kernel_control"/>

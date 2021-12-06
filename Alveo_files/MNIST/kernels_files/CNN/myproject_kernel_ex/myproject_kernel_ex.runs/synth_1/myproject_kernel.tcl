@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/myproject_kernel.tcl"
+  variable script "/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.runs/synth_1/myproject_kernel.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param rtl_kernel_wizard.features {xpfm_path /opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm}
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xcu50-fsvh2104-2-e
 
@@ -77,55 +78,64 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.cache/wt [current_project]
-set_property parent.project_path /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.xpr [current_project]
+set_property webtalk.parent_dir /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.cache/wt [current_project]
+set_property parent.project_path /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part xilinx.com:au50:part0:1.3 [current_project]
-set_property ip_repo_paths /home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects [current_project]
+set_property ip_repo_paths /home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/myproject_prj [current_project]
 update_ip_catalog
-set_property ip_output_repo /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.cache/ip [current_project]
+set_property ip_output_repo /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/Debug/myproject_kernel_control.elf
-set_property SCOPED_TO_REF myproject_kernel_bd [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/Debug/myproject_kernel_control.elf]
-set_property SCOPED_TO_CELLS control/microblaze_0 [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/Debug/myproject_kernel_control.elf]
-read_verilog -library xil_defaultlib /home/gabri-bot/Vivado_projects/myproject_kernel_ex/imports/myproject_kernel.v
-add_files /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/myproject_kernel_bd.bd
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_microblaze_0_0/myproject_kernel_bd_microblaze_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_microblaze_0_0/myproject_kernel_bd_microblaze_0_0_ooc_debug.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_microblaze_0_0/myproject_kernel_bd_microblaze_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_bram_ctrl_0_0/myproject_kernel_bd_axi_bram_ctrl_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_crossbar_0_0/myproject_kernel_bd_axi_crossbar_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_crossbar_1_0/myproject_kernel_bd_axi_crossbar_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_gpio_0_0/myproject_kernel_bd_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_gpio_0_0/myproject_kernel_bd_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_gpio_0_0/myproject_kernel_bd_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_register_slice_0_0/myproject_kernel_bd_axi_register_slice_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_register_slice_0_0/myproject_kernel_bd_axi_register_slice_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_bram_ctrl_0_bram_0/myproject_kernel_bd_axi_bram_ctrl_0_bram_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_dlmb_bram_if_cntlr_0/myproject_kernel_bd_dlmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_dlmb_v10_0/myproject_kernel_bd_dlmb_v10_0.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_dlmb_v10_0/myproject_kernel_bd_dlmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_ilmb_bram_if_cntlr_0/myproject_kernel_bd_ilmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_ilmb_v10_0/myproject_kernel_bd_ilmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_proc_sys_reset_0_0/myproject_kernel_bd_proc_sys_reset_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_proc_sys_reset_0_0/myproject_kernel_bd_proc_sys_reset_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_proc_sys_reset_0_0/myproject_kernel_bd_proc_sys_reset_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_datamover_0_0/myproject_kernel_bd_axi_datamover_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_datamover_0_0/myproject_kernel_bd_axi_datamover_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_datamover_0_0/myproject_kernel_bd_axi_datamover_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_broadcaster_0_0/myproject_kernel_bd_axis_broadcaster_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_combiner_0_0/myproject_kernel_bd_axis_combiner_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_dwidth_cnv_0_0/myproject_kernel_bd_axis_dwidth_cnv_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_0/myproject_kernel_bd_axis_subset_cnv_cmd_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/myproject_kernel_bd_axis_subset_cnv_sts_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_myproject_axi_0_0/constraints/myproject_axi_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/myproject_kernel_bd_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_microblaze_0_0/data/mb_bootloop_le.elf]
+add_files /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/Debug/myproject_kernel_control.elf
+set_property SCOPED_TO_REF myproject_kernel_bd [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/Debug/myproject_kernel_control.elf]
+set_property SCOPED_TO_CELLS control/microblaze_0 [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel_control/Debug/myproject_kernel_control.elf]
+read_verilog -library xil_defaultlib /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/imports/myproject_kernel.v
+add_files /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/myproject_kernel_bd.bd
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_mdm_1_0/myproject_kernel_bd_mdm_1_0.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_mdm_1_0/myproject_kernel_bd_mdm_1_0_ooc_trace.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_microblaze_0_0/myproject_kernel_bd_microblaze_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_microblaze_0_0/myproject_kernel_bd_microblaze_0_0_ooc_debug.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_microblaze_0_0/myproject_kernel_bd_microblaze_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_bram_ctrl_0_0/myproject_kernel_bd_axi_bram_ctrl_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_crossbar_0_0/myproject_kernel_bd_axi_crossbar_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_crossbar_1_0/myproject_kernel_bd_axi_crossbar_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_gpio_0_0/myproject_kernel_bd_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_gpio_0_0/myproject_kernel_bd_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_gpio_0_0/myproject_kernel_bd_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_register_slice_0_0/myproject_kernel_bd_axi_register_slice_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_register_slice_0_0/myproject_kernel_bd_axi_register_slice_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_bram_ctrl_0_bram_0/myproject_kernel_bd_axi_bram_ctrl_0_bram_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_dlmb_bram_if_cntlr_0/myproject_kernel_bd_dlmb_bram_if_cntlr_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_dlmb_v10_0/myproject_kernel_bd_dlmb_v10_0.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_dlmb_v10_0/myproject_kernel_bd_dlmb_v10_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_ilmb_bram_if_cntlr_0/myproject_kernel_bd_ilmb_bram_if_cntlr_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_ilmb_v10_0/myproject_kernel_bd_ilmb_v10_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_proc_sys_reset_0_0/myproject_kernel_bd_proc_sys_reset_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_proc_sys_reset_0_0/myproject_kernel_bd_proc_sys_reset_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_proc_sys_reset_0_0/myproject_kernel_bd_proc_sys_reset_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_datamover_0_0/myproject_kernel_bd_axi_datamover_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_datamover_0_0/myproject_kernel_bd_axi_datamover_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_datamover_0_0/myproject_kernel_bd_axi_datamover_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_broadcaster_0_0/myproject_kernel_bd_axis_broadcaster_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_combiner_0_0/myproject_kernel_bd_axis_combiner_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_dwidth_cnv_0_0/myproject_kernel_bd_axis_dwidth_cnv_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_0/myproject_kernel_bd_axis_subset_cnv_cmd_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/myproject_kernel_bd_axis_subset_cnv_sts_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_datamover_0_1/myproject_kernel_bd_axi_datamover_0_1.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_datamover_0_1/myproject_kernel_bd_axi_datamover_0_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_datamover_0_1/myproject_kernel_bd_axi_datamover_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_broadcaster_0_1/myproject_kernel_bd_axis_broadcaster_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_combiner_0_1/myproject_kernel_bd_axis_combiner_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_dwidth_cnv_0_1/myproject_kernel_bd_axis_dwidth_cnv_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/myproject_kernel_bd_axis_subset_cnv_cmd_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/myproject_kernel_bd_axis_subset_cnv_sts_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_myproject_axi_0_0/constraints/myproject_axi_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/myproject_kernel_bd_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_microblaze_0_0/data/mb_bootloop_le.elf]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -136,11 +146,11 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc -mode out_of_context /home/gabri-bot/Vivado_projects/myproject_kernel_ex/imports/myproject_kernel_ooc.xdc
-set_property used_in_implementation false [get_files /home/gabri-bot/Vivado_projects/myproject_kernel_ex/imports/myproject_kernel_ooc.xdc]
+read_xdc -mode out_of_context /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/imports/myproject_kernel_ooc.xdc
+set_property used_in_implementation false [get_files /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/imports/myproject_kernel_ooc.xdc]
 
-read_xdc /home/gabri-bot/Vivado_projects/myproject_kernel_ex/imports/myproject_kernel_user.xdc
-set_property used_in_implementation false [get_files /home/gabri-bot/Vivado_projects/myproject_kernel_ex/imports/myproject_kernel_user.xdc]
+read_xdc /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/imports/myproject_kernel_user.xdc
+set_property used_in_implementation false [get_files /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/imports/myproject_kernel_user.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

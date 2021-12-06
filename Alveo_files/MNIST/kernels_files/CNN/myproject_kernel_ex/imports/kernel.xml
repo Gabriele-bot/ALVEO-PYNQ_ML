@@ -4,10 +4,11 @@
     <ports>
       <port name="s_axi_control" mode="slave" range="0x1000" dataWidth="32" portType="addressable" base="0x0"/>
       <port name="m00_axi" mode="master" range="0xFFFFFFFFFFFFFFFF" dataWidth="32" portType="addressable" base="0x0"/>
+      <port name="m01_axi" mode="master" range="0xFFFFFFFFFFFFFFFF" dataWidth="32" portType="addressable" base="0x0"/>
     </ports>
     <args>
-      <arg name="in_r" addressQualifier="1" id="0" port="m00_axi" size="0x8" offset="0x010" type="int*" hostOffset="0x0" hostSize="0x8"/> 
-      <arg name="out_r" addressQualifier="1" id="1" port="m00_axi" size="0x8" offset="0x01c" type="int*" hostOffset="0x0" hostSize="0x8"/> 
+      <arg name="CNN_in" addressQualifier="1" id="0" port="m00_axi" size="0x8" offset="0x010" type="int*" hostOffset="0x0" hostSize="0x8"/> 
+      <arg name="CNN_out" addressQualifier="1" id="1" port="m01_axi" size="0x8" offset="0x01c" type="int*" hostOffset="0x0" hostSize="0x8"/> 
     </args>
   </kernel>
 </root>

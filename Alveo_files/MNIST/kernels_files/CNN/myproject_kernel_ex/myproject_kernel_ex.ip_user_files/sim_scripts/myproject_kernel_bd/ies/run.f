@@ -17,6 +17,15 @@
 -makelib ies_lib/xpm \
   "/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
+-makelib ies_lib/axi_lite_ipif_v3_0_4 \
+  "../../../../myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/mdm_v3_2_18 \
+  "../../../../myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/e9fa/hdl/mdm_v3_2_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_mdm_1_0/sim/myproject_kernel_bd_mdm_1_0.vhd" \
+-endlib
 -makelib ies_lib/microblaze_v11_0_3 \
   "../../../../myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/1efc/hdl/microblaze_v11_0_vh_rfs.vhd" \
 -endlib
@@ -56,9 +65,6 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_crossbar_0_0/sim/myproject_kernel_bd_axi_crossbar_0_0.v" \
   "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_crossbar_1_0/sim/myproject_kernel_bd_axi_crossbar_1_0.v" \
--endlib
--makelib ies_lib/axi_lite_ipif_v3_0_4 \
-  "../../../../myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
 -endlib
 -makelib ies_lib/lib_cdc_v1_0_2 \
   "../../../../myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
@@ -177,6 +183,35 @@
   "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/tlast_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v" \
   "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/hdl/top_myproject_kernel_bd_axis_subset_cnv_sts_0_0.v" \
   "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/sim/myproject_kernel_bd_axis_subset_cnv_sts_0_0.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axi_datamover_0_1/sim/myproject_kernel_bd_axi_datamover_0_1.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_broadcaster_0_1/hdl/tdata_myproject_kernel_bd_axis_broadcaster_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_broadcaster_0_1/hdl/tuser_myproject_kernel_bd_axis_broadcaster_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_broadcaster_0_1/hdl/top_myproject_kernel_bd_axis_broadcaster_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_broadcaster_0_1/sim/myproject_kernel_bd_axis_broadcaster_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_combiner_0_1/sim/myproject_kernel_bd_axis_combiner_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_dwidth_cnv_0_1/sim/myproject_kernel_bd_axis_dwidth_cnv_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/hdl/tdata_myproject_kernel_bd_axis_subset_cnv_cmd_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/hdl/tuser_myproject_kernel_bd_axis_subset_cnv_cmd_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/hdl/tstrb_myproject_kernel_bd_axis_subset_cnv_cmd_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/hdl/tkeep_myproject_kernel_bd_axis_subset_cnv_cmd_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/hdl/tid_myproject_kernel_bd_axis_subset_cnv_cmd_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/hdl/tdest_myproject_kernel_bd_axis_subset_cnv_cmd_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/hdl/tlast_myproject_kernel_bd_axis_subset_cnv_cmd_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/hdl/top_myproject_kernel_bd_axis_subset_cnv_cmd_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/sim/myproject_kernel_bd_axis_subset_cnv_cmd_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/hdl/tdata_myproject_kernel_bd_axis_subset_cnv_sts_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/hdl/tuser_myproject_kernel_bd_axis_subset_cnv_sts_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/hdl/tstrb_myproject_kernel_bd_axis_subset_cnv_sts_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/hdl/tkeep_myproject_kernel_bd_axis_subset_cnv_sts_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/hdl/tid_myproject_kernel_bd_axis_subset_cnv_sts_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/hdl/tdest_myproject_kernel_bd_axis_subset_cnv_sts_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/hdl/tlast_myproject_kernel_bd_axis_subset_cnv_sts_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/hdl/top_myproject_kernel_bd_axis_subset_cnv_sts_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/sim/myproject_kernel_bd_axis_subset_cnv_sts_0_1.v" \
   "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_register_slice_0_0/sim/myproject_kernel_bd_axis_register_slice_0_0.v" \
 -endlib
 -makelib ies_lib/xbip_utils_v3_0_10 \
@@ -210,6 +245,15 @@
   "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_xlconcat_0_0/sim/myproject_kernel_bd_xlconcat_0_0.v" \
   "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_xlslice_0_0/sim/myproject_kernel_bd_xlslice_0_0.v" \
   "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_register_slice_1_0/sim/myproject_kernel_bd_axis_register_slice_1_0.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_register_slice_0_1/sim/myproject_kernel_bd_axis_register_slice_0_1.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_c_addsub_0_1/sim/myproject_kernel_bd_c_addsub_0_1.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_xlconcat_0_1/sim/myproject_kernel_bd_xlconcat_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_xlslice_0_1/sim/myproject_kernel_bd_xlslice_0_1.v" \
+  "../../../bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_register_slice_1_1/sim/myproject_kernel_bd_axis_register_slice_1_1.v" \
   "../../../bd/myproject_kernel_bd/sim/myproject_kernel_bd.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \

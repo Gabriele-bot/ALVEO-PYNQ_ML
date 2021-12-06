@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'myproject'
 ================================================================
-* Date:           Mon Nov 22 19:55:20 2021
+* Date:           Mon Dec  6 16:55:17 2021
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        myproject_prj
@@ -20,17 +20,17 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  | 4.00 ns | 3.494 ns |   0.50 ns  |
+    |ap_clk  | 3.33 ns | 2.916 ns |   0.42 ns  |
     +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+----------+----------+------+------+----------+
-    |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline |
-    |   min   |   max   |    min   |    max   |  min |  max |   Type   |
-    +---------+---------+----------+----------+------+------+----------+
-    |     2374|     2375| 9.496 us | 9.500 us |  2355|  2355| dataflow |
-    +---------+---------+----------+----------+------+------+----------+
+    +---------+---------+-----------+-----------+------+------+----------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
+    |   min   |   max   |    min    |    max    |  min |  max |   Type   |
+    +---------+---------+-----------+-----------+------+------+----------+
+    |     3160|     3161| 10.532 us | 10.536 us |  3139|  3139| dataflow |
+    +---------+---------+-----------+-----------+------+------+----------+
 
     + Detail: 
         * Instance: 
@@ -619,7 +619,7 @@ ST_21 : Operation 499 [1/1] (0.00ns)   --->   "ret void" [firmware/myproject.cpp
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 4ns, clock uncertainty: 0.5ns.
+Target clock period: 3.33ns, clock uncertainty: 0.417ns.
 
  <State 1>: 0ns
 The critical path consists of the following:

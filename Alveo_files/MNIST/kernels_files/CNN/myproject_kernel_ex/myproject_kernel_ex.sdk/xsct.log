@@ -2,7 +2,7 @@ Starting vitis. This could take few seconds...WARNING: Using incubator modules: 
 done
 INFO: [Hsi 55-2053] elapsed time for repository (/tools/Xilinx/Vitis/2020.1/data/embeddedsw) loading 0 seconds
 Opening the hardware design, this may take few seconds.
-Gtk-Message: 11:17:53.593: Failed to load module "canberra-gtk-module"
+Gtk-Message: 17:01:37.954: Failed to load module "canberra-gtk-module"
 /tools/Xilinx/Vitis/2020.1/gnu/microblaze/lin
 Building the BSP Library for domain  - mydomain on processor control_microblaze_0
 Running Make include in control_microblaze_0/libsrc/gpio_v4_6/src
@@ -67,8 +67,8 @@ Compiling bram
 
 Finished building libraries
 
-11:17:57 **** Build of project myproject_kernel ****
-buildplatform.sh 39797 myproject_kernel  
+17:01:42 **** Build of project myproject_kernel ****
+buildplatform.sh 43671 myproject_kernel  
 Building the BSP Library for domain  - mydomain on processor control_microblaze_0
 Running Make include in control_microblaze_0/libsrc/gpio_v4_6/src
 
@@ -132,13 +132,13 @@ Compiling bram
 Finished building libraries
 
 
-11:18:04 Build Finished (took 7s.16ms)
+17:01:49 Build Finished (took 7s.72ms)
 
-11:18:04 **** Build of configuration Debug for project myproject_kernel_control ****
+17:01:49 **** Build of configuration Debug for project myproject_kernel_control ****
 make all 
 Building file: ../src/kernel_control.c
 Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kernel_control.o" -I/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/bspinclude/include -mlittle-endian -mxl-pattern-compare -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/kernel_control.d" -MT"src/kernel_control.o" -o "src/kernel_control.o" "../src/kernel_control.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kernel_control.o" -I/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/bspinclude/include -mlittle-endian -mxl-pattern-compare -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/kernel_control.d" -MT"src/kernel_control.o" -o "src/kernel_control.o" "../src/kernel_control.c"
 ../src/kernel_control.c: In function 'main':
 ../src/kernel_control.c:17:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
    17 |   int status;
@@ -147,17 +147,17 @@ Finished building: ../src/kernel_control.c
  
 Building target: myproject_kernel_control.elf
 Invoking: MicroBlaze gcc linker
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/bsplib/lib -mlittle-endian -mxl-pattern-compare -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "myproject_kernel_control.elf"  ./src/kernel_control.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.sdk/myproject_kernel/export/myproject_kernel/sw/myproject_kernel/mydomain/bsplib/lib -mlittle-endian -mxl-pattern-compare -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "myproject_kernel_control.elf"  ./src/kernel_control.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: myproject_kernel_control.elf
  
 Invoking: MicroBlaze Print Size
 mb-size myproject_kernel_control.elf  |tee "myproject_kernel_control.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   1616	    252	   3076	   4944	   1350	myproject_kernel_control.elf
+   1668	    252	   3080	   5000	   1388	myproject_kernel_control.elf
 Finished building: myproject_kernel_control.elf.size
  
 
-11:18:04 Build Finished (took 161ms)
+17:01:49 Build Finished (took 163ms)
 
 
 

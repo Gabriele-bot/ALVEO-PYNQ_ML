@@ -1,11 +1,11 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
--- Date        : Mon Dec  6 11:29:48 2021
+-- Date        : Mon Dec  6 17:10:19 2021
 -- Host        : gabribot-X570-AORUS-ELITE running 64-bit Ubuntu 18.04.6 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/gabri-bot/Vivado_projects/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_dwidth_cnv_0_0/myproject_kernel_bd_axis_dwidth_cnv_0_0_sim_netlist.vhdl
--- Design      : myproject_kernel_bd_axis_dwidth_cnv_0_0
+-- Command     : write_vhdl -force -mode funcsim -rename_top myproject_kernel_bd_axis_dwidth_cnv_0_0 -prefix
+--               myproject_kernel_bd_axis_dwidth_cnv_0_0_ myproject_kernel_bd_axis_dwidth_cnv_0_1_sim_netlist.vhdl
+-- Design      : myproject_kernel_bd_axis_dwidth_cnv_0_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xcu50-fsvh2104-2-e
@@ -25,8 +25,6 @@ entity myproject_kernel_bd_axis_dwidth_cnv_0_0_axis_dwidth_converter_v1_1_20_axi
     aclken : in STD_LOGIC;
     s_axis_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of myproject_kernel_bd_axis_dwidth_cnv_0_0_axis_dwidth_converter_v1_1_20_axisc_upsizer : entity is "axis_dwidth_converter_v1_1_20_axisc_upsizer";
 end myproject_kernel_bd_axis_dwidth_cnv_0_0_axis_dwidth_converter_v1_1_20_axisc_upsizer;
 
 architecture STRUCTURE of myproject_kernel_bd_axis_dwidth_cnv_0_0_axis_dwidth_converter_v1_1_20_axisc_upsizer is
@@ -1634,8 +1632,6 @@ entity myproject_kernel_bd_axis_dwidth_cnv_0_0_axis_dwidth_converter_v1_1_20_axi
   attribute G_TASK_SEVERITY_INFO of myproject_kernel_bd_axis_dwidth_cnv_0_0_axis_dwidth_converter_v1_1_20_axis_dwidth_converter : entity is 0;
   attribute G_TASK_SEVERITY_WARNING : integer;
   attribute G_TASK_SEVERITY_WARNING of myproject_kernel_bd_axis_dwidth_cnv_0_0_axis_dwidth_converter_v1_1_20_axis_dwidth_converter : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of myproject_kernel_bd_axis_dwidth_cnv_0_0_axis_dwidth_converter_v1_1_20_axis_dwidth_converter : entity is "axis_dwidth_converter_v1_1_20_axis_dwidth_converter";
   attribute P_AXIS_SIGNAL_SET : string;
   attribute P_AXIS_SIGNAL_SET of myproject_kernel_bd_axis_dwidth_cnv_0_0_axis_dwidth_converter_v1_1_20_axis_dwidth_converter : entity is "32'b00000000000000000000000000000011";
   attribute P_D1_REG_CONFIG : integer;
@@ -1758,7 +1754,7 @@ entity myproject_kernel_bd_axis_dwidth_cnv_0_0 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of myproject_kernel_bd_axis_dwidth_cnv_0_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of myproject_kernel_bd_axis_dwidth_cnv_0_0 : entity is "myproject_kernel_bd_axis_dwidth_cnv_0_0,axis_dwidth_converter_v1_1_20_axis_dwidth_converter,{}";
+  attribute CHECK_LICENSE_TYPE of myproject_kernel_bd_axis_dwidth_cnv_0_0 : entity is "myproject_kernel_bd_axis_dwidth_cnv_0_1,axis_dwidth_converter_v1_1_20_axis_dwidth_converter,{}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of myproject_kernel_bd_axis_dwidth_cnv_0_0 : entity is "yes";
   attribute X_CORE_INFO : string;
@@ -1850,7 +1846,7 @@ architecture STRUCTURE of myproject_kernel_bd_axis_dwidth_cnv_0_0 is
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of aclk : signal is "xilinx.com:signal:clock:1.0 CLKIF CLK";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of aclk : signal is "XIL_INTERFACENAME CLKIF, FREQ_HZ 250000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, ASSOCIATED_BUSIF S_AXIS:M_AXIS, ASSOCIATED_RESET aresetn, INSERT_VIP 0, ASSOCIATED_CLKEN aclken";
+  attribute X_INTERFACE_PARAMETER of aclk : signal is "XIL_INTERFACENAME CLKIF, FREQ_HZ 300000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, ASSOCIATED_BUSIF S_AXIS:M_AXIS, ASSOCIATED_RESET aresetn, INSERT_VIP 0, ASSOCIATED_CLKEN aclken";
   attribute X_INTERFACE_INFO of aresetn : signal is "xilinx.com:signal:reset:1.0 RSTIF RST";
   attribute X_INTERFACE_PARAMETER of aresetn : signal is "XIL_INTERFACENAME RSTIF, POLARITY ACTIVE_LOW, INSERT_VIP 0, TYPE INTERCONNECT";
   attribute X_INTERFACE_INFO of m_axis_tready : signal is "xilinx.com:interface:axis:1.0 M_AXIS TREADY";
@@ -1858,9 +1854,9 @@ architecture STRUCTURE of myproject_kernel_bd_axis_dwidth_cnv_0_0 is
   attribute X_INTERFACE_INFO of s_axis_tready : signal is "xilinx.com:interface:axis:1.0 S_AXIS TREADY";
   attribute X_INTERFACE_INFO of s_axis_tvalid : signal is "xilinx.com:interface:axis:1.0 S_AXIS TVALID";
   attribute X_INTERFACE_INFO of m_axis_tdata : signal is "xilinx.com:interface:axis:1.0 M_AXIS TDATA";
-  attribute X_INTERFACE_PARAMETER of m_axis_tdata : signal is "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 16, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 250000000, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of m_axis_tdata : signal is "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 16, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 300000000, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axis_tdata : signal is "xilinx.com:interface:axis:1.0 S_AXIS TDATA";
-  attribute X_INTERFACE_PARAMETER of s_axis_tdata : signal is "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 250000000, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of s_axis_tdata : signal is "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 300000000, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, LAYERED_METADATA undef, INSERT_VIP 0";
 begin
 inst: entity work.myproject_kernel_bd_axis_dwidth_cnv_0_0_axis_dwidth_converter_v1_1_20_axis_dwidth_converter
      port map (

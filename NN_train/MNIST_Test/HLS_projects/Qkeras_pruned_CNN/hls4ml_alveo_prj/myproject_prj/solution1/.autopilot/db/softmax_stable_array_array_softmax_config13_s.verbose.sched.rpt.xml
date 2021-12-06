@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'softmax_stable_array_array_softmax_config13_s'" level="0">
-<item name = "Date">Mon Nov 22 19:55:19 2021
+<item name = "Date">Mon Dec  6 16:55:16 2021
 </item>
 <item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">4.00 ns, 3.416 ns, 0.50 ns</column>
+<column name="ap_clk">3.33 ns, 2.808 ns, 0.42 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">6, 6, 24.000 ns, 24.000 ns, 1, 1, function</column>
+<column name="">7, 7, 23.331 ns, 23.331 ns, 1, 1, function</column>
 </table>
 </item>
 <item name = "Detail">

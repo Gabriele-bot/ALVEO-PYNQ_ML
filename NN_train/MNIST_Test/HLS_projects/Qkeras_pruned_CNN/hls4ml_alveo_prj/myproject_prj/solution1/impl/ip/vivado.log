@@ -2,12 +2,12 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Mon Nov 22 19:57:55 2021
-# Process ID: 10833
-# Current directory: /home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/myproject_prj/solution1/impl/ip
+# Start of session at: Mon Dec  6 16:57:52 2021
+# Process ID: 28451
+# Current directory: /home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/myproject_prj/solution1/impl/ip
 # Command line: vivado -notrace -mode batch -source run_ippack.tcl
-# Log file: /home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/myproject_prj/solution1/impl/ip/vivado.log
-# Journal file: /home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/myproject_prj/solution1/impl/ip/vivado.jou
+# Log file: /home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/myproject_prj/solution1/impl/ip/vivado.log
+# Journal file: /home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/myproject_prj/solution1/impl/ip/vivado.jou
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -19,4 +19,4 @@ INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'myproject_axi_ap_
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 22 19:58:04 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  6 16:58:01 2021...

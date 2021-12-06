@@ -9,18 +9,18 @@
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source bd_85ad_interconnect1_0_0.tcl -notrace
-INFO: Dispatch client connection id - 33283
+INFO: Dispatch client connection id - 35905
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xo/ip_repo/fastmachinelearning_kernel_myproject_kernel_1_0'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/xo/ip_repo/fastmachinelearning_kernel_myproject_kernel_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2020.1/data/cache/xilinx'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/ipcache'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2020.1/data/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
-WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axis_clk_metadata_adapter:1.0'. The one found in IP location '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/other_ipdefs/axis_clk_metadata_adapter_v1_0' will take precedence over the same IP in location /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/ii_infra_ipdefs/axis_clk_metadata_adapter_v1_0
-WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_clk_metadata_adapter:1.0'. The one found in IP location '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/other_ipdefs/axi_clk_metadata_adapter_v1_0' will take precedence over the same IP in location /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/ii_infra_ipdefs/axi_clk_metadata_adapter_v1_0
-WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:clk_metadata_adapter:1.0'. The one found in IP location '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/other_ipdefs/clk_metadata_adapter_v1_0' will take precedence over the same IP in location /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/ii_infra_ipdefs/clk_metadata_adapter_v1_0
-WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:shell_utils_build_info:1.0'. The one found in IP location '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/other_ipdefs/shell_utils_build_info_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axis_clk_metadata_adapter:1.0'. The one found in IP location '/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/other_ipdefs/axis_clk_metadata_adapter_v1_0' will take precedence over the same IP in location /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/ii_infra_ipdefs/axis_clk_metadata_adapter_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_clk_metadata_adapter:1.0'. The one found in IP location '/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/other_ipdefs/axi_clk_metadata_adapter_v1_0' will take precedence over the same IP in location /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/ii_infra_ipdefs/axi_clk_metadata_adapter_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:clk_metadata_adapter:1.0'. The one found in IP location '/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/other_ipdefs/clk_metadata_adapter_v1_0' will take precedence over the same IP in location /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/ii_infra_ipdefs/clk_metadata_adapter_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:shell_utils_build_info:1.0'. The one found in IP location '/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/other_ipdefs/shell_utils_build_info_v1_0' will take precedence over the same IP in the Xilinx installed IP.
 Command: synth_design -top bd_85ad_interconnect1_0_0 -part xcu50-fsvh2104-2-e -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xcu50'
@@ -28,20 +28,20 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu50'
 INFO: [Device 21-403] Loading part xcu50-fsvh2104-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 15287
+INFO: [Synth 8-7075] Helper process launched with PID 5355
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3101.461 ; gain = 133.715 ; free physical = 14494 ; free virtual = 21737
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3100.336 ; gain = 133.715 ; free physical = 12053 ; free virtual = 17302
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'bd_85ad_interconnect1_0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/ip/ip_2/synth/bd_85ad_interconnect1_0_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'bd_baa4' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:10]
-INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_1CIL6EU' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:768]
-INFO: [Synth 8-6157] synthesizing module 'bd_baa4_one_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_0/synth/bd_baa4_one_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bd_85ad_interconnect1_0_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/ip/ip_2/synth/bd_85ad_interconnect1_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_baa4' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_1CIL6EU' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:768]
+INFO: [Synth 8-6157] synthesizing module 'bd_baa4_one_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_0/synth/bd_baa4_one_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
 	Parameter CONST_VAL bound to: 1 - type: integer 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (1#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_one_0' (2#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_0/synth/bd_baa4_one_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'bd_baa4_psr0_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_1/synth/bd_baa4_psr0_0.vhd:74]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (1#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_one_0' (2#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_0/synth/bd_baa4_one_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'bd_baa4_psr0_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_1/synth/bd_baa4_psr0_0.vhd:74]
 	Parameter C_FAMILY bound to: virtexuplusHBM - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
@@ -51,8 +51,8 @@ INFO: [Synth 8-638] synthesizing module 'bd_baa4_psr0_0' [/home/gabri-bot/Vivado
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_1/synth/bd_baa4_psr0_0.vhd:129]
-INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_1/synth/bd_baa4_psr0_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
 	Parameter C_FAMILY bound to: virtexuplusHBM - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
@@ -66,37 +66,37 @@ INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/gabri-bot/Vivado
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
 	Parameter INIT bound to: 1'b1 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
 	Parameter INIT bound to: 1'b1 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
-INFO: [Synth 8-638] synthesizing module 'lpf' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
 	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
 	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
-INFO: [Synth 8-3491] module 'SRL16' declared at '/tools/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:78043' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/tools/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:78043' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
 INFO: [Synth 8-6157] synthesizing module 'SRL16' [/tools/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:78043]
 	Parameter INIT bound to: 16'b0000000000000000 
 INFO: [Synth 8-6155] done synthesizing module 'SRL16' (3#1) [/tools/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:78043]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter C_CDC_TYPE bound to: 1 - type: integer 
 	Parameter C_RESET_STATE bound to: 0 - type: integer 
 	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
@@ -104,32 +104,32 @@ INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/gabri-bot/Vivado_proje
 	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
 	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (4#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'lpf' (5#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
-INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (4#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (5#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
 	Parameter C_SIZE bound to: 6 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (6#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (7#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (8#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
-INFO: [Synth 8-256] done synthesizing module 'bd_baa4_psr0_0' (9#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_1/synth/bd_baa4_psr0_0.vhd:74]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_baa4_psr0_0' is unconnected for instance 'psr0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:809]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_baa4_psr0_0' is unconnected for instance 'psr0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:809]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_baa4_psr0_0' is unconnected for instance 'psr0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:809]
-WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_baa4_psr0_0' is unconnected for instance 'psr0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:809]
-WARNING: [Synth 8-7023] instance 'psr0' of module 'bd_baa4_psr0_0' has 10 connections declared, but only 6 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:809]
-INFO: [Synth 8-638] synthesizing module 'bd_baa4_psr_aclk_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_2/synth/bd_baa4_psr_aclk_0.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (6#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (7#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (8#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'bd_baa4_psr0_0' (9#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_1/synth/bd_baa4_psr0_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_baa4_psr0_0' is unconnected for instance 'psr0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:809]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_baa4_psr0_0' is unconnected for instance 'psr0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:809]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_baa4_psr0_0' is unconnected for instance 'psr0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:809]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_baa4_psr0_0' is unconnected for instance 'psr0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:809]
+WARNING: [Synth 8-7023] instance 'psr0' of module 'bd_baa4_psr0_0' has 10 connections declared, but only 6 given [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:809]
+INFO: [Synth 8-638] synthesizing module 'bd_baa4_psr_aclk_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_2/synth/bd_baa4_psr_aclk_0.vhd:74]
 	Parameter C_FAMILY bound to: virtexuplusHBM - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
@@ -139,14 +139,14 @@ INFO: [Synth 8-638] synthesizing module 'bd_baa4_psr_aclk_0' [/home/gabri-bot/Vi
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_2/synth/bd_baa4_psr_aclk_0.vhd:129]
-INFO: [Synth 8-256] done synthesizing module 'bd_baa4_psr_aclk_0' (10#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_2/synth/bd_baa4_psr_aclk_0.vhd:74]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_baa4_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:816]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_baa4_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:816]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_baa4_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:816]
-WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_baa4_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:816]
-WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_baa4_psr_aclk_0' has 10 connections declared, but only 6 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:816]
-INFO: [Synth 8-638] synthesizing module 'bd_baa4_psr_aclk1_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_3/synth/bd_baa4_psr_aclk1_0.vhd:74]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_2/synth/bd_baa4_psr_aclk_0.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'bd_baa4_psr_aclk_0' (10#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_2/synth/bd_baa4_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_baa4_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:816]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_baa4_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:816]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_baa4_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:816]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_baa4_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:816]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_baa4_psr_aclk_0' has 10 connections declared, but only 6 given [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:816]
+INFO: [Synth 8-638] synthesizing module 'bd_baa4_psr_aclk1_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_3/synth/bd_baa4_psr_aclk1_0.vhd:74]
 	Parameter C_FAMILY bound to: virtexuplusHBM - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
@@ -156,35 +156,35 @@ INFO: [Synth 8-638] synthesizing module 'bd_baa4_psr_aclk1_0' [/home/gabri-bot/V
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_3/synth/bd_baa4_psr_aclk1_0.vhd:129]
-INFO: [Synth 8-256] done synthesizing module 'bd_baa4_psr_aclk1_0' (11#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_3/synth/bd_baa4_psr_aclk1_0.vhd:74]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_baa4_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:823]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_baa4_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:823]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_baa4_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:823]
-WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_baa4_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:823]
-WARNING: [Synth 8-7023] instance 'psr_aclk1' of module 'bd_baa4_psr_aclk1_0' has 10 connections declared, but only 6 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:823]
-INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_1CIL6EU' (12#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:768]
-INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_NZK3N1' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:832]
-INFO: [Synth 8-6157] synthesizing module 'bd_baa4_m00e_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_14/synth/bd_baa4_m00e_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_m00e_0' (22#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_14/synth/bd_baa4_m00e_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_NZK3N1' (23#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:832]
-INFO: [Synth 8-6157] synthesizing module 'bd_baa4_m00s2a_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_13/synth/bd_baa4_m00s2a_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_m00s2a_0' (25#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_13/synth/bd_baa4_m00s2a_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_baa4_s00a2s_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_7/synth/bd_baa4_s00a2s_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_s00a2s_0' (27#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_7/synth/bd_baa4_s00a2s_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_1N79GFI' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:1203]
-INFO: [Synth 8-6157] synthesizing module 'bd_baa4_s00mmu_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_4/synth/bd_baa4_s00mmu_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_s00mmu_0' (30#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_4/synth/bd_baa4_s00mmu_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_baa4_s00sic_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_6/synth/bd_baa4_s00sic_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_s00sic_0' (33#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_6/synth/bd_baa4_s00sic_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_baa4_s00tr_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_5/synth/bd_baa4_s00tr_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_s00tr_0' (36#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_5/synth/bd_baa4_s00tr_0.sv:58]
-WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'bd_baa4_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:1731]
-WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_baa4_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:1731]
-WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_baa4_s00tr_0' has 82 connections declared, but only 80 given [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:1731]
-INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_1N79GFI' (37#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:1203]
-INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_1HIR790' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:1814]
-INFO: [Synth 8-6157] synthesizing module 'bd_baa4_sarn_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_8/synth/bd_baa4_sarn_0.sv:58]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_3/synth/bd_baa4_psr_aclk1_0.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'bd_baa4_psr_aclk1_0' (11#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_3/synth/bd_baa4_psr_aclk1_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_baa4_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:823]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_baa4_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:823]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_baa4_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:823]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_baa4_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:823]
+WARNING: [Synth 8-7023] instance 'psr_aclk1' of module 'bd_baa4_psr_aclk1_0' has 10 connections declared, but only 6 given [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:823]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_1CIL6EU' (12#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:768]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_NZK3N1' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:832]
+INFO: [Synth 8-6157] synthesizing module 'bd_baa4_m00e_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_14/synth/bd_baa4_m00e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_m00e_0' (22#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_14/synth/bd_baa4_m00e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_NZK3N1' (23#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:832]
+INFO: [Synth 8-6157] synthesizing module 'bd_baa4_m00s2a_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_13/synth/bd_baa4_m00s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_m00s2a_0' (25#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_13/synth/bd_baa4_m00s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_baa4_s00a2s_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_7/synth/bd_baa4_s00a2s_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_s00a2s_0' (27#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_7/synth/bd_baa4_s00a2s_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_1N79GFI' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:1203]
+INFO: [Synth 8-6157] synthesizing module 'bd_baa4_s00mmu_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_4/synth/bd_baa4_s00mmu_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_s00mmu_0' (30#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_4/synth/bd_baa4_s00mmu_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_baa4_s00sic_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_6/synth/bd_baa4_s00sic_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_s00sic_0' (33#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_6/synth/bd_baa4_s00sic_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_baa4_s00tr_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_5/synth/bd_baa4_s00tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_s00tr_0' (36#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_5/synth/bd_baa4_s00tr_0.sv:58]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'bd_baa4_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:1731]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_baa4_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:1731]
+WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_baa4_s00tr_0' has 82 connections declared, but only 80 given [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:1731]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_1N79GFI' (37#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:1203]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_1HIR790' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:1814]
+INFO: [Synth 8-6157] synthesizing module 'bd_baa4_sarn_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_8/synth/bd_baa4_sarn_0.sv:58]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
@@ -258,10 +258,10 @@ INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (42#1) [/tools/X
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram' (43#1) [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (45#1) [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
-INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_sarn_0' (53#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_8/synth/bd_baa4_sarn_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_baa4_sawn_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_10/synth/bd_baa4_sawn_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_sawn_0' (54#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_10/synth/bd_baa4_sawn_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_baa4_sbn_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_12/synth/bd_baa4_sbn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_sarn_0' (53#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_8/synth/bd_baa4_sarn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_baa4_sawn_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_10/synth/bd_baa4_sawn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_sawn_0' (54#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_10/synth/bd_baa4_sawn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_baa4_sbn_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_12/synth/bd_baa4_sbn_0.sv:58]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized0' [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
@@ -333,8 +333,8 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/too
 	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (54#1) [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized0' (54#1) [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
-INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_sbn_0' (55#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_12/synth/bd_baa4_sbn_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_baa4_srn_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_9/synth/bd_baa4_srn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_sbn_0' (55#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_12/synth/bd_baa4_sbn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_baa4_srn_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_9/synth/bd_baa4_srn_0.sv:58]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized1' [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
@@ -477,8 +477,8 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized2' [/too
 	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized2' (56#1) [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized2' (56#1) [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
-INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_srn_0' (57#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_9/synth/bd_baa4_srn_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_baa4_swn_0' [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_11/synth/bd_baa4_swn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_srn_0' (57#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_9/synth/bd_baa4_srn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_baa4_swn_0' [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_11/synth/bd_baa4_swn_0.sv:58]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized3' [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized3' [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
@@ -550,45 +550,45 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized3' [/too
 	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized3' (59#1) [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized3' (59#1) [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
-INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_swn_0' (60#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_11/synth/bd_baa4_swn_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_1HIR790' (61#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:1814]
-INFO: [Synth 8-6155] done synthesizing module 'bd_baa4' (62#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:10]
-INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_interconnect1_0_0' (63#1) [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/ip/ip_2/synth/bd_85ad_interconnect1_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_baa4_swn_0' (60#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_11/synth/bd_baa4_swn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_1HIR790' (61#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:1814]
+INFO: [Synth 8-6155] done synthesizing module 'bd_baa4' (62#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/synth/bd_baa4.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'bd_85ad_interconnect1_0_0' (63#1) [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/ip/ip_2/synth/bd_85ad_interconnect1_0_0.v:57]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 3271.305 ; gain = 303.559 ; free physical = 14284 ; free virtual = 21530
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 3273.180 ; gain = 306.559 ; free physical = 11392 ; free virtual = 16683
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 3285.180 ; gain = 317.434 ; free physical = 14360 ; free virtual = 21606
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 3285.055 ; gain = 318.434 ; free physical = 11415 ; free virtual = 16686
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 3285.180 ; gain = 317.434 ; free physical = 14359 ; free virtual = 21605
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 3285.055 ; gain = 318.434 ; free physical = 11415 ; free virtual = 16686
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.65 ; elapsed = 00:00:00.65 . Memory (MB): peak = 3297.148 ; gain = 0.000 ; free physical = 14127 ; free virtual = 21385
+Netlist sorting complete. Time (s): cpu = 00:00:00.71 ; elapsed = 00:00:00.71 . Memory (MB): peak = 3298.992 ; gain = 0.000 ; free physical = 11159 ; free virtual = 16449
 INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/ip/ip_2/ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/ip/ip_2/ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_1/bd_baa4_psr0_0_board.xdc] for cell 'inst/clk_map/psr0/U0'
-Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_1/bd_baa4_psr0_0_board.xdc] for cell 'inst/clk_map/psr0/U0'
-Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_1/bd_baa4_psr0_0.xdc] for cell 'inst/clk_map/psr0/U0'
-Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_1/bd_baa4_psr0_0.xdc] for cell 'inst/clk_map/psr0/U0'
-Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_2/bd_baa4_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_2/bd_baa4_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_2/bd_baa4_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_2/bd_baa4_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_3/bd_baa4_psr_aclk1_0_board.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
-Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_3/bd_baa4_psr_aclk1_0_board.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
-Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_3/bd_baa4_psr_aclk1_0.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
-Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_3/bd_baa4_psr_aclk1_0.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
-Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/ip/ip_2/ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_0/ip/ip_2/ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_1/bd_baa4_psr0_0_board.xdc] for cell 'inst/clk_map/psr0/U0'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_1/bd_baa4_psr0_0_board.xdc] for cell 'inst/clk_map/psr0/U0'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_1/bd_baa4_psr0_0.xdc] for cell 'inst/clk_map/psr0/U0'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_1/bd_baa4_psr0_0.xdc] for cell 'inst/clk_map/psr0/U0'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_2/bd_baa4_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_2/bd_baa4_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_2/bd_baa4_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_2/bd_baa4_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_3/bd_baa4_psr_aclk1_0_board.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_3/bd_baa4_psr_aclk1_0_board.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_3/bd_baa4_psr_aclk1_0.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/ulp_hmss_0_0/bd_1/ip/ip_3/bd_baa4_psr_aclk1_0.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/dont_touch.xdc]
 Sourcing Tcl File [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addra_to_rd_clk'
 Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addra_to_rd_clk'
 Sourcing Tcl File [/tools/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addrb_to_wr_clk'
@@ -636,15 +636,15 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/bd_85ad_interconnect1_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3597.309 ; gain = 0.000 ; free physical = 13357 ; free virtual = 20610
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3611.996 ; gain = 0.000 ; free physical = 9798 ; free virtual = 15089
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 39 instances were transformed.
   FDR => FDRE: 36 instances
   SRL16 => SRL16E: 3 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.16 . Memory (MB): peak = 3603.246 ; gain = 5.938 ; free physical = 13352 ; free virtual = 20606
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.24 . Memory (MB): peak = 3615.965 ; gain = 3.969 ; free physical = 9754 ; free virtual = 15045
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 3603.246 ; gain = 635.500 ; free physical = 13602 ; free virtual = 20858
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 3615.965 ; gain = 649.344 ; free physical = 10215 ; free virtual = 15508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -652,12 +652,12 @@ Start Loading Part and Timing Information
 Loading part: xcu50-fsvh2104-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 3603.246 ; gain = 635.500 ; free physical = 13602 ; free virtual = 20858
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 3615.965 ; gain = 649.344 ; free physical = 10215 ; free virtual = 15508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/dont_touch.xdc, line 86).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/dont_touch.xdc, line 86).
 Applied set_property DONT_TOUCH = true for inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addra_to_rd_clk . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addra_to_rd_clk . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/s00_nodes/s00_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addra_to_rd_clk . (constraint file  auto generated constraint, line ).
@@ -676,7 +676,7 @@ Applied set_property DONT_TOUCH = true for inst/s00_nodes/s00_r_node/inst/inst_m
 Applied set_property DONT_TOUCH = true for inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[1].inst_xpm_memory . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 3603.246 ; gain = 635.500 ; free physical = 13602 ; free virtual = 20858
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 3615.965 ; gain = 649.344 ; free physical = 10208 ; free virtual = 15507
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
@@ -685,7 +685,7 @@ INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_r
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 3603.246 ; gain = 635.500 ; free physical = 13560 ; free virtual = 20819
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 3615.965 ; gain = 649.344 ; free physical = 10508 ; free virtual = 15806
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -695,7 +695,7 @@ Detailed RTL Component Info :
 	   2 Input   33 Bit       Adders := 2     
 	   2 Input    8 Bit       Adders := 3     
 	   3 Input    8 Bit       Adders := 2     
-	   2 Input    7 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 4     
 	   2 Input    6 Bit       Adders := 44    
 	   2 Input    5 Bit       Adders := 8     
 	   2 Input    4 Bit       Adders := 5     
@@ -706,7 +706,7 @@ Detailed RTL Component Info :
 	   2 Input      6 Bit         XORs := 10    
 	   2 Input      1 Bit         XORs := 89    
 +---Registers : 
-	             2178 Bit    Registers := 2     
+	             2178 Bit    Registers := 6     
 	              512 Bit    Registers := 2     
 	              188 Bit    Registers := 2     
 	              161 Bit    Registers := 2     
@@ -722,15 +722,15 @@ Detailed RTL Component Info :
 	               14 Bit    Registers := 1     
 	                9 Bit    Registers := 1     
 	                8 Bit    Registers := 41    
-	                7 Bit    Registers := 6     
+	                7 Bit    Registers := 8     
 	                6 Bit    Registers := 67    
 	                5 Bit    Registers := 8     
 	                4 Bit    Registers := 10    
 	                3 Bit    Registers := 23    
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 205   
+	                1 Bit    Registers := 219   
 +---Muxes : 
-	   2 Input 2178 Bit        Muxes := 2     
+	   2 Input 2178 Bit        Muxes := 4     
 	   2 Input  512 Bit        Muxes := 2     
 	   2 Input   64 Bit        Muxes := 4     
 	   2 Input   47 Bit        Muxes := 1     
@@ -743,17 +743,19 @@ Detailed RTL Component Info :
 	   2 Input    7 Bit        Muxes := 24    
 	   2 Input    6 Bit        Muxes := 9     
 	   2 Input    4 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 12    
 	   4 Input    3 Bit        Muxes := 8     
 	  11 Input    3 Bit        Muxes := 8     
-	   2 Input    3 Bit        Muxes := 12    
-	   2 Input    2 Bit        Muxes := 37    
+	   2 Input    2 Bit        Muxes := 39    
 	   3 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 205   
-	   6 Input    1 Bit        Muxes := 40    
+	   2 Input    1 Bit        Muxes := 211   
+	   4 Input    1 Bit        Muxes := 70    
+	   6 Input    1 Bit        Muxes := 48    
 	  12 Input    1 Bit        Muxes := 8     
+	  10 Input    1 Bit        Muxes := 6     
+	   7 Input    1 Bit        Muxes := 4     
 	   5 Input    1 Bit        Muxes := 10    
 	   3 Input    1 Bit        Muxes := 2     
-	   4 Input    1 Bit        Muxes := 66    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -770,24 +772,24 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 3603.246 ; gain = 635.500 ; free physical = 13094 ; free virtual = 20380
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 3615.965 ; gain = 649.344 ; free physical = 9799 ; free virtual = 15207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Preliminary Mapping	Report (see note below)
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
-|Module Name                                                                                                                                                               | RTL Object                       | Inference      | Size (Depth x Width) | Primitives     | 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
-|xpm_memory_sdpram:/xpm_memory_base_inst                                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M16 x 14	 | 
-|xpm_memory_sdpram:/xpm_memory_base_inst                                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M16 x 14	 | 
-|inst/\s00_nodes/s00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 23              | RAM32M16 x 2	  | 
-|inst/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 148             | RAM32M16 x 11	 | 
-|inst/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 147             | RAM32M16 x 11	 | 
-|xpm_memory_sdpram__parameterized3:/xpm_memory_base_inst                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M16 x 12	 | 
-|xpm_memory_sdpram__parameterized3:/xpm_memory_base_inst                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M16 x 12	 | 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                                                                                | RTL Object                       | Inference      | Size (Depth x Width) | Primitives     | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|inst/s00_nodes/\s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M16 x 14	 | 
+|inst/s00_nodes/\s00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M16 x 14	 | 
+|inst/s00_nodes/\s00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 23              | RAM32M16 x 2	  | 
+|inst/s00_nodes/\s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 148             | RAM32M16 x 11	 | 
+|inst/s00_nodes/\s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory /xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 147             | RAM32M16 x 11	 | 
+|inst/s00_nodes/\s00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M16 x 12	 | 
+|inst/s00_nodes/\s00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory /xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M16 x 12	 | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 ---------------------------------------------------------------------------------
@@ -797,30 +799,30 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:01:10 . Memory (MB): peak = 3678.090 ; gain = 710.344 ; free physical = 19329 ; free virtual = 26610
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:01:10 . Memory (MB): peak = 3685.809 ; gain = 719.188 ; free physical = 16766 ; free virtual = 22166
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:11 . Memory (MB): peak = 3727.129 ; gain = 759.383 ; free physical = 19306 ; free virtual = 26586
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:12 . Memory (MB): peak = 3725.840 ; gain = 759.219 ; free physical = 16136 ; free virtual = 21535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Final Mapping	Report
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
-|Module Name                                                                                                                                                               | RTL Object                       | Inference      | Size (Depth x Width) | Primitives     | 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
-|xpm_memory_sdpram:/xpm_memory_base_inst                                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M16 x 14	 | 
-|xpm_memory_sdpram:/xpm_memory_base_inst                                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M16 x 14	 | 
-|inst/\s00_nodes/s00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 23              | RAM32M16 x 2	  | 
-|inst/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 148             | RAM32M16 x 11	 | 
-|inst/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 147             | RAM32M16 x 11	 | 
-|xpm_memory_sdpram__parameterized3:/xpm_memory_base_inst                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M16 x 12	 | 
-|xpm_memory_sdpram__parameterized3:/xpm_memory_base_inst                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M16 x 12	 | 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                                                                                | RTL Object                       | Inference      | Size (Depth x Width) | Primitives     | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|inst/s00_nodes/\s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M16 x 14	 | 
+|inst/s00_nodes/\s00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M16 x 14	 | 
+|inst/s00_nodes/\s00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 23              | RAM32M16 x 2	  | 
+|inst/s00_nodes/\s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 148             | RAM32M16 x 11	 | 
+|inst/s00_nodes/\s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory /xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 147             | RAM32M16 x 11	 | 
+|inst/s00_nodes/\s00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M16 x 12	 | 
+|inst/s00_nodes/\s00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory /xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M16 x 12	 | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -829,7 +831,7 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:01:13 . Memory (MB): peak = 3735.137 ; gain = 767.391 ; free physical = 19300 ; free virtual = 26582
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:01:14 . Memory (MB): peak = 3743.871 ; gain = 777.250 ; free physical = 15949 ; free virtual = 21349
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -847,37 +849,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:01:15 . Memory (MB): peak = 3735.137 ; gain = 767.391 ; free physical = 19300 ; free virtual = 26582
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:01:16 . Memory (MB): peak = 3743.871 ; gain = 777.250 ; free physical = 15768 ; free virtual = 21167
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:01:15 . Memory (MB): peak = 3735.137 ; gain = 767.391 ; free physical = 19300 ; free virtual = 26582
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:01:16 . Memory (MB): peak = 3743.871 ; gain = 777.250 ; free physical = 15768 ; free virtual = 21167
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:01:16 . Memory (MB): peak = 3735.137 ; gain = 767.391 ; free physical = 19299 ; free virtual = 26581
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:01:17 . Memory (MB): peak = 3743.871 ; gain = 777.250 ; free physical = 15228 ; free virtual = 20627
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:01:16 . Memory (MB): peak = 3735.137 ; gain = 767.391 ; free physical = 19299 ; free virtual = 26581
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:01:17 . Memory (MB): peak = 3743.871 ; gain = 777.250 ; free physical = 15214 ; free virtual = 20614
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:01:16 . Memory (MB): peak = 3735.137 ; gain = 767.391 ; free physical = 19299 ; free virtual = 26581
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:01:17 . Memory (MB): peak = 3743.871 ; gain = 777.250 ; free physical = 15080 ; free virtual = 20480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:01:16 . Memory (MB): peak = 3735.137 ; gain = 767.391 ; free physical = 19299 ; free virtual = 26581
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:01:17 . Memory (MB): peak = 3743.871 ; gain = 777.250 ; free physical = 15045 ; free virtual = 20444
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -908,33 +910,33 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |CARRY8   |    14|
-|2     |LUT1     |    75|
-|3     |LUT2     |   178|
-|4     |LUT3     |   252|
+|2     |LUT1     |    76|
+|3     |LUT2     |   180|
+|4     |LUT3     |   448|
 |5     |LUT4     |   193|
-|6     |LUT5     |   190|
-|7     |LUT6     |   452|
+|6     |LUT5     |   199|
+|7     |LUT6     |   448|
 |8     |MUXF7    |    32|
 |9     |RAM32M16 |    76|
 |10    |SRL16    |     3|
-|11    |SRLC32E  |    41|
+|11    |SRLC32E  |    37|
 |12    |FDR      |    20|
-|13    |FDRE     |  2103|
+|13    |FDRE     |  2496|
 |14    |FDSE     |    89|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:01:16 . Memory (MB): peak = 3735.137 ; gain = 767.391 ; free physical = 19299 ; free virtual = 26581
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:01:17 . Memory (MB): peak = 3743.871 ; gain = 777.250 ; free physical = 15043 ; free virtual = 20442
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:01:04 . Memory (MB): peak = 3735.137 ; gain = 449.324 ; free physical = 19334 ; free virtual = 26616
-Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:01:16 . Memory (MB): peak = 3735.145 ; gain = 767.391 ; free physical = 19334 ; free virtual = 26616
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:01:04 . Memory (MB): peak = 3743.871 ; gain = 446.340 ; free physical = 15043 ; free virtual = 20443
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:01:17 . Memory (MB): peak = 3743.879 ; gain = 777.250 ; free physical = 15043 ; free virtual = 20443
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.15 . Memory (MB): peak = 3735.145 ; gain = 0.000 ; free physical = 19402 ; free virtual = 26684
+Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.15 . Memory (MB): peak = 3743.879 ; gain = 0.000 ; free physical = 15632 ; free virtual = 21032
 INFO: [Netlist 29-17] Analyzing 145 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3795.332 ; gain = 0.000 ; free physical = 19304 ; free virtual = 26586
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3796.465 ; gain = 0.000 ; free physical = 15617 ; free virtual = 21031
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 99 instances were transformed.
   FDR => FDRE: 20 instances
@@ -944,13 +946,13 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 125 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:33 . Memory (MB): peak = 3795.332 ; gain = 1637.949 ; free physical = 19455 ; free virtual = 26737
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:34 . Memory (MB): peak = 3796.465 ; gain = 1637.207 ; free physical = 15758 ; free virtual = 21171
 INFO: [Common 17-600] The following parameters have non-default value.
 general.maxThreads
-INFO: [Common 17-1381] The checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_85ad_interconnect1_0_0, cache-ID = 04e3b4f0001ff5dd
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_85ad_interconnect1_0_0, cache-ID = 411abb0f828cb691
 INFO: [Coretcl 2-1174] Renamed 168 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/bd_85ad_interconnect1_0_0_synth_1/bd_85ad_interconnect1_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file bd_85ad_interconnect1_0_0_utilization_synth.rpt -pb bd_85ad_interconnect1_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  6 11:49:20 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  6 19:35:20 2021...

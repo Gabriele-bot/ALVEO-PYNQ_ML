@@ -37,24 +37,28 @@ void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_block_stat
     ap_block_state5_pp0_stage0_iter3 = !esl_seteq<1,1,1>(ap_const_boolean_1, ap_const_boolean_1);
 }
 
-void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_condition_41() {
-    ap_condition_41 = (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter0.read()) && esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0));
+void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_block_state6_pp0_stage0_iter4() {
+    ap_block_state6_pp0_stage0_iter4 = !esl_seteq<1,1,1>(ap_const_boolean_1, ap_const_boolean_1);
 }
 
-void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_condition_5857() {
-    ap_condition_5857 = (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0) && esl_seteq<1,1,1>(ap_enable_reg_pp0_iter1.read(), ap_const_logic_1));
+void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_condition_42() {
+    ap_condition_42 = (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter0.read()) && esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0));
 }
 
-void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_condition_5863() {
-    ap_condition_5863 = (esl_seteq<1,1,1>(ap_const_boolean_0, ap_block_pp0_stage0.read()) && esl_seteq<1,1,1>(ap_enable_reg_pp0_iter1.read(), ap_const_logic_1) && esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()));
+void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_condition_6047() {
+    ap_condition_6047 = (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0) && esl_seteq<1,1,1>(ap_enable_reg_pp0_iter1.read(), ap_const_logic_1));
+}
+
+void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_condition_6053() {
+    ap_condition_6053 = (esl_seteq<1,1,1>(ap_const_boolean_0, ap_block_pp0_stage0.read()) && esl_seteq<1,1,1>(ap_enable_reg_pp0_iter1.read(), ap_const_logic_1) && esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()));
 }
 
 void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_done() {
     if (((esl_seteq<1,1,1>(ap_const_logic_0, ap_start.read()) && 
           esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read())) || 
          (esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0) && 
-          esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter3.read()) && 
-          esl_seteq<1,1,1>(ap_const_lv1_1, w_index25_reg_11277_pp0_iter2_reg.read())))) {
+          esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter4.read()) && 
+          esl_seteq<1,1,1>(ap_const_lv1_1, w_index25_reg_11277_pp0_iter3_reg.read())))) {
         ap_done = ap_const_logic_1;
     } else {
         ap_done = ap_const_logic_0;
@@ -82,20 +86,22 @@ void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_idle_pp0()
     if ((esl_seteq<1,1,1>(ap_const_logic_0, ap_enable_reg_pp0_iter0.read()) && 
          esl_seteq<1,1,1>(ap_const_logic_0, ap_enable_reg_pp0_iter1.read()) && 
          esl_seteq<1,1,1>(ap_const_logic_0, ap_enable_reg_pp0_iter2.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_0, ap_enable_reg_pp0_iter3.read()))) {
+         esl_seteq<1,1,1>(ap_const_logic_0, ap_enable_reg_pp0_iter3.read()) && 
+         esl_seteq<1,1,1>(ap_const_logic_0, ap_enable_reg_pp0_iter4.read()))) {
         ap_idle_pp0 = ap_const_logic_1;
     } else {
         ap_idle_pp0 = ap_const_logic_0;
     }
 }
 
-void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_idle_pp0_0to2() {
+void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_idle_pp0_0to3() {
     if ((esl_seteq<1,1,1>(ap_const_logic_0, ap_enable_reg_pp0_iter0.read()) && 
          esl_seteq<1,1,1>(ap_const_logic_0, ap_enable_reg_pp0_iter1.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_0, ap_enable_reg_pp0_iter2.read()))) {
-        ap_idle_pp0_0to2 = ap_const_logic_1;
+         esl_seteq<1,1,1>(ap_const_logic_0, ap_enable_reg_pp0_iter2.read()) && 
+         esl_seteq<1,1,1>(ap_const_logic_0, ap_enable_reg_pp0_iter3.read()))) {
+        ap_idle_pp0_0to3 = ap_const_logic_1;
     } else {
-        ap_idle_pp0_0to2 = ap_const_logic_0;
+        ap_idle_pp0_0to3 = ap_const_logic_0;
     }
 }
 
@@ -7300,7 +7306,7 @@ void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_phi_mux_da
 }
 
 void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_phi_mux_do_init_phi_fu_11265_p6() {
-    if (esl_seteq<1,1,1>(ap_condition_5863.read(), ap_const_boolean_1)) {
+    if (esl_seteq<1,1,1>(ap_condition_6053.read(), ap_const_boolean_1)) {
         if (esl_seteq<1,1,1>(ap_const_lv1_1, w_index25_reg_11277.read())) {
             ap_phi_mux_do_init_phi_fu_11265_p6 = ap_const_lv1_1;
         } else if (esl_seteq<1,1,1>(w_index25_reg_11277.read(), ap_const_lv1_0)) {
@@ -7314,11 +7320,11 @@ void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_phi_mux_do
 }
 
 void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_phi_mux_w_index25_phi_fu_11281_p6() {
-    if (esl_seteq<1,1,1>(ap_condition_5863.read(), ap_const_boolean_1)) {
+    if (esl_seteq<1,1,1>(ap_condition_6053.read(), ap_const_boolean_1)) {
         if (esl_seteq<1,1,1>(ap_const_lv1_1, w_index25_reg_11277.read())) {
             ap_phi_mux_w_index25_phi_fu_11281_p6 = ap_const_lv1_0;
         } else if (esl_seteq<1,1,1>(w_index25_reg_11277.read(), ap_const_lv1_0)) {
-            ap_phi_mux_w_index25_phi_fu_11281_p6 = w_index_reg_105937.read();
+            ap_phi_mux_w_index25_phi_fu_11281_p6 = w_index_reg_105860.read();
         } else {
             ap_phi_mux_w_index25_phi_fu_11281_p6 = w_index25_reg_11277.read();
         }
@@ -8045,10 +8051,6 @@ void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_phi_reg_pp
 
 void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_phi_reg_pp0_iter0_data_261_V_read287_phi_reg_20024() {
     ap_phi_reg_pp0_iter0_data_261_V_read287_phi_reg_20024 =  (sc_lv<3>) ("XXX");
-}
-
-void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_ap_phi_reg_pp0_iter0_data_262_V_read288_phi_reg_20036() {
-    ap_phi_reg_pp0_iter0_data_262_V_read288_phi_reg_20036 =  (sc_lv<3>) ("XXX");
 }
 
 }

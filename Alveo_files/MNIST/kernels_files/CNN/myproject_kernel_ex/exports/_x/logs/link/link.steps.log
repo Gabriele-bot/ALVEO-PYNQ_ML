@@ -11,7 +11,7 @@ Environment variables :
 CLUTTER_IM_MODULE=xim
 CONDA_SHLVL=0
 RT_TCL_PATH=/tools/Xilinx/Vitis/2020.1/scripts/rt/base_tcl/tcl
-LD_LIBRARY_PATH=/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o:/tools/Xilinx/Vitis/2020.1/tps/lnx64/jre9.0.4/lib/:/tools/Xilinx/Vitis/2020.1/tps/lnx64/jre9.0.4/lib//server:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o:/opt/xilinx/xrt/lib:/opt/xilinx/xrt/lib:/opt/xilinx/xrt/lib:/opt/cactus/lib::/tools/Xilinx/Vitis/2020.1/bin/../lnx64/tools/dot/lib
+LD_LIBRARY_PATH=/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o:/tools/Xilinx/Vitis/2020.1/tps/lnx64/jre9.0.4/lib/:/tools/Xilinx/Vitis/2020.1/tps/lnx64/jre9.0.4/lib//server:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o:/opt/xilinx/xrt/lib:/opt/cactus/lib::/tools/Xilinx/Vitis/2020.1/bin/../lnx64/tools/dot/lib
 LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 CONDA_EXE=/home/gabri-bot/anaconda3/bin/conda
 XILINX_VITIS=/tools/Xilinx/Vitis/2020.1
@@ -24,18 +24,16 @@ XDG_MENU_PREFIX=gnome-
 RDI_PATCHROOT=
 RT_LIBPATH=/tools/Xilinx/Vitis/2020.1/scripts/rt/data
 LANG=en_US.UTF-8
-MANAGERPID=2479
 DISPLAY=:0
 RDI_INSTALLROOT=/tools/Xilinx
 OLDPWD=/tools/Xilinx/Vitis/2020.1/bin
-INVOCATION_ID=5f4e6bcbe5a74299a41d5b6a12e218ff
 GNOME_SHELL_SESSION_MODE=ubuntu
 COLORTERM=truecolor
 RDI_PREPEND_PATH=/tools/Xilinx/Vitis/2020.1/bin
+DESKTOP_AUTOSTART_ID=10f0d660075767c94a163881526676444600000025410007
 USERNAME=gabri-bot
 XDG_VTNR=2
 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
-VIRTUAL_ENV=/home/gabri-bot/TFenv
 XILINX_XRT=/opt/xilinx/xrt
 MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path
 XILINX_VIVADO=/tools/Xilinx/Vivado/2020.1
@@ -51,15 +49,14 @@ RDI_BASEROOT=/tools/Xilinx/Vitis
 QT4_IM_MODULE=xim
 TEXTDOMAINDIR=/usr/share/locale/
 RDI_INSTALLVER=2020.1
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/02b61129_6da1_43b6_8262_136008387761
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/d84c9a86_bf56_4c1d_bfc0_e2a460b8fccf
 RDI_JAVA_VERSION=9.0.4
 DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path
-PWD=/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports
+PWD=/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports
 HOME=/home/gabri-bot
 CONDA_PYTHON_EXE=/home/gabri-bot/anaconda3/bin/python
-JOURNAL_STREAM=9:51260
 TEXTDOMAIN=im-config
-SSH_AGENT_PID=2628
+SSH_AGENT_PID=2637
 QT_ACCESSIBILITY=1
 TCL_LIBRARY=/tools/Xilinx/Vitis/2020.1/tps/tcl/tcl8.5
 XDG_SESSION_TYPE=x11
@@ -74,64 +71,62 @@ _CE_CONDA=
 ISL_IOSTREAMS_RSA=/tools/Xilinx/Vitis/2020.1/tps/isl
 XDG_SESSION_DESKTOP=ubuntu
 LC_ADDRESS=it_IT.UTF-8
-DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=4081524a77f783fdcac08b9961add5ff
 LC_NUMERIC=it_IT.UTF-8
 RDI_PLATFORM=lnx64
 RDI_BINROOT=/tools/Xilinx/Vitis/2020.1/bin
 RDI_PROG=/tools/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/v++
-HDIPRELDPATH=/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o:/opt/xilinx/xrt/lib:/opt/xilinx/xrt/lib:/opt/xilinx/xrt/lib:/opt/cactus/lib::/tools/Xilinx/Vitis/2020.1/bin/../lnx64/tools/dot/lib
+HDIPRELDPATH=/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o:/opt/xilinx/xrt/lib:/opt/cactus/lib::/tools/Xilinx/Vitis/2020.1/bin/../lnx64/tools/dot/lib
 RDI_DATADIR=/tools/Xilinx/Vitis/2020.1/data
 SYNTH_COMMON=/tools/Xilinx/Vitis/2020.1/scripts/rt/data
 GTK_MODULES=gail:atk-bridge
 WINDOWPATH=2
-TERM=xterm-256color
 VTE_VERSION=5202
+TERM=xterm-256color
 SHELL=/bin/bash
 QT_IM_MODULE=xim
 XMODIFIERS=@im=ibus
 IM_CONFIG_PHASE=2
-DBUS_STARTER_BUS_TYPE=session
 XDG_CURRENT_DESKTOP=ubuntu:GNOME
 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
-GNOME_TERMINAL_SERVICE=:1.75
+GNOME_TERMINAL_SERVICE=:1.70
 HDI_APPROOT=/tools/Xilinx/Vitis/2020.1
-SHLVL=3
 XDG_SEAT=seat0
-PYTHONPATH=/opt/xilinx/xrt/python:/opt/xilinx/xrt/python:/opt/xilinx/xrt/python:
+SHLVL=3
+PYTHONPATH=/opt/xilinx/xrt/python:
 XIL_NO_OVERRIDE=0
 RDI_OPT_EXT=.o
 LC_TELEPHONE=it_IT.UTF-8
 GDMSESSION=ubuntu
 LOGNAME=gabri-bot
-DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=4081524a77f783fdcac08b9961add5ff
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 XDG_RUNTIME_DIR=/run/user/1000
 XIL_SUPPRESS_OVERRIDE_WARNINGS=1
 XAUTHORITY=/run/user/1000/gdm/Xauthority
 XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
-PATH=/tools/Xilinx/Vivado/2020.1/tps/lnx64/binutils-2.26/bin:/tools/Xilinx/Vitis/2020.1/bin/../gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2020.1/bin/../gnu/ppc64le/4.9.3/lnx64/bin:/tools/Xilinx/Vitis/2020.1/bin/../gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vivado/2020.1/tps/lnx64/gcc-6.2.0/bin:/tools/Xilinx/Vivado/2020.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2020.1/bin:/tools/Xilinx/Vitis/2020.1/tps/lnx64/jre9.0.4/bin:/opt/xilinx/xrt/bin:/home/gabri-bot/TFenv/bin:/tools/Xilinx/Vivado/2020.1/bin:/home/gabri-bot/anaconda3/condabin:/opt/cactus/bin:/home/gabri-bot/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/rocm/bin:/opt/rocm/rocprofiler/bin:/opt/rocm/opencl/bin
+PATH=/tools/Xilinx/Vivado/2020.1/tps/lnx64/binutils-2.26/bin:/tools/Xilinx/Vitis/2020.1/bin/../gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2020.1/bin/../gnu/ppc64le/4.9.3/lnx64/bin:/tools/Xilinx/Vitis/2020.1/bin/../gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vivado/2020.1/tps/lnx64/gcc-6.2.0/bin:/tools/Xilinx/Vivado/2020.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2020.1/bin:/tools/Xilinx/Vitis/2020.1/tps/lnx64/jre9.0.4/bin:/opt/xilinx/xrt/bin:/tools/Xilinx/Vitis/2020.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2020.1/gnu/arm/lin/bin:/tools/Xilinx/Vitis/2020.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2020.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2020.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2020.1/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2020.1/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2020.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2020.1/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2020.1/cardano/bin:/tools/Xilinx/Vivado/2020.1/bin:/home/gabri-bot/anaconda3/condabin:/opt/cactus/bin:/home/gabri-bot/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/rocm/bin:/opt/rocm/rocprofiler/bin:/opt/rocm/opencl/bin
 LC_IDENTIFICATION=it_IT.UTF-8
 RDI_JAVA_PLATFORM=
 HDI_PROCESSOR=x86_64
-SESSION_MANAGER=local/gabribot-X570-AORUS-ELITE:@/tmp/.ICE-unix/2532,unix/gabribot-X570-AORUS-ELITE:/tmp/.ICE-unix/2532
+SESSION_MANAGER=local/gabribot-X570-AORUS-ELITE:@/tmp/.ICE-unix/2541,unix/gabribot-X570-AORUS-ELITE:/tmp/.ICE-unix/2541
 RDI_LIBDIR=/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o
 LESSOPEN=| /usr/bin/lesspipe %s
 GTK_IM_MODULE=ibus
 LC_TIME=it_IT.UTF-8
 _=/tools/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/v++
-XILINX_CD_CONNECT_ID=33283
-XILINX_CD_SESSION=9790a905-38e1-401c-b384-51d1813dd2a8
-XILINX_RS_PORT=43027
-XILINX_RS_SESSION=eb715865-4d3b-40cb-9901-dc1c7a5e2133
+XILINX_CD_CONNECT_ID=35905
+XILINX_CD_SESSION=139f2150-358f-4f40-b774-8941b9cebcb0
+XILINX_RS_PORT=43009
+XILINX_RS_SESSION=7a01c7f2-a940-4fd9-95a2-54d57e54f0ac
 
 
 V++ command line:
 ------------------------------------------
-/tools/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/v++ -t hw --platform xilinx_u50_gen3x16_xdma_201920_3 --link myproject_kernel.xo -omyproject_kernel.xclbin --kernel_frequency 250 -j 14 
+/tools/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/v++ -t hw --platform xilinx_u50_gen3x16_xdma_201920_3 --link myproject_kernel.xo -omyproject_kernel.xclbin --connectivity.sp myproject_kernel_1.CNN_in:HBM[0:1] --connectivity.sp myproject_kernel_1.CNN_out:HBM[2:3] 
 
 FINAL PROGRAM OPTIONS
+--connectivity.sp myproject_kernel_1.CNN_in:HBM[0:1]
+--connectivity.sp myproject_kernel_1.CNN_out:HBM[2:3]
 --input_files myproject_kernel.xo
---jobs 14
---kernel_frequency 250
 --link
 --optimize 0
 --output myproject_kernel.xclbin
@@ -145,8 +140,8 @@ PARSED COMMAND LINE OPTIONS
 --link 
 myproject_kernel.xo 
 -omyproject_kernel.xclbin 
---kernel_frequency 250 
--j 14 
+--connectivity.sp myproject_kernel_1.CNN_in:HBM[0:1] 
+--connectivity.sp myproject_kernel_1.CNN_out:HBM[2:3] 
 
 EXPANDED PARAMETERS
 From application of optMap.xml: 
@@ -158,36 +153,36 @@ FINAL PLATFORM PATH
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 06 Dec 2021 11:45:28
+timestamp: 06 Dec 2021 19:31:22
 ------------------------------------------
 V++ internal step: generating xclbin xml file
-timestamp: 06 Dec 2021 11:45:28
-output: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.xml
+timestamp: 06 Dec 2021 19:31:22
+output: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.xml
 ------------------------------------------
 step: running system_link
-timestamp: 06 Dec 2021 11:45:28
-cmd: /tools/Xilinx/Vitis/2020.1/bin/system_link --xo /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.xo --xpfm /opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm --target hw --output_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int --temp_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/sys_link
+timestamp: 06 Dec 2021 19:31:22
+cmd: /tools/Xilinx/Vitis/2020.1/bin/system_link --xo /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/myproject_kernel.xo --config /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm --target hw --output_dir /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int --temp_dir /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/sys_link
 system_link status: success
 ------------------------------------------
 step: running cf2sw
-timestamp: 06 Dec 2021 11:45:34
-cmd: /tools/Xilinx/Vitis/2020.1/bin/cf2sw -sdsl /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/sdsl.dat -rtd /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/cf2sw.rtd -xclbin /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xclbin_orig.xml -o /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xclbin_orig.1.xml
+timestamp: 06 Dec 2021 19:31:28
+cmd: /tools/Xilinx/Vitis/2020.1/bin/cf2sw -sdsl /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/sdsl.dat -rtd /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/cf2sw.rtd -xclbin /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/xclbin_orig.xml -o /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/xclbin_orig.1.xml
 cf2sw status: success
 ------------------------------------------
 step: running rtd2_system_diagram
-timestamp: 06 Dec 2021 11:45:35
+timestamp: 06 Dec 2021 19:31:29
 cmd: rtd2SystemDiagram
 rtd2_system_diagram status: success
 ------------------------------------------
 step: running vpl
-timestamp: 06 Dec 2021 11:45:35
-cmd: /tools/Xilinx/Vitis/2020.1/bin/vpl -t hw -f xilinx_u50_gen3x16_xdma_201920_3 -j 14 --kernel_frequency 250 --remote_ip_cache /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/.ipcache --output_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int --log_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/logs/link --report_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link --config /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/vplConfig.ini -k /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link --no-info --iprepo /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xo/ip_repo/fastmachinelearning_kernel_myproject_kernel_1_0 --messageDb /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/run_link/vpl.pb /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/dr.bd.tcl
+timestamp: 06 Dec 2021 19:31:29
+cmd: /tools/Xilinx/Vitis/2020.1/bin/vpl -t hw -f xilinx_u50_gen3x16_xdma_201920_3 --remote_ip_cache /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/.ipcache --output_dir /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int --log_dir /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/logs/link --report_dir /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/reports/link --config /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/vplConfig.ini -k /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link --no-info --iprepo /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/xo/ip_repo/fastmachinelearning_kernel_myproject_kernel_1_0 --messageDb /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/run_link/vpl.pb /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/dr.bd.tcl
 file: vplConfig.ini
 [advanced]
 misc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}
 misc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}
 param=compiler.enablePerformanceTrace=1
-param=compiler.vppCurrentWorkingDir=/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports
+param=compiler.vppCurrentWorkingDir=/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports
 misc=BinaryName=myproject_kernel
 [connectivity]
 nk=myproject_kernel:1:myproject_kernel_1
@@ -199,50 +194,46 @@ FINAL PROGRAM OPTIONS
 --advanced.misc report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}
 --advanced.misc BinaryName=myproject_kernel
 --advanced.param compiler.enablePerformanceTrace=1
---advanced.param compiler.vppCurrentWorkingDir=/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports
---config /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/vplConfig.ini
+--advanced.param compiler.vppCurrentWorkingDir=/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports
+--config /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/vplConfig.ini
 --connectivity.nk myproject_kernel:1:myproject_kernel_1
---input_file /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/dr.bd.tcl
---iprepo /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xo/ip_repo/fastmachinelearning_kernel_myproject_kernel_1_0
---jobs 14
---kernel_frequency 250
---kernels /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/kernel_info.dat
---log_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/logs/link
---messageDb /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/run_link/vpl.pb
+--input_file /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/dr.bd.tcl
+--iprepo /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/xo/ip_repo/fastmachinelearning_kernel_myproject_kernel_1_0
+--kernels /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/kernel_info.dat
+--log_dir /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/logs/link
+--messageDb /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/run_link/vpl.pb
 --no-info
---output_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int
+--output_dir /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int
 --platform xilinx_u50_gen3x16_xdma_201920_3
---remote_ip_cache /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/.ipcache
---report_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link
+--remote_ip_cache /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/.ipcache
+--report_dir /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/reports/link
 --target hw
---temp_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link
+--temp_dir /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link
 --vivado.prop run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}
 --webtalk_flag Vitis
 
 PARSED COMMAND LINE OPTIONS
 -t hw 
 -f xilinx_u50_gen3x16_xdma_201920_3 
--j 14 
---kernel_frequency 250 
---remote_ip_cache /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/.ipcache 
---output_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int 
---log_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/logs/link 
---report_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link 
---config /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/vplConfig.ini 
--k /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/kernel_info.dat 
+--remote_ip_cache /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/.ipcache 
+--output_dir /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int 
+--log_dir /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/logs/link 
+--report_dir /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/reports/link 
+--config /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/vplConfig.ini 
+-k /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/kernel_info.dat 
 --webtalk_flag Vitis 
---temp_dir /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link 
+--temp_dir /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link 
 --no-info 
---iprepo /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xo/ip_repo/fastmachinelearning_kernel_myproject_kernel_1_0 
---messageDb /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/run_link/vpl.pb 
-/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/dr.bd.tcl 
+--iprepo /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/xo/ip_repo/fastmachinelearning_kernel_myproject_kernel_1_0 
+--messageDb /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/run_link/vpl.pb 
+/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/dr.bd.tcl 
 
 PARSED CONFIG FILE (1) OPTIONS
-file: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/vplConfig.ini
+file: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/vplConfig.ini
 advanced.misc report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10} 
 advanced.misc report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10} 
 advanced.param compiler.enablePerformanceTrace=1 
-advanced.param compiler.vppCurrentWorkingDir=/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports 
+advanced.param compiler.vppCurrentWorkingDir=/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports 
 advanced.misc BinaryName=myproject_kernel 
 connectivity.nk myproject_kernel:1:myproject_kernel_1 
 vivado.prop run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high} 
@@ -250,252 +241,268 @@ vivado.prop run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sd
 
    ------------------------------------------
    VPL internal step: generating ipirun.tcl for vivado
-   timestamp: 06 Dec 2021 11:45:40
+   timestamp: 06 Dec 2021 19:31:34
    -----------------------
    VPL internal step: source -notrace ./ipirun.tcl
    File: vpl.tcl:125
    Line computed from base: 122 offset: 3
-   timestamp: 06 December 2021 11:45:46
+   timestamp: 06 December 2021 19:31:41
    -----------------------
    VPL internal step: source scripts/_vivado_params.tcl
    File: vpl.tcl:140
    Line computed from base: 122 offset: 18
-   timestamp: 06 December 2021 11:45:46
+   timestamp: 06 December 2021 19:31:42
    -----------------------
   current step: vpl.create_project
    -----------------------
    VPL internal step: create_vivado_project
    Proc: ::ocl_util::create_vivado_project
    File: ocl_util.tcl:333
-   timestamp: 06 December 2021 11:45:46
+   timestamp: 06 December 2021 19:31:42
    -----------------------
    VPL internal step: source .local/hw_platform/tcl_hooks/prelink.tcl
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:503
-   timestamp: 06 December 2021 11:45:46
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:503
+   timestamp: 06 December 2021 19:31:42
    -----------------------
    VPL internal step: create_project -part xcu50-fsvh2104-2-e -force prj prj
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:566
-   timestamp: 06 December 2021 11:45:46
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:566
+   timestamp: 06 December 2021 19:31:42
    -----------------------
    VPL internal step: add_files .local/hw_platform/hw_bb_locked.dcp
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:599
-   timestamp: 06 December 2021 11:45:49
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:599
+   timestamp: 06 December 2021 19:31:43
    -----------------------
    VPL internal step: create_partition_def -name my_pd -module ulp
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:605
-   timestamp: 06 December 2021 11:45:49
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:605
+   timestamp: 06 December 2021 19:31:43
    -----------------------
    VPL internal step: create_reconfig_module -name my_rm -partition_def [get_partition_defs my_pd ] -top ulp
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:607
-   timestamp: 06 December 2021 11:45:49
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:607
+   timestamp: 06 December 2021 19:31:43
    -----------------------
    VPL internal step: create_pr_configuration -name config_1 -partitions [list level0_i/ulp:my_rm]
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:618
-   timestamp: 06 December 2021 11:45:49
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:618
+   timestamp: 06 December 2021 19:31:43
    -----------------------
   current step: vpl.create_bd
    -----------------------
    VPL internal step: update_ip_catalog
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1349
-   timestamp: 06 December 2021 11:45:49
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1349
+   timestamp: 06 December 2021 19:31:43
    -----------------------
-   VPL internal step: config_ip_cache -use_cache_location /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/.ipcache
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1359
-   timestamp: 06 December 2021 11:45:52
+   VPL internal step: config_ip_cache -use_cache_location /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/.ipcache
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1359
+   timestamp: 06 December 2021 19:31:47
    -----------------------
    VPL internal step: import_files -norecurse .local/hw_platform/bd/ulp.bd -of_objects my_rm
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1071
-   timestamp: 06 December 2021 11:45:52
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1071
+   timestamp: 06 December 2021 19:31:47
    -----------------------
    VPL internal step: open_bd_design -auto_upgrade [get_files ulp.bd]
    File: vpl.tcl:190
-   timestamp: 06 December 2021 11:46:04
+   timestamp: 06 December 2021 19:32:00
    -----------------------
    VPL internal step: report locked IPs
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1935
-   timestamp: 06 December 2021 11:46:46
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1935
+   timestamp: 06 December 2021 19:32:41
    -----------------------
    VPL internal step: source .local/dr.bd.tcl
    File: vpl.tcl:218
-   timestamp: 06 December 2021 11:46:46
+   timestamp: 06 December 2021 19:32:41
    -----------------------
    VPL internal step: save_bd_design
    File: vpl.tcl:226
-   timestamp: 06 December 2021 11:46:47
+   timestamp: 06 December 2021 19:32:42
    -----------------------
    VPL internal step: add_files .local/hw_platform/tcl_hooks/impl.xdc -fileset [current_fileset -constrset]
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1575
-   timestamp: 06 December 2021 11:46:47
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1575
+   timestamp: 06 December 2021 19:32:42
    -----------------------
   current step: vpl.update_bd
    -----------------------
    VPL internal step: inserting profiling and debug cores
    File: vpl.tcl:276
-   timestamp: 06 December 2021 11:46:47
+   timestamp: 06 December 2021 19:32:42
    -----------------------
    VPL internal step: assign_bd_address
    File: vpl.tcl:288
-   timestamp: 06 December 2021 11:46:47
+   timestamp: 06 December 2021 19:32:42
    -----------------------
    VPL internal step: source .local/hw_platform/tcl_hooks/postlink.tcl
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1162
-   timestamp: 06 December 2021 11:46:47
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1162
+   timestamp: 06 December 2021 19:32:42
    -----------------------
    VPL internal step: save_bd_design
    File: vpl.tcl:298
-   timestamp: 06 December 2021 11:46:47
+   timestamp: 06 December 2021 19:32:42
    -----------------------
    VPL internal step: writing address_map.xml
    File: vpl.tcl:302
-   timestamp: 06 December 2021 11:46:47
+   timestamp: 06 December 2021 19:32:42
    -----------------------
   current step: vpl.generate_target
    -----------------------
    VPL internal step: generate_target all [get_files ulp.bd]
    File: vpl.tcl:327
-   timestamp: 06 December 2021 11:46:47
+   timestamp: 06 December 2021 19:32:42
    -----------------------
    VPL internal step: config_ip_cache -export [get_ips -all -of_object [get_files ulp.bd]]
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1224
-   timestamp: 06 December 2021 11:47:21
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1224
+   timestamp: 06 December 2021 19:33:19
    -----------------------
    VPL internal step: writing user synth clock constraints in output/ulp_ooc_copy.xdc
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1402
-   timestamp: 06 December 2021 11:47:27
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1402
+   timestamp: 06 December 2021 19:33:25
    -----------------------
    VPL internal step: add_files output/ulp_ooc_copy.xdc -fileset [current_fileset -constrset]
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1406
-   timestamp: 06 December 2021 11:47:27
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1406
+   timestamp: 06 December 2021 19:33:25
    -----------------------
    VPL internal step: read_xdc output/dont_partition.xdc
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:2988
-   timestamp: 06 December 2021 11:47:27
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:2988
+   timestamp: 06 December 2021 19:33:25
    -----------------------
   current step: vpl.config_hw_runs
    -----------------------
    VPL internal step: creating vpl tcl hooks for implementation run
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:2456
-   timestamp: 06 December 2021 11:47:27
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:2456
+   timestamp: 06 December 2021 19:33:25
    -----------------------
    VPL internal step: source scripts/_vivado_report_commands.tcl
    File: vpl.tcl:362
-   timestamp: 06 December 2021 11:47:27
+   timestamp: 06 December 2021 19:33:25
    -----------------------
    VPL internal step: create_report_config -report_name impl_report_timing_summary_route_design_summary -report_type report_timing_summary -steps {route_design} -runs {impl_1} -options {-max_paths 10}
    File: scripts/_vivado_report_commands.tcl:83
-   timestamp: 06 December 2021 11:47:27
+   timestamp: 06 December 2021 19:33:26
    -----------------------
    VPL internal step: create_report_config -report_name impl_report_timing_summary_post_route_phys_opt_design_summary -report_type report_timing_summary -steps {post_route_phys_opt_design} -runs {impl_1} -options {-max_paths 10}
    File: scripts/_vivado_report_commands.tcl:83
-   timestamp: 06 December 2021 11:47:27
+   timestamp: 06 December 2021 19:33:26
    -----------------------
    VPL internal step: source scripts/_vivado_synth_props.tcl
    File: vpl.tcl:374
-   timestamp: 06 December 2021 11:47:27
+   timestamp: 06 December 2021 19:33:26
    -----------------------
    VPL internal step: source scripts/_vivado_impl_props.tcl
    File: vpl.tcl:417
-   timestamp: 06 December 2021 11:47:28
+   timestamp: 06 December 2021 19:33:27
    -----------------------
   current step: vpl.synth
    -----------------------
-   VPL internal step: launch_runs my_rm_synth_1 -jobs 14  
+   VPL internal step: launch_runs my_rm_synth_1 -jobs 8  
    File: vpl.tcl:465
-   timestamp: 06 December 2021 11:47:28
+   timestamp: 06 December 2021 19:33:27
    -----------------------
    VPL internal step: generating resource usage report 'output/resource.json'
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:3703
-   timestamp: 06 December 2021 11:52:03
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:3703
+   timestamp: 06 December 2021 19:38:12
    -----------------------
    VPL internal step: log_generated_reports for synthesis 'output/generated_reports.log'
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1749
-   timestamp: 06 December 2021 11:52:03
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1749
+   timestamp: 06 December 2021 19:38:12
    -----------------------
    VPL internal step: launched run my_rm_synth_1
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
-   timestamp: 06 December 2021 11:52:03
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
+   timestamp: 06 December 2021 19:38:12
+   -----------------------
+   VPL internal step: launched run ulp_debug_bridge_xsdbm_0_synth_1
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
+   timestamp: 06 December 2021 19:38:12
    -----------------------
    VPL internal step: launched run ulp_hmss_0_0_synth_1
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
-   timestamp: 06 December 2021 11:52:03
-   -----------------------
-   VPL internal step: launched run bd_22c0_clk_hbm_adapt_0_synth_1
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
-   timestamp: 06 December 2021 11:52:03
-   -----------------------
-   VPL internal step: launched run bd_22c0_clk_kernel_adapt_0_synth_1
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
-   timestamp: 06 December 2021 11:52:03
-   -----------------------
-   VPL internal step: launched run bd_22c0_clk_kernel_cont_adapt_0_synth_1
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
-   timestamp: 06 December 2021 11:52:03
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
+   timestamp: 06 December 2021 19:38:12
    -----------------------
    VPL internal step: launched run bd_22c0_clk_kernel2_adapt_0_synth_1
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
-   timestamp: 06 December 2021 11:52:03
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
+   timestamp: 06 December 2021 19:38:12
+   -----------------------
+   VPL internal step: launched run bd_22c0_clk_hbm_adapt_0_synth_1
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
+   timestamp: 06 December 2021 19:38:12
    -----------------------
    VPL internal step: launched run bd_22c0_clk_kernel2_cont_adapt_0_synth_1
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
-   timestamp: 06 December 2021 11:52:03
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
+   timestamp: 06 December 2021 19:38:12
+   -----------------------
+   VPL internal step: launched run bd_22c0_clk_kernel_adapt_0_synth_1
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
+   timestamp: 06 December 2021 19:38:12
+   -----------------------
+   VPL internal step: launched run bd_22c0_clk_kernel_cont_adapt_0_synth_1
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
+   timestamp: 06 December 2021 19:38:12
+   -----------------------
+   VPL internal step: launched run bd_0349_bs_switch_0_synth_1
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
+   timestamp: 06 December 2021 19:38:12
+   -----------------------
+   VPL internal step: launched run bd_85ad_interconnect0_2_0_synth_1
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
+   timestamp: 06 December 2021 19:38:12
+   -----------------------
+   VPL internal step: launched run bd_85ad_interconnect2_1_0_synth_1
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
+   timestamp: 06 December 2021 19:38:12
    -----------------------
    VPL internal step: launched run bd_85ad_interconnect1_0_0_synth_1
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
-   timestamp: 06 December 2021 11:52:03
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:1772
+   timestamp: 06 December 2021 19:38:12
    -----------------------
   current step: vpl.impl
    -----------------------
    VPL internal step: launch_runs impl_1 -to_step write_bitstream   
    File: vpl.tcl:533
-   timestamp: 06 December 2021 11:52:03
+   timestamp: 06 December 2021 19:38:12
    -----------------------
    VPL internal step: log_generated_reports for implementation 'output/generated_reports.log'
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:688
-   timestamp: 06 December 2021 12:32:06
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:688
+   timestamp: 06 December 2021 20:17:22
    -----------------------
    VPL internal step: copy implementation run (impl_1) output files
-   File: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:802
-   timestamp: 06 December 2021 12:32:06
+   File: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/.local/ocl_util.tcl:802
+   timestamp: 06 December 2021 20:17:22
    VPL internal step status: success
 vpl status: success
 ------------------------------------------
 step: running rtdgen
-timestamp: 06 Dec 2021 12:32:06
+timestamp: 06 Dec 2021 20:17:22
 cmd: /tools/Xilinx/Vitis/2020.1/bin/rtdgen
 ------------------------------------------
 step: running cf2sw to update xclbin xml and generate rtd file (runtime data)
-timestamp: 06 Dec 2021 12:32:06
-cmd: cf2sw -a /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/address_map.xml -sdsl /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/sdsl.dat -xclbin /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/xclbin_orig.xml -rtd /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.rtd -o /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.xml
+timestamp: 06 Dec 2021 20:17:22
+cmd: cf2sw -a /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/address_map.xml -sdsl /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/sdsl.dat -xclbin /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/xclbin_orig.xml -rtd /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.rtd -o /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.xml
 V++ internal step status: success
 ------------------------------------------
 step: running writeSystemDiagram to update system diagram with slr and base address info.
-timestamp: 06 Dec 2021 12:32:07
+timestamp: 06 Dec 2021 20:17:23
 cmd: writeSystemDiagram
 V++ internal step status: success
 rtdgen status: success
 ------------------------------------------
 step: running xclbinutil
-timestamp: 06 Dec 2021 12:32:07
-cmd: /tools/Xilinx/Vitis/2020.1/bin/xclbinutil --add-section BITSTREAM:RAW:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.rtd --append-section :JSON:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel_xml.rtd --add-section BUILD_METADATA:JSON:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.xml --add-section SYSTEM_METADATA:RAW:/home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u50_gen3x16_xdma_201920_3 --output /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.xclbin
+timestamp: 06 Dec 2021 20:17:23
+cmd: /tools/Xilinx/Vitis/2020.1/bin/xclbinutil --add-section BITSTREAM:RAW:/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.rtd --append-section :JSON:/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/myproject_kernel_xml.rtd --add-section BUILD_METADATA:JSON:/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/myproject_kernel_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/myproject_kernel.xml --add-section SYSTEM_METADATA:RAW:/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u50_gen3x16_xdma_201920_3 --output /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/myproject_kernel.xclbin
 xclbinutil status: success
 ------------------------------------------
 step: running xclbinutilinfo
-timestamp: 06 Dec 2021 12:32:07
-cmd: /tools/Xilinx/Vitis/2020.1/bin/xclbinutil --quiet --force --info /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.xclbin.info --input /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/myproject_kernel.xclbin
+timestamp: 06 Dec 2021 20:17:23
+cmd: /tools/Xilinx/Vitis/2020.1/bin/xclbinutil --quiet --force --info /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/myproject_kernel.xclbin.info --input /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/myproject_kernel.xclbin
 xclbinutilinfo status: success
 ------------------------------------------
 step: running generate_sc_driver
-timestamp: 06 Dec 2021 12:32:08
+timestamp: 06 Dec 2021 20:17:24
 cmd: /tools/Xilinx/Vivado/2020.1/tps/lnx64/binutils-2.26/bin
 generate_sc_driver status: success
 ------------------------------------------
 hw completed
-timestamp: 06 Dec 2021 12:32:08
+timestamp: 06 Dec 2021 20:17:24
 ------------------------------------------
 V++ internal step: generating system estimate report file
-timestamp: 06 Dec 2021 12:32:08
-output: /home/gabri-bot/Vivado_projects/myproject_kernel_ex/exports/_x/reports/link/system_estimate_myproject_kernel.xtxt
+timestamp: 06 Dec 2021 20:17:24
+output: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/reports/link/system_estimate_myproject_kernel.xtxt
 V++ internal step status: success
 ------------------------------------------
 system estimate report task completed
-timestamp: 06 Dec 2021 12:32:08
+timestamp: 06 Dec 2021 20:17:24

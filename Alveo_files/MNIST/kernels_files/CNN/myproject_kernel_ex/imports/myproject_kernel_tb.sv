@@ -5,6 +5,7 @@
 `timescale 1 ps / 1 ps
 import axi_vip_pkg::*;
 import slv_m00_axi_vip_pkg::*;
+import slv_m01_axi_vip_pkg::*;
 import control_myproject_kernel_vip_pkg::*;
 
 module myproject_kernel_tb ();
@@ -14,6 +15,8 @@ parameter integer C_S_AXI_CONTROL_ADDR_WIDTH = 12;
 parameter integer C_S_AXI_CONTROL_DATA_WIDTH = 32;
 parameter integer C_M00_AXI_ADDR_WIDTH = 64;
 parameter integer C_M00_AXI_DATA_WIDTH = 32;
+parameter integer C_M01_AXI_ADDR_WIDTH = 64;
+parameter integer C_M01_AXI_DATA_WIDTH = 32;
 
 // Control Register
 parameter KRNL_CTRL_REG_ADDR     = 32'h00000000;
@@ -72,6 +75,26 @@ wire [1-1:0] m00_axi_rvalid;
 wire [1-1:0] m00_axi_rready;
 wire [C_M00_AXI_DATA_WIDTH-1:0] m00_axi_rdata;
 wire [1-1:0] m00_axi_rlast;
+//AXI4 master interface m01_axi
+wire [1-1:0] m01_axi_awvalid;
+wire [1-1:0] m01_axi_awready;
+wire [C_M01_AXI_ADDR_WIDTH-1:0] m01_axi_awaddr;
+wire [8-1:0] m01_axi_awlen;
+wire [1-1:0] m01_axi_wvalid;
+wire [1-1:0] m01_axi_wready;
+wire [C_M01_AXI_DATA_WIDTH-1:0] m01_axi_wdata;
+wire [C_M01_AXI_DATA_WIDTH/8-1:0] m01_axi_wstrb;
+wire [1-1:0] m01_axi_wlast;
+wire [1-1:0] m01_axi_bvalid;
+wire [1-1:0] m01_axi_bready;
+wire [1-1:0] m01_axi_arvalid;
+wire [1-1:0] m01_axi_arready;
+wire [C_M01_AXI_ADDR_WIDTH-1:0] m01_axi_araddr;
+wire [8-1:0] m01_axi_arlen;
+wire [1-1:0] m01_axi_rvalid;
+wire [1-1:0] m01_axi_rready;
+wire [C_M01_AXI_DATA_WIDTH-1:0] m01_axi_rdata;
+wire [1-1:0] m01_axi_rlast;
 //AXI4LITE control signals
 wire [1-1:0] s_axi_control_awvalid;
 wire [1-1:0] s_axi_control_awready;
@@ -96,7 +119,9 @@ myproject_kernel #(
   .C_S_AXI_CONTROL_ADDR_WIDTH ( C_S_AXI_CONTROL_ADDR_WIDTH ),
   .C_S_AXI_CONTROL_DATA_WIDTH ( C_S_AXI_CONTROL_DATA_WIDTH ),
   .C_M00_AXI_ADDR_WIDTH       ( C_M00_AXI_ADDR_WIDTH       ),
-  .C_M00_AXI_DATA_WIDTH       ( C_M00_AXI_DATA_WIDTH       )
+  .C_M00_AXI_DATA_WIDTH       ( C_M00_AXI_DATA_WIDTH       ),
+  .C_M01_AXI_ADDR_WIDTH       ( C_M01_AXI_ADDR_WIDTH       ),
+  .C_M01_AXI_DATA_WIDTH       ( C_M01_AXI_DATA_WIDTH       )
 )
 inst_dut (
   .ap_clk                ( ap_clk                ),
@@ -120,6 +145,25 @@ inst_dut (
   .m00_axi_rready        ( m00_axi_rready        ),
   .m00_axi_rdata         ( m00_axi_rdata         ),
   .m00_axi_rlast         ( m00_axi_rlast         ),
+  .m01_axi_awvalid       ( m01_axi_awvalid       ),
+  .m01_axi_awready       ( m01_axi_awready       ),
+  .m01_axi_awaddr        ( m01_axi_awaddr        ),
+  .m01_axi_awlen         ( m01_axi_awlen         ),
+  .m01_axi_wvalid        ( m01_axi_wvalid        ),
+  .m01_axi_wready        ( m01_axi_wready        ),
+  .m01_axi_wdata         ( m01_axi_wdata         ),
+  .m01_axi_wstrb         ( m01_axi_wstrb         ),
+  .m01_axi_wlast         ( m01_axi_wlast         ),
+  .m01_axi_bvalid        ( m01_axi_bvalid        ),
+  .m01_axi_bready        ( m01_axi_bready        ),
+  .m01_axi_arvalid       ( m01_axi_arvalid       ),
+  .m01_axi_arready       ( m01_axi_arready       ),
+  .m01_axi_araddr        ( m01_axi_araddr        ),
+  .m01_axi_arlen         ( m01_axi_arlen         ),
+  .m01_axi_rvalid        ( m01_axi_rvalid        ),
+  .m01_axi_rready        ( m01_axi_rready        ),
+  .m01_axi_rdata         ( m01_axi_rdata         ),
+  .m01_axi_rlast         ( m01_axi_rlast         ),
   .s_axi_control_awvalid ( s_axi_control_awvalid ),
   .s_axi_control_awready ( s_axi_control_awready ),
   .s_axi_control_awaddr  ( s_axi_control_awaddr  ),
@@ -136,7 +180,17 @@ inst_dut (
   .s_axi_control_rresp   ( s_axi_control_rresp   ),
   .s_axi_control_bvalid  ( s_axi_control_bvalid  ),
   .s_axi_control_bready  ( s_axi_control_bready  ),
-  .s_axi_control_bresp   ( s_axi_control_bresp   )
+  .s_axi_control_bresp   ( s_axi_control_bresp   ),
+  .bscan_0_drck          ( 1'b0                  ),
+  .bscan_0_reset         ( 1'b0                  ),
+  .bscan_0_sel           ( 1'b0                  ),
+  .bscan_0_capture       ( 1'b0                  ),
+  .bscan_0_shift         ( 1'b0                  ),
+  .bscan_0_update        ( 1'b0                  ),
+  .bscan_0_tdi           ( 1'b0                  ),
+  .bscan_0_tck           ( 1'b0                  ),
+  .bscan_0_bscanid_en    ( 1'b0                  ),
+  .bscan_0_tdo           (                       )
 );
 
 // Master Control instantiation
@@ -193,6 +247,35 @@ slv_m00_axi_vip inst_slv_m00_axi_vip (
 slv_m00_axi_vip_slv_mem_t   m00_axi;
 slv_m00_axi_vip_slv_t   m00_axi_slv;
 
+// Slave MM VIP instantiation
+slv_m01_axi_vip inst_slv_m01_axi_vip (
+  .aclk          ( ap_clk          ),
+  .aresetn       ( ap_rst_n        ),
+  .s_axi_awvalid ( m01_axi_awvalid ),
+  .s_axi_awready ( m01_axi_awready ),
+  .s_axi_awaddr  ( m01_axi_awaddr  ),
+  .s_axi_awlen   ( m01_axi_awlen   ),
+  .s_axi_wvalid  ( m01_axi_wvalid  ),
+  .s_axi_wready  ( m01_axi_wready  ),
+  .s_axi_wdata   ( m01_axi_wdata   ),
+  .s_axi_wstrb   ( m01_axi_wstrb   ),
+  .s_axi_wlast   ( m01_axi_wlast   ),
+  .s_axi_bvalid  ( m01_axi_bvalid  ),
+  .s_axi_bready  ( m01_axi_bready  ),
+  .s_axi_arvalid ( m01_axi_arvalid ),
+  .s_axi_arready ( m01_axi_arready ),
+  .s_axi_araddr  ( m01_axi_araddr  ),
+  .s_axi_arlen   ( m01_axi_arlen   ),
+  .s_axi_rvalid  ( m01_axi_rvalid  ),
+  .s_axi_rready  ( m01_axi_rready  ),
+  .s_axi_rdata   ( m01_axi_rdata   ),
+  .s_axi_rlast   ( m01_axi_rlast   )
+);
+
+
+slv_m01_axi_vip_slv_mem_t   m01_axi;
+slv_m01_axi_vip_slv_t   m01_axi_slv;
+
 parameter NUM_AXIS_MST = 0;
 parameter NUM_AXIS_SLV = 0;
 
@@ -200,11 +283,11 @@ bit               error_found = 0;
 
 ///////////////////////////////////////////////////////////////////////////
 // Pointer for interface : m00_axi
-bit [63:0] in_r_ptr = 64'h0;
+bit [63:0] CNN_in_ptr = 64'h0;
 
 ///////////////////////////////////////////////////////////////////////////
-// Pointer for interface : m00_axi
-bit [63:0] out_r_ptr = 64'h0;
+// Pointer for interface : m01_axi
+bit [63:0] CNN_out_ptr = 64'h0;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // Backdoor fill the m00_axi memory.
@@ -214,6 +297,17 @@ function void m00_axi_fill_memory(
 );
   for (longint unsigned slot = 0; slot < length; slot++) begin
     m00_axi.mem_model.backdoor_memory_write_4byte(ptr + (slot * 4), slot);
+  end
+endfunction
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// Backdoor fill the m01_axi memory.
+function void m01_axi_fill_memory(
+  input bit [63:0] ptr,
+  input integer    length
+);
+  for (longint unsigned slot = 0; slot < length; slot++) begin
+    m01_axi.mem_model.backdoor_memory_write_4byte(ptr + (slot * 4), slot);
   end
 endfunction
 
@@ -319,6 +413,11 @@ task automatic start_vips();
   m00_axi = new("m00_axi", myproject_kernel_tb.inst_slv_m00_axi_vip.inst.IF);
   m00_axi.start_slave();
 
+  $display("///////////////////////////////////////////////////////////////////////////");
+  $display("Starting Memory slave: m01_axi");
+  m01_axi = new("m01_axi", myproject_kernel_tb.inst_slv_m01_axi_vip.inst.IF);
+  m01_axi.start_slave();
+
 endtask
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -331,6 +430,10 @@ task automatic slv_no_backpressure_wready();
   rgen = new("m00_axi_no_backpressure_wready");
   rgen.set_ready_policy(XIL_AXI_READY_GEN_NO_BACKPRESSURE);
   m00_axi.wr_driver.set_wready_gen(rgen);
+
+  rgen = new("m01_axi_no_backpressure_wready");
+  rgen.set_ready_policy(XIL_AXI_READY_GEN_NO_BACKPRESSURE);
+  m01_axi.wr_driver.set_wready_gen(rgen);
 
 endtask
 
@@ -349,6 +452,13 @@ task automatic slv_random_backpressure_wready();
   rgen.set_event_count_range(3,5);
   m00_axi.wr_driver.set_wready_gen(rgen);
 
+  rgen = new("m01_axi_random_backpressure_wready");
+  rgen.set_ready_policy(XIL_AXI_READY_GEN_RANDOM);
+  rgen.set_low_time_range(0,12);
+  rgen.set_high_time_range(1,12);
+  rgen.set_event_count_range(3,5);
+  m01_axi.wr_driver.set_wready_gen(rgen);
+
 endtask
 
 
@@ -361,6 +471,9 @@ task automatic slv_no_delay_rvalid();
   m00_axi.mem_model.set_inter_beat_gap_delay_policy(XIL_AXI_MEMORY_DELAY_FIXED);
   m00_axi.mem_model.set_inter_beat_gap(0);
 
+  m01_axi.mem_model.set_inter_beat_gap_delay_policy(XIL_AXI_MEMORY_DELAY_FIXED);
+  m01_axi.mem_model.set_inter_beat_gap(0);
+
 endtask
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -371,6 +484,9 @@ task automatic slv_random_delay_rvalid();
 
   m00_axi.mem_model.set_inter_beat_gap_delay_policy(XIL_AXI_MEMORY_DELAY_RANDOM);
   m00_axi.mem_model.set_inter_beat_gap_range(0,10);
+
+  m01_axi.mem_model.set_inter_beat_gap_delay_policy(XIL_AXI_MEMORY_DELAY_RANDOM);
+  m01_axi.mem_model.set_inter_beat_gap_range(0,10);
 
 endtask
 
@@ -423,22 +539,22 @@ task automatic check_pointer_registers(output bit error_found);
   $display("%t : Checking post reset values of pointer registers", $time);
 
   ///////////////////////////////////////////////////////////////////////////
-  //Write ID 0: in_r (0x010)
+  //Write ID 0: CNN_in (0x010)
   check_register_value(32'h010, 32, tmp_error_found);
   error_found |= tmp_error_found;
 
   ///////////////////////////////////////////////////////////////////////////
-  //Write ID 0: in_r (0x014)
+  //Write ID 0: CNN_in (0x014)
   check_register_value(32'h014, 32, tmp_error_found);
   error_found |= tmp_error_found;
 
   ///////////////////////////////////////////////////////////////////////////
-  //Write ID 1: out_r (0x01c)
+  //Write ID 1: CNN_out (0x01c)
   check_register_value(32'h01c, 32, tmp_error_found);
   error_found |= tmp_error_found;
 
   ///////////////////////////////////////////////////////////////////////////
-  //Write ID 1: out_r (0x020)
+  //Write ID 1: CNN_out (0x020)
   check_register_value(32'h020, 32, tmp_error_found);
   error_found |= tmp_error_found;
 
@@ -447,24 +563,24 @@ endtask
 task automatic set_memory_pointers();
   ///////////////////////////////////////////////////////////////////////////
   //Randomly generate memory pointers.
-  in_r_ptr = get_random_ptr();
-  out_r_ptr = get_random_ptr();
+  CNN_in_ptr = get_random_ptr();
+  CNN_out_ptr = get_random_ptr();
 
   ///////////////////////////////////////////////////////////////////////////
-  //Write ID 0: in_r (0x010) -> Randomized 4k aligned address (Global memory, lower 32 bits)
-  write_register(32'h010, in_r_ptr[31:0]);
+  //Write ID 0: CNN_in (0x010) -> Randomized 4k aligned address (Global memory, lower 32 bits)
+  write_register(32'h010, CNN_in_ptr[31:0]);
 
   ///////////////////////////////////////////////////////////////////////////
-  //Write ID 0: in_r (0x014) -> Randomized 4k aligned address (Global memory, upper 32 bits)
-  write_register(32'h014, in_r_ptr[63:32]);
+  //Write ID 0: CNN_in (0x014) -> Randomized 4k aligned address (Global memory, upper 32 bits)
+  write_register(32'h014, CNN_in_ptr[63:32]);
 
   ///////////////////////////////////////////////////////////////////////////
-  //Write ID 1: out_r (0x01c) -> Randomized 4k aligned address (Global memory, lower 32 bits)
-  write_register(32'h01c, out_r_ptr[31:0]);
+  //Write ID 1: CNN_out (0x01c) -> Randomized 4k aligned address (Global memory, lower 32 bits)
+  write_register(32'h01c, CNN_out_ptr[31:0]);
 
   ///////////////////////////////////////////////////////////////////////////
-  //Write ID 1: out_r (0x020) -> Randomized 4k aligned address (Global memory, upper 32 bits)
-  write_register(32'h020, out_r_ptr[63:32]);
+  //Write ID 1: CNN_out (0x020) -> Randomized 4k aligned address (Global memory, upper 32 bits)
+  write_register(32'h020, CNN_out_ptr[63:32]);
 
 endtask
 
@@ -472,7 +588,11 @@ task automatic backdoor_fill_memories();
 
   /////////////////////////////////////////////////////////////////////////////////////////////////
   // Backdoor fill the memory with the content.
-  m00_axi_fill_memory(in_r_ptr, LP_MAX_LENGTH);
+  m00_axi_fill_memory(CNN_in_ptr, LP_MAX_LENGTH);
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////
+  // Backdoor fill the memory with the content.
+  m01_axi_fill_memory(CNN_out_ptr, LP_MAX_LENGTH);
 
 endtask
 
@@ -485,22 +605,46 @@ function automatic bit check_kernel_result();
   /////////////////////////////////////////////////////////////////////////////////////////////////
   // Checking memory connected to m00_axi
   for (longint unsigned slot = 0; slot < LP_MAX_LENGTH; slot++) begin
-    ret_rd_value = m00_axi.mem_model.backdoor_memory_read_4byte(in_r_ptr + (slot * 4));
+    ret_rd_value = m00_axi.mem_model.backdoor_memory_read_4byte(CNN_in_ptr + (slot * 4));
     if (slot < LP_MAX_TRANSFER_LENGTH) begin
       if (ret_rd_value != (slot + 1)) begin
-        $error("Memory Mismatch: m00_axi : @0x%x : Expected 0x%x -> Got 0x%x ", in_r_ptr + (slot * 4), slot + 1, ret_rd_value);
+        $error("Memory Mismatch: m00_axi : @0x%x : Expected 0x%x -> Got 0x%x ", CNN_in_ptr + (slot * 4), slot + 1, ret_rd_value);
         error_found |= 1;
         error_counter++;
       end
     end else begin
       if (ret_rd_value != slot) begin
-        $error("Memory Mismatch: m00_axi : @0x%x : Expected 0x%x -> Got 0x%x ", in_r_ptr + (slot * 4), slot, ret_rd_value);
+        $error("Memory Mismatch: m00_axi : @0x%x : Expected 0x%x -> Got 0x%x ", CNN_in_ptr + (slot * 4), slot, ret_rd_value);
         error_found |= 1;
         error_counter++;
       end
     end
     if (error_counter > 5) begin
       $display("Too many errors found. Exiting check of m00_axi.");
+      slot = LP_MAX_LENGTH;
+    end
+  end
+  error_counter = 0;
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////
+  // Checking memory connected to m01_axi
+  for (longint unsigned slot = 0; slot < LP_MAX_LENGTH; slot++) begin
+    ret_rd_value = m01_axi.mem_model.backdoor_memory_read_4byte(CNN_out_ptr + (slot * 4));
+    if (slot < LP_MAX_TRANSFER_LENGTH) begin
+      if (ret_rd_value != (slot + 1)) begin
+        $error("Memory Mismatch: m01_axi : @0x%x : Expected 0x%x -> Got 0x%x ", CNN_out_ptr + (slot * 4), slot + 1, ret_rd_value);
+        error_found |= 1;
+        error_counter++;
+      end
+    end else begin
+      if (ret_rd_value != slot) begin
+        $error("Memory Mismatch: m01_axi : @0x%x : Expected 0x%x -> Got 0x%x ", CNN_out_ptr + (slot * 4), slot, ret_rd_value);
+        error_found |= 1;
+        error_counter++;
+      end
+    end
+    if (error_counter > 5) begin
+      $display("Too many errors found. Exiting check of m01_axi.");
       slot = LP_MAX_LENGTH;
     end
   end

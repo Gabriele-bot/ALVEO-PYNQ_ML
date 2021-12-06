@@ -973,21 +973,6 @@ _ifconv:48  %or_ln603_1 = or i1 %and_ln585, %and_ln582
 </operation>
 
 <operation id="67" st_id="4" stage="1" lat="1">
-<core>Sel</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="64" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
-<![CDATA[
-_ifconv:49  %select_ln603_2 = select i1 %or_ln603, i8 %select_ln603, i8 %select_ln603_1
-
-]]></Node>
-<StgValue><ssdm name="select_ln603_2"/></StgValue>
-</operation>
-
-<operation id="68" st_id="4" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1001,8 +986,27 @@ _ifconv:50  %or_ln603_2 = or i1 %or_ln603, %or_ln603_1
 ]]></Node>
 <StgValue><ssdm name="or_ln603_2"/></StgValue>
 </operation>
+</state>
 
-<operation id="69" st_id="4" stage="1" lat="1">
+<state id="5" st_id="5">
+
+<operation id="68" st_id="5" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="or_ln603_2" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="64" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
+<![CDATA[
+_ifconv:49  %select_ln603_2 = select i1 %or_ln603, i8 %select_ln603, i8 %select_ln603_1
+
+]]></Node>
+<StgValue><ssdm name="select_ln603_2"/></StgValue>
+</operation>
+
+<operation id="69" st_id="5" stage="1" lat="1">
 <core>Sel</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1016,9 +1020,6 @@ _ifconv:51  %tmp_data_0_V = select i1 %or_ln603_2, i8 %select_ln603_2, i8 0
 ]]></Node>
 <StgValue><ssdm name="tmp_data_0_V"/></StgValue>
 </operation>
-</state>
-
-<state id="5" st_id="5">
 
 <operation id="70" st_id="5" stage="1" lat="1">
 <core>FIFO_SRL</core>
@@ -1389,19 +1390,19 @@ _ifconv:54  br label %0
 </dataflow>
 <dataflow id="271" from="and_ln582" to="or_ln603_1" fromId="53" toId="66">
 </dataflow>
-<dataflow id="272" from="or_ln603" to="select_ln603_2" fromId="64" toId="67">
+<dataflow id="272" from="or_ln603" to="or_ln603_2" fromId="64" toId="67">
 </dataflow>
-<dataflow id="273" from="select_ln603" to="select_ln603_2" fromId="63" toId="67">
+<dataflow id="273" from="or_ln603_1" to="or_ln603_2" fromId="66" toId="67">
 </dataflow>
-<dataflow id="274" from="select_ln603_1" to="select_ln603_2" fromId="65" toId="67">
+<dataflow id="274" from="or_ln603" to="select_ln603_2" fromId="64" toId="68">
 </dataflow>
-<dataflow id="275" from="or_ln603" to="or_ln603_2" fromId="64" toId="68">
+<dataflow id="275" from="select_ln603" to="select_ln603_2" fromId="63" toId="68">
 </dataflow>
-<dataflow id="276" from="or_ln603_1" to="or_ln603_2" fromId="66" toId="68">
+<dataflow id="276" from="select_ln603_1" to="select_ln603_2" fromId="65" toId="68">
 </dataflow>
-<dataflow id="277" from="or_ln603_2" to="tmp_data_0_V" fromId="68" toId="69">
+<dataflow id="277" from="or_ln603_2" to="tmp_data_0_V" fromId="67" toId="69">
 </dataflow>
-<dataflow id="278" from="select_ln603_2" to="tmp_data_0_V" fromId="67" toId="69">
+<dataflow id="278" from="select_ln603_2" to="tmp_data_0_V" fromId="68" toId="69">
 </dataflow>
 <dataflow id="279" from="StgValue_236" to="tmp_data_0_V" fromId="236" toId="69">
 </dataflow>
@@ -1414,6 +1415,8 @@ _ifconv:54  br label %0
 <dataflow id="284" from="icmp_ln23" to="StgValue_2" fromId="11" toId="2">
 </dataflow>
 <dataflow id="285" from="tmp_2011" to="StgValue_4" fromId="24" toId="4">
+</dataflow>
+<dataflow id="286" from="or_ln603_2" to="StgValue_5" fromId="67" toId="5">
 </dataflow>
 </dataflows>
 

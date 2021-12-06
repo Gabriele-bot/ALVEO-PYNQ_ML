@@ -7,7 +7,7 @@ AcceleratorConfig:
     Output: float
 Backend: VivadoAccelerator
 Board: alveo-u50
-ClockPeriod: 4
+ClockPeriod: 3.333
 HLSConfig:
   LayerName:
     1_relu_1:
@@ -62,8 +62,8 @@ HLSConfig:
   SkipOptimizers:
   - reshape_stream
 IOType: io_stream
-KerasModel: !keras_model '/home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/keras_model.h5'
-OutputDir: /home/gabri-bot/University/Git_hub/ALVEO_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj
+KerasModel: !keras_model '/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/keras_model.h5'
+OutputDir: /home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj
 ProjectName: myproject
-Stamp: C0cB45Be
+Stamp: 0EDBDb0d
 XilinxPart: xcu50-fsvh2104-2L-e

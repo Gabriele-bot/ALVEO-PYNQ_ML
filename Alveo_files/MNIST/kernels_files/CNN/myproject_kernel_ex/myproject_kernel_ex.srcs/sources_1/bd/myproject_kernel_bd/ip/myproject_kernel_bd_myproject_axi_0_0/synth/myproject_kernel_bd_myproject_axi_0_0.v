@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:myproject_axi:1.0
-// IP Revision: 2111221957
+// IP Revision: 2112061657
 
 (* X_CORE_INFO = "myproject_axi,Vivado 2020.1" *)
 (* CHECK_LICENSE_TYPE = "myproject_kernel_bd_myproject_axi_0_0,myproject_axi,{}" *)
-(* CORE_GENERATION_INFO = "myproject_kernel_bd_myproject_axi_0_0,myproject_axi,{x_ipProduct=Vivado 2020.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=myproject_axi,x_ipVersion=1.0,x_ipCoreRevision=2111221957,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "myproject_kernel_bd_myproject_axi_0_0,myproject_axi,{x_ipProduct=Vivado 2020.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=myproject_axi,x_ipVersion=1.0,x_ipCoreRevision=2112061657,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module myproject_kernel_bd_myproject_axi_0_0 (
@@ -74,7 +74,7 @@ input wire in_r_TVALID;
 output wire in_r_TREADY;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 in_r TDATA" *)
 input wire [31 : 0] in_r_TDATA;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME in_r, TDATA_NUM_BYTES 4, TUSER_WIDTH 0, LAYERED_METADATA undef, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 250000000, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME in_r, TDATA_NUM_BYTES 4, TUSER_WIDTH 0, LAYERED_METADATA undef, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 300000000, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 in_r TLAST" *)
 input wire [0 : 0] in_r_TLAST;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 out_r TVALID" *)
@@ -83,10 +83,10 @@ output wire out_r_TVALID;
 input wire out_r_TREADY;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 out_r TDATA" *)
 output wire [31 : 0] out_r_TDATA;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME out_r, TDATA_NUM_BYTES 4, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 250000000, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME out_r, TDATA_NUM_BYTES 4, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 300000000, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 out_r TLAST" *)
 output wire [0 : 0] out_r_TLAST;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF in_r:out_r, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 250000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF in_r:out_r, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 300000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *)
 input wire ap_clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)

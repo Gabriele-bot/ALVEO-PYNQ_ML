@@ -78,8 +78,11 @@ int main(int argc, char** argv)
     char cl_platform_vendor[1001];
     char target_device_name[1001] = TARGET_DEVICE;
 
-    cl_uint* h_in_r_output = (cl_uint*)aligned_alloc(MEM_ALIGNMENT,MAX_LENGTH * sizeof(cl_uint*)); // host memory for output vector
-    cl_mem d_in_r;                         // device memory used for a vector
+    cl_uint* h_CNN_in_output = (cl_uint*)aligned_alloc(MEM_ALIGNMENT,MAX_LENGTH * sizeof(cl_uint*)); // host memory for output vector
+    cl_mem d_CNN_in;                         // device memory used for a vector
+
+    cl_uint* h_CNN_out_output = (cl_uint*)aligned_alloc(MEM_ALIGNMENT,MAX_LENGTH * sizeof(cl_uint*)); // host memory for output vector
+    cl_mem d_CNN_out;                         // device memory used for a vector
 
     if (argc != 2) {
         printf("Usage: %s xclbin\n", argv[0]);
@@ -90,7 +93,8 @@ int main(int argc, char** argv)
     h_data = (cl_uint*)aligned_alloc(MEM_ALIGNMENT,MAX_LENGTH * sizeof(cl_uint*));
     for(cl_uint i = 0; i < MAX_LENGTH; i++) {
         h_data[i]  = i;
-        h_in_r_output[i] = 0; 
+        h_CNN_in_output[i] = 0; 
+        h_CNN_out_output[i] = 0; 
 
     }
 
@@ -239,22 +243,37 @@ int main(int argc, char** argv)
 
 
     mem_ext.flags = 0;
-    d_in_r = clCreateBuffer(context,  CL_MEM_READ_WRITE | CL_MEM_EXT_PTR_XILINX,  sizeof(cl_uint) * number_of_words, &mem_ext, &err);
+    d_CNN_in = clCreateBuffer(context,  CL_MEM_READ_WRITE | CL_MEM_EXT_PTR_XILINX,  sizeof(cl_uint) * number_of_words, &mem_ext, &err);
     if (err != CL_SUCCESS) {
       std::cout << "Return code for clCreateBuffer flags=" << mem_ext.flags << ": " << err << std::endl;
     }
 
 
-    if (!(d_in_r)) {
+    mem_ext.flags = 1;
+    d_CNN_out = clCreateBuffer(context,  CL_MEM_READ_WRITE | CL_MEM_EXT_PTR_XILINX,  sizeof(cl_uint) * number_of_words, &mem_ext, &err);
+    if (err != CL_SUCCESS) {
+      std::cout << "Return code for clCreateBuffer flags=" << mem_ext.flags << ": " << err << std::endl;
+    }
+
+
+    if (!(d_CNN_in&&d_CNN_out)) {
         printf("ERROR: Failed to allocate device memory!\n");
         printf("ERROR: Test failed\n");
         return EXIT_FAILURE;
     }
 
 
-    err = clEnqueueWriteBuffer(commands, d_in_r, CL_TRUE, 0, sizeof(cl_uint) * number_of_words, h_data, 0, NULL, NULL);
+    err = clEnqueueWriteBuffer(commands, d_CNN_in, CL_TRUE, 0, sizeof(cl_uint) * number_of_words, h_data, 0, NULL, NULL);
     if (err != CL_SUCCESS) {
-        printf("ERROR: Failed to write to source array h_data: d_in_r: %d!\n", err);
+        printf("ERROR: Failed to write to source array h_data: d_CNN_in: %d!\n", err);
+        printf("ERROR: Test failed\n");
+        return EXIT_FAILURE;
+    }
+
+
+    err = clEnqueueWriteBuffer(commands, d_CNN_out, CL_TRUE, 0, sizeof(cl_uint) * number_of_words, h_data, 0, NULL, NULL);
+    if (err != CL_SUCCESS) {
+        printf("ERROR: Failed to write to source array h_data: d_CNN_out: %d!\n", err);
         printf("ERROR: Test failed\n");
         return EXIT_FAILURE;
     }
@@ -263,8 +282,8 @@ int main(int argc, char** argv)
     // Set the arguments to our compute kernel
     // cl_uint vector_length = MAX_LENGTH;
     err = 0;
-    err |= clSetKernelArg(kernel, 0, sizeof(cl_mem), &d_in_r); 
-    err |= clSetKernelArg(kernel, 1, sizeof(cl_mem), &d_in_r); // Not used in example RTL logic.
+    err |= clSetKernelArg(kernel, 0, sizeof(cl_mem), &d_CNN_in); 
+    err |= clSetKernelArg(kernel, 1, sizeof(cl_mem), &d_CNN_out); 
 
     if (err != CL_SUCCESS) {
         printf("ERROR: Failed to set kernel arguments! %d\n", err);
@@ -294,7 +313,9 @@ int main(int argc, char** argv)
     cl_event readevent;
 
     err = 0;
-    err |= clEnqueueReadBuffer( commands, d_in_r, CL_TRUE, 0, sizeof(cl_uint) * number_of_words, h_in_r_output, 0, NULL, &readevent );
+    err |= clEnqueueReadBuffer( commands, d_CNN_in, CL_TRUE, 0, sizeof(cl_uint) * number_of_words, h_CNN_in_output, 0, NULL, &readevent );
+
+    err |= clEnqueueReadBuffer( commands, d_CNN_out, CL_TRUE, 0, sizeof(cl_uint) * number_of_words, h_CNN_out_output, 0, NULL, &readevent );
 
 
     if (err != CL_SUCCESS) {
@@ -306,19 +327,31 @@ int main(int argc, char** argv)
     // Check Results
 
     for (cl_uint i = 0; i < number_of_words; i++) {
-        if ((h_data[i] + 1) != h_in_r_output[i]) {
-            printf("ERROR in myproject_kernel::m00_axi - array index %d (host addr 0x%03x) - input=%d (0x%x), output=%d (0x%x)\n", i, i*4, h_data[i], h_data[i], h_in_r_output[i], h_in_r_output[i]);
+        if ((h_data[i] + 1) != h_CNN_in_output[i]) {
+            printf("ERROR in myproject_kernel::m00_axi - array index %d (host addr 0x%03x) - input=%d (0x%x), output=%d (0x%x)\n", i, i*4, h_data[i], h_data[i], h_CNN_in_output[i], h_CNN_in_output[i]);
             check_status = 1;
         }
-      //  printf("i=%d, input=%d, output=%d\n", i,  h_in_r_input[i], h_in_r_output[i]);
+      //  printf("i=%d, input=%d, output=%d\n", i,  h_CNN_in_input[i], h_CNN_in_output[i]);
+    }
+
+
+    for (cl_uint i = 0; i < number_of_words; i++) {
+        if ((h_data[i] + 1) != h_CNN_out_output[i]) {
+            printf("ERROR in myproject_kernel::m01_axi - array index %d (host addr 0x%03x) - input=%d (0x%x), output=%d (0x%x)\n", i, i*4, h_data[i], h_data[i], h_CNN_out_output[i], h_CNN_out_output[i]);
+            check_status = 1;
+        }
+      //  printf("i=%d, input=%d, output=%d\n", i,  h_CNN_out_input[i], h_CNN_out_output[i]);
     }
 
 
     //--------------------------------------------------------------------------
     // Shutdown and cleanup
     //-------------------------------------------------------------------------- 
-    clReleaseMemObject(d_in_r);
-    free(h_in_r_output);
+    clReleaseMemObject(d_CNN_in);
+    free(h_CNN_in_output);
+
+    clReleaseMemObject(d_CNN_out);
+    free(h_CNN_out_output);
 
 
 

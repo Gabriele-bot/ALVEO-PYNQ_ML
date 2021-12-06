@@ -89,19 +89,22 @@ reg   [31:0] l_fu_300_p3;
 reg   [31:0] l_reg_597;
 wire   [7:0] trunc_ln943_fu_308_p1;
 reg   [7:0] trunc_ln943_reg_602;
-wire   [31:0] sub_ln944_fu_312_p2;
-reg   [31:0] sub_ln944_reg_607;
-wire    ap_CS_fsm_state3;
 wire   [31:0] or_ln_i_fu_419_p3;
-reg   [31:0] or_ln_i_reg_613;
+reg   [31:0] or_ln_i_reg_607;
+wire    ap_CS_fsm_state3;
 wire   [0:0] icmp_ln958_fu_427_p2;
-reg   [0:0] icmp_ln958_reg_618;
+reg   [0:0] icmp_ln958_reg_612;
+wire   [31:0] add_ln958_fu_433_p2;
+reg   [31:0] add_ln958_reg_617;
+wire   [31:0] sub_ln958_fu_439_p2;
+reg   [31:0] sub_ln958_reg_622;
 reg   [3:0] j3_0_i_reg_194;
 wire   [0:0] icmp_ln38_fu_217_p2;
 wire   [15:0] tmp_V_3_fu_228_p12;
 wire   [15:0] tmp_V_fu_268_p2;
 reg   [15:0] p_Result_s_fu_282_p4;
 wire   [31:0] p_Result_17_fu_292_p3;
+wire   [31:0] sub_ln944_fu_312_p2;
 wire   [31:0] lsb_index_fu_321_p2;
 wire   [30:0] tmp_fu_327_p4;
 wire   [4:0] trunc_ln947_fu_343_p1;
@@ -119,13 +122,11 @@ wire   [0:0] xor_ln949_fu_388_p2;
 wire   [0:0] and_ln949_fu_407_p2;
 wire   [0:0] a_fu_374_p2;
 wire   [0:0] or_ln949_fu_413_p2;
-wire   [31:0] zext_ln957_1_fu_436_p1;
-wire   [31:0] add_ln958_fu_439_p2;
-wire   [31:0] lshr_ln958_fu_444_p2;
-wire   [31:0] sub_ln958_fu_454_p2;
-wire   [63:0] m_fu_433_p1;
-wire   [63:0] zext_ln958_1_fu_459_p1;
-wire   [63:0] zext_ln958_fu_450_p1;
+wire   [31:0] zext_ln957_1_fu_448_p1;
+wire   [31:0] lshr_ln958_fu_451_p2;
+wire   [63:0] m_fu_445_p1;
+wire   [63:0] zext_ln958_1_fu_460_p1;
+wire   [63:0] zext_ln958_fu_456_p1;
 wire   [63:0] shl_ln958_fu_463_p2;
 wire   [63:0] zext_ln961_fu_476_p1;
 wire   [63:0] m_1_fu_469_p3;
@@ -242,6 +243,15 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
+    if (((icmp_ln935_reg_579 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
+        add_ln958_reg_617 <= add_ln958_fu_433_p2;
+        icmp_ln958_reg_612 <= icmp_ln958_fu_427_p2;
+        or_ln_i_reg_607[0] <= or_ln_i_fu_419_p3[0];
+        sub_ln958_reg_622 <= sub_ln958_fu_439_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
     if (((icmp_ln37_fu_205_p2 == 1'd0) & (regslice_both_out_data_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state2))) begin
         icmp_ln935_reg_579 <= icmp_ln935_fu_254_p2;
         l_reg_597 <= l_fu_300_p3;
@@ -249,14 +259,6 @@ always @ (posedge ap_clk) begin
         p_Result_16_reg_584 <= tmp_V_3_fu_228_p12[32'd15];
         tmp_V_4_reg_589 <= tmp_V_4_fu_274_p3;
         trunc_ln943_reg_602 <= trunc_ln943_fu_308_p1;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((icmp_ln935_reg_579 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
-        icmp_ln958_reg_618 <= icmp_ln958_fu_427_p2;
-        or_ln_i_reg_613[0] <= or_ln_i_fu_419_p3[0];
-        sub_ln944_reg_607 <= sub_ln944_fu_312_p2;
     end
 end
 
@@ -351,7 +353,7 @@ assign a_fu_374_p2 = (icmp_ln947_fu_337_p2 & icmp_ln947_1_fu_368_p2);
 
 assign add_ln949_fu_394_p2 = ($signed(16'd65512) + $signed(trunc_ln944_fu_317_p1));
 
-assign add_ln958_fu_439_p2 = ($signed(32'd4294967271) + $signed(sub_ln944_reg_607));
+assign add_ln958_fu_433_p2 = ($signed(32'd4294967271) + $signed(sub_ln944_fu_312_p2));
 
 assign add_ln964_fu_520_p2 = (sub_ln964_fu_515_p2 + select_ln964_fu_507_p3);
 
@@ -464,9 +466,9 @@ assign lsb_index_fu_321_p2 = ($signed(32'd4294967272) + $signed(sub_ln944_fu_312
 
 assign lshr_ln947_fu_357_p2 = 16'd65535 >> zext_ln947_fu_353_p1;
 
-assign lshr_ln958_fu_444_p2 = zext_ln957_1_fu_436_p1 >> add_ln958_fu_439_p2;
+assign lshr_ln958_fu_451_p2 = zext_ln957_1_fu_448_p1 >> add_ln958_reg_617;
 
-assign m_1_fu_469_p3 = ((icmp_ln958_reg_618[0:0] === 1'b1) ? zext_ln958_fu_450_p1 : shl_ln958_fu_463_p2);
+assign m_1_fu_469_p3 = ((icmp_ln958_reg_612[0:0] === 1'b1) ? zext_ln958_fu_456_p1 : shl_ln958_fu_463_p2);
 
 assign m_2_fu_479_p2 = (zext_ln961_fu_476_p1 + m_1_fu_469_p3);
 
@@ -474,7 +476,7 @@ assign m_5_fu_485_p4 = {{m_2_fu_479_p2[63:1]}};
 
 assign m_6_fu_495_p1 = m_5_fu_485_p4;
 
-assign m_fu_433_p1 = tmp_V_4_reg_589;
+assign m_fu_445_p1 = tmp_V_4_reg_589;
 
 assign or_ln949_fu_413_p2 = (and_ln949_fu_407_p2 | a_fu_374_p2);
 
@@ -508,13 +510,13 @@ end
 
 assign select_ln964_fu_507_p3 = ((tmp_2010_fu_499_p3[0:0] === 1'b1) ? 8'd127 : 8'd126);
 
-assign shl_ln958_fu_463_p2 = m_fu_433_p1 << zext_ln958_1_fu_459_p1;
+assign shl_ln958_fu_463_p2 = m_fu_445_p1 << zext_ln958_1_fu_460_p1;
 
 assign sub_ln944_fu_312_p2 = (32'd16 - l_reg_597);
 
 assign sub_ln947_fu_347_p2 = (5'd9 - trunc_ln947_fu_343_p1);
 
-assign sub_ln958_fu_454_p2 = (32'd25 - sub_ln944_reg_607);
+assign sub_ln958_fu_439_p2 = (32'd25 - sub_ln944_fu_312_p2);
 
 assign sub_ln964_fu_515_p2 = (8'd6 - trunc_ln943_reg_602);
 
@@ -542,16 +544,16 @@ assign xor_ln949_fu_388_p2 = (tmp_2009_fu_380_p3 ^ 1'd1);
 
 assign zext_ln947_fu_353_p1 = sub_ln947_fu_347_p2;
 
-assign zext_ln957_1_fu_436_p1 = tmp_V_4_reg_589;
+assign zext_ln957_1_fu_448_p1 = tmp_V_4_reg_589;
 
-assign zext_ln958_1_fu_459_p1 = sub_ln958_fu_454_p2;
+assign zext_ln958_1_fu_460_p1 = sub_ln958_reg_622;
 
-assign zext_ln958_fu_450_p1 = lshr_ln958_fu_444_p2;
+assign zext_ln958_fu_456_p1 = lshr_ln958_fu_451_p2;
 
-assign zext_ln961_fu_476_p1 = or_ln_i_reg_613;
+assign zext_ln961_fu_476_p1 = or_ln_i_reg_607;
 
 always @ (posedge ap_clk) begin
-    or_ln_i_reg_613[31:1] <= 31'b0000000000000000000000000000000;
+    or_ln_i_reg_607[31:1] <= 31'b0000000000000000000000000000000;
 end
 
 endmodule //Loop_2_proc

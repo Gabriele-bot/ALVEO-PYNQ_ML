@@ -1,4 +1,4 @@
-timestamp=[2021-12-06 11:17:52], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.606, duration_ms=1606, data={}
-timestamp=[2021-12-06 11:17:57], mode=APP_CREATION, duration=0:00:00.895, duration_ms=895, data={name=myproject_kernel_control, project_type=sdk, os=standalone, processor=control_microblaze_0, runtime=C/C++, platform=myproject_kernel, application_type=application}
-timestamp=[2021-12-06 11:18:04], mode=PLATFORM_GENERATION, duration=0:00:07.044, duration_ms=7044, data={name=myproject_kernel}
-timestamp=[2021-12-06 11:18:04], mode=BUILD, duration=0:00:00.168, duration_ms=168, data={name=myproject_kernel_control, configuration=Debug, clean_build=false}
+timestamp=[2021-12-06 17:01:37], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.579, duration_ms=1579, data={}
+timestamp=[2021-12-06 17:01:41], mode=APP_CREATION, duration=0:00:01.086, duration_ms=1086, data={name=myproject_kernel_control, project_type=sdk, os=standalone, processor=control_microblaze_0, runtime=C/C++, platform=myproject_kernel, application_type=application}
+timestamp=[2021-12-06 17:01:49], mode=PLATFORM_GENERATION, duration=0:00:07.094, duration_ms=7094, data={name=myproject_kernel}
+timestamp=[2021-12-06 17:01:49], mode=BUILD, duration=0:00:00.170, duration_ms=170, data={name=myproject_kernel_control, configuration=Debug, clean_build=false}
