@@ -3407,9 +3407,9 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xrcserver v.2020.1 (lin64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Mon Dec  6 20:17:24 2021</td></tr>
+<tr><td><b>Date</b></td><td>Tue Dec  7 01:34:46 2021</td></tr>
 <tr><td><b>Host</b></td><td>gabribot-X570-AORUS-ELITE running 64-bit Ubuntu 18.04.6 LTS</td></tr>
-<tr><td><b>Command</b></td><td>v++  -t hw --platform xilinx_u50_gen3x16_xdma_201920_3 --link myproject_kernel.xo -omyproject_kernel.xclbin --connectivity.sp myproject_kernel_1.CNN_in:HBM[0:1] --connectivity.sp myproject_kernel_1.CNN_out:HBM[2:3] </td></tr>
+<tr><td><b>Command</b></td><td>v++  -t hw --platform xilinx_u50_gen3x16_xdma_201920_3 --link myproject_kernel.xo -omyproject_kernel.xclbin --connectivity.sp myproject_kernel_1.CNN_in:HBM[0:1] --connectivity.sp myproject_kernel_1.CNN_out:HBM[2:3] --kernel_frequency 400 </td></tr>
 </table></center><br>
 <table class="toc" border="1"><tr><td><b>Table of Contents</b></td></tr>
 <tr><td><a href="#REPORT SUMMARY">1 REPORT SUMMARY</a></tr></td>
@@ -3420,7 +3420,7 @@ window.onload = function () { addSorting(); }
 <a name="REPORT SUMMARY"></a><h1>1 REPORT SUMMARY</h1>
 <pre>Violations found: 3
 </pre>
-<pre>Rule Specs Violated: 1
+<pre>Rule Specs Violated: 2
 </pre>
 <pre>Rules Met: 2
 </pre>
@@ -3451,13 +3451,13 @@ window.onload = function () { addSorting(); }
 </tr>
 <tr>
 <td align="left">3</td>
-<td align="left">AUTO-FREQ-SCALING-08</td>
-<td align="left">advisory</td>
+<td align="left">AUTO-FREQ-SCALING-04</td>
+<td align="left">warning</td>
 <td align="left">Medium</td>
-<td align="left">Auto frequency scaling - Higher frequency possible</td>
+<td align="left">Auto frequency scaling - Kernel timing failure</td>
 <td align="left">Accelerator.myproject_kernel.Performance</td>
-<td align="left">For clock <a href="file:///home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/dr_timing_summary.rpt">clk_kernel_in</a>, the auto scaled frequency 307.4 MHz exceeds the original specified frequency. The compiler will select the original specified frequency of 300.0 MHz.</td>
-<td align="left">The automatic frequency scaling feature allows user kernels to operate in hardware, even if at a lower frequency than intended. In this case the clock may in fact be able to run at a higher frequency than specified. You may want to consider <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2020.1;d=AUTO-FREQ-SCALING-08.html">setting</a> the clock frequency higher for better performance. The '--kernel_frequency' option is one way to control the frequency specification.</td>
+<td align="left">One or more timing paths failed timing requirements. The kernel clock clk_kernel_in has an original frequency equal to 400 MHz. The frequency has been automatically changed to 297.0 MHz to enable proper functionality. The clock Id is 0.</td>
+<td align="left">The automatic frequency scaling feature allows user kernels to operate in hardware, even if at a lower frequency than intended. <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2020.1;d=AUTO-FREQ-SCALING-04.html">This page</a> describes how to examine timing path violations.</td>
 </tr>
 <tr>
 <td align="left">4</td>
@@ -3466,7 +3466,7 @@ window.onload = function () { addSorting(); }
 <td align="left">Medium</td>
 <td align="left">Auto frequency scaling - Higher frequency possible</td>
 <td align="left">Accelerator.myproject_kernel.Performance</td>
-<td align="left">For clock <a href="file:///home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/dr_timing_summary.rpt">hbm_aclk</a>, the auto scaled frequency 471.9 MHz exceeds the original specified frequency. The compiler will select the original specified frequency of 450.0 MHz.</td>
+<td align="left">For clock <a href="file:///home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/exports/_x/link/vivado/vpl/prj/prj.runs/impl_1/dr_timing_summary.rpt">hbm_aclk</a>, the auto scaled frequency 459.3 MHz exceeds the original specified frequency. The compiler will select the original specified frequency of 450.0 MHz.</td>
 <td align="left">The automatic frequency scaling feature allows user kernels to operate in hardware, even if at a lower frequency than intended. In this case the clock may in fact be able to run at a higher frequency than specified. You may want to consider <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2020.1;d=AUTO-FREQ-SCALING-08.html">setting</a> the clock frequency higher for better performance. The '--kernel_frequency' option is one way to control the frequency specification.</td>
 </tr>
 </table>
@@ -3488,16 +3488,6 @@ window.onload = function () { addSorting(); }
 <th align="left" width="320">Rule Description</th>
 </tr>
 <tr>
-<td align="left">1</td>
-<td align="left">SYSLINK-1</td>
-<td align="left">system_link Top Level BD Creation</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">Created top level block diagram design dr.bd.tcl</td>
-<td align="left"></td>
-</tr>
-<tr>
 <td align="left">5</td>
 <td align="left">PLATFORM-CLOCK-DOMAINS-01</td>
 <td align="left">Runtime controllable clock domains - Achieved clock frequency (MHz)</td>
@@ -3506,11 +3496,21 @@ window.onload = function () { addSorting(); }
 <td align="left"></td>
 <td align="left">The compiler selected the following frequencies for the runtime controllable kernel clock(s) and scalable system clock(s): 
 Kernel: clk_kernel2_in = 500.0 MHz 
-Kernel: clk_kernel_in = 300.0 MHz 
+Kernel: clk_kernel_in = 297.0 MHz 
 System: hbm_aclk = 450.0 MHz 
 Scalable clock clk_kernel2_in (Id = 1) is used for rtl kernels. This design has 0 rtl kernel(s).
 Scalable clock clk_kernel_in (Id = 0) is used for hls kernels. This design has 0 hls kernel(s).</td>
 <td align="left"><html> Kernel clocks (and system clocks for some platforms) are scalable; they can preserve functionality at the cost of performance by running at a lower frequency than requested. To be scalable, a clock must be driven by an MMCM where the control registers for the MMCM can be set by the runtime over AXI4-Lite. This item shows the final runtime controlled frequencies for the scalable clocks.</html></td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">SYSLINK-1</td>
+<td align="left">system_link Top Level BD Creation</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">Created top level block diagram design dr.bd.tcl</td>
+<td align="left"></td>
 </tr>
 </table>
 <br>

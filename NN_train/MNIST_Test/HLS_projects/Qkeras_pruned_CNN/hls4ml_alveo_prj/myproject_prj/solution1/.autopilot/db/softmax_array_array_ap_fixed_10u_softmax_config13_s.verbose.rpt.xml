@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'softmax_array_array_ap_fixed_10u_softmax_config13_s'" level="0">
-<item name = "Date">Mon Dec  6 16:57:14 2021
+<item name = "Date">Tue Dec  7 00:26:24 2021
 </item>
 <item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.33 ns, 2.808 ns, 0.42 ns</column>
+<column name="ap_clk">2.00 ns, 1.650 ns, 0.25 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">7, 7, 23.331 ns, 23.331 ns, 7, 7, none</column>
+<column name="">12, 12, 24.000 ns, 24.000 ns, 12, 12, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_softmax_stable_array_array_softmax_config13_s_fu_58">softmax_stable_array_array_softmax_config13_s, 7, 7, 23.331 ns, 23.331 ns, 1, 1, function</column>
+<column name="grp_softmax_stable_array_array_softmax_config13_s_fu_58">softmax_stable_array_array_softmax_config13_s, 12, 12, 24.000 ns, 24.000 ns, 1, 1, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -50,10 +50,10 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 6, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">6, 10, 1221, 1606, -</column>
+<column name="Instance">6, 10, 2440, 1846, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 413, -</column>
-<column name="Register">-, -, 9, -, -</column>
+<column name="Multiplexer">-, -, -, 428, -</column>
+<column name="Register">-, -, 14, -, -</column>
 <specialColumn name="Available SLR">1344, 2976, 871680, 435840, 320</specialColumn>
 <specialColumn name="Utilization SLR (%)">~0, ~0, ~0, ~0, 0</specialColumn>
 <specialColumn name="Available">2688, 5952, 1743360, 871680, 640</specialColumn>
@@ -64,7 +64,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="grp_softmax_stable_array_array_softmax_config13_s_fu_58">softmax_stable_array_array_softmax_config13_s, 6, 10, 1221, 1606, 0</column>
+<column name="grp_softmax_stable_array_array_softmax_config13_s_fu_58">softmax_stable_array_array_softmax_config13_s, 6, 10, 2440, 1846, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -82,13 +82,13 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state13">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state1_ignore_call20">or, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state8">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">44, 9, 1, 9</column>
+<column name="ap_NS_fsm">59, 14, 1, 14</column>
 <column name="ap_done">9, 2, 1, 2</column>
 <column name="data_V_data_0_V_blk_n">9, 2, 1, 2</column>
 <column name="data_V_data_0_V_read">9, 2, 1, 2</column>
@@ -134,7 +134,7 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">8, 0, 8, 0</column>
+<column name="ap_CS_fsm">13, 0, 13, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 </table>
 </item>

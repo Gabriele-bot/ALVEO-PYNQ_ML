@@ -7,7 +7,7 @@ AcceleratorConfig:
     Output: float
 Backend: VivadoAccelerator
 Board: alveo-u50
-ClockPeriod: 3.333
+ClockPeriod: 2
 HLSConfig:
   LayerName:
     1_relu_1:
@@ -65,5 +65,5 @@ IOType: io_stream
 KerasModel: !keras_model '/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/keras_model.h5'
 OutputDir: /home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj
 ProjectName: myproject
-Stamp: 0EDBDb0d
+Stamp: Ff5bee0E
 XilinxPart: xcu50-fsvh2104-2L-e

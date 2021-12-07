@@ -737,7 +737,7 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.ADDR_WIDTH {64} \
    CONFIG.DATA_WIDTH {32} \
-   CONFIG.FREQ_HZ {300000000} \
+   CONFIG.FREQ_HZ {250000000} \
    CONFIG.HAS_BRESP {0} \
    CONFIG.HAS_BURST {0} \
    CONFIG.HAS_CACHE {0} \
@@ -756,7 +756,7 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.ADDR_WIDTH {64} \
    CONFIG.DATA_WIDTH {32} \
-   CONFIG.FREQ_HZ {300000000} \
+   CONFIG.FREQ_HZ {250000000} \
    CONFIG.HAS_BRESP {0} \
    CONFIG.HAS_BURST {0} \
    CONFIG.HAS_CACHE {0} \
@@ -778,7 +778,7 @@ proc create_root_design { parentCell } {
    CONFIG.AWUSER_WIDTH {0} \
    CONFIG.BUSER_WIDTH {0} \
    CONFIG.DATA_WIDTH {32} \
-   CONFIG.FREQ_HZ {300000000} \
+   CONFIG.FREQ_HZ {250000000} \
    CONFIG.HAS_BRESP {1} \
    CONFIG.HAS_BURST {0} \
    CONFIG.HAS_CACHE {0} \
@@ -805,11 +805,19 @@ proc create_root_design { parentCell } {
 
 
   # Create ports
-  set ap_clk [ create_bd_port -dir I -type clk -freq_hz 300000000 ap_clk ]
+  set ap_clk [ create_bd_port -dir I -type clk -freq_hz 250000000 ap_clk ]
   set_property -dict [ list \
    CONFIG.ASSOCIATED_BUSIF {m00_axi:m01_axi:s_axi_control} \
  ] $ap_clk
   set ap_rst_n [ create_bd_port -dir I -type rst ap_rst_n ]
+
+  # Create instance: axis_data_fifo_0, and set properties
+  set axis_data_fifo_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:2.0 axis_data_fifo_0 ]
+  set_property -dict [ list \
+   CONFIG.FIFO_DEPTH {32768} \
+   CONFIG.HAS_TLAST {1} \
+   CONFIG.TDATA_NUM_BYTES {4} \
+ ] $axis_data_fifo_0
 
   # Create instance: control
   create_hier_cell_control [current_bd_instance .] control
@@ -820,24 +828,21 @@ proc create_root_design { parentCell } {
   # Create instance: dma_1
   create_hier_cell_dma_1 [current_bd_instance .] dma_1
 
-  # Create instance: myproject_axi_0, and set properties
-  set myproject_axi_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:myproject_axi:1.0 myproject_axi_0 ]
-
   # Create interface connections
+  connect_bd_intf_net -intf_net axis_data_fifo_0_M_AXIS [get_bd_intf_pins axis_data_fifo_0/M_AXIS] [get_bd_intf_pins dma_1/s00_axis]
   connect_bd_intf_net -intf_net bscan_0 [get_bd_intf_ports bscan_0] [get_bd_intf_pins control/bscan_0]
   connect_bd_intf_net -intf_net control_m00_cmd [get_bd_intf_pins control/m00_cmd] [get_bd_intf_pins dma_0/s00_cmd]
   connect_bd_intf_net -intf_net control_m01_cmd [get_bd_intf_pins control/m01_cmd] [get_bd_intf_pins dma_1/s00_cmd]
   connect_bd_intf_net -intf_net dma_0_m00_axi [get_bd_intf_ports m00_axi] [get_bd_intf_pins dma_0/m00_axi]
-  connect_bd_intf_net -intf_net dma_0_m00_axis [get_bd_intf_pins dma_0/m00_axis] [get_bd_intf_pins myproject_axi_0/in_r]
+  connect_bd_intf_net -intf_net dma_0_m00_axis [get_bd_intf_pins axis_data_fifo_0/S_AXIS] [get_bd_intf_pins dma_0/m00_axis]
   connect_bd_intf_net -intf_net dma_0_m00_sts [get_bd_intf_pins control/s00_sts] [get_bd_intf_pins dma_0/m00_sts]
   connect_bd_intf_net -intf_net dma_1_m00_axi [get_bd_intf_ports m01_axi] [get_bd_intf_pins dma_1/m00_axi]
   connect_bd_intf_net -intf_net dma_1_m00_sts [get_bd_intf_pins control/s01_sts] [get_bd_intf_pins dma_1/m00_sts]
-  connect_bd_intf_net -intf_net myproject_axi_0_out_r [get_bd_intf_pins dma_1/s00_axis] [get_bd_intf_pins myproject_axi_0/out_r]
   connect_bd_intf_net -intf_net s_axi_control [get_bd_intf_ports s_axi_control] [get_bd_intf_pins control/s_axi_control]
 
   # Create port connections
-  connect_bd_net -net ap_clk_1 [get_bd_ports ap_clk] [get_bd_pins control/ap_clk] [get_bd_pins dma_0/ap_clk] [get_bd_pins dma_1/ap_clk] [get_bd_pins myproject_axi_0/ap_clk]
-  connect_bd_net -net ap_rst_n [get_bd_ports ap_rst_n] [get_bd_pins control/ap_rst_n] [get_bd_pins dma_0/ap_rst_n] [get_bd_pins dma_1/ap_rst_n] [get_bd_pins myproject_axi_0/ap_rst_n]
+  connect_bd_net -net ap_clk [get_bd_ports ap_clk] [get_bd_pins axis_data_fifo_0/s_axis_aclk] [get_bd_pins control/ap_clk] [get_bd_pins dma_0/ap_clk] [get_bd_pins dma_1/ap_clk]
+  connect_bd_net -net ap_rst_n [get_bd_ports ap_rst_n] [get_bd_pins axis_data_fifo_0/s_axis_aresetn] [get_bd_pins control/ap_rst_n] [get_bd_pins dma_0/ap_rst_n] [get_bd_pins dma_1/ap_rst_n]
 
   # Create address segments
   assign_bd_address -offset 0x00000000 -range 0x00001000 -target_address_space [get_bd_addr_spaces control/microblaze_0/Data] [get_bd_addr_segs control/microblaze_0_exchange_memory/axi_bram_ctrl_0/S_AXI/Mem0] -force

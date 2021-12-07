@@ -179,7 +179,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>1a774c58</spirit:value>
+            <spirit:value>9a8ce84d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -198,7 +198,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>01f6e21e</spirit:value>
+            <spirit:value>afac84d7</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -217,7 +217,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>0b9501bc</spirit:value>
+            <spirit:value>6b404401</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -236,7 +236,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>8f45dc7d</spirit:value>
+            <spirit:value>bf1f3cf3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -570,6 +570,10 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/verilog/myproject_axi_mul_12s_12s_24_2_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/myproject_axi_mux_104_16_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
@@ -835,6 +839,11 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/myproject_axi_fpext_32ns_64_2_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/myproject_axi_mul_12s_12s_24_2_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1125,6 +1134,10 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/myproject_axi_mul_12s_12s_24_2_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/vhdl/myproject_axi_mux_104_16_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
@@ -1247,7 +1260,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/myproject_axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_049d585c</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_34205f3d</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1379,6 +1392,11 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/myproject_axi_fpext_32ns_64_2_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/myproject_axi_mul_12s_12s_24_2_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1600,7 +1618,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>clk_period</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.clk_period" spirit:order="2">3.333</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.clk_period" spirit:order="2">2</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>machine</spirit:name>
@@ -1612,7 +1630,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">3163</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">4705</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
@@ -1629,15 +1647,15 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Myproject_axi</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2112061657</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2021-12-06T15:58:01Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2112070027</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-12-06T23:27:13Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="0803d8d6"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="8714cba7"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1309cf26"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="c499dfd9"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="4c4c7f4a"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="8227f202"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

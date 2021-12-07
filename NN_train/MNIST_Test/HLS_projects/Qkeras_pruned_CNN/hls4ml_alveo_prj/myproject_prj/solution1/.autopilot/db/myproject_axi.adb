@@ -1445,7 +1445,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>2.48</m_delay>
+          <m_delay>1.64</m_delay>
           <m_topoIndex>25</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -4003,8 +4003,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>3163</mMinLatency>
-        <mMaxLatency>3164</mMaxLatency>
+        <mMinLatency>4705</mMinLatency>
+        <mMaxLatency>4705</mMaxLatency>
         <mIsDfPipe>1</mIsDfPipe>
         <mDfPipe class_id="23" tracking_level="1" version="0" object_id="_368">
           <port_list class_id="24" tracking_level="0" version="0">
@@ -7529,11 +7529,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>246</second>
+              <second>411</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>655</second>
+              <second>663</second>
             </item>
           </second>
         </item>
@@ -7544,11 +7544,11 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>179</second>
+              <second>331</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1028</second>
+              <second>1036</second>
             </item>
           </second>
         </item>
@@ -7567,11 +7567,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>39871</second>
+              <second>67565</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>126186</second>
+              <second>126514</second>
             </item>
           </second>
         </item>

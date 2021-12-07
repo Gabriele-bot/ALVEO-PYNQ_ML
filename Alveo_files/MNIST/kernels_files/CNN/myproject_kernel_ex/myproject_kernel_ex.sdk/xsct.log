@@ -2,7 +2,7 @@ Starting vitis. This could take few seconds...WARNING: Using incubator modules: 
 done
 INFO: [Hsi 55-2053] elapsed time for repository (/tools/Xilinx/Vitis/2020.1/data/embeddedsw) loading 0 seconds
 Opening the hardware design, this may take few seconds.
-Gtk-Message: 17:01:37.954: Failed to load module "canberra-gtk-module"
+Gtk-Message: 00:33:30.454: Failed to load module "canberra-gtk-module"
 /tools/Xilinx/Vitis/2020.1/gnu/microblaze/lin
 Building the BSP Library for domain  - mydomain on processor control_microblaze_0
 Running Make include in control_microblaze_0/libsrc/gpio_v4_6/src
@@ -67,8 +67,8 @@ Compiling bram
 
 Finished building libraries
 
-17:01:42 **** Build of project myproject_kernel ****
-buildplatform.sh 43671 myproject_kernel  
+00:33:34 **** Build of project myproject_kernel ****
+buildplatform.sh 42455 myproject_kernel  
 Building the BSP Library for domain  - mydomain on processor control_microblaze_0
 Running Make include in control_microblaze_0/libsrc/gpio_v4_6/src
 
@@ -132,9 +132,9 @@ Compiling bram
 Finished building libraries
 
 
-17:01:49 Build Finished (took 7s.72ms)
+00:33:41 Build Finished (took 7s.73ms)
 
-17:01:49 **** Build of configuration Debug for project myproject_kernel_control ****
+00:33:41 **** Build of configuration Debug for project myproject_kernel_control ****
 make all 
 Building file: ../src/kernel_control.c
 Invoking: MicroBlaze gcc compiler
@@ -157,7 +157,7 @@ mb-size myproject_kernel_control.elf  |tee "myproject_kernel_control.elf.size"
 Finished building: myproject_kernel_control.elf.size
  
 
-17:01:49 Build Finished (took 163ms)
+00:33:41 Build Finished (took 161ms)
 
 
 

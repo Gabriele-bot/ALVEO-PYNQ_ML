@@ -14,9 +14,9 @@ preplace port ap_rst_n -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
 preplace inst control -pg 1 -lvl 1 -x 190 -y 310 -defaultsOSRD
 preplace inst dma_0 -pg 1 -lvl 2 -x 480 -y 100 -defaultsOSRD
 preplace inst dma_1 -pg 1 -lvl 2 -x 480 -y 290 -defaultsOSRD
-preplace inst myproject_axi_0 -pg 1 -lvl 1 -x 190 -y 90 -defaultsOSRD
-preplace netloc ap_rst_n 1 0 2 30 180 360
-preplace netloc ap_clk_1 1 0 2 20 170 350
+preplace inst axis_data_fifo_0 -pg 1 -lvl 1 -x 190 -y 90 -defaultsOSRD
+preplace netloc ap_clk 1 0 2 30 170 350
+preplace netloc ap_rst_n 1 0 2 20 180 360
 preplace netloc bscan_0 1 0 1 NJ 260
 preplace netloc control_m00_cmd 1 1 1 340 90n
 preplace netloc dma_0_m00_axi 1 2 1 NJ 80
@@ -25,12 +25,13 @@ preplace netloc control_m01_cmd 1 1 1 330 280n
 preplace netloc dma_1_m00_axi 1 2 1 NJ 270
 preplace netloc dma_1_m00_sts 1 0 3 50 200 NJ 200 600
 preplace netloc s_axi_control 1 0 1 NJ 320
-preplace netloc myproject_axi_0_out_r 1 1 1 330 90n
+preplace netloc axis_data_fifo_0_M_AXIS 1 1 1 330 90n
 preplace netloc dma_0_m00_axis 1 0 3 20 10 NJ 10 600
 levelinfo -pg 1 0 190 480 620
 pagesize -pg 1 -db -bbox -sgen -150 0 730 410
 "
 }
 {
-   "da_bram_cntlr_cnt":"3"
+   "da_bram_cntlr_cnt":"3",
+   "da_clkrst_cnt":"1"
 }

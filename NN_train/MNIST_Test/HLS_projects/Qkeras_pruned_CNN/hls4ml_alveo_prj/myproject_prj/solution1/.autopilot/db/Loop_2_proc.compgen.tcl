@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 1127
+set id 1138
 set name myproject_axi_mux_104_16_1_1
 set corename simcore_mux
 set op mux
@@ -132,7 +132,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 1129 \
+    id 1140 \
     name out_data \
     reset_level 1 \
     sync_rst true \
@@ -151,7 +151,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 1130 \
+    id 1141 \
     name out_last_V \
     reset_level 1 \
     sync_rst true \
@@ -169,7 +169,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1131 \
+    id 1142 \
     name p_read \
     type other \
     dir I \
@@ -184,7 +184,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1132 \
+    id 1143 \
     name tmp_data_V_0 \
     type other \
     dir I \
@@ -199,7 +199,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1133 \
+    id 1144 \
     name tmp_data_V_1 \
     type other \
     dir I \
@@ -214,7 +214,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1134 \
+    id 1145 \
     name tmp_data_V_2 \
     type other \
     dir I \
@@ -229,7 +229,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1135 \
+    id 1146 \
     name tmp_data_V_3 \
     type other \
     dir I \
@@ -244,7 +244,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1136 \
+    id 1147 \
     name tmp_data_V_4 \
     type other \
     dir I \
@@ -259,7 +259,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1137 \
+    id 1148 \
     name tmp_data_V_5 \
     type other \
     dir I \
@@ -274,7 +274,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1138 \
+    id 1149 \
     name tmp_data_V_6 \
     type other \
     dir I \
@@ -289,7 +289,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1139 \
+    id 1150 \
     name tmp_data_V_7 \
     type other \
     dir I \
@@ -304,7 +304,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1140 \
+    id 1151 \
     name tmp_data_V_8 \
     type other \
     dir I \
@@ -319,7 +319,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1141 \
+    id 1152 \
     name tmp_data_V_9 \
     type other \
     dir I \
@@ -396,7 +396,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 
 
 # RegSlice definition:
-set ID 1142
+set ID 1153
 set RegSliceName regslice_core
 set RegSliceInstName regslice_core_U
 set CoreName ap_simcore_regslice_core

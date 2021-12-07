@@ -9,8 +9,8 @@
 <ProductFamily>virtexuplus</ProductFamily>
 <Part>xcu50-fsvh2104-2L-e</Part>
 <TopModelName>shift_line_buffer_array_ap_fixed_16u_config9_s</TopModelName>
-<TargetClockPeriod>3.33</TargetClockPeriod>
-<ClockUncertainty>0.42</ClockUncertainty>
+<TargetClockPeriod>2.00</TargetClockPeriod>
+<ClockUncertainty>0.25</ClockUncertainty>
 <TargetInitiationInterval>4294967295</TargetInitiationInterval>
 </UserAssignments>
 

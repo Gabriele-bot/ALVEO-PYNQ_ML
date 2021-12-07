@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'myproject'
 ================================================================
-* Date:           Mon Dec  6 16:57:18 2021
+* Date:           Tue Dec  7 00:26:28 2021
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        myproject_prj
@@ -20,17 +20,17 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  | 3.33 ns | 2.916 ns |   0.42 ns  |
+    |ap_clk  | 2.00 ns | 1.750 ns |   0.25 ns  |
     +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+-----------+-----------+------+------+----------+
-    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
-    |   min   |   max   |    min    |    max    |  min |  max |   Type   |
-    +---------+---------+-----------+-----------+------+------+----------+
-    |     3160|     3161| 10.532 us | 10.536 us |  3139|  3139| dataflow |
-    +---------+---------+-----------+-----------+------+------+----------+
+    +---------+---------+----------+----------+------+------+----------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline |
+    |   min   |   max   |    min   |    max   |  min |  max |   Type   |
+    +---------+---------+----------+----------+------+------+----------+
+    |     3950|     3951| 7.900 us | 7.902 us |  3923|  3923| dataflow |
+    +---------+---------+----------+----------+------+------+----------+
 
     + Detail: 
         * Instance: 
@@ -38,16 +38,16 @@
         |                                                       |                                                      |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
         |                        Instance                       |                        Module                        |   min   |   max   |    min    |    max    |  min |  max |   Type   |
         +-------------------------------------------------------+------------------------------------------------------+---------+---------+-----------+-----------+------+------+----------+
-        |dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_U0  |dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_s  |       33|       34|  0.110 us |  0.113 us |    33|    34|   none   |
-        |conv_2d_cl_array_array_ap_fixed_16u_config6_U0         |conv_2d_cl_array_array_ap_fixed_16u_config6_s         |     1185|     1185|  3.950 us |  3.950 us |  1185|  1185|   none   |
-        |softmax_array_array_ap_fixed_10u_softmax_config13_U0   |softmax_array_array_ap_fixed_10u_softmax_config13_s   |        7|        7| 23.331 ns | 23.331 ns |     7|     7|   none   |
-        |relu_array_array_ap_fixed_16u_relu_config4_U0          |relu_array_array_ap_fixed_16u_relu_config4_s          |      679|      679|  2.263 us |  2.263 us |   679|   679|   none   |
-        |relu_array_array_ap_fixed_16u_relu_config8_U0          |relu_array_array_ap_fixed_16u_relu_config8_s          |      124|      124|  0.413 us |  0.413 us |   124|   124|   none   |
-        |pooling2d_cl_array_array_ap_fixed_16u_config5_U0       |pooling2d_cl_array_array_ap_fixed_16u_config5_s       |      679|      679|  2.263 us |  2.263 us |   679|   679|   none   |
-        |pooling2d_cl_array_array_ap_fixed_16u_config9_U0       |pooling2d_cl_array_array_ap_fixed_16u_config9_s       |      124|      124|  0.413 us |  0.413 us |   124|   124|   none   |
-        |conv_2d_cl_array_array_ap_fixed_16u_config2_U0         |conv_2d_cl_array_array_ap_fixed_16u_config2_s         |     3138|     3138| 10.459 us | 10.459 us |  3138|  3138|   none   |
-        |linear_array_array_ap_fixed_16u_linear_config3_U0      |linear_array_array_ap_fixed_16u_linear_config3_s      |      678|      678|  2.260 us |  2.260 us |   678|   678|   none   |
-        |linear_array_array_ap_fixed_16u_linear_config7_U0      |linear_array_array_ap_fixed_16u_linear_config7_s      |      123|      123|  0.410 us |  0.410 us |   123|   123|   none   |
+        |dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_U0  |dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_s  |       35|       36| 70.000 ns | 72.000 ns |    35|    36|   none   |
+        |conv_2d_cl_array_array_ap_fixed_16u_config6_U0         |conv_2d_cl_array_array_ap_fixed_16u_config6_s         |     1523|     1523|  3.046 us |  3.046 us |  1523|  1523|   none   |
+        |softmax_array_array_ap_fixed_10u_softmax_config13_U0   |softmax_array_array_ap_fixed_10u_softmax_config13_s   |       12|       12| 24.000 ns | 24.000 ns |    12|    12|   none   |
+        |relu_array_array_ap_fixed_16u_relu_config4_U0          |relu_array_array_ap_fixed_16u_relu_config4_s          |      679|      679|  1.358 us |  1.358 us |   679|   679|   none   |
+        |relu_array_array_ap_fixed_16u_relu_config8_U0          |relu_array_array_ap_fixed_16u_relu_config8_s          |      124|      124|  0.248 us |  0.248 us |   124|   124|   none   |
+        |pooling2d_cl_array_array_ap_fixed_16u_config5_U0       |pooling2d_cl_array_array_ap_fixed_16u_config5_s       |      680|      680|  1.360 us |  1.360 us |   680|   680|   none   |
+        |pooling2d_cl_array_array_ap_fixed_16u_config9_U0       |pooling2d_cl_array_array_ap_fixed_16u_config9_s       |      125|      125|  0.250 us |  0.250 us |   125|   125|   none   |
+        |conv_2d_cl_array_array_ap_fixed_16u_config2_U0         |conv_2d_cl_array_array_ap_fixed_16u_config2_s         |     3922|     3922|  7.844 us |  7.844 us |  3922|  3922|   none   |
+        |linear_array_array_ap_fixed_16u_linear_config3_U0      |linear_array_array_ap_fixed_16u_linear_config3_s      |      678|      678|  1.356 us |  1.356 us |   678|   678|   none   |
+        |linear_array_array_ap_fixed_16u_linear_config7_U0      |linear_array_array_ap_fixed_16u_linear_config7_s      |      123|      123|  0.246 us |  0.246 us |   123|   123|   none   |
         |linear_array_array_ap_fixed_10u_linear_config12_U0     |linear_array_array_ap_fixed_10u_linear_config12_s     |        0|        0|    0 ns   |    0 ns   |     1|     1| function |
         +-------------------------------------------------------+------------------------------------------------------+---------+---------+-----------+-----------+------+------+----------+
 
@@ -66,20 +66,20 @@
 |DSP                  |        -|      -|        -|       -|    -|
 |Expression           |        -|      -|        0|       2|    -|
 |FIFO                 |       80|      -|    13108|   12896|    -|
-|Instance             |      284|     10|    26762|  113279|    -|
+|Instance             |      284|     10|    54456|  113607|    -|
 |Memory               |        -|      -|        -|       -|    -|
 |Multiplexer          |        -|      -|        -|       9|    -|
 |Register             |        -|      -|        1|       -|    -|
 +---------------------+---------+-------+---------+--------+-----+
-|Total                |      364|     10|    39871|  126186|    0|
+|Total                |      364|     10|    67565|  126514|    0|
 +---------------------+---------+-------+---------+--------+-----+
 |Available SLR        |     1344|   2976|   871680|  435840|  320|
 +---------------------+---------+-------+---------+--------+-----+
-|Utilization SLR (%)  |       27|   ~0  |        4|      28|    0|
+|Utilization SLR (%)  |       27|   ~0  |        7|      29|    0|
 +---------------------+---------+-------+---------+--------+-----+
 |Available            |     2688|   5952|  1743360|  871680|  640|
 +---------------------+---------+-------+---------+--------+-----+
-|Utilization (%)      |       13|   ~0  |        2|      14|    0|
+|Utilization (%)      |       13|   ~0  |        3|      14|    0|
 +---------------------+---------+-------+---------+--------+-----+
 
 + Detail: 
@@ -87,19 +87,19 @@
     +-------------------------------------------------------+------------------------------------------------------+---------+-------+-------+-------+-----+
     |                        Instance                       |                        Module                        | BRAM_18K| DSP48E|   FF  |  LUT  | URAM|
     +-------------------------------------------------------+------------------------------------------------------+---------+-------+-------+-------+-----+
-    |conv_2d_cl_array_array_ap_fixed_16u_config2_U0         |conv_2d_cl_array_array_ap_fixed_16u_config2_s         |        0|      0|    563|   1111|    0|
-    |conv_2d_cl_array_array_ap_fixed_16u_config6_U0         |conv_2d_cl_array_array_ap_fixed_16u_config6_s         |        0|      0|   3966|  17011|    0|
-    |dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_U0  |dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_s  |      278|      0|  18007|  85484|    0|
+    |conv_2d_cl_array_array_ap_fixed_16u_config2_U0         |conv_2d_cl_array_array_ap_fixed_16u_config2_s         |        0|      0|    637|   1114|    0|
+    |conv_2d_cl_array_array_ap_fixed_16u_config6_U0         |conv_2d_cl_array_array_ap_fixed_16u_config6_s         |        0|      0|   5519|  17017|    0|
+    |dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_U0  |dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_s  |      278|      0|  42046|  85484|    0|
     |linear_array_array_ap_fixed_10u_linear_config12_U0     |linear_array_array_ap_fixed_10u_linear_config12_s     |        0|      0|      3|    204|    0|
     |linear_array_array_ap_fixed_16u_linear_config3_U0      |linear_array_array_ap_fixed_16u_linear_config3_s      |        0|      0|     18|    395|    0|
     |linear_array_array_ap_fixed_16u_linear_config7_U0      |linear_array_array_ap_fixed_16u_linear_config7_s      |        0|      0|     15|    391|    0|
-    |pooling2d_cl_array_array_ap_fixed_16u_config5_U0       |pooling2d_cl_array_array_ap_fixed_16u_config5_s       |        0|      0|   1431|   1893|    0|
-    |pooling2d_cl_array_array_ap_fixed_16u_config9_U0       |pooling2d_cl_array_array_ap_fixed_16u_config9_s       |        0|      0|   1428|   1889|    0|
-    |relu_array_array_ap_fixed_16u_relu_config4_U0          |relu_array_array_ap_fixed_16u_relu_config4_s          |        0|      0|     52|   1440|    0|
-    |relu_array_array_ap_fixed_16u_relu_config8_U0          |relu_array_array_ap_fixed_16u_relu_config8_s          |        0|      0|     49|   1436|    0|
-    |softmax_array_array_ap_fixed_10u_softmax_config13_U0   |softmax_array_array_ap_fixed_10u_softmax_config13_s   |        6|     10|   1230|   2025|    0|
+    |pooling2d_cl_array_array_ap_fixed_16u_config5_U0       |pooling2d_cl_array_array_ap_fixed_16u_config5_s       |        0|      0|   1545|   1925|    0|
+    |pooling2d_cl_array_array_ap_fixed_16u_config9_U0       |pooling2d_cl_array_array_ap_fixed_16u_config9_s       |        0|      0|   1542|   1921|    0|
+    |relu_array_array_ap_fixed_16u_relu_config4_U0          |relu_array_array_ap_fixed_16u_relu_config4_s          |        0|      0|    340|   1440|    0|
+    |relu_array_array_ap_fixed_16u_relu_config8_U0          |relu_array_array_ap_fixed_16u_relu_config8_s          |        0|      0|    337|   1436|    0|
+    |softmax_array_array_ap_fixed_10u_softmax_config13_U0   |softmax_array_array_ap_fixed_10u_softmax_config13_s   |        6|     10|   2454|   2280|    0|
     +-------------------------------------------------------+------------------------------------------------------+---------+-------+-------+-------+-----+
-    |Total                                                  |                                                      |      284|     10|  26762| 113279|    0|
+    |Total                                                  |                                                      |      284|     10|  54456| 113607|    0|
     +-------------------------------------------------------+------------------------------------------------------+---------+-------+-------+-------+-----+
 
     * DSP48E: 
@@ -11765,19 +11765,19 @@ ret_ln100                 (ret                 ) [ 0000000000000000000000]
 |----------|---------------------------------------------------------------------|---------|---------|---------|---------|
 | Operation|                           Functional Unit                           |  DSP48E |  Delay  |    FF   |   LUT   |
 |----------|---------------------------------------------------------------------|---------|---------|---------|---------|
-|          |   grp_dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_s_fu_1468  |    0    | 243.612 |  20087  |  72527  |
-|          |      grp_conv_2d_cl_array_array_ap_fixed_16u_config6_s_fu_1500      |    0    |    0    |   1930  |  15349  |
-|          |   grp_softmax_array_array_ap_fixed_10u_softmax_config13_s_fu_1802   |    10   |  6.633  |   563   |   1175  |
-|          |       grp_relu_array_array_ap_fixed_16u_relu_config4_s_fu_1840      |    0    |    0    |    53   |   1070  |
-|          |       grp_relu_array_array_ap_fixed_16u_relu_config8_s_fu_1876      |    0    |    0    |    47   |   1066  |
-|   call   |     grp_pooling2d_cl_array_array_ap_fixed_16u_config5_s_fu_1912     |    0    |    0    |   184   |   952   |
-|          |     grp_pooling2d_cl_array_array_ap_fixed_16u_config9_s_fu_2052     |    0    |    0    |   178   |   948   |
-|          |      grp_conv_2d_cl_array_array_ap_fixed_16u_config2_s_fu_2192      |    0    |    0    |   282   |   745   |
+|          |   grp_dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_s_fu_1468  |    0    | 243.612 |  43598  |  72527  |
+|          |      grp_conv_2d_cl_array_array_ap_fixed_16u_config6_s_fu_1500      |    0    |    0    |   3765  |  15349  |
+|          |   grp_softmax_array_array_ap_fixed_10u_softmax_config13_s_fu_1802   |    10   |  18.693 |   1471  |   1275  |
+|          |       grp_relu_array_array_ap_fixed_16u_relu_config4_s_fu_1840      |    0    |    0    |   341   |   1070  |
+|          |       grp_relu_array_array_ap_fixed_16u_relu_config8_s_fu_1876      |    0    |    0    |   335   |   1066  |
+|   call   |     grp_pooling2d_cl_array_array_ap_fixed_16u_config5_s_fu_1912     |    0    |    0    |   232   |   952   |
+|          |     grp_pooling2d_cl_array_array_ap_fixed_16u_config9_s_fu_2052     |    0    |    0    |   226   |   948   |
+|          |      grp_conv_2d_cl_array_array_ap_fixed_16u_config2_s_fu_2192      |    0    |    0    |   357   |   745   |
 |          |     grp_linear_array_array_ap_fixed_16u_linear_config3_s_fu_2238    |    0    |    0    |    21   |    30   |
 |          |     grp_linear_array_array_ap_fixed_16u_linear_config7_s_fu_2274    |    0    |    0    |    15   |    26   |
 |          | call_ln96_linear_array_array_ap_fixed_10u_linear_config12_s_fu_2310 |    0    |    0    |    0    |    0    |
 |----------|---------------------------------------------------------------------|---------|---------|---------|---------|
-|   Total  |                                                                     |    10   | 250.245 |  23360  |  93888  |
+|   Total  |                                                                     |    10   | 262.305 |  50361  |  93988  |
 |----------|---------------------------------------------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -11952,10 +11952,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           | DSP48E |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |   10   |   250  |  23360 |  93888 |
+|  Function |   10   |   262  |  50361 |  93988 |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |  1200  |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |   10   |   250  |  24560 |  93888 |
+|   Total   |   10   |   262  |  51561 |  93988 |
 +-----------+--------+--------+--------+--------+

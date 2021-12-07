@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-// Date        : Mon Dec  6 17:11:02 2021
+// Date        : Tue Dec  7 00:40:15 2021
 // Host        : gabribot-X570-AORUS-ELITE running 64-bit Ubuntu 18.04.6 LTS
 // Command     : write_verilog -force -mode funcsim
 //               /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_microblaze_0_0/myproject_kernel_bd_microblaze_0_0_sim_netlist.v
@@ -113,7 +113,7 @@ module myproject_kernel_bd_microblaze_0_0
     S1_AXIS_TDATA,
     S1_AXIS_TVALID,
     S1_AXIS_TREADY);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME CLK.CLK, ASSOCIATED_BUSIF M0_AXIS:S0_AXIS:M1_AXIS:S1_AXIS:M2_AXIS:S2_AXIS:M3_AXIS:S3_AXIS:M4_AXIS:S4_AXIS:M5_AXIS:S5_AXIS:M6_AXIS:S6_AXIS:M7_AXIS:S7_AXIS:M8_AXIS:S8_AXIS:M9_AXIS:S9_AXIS:M10_AXIS:S10_AXIS:M11_AXIS:S11_AXIS:M12_AXIS:S12_AXIS:M13_AXIS:S13_AXIS:M14_AXIS:S14_AXIS:M15_AXIS:S15_AXIS:DLMB:ILMB:M_AXI_DP:M_AXI_IP:M_AXI_DC:M_AXI_IC:M_ACE_DC:M_ACE_IC:MON_DLMB:MON_ILMB:MON_AXI_DP:MON_AXI_IP:MON_AXI_DC:MON_AXI_IC:MON_ACE_DC:MON_ACE_IC, ASSOCIATED_RESET Reset, FREQ_HZ 300000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, INSERT_VIP 0" *) input Clk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME CLK.CLK, ASSOCIATED_BUSIF M0_AXIS:S0_AXIS:M1_AXIS:S1_AXIS:M2_AXIS:S2_AXIS:M3_AXIS:S3_AXIS:M4_AXIS:S4_AXIS:M5_AXIS:S5_AXIS:M6_AXIS:S6_AXIS:M7_AXIS:S7_AXIS:M8_AXIS:S8_AXIS:M9_AXIS:S9_AXIS:M10_AXIS:S10_AXIS:M11_AXIS:S11_AXIS:M12_AXIS:S12_AXIS:M13_AXIS:S13_AXIS:M14_AXIS:S14_AXIS:M15_AXIS:S15_AXIS:DLMB:ILMB:M_AXI_DP:M_AXI_IP:M_AXI_DC:M_AXI_IC:M_ACE_DC:M_ACE_IC:MON_DLMB:MON_ILMB:MON_AXI_DP:MON_AXI_IP:MON_AXI_DC:MON_AXI_IC:MON_ACE_DC:MON_ACE_IC, ASSOCIATED_RESET Reset, FREQ_HZ 250000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, INSERT_VIP 0" *) input Clk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 RST.RESET RST" *) (* x_interface_parameter = "XIL_INTERFACENAME RST.RESET, POLARITY ACTIVE_HIGH, TYPE PROCESSOR, INSERT_VIP 0" *) input Reset;
   (* x_interface_info = "xilinx.com:interface:mbinterrupt:1.0 INTERRUPT INTERRUPT" *) (* x_interface_parameter = "XIL_INTERFACENAME INTERRUPT, SENSITIVITY LEVEL_HIGH, LOW_LATENCY 0" *) input Interrupt;
   (* x_interface_info = "xilinx.com:interface:mbinterrupt:1.0 INTERRUPT ADDRESS" *) input [0:31]Interrupt_Address;
@@ -137,7 +137,7 @@ module myproject_kernel_bd_microblaze_0_0
   (* x_interface_info = "xilinx.com:interface:lmb:1.0 DLMB CE" *) input DCE;
   (* x_interface_info = "xilinx.com:interface:lmb:1.0 DLMB UE" *) input DUE;
   (* x_interface_info = "xilinx.com:interface:lmb:1.0 DLMB BE" *) output [0:3]Byte_Enable;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 M_AXI_DP AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME M_AXI_DP, ID_WIDTH 0, READ_WRITE_MODE READ_WRITE, SUPPORTS_NARROW_BURST 0, HAS_BURST 0, HAS_LOCK 0, DATA_WIDTH 32, ADDR_WIDTH 32, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, MAX_BURST_LENGTH 1, PROTOCOL AXI4LITE, FREQ_HZ 300000000, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output [31:0]M_AXI_DP_AWADDR;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 M_AXI_DP AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME M_AXI_DP, ID_WIDTH 0, READ_WRITE_MODE READ_WRITE, SUPPORTS_NARROW_BURST 0, HAS_BURST 0, HAS_LOCK 0, DATA_WIDTH 32, ADDR_WIDTH 32, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, MAX_BURST_LENGTH 1, PROTOCOL AXI4LITE, FREQ_HZ 250000000, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output [31:0]M_AXI_DP_AWADDR;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 M_AXI_DP AWPROT" *) output [2:0]M_AXI_DP_AWPROT;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 M_AXI_DP AWVALID" *) output M_AXI_DP_AWVALID;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 M_AXI_DP AWREADY" *) input M_AXI_DP_AWREADY;
@@ -195,19 +195,19 @@ module myproject_kernel_bd_microblaze_0_0
   (* x_interface_info = "xilinx.com:interface:mbtrace:2.0 TRACE MEM_PIPERUN" *) output Trace_MEM_PipeRun;
   (* x_interface_info = "xilinx.com:interface:mbtrace:2.0 TRACE MB_HALTED" *) output Trace_MB_Halted;
   (* x_interface_info = "xilinx.com:interface:mbtrace:2.0 TRACE JUMP_HIT" *) output Trace_Jump_Hit;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 M0_AXIS TLAST" *) (* x_interface_parameter = "XIL_INTERFACENAME M0_AXIS, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 300000000, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, LAYERED_METADATA undef, INSERT_VIP 0" *) output M0_AXIS_TLAST;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 M0_AXIS TLAST" *) (* x_interface_parameter = "XIL_INTERFACENAME M0_AXIS, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 250000000, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, LAYERED_METADATA undef, INSERT_VIP 0" *) output M0_AXIS_TLAST;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 M0_AXIS TDATA" *) output [31:0]M0_AXIS_TDATA;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 M0_AXIS TVALID" *) output M0_AXIS_TVALID;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 M0_AXIS TREADY" *) input M0_AXIS_TREADY;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 M1_AXIS TLAST" *) (* x_interface_parameter = "XIL_INTERFACENAME M1_AXIS, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 300000000, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, LAYERED_METADATA undef, INSERT_VIP 0" *) output M1_AXIS_TLAST;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 M1_AXIS TLAST" *) (* x_interface_parameter = "XIL_INTERFACENAME M1_AXIS, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 250000000, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, LAYERED_METADATA undef, INSERT_VIP 0" *) output M1_AXIS_TLAST;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 M1_AXIS TDATA" *) output [31:0]M1_AXIS_TDATA;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 M1_AXIS TVALID" *) output M1_AXIS_TVALID;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 M1_AXIS TREADY" *) input M1_AXIS_TREADY;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 S0_AXIS TLAST" *) (* x_interface_parameter = "XIL_INTERFACENAME S0_AXIS, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 300000000, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, LAYERED_METADATA undef, INSERT_VIP 0" *) input S0_AXIS_TLAST;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 S0_AXIS TLAST" *) (* x_interface_parameter = "XIL_INTERFACENAME S0_AXIS, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 250000000, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, LAYERED_METADATA undef, INSERT_VIP 0" *) input S0_AXIS_TLAST;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 S0_AXIS TDATA" *) input [31:0]S0_AXIS_TDATA;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 S0_AXIS TVALID" *) input S0_AXIS_TVALID;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 S0_AXIS TREADY" *) output S0_AXIS_TREADY;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 S1_AXIS TLAST" *) (* x_interface_parameter = "XIL_INTERFACENAME S1_AXIS, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 300000000, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, LAYERED_METADATA undef, INSERT_VIP 0" *) input S1_AXIS_TLAST;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 S1_AXIS TLAST" *) (* x_interface_parameter = "XIL_INTERFACENAME S1_AXIS, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 250000000, PHASE 0.000, CLK_DOMAIN myproject_kernel_bd_ap_clk, LAYERED_METADATA undef, INSERT_VIP 0" *) input S1_AXIS_TLAST;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 S1_AXIS TDATA" *) input [31:0]S1_AXIS_TDATA;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 S1_AXIS TVALID" *) input S1_AXIS_TVALID;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 S1_AXIS TREADY" *) output S1_AXIS_TREADY;
@@ -560,7 +560,7 @@ module myproject_kernel_bd_microblaze_0_0
   (* C_FAMILY = "virtexuplusHBM" *) 
   (* C_FAULT_TOLERANT = "0" *) 
   (* C_FPU_EXCEPTION = "0" *) 
-  (* C_FREQ = "300000000" *) 
+  (* C_FREQ = "250000000" *) 
   (* C_FSL_EXCEPTION = "0" *) 
   (* C_FSL_LINKS = "2" *) 
   (* C_IADDR_SIZE = "32" *) 
@@ -7828,7 +7828,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .I4(Dbg_TDO_INST_0_i_28_n_0),
         .I5(Dbg_TDO_INST_0_i_29_n_0),
         .O(Dbg_TDO_INST_0_i_20_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair68" *) 
+  (* SOFT_HLUTNM = "soft_lutpair70" *) 
   LUT4 #(
     .INIT(16'h0001)) 
     Dbg_TDO_INST_0_i_21
@@ -7959,14 +7959,14 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .I4(\Serial_Dbg_Intf.shift_count_reg_n_0_[0] ),
         .I5(\Serial_Dbg_Intf.status_reg_reg_n_0_[17] ),
         .O(Dbg_TDO_INST_0_i_6_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair69" *) 
+  (* SOFT_HLUTNM = "soft_lutpair71" *) 
   LUT2 #(
     .INIT(4'h7)) 
     Dbg_TDO_INST_0_i_7
        (.I0(A1),
         .I1(A2),
         .O(Dbg_TDO_INST_0_i_7_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair69" *) 
+  (* SOFT_HLUTNM = "soft_lutpair71" *) 
   LUT5 #(
     .INIT(32'h20000002)) 
     Dbg_TDO_INST_0_i_8
@@ -8010,6 +8010,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .I4(\Performance_Debug_Control.dbg_freeze_nohalt_i_3_n_0 ),
         .I5(\Performance_Debug_Control.dbg_freeze_nohalt_reg_0 ),
         .O(\Performance_Debug_Control.dbg_freeze_nohalt_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair68" *) 
   LUT5 #(
     .INIT(32'hFFFFFD00)) 
     \Performance_Debug_Control.dbg_freeze_nohalt_i_3 
@@ -8121,6 +8122,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .I4(saved_reset_mode_sleep),
         .I5(dbg_stop_instr_fetch_nohalt124_out),
         .O(\Performance_Debug_Control.dbg_stop_instr_fetch_nohalt_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair68" *) 
   LUT5 #(
     .INIT(32'hAAA8AAAA)) 
     \Performance_Debug_Control.dbg_stop_instr_fetch_nohalt_i_4 
@@ -8148,7 +8150,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .D(\Using_PC_Breakpoints.All_PC_Brks[0].Serial_Interface_1.address_hit_I_n_1 ),
         .Q(ex_pc_brk),
         .R(reset_bool_for_rst));
-  (* SOFT_HLUTNM = "soft_lutpair75" *) 
+  (* SOFT_HLUTNM = "soft_lutpair77" *) 
   LUT3 #(
     .INIT(8'hDF)) 
     \Performance_Debug_Control.ex_dbg_pc_hit_i_i_2 
@@ -8202,7 +8204,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .D(\Performance_Debug_Control.force_stop_i_i_1_n_0 ),
         .Q(force_stop_i),
         .R(dbg_stop_i));
-  (* SOFT_HLUTNM = "soft_lutpair71" *) 
+  (* SOFT_HLUTNM = "soft_lutpair73" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \Performance_Debug_Control.force_stop_overrun_i_1 
@@ -8255,7 +8257,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .D(\Performance_Debug_Control.normal_stop_i_i_1_n_0 ),
         .Q(normal_stop_i),
         .R(dbg_stop_i));
-  (* SOFT_HLUTNM = "soft_lutpair70" *) 
+  (* SOFT_HLUTNM = "soft_lutpair72" *) 
   LUT4 #(
     .INIT(16'h0F0E)) 
     \Performance_Debug_Control.step_continue_hold_i_1 
@@ -8327,7 +8329,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .I2(instr_read_reg[1]),
         .I3(instr_read_reg[0]),
         .O(New_Dbg_Instr_TCK0));
-  (* SOFT_HLUTNM = "soft_lutpair67" *) 
+  (* SOFT_HLUTNM = "soft_lutpair69" *) 
   LUT5 #(
     .INIT(32'h40000000)) 
     \Serial_Dbg_Intf.New_Dbg_Instr_TCK_i_2 
@@ -9213,14 +9215,14 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .D(sample_synced[8]),
         .Q(\Serial_Dbg_Intf.sample_synced_1_reg_n_0_[8] ),
         .R(reset_bool_for_rst));
-  (* SOFT_HLUTNM = "soft_lutpair77" *) 
+  (* SOFT_HLUTNM = "soft_lutpair79" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \Serial_Dbg_Intf.shift_count[0]_i_1 
        (.I0(Dbg_Shift),
         .I1(\Serial_Dbg_Intf.shift_count_reg_n_0_[0] ),
         .O(\Serial_Dbg_Intf.shift_count[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair74" *) 
+  (* SOFT_HLUTNM = "soft_lutpair76" *) 
   LUT3 #(
     .INIT(8'h60)) 
     \Serial_Dbg_Intf.shift_count[1]_i_1 
@@ -9228,7 +9230,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .I1(\Serial_Dbg_Intf.shift_count_reg_n_0_[0] ),
         .I2(Dbg_Shift),
         .O(p_0_in__0[1]));
-  (* SOFT_HLUTNM = "soft_lutpair74" *) 
+  (* SOFT_HLUTNM = "soft_lutpair76" *) 
   LUT4 #(
     .INIT(16'h6A00)) 
     \Serial_Dbg_Intf.shift_count[2]_i_1 
@@ -9237,7 +9239,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .I2(\Serial_Dbg_Intf.shift_count_reg_n_0_[0] ),
         .I3(Dbg_Shift),
         .O(p_0_in__0[2]));
-  (* SOFT_HLUTNM = "soft_lutpair68" *) 
+  (* SOFT_HLUTNM = "soft_lutpair70" *) 
   LUT5 #(
     .INIT(32'h6AAA0000)) 
     \Serial_Dbg_Intf.shift_count[3]_i_1 
@@ -9257,7 +9259,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .I4(A2),
         .I5(Dbg_Shift),
         .O(p_0_in__0[4]));
-  (* SOFT_HLUTNM = "soft_lutpair77" *) 
+  (* SOFT_HLUTNM = "soft_lutpair79" *) 
   LUT3 #(
     .INIT(8'h60)) 
     \Serial_Dbg_Intf.shift_count[5]_i_1 
@@ -9265,7 +9267,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .I1(\Serial_Dbg_Intf.shift_count[5]_i_2_n_0 ),
         .I2(Dbg_Shift),
         .O(p_0_in__0[5]));
-  (* SOFT_HLUTNM = "soft_lutpair67" *) 
+  (* SOFT_HLUTNM = "soft_lutpair69" *) 
   LUT5 #(
     .INIT(32'h80000000)) 
     \Serial_Dbg_Intf.shift_count[5]_i_2 
@@ -9275,7 +9277,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .I3(A1),
         .I4(A3),
         .O(\Serial_Dbg_Intf.shift_count[5]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair73" *) 
+  (* SOFT_HLUTNM = "soft_lutpair75" *) 
   LUT3 #(
     .INIT(8'h60)) 
     \Serial_Dbg_Intf.shift_count[6]_i_1 
@@ -9283,7 +9285,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .I1(\Serial_Dbg_Intf.shift_count[7]_i_2_n_0 ),
         .I2(Dbg_Shift),
         .O(p_0_in__0[6]));
-  (* SOFT_HLUTNM = "soft_lutpair73" *) 
+  (* SOFT_HLUTNM = "soft_lutpair75" *) 
   LUT4 #(
     .INIT(16'h6A00)) 
     \Serial_Dbg_Intf.shift_count[7]_i_1 
@@ -9923,7 +9925,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .I4(\data_rd_reg[32]_i_3_n_0 ),
         .I5(\data_rd_reg_reg_n_0_[32] ),
         .O(\data_rd_reg[32]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair76" *) 
+  (* SOFT_HLUTNM = "soft_lutpair78" *) 
   LUT3 #(
     .INIT(8'hFE)) 
     \data_rd_reg[32]_i_2 
@@ -9931,7 +9933,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .I1(\Performance_Debug_Control.dbg_freeze_nohalt_reg_0 ),
         .I2(wb_pc_valid),
         .O(\data_rd_reg[32]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair76" *) 
+  (* SOFT_HLUTNM = "soft_lutpair78" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \data_rd_reg[32]_i_3 
@@ -10136,7 +10138,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .D(\data_rd_reg_reg[0]_0 [22]),
         .Q(\data_rd_reg_reg_n_0_[9] ),
         .R(reset_bool_for_rst));
-  (* SOFT_HLUTNM = "soft_lutpair71" *) 
+  (* SOFT_HLUTNM = "soft_lutpair73" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
     dbg_continue_i_i_2
@@ -10161,7 +10163,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .I4(p_10_in),
         .I5(reset_bool_for_rst),
         .O(dbg_halt_reset_mode_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair70" *) 
+  (* SOFT_HLUTNM = "soft_lutpair72" *) 
   LUT2 #(
     .INIT(4'hE)) 
     dbg_halt_reset_mode_i_2
@@ -10231,7 +10233,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .D(D[2]),
         .Q(mb_halted_1),
         .R(reset_bool_for_rst));
-  (* SOFT_HLUTNM = "soft_lutpair75" *) 
+  (* SOFT_HLUTNM = "soft_lutpair77" *) 
   LUT3 #(
     .INIT(8'h20)) 
     mem_exception_from_ex_i_1
@@ -10267,7 +10269,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .CLR(running_clock_rst),
         .D(1'b1),
         .Q(running_clock));
-  (* SOFT_HLUTNM = "soft_lutpair72" *) 
+  (* SOFT_HLUTNM = "soft_lutpair74" *) 
   LUT4 #(
     .INIT(16'h2F20)) 
     saved_reset_mode_dbg_halt_i_1
@@ -10352,7 +10354,7 @@ module myproject_kernel_bd_microblaze_0_0_Debug
         .I4(reset_bool_for_rst),
         .I5(Sleep_Out),
         .O(sleep_reset_mode_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair72" *) 
+  (* SOFT_HLUTNM = "soft_lutpair74" *) 
   LUT3 #(
     .INIT(8'h40)) 
     sleep_reset_mode_i_2
@@ -11744,6 +11746,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .I3(ex_first_cycle),
         .I4(ex_mbar_stall_no_sleep_1),
         .O(IFetch_INST_0_i_2_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair56" *) 
   LUT4 #(
     .INIT(16'hA200)) 
     \LOCKSTEP_Master_Out[0]_INST_0_i_2 
@@ -11752,6 +11755,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .I2(mem_load_store_access_reg_1),
         .I3(ex_valid),
         .O(FSL_Get));
+  (* SOFT_HLUTNM = "soft_lutpair56" *) 
   LUT4 #(
     .INIT(16'hA200)) 
     \LOCKSTEP_Master_Out[0]_INST_0_i_4 
@@ -11760,7 +11764,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .I2(mem_load_store_access_reg_1),
         .I3(ex_valid),
         .O(FSL_Put));
-  (* SOFT_HLUTNM = "soft_lutpair62" *) 
+  (* SOFT_HLUTNM = "soft_lutpair63" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \LOCKSTEP_Master_Out[1]_INST_0 
@@ -12020,7 +12024,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .I3(\MEM_DataBus_Addr_reg[0]_0 [38]),
         .I4(reset_bool_for_rst),
         .O(MEM_DataBus_Write_reg_0));
-  (* SOFT_HLUTNM = "soft_lutpair62" *) 
+  (* SOFT_HLUTNM = "soft_lutpair63" *) 
   LUT4 #(
     .INIT(16'h0002)) 
     M_AXI_DP_AWVALID_i_i_2
@@ -12141,7 +12145,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .\mem_pc_i_reg[0]_0 (\mem_pc_i_reg[0] ),
         .of_op1_sel_spr_pc(of_op1_sel_spr_pc),
         .sync_reset(reset_bool_for_rst));
-  (* SOFT_HLUTNM = "soft_lutpair64" *) 
+  (* SOFT_HLUTNM = "soft_lutpair65" *) 
   LUT3 #(
     .INIT(8'h04)) 
     Pause_Ack_i_1
@@ -12162,7 +12166,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .I1(D[2]),
         .I2(D[3]),
         .O(wb_Halted));
-  (* SOFT_HLUTNM = "soft_lutpair59" *) 
+  (* SOFT_HLUTNM = "soft_lutpair60" *) 
   LUT4 #(
     .INIT(16'hFF80)) 
     \Performance_Debug_Control.dbg_freeze_nohalt_i_2 
@@ -12171,7 +12175,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .I2(wb_exception_i_reg_0),
         .I3(\Performance_Debug_Control.dbg_stop_instr_fetch_nohalt_reg_0 ),
         .O(dbg_stop_instr_fetch_nohalt0));
-  (* SOFT_HLUTNM = "soft_lutpair61" *) 
+  (* SOFT_HLUTNM = "soft_lutpair62" *) 
   LUT4 #(
     .INIT(16'hFF80)) 
     \Performance_Debug_Control.dbg_stop_i_i_1 
@@ -12414,7 +12418,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .I4(FSL_Get_Inhibit),
         .I5(\Using_FPGA.Native_38 [0]),
         .O(D[69]));
-  (* SOFT_HLUTNM = "soft_lutpair57" *) 
+  (* SOFT_HLUTNM = "soft_lutpair58" *) 
   LUT4 #(
     .INIT(16'hFFEA)) 
     S0_AXIS_TREADY_INST_0_i_1
@@ -12448,7 +12452,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
        (.I0(Sleep_Decode),
         .I1(Sleep_Out),
         .O(Sleep));
-  (* SOFT_HLUTNM = "soft_lutpair59" *) 
+  (* SOFT_HLUTNM = "soft_lutpair60" *) 
   LUT3 #(
     .INIT(8'h2A)) 
     Trace_Exception_Taken_INST_0
@@ -12713,7 +12717,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .I2(wb_exception_i_reg_0),
         .I3(wb_reset),
         .O(D[34]));
-  (* SOFT_HLUTNM = "soft_lutpair61" *) 
+  (* SOFT_HLUTNM = "soft_lutpair62" *) 
   LUT4 #(
     .INIT(16'h2AAA)) 
     Trace_Valid_Instr_INST_0
@@ -12904,7 +12908,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .ex_exception_no_load_store_mask(ex_exception_no_load_store_mask),
         .mem_exception_from_ex(mem_exception_from_ex),
         .sync_reset(reset_bool_for_rst));
-  (* SOFT_HLUTNM = "soft_lutpair56" *) 
+  (* SOFT_HLUTNM = "soft_lutpair57" *) 
   LUT4 #(
     .INIT(16'h4555)) 
     \Using_FPGA.Native_i_10 
@@ -12931,14 +12935,14 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .I3(\EX_Sext_Op_reg[0]_0 [0]),
         .I4(\Using_FPGA.Native_39 [2]),
         .O(\Using_FPGA.Native_i_10__1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair57" *) 
+  (* SOFT_HLUTNM = "soft_lutpair58" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \Using_FPGA.Native_i_12 
        (.I0(mem_valid_reg_n_0),
         .I1(mem_gpr_write),
         .O(\Using_FPGA.Native_i_12_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair63" *) 
+  (* SOFT_HLUTNM = "soft_lutpair64" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \Using_FPGA.Native_i_15 
@@ -12954,7 +12958,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .I3(\EX_Sext_Op_reg[0]_0 [0]),
         .I4(\Using_FPGA.Native_39 [6]),
         .O(\Data_Flow_I/Shift_Logic_Module_I/p_0_in__1 [2]));
-  (* SOFT_HLUTNM = "soft_lutpair65" *) 
+  (* SOFT_HLUTNM = "soft_lutpair66" *) 
   LUT4 #(
     .INIT(16'h1555)) 
     \Using_FPGA.Native_i_1__1 
@@ -13196,7 +13200,6 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .I3(FSL_Get_Data[25]),
         .I4(\Data_Flow_I/EX_Shift_Logic_Result [3]),
         .O(ex_sel_alu_i_reg_1[24]));
-  (* SOFT_HLUTNM = "soft_lutpair49" *) 
   LUT5 #(
     .INIT(32'hFB0BF808)) 
     \Using_FPGA.Native_i_1__179 
@@ -13221,7 +13224,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
        (.I0(reset_bool_for_rst),
         .I1(EX_Is_Div_Instr),
         .O(R));
-  (* SOFT_HLUTNM = "soft_lutpair65" *) 
+  (* SOFT_HLUTNM = "soft_lutpair66" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \Using_FPGA.Native_i_1__182 
@@ -13399,6 +13402,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .I3(ex_swap_instr),
         .I4(\Using_FPGA.Native_i_3__34_n_0 ),
         .O(\Data_Flow_I/EX_Shift_Logic_Result [1]));
+  (* SOFT_HLUTNM = "soft_lutpair49" *) 
   LUT5 #(
     .INIT(32'hFB0BF808)) 
     \Using_FPGA.Native_i_2__118 
@@ -13510,7 +13514,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .I3(ex_swap_instr),
         .I4(\Using_FPGA.Native_i_3__16_n_0 ),
         .O(\Data_Flow_I/EX_Shift_Logic_Result [19]));
-  (* SOFT_HLUTNM = "soft_lutpair60" *) 
+  (* SOFT_HLUTNM = "soft_lutpair61" *) 
   LUT4 #(
     .INIT(16'hA200)) 
     \Using_FPGA.Native_i_3 
@@ -13832,7 +13836,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .I3(ex_swap_instr),
         .I4(\Data_Flow_I/Shift_Logic_Module_I/p_0_in__1 [1]),
         .O(\EX_Op1_reg[3] ));
-  (* SOFT_HLUTNM = "soft_lutpair60" *) 
+  (* SOFT_HLUTNM = "soft_lutpair61" *) 
   LUT4 #(
     .INIT(16'hA200)) 
     \Using_FPGA.Native_i_4 
@@ -13841,7 +13845,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .I2(mem_load_store_access_reg_1),
         .I3(ex_valid),
         .O(ex_MSRCLR));
-  (* SOFT_HLUTNM = "soft_lutpair58" *) 
+  (* SOFT_HLUTNM = "soft_lutpair59" *) 
   LUT4 #(
     .INIT(16'hA200)) 
     \Using_FPGA.Native_i_4__0 
@@ -13850,7 +13854,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .I2(mem_load_store_access_reg_1),
         .I3(ex_valid),
         .O(ex_MTS_MSR));
-  (* SOFT_HLUTNM = "soft_lutpair63" *) 
+  (* SOFT_HLUTNM = "soft_lutpair64" *) 
   LUT4 #(
     .INIT(16'hA200)) 
     \Using_FPGA.Native_i_4__1 
@@ -13921,7 +13925,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .I4(ex_fsl_put),
         .I5(fsl_carry_hold_value),
         .O(EX_FSL_Carry));
-  (* SOFT_HLUTNM = "soft_lutpair58" *) 
+  (* SOFT_HLUTNM = "soft_lutpair59" *) 
   LUT4 #(
     .INIT(16'hA200)) 
     \Using_FPGA.Native_i_6__0 
@@ -15062,7 +15066,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .D(ex_mbar_sleep_i_1_n_0),
         .Q(ex_mbar_sleep),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair64" *) 
+  (* SOFT_HLUTNM = "soft_lutpair65" *) 
   LUT4 #(
     .INIT(16'h4F44)) 
     ex_mbar_stall_no_sleep_1_i_1
@@ -15159,7 +15163,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .D(ex_set_bip),
         .Q(ex_set_bip_reg_n_0),
         .R(reset_bool_for_rst));
-  (* SOFT_HLUTNM = "soft_lutpair66" *) 
+  (* SOFT_HLUTNM = "soft_lutpair67" *) 
   LUT1 #(
     .INIT(2'h1)) 
     ex_sleep_i_i_1
@@ -15171,7 +15175,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .D(ex_sleep_i_i_1_n_0),
         .Q(Sleep_Decode),
         .R(ex_hibernate_i_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair66" *) 
+  (* SOFT_HLUTNM = "soft_lutpair67" *) 
   LUT2 #(
     .INIT(4'h8)) 
     ex_suspend_i_i_1
@@ -15818,7 +15822,7 @@ module myproject_kernel_bd_microblaze_0_0_Decode_gti
         .D(ex_read_imm_reg),
         .Q(mem_read_imm_reg),
         .R(reset_bool_for_rst));
-  (* SOFT_HLUTNM = "soft_lutpair56" *) 
+  (* SOFT_HLUTNM = "soft_lutpair57" *) 
   LUT2 #(
     .INIT(4'h1)) 
     mem_valid_i_2
@@ -47932,7 +47936,7 @@ endmodule
 (* C_D_AXI = "1" *) (* C_D_LMB = "1" *) (* C_D_LMB_PROTOCOL = "0" *) 
 (* C_ECC_USE_CE_EXCEPTION = "0" *) (* C_EDGE_IS_POSITIVE = "1" *) (* C_ENDIANNESS = "1" *) 
 (* C_FAMILY = "virtexuplusHBM" *) (* C_FAULT_TOLERANT = "0" *) (* C_FPU_EXCEPTION = "0" *) 
-(* C_FREQ = "300000000" *) (* C_FSL_EXCEPTION = "0" *) (* C_FSL_LINKS = "2" *) 
+(* C_FREQ = "250000000" *) (* C_FSL_EXCEPTION = "0" *) (* C_FSL_LINKS = "2" *) 
 (* C_IADDR_SIZE = "32" *) (* C_ICACHE_ALWAYS_USED = "1" *) (* C_ICACHE_BASEADDR = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) 
 (* C_ICACHE_DATA_WIDTH = "0" *) (* C_ICACHE_FORCE_TAG_LUTRAM = "0" *) (* C_ICACHE_HIGHADDR = "64'b0000000000000000000000000000000000111111111111111111111111111111" *) 
 (* C_ICACHE_LINE_LEN = "4" *) (* C_ICACHE_STREAMS = "0" *) (* C_ICACHE_VICTIMS = "0" *) 
@@ -58216,7 +58220,7 @@ module myproject_kernel_bd_microblaze_0_0_MicroBlaze
   assign Trace_PID_Reg[5] = \<const0> ;
   assign Trace_PID_Reg[6] = \<const0> ;
   assign Trace_PID_Reg[7] = \<const0> ;
-  (* SOFT_HLUTNM = "soft_lutpair94" *) 
+  (* SOFT_HLUTNM = "soft_lutpair96" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
     Dbg_TDO_INST_0_i_16
@@ -58234,7 +58238,7 @@ module myproject_kernel_bd_microblaze_0_0_MicroBlaze
         .I3(Dbg_Reg_En[7]),
         .I4(Dbg_TDO_INST_0_i_25_n_0),
         .O(\Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Config_Reg_En ));
-  (* SOFT_HLUTNM = "soft_lutpair94" *) 
+  (* SOFT_HLUTNM = "soft_lutpair96" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
     Dbg_TDO_INST_0_i_25
@@ -76314,7 +76318,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
   wire [0:31]wb_databus_read_data;
   wire wb_dext_Data_Strobe;
 
-  (* SOFT_HLUTNM = "soft_lutpair84" *) 
+  (* SOFT_HLUTNM = "soft_lutpair86" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[16]_INST_0_i_2 
@@ -76322,7 +76326,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [23]),
         .O(wb_databus_read_data[8]));
-  (* SOFT_HLUTNM = "soft_lutpair87" *) 
+  (* SOFT_HLUTNM = "soft_lutpair89" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[16]_INST_0_i_3 
@@ -76330,7 +76334,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [31]),
         .O(wb_databus_read_data[0]));
-  (* SOFT_HLUTNM = "soft_lutpair91" *) 
+  (* SOFT_HLUTNM = "soft_lutpair93" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[16]_INST_0_i_4 
@@ -76338,7 +76342,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [7]),
         .O(wb_databus_read_data[24]));
-  (* SOFT_HLUTNM = "soft_lutpair93" *) 
+  (* SOFT_HLUTNM = "soft_lutpair95" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[16]_INST_0_i_5 
@@ -76346,7 +76350,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [15]),
         .O(wb_databus_read_data[16]));
-  (* SOFT_HLUTNM = "soft_lutpair84" *) 
+  (* SOFT_HLUTNM = "soft_lutpair86" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[17]_INST_0_i_2 
@@ -76354,7 +76358,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [22]),
         .O(wb_databus_read_data[9]));
-  (* SOFT_HLUTNM = "soft_lutpair86" *) 
+  (* SOFT_HLUTNM = "soft_lutpair88" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[17]_INST_0_i_3 
@@ -76362,7 +76366,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [30]),
         .O(wb_databus_read_data[1]));
-  (* SOFT_HLUTNM = "soft_lutpair90" *) 
+  (* SOFT_HLUTNM = "soft_lutpair92" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[17]_INST_0_i_4 
@@ -76370,7 +76374,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [6]),
         .O(wb_databus_read_data[25]));
-  (* SOFT_HLUTNM = "soft_lutpair93" *) 
+  (* SOFT_HLUTNM = "soft_lutpair95" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[17]_INST_0_i_5 
@@ -76378,7 +76382,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [14]),
         .O(wb_databus_read_data[17]));
-  (* SOFT_HLUTNM = "soft_lutpair83" *) 
+  (* SOFT_HLUTNM = "soft_lutpair85" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[18]_INST_0_i_2 
@@ -76386,7 +76390,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [21]),
         .O(wb_databus_read_data[10]));
-  (* SOFT_HLUTNM = "soft_lutpair86" *) 
+  (* SOFT_HLUTNM = "soft_lutpair88" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[18]_INST_0_i_3 
@@ -76394,7 +76398,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [29]),
         .O(wb_databus_read_data[2]));
-  (* SOFT_HLUTNM = "soft_lutpair90" *) 
+  (* SOFT_HLUTNM = "soft_lutpair92" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[18]_INST_0_i_4 
@@ -76402,7 +76406,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [5]),
         .O(wb_databus_read_data[26]));
-  (* SOFT_HLUTNM = "soft_lutpair92" *) 
+  (* SOFT_HLUTNM = "soft_lutpair94" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[18]_INST_0_i_5 
@@ -76410,7 +76414,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [13]),
         .O(wb_databus_read_data[18]));
-  (* SOFT_HLUTNM = "soft_lutpair83" *) 
+  (* SOFT_HLUTNM = "soft_lutpair85" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[19]_INST_0_i_2 
@@ -76418,7 +76422,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [20]),
         .O(wb_databus_read_data[11]));
-  (* SOFT_HLUTNM = "soft_lutpair85" *) 
+  (* SOFT_HLUTNM = "soft_lutpair87" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[19]_INST_0_i_3 
@@ -76426,7 +76430,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [28]),
         .O(wb_databus_read_data[3]));
-  (* SOFT_HLUTNM = "soft_lutpair89" *) 
+  (* SOFT_HLUTNM = "soft_lutpair91" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[19]_INST_0_i_4 
@@ -76434,7 +76438,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [4]),
         .O(wb_databus_read_data[27]));
-  (* SOFT_HLUTNM = "soft_lutpair92" *) 
+  (* SOFT_HLUTNM = "soft_lutpair94" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[19]_INST_0_i_5 
@@ -76442,7 +76446,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [12]),
         .O(wb_databus_read_data[19]));
-  (* SOFT_HLUTNM = "soft_lutpair82" *) 
+  (* SOFT_HLUTNM = "soft_lutpair84" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[20]_INST_0_i_2 
@@ -76450,7 +76454,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [19]),
         .O(wb_databus_read_data[12]));
-  (* SOFT_HLUTNM = "soft_lutpair85" *) 
+  (* SOFT_HLUTNM = "soft_lutpair87" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[20]_INST_0_i_3 
@@ -76458,7 +76462,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [27]),
         .O(wb_databus_read_data[4]));
-  (* SOFT_HLUTNM = "soft_lutpair89" *) 
+  (* SOFT_HLUTNM = "soft_lutpair91" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[20]_INST_0_i_4 
@@ -76466,7 +76470,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [3]),
         .O(wb_databus_read_data[28]));
-  (* SOFT_HLUTNM = "soft_lutpair91" *) 
+  (* SOFT_HLUTNM = "soft_lutpair93" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[20]_INST_0_i_5 
@@ -76474,7 +76478,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [11]),
         .O(wb_databus_read_data[20]));
-  (* SOFT_HLUTNM = "soft_lutpair79" *) 
+  (* SOFT_HLUTNM = "soft_lutpair81" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[21]_INST_0_i_2 
@@ -76482,7 +76486,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [18]),
         .O(wb_databus_read_data[13]));
-  (* SOFT_HLUTNM = "soft_lutpair80" *) 
+  (* SOFT_HLUTNM = "soft_lutpair82" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[21]_INST_0_i_3 
@@ -76490,7 +76494,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [26]),
         .O(wb_databus_read_data[5]));
-  (* SOFT_HLUTNM = "soft_lutpair82" *) 
+  (* SOFT_HLUTNM = "soft_lutpair84" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[21]_INST_0_i_4 
@@ -76498,7 +76502,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [2]),
         .O(wb_databus_read_data[29]));
-  (* SOFT_HLUTNM = "soft_lutpair88" *) 
+  (* SOFT_HLUTNM = "soft_lutpair90" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[21]_INST_0_i_5 
@@ -76506,7 +76510,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [10]),
         .O(wb_databus_read_data[21]));
-  (* SOFT_HLUTNM = "soft_lutpair78" *) 
+  (* SOFT_HLUTNM = "soft_lutpair80" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[22]_INST_0_i_2 
@@ -76514,7 +76518,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [17]),
         .O(wb_databus_read_data[14]));
-  (* SOFT_HLUTNM = "soft_lutpair80" *) 
+  (* SOFT_HLUTNM = "soft_lutpair82" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[22]_INST_0_i_3 
@@ -76522,7 +76526,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [25]),
         .O(wb_databus_read_data[6]));
-  (* SOFT_HLUTNM = "soft_lutpair81" *) 
+  (* SOFT_HLUTNM = "soft_lutpair83" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[22]_INST_0_i_4 
@@ -76530,7 +76534,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [1]),
         .O(wb_databus_read_data[30]));
-  (* SOFT_HLUTNM = "soft_lutpair88" *) 
+  (* SOFT_HLUTNM = "soft_lutpair90" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[22]_INST_0_i_5 
@@ -76538,7 +76542,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [9]),
         .O(wb_databus_read_data[22]));
-  (* SOFT_HLUTNM = "soft_lutpair78" *) 
+  (* SOFT_HLUTNM = "soft_lutpair80" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[23]_INST_0_i_2 
@@ -76546,7 +76550,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [16]),
         .O(wb_databus_read_data[15]));
-  (* SOFT_HLUTNM = "soft_lutpair79" *) 
+  (* SOFT_HLUTNM = "soft_lutpair81" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[23]_INST_0_i_3 
@@ -76554,7 +76558,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [24]),
         .O(wb_databus_read_data[7]));
-  (* SOFT_HLUTNM = "soft_lutpair81" *) 
+  (* SOFT_HLUTNM = "soft_lutpair83" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[23]_INST_0_i_4 
@@ -76562,7 +76566,7 @@ module myproject_kernel_bd_microblaze_0_0_read_data_mux
         .I1(wb_dext_Data_Strobe),
         .I2(\Trace_New_Reg_Value[16]_INST_0_i_1 [0]),
         .O(wb_databus_read_data[31]));
-  (* SOFT_HLUTNM = "soft_lutpair87" *) 
+  (* SOFT_HLUTNM = "soft_lutpair89" *) 
   LUT3 #(
     .INIT(8'hEA)) 
     \Trace_New_Reg_Value[23]_INST_0_i_5 

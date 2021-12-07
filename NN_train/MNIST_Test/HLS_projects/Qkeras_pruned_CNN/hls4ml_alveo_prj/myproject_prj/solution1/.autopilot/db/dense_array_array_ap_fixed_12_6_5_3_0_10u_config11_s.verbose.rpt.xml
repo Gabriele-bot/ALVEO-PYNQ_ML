@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_s'" level="0">
-<item name = "Date">Mon Dec  6 16:56:58 2021
+<item name = "Date">Tue Dec  7 00:26:09 2021
 </item>
 <item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.33 ns, 2.783 ns, 0.42 ns</column>
+<column name="ap_clk">2.00 ns, 1.635 ns, 0.25 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">33, 34, 0.110 us, 0.113 us, 33, 34, none</column>
+<column name="">35, 36, 70.000 ns, 72.000 ns, 35, 36, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828">dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s, 5, 6, 16.665 ns, 19.998 ns, 2, 2, loop rewind(delay=0 initiation interval(s))</column>
+<column name="grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828">dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s, 7, 8, 14.000 ns, 16.000 ns, 2, 2, loop rewind(delay=0 initiation interval(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -51,21 +51,21 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 38, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">278, 0, 16787, 85134, -</column>
+<column name="Instance">278, 0, 40826, 85134, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 312, -</column>
 <column name="Register">-, -, 1220, -, -</column>
 <specialColumn name="Available SLR">1344, 2976, 871680, 435840, 320</specialColumn>
-<specialColumn name="Utilization SLR (%)">20, 0, 2, 19, 0</specialColumn>
+<specialColumn name="Utilization SLR (%)">20, 0, 4, 19, 0</specialColumn>
 <specialColumn name="Available">2688, 5952, 1743360, 871680, 640</specialColumn>
-<specialColumn name="Utilization (%)">10, 0, 1, 9, 0</specialColumn>
+<specialColumn name="Utilization (%)">10, 0, 2, 9, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828">dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s, 278, 0, 16787, 85134, 0</column>
+<column name="grp_dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s_fu_1828">dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s, 278, 0, 40826, 85134, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'myproject_axi'" level="0">
-<item name = "Date">Mon Dec  6 16:55:37 2021
+<item name = "Date">Tue Dec  7 00:24:50 2021
 </item>
 <item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.33 ns, 2.916 ns, 0.42 ns</column>
+<column name="ap_clk">2.00 ns, 1.750 ns, 0.25 ns</column>
 </table>
 </item>
 </section>
@@ -24,16 +24,16 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">3163, 3164, 10.542 us, 10.546 us, 3139, 3139, dataflow</column>
+<column name="">4705, 4705, 9.410 us, 9.410 us, 4706, 4706, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_myproject_fu_666">myproject, 3160, 3161, 10.532 us, 10.536 us, 3139, 3139, dataflow</column>
-<column name="grp_Loop_2_proc_fu_1185">Loop_2_proc, 41, 41, 0.137 us, 0.137 us, 41, 41, none</column>
-<column name="grp_Loop_1_proc406_fu_1204">Loop_1_proc406, 3137, 3137, 10.456 us, 10.456 us, 3137, 3137, none</column>
+<column name="grp_myproject_fu_666">myproject, 3950, 3951, 7.900 us, 7.902 us, 3923, 3923, dataflow</column>
+<column name="grp_Loop_2_proc_fu_1185">Loop_2_proc, 61, 61, 0.122 us, 0.122 us, 61, 61, none</column>
+<column name="grp_Loop_1_proc406_fu_1204">Loop_1_proc406, 4705, 4705, 9.410 us, 9.410 us, 4705, 4705, none</column>
 <column name="call_ln0_Block_myproject_axi_exit36_proc_fu_1213">Block_myproject_axi_exit36_proc, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
 </table>
 </item>

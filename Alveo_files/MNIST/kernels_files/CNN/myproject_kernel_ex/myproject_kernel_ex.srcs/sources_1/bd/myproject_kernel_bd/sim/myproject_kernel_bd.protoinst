@@ -3,6 +3,30 @@
 	"modules": {
 		"myproject_kernel_bd": {
 			"proto_instances": {
+				"/axis_data_fifo_0/M_AXIS": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "s_axis_aclk"},
+						"ARESETN": { "actual": "s_axis_aresetn"},
+						"TDATA": { "actual": "m_axis_tdata"},
+						"TKEEP": { "actual": "m_axis_tkeep"},
+						"TLAST": { "actual": "m_axis_tlast"},
+						"TREADY": { "actual": "m_axis_tready"},
+						"TVALID": { "actual": "m_axis_tvalid"}
+					}
+				},
+				"/axis_data_fifo_0/S_AXIS": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "s_axis_aclk"},
+						"ARESETN": { "actual": "s_axis_aresetn"},
+						"TDATA": { "actual": "s_axis_tdata"},
+						"TKEEP": { "actual": "s_axis_tkeep"},
+						"TLAST": { "actual": "s_axis_tlast"},
+						"TREADY": { "actual": "s_axis_tready"},
+						"TVALID": { "actual": "s_axis_tvalid"}
+					}
+				},
 				"/control/m00_cmd": {
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
@@ -724,6 +748,7 @@
 						"ACLK": { "actual": "ap_clk"},
 						"ARESETN": { "actual": "ap_rst_n"},
 						"TDATA": { "actual": "m00_axis_tdata"},
+						"TKEEP": { "actual": "m00_axis_tkeep"},
 						"TLAST": { "actual": "m00_axis_tlast"},
 						"TREADY": { "actual": "m00_axis_tready"},
 						"TVALID": { "actual": "m00_axis_tvalid"}
@@ -1040,6 +1065,7 @@
 						"ACLK": { "actual": "ap_clk"},
 						"ARESETN": { "actual": "ap_rst_n"},
 						"TDATA": { "actual": "s00_axis_tdata"},
+						"TKEEP": { "actual": "s00_axis_tkeep"},
 						"TLAST": { "actual": "s00_axis_tlast"},
 						"TREADY": { "actual": "s00_axis_tready"},
 						"TVALID": { "actual": "s00_axis_tvalid"}
@@ -1053,28 +1079,6 @@
 						"TDATA": { "actual": "s00_cmd_tdata"},
 						"TREADY": { "actual": "s00_cmd_tready"},
 						"TVALID": { "actual": "s00_cmd_tvalid"}
-					}
-				},
-				"/myproject_axi_0/in_r": {
-					"interface": "xilinx.com:interface:axis:1.0",
-					"ports": {
-						"ACLK": { "actual": "ap_clk"},
-						"ARESETN": { "actual": "ap_rst_n"},
-						"TDATA": { "actual": "in_r_TDATA"},
-						"TLAST": { "actual": "in_r_TLAST"},
-						"TREADY": { "actual": "in_r_TREADY"},
-						"TVALID": { "actual": "in_r_TVALID"}
-					}
-				},
-				"/myproject_axi_0/out_r": {
-					"interface": "xilinx.com:interface:axis:1.0",
-					"ports": {
-						"ACLK": { "actual": "ap_clk"},
-						"ARESETN": { "actual": "ap_rst_n"},
-						"TDATA": { "actual": "out_r_TDATA"},
-						"TLAST": { "actual": "out_r_TLAST"},
-						"TREADY": { "actual": "out_r_TREADY"},
-						"TVALID": { "actual": "out_r_TVALID"}
 					}
 				}
 			}

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'linear_array_array_ap_fixed_16u_linear_config7_s'
 ================================================================
-* Date:           Mon Dec  6 16:55:56 2021
+* Date:           Tue Dec  7 00:25:09 2021
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        myproject_prj
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  | 3.33 ns | 2.916 ns |   0.42 ns  |
+    |ap_clk  | 2.00 ns | 1.750 ns |   0.25 ns  |
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      123|      123| 0.410 us | 0.410 us |  123|  123|   none  |
+    |      123|      123| 0.246 us | 0.246 us |  123|  123|   none  |
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -363,11 +363,11 @@ ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_
 ST_2 : Operation 41 [1/1] (0.70ns)   --->   "%i = add i7 %i_0, 1" [firmware/nnet_utils/nnet_activation_stream.h:38]   --->   Operation 41 'add' 'i' <Predicate = true> <Delay = 0.70> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 42 [1/1] (0.00ns)   --->   "br i1 %icmp_ln38, label %2, label %LinearActLoop" [firmware/nnet_utils/nnet_activation_stream.h:38]   --->   Operation 42 'br' <Predicate = true> <Delay = 0.00>
 
-State 3 <SV = 2> <Delay = 2.91>
+State 3 <SV = 2> <Delay = 1.75>
 ST_3 : Operation 43 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str29) nounwind" [firmware/nnet_utils/nnet_activation_stream.h:38]   --->   Operation 43 'specloopname' <Predicate = (!icmp_ln38)> <Delay = 0.00>
 ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([14 x i8]* @p_str29)" [firmware/nnet_utils/nnet_activation_stream.h:38]   --->   Operation 44 'specregionbegin' 'tmp' <Predicate = (!icmp_ln38)> <Delay = 0.00>
 ST_3 : Operation 45 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str10) nounwind" [firmware/nnet_utils/nnet_activation_stream.h:39]   --->   Operation 45 'specpipeline' <Predicate = (!icmp_ln38)> <Delay = 0.00>
-ST_3 : Operation 46 [1/1] (1.45ns)   --->   "%empty_207 = call { i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12 } @_ssdm_op_Read.ap_fifo.volatile.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P(i12* %data_V_data_0_V, i12* %data_V_data_1_V, i12* %data_V_data_2_V, i12* %data_V_data_3_V, i12* %data_V_data_4_V, i12* %data_V_data_5_V, i12* %data_V_data_6_V, i12* %data_V_data_7_V, i12* %data_V_data_8_V, i12* %data_V_data_9_V, i12* %data_V_data_10_V, i12* %data_V_data_11_V, i12* %data_V_data_12_V, i12* %data_V_data_13_V, i12* %data_V_data_14_V, i12* %data_V_data_15_V)" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 46 'read' 'empty_207' <Predicate = (!icmp_ln38)> <Delay = 1.45> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_3 : Operation 46 [1/1] (0.87ns)   --->   "%empty_207 = call { i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12 } @_ssdm_op_Read.ap_fifo.volatile.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P(i12* %data_V_data_0_V, i12* %data_V_data_1_V, i12* %data_V_data_2_V, i12* %data_V_data_3_V, i12* %data_V_data_4_V, i12* %data_V_data_5_V, i12* %data_V_data_6_V, i12* %data_V_data_7_V, i12* %data_V_data_8_V, i12* %data_V_data_9_V, i12* %data_V_data_10_V, i12* %data_V_data_11_V, i12* %data_V_data_12_V, i12* %data_V_data_13_V, i12* %data_V_data_14_V, i12* %data_V_data_15_V)" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 46 'read' 'empty_207' <Predicate = (!icmp_ln38)> <Delay = 0.87> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
 ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%tmp_data_0_V = extractvalue { i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12 } %empty_207, 0" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 47 'extractvalue' 'tmp_data_0_V' <Predicate = (!icmp_ln38)> <Delay = 0.00>
 ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%tmp_data_1_V = extractvalue { i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12 } %empty_207, 1" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 48 'extractvalue' 'tmp_data_1_V' <Predicate = (!icmp_ln38)> <Delay = 0.00>
 ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%tmp_data_2_V = extractvalue { i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12 } %empty_207, 2" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 49 'extractvalue' 'tmp_data_2_V' <Predicate = (!icmp_ln38)> <Delay = 0.00>
@@ -384,7 +384,7 @@ ST_3 : Operation 59 [1/1] (0.00ns)   --->   "%tmp_data_12_V = extractvalue { i12
 ST_3 : Operation 60 [1/1] (0.00ns)   --->   "%tmp_data_13_V = extractvalue { i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12 } %empty_207, 13" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 60 'extractvalue' 'tmp_data_13_V' <Predicate = (!icmp_ln38)> <Delay = 0.00>
 ST_3 : Operation 61 [1/1] (0.00ns)   --->   "%tmp_data_14_V = extractvalue { i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12 } %empty_207, 14" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 61 'extractvalue' 'tmp_data_14_V' <Predicate = (!icmp_ln38)> <Delay = 0.00>
 ST_3 : Operation 62 [1/1] (0.00ns)   --->   "%tmp_data_15_V = extractvalue { i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12, i12 } %empty_207, 15" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 62 'extractvalue' 'tmp_data_15_V' <Predicate = (!icmp_ln38)> <Delay = 0.00>
-ST_3 : Operation 63 [1/1] (1.45ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P(i12* %res_V_data_0_V, i12* %res_V_data_1_V, i12* %res_V_data_2_V, i12* %res_V_data_3_V, i12* %res_V_data_4_V, i12* %res_V_data_5_V, i12* %res_V_data_6_V, i12* %res_V_data_7_V, i12* %res_V_data_8_V, i12* %res_V_data_9_V, i12* %res_V_data_10_V, i12* %res_V_data_11_V, i12* %res_V_data_12_V, i12* %res_V_data_13_V, i12* %res_V_data_14_V, i12* %res_V_data_15_V, i12 %tmp_data_0_V, i12 %tmp_data_1_V, i12 %tmp_data_2_V, i12 %tmp_data_3_V, i12 %tmp_data_4_V, i12 %tmp_data_5_V, i12 %tmp_data_6_V, i12 %tmp_data_7_V, i12 %tmp_data_8_V, i12 %tmp_data_9_V, i12 %tmp_data_10_V, i12 %tmp_data_11_V, i12 %tmp_data_12_V, i12 %tmp_data_13_V, i12 %tmp_data_14_V, i12 %tmp_data_15_V)" [firmware/nnet_utils/nnet_activation_stream.h:50]   --->   Operation 63 'write' <Predicate = (!icmp_ln38)> <Delay = 1.45> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_3 : Operation 63 [1/1] (0.87ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P(i12* %res_V_data_0_V, i12* %res_V_data_1_V, i12* %res_V_data_2_V, i12* %res_V_data_3_V, i12* %res_V_data_4_V, i12* %res_V_data_5_V, i12* %res_V_data_6_V, i12* %res_V_data_7_V, i12* %res_V_data_8_V, i12* %res_V_data_9_V, i12* %res_V_data_10_V, i12* %res_V_data_11_V, i12* %res_V_data_12_V, i12* %res_V_data_13_V, i12* %res_V_data_14_V, i12* %res_V_data_15_V, i12 %tmp_data_0_V, i12 %tmp_data_1_V, i12 %tmp_data_2_V, i12 %tmp_data_3_V, i12 %tmp_data_4_V, i12 %tmp_data_5_V, i12 %tmp_data_6_V, i12 %tmp_data_7_V, i12 %tmp_data_8_V, i12 %tmp_data_9_V, i12 %tmp_data_10_V, i12 %tmp_data_11_V, i12 %tmp_data_12_V, i12 %tmp_data_13_V, i12 %tmp_data_14_V, i12 %tmp_data_15_V)" [firmware/nnet_utils/nnet_activation_stream.h:50]   --->   Operation 63 'write' <Predicate = (!icmp_ln38)> <Delay = 0.87> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
 ST_3 : Operation 64 [1/1] (0.00ns)   --->   "%empty_208 = call i32 (...)* @_ssdm_op_SpecRegionEnd([14 x i8]* @p_str29, i32 %tmp)" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 64 'specregionend' 'empty_208' <Predicate = (!icmp_ln38)> <Delay = 0.00>
 ST_3 : Operation 65 [1/1] (0.00ns)   --->   "br label %1" [firmware/nnet_utils/nnet_activation_stream.h:38]   --->   Operation 65 'br' <Predicate = (!icmp_ln38)> <Delay = 0.00>
 

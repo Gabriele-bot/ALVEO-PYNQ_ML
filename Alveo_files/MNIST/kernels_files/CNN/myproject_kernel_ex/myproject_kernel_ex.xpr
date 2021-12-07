@@ -6,7 +6,7 @@
 <Project Version="7" Minor="49" Path="/home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="4d0401c4a1fa473f815c68945e56aa4e"/>
+    <Option Name="Id" Val="f24db5a69cb446bd94ad7dd0f71279b8"/>
     <Option Name="Part" Val="xcu50-fsvh2104-2-e"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -28,7 +28,6 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="RTL_Kernel"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/myproject_prj"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PSRCDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>
@@ -74,11 +73,44 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axi_crossbar_0_0/myproject_kernel_bd_axi_crossbar_0_0.xci">
-          <Proxy FileSetName="myproject_kernel_bd_axi_crossbar_0_0"/>
+        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axis_broadcaster_0_0/myproject_kernel_bd_axis_broadcaster_0_0.xci">
+          <Proxy FileSetName="myproject_kernel_bd_axis_broadcaster_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/myproject_kernel_bd_axis_subset_cnv_cmd_0_1.xci">
+          <Proxy FileSetName="myproject_kernel_bd_axis_subset_cnv_cmd_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axis_dwidth_cnv_0_1/myproject_kernel_bd_axis_dwidth_cnv_0_1.xci">
+          <Proxy FileSetName="myproject_kernel_bd_axis_dwidth_cnv_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/myproject_kernel_bd_axis_subset_cnv_sts_0_1.xci">
+          <Proxy FileSetName="myproject_kernel_bd_axis_subset_cnv_sts_0_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axis_subset_cnv_sts_0_0/myproject_kernel_bd_axis_subset_cnv_sts_0_0.xci">
           <Proxy FileSetName="myproject_kernel_bd_axis_subset_cnv_sts_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axi_datamover_0_1/myproject_kernel_bd_axi_datamover_0_1.xci">
+          <Proxy FileSetName="myproject_kernel_bd_axi_datamover_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_0/myproject_kernel_bd_axis_subset_cnv_cmd_0_0.xci">
+          <Proxy FileSetName="myproject_kernel_bd_axis_subset_cnv_cmd_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axi_bram_ctrl_0_0/myproject_kernel_bd_axi_bram_ctrl_0_0.xci">
+          <Proxy FileSetName="myproject_kernel_bd_axi_bram_ctrl_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_microblaze_0_0/myproject_kernel_bd_microblaze_0_0.xci">
+          <Proxy FileSetName="myproject_kernel_bd_microblaze_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axi_bram_ctrl_0_bram_0/myproject_kernel_bd_axi_bram_ctrl_0_bram_0.xci">
+          <Proxy FileSetName="myproject_kernel_bd_axi_bram_ctrl_0_bram_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axi_crossbar_0_0/myproject_kernel_bd_axi_crossbar_0_0.xci">
+          <Proxy FileSetName="myproject_kernel_bd_axi_crossbar_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_mdm_1_0/myproject_kernel_bd_mdm_1_0.xci">
+          <Proxy FileSetName="myproject_kernel_bd_mdm_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axi_register_slice_0_0/myproject_kernel_bd_axi_register_slice_0_0.xci">
+          <Proxy FileSetName="myproject_kernel_bd_axi_register_slice_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axi_gpio_0_0/myproject_kernel_bd_axi_gpio_0_0.xci">
           <Proxy FileSetName="myproject_kernel_bd_axi_gpio_0_0"/>
@@ -86,65 +118,32 @@
         <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axi_crossbar_1_0/myproject_kernel_bd_axi_crossbar_1_0.xci">
           <Proxy FileSetName="myproject_kernel_bd_axi_crossbar_1_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axi_bram_ctrl_0_bram_0/myproject_kernel_bd_axi_bram_ctrl_0_bram_0.xci">
-          <Proxy FileSetName="myproject_kernel_bd_axi_bram_ctrl_0_bram_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axis_dwidth_cnv_0_1/myproject_kernel_bd_axis_dwidth_cnv_0_1.xci">
-          <Proxy FileSetName="myproject_kernel_bd_axis_dwidth_cnv_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_microblaze_0_0/myproject_kernel_bd_microblaze_0_0.xci">
-          <Proxy FileSetName="myproject_kernel_bd_microblaze_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axi_bram_ctrl_0_0/myproject_kernel_bd_axi_bram_ctrl_0_0.xci">
-          <Proxy FileSetName="myproject_kernel_bd_axi_bram_ctrl_0_0"/>
+        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axis_broadcaster_0_1/myproject_kernel_bd_axis_broadcaster_0_1.xci">
+          <Proxy FileSetName="myproject_kernel_bd_axis_broadcaster_0_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axis_combiner_0_1/myproject_kernel_bd_axis_combiner_0_1.xci">
           <Proxy FileSetName="myproject_kernel_bd_axis_combiner_0_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/myproject_kernel_bd_axis_subset_cnv_sts_0_1.xci">
-          <Proxy FileSetName="myproject_kernel_bd_axis_subset_cnv_sts_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axis_broadcaster_0_1/myproject_kernel_bd_axis_broadcaster_0_1.xci">
-          <Proxy FileSetName="myproject_kernel_bd_axis_broadcaster_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axi_datamover_0_1/myproject_kernel_bd_axi_datamover_0_1.xci">
-          <Proxy FileSetName="myproject_kernel_bd_axi_datamover_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/myproject_kernel_bd_axis_subset_cnv_cmd_0_1.xci">
-          <Proxy FileSetName="myproject_kernel_bd_axis_subset_cnv_cmd_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axi_register_slice_0_0/myproject_kernel_bd_axi_register_slice_0_0.xci">
-          <Proxy FileSetName="myproject_kernel_bd_axi_register_slice_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_ilmb_bram_if_cntlr_0/myproject_kernel_bd_ilmb_bram_if_cntlr_0.xci">
-          <Proxy FileSetName="myproject_kernel_bd_ilmb_bram_if_cntlr_0"/>
+        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0.xci">
+          <Proxy FileSetName="myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_dlmb_bram_if_cntlr_0/myproject_kernel_bd_dlmb_bram_if_cntlr_0.xci">
           <Proxy FileSetName="myproject_kernel_bd_dlmb_bram_if_cntlr_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_dlmb_v10_0/myproject_kernel_bd_dlmb_v10_0.xci">
-          <Proxy FileSetName="myproject_kernel_bd_dlmb_v10_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_mdm_1_0/myproject_kernel_bd_mdm_1_0.xci">
-          <Proxy FileSetName="myproject_kernel_bd_mdm_1_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_ilmb_v10_0/myproject_kernel_bd_ilmb_v10_0.xci">
           <Proxy FileSetName="myproject_kernel_bd_ilmb_v10_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_0/myproject_kernel_bd_axis_subset_cnv_cmd_0_0.xci">
-          <Proxy FileSetName="myproject_kernel_bd_axis_subset_cnv_cmd_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0.xci">
-          <Proxy FileSetName="myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_proc_sys_reset_0_0/myproject_kernel_bd_proc_sys_reset_0_0.xci">
-          <Proxy FileSetName="myproject_kernel_bd_proc_sys_reset_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axi_datamover_0_0/myproject_kernel_bd_axi_datamover_0_0.xci">
           <Proxy FileSetName="myproject_kernel_bd_axi_datamover_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axis_broadcaster_0_0/myproject_kernel_bd_axis_broadcaster_0_0.xci">
-          <Proxy FileSetName="myproject_kernel_bd_axis_broadcaster_0_0"/>
+        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_ilmb_bram_if_cntlr_0/myproject_kernel_bd_ilmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="myproject_kernel_bd_ilmb_bram_if_cntlr_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_proc_sys_reset_0_0/myproject_kernel_bd_proc_sys_reset_0_0.xci">
+          <Proxy FileSetName="myproject_kernel_bd_proc_sys_reset_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_dlmb_v10_0/myproject_kernel_bd_dlmb_v10_0.xci">
+          <Proxy FileSetName="myproject_kernel_bd_dlmb_v10_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axis_dwidth_cnv_0_0/myproject_kernel_bd_axis_dwidth_cnv_0_0.xci">
           <Proxy FileSetName="myproject_kernel_bd_axis_dwidth_cnv_0_0"/>
@@ -152,8 +151,8 @@
         <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axis_combiner_0_0/myproject_kernel_bd_axis_combiner_0_0.xci">
           <Proxy FileSetName="myproject_kernel_bd_axis_combiner_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_myproject_axi_0_0/myproject_kernel_bd_myproject_axi_0_0.xci">
-          <Proxy FileSetName="myproject_kernel_bd_myproject_axi_0_0"/>
+        <CompFileExtendedInfo CompFileName="myproject_kernel_bd.bd" FileRelPathName="ip/myproject_kernel_bd_axis_data_fifo_0_0/myproject_kernel_bd_axis_data_fifo_0_0.xci">
+          <Proxy FileSetName="myproject_kernel_bd_axis_data_fifo_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PPRDIR/imports/myproject_kernel.v">
@@ -265,15 +264,81 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
-    <FileSet Name="myproject_kernel_bd_axi_crossbar_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axi_crossbar_0_0">
+    <FileSet Name="myproject_kernel_bd_axis_broadcaster_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axis_broadcaster_0_0">
       <Config>
-        <Option Name="TopModule" Val="myproject_kernel_bd_axi_crossbar_0_0"/>
+        <Option Name="TopModule" Val="myproject_kernel_bd_axis_broadcaster_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="myproject_kernel_bd_axis_subset_cnv_cmd_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axis_subset_cnv_cmd_0_1">
+      <Config>
+        <Option Name="TopModule" Val="myproject_kernel_bd_axis_subset_cnv_cmd_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="myproject_kernel_bd_axis_dwidth_cnv_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axis_dwidth_cnv_0_1">
+      <Config>
+        <Option Name="TopModule" Val="myproject_kernel_bd_axis_dwidth_cnv_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="myproject_kernel_bd_axis_subset_cnv_sts_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axis_subset_cnv_sts_0_1">
+      <Config>
+        <Option Name="TopModule" Val="myproject_kernel_bd_axis_subset_cnv_sts_0_1"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
     <FileSet Name="myproject_kernel_bd_axis_subset_cnv_sts_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axis_subset_cnv_sts_0_0">
       <Config>
         <Option Name="TopModule" Val="myproject_kernel_bd_axis_subset_cnv_sts_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="myproject_kernel_bd_axi_datamover_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axi_datamover_0_1">
+      <Config>
+        <Option Name="TopModule" Val="myproject_kernel_bd_axi_datamover_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="myproject_kernel_bd_axis_subset_cnv_cmd_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axis_subset_cnv_cmd_0_0">
+      <Config>
+        <Option Name="TopModule" Val="myproject_kernel_bd_axis_subset_cnv_cmd_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="myproject_kernel_bd_axi_bram_ctrl_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axi_bram_ctrl_0_0">
+      <Config>
+        <Option Name="TopModule" Val="myproject_kernel_bd_axi_bram_ctrl_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="myproject_kernel_bd_microblaze_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_microblaze_0_0">
+      <Config>
+        <Option Name="TopModule" Val="myproject_kernel_bd_microblaze_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="myproject_kernel_bd_axi_bram_ctrl_0_bram_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axi_bram_ctrl_0_bram_0">
+      <Config>
+        <Option Name="TopModule" Val="myproject_kernel_bd_axi_bram_ctrl_0_bram_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="myproject_kernel_bd_axi_crossbar_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axi_crossbar_0_0">
+      <Config>
+        <Option Name="TopModule" Val="myproject_kernel_bd_axi_crossbar_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="myproject_kernel_bd_mdm_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_mdm_1_0">
+      <Config>
+        <Option Name="TopModule" Val="myproject_kernel_bd_mdm_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="myproject_kernel_bd_axi_register_slice_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axi_register_slice_0_0">
+      <Config>
+        <Option Name="TopModule" Val="myproject_kernel_bd_axi_register_slice_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -289,27 +354,9 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="myproject_kernel_bd_axi_bram_ctrl_0_bram_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axi_bram_ctrl_0_bram_0">
+    <FileSet Name="myproject_kernel_bd_axis_broadcaster_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axis_broadcaster_0_1">
       <Config>
-        <Option Name="TopModule" Val="myproject_kernel_bd_axi_bram_ctrl_0_bram_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="myproject_kernel_bd_axis_dwidth_cnv_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axis_dwidth_cnv_0_1">
-      <Config>
-        <Option Name="TopModule" Val="myproject_kernel_bd_axis_dwidth_cnv_0_1"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="myproject_kernel_bd_microblaze_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_microblaze_0_0">
-      <Config>
-        <Option Name="TopModule" Val="myproject_kernel_bd_microblaze_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="myproject_kernel_bd_axi_bram_ctrl_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axi_bram_ctrl_0_0">
-      <Config>
-        <Option Name="TopModule" Val="myproject_kernel_bd_axi_bram_ctrl_0_0"/>
+        <Option Name="TopModule" Val="myproject_kernel_bd_axis_broadcaster_0_1"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -319,39 +366,9 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="myproject_kernel_bd_axis_subset_cnv_sts_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axis_subset_cnv_sts_0_1">
+    <FileSet Name="myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0">
       <Config>
-        <Option Name="TopModule" Val="myproject_kernel_bd_axis_subset_cnv_sts_0_1"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="myproject_kernel_bd_axis_broadcaster_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axis_broadcaster_0_1">
-      <Config>
-        <Option Name="TopModule" Val="myproject_kernel_bd_axis_broadcaster_0_1"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="myproject_kernel_bd_axi_datamover_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axi_datamover_0_1">
-      <Config>
-        <Option Name="TopModule" Val="myproject_kernel_bd_axi_datamover_0_1"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="myproject_kernel_bd_axis_subset_cnv_cmd_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axis_subset_cnv_cmd_0_1">
-      <Config>
-        <Option Name="TopModule" Val="myproject_kernel_bd_axis_subset_cnv_cmd_0_1"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="myproject_kernel_bd_axi_register_slice_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axi_register_slice_0_0">
-      <Config>
-        <Option Name="TopModule" Val="myproject_kernel_bd_axi_register_slice_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="myproject_kernel_bd_ilmb_bram_if_cntlr_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_ilmb_bram_if_cntlr_0">
-      <Config>
-        <Option Name="TopModule" Val="myproject_kernel_bd_ilmb_bram_if_cntlr_0"/>
+        <Option Name="TopModule" Val="myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -361,39 +378,9 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="myproject_kernel_bd_dlmb_v10_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_dlmb_v10_0">
-      <Config>
-        <Option Name="TopModule" Val="myproject_kernel_bd_dlmb_v10_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="myproject_kernel_bd_mdm_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_mdm_1_0">
-      <Config>
-        <Option Name="TopModule" Val="myproject_kernel_bd_mdm_1_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="myproject_kernel_bd_ilmb_v10_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_ilmb_v10_0">
       <Config>
         <Option Name="TopModule" Val="myproject_kernel_bd_ilmb_v10_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="myproject_kernel_bd_axis_subset_cnv_cmd_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axis_subset_cnv_cmd_0_0">
-      <Config>
-        <Option Name="TopModule" Val="myproject_kernel_bd_axis_subset_cnv_cmd_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0">
-      <Config>
-        <Option Name="TopModule" Val="myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="myproject_kernel_bd_proc_sys_reset_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_proc_sys_reset_0_0">
-      <Config>
-        <Option Name="TopModule" Val="myproject_kernel_bd_proc_sys_reset_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -403,9 +390,21 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="myproject_kernel_bd_axis_broadcaster_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axis_broadcaster_0_0">
+    <FileSet Name="myproject_kernel_bd_ilmb_bram_if_cntlr_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_ilmb_bram_if_cntlr_0">
       <Config>
-        <Option Name="TopModule" Val="myproject_kernel_bd_axis_broadcaster_0_0"/>
+        <Option Name="TopModule" Val="myproject_kernel_bd_ilmb_bram_if_cntlr_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="myproject_kernel_bd_proc_sys_reset_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_proc_sys_reset_0_0">
+      <Config>
+        <Option Name="TopModule" Val="myproject_kernel_bd_proc_sys_reset_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="myproject_kernel_bd_dlmb_v10_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_dlmb_v10_0">
+      <Config>
+        <Option Name="TopModule" Val="myproject_kernel_bd_dlmb_v10_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -421,9 +420,9 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="myproject_kernel_bd_myproject_axi_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_myproject_axi_0_0">
+    <FileSet Name="myproject_kernel_bd_axis_data_fifo_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myproject_kernel_bd_axis_data_fifo_0_0">
       <Config>
-        <Option Name="TopModule" Val="myproject_kernel_bd_myproject_axi_0_0"/>
+        <Option Name="TopModule" Val="myproject_kernel_bd_axis_data_fifo_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -467,7 +466,43 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="myproject_kernel_bd_axi_crossbar_0_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axi_crossbar_0_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_crossbar_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axi_crossbar_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="myproject_kernel_bd_axis_broadcaster_0_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axis_broadcaster_0_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_broadcaster_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axis_broadcaster_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_axis_subset_cnv_cmd_0_1_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axis_subset_cnv_cmd_0_1" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_subset_cnv_cmd_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axis_subset_cnv_cmd_0_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_axis_dwidth_cnv_0_1_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axis_dwidth_cnv_0_1" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_dwidth_cnv_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axis_dwidth_cnv_0_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_axis_subset_cnv_sts_0_1_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axis_subset_cnv_sts_0_1" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_subset_cnv_sts_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axis_subset_cnv_sts_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -480,6 +515,102 @@
       <RQSFiles/>
     </Run>
     <Run Id="myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axis_subset_cnv_sts_0_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_subset_cnv_sts_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_axi_datamover_0_1_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axi_datamover_0_1" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_datamover_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axi_datamover_0_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_axis_subset_cnv_cmd_0_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axis_subset_cnv_cmd_0_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_subset_cnv_cmd_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axis_subset_cnv_cmd_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_axi_bram_ctrl_0_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axi_bram_ctrl_0_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_bram_ctrl_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_microblaze_0_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_microblaze_0_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_microblaze_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_microblaze_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_axi_bram_ctrl_0_bram_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axi_bram_ctrl_0_bram_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_bram_ctrl_0_bram_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axi_bram_ctrl_0_bram_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_axi_crossbar_0_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axi_crossbar_0_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_crossbar_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axi_crossbar_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_mdm_1_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_mdm_1_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_mdm_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_mdm_1_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_axi_register_slice_0_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axi_register_slice_0_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_register_slice_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axi_register_slice_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -515,43 +646,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="myproject_kernel_bd_axi_bram_ctrl_0_bram_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axi_bram_ctrl_0_bram_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_bram_ctrl_0_bram_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axi_bram_ctrl_0_bram_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_axis_dwidth_cnv_0_1_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axis_dwidth_cnv_0_1" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_dwidth_cnv_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axis_dwidth_cnv_0_1_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_microblaze_0_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_microblaze_0_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_microblaze_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_microblaze_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_axi_bram_ctrl_0_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axi_bram_ctrl_0_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_bram_ctrl_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="myproject_kernel_bd_axis_broadcaster_0_1_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axis_broadcaster_0_1" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_broadcaster_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axis_broadcaster_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -575,67 +670,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="myproject_kernel_bd_axis_subset_cnv_sts_0_1_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axis_subset_cnv_sts_0_1" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_subset_cnv_sts_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axis_subset_cnv_sts_0_1_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_axis_broadcaster_0_1_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axis_broadcaster_0_1" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_broadcaster_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axis_broadcaster_0_1_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_axi_datamover_0_1_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axi_datamover_0_1" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_datamover_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axi_datamover_0_1_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_axis_subset_cnv_cmd_0_1_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axis_subset_cnv_cmd_0_1" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_subset_cnv_cmd_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axis_subset_cnv_cmd_0_1_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_axi_register_slice_0_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axi_register_slice_0_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_register_slice_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axi_register_slice_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_ilmb_bram_if_cntlr_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_ilmb_bram_if_cntlr_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_ilmb_bram_if_cntlr_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_ilmb_bram_if_cntlr_0_synth_1" IncludeInArchive="true">
+    <Run Id="myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -659,67 +694,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="myproject_kernel_bd_dlmb_v10_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_dlmb_v10_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_dlmb_v10_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_dlmb_v10_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_mdm_1_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_mdm_1_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_mdm_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_mdm_1_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="myproject_kernel_bd_ilmb_v10_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_ilmb_v10_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_ilmb_v10_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_ilmb_v10_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_axis_subset_cnv_cmd_0_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axis_subset_cnv_cmd_0_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_subset_cnv_cmd_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axis_subset_cnv_cmd_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_proc_sys_reset_0_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_proc_sys_reset_0_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_proc_sys_reset_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_proc_sys_reset_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -743,7 +718,31 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="myproject_kernel_bd_axis_broadcaster_0_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axis_broadcaster_0_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_broadcaster_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axis_broadcaster_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="myproject_kernel_bd_ilmb_bram_if_cntlr_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_ilmb_bram_if_cntlr_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_ilmb_bram_if_cntlr_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_ilmb_bram_if_cntlr_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_proc_sys_reset_0_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_proc_sys_reset_0_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_proc_sys_reset_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_proc_sys_reset_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_dlmb_v10_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_dlmb_v10_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_dlmb_v10_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_dlmb_v10_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -779,7 +778,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="myproject_kernel_bd_myproject_axi_0_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_myproject_axi_0_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_myproject_axi_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_myproject_axi_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="myproject_kernel_bd_axis_data_fifo_0_0_synth_1" Type="Ft3:Synth" SrcSet="myproject_kernel_bd_axis_data_fifo_0_0" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_data_fifo_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myproject_kernel_bd_axis_data_fifo_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -810,7 +809,64 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="myproject_kernel_bd_axi_crossbar_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_crossbar_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axi_crossbar_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="myproject_kernel_bd_axis_broadcaster_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_broadcaster_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axis_broadcaster_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_axis_subset_cnv_cmd_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_subset_cnv_cmd_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axis_subset_cnv_cmd_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_axis_dwidth_cnv_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_dwidth_cnv_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axis_dwidth_cnv_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_axis_subset_cnv_sts_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_subset_cnv_sts_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axis_subset_cnv_sts_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>
@@ -830,6 +886,158 @@
       <RQSFiles/>
     </Run>
     <Run Id="myproject_kernel_bd_axis_subset_cnv_sts_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_subset_cnv_sts_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axis_subset_cnv_sts_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_axi_datamover_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_datamover_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axi_datamover_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_axis_subset_cnv_cmd_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_subset_cnv_cmd_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axis_subset_cnv_cmd_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_axi_bram_ctrl_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_bram_ctrl_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_microblaze_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_microblaze_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_microblaze_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_axi_bram_ctrl_0_bram_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_bram_ctrl_0_bram_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axi_bram_ctrl_0_bram_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_axi_crossbar_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_crossbar_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axi_crossbar_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_mdm_1_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_mdm_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_mdm_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_axi_register_slice_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_register_slice_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axi_register_slice_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>
@@ -886,64 +1094,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="myproject_kernel_bd_axi_bram_ctrl_0_bram_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_bram_ctrl_0_bram_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axi_bram_ctrl_0_bram_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_axis_dwidth_cnv_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_dwidth_cnv_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axis_dwidth_cnv_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_microblaze_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_microblaze_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_microblaze_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_axi_bram_ctrl_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_bram_ctrl_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="myproject_kernel_bd_axis_broadcaster_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_broadcaster_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axis_broadcaster_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>
@@ -981,102 +1132,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="myproject_kernel_bd_axis_subset_cnv_sts_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_subset_cnv_sts_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axis_subset_cnv_sts_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_axis_broadcaster_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_broadcaster_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axis_broadcaster_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_axi_datamover_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_datamover_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axi_datamover_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_axis_subset_cnv_cmd_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_subset_cnv_cmd_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axis_subset_cnv_cmd_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_axi_register_slice_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axi_register_slice_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axi_register_slice_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_ilmb_bram_if_cntlr_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_ilmb_bram_if_cntlr_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_ilmb_bram_if_cntlr_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>
@@ -1114,102 +1170,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="myproject_kernel_bd_dlmb_v10_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_dlmb_v10_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_dlmb_v10_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_mdm_1_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_mdm_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_mdm_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="myproject_kernel_bd_ilmb_v10_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_ilmb_v10_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_ilmb_v10_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_axis_subset_cnv_cmd_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_subset_cnv_cmd_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axis_subset_cnv_cmd_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_dlmb_bram_if_cntlr_bram_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="myproject_kernel_bd_proc_sys_reset_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_proc_sys_reset_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_proc_sys_reset_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>
@@ -1247,7 +1208,45 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="myproject_kernel_bd_axis_broadcaster_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_broadcaster_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axis_broadcaster_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="myproject_kernel_bd_ilmb_bram_if_cntlr_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_ilmb_bram_if_cntlr_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_ilmb_bram_if_cntlr_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_proc_sys_reset_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_proc_sys_reset_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_proc_sys_reset_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="myproject_kernel_bd_dlmb_v10_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_dlmb_v10_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_dlmb_v10_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>
@@ -1304,7 +1303,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="myproject_kernel_bd_myproject_axi_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_myproject_axi_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_myproject_axi_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="myproject_kernel_bd_axis_data_fifo_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu50-fsvh2104-2-e" ConstrsSet="myproject_kernel_bd_axis_data_fifo_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="myproject_kernel_bd_axis_data_fifo_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>

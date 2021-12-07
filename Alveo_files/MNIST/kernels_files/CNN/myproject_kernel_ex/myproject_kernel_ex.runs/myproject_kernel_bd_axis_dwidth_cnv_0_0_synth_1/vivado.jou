@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Mon Dec  6 17:14:36 2021
-# Process ID: 6962
+# Start of session at: Tue Dec  7 00:42:20 2021
+# Process ID: 13938
 # Current directory: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_dwidth_cnv_0_0_synth_1
 # Command line: vivado -log myproject_kernel_bd_axis_dwidth_cnv_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source myproject_kernel_bd_axis_dwidth_cnv_0_0.tcl
 # Log file: /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.runs/myproject_kernel_bd_axis_dwidth_cnv_0_0_synth_1/myproject_kernel_bd_axis_dwidth_cnv_0_0.vds

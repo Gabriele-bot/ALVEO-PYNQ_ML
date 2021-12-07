@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-//Date        : Mon Dec  6 17:07:44 2021
+//Date        : Tue Dec  7 00:35:42 2021
 //Host        : gabribot-X570-AORUS-ELITE running 64-bit Ubuntu 18.04.6 LTS
 //Command     : generate_target myproject_kernel_bd.bd
 //Design      : myproject_kernel_bd
@@ -599,6 +599,7 @@ module dma_0_imp_1KN9I6N
     m00_axi_wstrb,
     m00_axi_wvalid,
     m00_axis_tdata,
+    m00_axis_tkeep,
     m00_axis_tlast,
     m00_axis_tready,
     m00_axis_tvalid,
@@ -648,7 +649,8 @@ module dma_0_imp_1KN9I6N
   output [3:0]m00_axi_wstrb;
   output m00_axi_wvalid;
   output [31:0]m00_axis_tdata;
-  output [0:0]m00_axis_tlast;
+  output [3:0]m00_axis_tkeep;
+  output m00_axis_tlast;
   input m00_axis_tready;
   output m00_axis_tvalid;
   output [31:0]m00_sts_tdata;
@@ -667,6 +669,7 @@ module dma_0_imp_1KN9I6N
   wire ap_clk;
   wire ap_rst_n;
   wire [31:0]axi_datamover_0_0_M_AXIS_MM2S_TDATA;
+  wire [3:0]axi_datamover_0_0_M_AXIS_MM2S_TKEEP;
   wire axi_datamover_0_0_M_AXIS_MM2S_TLAST;
   wire axi_datamover_0_0_M_AXIS_MM2S_TREADY;
   wire axi_datamover_0_0_M_AXIS_MM2S_TVALID;
@@ -777,7 +780,8 @@ module dma_0_imp_1KN9I6N
   assign m00_axi_wstrb[3:0] = axi_datamover_0_M_AXI_WSTRB;
   assign m00_axi_wvalid = axi_datamover_0_M_AXI_WVALID;
   assign m00_axis_tdata[31:0] = axi_datamover_0_0_M_AXIS_MM2S_TDATA;
-  assign m00_axis_tlast[0] = axi_datamover_0_0_M_AXIS_MM2S_TLAST;
+  assign m00_axis_tkeep[3:0] = axi_datamover_0_0_M_AXIS_MM2S_TKEEP;
+  assign m00_axis_tlast = axi_datamover_0_0_M_AXIS_MM2S_TLAST;
   assign m00_axis_tvalid = axi_datamover_0_0_M_AXIS_MM2S_TVALID;
   assign m00_sts_tdata[31:0] = axis_subset_cnv_0_M_AXIS_TDATA;
   assign m00_sts_tlast = axis_subset_cnv_0_M_AXIS_TLAST;
@@ -832,6 +836,7 @@ module dma_0_imp_1KN9I6N
         .m_axis_mm2s_sts_tready(axi_datamover_0_M_AXIS_MM2S_STS_TREADY),
         .m_axis_mm2s_sts_tvalid(axi_datamover_0_M_AXIS_MM2S_STS_TVALID),
         .m_axis_mm2s_tdata(axi_datamover_0_0_M_AXIS_MM2S_TDATA),
+        .m_axis_mm2s_tkeep(axi_datamover_0_0_M_AXIS_MM2S_TKEEP),
         .m_axis_mm2s_tlast(axi_datamover_0_0_M_AXIS_MM2S_TLAST),
         .m_axis_mm2s_tready(axi_datamover_0_0_M_AXIS_MM2S_TREADY),
         .m_axis_mm2s_tvalid(axi_datamover_0_0_M_AXIS_MM2S_TVALID),
@@ -951,6 +956,7 @@ module dma_1_imp_1AZ6IVD
     m00_sts_tready,
     m00_sts_tvalid,
     s00_axis_tdata,
+    s00_axis_tkeep,
     s00_axis_tlast,
     s00_axis_tready,
     s00_axis_tvalid,
@@ -1000,7 +1006,8 @@ module dma_1_imp_1AZ6IVD
   input m00_sts_tready;
   output m00_sts_tvalid;
   input [31:0]s00_axis_tdata;
-  input [0:0]s00_axis_tlast;
+  input [3:0]s00_axis_tkeep;
+  input s00_axis_tlast;
   output s00_axis_tready;
   input s00_axis_tvalid;
   input [31:0]s00_cmd_tdata;
@@ -1080,7 +1087,8 @@ module dma_1_imp_1AZ6IVD
   wire axis_subset_cnv_cmd_0_M_AXIS_TREADY;
   wire axis_subset_cnv_cmd_0_M_AXIS_TVALID;
   wire [31:0]s00_axis_TDATA;
-  wire [0:0]s00_axis_TLAST;
+  wire [3:0]s00_axis_TKEEP;
+  wire s00_axis_TLAST;
   wire s00_axis_TREADY;
   wire s00_axis_TVALID;
 
@@ -1127,7 +1135,8 @@ module dma_1_imp_1AZ6IVD
   assign m00_sts_tlast = axis_subset_cnv_0_M_AXIS_TLAST;
   assign m00_sts_tvalid = axis_subset_cnv_0_M_AXIS_TVALID;
   assign s00_axis_TDATA = s00_axis_tdata[31:0];
-  assign s00_axis_TLAST = s00_axis_tlast[0];
+  assign s00_axis_TKEEP = s00_axis_tkeep[3:0];
+  assign s00_axis_TLAST = s00_axis_tlast;
   assign s00_axis_TVALID = s00_axis_tvalid;
   assign s00_axis_tready = s00_axis_TREADY;
   assign s00_cmd_tready = axis_dwidth_cnv_0_S_AXIS_TREADY;
@@ -1193,7 +1202,7 @@ module dma_1_imp_1AZ6IVD
         .s_axis_s2mm_cmd_tready(axis_broadcaster_0_M01_AXIS_TREADY),
         .s_axis_s2mm_cmd_tvalid(axis_broadcaster_0_M01_AXIS_TVALID),
         .s_axis_s2mm_tdata(s00_axis_TDATA),
-        .s_axis_s2mm_tkeep({1'b1,1'b1,1'b1,1'b1}),
+        .s_axis_s2mm_tkeep(s00_axis_TKEEP),
         .s_axis_s2mm_tlast(s00_axis_TLAST),
         .s_axis_s2mm_tready(s00_axis_TREADY),
         .s_axis_s2mm_tvalid(s00_axis_TVALID));
@@ -1926,7 +1935,7 @@ module microblaze_0_local_memory_imp_QQQ3KK
         .Sl_Wait(microblaze_0_ilmb_bus_WAIT));
 endmodule
 
-(* CORE_GENERATION_INFO = "myproject_kernel_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=myproject_kernel_bd,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=34,numReposBlks=29,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=2,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_bram_cntlr_cnt=3,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "myproject_kernel_bd.hwdef" *) 
+(* CORE_GENERATION_INFO = "myproject_kernel_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=myproject_kernel_bd,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=34,numReposBlks=29,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=2,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_bram_cntlr_cnt=3,da_clkrst_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "myproject_kernel_bd.hwdef" *) 
 module myproject_kernel_bd
    (ap_clk,
     ap_rst_n,
@@ -2022,7 +2031,7 @@ module myproject_kernel_bd
     s_axi_control_wready,
     s_axi_control_wstrb,
     s_axi_control_wvalid);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.AP_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.AP_CLK, ASSOCIATED_BUSIF m00_axi:m01_axi:s_axi_control, ASSOCIATED_RESET ap_rst_n, CLK_DOMAIN myproject_kernel_bd_ap_clk, FREQ_HZ 300000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) input ap_clk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.AP_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.AP_CLK, ASSOCIATED_BUSIF m00_axi:m01_axi:s_axi_control, ASSOCIATED_RESET ap_rst_n, CLK_DOMAIN myproject_kernel_bd_ap_clk, FREQ_HZ 250000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) input ap_clk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.AP_RST_N RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.AP_RST_N, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input ap_rst_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:bscan:1.0 bscan_0 BSCANID_EN" *) input bscan_0_bscanid_en;
   (* X_INTERFACE_INFO = "xilinx.com:interface:bscan:1.0 bscan_0 CAPTURE" *) input bscan_0_capture;
@@ -2035,7 +2044,7 @@ module myproject_kernel_bd
   (* X_INTERFACE_INFO = "xilinx.com:interface:bscan:1.0 bscan_0 TDO" *) output bscan_0_tdo;
   (* X_INTERFACE_INFO = "xilinx.com:interface:bscan:1.0 bscan_0 TMS" *) input bscan_0_tms;
   (* X_INTERFACE_INFO = "xilinx.com:interface:bscan:1.0 bscan_0 UPDATE" *) input bscan_0_update;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m00_axi ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m00_axi, ADDR_WIDTH 64, ARUSER_WIDTH 4, AWUSER_WIDTH 4, BUSER_WIDTH 0, CLK_DOMAIN myproject_kernel_bd_ap_clk, DATA_WIDTH 32, FREQ_HZ 300000000, HAS_BRESP 0, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 0, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 256, NUM_READ_OUTSTANDING 1, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 1, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) output [63:0]m00_axi_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m00_axi ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m00_axi, ADDR_WIDTH 64, ARUSER_WIDTH 4, AWUSER_WIDTH 4, BUSER_WIDTH 0, CLK_DOMAIN myproject_kernel_bd_ap_clk, DATA_WIDTH 32, FREQ_HZ 250000000, HAS_BRESP 0, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 0, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 256, NUM_READ_OUTSTANDING 1, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 1, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) output [63:0]m00_axi_araddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m00_axi ARBURST" *) output [1:0]m00_axi_arburst;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m00_axi ARCACHE" *) output [3:0]m00_axi_arcache;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m00_axi ARLEN" *) output [7:0]m00_axi_arlen;
@@ -2066,7 +2075,7 @@ module myproject_kernel_bd
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m00_axi WREADY" *) input m00_axi_wready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m00_axi WSTRB" *) output [3:0]m00_axi_wstrb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m00_axi WVALID" *) output m00_axi_wvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m01_axi, ADDR_WIDTH 64, ARUSER_WIDTH 4, AWUSER_WIDTH 4, BUSER_WIDTH 0, CLK_DOMAIN myproject_kernel_bd_ap_clk, DATA_WIDTH 32, FREQ_HZ 300000000, HAS_BRESP 0, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 0, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 256, NUM_READ_OUTSTANDING 1, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 1, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) output [63:0]m01_axi_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m01_axi, ADDR_WIDTH 64, ARUSER_WIDTH 4, AWUSER_WIDTH 4, BUSER_WIDTH 0, CLK_DOMAIN myproject_kernel_bd_ap_clk, DATA_WIDTH 32, FREQ_HZ 250000000, HAS_BRESP 0, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 0, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 256, NUM_READ_OUTSTANDING 1, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 1, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) output [63:0]m01_axi_araddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi ARBURST" *) output [1:0]m01_axi_arburst;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi ARCACHE" *) output [3:0]m01_axi_arcache;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi ARLEN" *) output [7:0]m01_axi_arlen;
@@ -2097,7 +2106,7 @@ module myproject_kernel_bd
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi WREADY" *) input m01_axi_wready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi WSTRB" *) output [3:0]m01_axi_wstrb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m01_axi WVALID" *) output m01_axi_wvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_control, ADDR_WIDTH 12, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN myproject_kernel_bd_ap_clk, DATA_WIDTH 32, FREQ_HZ 300000000, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 1, NUM_READ_OUTSTANDING 1, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 1, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [11:0]s_axi_control_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_control, ADDR_WIDTH 12, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN myproject_kernel_bd_ap_clk, DATA_WIDTH 32, FREQ_HZ 250000000, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 1, NUM_READ_OUTSTANDING 1, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 1, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [11:0]s_axi_control_araddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control ARPROT" *) input [2:0]s_axi_control_arprot;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control ARREADY" *) output s_axi_control_arready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control ARVALID" *) input s_axi_control_arvalid;
@@ -2117,8 +2126,13 @@ module myproject_kernel_bd
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control WSTRB" *) input [3:0]s_axi_control_wstrb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control WVALID" *) input s_axi_control_wvalid;
 
-  wire ap_clk_1;
+  wire ap_clk;
   wire ap_rst_n;
+  wire [31:0]axis_data_fifo_0_M_AXIS_TDATA;
+  wire [3:0]axis_data_fifo_0_M_AXIS_TKEEP;
+  wire axis_data_fifo_0_M_AXIS_TLAST;
+  wire axis_data_fifo_0_M_AXIS_TREADY;
+  wire axis_data_fifo_0_M_AXIS_TVALID;
   wire bscan_0_BSCANID_EN;
   wire bscan_0_CAPTURE;
   wire bscan_0_DRCK;
@@ -2168,7 +2182,8 @@ module myproject_kernel_bd
   wire [3:0]dma_0_m00_axi_WSTRB;
   wire dma_0_m00_axi_WVALID;
   wire [31:0]dma_0_m00_axis_TDATA;
-  wire [0:0]dma_0_m00_axis_TLAST;
+  wire [3:0]dma_0_m00_axis_TKEEP;
+  wire dma_0_m00_axis_TLAST;
   wire dma_0_m00_axis_TREADY;
   wire dma_0_m00_axis_TVALID;
   wire [31:0]dma_0_m00_sts_TDATA;
@@ -2210,10 +2225,6 @@ module myproject_kernel_bd
   wire dma_1_m00_sts_TLAST;
   wire dma_1_m00_sts_TREADY;
   wire dma_1_m00_sts_TVALID;
-  wire [31:0]myproject_axi_0_out_r_TDATA;
-  wire [0:0]myproject_axi_0_out_r_TLAST;
-  wire myproject_axi_0_out_r_TREADY;
-  wire myproject_axi_0_out_r_TVALID;
   wire [11:0]s_axi_control_ARADDR;
   wire [2:0]s_axi_control_ARPROT;
   wire s_axi_control_ARREADY;
@@ -2234,7 +2245,6 @@ module myproject_kernel_bd
   wire [3:0]s_axi_control_WSTRB;
   wire s_axi_control_WVALID;
 
-  assign ap_clk_1 = ap_clk;
   assign bscan_0_BSCANID_EN = bscan_0_bscanid_en;
   assign bscan_0_CAPTURE = bscan_0_capture;
   assign bscan_0_DRCK = bscan_0_drck;
@@ -2327,8 +2337,21 @@ module myproject_kernel_bd
   assign s_axi_control_rresp[1:0] = s_axi_control_RRESP;
   assign s_axi_control_rvalid = s_axi_control_RVALID;
   assign s_axi_control_wready = s_axi_control_WREADY;
+  myproject_kernel_bd_axis_data_fifo_0_0 axis_data_fifo_0
+       (.m_axis_tdata(axis_data_fifo_0_M_AXIS_TDATA),
+        .m_axis_tkeep(axis_data_fifo_0_M_AXIS_TKEEP),
+        .m_axis_tlast(axis_data_fifo_0_M_AXIS_TLAST),
+        .m_axis_tready(axis_data_fifo_0_M_AXIS_TREADY),
+        .m_axis_tvalid(axis_data_fifo_0_M_AXIS_TVALID),
+        .s_axis_aclk(ap_clk),
+        .s_axis_aresetn(ap_rst_n),
+        .s_axis_tdata(dma_0_m00_axis_TDATA),
+        .s_axis_tkeep(dma_0_m00_axis_TKEEP),
+        .s_axis_tlast(dma_0_m00_axis_TLAST),
+        .s_axis_tready(dma_0_m00_axis_TREADY),
+        .s_axis_tvalid(dma_0_m00_axis_TVALID));
   control_imp_KNNMP0 control
-       (.ap_clk(ap_clk_1),
+       (.ap_clk(ap_clk),
         .ap_rst_n(ap_rst_n),
         .bscan_0_bscanid_en(bscan_0_BSCANID_EN),
         .bscan_0_capture(bscan_0_CAPTURE),
@@ -2375,7 +2398,7 @@ module myproject_kernel_bd
         .s_axi_control_wstrb(s_axi_control_WSTRB),
         .s_axi_control_wvalid(s_axi_control_WVALID));
   dma_0_imp_1KN9I6N dma_0
-       (.ap_clk(ap_clk_1),
+       (.ap_clk(ap_clk),
         .ap_rst_n(ap_rst_n),
         .m00_axi_araddr(dma_0_m00_axi_ARADDR),
         .m00_axi_arburst(dma_0_m00_axi_ARBURST),
@@ -2409,6 +2432,7 @@ module myproject_kernel_bd
         .m00_axi_wstrb(dma_0_m00_axi_WSTRB),
         .m00_axi_wvalid(dma_0_m00_axi_WVALID),
         .m00_axis_tdata(dma_0_m00_axis_TDATA),
+        .m00_axis_tkeep(dma_0_m00_axis_TKEEP),
         .m00_axis_tlast(dma_0_m00_axis_TLAST),
         .m00_axis_tready(dma_0_m00_axis_TREADY),
         .m00_axis_tvalid(dma_0_m00_axis_TVALID),
@@ -2424,7 +2448,7 @@ module myproject_kernel_bd
         .s00_cmd_tready(control_m00_cmd_TREADY),
         .s00_cmd_tvalid(control_m00_cmd_TVALID));
   dma_1_imp_1AZ6IVD dma_1
-       (.ap_clk(ap_clk_1),
+       (.ap_clk(ap_clk),
         .ap_rst_n(ap_rst_n),
         .m00_axi_araddr(dma_1_m00_axi_ARADDR),
         .m00_axi_arburst(dma_1_m00_axi_ARBURST),
@@ -2462,22 +2486,12 @@ module myproject_kernel_bd
         .m00_sts_tlast(dma_1_m00_sts_TLAST),
         .m00_sts_tready(dma_1_m00_sts_TREADY),
         .m00_sts_tvalid(dma_1_m00_sts_TVALID),
-        .s00_axis_tdata(myproject_axi_0_out_r_TDATA),
-        .s00_axis_tlast(myproject_axi_0_out_r_TLAST),
-        .s00_axis_tready(myproject_axi_0_out_r_TREADY),
-        .s00_axis_tvalid(myproject_axi_0_out_r_TVALID),
+        .s00_axis_tdata(axis_data_fifo_0_M_AXIS_TDATA),
+        .s00_axis_tkeep(axis_data_fifo_0_M_AXIS_TKEEP),
+        .s00_axis_tlast(axis_data_fifo_0_M_AXIS_TLAST),
+        .s00_axis_tready(axis_data_fifo_0_M_AXIS_TREADY),
+        .s00_axis_tvalid(axis_data_fifo_0_M_AXIS_TVALID),
         .s00_cmd_tdata(control_m01_cmd_TDATA),
         .s00_cmd_tready(control_m01_cmd_TREADY),
         .s00_cmd_tvalid(control_m01_cmd_TVALID));
-  myproject_kernel_bd_myproject_axi_0_0 myproject_axi_0
-       (.ap_clk(ap_clk_1),
-        .ap_rst_n(ap_rst_n),
-        .in_r_TDATA(dma_0_m00_axis_TDATA),
-        .in_r_TLAST(dma_0_m00_axis_TLAST),
-        .in_r_TREADY(dma_0_m00_axis_TREADY),
-        .in_r_TVALID(dma_0_m00_axis_TVALID),
-        .out_r_TDATA(myproject_axi_0_out_r_TDATA),
-        .out_r_TLAST(myproject_axi_0_out_r_TLAST),
-        .out_r_TREADY(myproject_axi_0_out_r_TREADY),
-        .out_r_TVALID(myproject_axi_0_out_r_TVALID));
 endmodule

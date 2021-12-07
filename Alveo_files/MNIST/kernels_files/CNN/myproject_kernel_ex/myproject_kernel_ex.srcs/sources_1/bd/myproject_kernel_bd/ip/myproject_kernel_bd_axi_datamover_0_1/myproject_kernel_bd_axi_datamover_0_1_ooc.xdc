@@ -52,12 +52,12 @@
 # #########################################################
 
 
-create_clock -period 3.333 -name m_axi_mm2s_aclk [get_ports m_axi_mm2s_aclk]
+create_clock -period 4 -name m_axi_mm2s_aclk [get_ports m_axi_mm2s_aclk]
 
-create_clock -period 3.333 -name m_axi_s2mm_aclk [get_ports m_axi_s2mm_aclk]
+create_clock -period 4 -name m_axi_s2mm_aclk [get_ports m_axi_s2mm_aclk]
 
-create_clock -period 3.333 -name m_axis_mm2s_cmdsts_aclk [get_ports m_axis_mm2s_cmdsts_aclk]
+create_clock -period 4 -name m_axis_mm2s_cmdsts_aclk [get_ports m_axis_mm2s_cmdsts_aclk]
 
-create_clock -period 3.333 -name m_axis_s2mm_cmdsts_awclk [get_ports m_axis_s2mm_cmdsts_awclk]
+create_clock -period 4 -name m_axis_s2mm_cmdsts_awclk [get_ports m_axis_s2mm_cmdsts_awclk]
 
 

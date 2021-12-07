@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'myproject_axi'
 ================================================================
-* Date:           Mon Dec  6 16:55:33 2021
+* Date:           Tue Dec  7 00:24:46 2021
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        myproject_prj
@@ -20,17 +20,17 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  | 3.33 ns | 2.916 ns |   0.42 ns  |
+    |ap_clk  | 2.00 ns | 1.750 ns |   0.25 ns  |
     +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+-----------+-----------+------+------+----------+
-    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
-    |   min   |   max   |    min    |    max    |  min |  max |   Type   |
-    +---------+---------+-----------+-----------+------+------+----------+
-    |     3163|     3164| 10.542 us | 10.546 us |  3139|  3139| dataflow |
-    +---------+---------+-----------+-----------+------+------+----------+
+    +---------+---------+----------+----------+------+------+----------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline |
+    |   min   |   max   |    min   |    max   |  min |  max |   Type   |
+    +---------+---------+----------+----------+------+------+----------+
+    |     4705|     4705| 9.410 us | 9.410 us |  4706|  4706| dataflow |
+    +---------+---------+----------+----------+------+------+----------+
 
     + Detail: 
         * Instance: 
@@ -121,8 +121,8 @@ ST_5 : Operation 34 [1/2] (0.00ns)   --->   "call fastcc void @myproject(i8* %in
 State 6 <SV = 5> <Delay = 0.00>
 ST_6 : Operation 35 [1/1] (0.00ns)   --->   "call fastcc void @Block_myproject_axi_.exit36_proc(i16* %out_local_V_data_0_V, i16* %out_local_V_data_1_V, i16* %out_local_V_data_2_V, i16* %out_local_V_data_3_V, i16* %out_local_V_data_4_V, i16* %out_local_V_data_5_V, i16* %out_local_V_data_6_V, i16* %out_local_V_data_7_V, i16* %out_local_V_data_8_V, i16* %out_local_V_data_9_V, i16* %tmp_data_V_0, i16* %tmp_data_V_1, i16* %tmp_data_V_2, i16* %tmp_data_V_3, i16* %tmp_data_V_4, i16* %tmp_data_V_5, i16* %tmp_data_V_6, i16* %tmp_data_V_7, i16* %tmp_data_V_8, i16* %tmp_data_V_9)"   --->   Operation 35 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 7 <SV = 6> <Delay = 2.48>
-ST_7 : Operation 36 [2/2] (2.48ns)   --->   "call fastcc void @Loop_2_proc(float* %out_data, i1* %out_last_V, i1 %is_last_0_i_loc_channel, i16* %tmp_data_V_0, i16* %tmp_data_V_1, i16* %tmp_data_V_2, i16* %tmp_data_V_3, i16* %tmp_data_V_4, i16* %tmp_data_V_5, i16* %tmp_data_V_6, i16* %tmp_data_V_7, i16* %tmp_data_V_8, i16* %tmp_data_V_9)"   --->   Operation 36 'call' <Predicate = true> <Delay = 2.48> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 7 <SV = 6> <Delay = 1.64>
+ST_7 : Operation 36 [2/2] (1.64ns)   --->   "call fastcc void @Loop_2_proc(float* %out_data, i1* %out_last_V, i1 %is_last_0_i_loc_channel, i16* %tmp_data_V_0, i16* %tmp_data_V_1, i16* %tmp_data_V_2, i16* %tmp_data_V_3, i16* %tmp_data_V_4, i16* %tmp_data_V_5, i16* %tmp_data_V_6, i16* %tmp_data_V_7, i16* %tmp_data_V_8, i16* %tmp_data_V_9)"   --->   Operation 36 'call' <Predicate = true> <Delay = 1.64> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 8 <SV = 7> <Delay = 0.00>
 ST_8 : Operation 37 [1/2] (0.00ns)   --->   "call fastcc void @Loop_2_proc(float* %out_data, i1* %out_last_V, i1 %is_last_0_i_loc_channel, i16* %tmp_data_V_0, i16* %tmp_data_V_1, i16* %tmp_data_V_2, i16* %tmp_data_V_3, i16* %tmp_data_V_4, i16* %tmp_data_V_5, i16* %tmp_data_V_6, i16* %tmp_data_V_7, i16* %tmp_data_V_8, i16* %tmp_data_V_9)"   --->   Operation 37 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
@@ -165,7 +165,7 @@ ST_9 : Operation 69 [1/1] (0.00ns)   --->   "ret void" [firmware/myproject_axi.c
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 3.33ns, clock uncertainty: 0.417ns.
+Target clock period: 2ns, clock uncertainty: 0.25ns.
 
  <State 1>: 0ns
 The critical path consists of the following:
@@ -185,9 +185,9 @@ The critical path consists of the following:
  <State 6>: 0ns
 The critical path consists of the following:
 
- <State 7>: 2.49ns
+ <State 7>: 1.65ns
 The critical path consists of the following:
-	'call' operation ('call_ln0') to 'Loop_2_proc' [322]  (2.49 ns)
+	'call' operation ('call_ln0') to 'Loop_2_proc' [322]  (1.65 ns)
 
  <State 8>: 0ns
 The critical path consists of the following:

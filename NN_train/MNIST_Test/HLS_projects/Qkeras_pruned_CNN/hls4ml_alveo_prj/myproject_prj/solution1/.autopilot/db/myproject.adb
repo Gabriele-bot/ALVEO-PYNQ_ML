@@ -14254,8 +14254,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>3160</mMinLatency>
-        <mMaxLatency>3161</mMaxLatency>
+        <mMinLatency>3950</mMinLatency>
+        <mMaxLatency>3951</mMaxLatency>
         <mIsDfPipe>1</mIsDfPipe>
         <mDfPipe class_id="23" tracking_level="1" version="0" object_id="_926">
           <port_list class_id="24" tracking_level="0" version="0">
@@ -25306,11 +25306,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>563</second>
+              <second>637</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1111</second>
+              <second>1114</second>
             </item>
           </second>
         </item>
@@ -25329,11 +25329,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>3966</second>
+              <second>5519</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>17011</second>
+              <second>17017</second>
             </item>
           </second>
         </item>
@@ -25352,7 +25352,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>18007</second>
+              <second>42046</second>
             </item>
             <item>
               <first>LUT</first>
@@ -25416,11 +25416,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>1431</second>
+              <second>1545</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1893</second>
+              <second>1925</second>
             </item>
           </second>
         </item>
@@ -25435,11 +25435,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>1428</second>
+              <second>1542</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1889</second>
+              <second>1921</second>
             </item>
           </second>
         </item>
@@ -25450,7 +25450,7 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>52</second>
+              <second>340</second>
             </item>
             <item>
               <first>LUT</first>
@@ -25465,7 +25465,7 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>49</second>
+              <second>337</second>
             </item>
             <item>
               <first>LUT</first>
@@ -25488,11 +25488,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>1230</second>
+              <second>2454</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>2025</second>
+              <second>2280</second>
             </item>
           </second>
         </item>

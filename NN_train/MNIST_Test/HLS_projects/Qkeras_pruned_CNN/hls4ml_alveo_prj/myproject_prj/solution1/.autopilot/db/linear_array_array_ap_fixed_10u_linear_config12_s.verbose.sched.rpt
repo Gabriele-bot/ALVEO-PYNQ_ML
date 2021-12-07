@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'linear_array_array_ap_fixed_10u_linear_config12_s'
 ================================================================
-* Date:           Mon Dec  6 16:55:15 2021
+* Date:           Tue Dec  7 00:24:28 2021
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        myproject_prj
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  | 3.33 ns | 2.916 ns |   0.42 ns  |
+    |ap_clk  | 2.00 ns | 1.750 ns |   0.25 ns  |
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -78,7 +78,7 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 2.91>
+State 1 <SV = 0> <Delay = 1.75>
 ST_1 : Operation 2 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i12* %res_V_data_9_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 2 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i12* %res_V_data_8_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 3 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i12* %res_V_data_7_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 4 'specinterface' <Predicate = true> <Delay = 0.00>
@@ -102,7 +102,7 @@ ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInte
 ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str29) nounwind" [firmware/nnet_utils/nnet_activation_stream.h:38]   --->   Operation 22 'specloopname' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([14 x i8]* @p_str29)" [firmware/nnet_utils/nnet_activation_stream.h:38]   --->   Operation 23 'specregionbegin' 'tmp' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str10) nounwind" [firmware/nnet_utils/nnet_activation_stream.h:39]   --->   Operation 24 'specpipeline' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 25 [1/1] (1.45ns)   --->   "%empty = call { i12, i12, i12, i12, i12, i12, i12, i12, i12, i12 } @_ssdm_op_Read.ap_fifo.volatile.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P(i12* %data_V_data_0_V, i12* %data_V_data_1_V, i12* %data_V_data_2_V, i12* %data_V_data_3_V, i12* %data_V_data_4_V, i12* %data_V_data_5_V, i12* %data_V_data_6_V, i12* %data_V_data_7_V, i12* %data_V_data_8_V, i12* %data_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 25 'read' 'empty' <Predicate = true> <Delay = 1.45> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 2> <FIFO>
+ST_1 : Operation 25 [1/1] (0.87ns)   --->   "%empty = call { i12, i12, i12, i12, i12, i12, i12, i12, i12, i12 } @_ssdm_op_Read.ap_fifo.volatile.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P(i12* %data_V_data_0_V, i12* %data_V_data_1_V, i12* %data_V_data_2_V, i12* %data_V_data_3_V, i12* %data_V_data_4_V, i12* %data_V_data_5_V, i12* %data_V_data_6_V, i12* %data_V_data_7_V, i12* %data_V_data_8_V, i12* %data_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 25 'read' 'empty' <Predicate = true> <Delay = 0.87> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 2> <FIFO>
 ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%tmp_data_0_V = extractvalue { i12, i12, i12, i12, i12, i12, i12, i12, i12, i12 } %empty, 0" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 26 'extractvalue' 'tmp_data_0_V' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%tmp_data_1_V = extractvalue { i12, i12, i12, i12, i12, i12, i12, i12, i12, i12 } %empty, 1" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 27 'extractvalue' 'tmp_data_1_V' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%tmp_data_2_V = extractvalue { i12, i12, i12, i12, i12, i12, i12, i12, i12, i12 } %empty, 2" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 28 'extractvalue' 'tmp_data_2_V' <Predicate = true> <Delay = 0.00>
@@ -113,7 +113,7 @@ ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%tmp_data_6_V = extractvalue { i12,
 ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%tmp_data_7_V = extractvalue { i12, i12, i12, i12, i12, i12, i12, i12, i12, i12 } %empty, 7" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 33 'extractvalue' 'tmp_data_7_V' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%tmp_data_8_V = extractvalue { i12, i12, i12, i12, i12, i12, i12, i12, i12, i12 } %empty, 8" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 34 'extractvalue' 'tmp_data_8_V' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%tmp_data_9_V = extractvalue { i12, i12, i12, i12, i12, i12, i12, i12, i12, i12 } %empty, 9" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 35 'extractvalue' 'tmp_data_9_V' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 36 [1/1] (1.45ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P(i12* %res_V_data_0_V, i12* %res_V_data_1_V, i12* %res_V_data_2_V, i12* %res_V_data_3_V, i12* %res_V_data_4_V, i12* %res_V_data_5_V, i12* %res_V_data_6_V, i12* %res_V_data_7_V, i12* %res_V_data_8_V, i12* %res_V_data_9_V, i12 %tmp_data_0_V, i12 %tmp_data_1_V, i12 %tmp_data_2_V, i12 %tmp_data_3_V, i12 %tmp_data_4_V, i12 %tmp_data_5_V, i12 %tmp_data_6_V, i12 %tmp_data_7_V, i12 %tmp_data_8_V, i12 %tmp_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:50]   --->   Operation 36 'write' <Predicate = true> <Delay = 1.45> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 2> <FIFO>
+ST_1 : Operation 36 [1/1] (0.87ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P.i12P(i12* %res_V_data_0_V, i12* %res_V_data_1_V, i12* %res_V_data_2_V, i12* %res_V_data_3_V, i12* %res_V_data_4_V, i12* %res_V_data_5_V, i12* %res_V_data_6_V, i12* %res_V_data_7_V, i12* %res_V_data_8_V, i12* %res_V_data_9_V, i12 %tmp_data_0_V, i12 %tmp_data_1_V, i12 %tmp_data_2_V, i12 %tmp_data_3_V, i12 %tmp_data_4_V, i12 %tmp_data_5_V, i12 %tmp_data_6_V, i12 %tmp_data_7_V, i12 %tmp_data_8_V, i12 %tmp_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:50]   --->   Operation 36 'write' <Predicate = true> <Delay = 0.87> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 2> <FIFO>
 ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%empty_211 = call i32 (...)* @_ssdm_op_SpecRegionEnd([14 x i8]* @p_str29, i32 %tmp)" [firmware/nnet_utils/nnet_activation_stream.h:51]   --->   Operation 37 'specregionend' 'empty_211' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 38 [1/1] (0.00ns)   --->   "ret void" [firmware/nnet_utils/nnet_activation_stream.h:52]   --->   Operation 38 'ret' <Predicate = true> <Delay = 0.00>
 
@@ -121,12 +121,12 @@ ST_1 : Operation 38 [1/1] (0.00ns)   --->   "ret void" [firmware/nnet_utils/nnet
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 3.33ns, clock uncertainty: 0.417ns.
+Target clock period: 2ns, clock uncertainty: 0.25ns.
 
- <State 1>: 2.92ns
+ <State 1>: 1.75ns
 The critical path consists of the following:
-	fifo read on port 'data_V_data_0_V' (firmware/nnet_utils/nnet_activation_stream.h:41) [44]  (1.46 ns)
-	fifo write on port 'res_V_data_0_V' (firmware/nnet_utils/nnet_activation_stream.h:50) [55]  (1.46 ns)
+	fifo read on port 'data_V_data_0_V' (firmware/nnet_utils/nnet_activation_stream.h:41) [44]  (0.875 ns)
+	fifo write on port 'res_V_data_0_V' (firmware/nnet_utils/nnet_activation_stream.h:50) [55]  (0.875 ns)
 
 
 ============================================================

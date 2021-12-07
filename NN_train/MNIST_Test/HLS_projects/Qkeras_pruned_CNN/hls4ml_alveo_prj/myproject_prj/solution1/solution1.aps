@@ -22,7 +22,7 @@
         <library value="xilinx/virtexuplus/virtexuplus_fpv7" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock name="default" default="false" period="3.333"/>
+        <clock default="false" name="default" period="2"/>
     </clockList>
 </AutoPilot:solution>
 

@@ -9,8 +9,5 @@
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source myproject_kernel_bd_axis_combiner_0_0.tcl -notrace
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/myproject_prj'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
-INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP myproject_kernel_bd_axis_combiner_0_0, cache-ID = eea6c32fafbd2a6f.
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  6 17:14:57 2021...
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP myproject_kernel_bd_axis_combiner_0_0, cache-ID = 1430d5a478e337d8.
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  7 00:42:40 2021...

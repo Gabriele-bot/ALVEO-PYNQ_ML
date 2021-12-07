@@ -90,7 +90,7 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==myproject_kerne
 # IP: bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/myproject_kernel_bd_axis_subset_cnv_sts_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==myproject_kernel_bd_axis_subset_cnv_sts_0_1 || ORIG_REF_NAME==myproject_kernel_bd_axis_subset_cnv_sts_0_1} -quiet] -quiet
 
-# IP: bd/myproject_kernel_bd/ip/myproject_kernel_bd_myproject_axi_0_0/myproject_kernel_bd_myproject_axi_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==myproject_kernel_bd_myproject_axi_0_0 || ORIG_REF_NAME==myproject_kernel_bd_myproject_axi_0_0} -quiet] -quiet
+# IP: bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_data_fifo_0_0/myproject_kernel_bd_axis_data_fifo_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==myproject_kernel_bd_axis_data_fifo_0_0 || ORIG_REF_NAME==myproject_kernel_bd_axis_data_fifo_0_0} -quiet] -quiet
 
 # XDC: bd/myproject_kernel_bd/myproject_kernel_bd_ooc.xdc

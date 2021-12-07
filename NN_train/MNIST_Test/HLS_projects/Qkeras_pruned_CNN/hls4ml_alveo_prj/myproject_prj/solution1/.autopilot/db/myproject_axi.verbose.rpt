@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'myproject_axi'
 ================================================================
-* Date:           Mon Dec  6 16:57:33 2021
+* Date:           Tue Dec  7 00:26:43 2021
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        myproject_prj
@@ -20,29 +20,29 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  | 3.33 ns | 2.916 ns |   0.42 ns  |
+    |ap_clk  | 2.00 ns | 1.750 ns |   0.25 ns  |
     +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+-----------+-----------+------+------+----------+
-    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
-    |   min   |   max   |    min    |    max    |  min |  max |   Type   |
-    +---------+---------+-----------+-----------+------+------+----------+
-    |     3163|     3164| 10.542 us | 10.546 us |  3139|  3139| dataflow |
-    +---------+---------+-----------+-----------+------+------+----------+
+    +---------+---------+----------+----------+------+------+----------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline |
+    |   min   |   max   |    min   |    max   |  min |  max |   Type   |
+    +---------+---------+----------+----------+------+------+----------+
+    |     4705|     4705| 9.410 us | 9.410 us |  4706|  4706| dataflow |
+    +---------+---------+----------+----------+------+------+----------+
 
     + Detail: 
         * Instance: 
-        +------------------------------------+---------------------------------+---------+---------+-----------+-----------+------+------+----------+
-        |                                    |                                 |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
-        |              Instance              |              Module             |   min   |   max   |    min    |    max    |  min |  max |   Type   |
-        +------------------------------------+---------------------------------+---------+---------+-----------+-----------+------+------+----------+
-        |myproject_U0                        |myproject                        |     3160|     3161| 10.532 us | 10.536 us |  3139|  3139| dataflow |
-        |Loop_2_proc_U0                      |Loop_2_proc                      |       41|       41|  0.137 us |  0.137 us |    41|    41|   none   |
-        |Loop_1_proc406_U0                   |Loop_1_proc406                   |     3137|     3137| 10.456 us | 10.456 us |  3137|  3137|   none   |
-        |Block_myproject_axi_exit36_proc_U0  |Block_myproject_axi_exit36_proc  |        0|        0|    0 ns   |    0 ns   |     0|     0|   none   |
-        +------------------------------------+---------------------------------+---------+---------+-----------+-----------+------+------+----------+
+        +------------------------------------+---------------------------------+---------+---------+----------+----------+------+------+----------+
+        |                                    |                                 |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline |
+        |              Instance              |              Module             |   min   |   max   |    min   |    max   |  min |  max |   Type   |
+        +------------------------------------+---------------------------------+---------+---------+----------+----------+------+------+----------+
+        |myproject_U0                        |myproject                        |     3950|     3951| 7.900 us | 7.902 us |  3923|  3923| dataflow |
+        |Loop_2_proc_U0                      |Loop_2_proc                      |       61|       61| 0.122 us | 0.122 us |    61|    61|   none   |
+        |Loop_1_proc406_U0                   |Loop_1_proc406                   |     4705|     4705| 9.410 us | 9.410 us |  4705|  4705|   none   |
+        |Block_myproject_axi_exit36_proc_U0  |Block_myproject_axi_exit36_proc  |        0|        0|   0 ns   |   0 ns   |     0|     0|   none   |
+        +------------------------------------+---------------------------------+---------+---------+----------+----------+------+------+----------+
 
         * Loop: 
         N/A
@@ -59,20 +59,20 @@
 |DSP                  |        -|      -|        -|       -|    -|
 |Expression           |        -|      -|        0|      44|    -|
 |FIFO                 |        1|      -|      155|     659|    -|
-|Instance             |      364|     10|    40458|  128062|    -|
+|Instance             |      364|     10|    68469|  128406|    -|
 |Memory               |        -|      -|        -|       -|    -|
 |Multiplexer          |        -|      -|        -|      90|    -|
 |Register             |        -|      -|       10|       -|    -|
 +---------------------+---------+-------+---------+--------+-----+
-|Total                |      365|     10|    40623|  128855|    0|
+|Total                |      365|     10|    68634|  129199|    0|
 +---------------------+---------+-------+---------+--------+-----+
 |Available SLR        |     1344|   2976|   871680|  435840|  320|
 +---------------------+---------+-------+---------+--------+-----+
-|Utilization SLR (%)  |       27|   ~0  |        4|      29|    0|
+|Utilization SLR (%)  |       27|   ~0  |        7|      29|    0|
 +---------------------+---------+-------+---------+--------+-----+
 |Available            |     2688|   5952|  1743360|  871680|  640|
 +---------------------+---------+-------+---------+--------+-----+
-|Utilization (%)      |       13|   ~0  |        2|      14|    0|
+|Utilization (%)      |       13|   ~0  |        3|      14|    0|
 +---------------------+---------+-------+---------+--------+-----+
 
 + Detail: 
@@ -81,11 +81,11 @@
     |              Instance              |              Module             | BRAM_18K| DSP48E|   FF  |   LUT  | URAM|
     +------------------------------------+---------------------------------+---------+-------+-------+--------+-----+
     |Block_myproject_axi_exit36_proc_U0  |Block_myproject_axi_exit36_proc  |        0|      0|    162|     193|    0|
-    |Loop_1_proc406_U0                   |Loop_1_proc406                   |        0|      0|    246|     655|    0|
-    |Loop_2_proc_U0                      |Loop_2_proc                      |        0|      0|    179|    1028|    0|
-    |myproject_U0                        |myproject                        |      364|     10|  39871|  126186|    0|
+    |Loop_1_proc406_U0                   |Loop_1_proc406                   |        0|      0|    411|     663|    0|
+    |Loop_2_proc_U0                      |Loop_2_proc                      |        0|      0|    331|    1036|    0|
+    |myproject_U0                        |myproject                        |      364|     10|  67565|  126514|    0|
     +------------------------------------+---------------------------------+---------+-------+-------+--------+-----+
-    |Total                               |                                 |      364|     10|  40458|  128062|    0|
+    |Total                               |                                 |      364|     10|  68469|  128406|    0|
     +------------------------------------+---------------------------------+---------+-------+-------+--------+-----+
 
     * DSP48E: 
@@ -293,8 +293,8 @@ ST_5 : Operation 34 [1/2] (0.00ns)   --->   "call fastcc void @myproject(i8* %in
 State 6 <SV = 5> <Delay = 0.00>
 ST_6 : Operation 35 [1/1] (0.00ns)   --->   "call fastcc void @Block_myproject_axi_.exit36_proc(i16* %out_local_V_data_0_V, i16* %out_local_V_data_1_V, i16* %out_local_V_data_2_V, i16* %out_local_V_data_3_V, i16* %out_local_V_data_4_V, i16* %out_local_V_data_5_V, i16* %out_local_V_data_6_V, i16* %out_local_V_data_7_V, i16* %out_local_V_data_8_V, i16* %out_local_V_data_9_V, i16* %tmp_data_V_0, i16* %tmp_data_V_1, i16* %tmp_data_V_2, i16* %tmp_data_V_3, i16* %tmp_data_V_4, i16* %tmp_data_V_5, i16* %tmp_data_V_6, i16* %tmp_data_V_7, i16* %tmp_data_V_8, i16* %tmp_data_V_9)"   --->   Operation 35 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 7 <SV = 6> <Delay = 2.48>
-ST_7 : Operation 36 [2/2] (2.48ns)   --->   "call fastcc void @Loop_2_proc(float* %out_data, i1* %out_last_V, i1 %is_last_0_i_loc_channel, i16* %tmp_data_V_0, i16* %tmp_data_V_1, i16* %tmp_data_V_2, i16* %tmp_data_V_3, i16* %tmp_data_V_4, i16* %tmp_data_V_5, i16* %tmp_data_V_6, i16* %tmp_data_V_7, i16* %tmp_data_V_8, i16* %tmp_data_V_9)"   --->   Operation 36 'call' <Predicate = true> <Delay = 2.48> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 7 <SV = 6> <Delay = 1.64>
+ST_7 : Operation 36 [2/2] (1.64ns)   --->   "call fastcc void @Loop_2_proc(float* %out_data, i1* %out_last_V, i1 %is_last_0_i_loc_channel, i16* %tmp_data_V_0, i16* %tmp_data_V_1, i16* %tmp_data_V_2, i16* %tmp_data_V_3, i16* %tmp_data_V_4, i16* %tmp_data_V_5, i16* %tmp_data_V_6, i16* %tmp_data_V_7, i16* %tmp_data_V_8, i16* %tmp_data_V_9)"   --->   Operation 36 'call' <Predicate = true> <Delay = 1.64> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 8 <SV = 7> <Delay = 0.00>
 ST_8 : Operation 37 [1/2] (0.00ns)   --->   "call fastcc void @Loop_2_proc(float* %out_data, i1* %out_last_V, i1 %is_last_0_i_loc_channel, i16* %tmp_data_V_0, i16* %tmp_data_V_1, i16* %tmp_data_V_2, i16* %tmp_data_V_3, i16* %tmp_data_V_4, i16* %tmp_data_V_5, i16* %tmp_data_V_6, i16* %tmp_data_V_7, i16* %tmp_data_V_8, i16* %tmp_data_V_9)"   --->   Operation 37 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
@@ -5379,12 +5379,12 @@ ret_ln42                  (ret                 ) [ 0000000000]
 |----------|--------------------------------------------------|---------|---------|---------|---------|
 | Operation|                  Functional Unit                 |  DSP48E |  Delay  |    FF   |   LUT   |
 |----------|--------------------------------------------------|---------|---------|---------|---------|
-|          |               grp_myproject_fu_666               |    10   | 250.245 |  24560  |  93888  |
-|   call   |              grp_Loop_2_proc_fu_1185             |    0    |  0.603  |   237   |   862   |
-|          |            grp_Loop_1_proc406_fu_1204            |    0    |  0.603  |   238   |   569   |
+|          |               grp_myproject_fu_666               |    10   | 262.305 |  51561  |  93988  |
+|   call   |              grp_Loop_2_proc_fu_1185             |    0    |  0.603  |   356   |   862   |
+|          |            grp_Loop_1_proc406_fu_1204            |    0    |  0.603  |   401   |   569   |
 |          | call_ln0_Block_myproject_axi_exit36_proc_fu_1213 |    0    |    0    |    0    |    0    |
 |----------|--------------------------------------------------|---------|---------|---------|---------|
-|   Total  |                                                  |    10   | 251.451 |  25035  |  95319  |
+|   Total  |                                                  |    10   | 263.511 |  52318  |  95419  |
 |----------|--------------------------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -5507,10 +5507,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+
 |           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+--------+
-|  Function |    -   |   10   |   251  |  25035 |  95319 |
+|  Function |    -   |   10   |   263  |  52318 |  95419 |
 |   Memory  |   284  |    -   |    -   |  4224  |  2112  |
 |Multiplexer|    -   |    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |   329  |    -   |
 +-----------+--------+--------+--------+--------+--------+
-|   Total   |   284  |   10   |   251  |  29588 |  97431 |
+|   Total   |   284  |   10   |   263  |  56871 |  97531 |
 +-----------+--------+--------+--------+--------+--------+

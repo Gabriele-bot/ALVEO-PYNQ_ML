@@ -9,24 +9,24 @@
 <ProductFamily>virtexuplus</ProductFamily>
 <Part>xcu50-fsvh2104-2L-e</Part>
 <TopModelName>relu_array_array_ap_fixed_16u_relu_config8_s</TopModelName>
-<TargetClockPeriod>3.33</TargetClockPeriod>
-<ClockUncertainty>0.42</ClockUncertainty>
+<TargetClockPeriod>2.00</TargetClockPeriod>
+<ClockUncertainty>0.25</ClockUncertainty>
 </UserAssignments>
 
 <PerformanceEstimates>
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>2.670</EstimatedClockPeriod>
+<EstimatedClockPeriod>1.531</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
 <Best-caseLatency>124</Best-caseLatency>
 <Average-caseLatency>124</Average-caseLatency>
 <Worst-caseLatency>124</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.413 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.413 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.413 us</Worst-caseRealTimeLatency>
+<Best-caseRealTimeLatency>0.248 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.248 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.248 us</Worst-caseRealTimeLatency>
 <Interval-min>124</Interval-min>
 <Interval-max>124</Interval-max>
 </SummaryOfOverallLatency>
@@ -42,7 +42,7 @@
 
 <AreaEstimates>
 <Resources>
-<FF>49</FF>
+<FF>337</FF>
 <LUT>1436</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>

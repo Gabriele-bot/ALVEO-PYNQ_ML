@@ -77,14 +77,19 @@ module softmax_array_array_ap_fixed_10u_softmax_config13_s (
         res_V_data_9_V_write
 );
 
-parameter    ap_ST_fsm_state1 = 8'd1;
-parameter    ap_ST_fsm_state2 = 8'd2;
-parameter    ap_ST_fsm_state3 = 8'd4;
-parameter    ap_ST_fsm_state4 = 8'd8;
-parameter    ap_ST_fsm_state5 = 8'd16;
-parameter    ap_ST_fsm_state6 = 8'd32;
-parameter    ap_ST_fsm_state7 = 8'd64;
-parameter    ap_ST_fsm_state8 = 8'd128;
+parameter    ap_ST_fsm_state1 = 13'd1;
+parameter    ap_ST_fsm_state2 = 13'd2;
+parameter    ap_ST_fsm_state3 = 13'd4;
+parameter    ap_ST_fsm_state4 = 13'd8;
+parameter    ap_ST_fsm_state5 = 13'd16;
+parameter    ap_ST_fsm_state6 = 13'd32;
+parameter    ap_ST_fsm_state7 = 13'd64;
+parameter    ap_ST_fsm_state8 = 13'd128;
+parameter    ap_ST_fsm_state9 = 13'd256;
+parameter    ap_ST_fsm_state10 = 13'd512;
+parameter    ap_ST_fsm_state11 = 13'd1024;
+parameter    ap_ST_fsm_state12 = 13'd2048;
+parameter    ap_ST_fsm_state13 = 13'd4096;
 
 input   ap_clk;
 input   ap_rst;
@@ -179,11 +184,11 @@ reg res_V_data_8_V_write;
 reg res_V_data_9_V_write;
 
 reg    ap_done_reg;
-(* fsm_encoding = "none" *) reg   [7:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [12:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 wire    grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n;
 reg    data_V_data_0_V_blk_n;
-wire    ap_CS_fsm_state8;
+wire    ap_CS_fsm_state13;
 wire    grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n;
 reg    data_V_data_1_V_blk_n;
 wire    grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n;
@@ -257,14 +262,14 @@ wire    grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_w
 wire   [15:0] grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_din;
 wire    grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_write;
 reg    ap_block_state1_ignore_call20;
-reg    ap_block_state8;
-reg   [7:0] ap_NS_fsm;
+reg    ap_block_state13;
+reg   [12:0] ap_NS_fsm;
 reg    ap_block_state1;
 
 // power-on initialization
 initial begin
 #0 ap_done_reg = 1'b0;
-#0 ap_CS_fsm = 8'd1;
+#0 ap_CS_fsm = 13'd1;
 end
 
 softmax_stable_array_array_softmax_config13_s grp_softmax_stable_array_array_softmax_config13_s_fu_58(
@@ -370,14 +375,14 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((ap_continue == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if ((~((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n == 1'b0)) & (1'b1 == ap_CS_fsm_state8))) begin
+        end else if ((~((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n == 1'b0)) & (1'b1 == ap_CS_fsm_state13))) begin
             ap_done_reg <= 1'b1;
         end
     end
 end
 
 always @ (*) begin
-    if ((~((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n == 1'b0)) & (1'b1 == ap_CS_fsm_state8))) begin
+    if ((~((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n == 1'b0)) & (1'b1 == ap_CS_fsm_state13))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = ap_done_reg;
@@ -393,7 +398,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((~((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n == 1'b0)) & (1'b1 == ap_CS_fsm_state8))) begin
+    if ((~((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n == 1'b0)) & (1'b1 == ap_CS_fsm_state13))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -401,7 +406,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         data_V_data_0_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n;
     end else begin
         data_V_data_0_V_blk_n = 1'b1;
@@ -417,7 +422,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         data_V_data_1_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n;
     end else begin
         data_V_data_1_V_blk_n = 1'b1;
@@ -433,7 +438,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         data_V_data_2_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n;
     end else begin
         data_V_data_2_V_blk_n = 1'b1;
@@ -449,7 +454,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         data_V_data_3_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n;
     end else begin
         data_V_data_3_V_blk_n = 1'b1;
@@ -465,7 +470,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         data_V_data_4_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n;
     end else begin
         data_V_data_4_V_blk_n = 1'b1;
@@ -481,7 +486,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         data_V_data_5_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n;
     end else begin
         data_V_data_5_V_blk_n = 1'b1;
@@ -497,7 +502,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         data_V_data_6_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n;
     end else begin
         data_V_data_6_V_blk_n = 1'b1;
@@ -513,7 +518,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         data_V_data_7_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n;
     end else begin
         data_V_data_7_V_blk_n = 1'b1;
@@ -529,7 +534,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         data_V_data_8_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n;
     end else begin
         data_V_data_8_V_blk_n = 1'b1;
@@ -545,7 +550,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         data_V_data_9_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n;
     end else begin
         data_V_data_9_V_blk_n = 1'b1;
@@ -569,7 +574,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         res_V_data_0_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n;
     end else begin
         res_V_data_0_V_blk_n = 1'b1;
@@ -577,7 +582,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state8)) begin
+    if ((1'b1 == ap_CS_fsm_state13)) begin
         res_V_data_0_V_write = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_write;
     end else begin
         res_V_data_0_V_write = 1'b0;
@@ -585,7 +590,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         res_V_data_1_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n;
     end else begin
         res_V_data_1_V_blk_n = 1'b1;
@@ -593,7 +598,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state8)) begin
+    if ((1'b1 == ap_CS_fsm_state13)) begin
         res_V_data_1_V_write = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_write;
     end else begin
         res_V_data_1_V_write = 1'b0;
@@ -601,7 +606,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         res_V_data_2_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n;
     end else begin
         res_V_data_2_V_blk_n = 1'b1;
@@ -609,7 +614,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state8)) begin
+    if ((1'b1 == ap_CS_fsm_state13)) begin
         res_V_data_2_V_write = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_write;
     end else begin
         res_V_data_2_V_write = 1'b0;
@@ -617,7 +622,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         res_V_data_3_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n;
     end else begin
         res_V_data_3_V_blk_n = 1'b1;
@@ -625,7 +630,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state8)) begin
+    if ((1'b1 == ap_CS_fsm_state13)) begin
         res_V_data_3_V_write = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_write;
     end else begin
         res_V_data_3_V_write = 1'b0;
@@ -633,7 +638,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         res_V_data_4_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n;
     end else begin
         res_V_data_4_V_blk_n = 1'b1;
@@ -641,7 +646,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state8)) begin
+    if ((1'b1 == ap_CS_fsm_state13)) begin
         res_V_data_4_V_write = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_write;
     end else begin
         res_V_data_4_V_write = 1'b0;
@@ -649,7 +654,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         res_V_data_5_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n;
     end else begin
         res_V_data_5_V_blk_n = 1'b1;
@@ -657,7 +662,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state8)) begin
+    if ((1'b1 == ap_CS_fsm_state13)) begin
         res_V_data_5_V_write = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_write;
     end else begin
         res_V_data_5_V_write = 1'b0;
@@ -665,7 +670,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         res_V_data_6_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n;
     end else begin
         res_V_data_6_V_blk_n = 1'b1;
@@ -673,7 +678,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state8)) begin
+    if ((1'b1 == ap_CS_fsm_state13)) begin
         res_V_data_6_V_write = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_write;
     end else begin
         res_V_data_6_V_write = 1'b0;
@@ -681,7 +686,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         res_V_data_7_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n;
     end else begin
         res_V_data_7_V_blk_n = 1'b1;
@@ -689,7 +694,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state8)) begin
+    if ((1'b1 == ap_CS_fsm_state13)) begin
         res_V_data_7_V_write = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_write;
     end else begin
         res_V_data_7_V_write = 1'b0;
@@ -697,7 +702,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         res_V_data_8_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n;
     end else begin
         res_V_data_8_V_blk_n = 1'b1;
@@ -705,7 +710,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state8)) begin
+    if ((1'b1 == ap_CS_fsm_state13)) begin
         res_V_data_8_V_write = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_write;
     end else begin
         res_V_data_8_V_write = 1'b0;
@@ -713,7 +718,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1)))) begin
         res_V_data_9_V_blk_n = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n;
     end else begin
         res_V_data_9_V_blk_n = 1'b1;
@@ -721,7 +726,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state8)) begin
+    if ((1'b1 == ap_CS_fsm_state13)) begin
         res_V_data_9_V_write = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_write;
     end else begin
         res_V_data_9_V_write = 1'b0;
@@ -731,7 +736,7 @@ end
 always @ (*) begin
     case (ap_CS_fsm)
         ap_ST_fsm_state1 : begin
-            if ((~((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n == 1'b0) | (ap_start == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1))) begin
+            if ((~((ap_start == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1))) begin
                 ap_NS_fsm = ap_ST_fsm_state2;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state1;
@@ -756,10 +761,25 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state8;
         end
         ap_ST_fsm_state8 : begin
-            if ((~((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n == 1'b0)) & (1'b1 == ap_CS_fsm_state8))) begin
+            ap_NS_fsm = ap_ST_fsm_state9;
+        end
+        ap_ST_fsm_state9 : begin
+            ap_NS_fsm = ap_ST_fsm_state10;
+        end
+        ap_ST_fsm_state10 : begin
+            ap_NS_fsm = ap_ST_fsm_state11;
+        end
+        ap_ST_fsm_state11 : begin
+            ap_NS_fsm = ap_ST_fsm_state12;
+        end
+        ap_ST_fsm_state12 : begin
+            ap_NS_fsm = ap_ST_fsm_state13;
+        end
+        ap_ST_fsm_state13 : begin
+            if ((~((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n == 1'b0)) & (1'b1 == ap_CS_fsm_state13))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state8;
+                ap_NS_fsm = ap_ST_fsm_state13;
             end
         end
         default : begin
@@ -770,18 +790,18 @@ end
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
-assign ap_CS_fsm_state8 = ap_CS_fsm[32'd7];
+assign ap_CS_fsm_state13 = ap_CS_fsm[32'd12];
 
 always @ (*) begin
-    ap_block_state1 = ((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n == 1'b0) | (ap_start == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n == 1'b0) | (ap_done_reg == 1'b1));
+    ap_block_state1 = ((ap_start == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n == 1'b0) | (ap_done_reg == 1'b1));
+end
+
+always @ (*) begin
+    ap_block_state13 = ((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n == 1'b0));
 end
 
 always @ (*) begin
     ap_block_state1_ignore_call20 = ((ap_start == 1'b0) | (ap_done_reg == 1'b1));
-end
-
-always @ (*) begin
-    ap_block_state8 = ((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n == 1'b0) | (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n == 1'b0));
 end
 
 assign res_V_data_0_V_din = grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_din;

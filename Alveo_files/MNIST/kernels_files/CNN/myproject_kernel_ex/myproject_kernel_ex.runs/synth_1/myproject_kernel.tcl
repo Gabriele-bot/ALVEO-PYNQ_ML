@@ -83,8 +83,6 @@ set_property parent.project_path /home/gabri-bot/Vivado_projects/.workspace/mypr
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths /home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/myproject_prj [current_project]
-update_ip_catalog
 set_property ip_output_repo /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
@@ -133,7 +131,7 @@ set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado
 set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_dwidth_cnv_0_1/myproject_kernel_bd_axis_dwidth_cnv_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_cmd_0_1/myproject_kernel_bd_axis_subset_cnv_cmd_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_subset_cnv_sts_0_1/myproject_kernel_bd_axis_subset_cnv_sts_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_myproject_axi_0_0/constraints/myproject_axi_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_axis_data_fifo_0_0/myproject_kernel_bd_axis_data_fifo_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/myproject_kernel_bd_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/gabri-bot/Vivado_projects/.workspace/myproject_kernel/vivado_rtl_kernel/myproject_kernel_ex/myproject_kernel_ex.srcs/sources_1/bd/myproject_kernel_bd/ip/myproject_kernel_bd_microblaze_0_0/data/mb_bootloop_le.elf]
 

@@ -84,28 +84,33 @@ end;
 architecture behav of softmax_array_array_ap_fixed_10u_softmax_config13_s is 
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
-    constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (7 downto 0) := "00000001";
-    constant ap_ST_fsm_state2 : STD_LOGIC_VECTOR (7 downto 0) := "00000010";
-    constant ap_ST_fsm_state3 : STD_LOGIC_VECTOR (7 downto 0) := "00000100";
-    constant ap_ST_fsm_state4 : STD_LOGIC_VECTOR (7 downto 0) := "00001000";
-    constant ap_ST_fsm_state5 : STD_LOGIC_VECTOR (7 downto 0) := "00010000";
-    constant ap_ST_fsm_state6 : STD_LOGIC_VECTOR (7 downto 0) := "00100000";
-    constant ap_ST_fsm_state7 : STD_LOGIC_VECTOR (7 downto 0) := "01000000";
-    constant ap_ST_fsm_state8 : STD_LOGIC_VECTOR (7 downto 0) := "10000000";
+    constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (12 downto 0) := "0000000000001";
+    constant ap_ST_fsm_state2 : STD_LOGIC_VECTOR (12 downto 0) := "0000000000010";
+    constant ap_ST_fsm_state3 : STD_LOGIC_VECTOR (12 downto 0) := "0000000000100";
+    constant ap_ST_fsm_state4 : STD_LOGIC_VECTOR (12 downto 0) := "0000000001000";
+    constant ap_ST_fsm_state5 : STD_LOGIC_VECTOR (12 downto 0) := "0000000010000";
+    constant ap_ST_fsm_state6 : STD_LOGIC_VECTOR (12 downto 0) := "0000000100000";
+    constant ap_ST_fsm_state7 : STD_LOGIC_VECTOR (12 downto 0) := "0000001000000";
+    constant ap_ST_fsm_state8 : STD_LOGIC_VECTOR (12 downto 0) := "0000010000000";
+    constant ap_ST_fsm_state9 : STD_LOGIC_VECTOR (12 downto 0) := "0000100000000";
+    constant ap_ST_fsm_state10 : STD_LOGIC_VECTOR (12 downto 0) := "0001000000000";
+    constant ap_ST_fsm_state11 : STD_LOGIC_VECTOR (12 downto 0) := "0010000000000";
+    constant ap_ST_fsm_state12 : STD_LOGIC_VECTOR (12 downto 0) := "0100000000000";
+    constant ap_ST_fsm_state13 : STD_LOGIC_VECTOR (12 downto 0) := "1000000000000";
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
-    constant ap_const_lv32_7 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000111";
+    constant ap_const_lv32_C : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001100";
     constant ap_const_boolean_1 : BOOLEAN := true;
 
     signal ap_done_reg : STD_LOGIC := '0';
-    signal ap_CS_fsm : STD_LOGIC_VECTOR (7 downto 0) := "00000001";
+    signal ap_CS_fsm : STD_LOGIC_VECTOR (12 downto 0) := "0000000000001";
     attribute fsm_encoding : string;
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
     signal grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n : STD_LOGIC;
     signal data_V_data_0_V_blk_n : STD_LOGIC;
-    signal ap_CS_fsm_state8 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state8 : signal is "none";
+    signal ap_CS_fsm_state13 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state13 : signal is "none";
     signal grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n : STD_LOGIC;
     signal data_V_data_1_V_blk_n : STD_LOGIC;
     signal grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n : STD_LOGIC;
@@ -179,8 +184,8 @@ architecture behav of softmax_array_array_ap_fixed_10u_softmax_config13_s is
     signal grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_din : STD_LOGIC_VECTOR (15 downto 0);
     signal grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_write : STD_LOGIC;
     signal ap_block_state1_ignore_call20 : BOOLEAN;
-    signal ap_block_state8 : BOOLEAN;
-    signal ap_NS_fsm : STD_LOGIC_VECTOR (7 downto 0);
+    signal ap_block_state13 : BOOLEAN;
+    signal ap_NS_fsm : STD_LOGIC_VECTOR (12 downto 0);
     signal ap_block_state1 : BOOLEAN;
 
     component softmax_stable_array_array_softmax_config13_s IS
@@ -389,7 +394,7 @@ begin
             else
                 if ((ap_continue = ap_const_logic_1)) then 
                     ap_done_reg <= ap_const_logic_0;
-                elsif ((not(((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state8))) then 
+                elsif ((not(((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state13))) then 
                     ap_done_reg <= ap_const_logic_1;
                 end if; 
             end if;
@@ -397,11 +402,11 @@ begin
     end process;
 
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_done_reg, ap_CS_fsm, ap_CS_fsm_state1, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_done_reg, ap_CS_fsm, ap_CS_fsm_state1, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
-                if ((not(((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n = ap_const_logic_0) or (ap_start = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
+                if ((not(((ap_start = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
                     ap_NS_fsm <= ap_ST_fsm_state2;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state1;
@@ -419,21 +424,37 @@ begin
             when ap_ST_fsm_state7 => 
                 ap_NS_fsm <= ap_ST_fsm_state8;
             when ap_ST_fsm_state8 => 
-                if ((not(((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state8))) then
+                ap_NS_fsm <= ap_ST_fsm_state9;
+            when ap_ST_fsm_state9 => 
+                ap_NS_fsm <= ap_ST_fsm_state10;
+            when ap_ST_fsm_state10 => 
+                ap_NS_fsm <= ap_ST_fsm_state11;
+            when ap_ST_fsm_state11 => 
+                ap_NS_fsm <= ap_ST_fsm_state12;
+            when ap_ST_fsm_state12 => 
+                ap_NS_fsm <= ap_ST_fsm_state13;
+            when ap_ST_fsm_state13 => 
+                if ((not(((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state13))) then
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 else
-                    ap_NS_fsm <= ap_ST_fsm_state8;
+                    ap_NS_fsm <= ap_ST_fsm_state13;
                 end if;
             when others =>  
-                ap_NS_fsm <= "XXXXXXXX";
+                ap_NS_fsm <= "XXXXXXXXXXXXX";
         end case;
     end process;
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
-    ap_CS_fsm_state8 <= ap_CS_fsm(7);
+    ap_CS_fsm_state13 <= ap_CS_fsm(12);
 
     ap_block_state1_assign_proc : process(ap_start, ap_done_reg, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n)
     begin
-                ap_block_state1 <= ((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n = ap_const_logic_0) or (ap_start = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1));
+                ap_block_state1 <= ((ap_start = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1));
+    end process;
+
+
+    ap_block_state13_assign_proc : process(grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n)
+    begin
+                ap_block_state13 <= ((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n = ap_const_logic_0));
     end process;
 
 
@@ -443,15 +464,9 @@ begin
     end process;
 
 
-    ap_block_state8_assign_proc : process(grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n)
+    ap_done_assign_proc : process(ap_done_reg, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n)
     begin
-                ap_block_state8 <= ((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n = ap_const_logic_0));
-    end process;
-
-
-    ap_done_assign_proc : process(ap_done_reg, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n)
-    begin
-        if ((not(((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state8))) then 
+        if ((not(((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state13))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_done_reg;
@@ -469,9 +484,9 @@ begin
     end process;
 
 
-    ap_ready_assign_proc : process(grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n)
+    ap_ready_assign_proc : process(grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n)
     begin
-        if ((not(((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state8))) then 
+        if ((not(((grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n = ap_const_logic_0) or (grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state13))) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
@@ -479,9 +494,9 @@ begin
     end process;
 
 
-    data_V_data_0_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n, ap_CS_fsm_state8)
+    data_V_data_0_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n, ap_CS_fsm_state13)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             data_V_data_0_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_0_V_blk_n;
         else 
             data_V_data_0_V_blk_n <= ap_const_logic_1;
@@ -499,9 +514,9 @@ begin
     end process;
 
 
-    data_V_data_1_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n)
+    data_V_data_1_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             data_V_data_1_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_1_V_blk_n;
         else 
             data_V_data_1_V_blk_n <= ap_const_logic_1;
@@ -519,9 +534,9 @@ begin
     end process;
 
 
-    data_V_data_2_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n)
+    data_V_data_2_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             data_V_data_2_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_2_V_blk_n;
         else 
             data_V_data_2_V_blk_n <= ap_const_logic_1;
@@ -539,9 +554,9 @@ begin
     end process;
 
 
-    data_V_data_3_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n)
+    data_V_data_3_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             data_V_data_3_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_3_V_blk_n;
         else 
             data_V_data_3_V_blk_n <= ap_const_logic_1;
@@ -559,9 +574,9 @@ begin
     end process;
 
 
-    data_V_data_4_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n)
+    data_V_data_4_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             data_V_data_4_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_4_V_blk_n;
         else 
             data_V_data_4_V_blk_n <= ap_const_logic_1;
@@ -579,9 +594,9 @@ begin
     end process;
 
 
-    data_V_data_5_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n)
+    data_V_data_5_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             data_V_data_5_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_5_V_blk_n;
         else 
             data_V_data_5_V_blk_n <= ap_const_logic_1;
@@ -599,9 +614,9 @@ begin
     end process;
 
 
-    data_V_data_6_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n)
+    data_V_data_6_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             data_V_data_6_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_6_V_blk_n;
         else 
             data_V_data_6_V_blk_n <= ap_const_logic_1;
@@ -619,9 +634,9 @@ begin
     end process;
 
 
-    data_V_data_7_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n)
+    data_V_data_7_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             data_V_data_7_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_7_V_blk_n;
         else 
             data_V_data_7_V_blk_n <= ap_const_logic_1;
@@ -639,9 +654,9 @@ begin
     end process;
 
 
-    data_V_data_8_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n)
+    data_V_data_8_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             data_V_data_8_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_8_V_blk_n;
         else 
             data_V_data_8_V_blk_n <= ap_const_logic_1;
@@ -659,9 +674,9 @@ begin
     end process;
 
 
-    data_V_data_9_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n)
+    data_V_data_9_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             data_V_data_9_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_data_V_data_9_V_blk_n;
         else 
             data_V_data_9_V_blk_n <= ap_const_logic_1;
@@ -689,9 +704,9 @@ begin
     end process;
 
 
-    res_V_data_0_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n)
+    res_V_data_0_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             res_V_data_0_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_blk_n;
         else 
             res_V_data_0_V_blk_n <= ap_const_logic_1;
@@ -700,9 +715,9 @@ begin
 
     res_V_data_0_V_din <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_din;
 
-    res_V_data_0_V_write_assign_proc : process(ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_write)
+    res_V_data_0_V_write_assign_proc : process(ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_write)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
+        if ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
             res_V_data_0_V_write <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_0_V_write;
         else 
             res_V_data_0_V_write <= ap_const_logic_0;
@@ -710,9 +725,9 @@ begin
     end process;
 
 
-    res_V_data_1_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n)
+    res_V_data_1_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             res_V_data_1_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_blk_n;
         else 
             res_V_data_1_V_blk_n <= ap_const_logic_1;
@@ -721,9 +736,9 @@ begin
 
     res_V_data_1_V_din <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_din;
 
-    res_V_data_1_V_write_assign_proc : process(ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_write)
+    res_V_data_1_V_write_assign_proc : process(ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_write)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
+        if ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
             res_V_data_1_V_write <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_1_V_write;
         else 
             res_V_data_1_V_write <= ap_const_logic_0;
@@ -731,9 +746,9 @@ begin
     end process;
 
 
-    res_V_data_2_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n)
+    res_V_data_2_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             res_V_data_2_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_blk_n;
         else 
             res_V_data_2_V_blk_n <= ap_const_logic_1;
@@ -742,9 +757,9 @@ begin
 
     res_V_data_2_V_din <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_din;
 
-    res_V_data_2_V_write_assign_proc : process(ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_write)
+    res_V_data_2_V_write_assign_proc : process(ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_write)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
+        if ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
             res_V_data_2_V_write <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_2_V_write;
         else 
             res_V_data_2_V_write <= ap_const_logic_0;
@@ -752,9 +767,9 @@ begin
     end process;
 
 
-    res_V_data_3_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n)
+    res_V_data_3_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             res_V_data_3_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_blk_n;
         else 
             res_V_data_3_V_blk_n <= ap_const_logic_1;
@@ -763,9 +778,9 @@ begin
 
     res_V_data_3_V_din <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_din;
 
-    res_V_data_3_V_write_assign_proc : process(ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_write)
+    res_V_data_3_V_write_assign_proc : process(ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_write)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
+        if ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
             res_V_data_3_V_write <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_3_V_write;
         else 
             res_V_data_3_V_write <= ap_const_logic_0;
@@ -773,9 +788,9 @@ begin
     end process;
 
 
-    res_V_data_4_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n)
+    res_V_data_4_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             res_V_data_4_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_blk_n;
         else 
             res_V_data_4_V_blk_n <= ap_const_logic_1;
@@ -784,9 +799,9 @@ begin
 
     res_V_data_4_V_din <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_din;
 
-    res_V_data_4_V_write_assign_proc : process(ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_write)
+    res_V_data_4_V_write_assign_proc : process(ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_write)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
+        if ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
             res_V_data_4_V_write <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_4_V_write;
         else 
             res_V_data_4_V_write <= ap_const_logic_0;
@@ -794,9 +809,9 @@ begin
     end process;
 
 
-    res_V_data_5_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n)
+    res_V_data_5_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             res_V_data_5_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_blk_n;
         else 
             res_V_data_5_V_blk_n <= ap_const_logic_1;
@@ -805,9 +820,9 @@ begin
 
     res_V_data_5_V_din <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_din;
 
-    res_V_data_5_V_write_assign_proc : process(ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_write)
+    res_V_data_5_V_write_assign_proc : process(ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_write)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
+        if ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
             res_V_data_5_V_write <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_5_V_write;
         else 
             res_V_data_5_V_write <= ap_const_logic_0;
@@ -815,9 +830,9 @@ begin
     end process;
 
 
-    res_V_data_6_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n)
+    res_V_data_6_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             res_V_data_6_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_blk_n;
         else 
             res_V_data_6_V_blk_n <= ap_const_logic_1;
@@ -826,9 +841,9 @@ begin
 
     res_V_data_6_V_din <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_din;
 
-    res_V_data_6_V_write_assign_proc : process(ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_write)
+    res_V_data_6_V_write_assign_proc : process(ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_write)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
+        if ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
             res_V_data_6_V_write <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_6_V_write;
         else 
             res_V_data_6_V_write <= ap_const_logic_0;
@@ -836,9 +851,9 @@ begin
     end process;
 
 
-    res_V_data_7_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n)
+    res_V_data_7_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             res_V_data_7_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_blk_n;
         else 
             res_V_data_7_V_blk_n <= ap_const_logic_1;
@@ -847,9 +862,9 @@ begin
 
     res_V_data_7_V_din <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_din;
 
-    res_V_data_7_V_write_assign_proc : process(ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_write)
+    res_V_data_7_V_write_assign_proc : process(ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_write)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
+        if ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
             res_V_data_7_V_write <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_7_V_write;
         else 
             res_V_data_7_V_write <= ap_const_logic_0;
@@ -857,9 +872,9 @@ begin
     end process;
 
 
-    res_V_data_8_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n)
+    res_V_data_8_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             res_V_data_8_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_blk_n;
         else 
             res_V_data_8_V_blk_n <= ap_const_logic_1;
@@ -868,9 +883,9 @@ begin
 
     res_V_data_8_V_din <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_din;
 
-    res_V_data_8_V_write_assign_proc : process(ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_write)
+    res_V_data_8_V_write_assign_proc : process(ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_write)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
+        if ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
             res_V_data_8_V_write <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_8_V_write;
         else 
             res_V_data_8_V_write <= ap_const_logic_0;
@@ -878,9 +893,9 @@ begin
     end process;
 
 
-    res_V_data_9_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n)
+    res_V_data_9_V_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state13) or (not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             res_V_data_9_V_blk_n <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_blk_n;
         else 
             res_V_data_9_V_blk_n <= ap_const_logic_1;
@@ -889,9 +904,9 @@ begin
 
     res_V_data_9_V_din <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_din;
 
-    res_V_data_9_V_write_assign_proc : process(ap_CS_fsm_state8, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_write)
+    res_V_data_9_V_write_assign_proc : process(ap_CS_fsm_state13, grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_write)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
+        if ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
             res_V_data_9_V_write <= grp_softmax_stable_array_array_softmax_config13_s_fu_58_res_V_data_9_V_write;
         else 
             res_V_data_9_V_write <= ap_const_logic_0;

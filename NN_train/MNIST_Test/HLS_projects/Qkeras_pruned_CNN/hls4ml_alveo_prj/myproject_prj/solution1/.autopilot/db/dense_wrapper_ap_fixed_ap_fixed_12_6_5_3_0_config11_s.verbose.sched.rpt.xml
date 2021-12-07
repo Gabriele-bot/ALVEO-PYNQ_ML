@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s'" level="0">
-<item name = "Date">Mon Dec  6 16:54:09 2021
+<item name = "Date">Tue Dec  7 00:23:25 2021
 </item>
 <item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.33 ns, 2.783 ns, 0.42 ns</column>
+<column name="ap_clk">2.00 ns, 1.635 ns, 0.25 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">5, 6, 16.665 ns, 19.998 ns, 2, 2, loop rewind(delay=0 initiation interval(s))</column>
+<column name="">7, 8, 14.000 ns, 16.000 ns, 2, 2, loop rewind(delay=0 initiation interval(s))</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- ReuseLoop">5, 5, 5, 1, 1, 2, yes</column>
+<column name="- ReuseLoop">7, 7, 7, 1, 1, 2, yes</column>
 </table>
 </item>
 </section>
