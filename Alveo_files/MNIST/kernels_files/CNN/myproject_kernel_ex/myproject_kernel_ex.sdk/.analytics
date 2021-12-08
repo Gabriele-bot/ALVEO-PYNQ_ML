@@ -1,4 +1,0 @@
-timestamp=[2021-12-07 00:33:30], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.592, duration_ms=1592, data={}
-timestamp=[2021-12-07 00:33:34], mode=APP_CREATION, duration=0:00:00.877, duration_ms=877, data={name=myproject_kernel_control, project_type=sdk, os=standalone, processor=control_microblaze_0, runtime=C/C++, platform=myproject_kernel, application_type=application}
-timestamp=[2021-12-07 00:33:41], mode=PLATFORM_GENERATION, duration=0:00:07.096, duration_ms=7096, data={name=myproject_kernel}
-timestamp=[2021-12-07 00:33:41], mode=BUILD, duration=0:00:00.170, duration_ms=170, data={name=myproject_kernel_control, configuration=Debug, clean_build=false}
