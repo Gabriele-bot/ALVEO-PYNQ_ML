@@ -9,15 +9,15 @@ To build it form source follow the steps highlighted [at this link](https://xili
 
 ### Use pre-compiled files
 
-First XRT (Xilinx Runtime) must be installed, to do so run the following commands (**`UG1370`** User Guide by Xilinx).  
+First XRT (Xilinx Runtime) must be installed, to do so run the following commands (**`UG1370`** User Guide by Xilinx), use the precompiled file accordingly to your OS (Ubuntu 20.04 in this particular case).  
 ```
 cd Drivers/XRT/  
-sudo -H apt install ./xrt_202010.2.6.655_18.04-amd64-xrt.deb  
+sudo -H apt install ./xrt_202120.2.12.427_20.04-amd64-xrt.deb  
 cd ../..
 ```
 Than the platform files must be installed.  
 ```
-cd Drivers/Platform/Xilinx_u50-gen3x16-xdma-201920.3-2784799_18.04_deb  
+cd Drivers/Platform/Xilinx_u50-gen3x16-xdma-201920_3-3-all.deb  
 sudo apt install ./*.deb  
 cd ../../..  
 ```
@@ -34,42 +34,50 @@ It is used a modified version of **`hls4ml`** (v0.6.0), to install it run the fo
 ```
 pip install hls4ml[profiling]
 ```
-This the latest version of hls4ml, with the Alveo accelerator tcl script (not yet implemented). 
+This the latest version of hls4ml, with the Alveo accelerator board. 
 
 ## Neural network IP
-Following the notebook the IP can be generated.  
+Following the notebook the IP can be generated (with axi stream interface).  
 
-## Kernel
-### Packaging
-Alveo kernel must be generated and compiled, to do so follow the step below:
-* Open a vivado project and use the IP **`RTL KERNEL WIZARD`**
-* Open the example project of that IP
-* Substitute the example block (+1 adder) with the hls4ml IP
-* Generate the kernel (.xo file)  
+## Kernel packaging
+Now the kernel IP mus be packaged, to do so use the files provided in **`Alveo_files/src`** and substitute the NN_inference with your custom block.  
+Follow the instructions given in the [Vitis Application Acceleration Developement Flow Tutorial](https://xilinx.github.io/Vitis-Tutorials/2020-1/docs/getting-started-rtl-kernels/package_ip.html) to produce a **`file.xo`** (Xilinx object).  
 
 ### Compilation
 To compile the kernel Vitis must be invoked. Run the command  
 ```
-v++ -t hw --platform xilinx_u50_gen3x16_xdma_201920_3 --link myproject_kernel.xo -o'myproject_kernel.xclbin'
+v++ -t hw --platform xilinx_u50_gen3x16_xdma_201920_3 --link myproject_kernel.xo -o'myproject_kernel.xclbin'  --user_ip_repo_paths <path_to_your_IP>
 ```
+More information about the **v++** commad can be found [here](https://www.xilinx.com/html_docs/xilinx2021_1/vitis_doc/vitiscommandcompiler.html?hl=config%2Cfile).
 
-## PYNQ interface
-Not yet tested..
+## Run the kernel  
+Run the kernel with PYNQ interface.
 
 ## Code
 The files are organized as follows
 - **`NN_train`**  : which contains the notebooks used to create and save the Keras and Qkeras models.
 - **`Alveo_files`** : which contains the kernel file .xclbin needed to load the overlay (exported from Vivado and Vitis 2020.1) and the notebook ran on the host machine.   
 - **`Drivers`** : Xilinx Runtime and Platform files.  
-  
+- **`PYNQ`** : notebook with the kernel tests
 
 
 ## Results
 
 The tests are performed on a Alveo u50 board.  
 
-### Resources [MNIST classification -CNN-]
-### Resources [MNIST classification -DNN-]
-### Latency
-
+### Results
+  
+|MODEL              |Accuracy [\%]|Rate[Images\s]|t<sub>img</sub>[&#956;s]|
+|-------------------|-------------|--------------|----------|
+|CNN                |97.51        |59000         |16        |
+|DNN                |\            |\             |\         |
+  
 ### Comparisons
+
+|Device             |t<sub>img</sub><sup>CNN</sup>[&#956;s]|t<sub>img</sub><sup>DNN</sup>[&#956;s]|
+|-------------------|--------------------------------------|--------------------------------------|
+|CPU[3700X]         |105                                   |\                                     |
+|GPU[RX 580]        |33                                    |\                                     |
+|ZYNQ[PYNQ_Z2]      |87                                    |\                                     |
+|ALVEO[u50]         |16                                    |\                                     |
+
