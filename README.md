@@ -68,16 +68,18 @@ The tests are performed on a Alveo u50 board.
 ### Results
   
 |MODEL              |Accuracy [\%]|Rate[Images\s]|t<sub>img</sub>[&#956;s]|
-|-------------------|-------------|--------------|----------|
-|CNN                |97.51        |59000         |16        |
-|DNN                |\            |\             |\         |
+|-------------------|-------------|--------------|------------------------|
+|CNN                |97.51        |47100         |21                      |
+|DNN                |\            |\             |\                       |
   
 ### Comparisons
+  
+Here are presented the prediction times for different devices (10000 samples dataset).
 
 |Device             |t<sub>img</sub><sup>CNN</sup>[&#956;s]|t<sub>img</sub><sup>DNN</sup>[&#956;s]|
 |-------------------|--------------------------------------|--------------------------------------|
-|CPU[3700X]         |105                                   |\                                     |
-|GPU[RX 580]        |33                                    |\                                     |
+|CPU[3700X]         |95                                    |\                                     |
+|GPU[RX 580]        |30                                    |\                                     |
 |ZYNQ[PYNQ_Z2]      |87                                    |\                                     |
-|ALVEO[u50]         |16                                    |\                                     |
+|ALVEO[u50]         |21                                    |\                                     |
 
