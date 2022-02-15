@@ -7,3 +7,5 @@ y_train.npy
 y_test.npy
 
 *.tar.gz
+
+.ipynb_checkpoints
