@@ -43,8 +43,9 @@ Following the notebook the IP can be generated (with axi stream interface).
 Now the kernel IP mus be packaged, to do so use the files provided in **`Alveo_files/src`** and substitute the NN_inference with your custom block.  
 Follow the instructions given in the [Vitis Application Acceleration Developement Flow Tutorial](https://xilinx.github.io/Vitis-Tutorials/2020-1/docs/getting-started-rtl-kernels/package_ip.html) to produce a **`file.xo`** (Xilinx object).  
 
-### Compilation
-To compile the kernel Vitis must be invoked. Run the command  
+### Link the packaged IP to FPGA resources
+This step requires also the deployment platform files that can be found [here](https://www.xilinx.com/products/boards-and-kits/alveo/u50.html#gettingStarted) under the **`Develop Your Own Accelerated Applications`** section (same procedure described above).  
+To link the file.xo Vitis must be invoked. Run the command  
 ```
 v++ -t hw --platform xilinx_u50_gen3x16_xdma_201920_3 --link myproject_kernel.xo -o'myproject_kernel.xclbin'  --user_ip_repo_paths <path_to_your_IP>
 ```
