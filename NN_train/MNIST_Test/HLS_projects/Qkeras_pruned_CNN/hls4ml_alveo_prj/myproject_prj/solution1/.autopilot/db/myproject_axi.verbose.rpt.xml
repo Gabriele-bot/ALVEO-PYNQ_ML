@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'myproject_axi'" level="0">
-<item name = "Date">Tue Dec  7 00:26:43 2021
+<item name = "Date">Tue Feb 15 18:35:32 2022
 </item>
 <item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
 <item name = "Project">myproject_prj</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">virtexuplus</item>
-<item name = "Target device">xcu50-fsvh2104-2L-e</item>
+<item name = "Target device">xcu50-fsvh2104-2-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -53,7 +53,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 44, -</column>
 <column name="FIFO">1, -, 155, 659, -</column>
-<column name="Instance">364, 10, 68469, 128406, -</column>
+<column name="Instance">364, 10, 68627, 128218, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 90, -</column>
 <column name="Register">-, -, 10, -, -</column>
@@ -70,7 +70,7 @@
 <column name="Block_myproject_axi_exit36_proc_U0">Block_myproject_axi_exit36_proc, 0, 0, 162, 193, 0</column>
 <column name="Loop_1_proc406_U0">Loop_1_proc406, 0, 0, 411, 663, 0</column>
 <column name="Loop_2_proc_U0">Loop_2_proc, 0, 0, 331, 1036, 0</column>
-<column name="myproject_U0">myproject, 364, 10, 67565, 126514, 0</column>
+<column name="myproject_U0">myproject, 364, 10, 67723, 126326, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">

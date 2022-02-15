@@ -139,7 +139,7 @@
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-.critedge:8  call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str46) nounwind
+.critedge:8  call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str45) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln227"/></StgValue>

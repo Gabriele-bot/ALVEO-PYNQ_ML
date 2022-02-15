@@ -234,6 +234,7 @@ struct softmax_config13 : nnet::activ_config {
     static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_stream;
     static const unsigned reuse_factor = 1;
+    static const unsigned axis = -1;
     static const nnet::softmax_implementation implementation = nnet::softmax_implementation::stable;
     typedef ap_fixed<12,4> exp_table_t;
     typedef ap_fixed<12,2> inv_table_t;

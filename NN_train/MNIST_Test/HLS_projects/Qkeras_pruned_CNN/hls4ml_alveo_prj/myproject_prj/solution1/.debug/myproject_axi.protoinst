@@ -143,7 +143,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"myproject_U0/pooling2d_cl_array_array_ap_fixed_16u_config5_U0/call_ret_shift_line_buffer_array_ap_fixed_16u_config5_s_fu_326/call_ret_shift_line_buffer_array_ap_fixed_16u_config5_s_fu_326_activity": {
+				"myproject_U0/pooling2d_cl_array_array_ap_fixed_16u_config5_U0/call_ret_shift_line_buffer_array_ap_ufixed_16u_config5_s_fu_328/call_ret_shift_line_buffer_array_ap_ufixed_16u_config5_s_fu_328_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -164,7 +164,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"myproject_U0/pooling2d_cl_array_array_ap_fixed_16u_config9_U0/call_ret_shift_line_buffer_array_ap_fixed_16u_config9_s_fu_326/call_ret_shift_line_buffer_array_ap_fixed_16u_config9_s_fu_326_activity": {
+				"myproject_U0/pooling2d_cl_array_array_ap_fixed_16u_config9_U0/call_ret_shift_line_buffer_array_ap_ufixed_16u_config9_s_fu_328/call_ret_shift_line_buffer_array_ap_ufixed_16u_config9_s_fu_328_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -185,7 +185,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"myproject_U0/relu_array_array_ap_fixed_16u_relu_config4_U0/relu_array_array_ap_fixed_16u_relu_config4_U0_activity": {
+				"myproject_U0/relu_array_array_ap_ufixed_16u_relu_config4_U0/relu_array_array_ap_ufixed_16u_relu_config4_U0_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -196,7 +196,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"myproject_U0/relu_array_array_ap_fixed_16u_relu_config8_U0/relu_array_array_ap_fixed_16u_relu_config8_U0_activity": {
+				"myproject_U0/relu_array_array_ap_ufixed_16u_relu_config8_U0/relu_array_array_ap_ufixed_16u_relu_config8_U0_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

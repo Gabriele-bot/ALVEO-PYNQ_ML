@@ -58,6 +58,9 @@ void myproject(
     hls::stream<layer2_t> layer2_out("layer2_out");
     #pragma HLS STREAM variable=layer2_out depth=676
     nnet::conv_2d_cl<input_t, layer2_t, config2>(layer0, layer2_out, w2, b2); // q_conv2d
+#ifndef __SYNTHESIS__
+    nnet::save_layer_output<layer2_t>(layer2_out, "q_conv2d", OUT_HEIGHT_2*OUT_WIDTH_2*N_FILT_2);
+#endif
 
     hls::stream<layer3_t> layer3_out("layer3_out");
     #pragma HLS STREAM variable=layer3_out depth=676
@@ -70,10 +73,16 @@ void myproject(
     hls::stream<layer5_t> layer5_out("layer5_out");
     #pragma HLS STREAM variable=layer5_out depth=169
     nnet::pooling2d_cl<layer4_t, layer5_t, config5>(layer4_out, layer5_out); // maxp
+#ifndef __SYNTHESIS__
+    nnet::save_layer_output<layer5_t>(layer5_out, "maxp", OUT_HEIGHT_5*OUT_WIDTH_5*N_FILT_5);
+#endif
 
     hls::stream<layer6_t> layer6_out("layer6_out");
     #pragma HLS STREAM variable=layer6_out depth=121
     nnet::conv_2d_cl<layer5_t, layer6_t, config6>(layer5_out, layer6_out, w6, b6); // q_conv2d_1
+#ifndef __SYNTHESIS__
+    nnet::save_layer_output<layer6_t>(layer6_out, "q_conv2d_1", OUT_HEIGHT_6*OUT_WIDTH_6*N_FILT_6);
+#endif
 
     hls::stream<layer7_t> layer7_out("layer7_out");
     #pragma HLS STREAM variable=layer7_out depth=121
@@ -86,15 +95,24 @@ void myproject(
     hls::stream<layer9_t> layer9_out("layer9_out");
     #pragma HLS STREAM variable=layer9_out depth=25
     nnet::pooling2d_cl<layer8_t, layer9_t, config9>(layer8_out, layer9_out); // maxp_1
+#ifndef __SYNTHESIS__
+    nnet::save_layer_output<layer9_t>(layer9_out, "maxp_1", OUT_HEIGHT_9*OUT_WIDTH_9*N_FILT_9);
+#endif
 
     hls::stream<layer11_t> layer11_out("layer11_out");
     #pragma HLS STREAM variable=layer11_out depth=1
     nnet::dense<layer9_t, layer11_t, config11>(layer9_out, layer11_out, w11, b11); // q_dense
+#ifndef __SYNTHESIS__
+    nnet::save_layer_output<layer11_t>(layer11_out, "q_dense", N_LAYER_11);
+#endif
 
     hls::stream<layer12_t> layer12_out("layer12_out");
     #pragma HLS STREAM variable=layer12_out depth=1
     nnet::linear<layer11_t, layer12_t, linear_config12>(layer11_out, layer12_out); // q_dense_linear
 
     nnet::softmax<layer12_t, result_t, softmax_config13>(layer12_out, layer13_out); // softmax
+#ifndef __SYNTHESIS__
+    nnet::save_layer_output<result_t>(layer13_out, "softmax", N_LAYER_11);
+#endif
 
 }

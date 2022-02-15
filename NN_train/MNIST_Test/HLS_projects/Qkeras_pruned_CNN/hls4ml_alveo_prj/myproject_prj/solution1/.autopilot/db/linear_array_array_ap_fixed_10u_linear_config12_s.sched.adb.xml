@@ -319,7 +319,7 @@ LinearActLoop:19  call void (...)* @_ssdm_op_SpecInterface(i12* %data_V_data_0_V
 
 <Node id="41" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-LinearActLoop:20  call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str29) nounwind
+LinearActLoop:20  call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str28) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln38"/></StgValue>
@@ -334,7 +334,7 @@ LinearActLoop:20  call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str29) n
 
 <Node id="42" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-LinearActLoop:21  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([14 x i8]* @p_str29)
+LinearActLoop:21  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([14 x i8]* @p_str28)
 
 ]]></Node>
 <StgValue><ssdm name="tmp"/></StgValue>
@@ -544,10 +544,10 @@ LinearActLoop:34  call void @_ssdm_op_Write.ap_fifo.volatile.i12P.i12P.i12P.i12P
 
 <Node id="56" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-LinearActLoop:35  %empty_211 = call i32 (...)* @_ssdm_op_SpecRegionEnd([14 x i8]* @p_str29, i32 %tmp)
+LinearActLoop:35  %empty_213 = call i32 (...)* @_ssdm_op_SpecRegionEnd([14 x i8]* @p_str28, i32 %tmp)
 
 ]]></Node>
-<StgValue><ssdm name="empty_211"/></StgValue>
+<StgValue><ssdm name="empty_213"/></StgValue>
 </operation>
 
 <operation id="38" st_id="1" stage="1" lat="1">

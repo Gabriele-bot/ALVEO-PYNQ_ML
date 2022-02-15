@@ -67,7 +67,7 @@ if {$opt(reset)} {
 }
 catch {config_array_partition -maximum_size 4096}
 config_compile -name_max_length 60
-set_part {xcu50-fsvh2104-2L-e}
+set_part {xcu50-fsvh2104-2-e}
 create_clock -period 2 -name default
 
 

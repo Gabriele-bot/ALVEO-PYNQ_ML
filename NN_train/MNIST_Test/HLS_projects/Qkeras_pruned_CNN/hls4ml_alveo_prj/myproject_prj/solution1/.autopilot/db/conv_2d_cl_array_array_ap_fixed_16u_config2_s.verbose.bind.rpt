@@ -3,13 +3,13 @@
 ================================================================
 == Vivado HLS Report for 'conv_2d_cl_array_array_ap_fixed_16u_config2_s'
 ================================================================
-* Date:           Tue Dec  7 00:22:51 2021
+* Date:           Tue Feb 15 18:29:28 2022
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        myproject_prj
 * Solution:       solution1
 * Product family: virtexuplus
-* Target device:  xcu50-fsvh2104-2L-e
+* Target device:  xcu50-fsvh2104-2-e
 
 
 ================================================================
@@ -149,11 +149,11 @@ ST_4 : Operation 52 [1/1] (0.00ns)   --->   "store i8 %kernel_data_V_1_8_ret, i8
 
 State 5 <SV = 4> <Delay = 1.46>
 ST_5 : Operation 53 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([31 x i8]* @ReadInputHeight_ReadInputWidth_str)"   --->   Operation 53 'specloopname' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%empty_218 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)"   --->   Operation 54 'speclooptripcount' 'empty_218' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str42) nounwind" [firmware/nnet_utils/nnet_conv2d_stream.h:79->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 55 'specloopname' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str64)" [firmware/nnet_utils/nnet_conv2d_stream.h:81->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 56 'specregionbegin' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%empty_220 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)"   --->   Operation 54 'speclooptripcount' 'empty_220' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str41) nounwind" [firmware/nnet_utils/nnet_conv2d_stream.h:79->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 55 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str63)" [firmware/nnet_utils/nnet_conv2d_stream.h:81->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 56 'specregionbegin' 'tmp_s' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 57 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 16, i32 1, i32 1, i32 0, [1 x i8]* @p_str10) nounwind" [firmware/nnet_utils/nnet_conv2d_stream.h:82->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 57 'specpipeline' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%empty_219 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str64, i32 %tmp_s)" [firmware/nnet_utils/nnet_conv2d_stream.h:83->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 58 'specregionend' 'empty_219' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%empty_221 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str63, i32 %tmp_s)" [firmware/nnet_utils/nnet_conv2d_stream.h:83->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 58 'specregionend' 'empty_221' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 59 [1/1] (0.00ns)   --->   "%sX_2_load = load i32* @sX_2, align 4" [firmware/nnet_utils/nnet_conv_stream.h:272->firmware/nnet_utils/nnet_conv2d_stream.h:85->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 59 'load' 'sX_2_load' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 60 [1/1] (0.85ns)   --->   "%icmp_ln272 = icmp eq i32 %sX_2_load, 2" [firmware/nnet_utils/nnet_conv_stream.h:272->firmware/nnet_utils/nnet_conv2d_stream.h:85->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 60 'icmp' 'icmp_ln272' <Predicate = true> <Delay = 0.85> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%sY_2_load = load i32* @sY_2, align 4" [firmware/nnet_utils/nnet_conv_stream.h:272->firmware/nnet_utils/nnet_conv2d_stream.h:85->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 61 'load' 'sY_2_load' <Predicate = true> <Delay = 0.00>
@@ -217,9 +217,9 @@ ST_5 : Operation 118 [1/1] (0.71ns)   --->   "%acc_1_V = add i10 %zext_ln703_1, 
 ST_5 : Operation 119 [1/1] (0.71ns)   --->   "%add_ln703_2012 = add i11 %sext_ln1118_1999, %zext_ln708_4" [firmware/nnet_utils/nnet_dense_latency.h:115->firmware/nnet_utils/nnet_conv_stream.h:277->firmware/nnet_utils/nnet_conv2d_stream.h:85->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 119 'add' 'add_ln703_2012' <Predicate = (and_ln272_2)> <Delay = 0.71> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
 State 6 <SV = 5> <Delay = 1.71>
-ST_6 : Operation 120 [1/1] (0.00ns)   --->   "%tmp_2007 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str66)" [firmware/nnet_utils/nnet_dense_latency.h:45->firmware/nnet_utils/nnet_conv_stream.h:277->firmware/nnet_utils/nnet_conv2d_stream.h:85->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 120 'specregionbegin' 'tmp_2007' <Predicate = (!icmp_ln78 & and_ln272_2)> <Delay = 0.00>
-ST_6 : Operation 121 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecResourceLimit(i32 9, [4 x i8]* @p_str28, [1 x i8]* @p_str10, [1 x i8]* @p_str10, [1 x i8]* @p_str10) nounwind" [firmware/nnet_utils/nnet_mult.h:81->firmware/nnet_utils/nnet_dense_latency.h:57->firmware/nnet_utils/nnet_conv_stream.h:277->firmware/nnet_utils/nnet_conv2d_stream.h:85->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 121 'specresourcelimit' <Predicate = (!icmp_ln78 & and_ln272_2)> <Delay = 0.00>
-ST_6 : Operation 122 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str66, i32 %tmp_2007)" [firmware/nnet_utils/nnet_dense_latency.h:59->firmware/nnet_utils/nnet_conv_stream.h:277->firmware/nnet_utils/nnet_conv2d_stream.h:85->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 122 'specregionend' 'empty' <Predicate = (!icmp_ln78 & and_ln272_2)> <Delay = 0.00>
+ST_6 : Operation 120 [1/1] (0.00ns)   --->   "%tmp_2007 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str65)" [firmware/nnet_utils/nnet_dense_latency.h:45->firmware/nnet_utils/nnet_conv_stream.h:277->firmware/nnet_utils/nnet_conv2d_stream.h:85->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 120 'specregionbegin' 'tmp_2007' <Predicate = (!icmp_ln78 & and_ln272_2)> <Delay = 0.00>
+ST_6 : Operation 121 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecResourceLimit(i32 9, [4 x i8]* @p_str27, [1 x i8]* @p_str10, [1 x i8]* @p_str10, [1 x i8]* @p_str10) nounwind" [firmware/nnet_utils/nnet_mult.h:81->firmware/nnet_utils/nnet_dense_latency.h:57->firmware/nnet_utils/nnet_conv_stream.h:277->firmware/nnet_utils/nnet_conv2d_stream.h:85->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 121 'specresourcelimit' <Predicate = (!icmp_ln78 & and_ln272_2)> <Delay = 0.00>
+ST_6 : Operation 122 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str65, i32 %tmp_2007)" [firmware/nnet_utils/nnet_dense_latency.h:59->firmware/nnet_utils/nnet_conv_stream.h:277->firmware/nnet_utils/nnet_conv2d_stream.h:85->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 122 'specregionend' 'empty' <Predicate = (!icmp_ln78 & and_ln272_2)> <Delay = 0.00>
 ST_6 : Operation 123 [1/1] (0.00ns)   --->   "%shl_ln = call i9 @_ssdm_op_BitConcatenate.i9.i8.i1(i8 %kernel_data_V_1_0_ret, i1 false)" [firmware/nnet_utils/nnet_mult.h:77->firmware/nnet_utils/nnet_dense_latency.h:96->firmware/nnet_utils/nnet_conv_stream.h:277->firmware/nnet_utils/nnet_conv2d_stream.h:85->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 123 'bitconcatenate' 'shl_ln' <Predicate = (!icmp_ln78 & and_ln272_2)> <Delay = 0.00>
 ST_6 : Operation 124 [1/1] (0.00ns)   --->   "%zext_ln708 = zext i9 %shl_ln to i10" [firmware/nnet_utils/nnet_mult.h:77->firmware/nnet_utils/nnet_dense_latency.h:96->firmware/nnet_utils/nnet_conv_stream.h:277->firmware/nnet_utils/nnet_conv2d_stream.h:85->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 124 'zext' 'zext_ln708' <Predicate = (!icmp_ln78 & and_ln272_2)> <Delay = 0.00>
 ST_6 : Operation 125 [1/1] (0.00ns)   --->   "%sext_ln708 = sext i11 %trunc_ln to i12" [firmware/nnet_utils/nnet_mult.h:77->firmware/nnet_utils/nnet_dense_latency.h:96->firmware/nnet_utils/nnet_conv_stream.h:277->firmware/nnet_utils/nnet_conv2d_stream.h:85->firmware/nnet_utils/nnet_conv2d_stream.h:103]   --->   Operation 125 'sext' 'sext_ln708' <Predicate = (!icmp_ln78 & and_ln272_2)> <Delay = 0.00>
@@ -376,11 +376,11 @@ store_ln269            (store            ) [ 00000000]
 kernel_data_V_1_8_ret  (extractvalue     ) [ 00000110]
 store_ln269            (store            ) [ 00000000]
 specloopname_ln0       (specloopname     ) [ 00000000]
-empty_218              (speclooptripcount) [ 00000000]
+empty_220              (speclooptripcount) [ 00000000]
 specloopname_ln79      (specloopname     ) [ 00000000]
 tmp_s                  (specregionbegin  ) [ 00000000]
 specpipeline_ln82      (specpipeline     ) [ 00000000]
-empty_219              (specregionend    ) [ 00000000]
+empty_221              (specregionend    ) [ 00000000]
 sX_2_load              (load             ) [ 00000010]
 icmp_ln272             (icmp             ) [ 00000010]
 sY_2_load              (load             ) [ 00000010]
@@ -913,7 +913,7 @@ ret_ln109              (ret              ) [ 00000000]
 <pin id="89" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str42"/></StgValue>
+<StgValue><ssdm name="p_str41"/></StgValue>
 </bind>
 </comp>
 
@@ -931,7 +931,7 @@ ret_ln109              (ret              ) [ 00000000]
 <pin id="93" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str64"/></StgValue>
+<StgValue><ssdm name="p_str63"/></StgValue>
 </bind>
 </comp>
 
@@ -1165,7 +1165,7 @@ ret_ln109              (ret              ) [ 00000000]
 <pin id="145" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str66"/></StgValue>
+<StgValue><ssdm name="p_str65"/></StgValue>
 </bind>
 </comp>
 
@@ -1192,7 +1192,7 @@ ret_ln109              (ret              ) [ 00000000]
 <pin id="151" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str28"/></StgValue>
+<StgValue><ssdm name="p_str27"/></StgValue>
 </bind>
 </comp>
 
@@ -3977,7 +3977,7 @@ ret_ln109              (ret              ) [ 00000000]
 		kernel_data_V_1_8_ret : 2
 		store_ln269 : 3
 	State 5
-		empty_219 : 1
+		empty_221 : 1
 		icmp_ln272 : 1
 		icmp_ln272_1 : 1
 		tmp : 1

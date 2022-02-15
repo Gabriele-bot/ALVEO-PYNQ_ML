@@ -13,11 +13,11 @@
 
 #include "conv_2d_cl_array_array_ap_fixed_16u_config2_s.h"
 #include "linear_array_array_ap_fixed_16u_linear_config3_s.h"
-#include "relu_array_array_ap_fixed_16u_relu_config4_s.h"
+#include "relu_array_array_ap_ufixed_16u_relu_config4_s.h"
 #include "pooling2d_cl_array_array_ap_fixed_16u_config5_s.h"
 #include "conv_2d_cl_array_array_ap_fixed_16u_config6_s.h"
 #include "linear_array_array_ap_fixed_16u_linear_config7_s.h"
-#include "relu_array_array_ap_fixed_16u_relu_config8_s.h"
+#include "relu_array_array_ap_ufixed_16u_relu_config8_s.h"
 #include "pooling2d_cl_array_array_ap_fixed_16u_config9_s.h"
 #include "dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_s.h"
 #include "linear_array_array_ap_fixed_10u_linear_config12_s.h"
@@ -30,11 +30,11 @@
 #include "fifo_w3_d25_A.h"
 #include "fifo_w12_d1_A.h"
 #include "start_for_linear_array_array_ap_fixed_16u_linear_config3_U0.h"
-#include "start_for_relu_array_array_ap_fixed_16u_relu_config4_U0.h"
+#include "start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0.h"
 #include "start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0.h"
 #include "start_for_conv_2d_cl_array_array_ap_fixed_16u_config6_U0.h"
 #include "start_for_linear_array_array_ap_fixed_16u_linear_config7_U0.h"
-#include "start_for_relu_array_array_ap_fixed_16u_relu_config8_U0.h"
+#include "start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0.h"
 #include "start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0.h"
 #include "start_for_dense_array_array_ap_fixed_12_6_5_3_0_10u_confibfk.h"
 #include "start_for_linear_array_array_ap_fixed_10u_linear_config12bgk.h"
@@ -100,11 +100,11 @@ struct myproject : public sc_module {
 
     conv_2d_cl_array_array_ap_fixed_16u_config2_s* conv_2d_cl_array_array_ap_fixed_16u_config2_U0;
     linear_array_array_ap_fixed_16u_linear_config3_s* linear_array_array_ap_fixed_16u_linear_config3_U0;
-    relu_array_array_ap_fixed_16u_relu_config4_s* relu_array_array_ap_fixed_16u_relu_config4_U0;
+    relu_array_array_ap_ufixed_16u_relu_config4_s* relu_array_array_ap_ufixed_16u_relu_config4_U0;
     pooling2d_cl_array_array_ap_fixed_16u_config5_s* pooling2d_cl_array_array_ap_fixed_16u_config5_U0;
     conv_2d_cl_array_array_ap_fixed_16u_config6_s* conv_2d_cl_array_array_ap_fixed_16u_config6_U0;
     linear_array_array_ap_fixed_16u_linear_config7_s* linear_array_array_ap_fixed_16u_linear_config7_U0;
-    relu_array_array_ap_fixed_16u_relu_config8_s* relu_array_array_ap_fixed_16u_relu_config8_U0;
+    relu_array_array_ap_ufixed_16u_relu_config8_s* relu_array_array_ap_ufixed_16u_relu_config8_U0;
     pooling2d_cl_array_array_ap_fixed_16u_config9_s* pooling2d_cl_array_array_ap_fixed_16u_config9_U0;
     dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_s* dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_U0;
     linear_array_array_ap_fixed_10u_linear_config12_s* linear_array_array_ap_fixed_10u_linear_config12_U0;
@@ -258,11 +258,11 @@ struct myproject : public sc_module {
     fifo_w12_d1_A* layer12_out_V_data_8_V_U;
     fifo_w12_d1_A* layer12_out_V_data_9_V_U;
     start_for_linear_array_array_ap_fixed_16u_linear_config3_U0* start_for_linear_array_array_ap_fixed_16u_linear_config3_U0_U;
-    start_for_relu_array_array_ap_fixed_16u_relu_config4_U0* start_for_relu_array_array_ap_fixed_16u_relu_config4_U0_U;
+    start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0* start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0_U;
     start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0* start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0_U;
     start_for_conv_2d_cl_array_array_ap_fixed_16u_config6_U0* start_for_conv_2d_cl_array_array_ap_fixed_16u_config6_U0_U;
     start_for_linear_array_array_ap_fixed_16u_linear_config7_U0* start_for_linear_array_array_ap_fixed_16u_linear_config7_U0_U;
-    start_for_relu_array_array_ap_fixed_16u_relu_config8_U0* start_for_relu_array_array_ap_fixed_16u_relu_config8_U0_U;
+    start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0* start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0_U;
     start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0* start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0_U;
     start_for_dense_array_array_ap_fixed_12_6_5_3_0_10u_confibfk* start_for_dense_array_array_ap_fixed_12_6_5_3_0_10u_confibfk_U;
     start_for_linear_array_array_ap_fixed_10u_linear_config12bgk* start_for_linear_array_array_ap_fixed_10u_linear_config12bgk_U;
@@ -365,61 +365,61 @@ struct myproject : public sc_module {
     sc_signal< sc_logic > linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_14_V_write;
     sc_signal< sc_lv<12> > linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_15_V_din;
     sc_signal< sc_logic > linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_15_V_write;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_ap_start;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_ap_done;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_ap_continue;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_ap_idle;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_ap_ready;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_start_out;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_start_write;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_0_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_1_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_2_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_3_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_4_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_5_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_6_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_7_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_8_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_9_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_10_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_11_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_12_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_13_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_14_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_15_V_read;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_0_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_0_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_1_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_1_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_2_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_2_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_3_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_3_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_4_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_4_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_5_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_5_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_6_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_6_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_7_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_7_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_8_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_8_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_9_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_9_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_10_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_10_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_11_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_11_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_12_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_12_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_13_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_13_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_14_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_14_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_15_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_15_V_write;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_start;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_done;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_continue;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_idle;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_ready;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_start_out;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_start_write;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_0_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_1_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_2_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_3_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_4_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_5_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_6_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_7_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_8_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_9_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_10_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_11_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_12_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_13_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_14_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_15_V_read;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_0_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_0_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_1_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_1_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_2_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_2_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_3_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_3_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_4_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_4_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_5_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_5_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_6_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_6_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_7_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_7_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_8_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_8_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_9_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_9_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_10_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_10_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_11_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_11_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_12_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_12_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_13_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_13_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_14_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_14_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_15_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_15_V_write;
     sc_signal< sc_logic > pooling2d_cl_array_array_ap_fixed_16u_config5_U0_ap_start;
     sc_signal< sc_logic > pooling2d_cl_array_array_ap_fixed_16u_config5_U0_ap_done;
     sc_signal< sc_logic > pooling2d_cl_array_array_ap_fixed_16u_config5_U0_ap_continue;
@@ -585,61 +585,61 @@ struct myproject : public sc_module {
     sc_signal< sc_logic > linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_14_V_write;
     sc_signal< sc_lv<12> > linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_15_V_din;
     sc_signal< sc_logic > linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_15_V_write;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_ap_start;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_ap_done;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_ap_continue;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_ap_idle;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_ap_ready;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_start_out;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_start_write;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_0_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_1_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_2_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_3_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_4_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_5_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_6_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_7_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_8_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_9_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_10_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_11_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_12_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_13_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_14_V_read;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_15_V_read;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_0_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_0_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_1_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_1_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_2_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_2_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_3_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_3_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_4_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_4_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_5_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_5_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_6_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_6_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_7_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_7_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_8_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_8_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_9_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_9_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_10_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_10_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_11_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_11_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_12_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_12_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_13_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_13_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_14_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_14_V_write;
-    sc_signal< sc_lv<3> > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_15_V_din;
-    sc_signal< sc_logic > relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_15_V_write;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_start;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_done;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_continue;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_idle;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_ready;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_start_out;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_start_write;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_0_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_1_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_2_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_3_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_4_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_5_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_6_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_7_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_8_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_9_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_10_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_11_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_12_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_13_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_14_V_read;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_15_V_read;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_0_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_0_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_1_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_1_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_2_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_2_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_3_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_3_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_4_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_4_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_5_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_5_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_6_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_6_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_7_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_7_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_8_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_8_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_9_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_9_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_10_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_10_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_11_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_11_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_12_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_12_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_13_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_13_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_14_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_14_V_write;
+    sc_signal< sc_lv<3> > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_15_V_din;
+    sc_signal< sc_logic > relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_15_V_write;
     sc_signal< sc_logic > pooling2d_cl_array_array_ap_fixed_16u_config9_U0_ap_start;
     sc_signal< sc_logic > pooling2d_cl_array_array_ap_fixed_16u_config9_U0_ap_done;
     sc_signal< sc_logic > pooling2d_cl_array_array_ap_fixed_16u_config9_U0_ap_continue;
@@ -1261,10 +1261,10 @@ struct myproject : public sc_module {
     sc_signal< sc_logic > start_for_linear_array_array_ap_fixed_16u_linear_config3_U0_full_n;
     sc_signal< sc_lv<1> > start_for_linear_array_array_ap_fixed_16u_linear_config3_U0_dout;
     sc_signal< sc_logic > start_for_linear_array_array_ap_fixed_16u_linear_config3_U0_empty_n;
-    sc_signal< sc_lv<1> > start_for_relu_array_array_ap_fixed_16u_relu_config4_U0_din;
-    sc_signal< sc_logic > start_for_relu_array_array_ap_fixed_16u_relu_config4_U0_full_n;
-    sc_signal< sc_lv<1> > start_for_relu_array_array_ap_fixed_16u_relu_config4_U0_dout;
-    sc_signal< sc_logic > start_for_relu_array_array_ap_fixed_16u_relu_config4_U0_empty_n;
+    sc_signal< sc_lv<1> > start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0_din;
+    sc_signal< sc_logic > start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0_full_n;
+    sc_signal< sc_lv<1> > start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0_dout;
+    sc_signal< sc_logic > start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0_empty_n;
     sc_signal< sc_lv<1> > start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0_din;
     sc_signal< sc_logic > start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0_full_n;
     sc_signal< sc_lv<1> > start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0_dout;
@@ -1277,10 +1277,10 @@ struct myproject : public sc_module {
     sc_signal< sc_logic > start_for_linear_array_array_ap_fixed_16u_linear_config7_U0_full_n;
     sc_signal< sc_lv<1> > start_for_linear_array_array_ap_fixed_16u_linear_config7_U0_dout;
     sc_signal< sc_logic > start_for_linear_array_array_ap_fixed_16u_linear_config7_U0_empty_n;
-    sc_signal< sc_lv<1> > start_for_relu_array_array_ap_fixed_16u_relu_config8_U0_din;
-    sc_signal< sc_logic > start_for_relu_array_array_ap_fixed_16u_relu_config8_U0_full_n;
-    sc_signal< sc_lv<1> > start_for_relu_array_array_ap_fixed_16u_relu_config8_U0_dout;
-    sc_signal< sc_logic > start_for_relu_array_array_ap_fixed_16u_relu_config8_U0_empty_n;
+    sc_signal< sc_lv<1> > start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0_din;
+    sc_signal< sc_logic > start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0_full_n;
+    sc_signal< sc_lv<1> > start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0_dout;
+    sc_signal< sc_logic > start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0_empty_n;
     sc_signal< sc_lv<1> > start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0_din;
     sc_signal< sc_logic > start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0_full_n;
     sc_signal< sc_lv<1> > start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0_dout;
@@ -1351,10 +1351,10 @@ struct myproject : public sc_module {
     void thread_pooling2d_cl_array_array_ap_fixed_16u_config9_U0_ap_continue();
     void thread_pooling2d_cl_array_array_ap_fixed_16u_config9_U0_ap_start();
     void thread_real_start();
-    void thread_relu_array_array_ap_fixed_16u_relu_config4_U0_ap_continue();
-    void thread_relu_array_array_ap_fixed_16u_relu_config4_U0_ap_start();
-    void thread_relu_array_array_ap_fixed_16u_relu_config8_U0_ap_continue();
-    void thread_relu_array_array_ap_fixed_16u_relu_config8_U0_ap_start();
+    void thread_relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_continue();
+    void thread_relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_start();
+    void thread_relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_continue();
+    void thread_relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_start();
     void thread_softmax_array_array_ap_fixed_10u_softmax_config13_U0_ap_continue();
     void thread_softmax_array_array_ap_fixed_10u_softmax_config13_U0_ap_start();
     void thread_softmax_array_array_ap_fixed_10u_softmax_config13_U0_start_full_n();
@@ -1366,8 +1366,8 @@ struct myproject : public sc_module {
     void thread_start_for_linear_array_array_ap_fixed_16u_linear_config7_U0_din();
     void thread_start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0_din();
     void thread_start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0_din();
-    void thread_start_for_relu_array_array_ap_fixed_16u_relu_config4_U0_din();
-    void thread_start_for_relu_array_array_ap_fixed_16u_relu_config8_U0_din();
+    void thread_start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0_din();
+    void thread_start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0_din();
     void thread_start_for_softmax_array_array_ap_fixed_10u_softmax_config13_U0_din();
     void thread_start_out();
     void thread_start_write();

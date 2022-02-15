@@ -7,7 +7,7 @@
 <UserAssignments>
 <unit>ns</unit>
 <ProductFamily>virtexuplus</ProductFamily>
-<Part>xcu50-fsvh2104-2L-e</Part>
+<Part>xcu50-fsvh2104-2-e</Part>
 <TopModelName>conv_2d_cl_array_array_ap_fixed_16u_config2_s</TopModelName>
 <TargetClockPeriod>2.00</TargetClockPeriod>
 <ClockUncertainty>0.25</ClockUncertainty>

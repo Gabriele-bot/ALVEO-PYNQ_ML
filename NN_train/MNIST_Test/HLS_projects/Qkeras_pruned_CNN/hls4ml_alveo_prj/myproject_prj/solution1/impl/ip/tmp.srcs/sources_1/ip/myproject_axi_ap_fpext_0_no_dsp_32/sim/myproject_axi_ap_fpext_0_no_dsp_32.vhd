@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -191,7 +191,7 @@ BEGIN
   U0 : floating_point_v7_1_10
     GENERIC MAP (
       C_XDEVICEFAMILY => "virtexuplusHBM",
-      C_PART => "xcu50-fsvh2104-2L-e",
+      C_PART => "xcu50-fsvh2104-2-e",
       C_HAS_ADD => 0,
       C_HAS_SUBTRACT => 0,
       C_HAS_MULTIPLY => 0,

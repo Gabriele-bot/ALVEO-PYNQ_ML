@@ -12,7 +12,7 @@ HLSConfig:
   LayerName:
     1_relu_1:
       Precision:
-        result: ap_fixed<3,2>
+        result: ap_ufixed<3,1>
       ReuseFactor: 1
     layer0:
       Precision: ap_ufixed<8,3>
@@ -45,7 +45,7 @@ HLSConfig:
       Trace: true
     q_relu:
       Precision:
-        result: ap_fixed<3,2>
+        result: ap_ufixed<3,1>
       ReuseFactor: 1
     softmax:
       Precision: ap_fixed<16,6>
@@ -62,8 +62,8 @@ HLSConfig:
   SkipOptimizers:
   - reshape_stream
 IOType: io_stream
-KerasModel: !keras_model '/home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/keras_model.h5'
-OutputDir: /home/gabri-bot/University/Git_hub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj
+KerasModel: !keras_model '/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/keras_model.h5'
+OutputDir: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj
 ProjectName: myproject
-Stamp: Ff5bee0E
-XilinxPart: xcu50-fsvh2104-2L-e
+Stamp: 4D110ddf
+XilinxPart: xcu50-fsvh2104-2-e

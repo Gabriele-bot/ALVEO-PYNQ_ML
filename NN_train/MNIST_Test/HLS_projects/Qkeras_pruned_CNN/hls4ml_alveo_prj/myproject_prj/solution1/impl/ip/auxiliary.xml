@@ -5,5 +5,5 @@
   <xd:arg xd:name="out[].data" xd:originalName="out" xd:direction="out" xd:interfaceRef="out_r" xd:busTypeRef="axis" xd:arraySize="10" xd:dataWidth="32"/>
   <xd:arg xd:name="out[].last" xd:originalName="out" xd:direction="out" xd:interfaceRef="out_r" xd:busTypeRef="axis" xd:arraySize="10" xd:dataWidth="1"/>
   <xd:latencyEstimates xd:best-case="4705" xd:worst-case="4705" xd:average-case="4705"/>
-  <xd:resourceEstimates xd:LUT="129199" xd:FF="68634" xd:BRAM="365" xd:DSP="10"/>
+  <xd:resourceEstimates xd:LUT="129011" xd:FF="68792" xd:BRAM="365" xd:DSP="10"/>
 </xd:acceleratorMap>

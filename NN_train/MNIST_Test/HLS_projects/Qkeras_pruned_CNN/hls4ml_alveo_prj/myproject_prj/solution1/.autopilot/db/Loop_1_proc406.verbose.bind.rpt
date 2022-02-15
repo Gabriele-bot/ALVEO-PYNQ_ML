@@ -3,13 +3,13 @@
 ================================================================
 == Vivado HLS Report for 'Loop_1_proc406'
 ================================================================
-* Date:           Tue Dec  7 00:22:50 2021
+* Date:           Tue Feb 15 18:29:26 2022
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        myproject_prj
 * Solution:       solution1
 * Product family: virtexuplus
-* Target device:  xcu50-fsvh2104-2L-e
+* Target device:  xcu50-fsvh2104-2-e
 
 
 ================================================================
@@ -97,9 +97,9 @@ ST_2 : Operation 13 [1/1] (0.60ns)   --->   "%icmp_ln23 = icmp eq i10 %i_0_i, -2
 ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)"   --->   Operation 14 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 15 [1/1] (0.72ns)   --->   "%i = add i10 %i_0_i, 1" [firmware/myproject_axi.cpp:23]   --->   Operation 15 'add' 'i' <Predicate = true> <Delay = 0.72> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 16 [1/1] (0.00ns)   --->   "br i1 %icmp_ln23, label %myproject_axi_.exit.exitStub, label %_ifconv" [firmware/myproject_axi.cpp:23]   --->   Operation 16 'br' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%empty_406 = call { i1, float } @_ssdm_op_Read.axis.volatile.i1P.floatP(i1* %in_last_V, float* %in_data)" [firmware/myproject_axi.cpp:28]   --->   Operation 17 'read' 'empty_406' <Predicate = (!icmp_ln23)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_2 : Operation 18 [1/1] (0.00ns) (grouped into LUT with out node or_ln28)   --->   "%in_last_V_tmp = extractvalue { i1, float } %empty_406, 0" [firmware/myproject_axi.cpp:28]   --->   Operation 18 'extractvalue' 'in_last_V_tmp' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%in_data_tmp = extractvalue { i1, float } %empty_406, 1" [firmware/myproject_axi.cpp:28]   --->   Operation 19 'extractvalue' 'in_data_tmp' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%empty_408 = call { i1, float } @_ssdm_op_Read.axis.volatile.i1P.floatP(i1* %in_last_V, float* %in_data)" [firmware/myproject_axi.cpp:28]   --->   Operation 17 'read' 'empty_408' <Predicate = (!icmp_ln23)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 18 [1/1] (0.00ns) (grouped into LUT with out node or_ln28)   --->   "%in_last_V_tmp = extractvalue { i1, float } %empty_408, 0" [firmware/myproject_axi.cpp:28]   --->   Operation 18 'extractvalue' 'in_last_V_tmp' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%in_data_tmp = extractvalue { i1, float } %empty_408, 1" [firmware/myproject_axi.cpp:28]   --->   Operation 19 'extractvalue' 'in_data_tmp' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_2 : Operation 20 [2/2] (1.54ns)   --->   "%d_assign_i = fpext float %in_data_tmp to double" [firmware/myproject_axi.cpp:27]   --->   Operation 20 'fpext' 'd_assign_i' <Predicate = (!icmp_ln23)> <Delay = 1.54> <Core = "Float2Double">   --->   Core 114 'Float2Double' <Latency = 1> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
 ST_2 : Operation 21 [1/1] (0.12ns) (out node of the LUT)   --->   "%or_ln28 = or i1 %in_last_V_tmp, %is_last_0_i_out_0" [firmware/myproject_axi.cpp:28]   --->   Operation 21 'or' 'or_ln28' <Predicate = (!icmp_ln23)> <Delay = 0.12> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 22 [1/1] (0.00ns)   --->   "ret i1 %is_last_0_i_out_0" [firmware/myproject_axi.cpp:28]   --->   Operation 22 'ret' <Predicate = (icmp_ln23)> <Delay = 0.00>
@@ -195,7 +195,7 @@ icmp_ln23         (icmp             ) [ 00111111]
 empty             (speclooptripcount) [ 00000000]
 i                 (add              ) [ 01111111]
 br_ln23           (br               ) [ 00000000]
-empty_406         (read             ) [ 00000000]
+empty_408         (read             ) [ 00000000]
 in_last_V_tmp     (extractvalue     ) [ 00000000]
 in_data_tmp       (extractvalue     ) [ 00011100]
 or_ln28           (or               ) [ 01111111]
@@ -634,7 +634,7 @@ br_ln23           (br               ) [ 01111111]
 </bind>
 </comp>
 
-<comp id="84" class="1004" name="empty_406_read_fu_84">
+<comp id="84" class="1004" name="empty_408_read_fu_84">
 <pin_list>
 <pin id="85" dir="0" index="0" bw="33" slack="0"/>
 <pin id="86" dir="0" index="1" bw="1" slack="0"/>
@@ -643,7 +643,7 @@ br_ln23           (br               ) [ 01111111]
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
-<opset="empty_406/2 "/>
+<opset="empty_408/2 "/>
 </bind>
 </comp>
 
@@ -1950,7 +1950,7 @@ br_ln23           (br               ) [ 01111111]
 |          |    xor_ln585_fu_318    |    0    |    0    |    2    |
 |          |    xor_ln581_fu_341    |    0    |    0    |    2    |
 |----------|------------------------|---------|---------|---------|
-|   read   |  empty_406_read_fu_84  |    0    |    0    |    0    |
+|   read   |  empty_408_read_fu_84  |    0    |    0    |    0    |
 |----------|------------------------|---------|---------|---------|
 |   write  | write_ln30_write_fu_92 |    0    |    0    |    0    |
 |----------|------------------------|---------|---------|---------|

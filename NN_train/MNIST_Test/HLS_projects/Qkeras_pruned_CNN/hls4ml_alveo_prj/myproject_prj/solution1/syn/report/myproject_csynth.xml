@@ -7,7 +7,7 @@
 <UserAssignments>
 <unit>ns</unit>
 <ProductFamily>virtexuplus</ProductFamily>
-<Part>xcu50-fsvh2104-2L-e</Part>
+<Part>xcu50-fsvh2104-2-e</Part>
 <TopModelName>myproject</TopModelName>
 <TargetClockPeriod>2.00</TargetClockPeriod>
 <ClockUncertainty>0.25</ClockUncertainty>
@@ -37,8 +37,8 @@
 <Resources>
 <BRAM_18K>364</BRAM_18K>
 <DSP48E>10</DSP48E>
-<FF>67565</FF>
-<LUT>126514</LUT>
+<FF>67723</FF>
+<LUT>126326</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

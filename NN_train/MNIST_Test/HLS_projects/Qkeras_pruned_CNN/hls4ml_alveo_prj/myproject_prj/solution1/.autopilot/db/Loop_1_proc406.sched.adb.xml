@@ -201,10 +201,10 @@ newFuncRoot:2  br label %0
 
 <Node id="15" bw="33" op_0_bw="33" op_1_bw="1" op_2_bw="32">
 <![CDATA[
-_ifconv:0  %empty_406 = call { i1, float } @_ssdm_op_Read.axis.volatile.i1P.floatP(i1* %in_last_V, float* %in_data)
+_ifconv:0  %empty_408 = call { i1, float } @_ssdm_op_Read.axis.volatile.i1P.floatP(i1* %in_last_V, float* %in_data)
 
 ]]></Node>
-<StgValue><ssdm name="empty_406"/></StgValue>
+<StgValue><ssdm name="empty_408"/></StgValue>
 </operation>
 
 <operation id="18" st_id="2" stage="1" lat="1">
@@ -217,7 +217,7 @@ _ifconv:0  %empty_406 = call { i1, float } @_ssdm_op_Read.axis.volatile.i1P.floa
 
 <Node id="16" bw="1" op_0_bw="33">
 <![CDATA[
-_ifconv:1  %in_last_V_tmp = extractvalue { i1, float } %empty_406, 0
+_ifconv:1  %in_last_V_tmp = extractvalue { i1, float } %empty_408, 0
 
 ]]></Node>
 <StgValue><ssdm name="in_last_V_tmp"/></StgValue>
@@ -233,7 +233,7 @@ _ifconv:1  %in_last_V_tmp = extractvalue { i1, float } %empty_406, 0
 
 <Node id="17" bw="32" op_0_bw="33">
 <![CDATA[
-_ifconv:2  %in_data_tmp = extractvalue { i1, float } %empty_406, 1
+_ifconv:2  %in_data_tmp = extractvalue { i1, float } %empty_408, 1
 
 ]]></Node>
 <StgValue><ssdm name="in_data_tmp"/></StgValue>

@@ -139,7 +139,7 @@
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-.critedge:8  call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str46) nounwind
+.critedge:8  call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str45) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln227"/></StgValue>
@@ -404,7 +404,7 @@
 </dataflow>
 <dataflow id="60" from="_ssdm_op_SpecLoopName" to="specloopname_ln227" fromId="59" toId="10">
 </dataflow>
-<dataflow id="62" from="p_str46" to="specloopname_ln227" fromId="61" toId="10">
+<dataflow id="62" from="p_str45" to="specloopname_ln227" fromId="61" toId="10">
 </dataflow>
 <dataflow id="64" from="_ssdm_op_MemShiftRead.[28 x i8]P" to="DataOut_V" fromId="63" toId="11">
 </dataflow>

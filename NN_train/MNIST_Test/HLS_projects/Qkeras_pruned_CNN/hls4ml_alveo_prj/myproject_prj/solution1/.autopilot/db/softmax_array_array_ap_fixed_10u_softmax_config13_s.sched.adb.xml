@@ -94,7 +94,7 @@
 :20  call fastcc void @"softmax_stable<array,array,softmax_config13>"(i12* %data_V_data_0_V, i12* %data_V_data_1_V, i12* %data_V_data_2_V, i12* %data_V_data_3_V, i12* %data_V_data_4_V, i12* %data_V_data_5_V, i12* %data_V_data_6_V, i12* %data_V_data_7_V, i12* %data_V_data_8_V, i12* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)
 
 ]]></Node>
-<StgValue><ssdm name="call_ln336"/></StgValue>
+<StgValue><ssdm name="call_ln326"/></StgValue>
 </operation>
 </state>
 
@@ -112,7 +112,7 @@
 :20  call fastcc void @"softmax_stable<array,array,softmax_config13>"(i12* %data_V_data_0_V, i12* %data_V_data_1_V, i12* %data_V_data_2_V, i12* %data_V_data_3_V, i12* %data_V_data_4_V, i12* %data_V_data_5_V, i12* %data_V_data_6_V, i12* %data_V_data_7_V, i12* %data_V_data_8_V, i12* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)
 
 ]]></Node>
-<StgValue><ssdm name="call_ln336"/></StgValue>
+<StgValue><ssdm name="call_ln326"/></StgValue>
 </operation>
 </state>
 
@@ -130,7 +130,7 @@
 :20  call fastcc void @"softmax_stable<array,array,softmax_config13>"(i12* %data_V_data_0_V, i12* %data_V_data_1_V, i12* %data_V_data_2_V, i12* %data_V_data_3_V, i12* %data_V_data_4_V, i12* %data_V_data_5_V, i12* %data_V_data_6_V, i12* %data_V_data_7_V, i12* %data_V_data_8_V, i12* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)
 
 ]]></Node>
-<StgValue><ssdm name="call_ln336"/></StgValue>
+<StgValue><ssdm name="call_ln326"/></StgValue>
 </operation>
 </state>
 
@@ -148,7 +148,7 @@
 :20  call fastcc void @"softmax_stable<array,array,softmax_config13>"(i12* %data_V_data_0_V, i12* %data_V_data_1_V, i12* %data_V_data_2_V, i12* %data_V_data_3_V, i12* %data_V_data_4_V, i12* %data_V_data_5_V, i12* %data_V_data_6_V, i12* %data_V_data_7_V, i12* %data_V_data_8_V, i12* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)
 
 ]]></Node>
-<StgValue><ssdm name="call_ln336"/></StgValue>
+<StgValue><ssdm name="call_ln326"/></StgValue>
 </operation>
 </state>
 
@@ -166,7 +166,7 @@
 :20  call fastcc void @"softmax_stable<array,array,softmax_config13>"(i12* %data_V_data_0_V, i12* %data_V_data_1_V, i12* %data_V_data_2_V, i12* %data_V_data_3_V, i12* %data_V_data_4_V, i12* %data_V_data_5_V, i12* %data_V_data_6_V, i12* %data_V_data_7_V, i12* %data_V_data_8_V, i12* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)
 
 ]]></Node>
-<StgValue><ssdm name="call_ln336"/></StgValue>
+<StgValue><ssdm name="call_ln326"/></StgValue>
 </operation>
 </state>
 
@@ -184,7 +184,7 @@
 :20  call fastcc void @"softmax_stable<array,array,softmax_config13>"(i12* %data_V_data_0_V, i12* %data_V_data_1_V, i12* %data_V_data_2_V, i12* %data_V_data_3_V, i12* %data_V_data_4_V, i12* %data_V_data_5_V, i12* %data_V_data_6_V, i12* %data_V_data_7_V, i12* %data_V_data_8_V, i12* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)
 
 ]]></Node>
-<StgValue><ssdm name="call_ln336"/></StgValue>
+<StgValue><ssdm name="call_ln326"/></StgValue>
 </operation>
 </state>
 
@@ -202,7 +202,7 @@
 :20  call fastcc void @"softmax_stable<array,array,softmax_config13>"(i12* %data_V_data_0_V, i12* %data_V_data_1_V, i12* %data_V_data_2_V, i12* %data_V_data_3_V, i12* %data_V_data_4_V, i12* %data_V_data_5_V, i12* %data_V_data_6_V, i12* %data_V_data_7_V, i12* %data_V_data_8_V, i12* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)
 
 ]]></Node>
-<StgValue><ssdm name="call_ln336"/></StgValue>
+<StgValue><ssdm name="call_ln326"/></StgValue>
 </operation>
 </state>
 
@@ -220,7 +220,7 @@
 :20  call fastcc void @"softmax_stable<array,array,softmax_config13>"(i12* %data_V_data_0_V, i12* %data_V_data_1_V, i12* %data_V_data_2_V, i12* %data_V_data_3_V, i12* %data_V_data_4_V, i12* %data_V_data_5_V, i12* %data_V_data_6_V, i12* %data_V_data_7_V, i12* %data_V_data_8_V, i12* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)
 
 ]]></Node>
-<StgValue><ssdm name="call_ln336"/></StgValue>
+<StgValue><ssdm name="call_ln326"/></StgValue>
 </operation>
 </state>
 
@@ -238,7 +238,7 @@
 :20  call fastcc void @"softmax_stable<array,array,softmax_config13>"(i12* %data_V_data_0_V, i12* %data_V_data_1_V, i12* %data_V_data_2_V, i12* %data_V_data_3_V, i12* %data_V_data_4_V, i12* %data_V_data_5_V, i12* %data_V_data_6_V, i12* %data_V_data_7_V, i12* %data_V_data_8_V, i12* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)
 
 ]]></Node>
-<StgValue><ssdm name="call_ln336"/></StgValue>
+<StgValue><ssdm name="call_ln326"/></StgValue>
 </operation>
 </state>
 
@@ -256,7 +256,7 @@
 :20  call fastcc void @"softmax_stable<array,array,softmax_config13>"(i12* %data_V_data_0_V, i12* %data_V_data_1_V, i12* %data_V_data_2_V, i12* %data_V_data_3_V, i12* %data_V_data_4_V, i12* %data_V_data_5_V, i12* %data_V_data_6_V, i12* %data_V_data_7_V, i12* %data_V_data_8_V, i12* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)
 
 ]]></Node>
-<StgValue><ssdm name="call_ln336"/></StgValue>
+<StgValue><ssdm name="call_ln326"/></StgValue>
 </operation>
 </state>
 
@@ -274,7 +274,7 @@
 :20  call fastcc void @"softmax_stable<array,array,softmax_config13>"(i12* %data_V_data_0_V, i12* %data_V_data_1_V, i12* %data_V_data_2_V, i12* %data_V_data_3_V, i12* %data_V_data_4_V, i12* %data_V_data_5_V, i12* %data_V_data_6_V, i12* %data_V_data_7_V, i12* %data_V_data_8_V, i12* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)
 
 ]]></Node>
-<StgValue><ssdm name="call_ln336"/></StgValue>
+<StgValue><ssdm name="call_ln326"/></StgValue>
 </operation>
 </state>
 
@@ -292,7 +292,7 @@
 :20  call fastcc void @"softmax_stable<array,array,softmax_config13>"(i12* %data_V_data_0_V, i12* %data_V_data_1_V, i12* %data_V_data_2_V, i12* %data_V_data_3_V, i12* %data_V_data_4_V, i12* %data_V_data_5_V, i12* %data_V_data_6_V, i12* %data_V_data_7_V, i12* %data_V_data_8_V, i12* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)
 
 ]]></Node>
-<StgValue><ssdm name="call_ln336"/></StgValue>
+<StgValue><ssdm name="call_ln326"/></StgValue>
 </operation>
 </state>
 
@@ -610,7 +610,7 @@
 :20  call fastcc void @"softmax_stable<array,array,softmax_config13>"(i12* %data_V_data_0_V, i12* %data_V_data_1_V, i12* %data_V_data_2_V, i12* %data_V_data_3_V, i12* %data_V_data_4_V, i12* %data_V_data_5_V, i12* %data_V_data_6_V, i12* %data_V_data_7_V, i12* %data_V_data_8_V, i12* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)
 
 ]]></Node>
-<StgValue><ssdm name="call_ln336"/></StgValue>
+<StgValue><ssdm name="call_ln326"/></StgValue>
 </operation>
 
 <operation id="47" st_id="13" stage="1" lat="1">
@@ -625,7 +625,7 @@
 :21  ret void
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln342"/></StgValue>
+<StgValue><ssdm name="ret_ln332"/></StgValue>
 </operation>
 </state>
 </state_list>

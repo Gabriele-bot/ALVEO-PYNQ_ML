@@ -1,20 +1,23 @@
-from pynq import DefaultHierarchy, DefaultIP, allocate
-from pynq import Overlay
 from datetime import datetime
-import pynq.lib.dma
+
 import numpy as np
+from pynq import Overlay
+from pynq import allocate
+
 
 class NeuralNetworkOverlay(Overlay):
-    def __init__(self, bitfile_name, dtbo=None, download=True, ignore_version=False, device=None):
-        
-        super().__init__(bitfile_name, dtbo=dtbo, download=download, ignore_version=ignore_version, device=device)
-        
-    def _print_dt(self, timea, timeb, N):
-        dt = (timeb - timea) 
-        dts = dt.seconds + dt.microseconds * 10**-6
+    def __init__(self, xclbin_name, dtbo=None, download=True, ignore_version=False, device=None):
+
+        super().__init__(xclbin_name, dtbo=dtbo, download=download, ignore_version=ignore_version, device=device)
+
+    def print_dt(self, timea, timeb, N):
+        dt = (timeb - timea)
+        dts = dt.seconds + dt.microseconds * 10 ** -6
         rate = N / dts
         print("Classified {} samples in {} seconds ({} inferences / s)".format(N, dts, rate))
+        print("Or {} us / inferences".format(1 / rate * 1e6))
         return dts, rate
+
     def predict(self, X, y_shape, dtype=np.float32, debug=None, profile=False, encode=None, decode=None):
         """
         Obtain the predictions of the NN implemented in the FPGA.
@@ -48,24 +51,31 @@ class NeuralNetworkOverlay(Overlay):
             timea = datetime.now()
         if encode is not None:
             X = encode(X)
-        with allocate(shape=X.shape, dtype=dtype) as input_buffer, \
-             allocate(shape=y_shape, dtype=dtype) as output_buffer:
-            input_buffer[:] = X 
-            self.hier_0.axi_dma_0.sendchannel.transfer(input_buffer)
-            self.hier_0.axi_dma_0.recvchannel.transfer(output_buffer)
-            if debug:
-                print("Transfer OK")
-            self.hier_0.axi_dma_0.sendchannel.wait()
+        # TODO Improve the memory target definition (memory target should be chosen accordigly to the design)
+        with allocate(shape=X.shape, dtype=dtype, target=self.HBM0) as input_buffer, \
+                allocate(shape=y_shape, dtype=dtype, target=self.HBM1) as output_buffer:
+            in_size = np.prod(X.shape)
+            out_size = np.prod(y_shape)
+            input_buffer[:] = X
+            input_buffer.sync_to_device()
             if debug:
                 print("Send OK")
-            self.hier_0.axi_dma_0.recvchannel.wait()
+            self.krnl_rtl_1.call(input_buffer, output_buffer, in_size, out_size)
+            if debug:
+                print("Kernel call OK")
+            output_buffer.sync_from_device()
             if debug:
                 print("Receive OK")
             result = output_buffer.copy()
+            input_buffer.flush()
+            output_buffer.flush()
+            del input_buffer
+            del output_buffer
+            self.free()
         if decode is not None:
             result = decode(result)
         if profile:
             timeb = datetime.now()
-            dts, rate = self._print_dt(timea, timeb, len(X))
+            dts, rate = self.print_dt(timea, timeb, len(X))
             return result, dts, rate
         return result

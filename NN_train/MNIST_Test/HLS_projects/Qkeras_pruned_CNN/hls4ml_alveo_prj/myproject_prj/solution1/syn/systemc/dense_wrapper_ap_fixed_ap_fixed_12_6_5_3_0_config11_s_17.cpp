@@ -3921,12 +3921,12 @@ void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_shl_ln_fu_820
     shl_ln_fu_82058_p3 = esl_concat<8,1>(mul_ln1118_reg_114661.read(), ap_const_lv1_0);
 }
 
-void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_tmp_1_fu_81626_p3() {
-    tmp_1_fu_81626_p3 = esl_concat<3,1>(and_ln1118_fu_81621_p2.read(), ap_const_lv1_0);
-}
-
 void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_tmp_2006_fu_81606_p3() {
     tmp_2006_fu_81606_p3 = w11_V_load_reg_103675.read().range(9985, 9985);
+}
+
+void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_tmp_2007_fu_81626_p3() {
+    tmp_2007_fu_81626_p3 = esl_concat<3,1>(and_ln1118_fu_81621_p2.read(), ap_const_lv1_0);
 }
 
 void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_trunc_ln76_fu_21851_p1() {

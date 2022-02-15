@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'myproject'" level="0">
-<item name = "Date">Tue Dec  7 00:24:40 2021
+<item name = "Date">Tue Feb 15 18:32:47 2022
 </item>
 <item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
 <item name = "Project">myproject_prj</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">virtexuplus</item>
-<item name = "Target device">xcu50-fsvh2104-2L-e</item>
+<item name = "Target device">xcu50-fsvh2104-2-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -34,14 +34,14 @@
 <column name="grp_dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_s_fu_1468">dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_s, 35, 36, 70.000 ns, 72.000 ns, 35, 36, none</column>
 <column name="grp_conv_2d_cl_array_array_ap_fixed_16u_config6_s_fu_1500">conv_2d_cl_array_array_ap_fixed_16u_config6_s, 1523, 1523, 3.046 us, 3.046 us, 1523, 1523, none</column>
 <column name="grp_softmax_array_array_ap_fixed_10u_softmax_config13_s_fu_1802">softmax_array_array_ap_fixed_10u_softmax_config13_s, 12, 12, 24.000 ns, 24.000 ns, 12, 12, none</column>
-<column name="grp_relu_array_array_ap_fixed_16u_relu_config4_s_fu_1840">relu_array_array_ap_fixed_16u_relu_config4_s, 679, 679, 1.358 us, 1.358 us, 679, 679, none</column>
-<column name="grp_relu_array_array_ap_fixed_16u_relu_config8_s_fu_1876">relu_array_array_ap_fixed_16u_relu_config8_s, 124, 124, 0.248 us, 0.248 us, 124, 124, none</column>
+<column name="grp_relu_array_array_ap_ufixed_16u_relu_config4_s_fu_1840">relu_array_array_ap_ufixed_16u_relu_config4_s, 679, 679, 1.358 us, 1.358 us, 679, 679, none</column>
+<column name="grp_relu_array_array_ap_ufixed_16u_relu_config8_s_fu_1876">relu_array_array_ap_ufixed_16u_relu_config8_s, 124, 124, 0.248 us, 0.248 us, 124, 124, none</column>
 <column name="grp_pooling2d_cl_array_array_ap_fixed_16u_config5_s_fu_1912">pooling2d_cl_array_array_ap_fixed_16u_config5_s, 680, 680, 1.360 us, 1.360 us, 680, 680, none</column>
 <column name="grp_pooling2d_cl_array_array_ap_fixed_16u_config9_s_fu_2052">pooling2d_cl_array_array_ap_fixed_16u_config9_s, 125, 125, 0.250 us, 0.250 us, 125, 125, none</column>
 <column name="grp_conv_2d_cl_array_array_ap_fixed_16u_config2_s_fu_2192">conv_2d_cl_array_array_ap_fixed_16u_config2_s, 3922, 3922, 7.844 us, 7.844 us, 3922, 3922, none</column>
 <column name="grp_linear_array_array_ap_fixed_16u_linear_config3_s_fu_2238">linear_array_array_ap_fixed_16u_linear_config3_s, 678, 678, 1.356 us, 1.356 us, 678, 678, none</column>
 <column name="grp_linear_array_array_ap_fixed_16u_linear_config7_s_fu_2274">linear_array_array_ap_fixed_16u_linear_config7_s, 123, 123, 0.246 us, 0.246 us, 123, 123, none</column>
-<column name="call_ln96_linear_array_array_ap_fixed_10u_linear_config12_s_fu_2310">linear_array_array_ap_fixed_10u_linear_config12_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="call_ln111_linear_array_array_ap_fixed_10u_linear_config12_s_fu_2310">linear_array_array_ap_fixed_10u_linear_config12_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

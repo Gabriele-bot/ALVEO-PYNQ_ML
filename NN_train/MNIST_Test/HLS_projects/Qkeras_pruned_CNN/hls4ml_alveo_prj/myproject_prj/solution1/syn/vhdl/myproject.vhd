@@ -161,61 +161,61 @@ architecture behav of myproject is
     signal linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_14_V_write : STD_LOGIC;
     signal linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_15_V_din : STD_LOGIC_VECTOR (11 downto 0);
     signal linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_15_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_ap_start : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_ap_done : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_ap_continue : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_ap_idle : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_ap_ready : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_start_out : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_start_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_0_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_1_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_2_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_3_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_4_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_5_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_6_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_7_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_8_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_9_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_10_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_11_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_12_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_13_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_14_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_15_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_0_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_0_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_1_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_1_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_2_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_2_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_3_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_3_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_4_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_4_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_5_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_5_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_6_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_6_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_7_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_7_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_8_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_8_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_9_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_9_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_10_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_10_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_11_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_11_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_12_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_12_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_13_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_13_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_14_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_14_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_15_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_15_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_start : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_done : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_continue : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_idle : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_ready : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_start_out : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_start_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_0_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_1_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_2_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_3_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_4_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_5_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_6_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_7_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_8_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_9_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_10_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_11_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_12_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_13_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_14_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_15_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_0_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_0_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_1_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_1_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_2_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_2_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_3_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_3_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_4_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_4_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_5_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_5_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_6_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_6_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_7_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_7_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_8_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_8_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_9_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_9_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_10_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_10_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_11_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_11_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_12_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_12_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_13_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_13_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_14_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_14_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_15_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_15_V_write : STD_LOGIC;
     signal pooling2d_cl_array_array_ap_fixed_16u_config5_U0_ap_start : STD_LOGIC;
     signal pooling2d_cl_array_array_ap_fixed_16u_config5_U0_ap_done : STD_LOGIC;
     signal pooling2d_cl_array_array_ap_fixed_16u_config5_U0_ap_continue : STD_LOGIC;
@@ -381,61 +381,61 @@ architecture behav of myproject is
     signal linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_14_V_write : STD_LOGIC;
     signal linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_15_V_din : STD_LOGIC_VECTOR (11 downto 0);
     signal linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_15_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_ap_start : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_ap_done : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_ap_continue : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_ap_idle : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_ap_ready : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_start_out : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_start_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_0_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_1_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_2_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_3_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_4_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_5_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_6_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_7_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_8_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_9_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_10_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_11_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_12_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_13_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_14_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_15_V_read : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_0_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_0_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_1_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_1_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_2_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_2_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_3_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_3_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_4_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_4_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_5_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_5_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_6_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_6_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_7_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_7_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_8_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_8_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_9_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_9_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_10_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_10_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_11_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_11_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_12_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_12_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_13_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_13_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_14_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_14_V_write : STD_LOGIC;
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_15_V_din : STD_LOGIC_VECTOR (2 downto 0);
-    signal relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_15_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_start : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_done : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_continue : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_idle : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_ready : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_start_out : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_start_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_0_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_1_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_2_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_3_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_4_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_5_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_6_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_7_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_8_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_9_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_10_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_11_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_12_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_13_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_14_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_15_V_read : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_0_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_0_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_1_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_1_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_2_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_2_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_3_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_3_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_4_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_4_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_5_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_5_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_6_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_6_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_7_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_7_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_8_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_8_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_9_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_9_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_10_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_10_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_11_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_11_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_12_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_12_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_13_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_13_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_14_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_14_V_write : STD_LOGIC;
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_15_V_din : STD_LOGIC_VECTOR (2 downto 0);
+    signal relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_15_V_write : STD_LOGIC;
     signal pooling2d_cl_array_array_ap_fixed_16u_config9_U0_ap_start : STD_LOGIC;
     signal pooling2d_cl_array_array_ap_fixed_16u_config9_U0_ap_done : STD_LOGIC;
     signal pooling2d_cl_array_array_ap_fixed_16u_config9_U0_ap_continue : STD_LOGIC;
@@ -1057,10 +1057,10 @@ architecture behav of myproject is
     signal start_for_linear_array_array_ap_fixed_16u_linear_config3_U0_full_n : STD_LOGIC;
     signal start_for_linear_array_array_ap_fixed_16u_linear_config3_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
     signal start_for_linear_array_array_ap_fixed_16u_linear_config3_U0_empty_n : STD_LOGIC;
-    signal start_for_relu_array_array_ap_fixed_16u_relu_config4_U0_din : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_relu_array_array_ap_fixed_16u_relu_config4_U0_full_n : STD_LOGIC;
-    signal start_for_relu_array_array_ap_fixed_16u_relu_config4_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_relu_array_array_ap_fixed_16u_relu_config4_U0_empty_n : STD_LOGIC;
+    signal start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0_din : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0_full_n : STD_LOGIC;
+    signal start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0_empty_n : STD_LOGIC;
     signal start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0_din : STD_LOGIC_VECTOR (0 downto 0);
     signal start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0_full_n : STD_LOGIC;
     signal start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
@@ -1073,10 +1073,10 @@ architecture behav of myproject is
     signal start_for_linear_array_array_ap_fixed_16u_linear_config7_U0_full_n : STD_LOGIC;
     signal start_for_linear_array_array_ap_fixed_16u_linear_config7_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
     signal start_for_linear_array_array_ap_fixed_16u_linear_config7_U0_empty_n : STD_LOGIC;
-    signal start_for_relu_array_array_ap_fixed_16u_relu_config8_U0_din : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_relu_array_array_ap_fixed_16u_relu_config8_U0_full_n : STD_LOGIC;
-    signal start_for_relu_array_array_ap_fixed_16u_relu_config8_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_relu_array_array_ap_fixed_16u_relu_config8_U0_empty_n : STD_LOGIC;
+    signal start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0_din : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0_full_n : STD_LOGIC;
+    signal start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0_empty_n : STD_LOGIC;
     signal start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0_din : STD_LOGIC_VECTOR (0 downto 0);
     signal start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0_full_n : STD_LOGIC;
     signal start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
@@ -1273,7 +1273,7 @@ architecture behav of myproject is
     end component;
 
 
-    component relu_array_array_ap_fixed_16u_relu_config4_s IS
+    component relu_array_array_ap_ufixed_16u_relu_config4_s IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -1717,7 +1717,7 @@ architecture behav of myproject is
     end component;
 
 
-    component relu_array_array_ap_fixed_16u_relu_config8_s IS
+    component relu_array_array_ap_ufixed_16u_relu_config8_s IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -2299,7 +2299,7 @@ architecture behav of myproject is
     end component;
 
 
-    component start_for_relu_array_array_ap_fixed_16u_relu_config4_U0 IS
+    component start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0 IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -2359,7 +2359,7 @@ architecture behav of myproject is
     end component;
 
 
-    component start_for_relu_array_array_ap_fixed_16u_relu_config8_U0 IS
+    component start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0 IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -2505,7 +2505,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst,
         ap_start => linear_array_array_ap_fixed_16u_linear_config3_U0_ap_start,
-        start_full_n => start_for_relu_array_array_ap_fixed_16u_relu_config4_U0_full_n,
+        start_full_n => start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0_full_n,
         ap_done => linear_array_array_ap_fixed_16u_linear_config3_U0_ap_done,
         ap_continue => linear_array_array_ap_fixed_16u_linear_config3_U0_ap_continue,
         ap_idle => linear_array_array_ap_fixed_16u_linear_config3_U0_ap_idle,
@@ -2609,114 +2609,114 @@ begin
         res_V_data_15_V_full_n => layer3_out_V_data_15_V_full_n,
         res_V_data_15_V_write => linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_15_V_write);
 
-    relu_array_array_ap_fixed_16u_relu_config4_U0 : component relu_array_array_ap_fixed_16u_relu_config4_s
+    relu_array_array_ap_ufixed_16u_relu_config4_U0 : component relu_array_array_ap_ufixed_16u_relu_config4_s
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => relu_array_array_ap_fixed_16u_relu_config4_U0_ap_start,
+        ap_start => relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_start,
         start_full_n => start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0_full_n,
-        ap_done => relu_array_array_ap_fixed_16u_relu_config4_U0_ap_done,
-        ap_continue => relu_array_array_ap_fixed_16u_relu_config4_U0_ap_continue,
-        ap_idle => relu_array_array_ap_fixed_16u_relu_config4_U0_ap_idle,
-        ap_ready => relu_array_array_ap_fixed_16u_relu_config4_U0_ap_ready,
-        start_out => relu_array_array_ap_fixed_16u_relu_config4_U0_start_out,
-        start_write => relu_array_array_ap_fixed_16u_relu_config4_U0_start_write,
+        ap_done => relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_done,
+        ap_continue => relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_continue,
+        ap_idle => relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_idle,
+        ap_ready => relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_ready,
+        start_out => relu_array_array_ap_ufixed_16u_relu_config4_U0_start_out,
+        start_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_start_write,
         data_V_data_0_V_dout => layer3_out_V_data_0_V_dout,
         data_V_data_0_V_empty_n => layer3_out_V_data_0_V_empty_n,
-        data_V_data_0_V_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_0_V_read,
+        data_V_data_0_V_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_0_V_read,
         data_V_data_1_V_dout => layer3_out_V_data_1_V_dout,
         data_V_data_1_V_empty_n => layer3_out_V_data_1_V_empty_n,
-        data_V_data_1_V_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_1_V_read,
+        data_V_data_1_V_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_1_V_read,
         data_V_data_2_V_dout => layer3_out_V_data_2_V_dout,
         data_V_data_2_V_empty_n => layer3_out_V_data_2_V_empty_n,
-        data_V_data_2_V_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_2_V_read,
+        data_V_data_2_V_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_2_V_read,
         data_V_data_3_V_dout => layer3_out_V_data_3_V_dout,
         data_V_data_3_V_empty_n => layer3_out_V_data_3_V_empty_n,
-        data_V_data_3_V_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_3_V_read,
+        data_V_data_3_V_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_3_V_read,
         data_V_data_4_V_dout => layer3_out_V_data_4_V_dout,
         data_V_data_4_V_empty_n => layer3_out_V_data_4_V_empty_n,
-        data_V_data_4_V_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_4_V_read,
+        data_V_data_4_V_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_4_V_read,
         data_V_data_5_V_dout => layer3_out_V_data_5_V_dout,
         data_V_data_5_V_empty_n => layer3_out_V_data_5_V_empty_n,
-        data_V_data_5_V_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_5_V_read,
+        data_V_data_5_V_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_5_V_read,
         data_V_data_6_V_dout => layer3_out_V_data_6_V_dout,
         data_V_data_6_V_empty_n => layer3_out_V_data_6_V_empty_n,
-        data_V_data_6_V_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_6_V_read,
+        data_V_data_6_V_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_6_V_read,
         data_V_data_7_V_dout => layer3_out_V_data_7_V_dout,
         data_V_data_7_V_empty_n => layer3_out_V_data_7_V_empty_n,
-        data_V_data_7_V_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_7_V_read,
+        data_V_data_7_V_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_7_V_read,
         data_V_data_8_V_dout => layer3_out_V_data_8_V_dout,
         data_V_data_8_V_empty_n => layer3_out_V_data_8_V_empty_n,
-        data_V_data_8_V_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_8_V_read,
+        data_V_data_8_V_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_8_V_read,
         data_V_data_9_V_dout => layer3_out_V_data_9_V_dout,
         data_V_data_9_V_empty_n => layer3_out_V_data_9_V_empty_n,
-        data_V_data_9_V_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_9_V_read,
+        data_V_data_9_V_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_9_V_read,
         data_V_data_10_V_dout => layer3_out_V_data_10_V_dout,
         data_V_data_10_V_empty_n => layer3_out_V_data_10_V_empty_n,
-        data_V_data_10_V_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_10_V_read,
+        data_V_data_10_V_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_10_V_read,
         data_V_data_11_V_dout => layer3_out_V_data_11_V_dout,
         data_V_data_11_V_empty_n => layer3_out_V_data_11_V_empty_n,
-        data_V_data_11_V_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_11_V_read,
+        data_V_data_11_V_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_11_V_read,
         data_V_data_12_V_dout => layer3_out_V_data_12_V_dout,
         data_V_data_12_V_empty_n => layer3_out_V_data_12_V_empty_n,
-        data_V_data_12_V_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_12_V_read,
+        data_V_data_12_V_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_12_V_read,
         data_V_data_13_V_dout => layer3_out_V_data_13_V_dout,
         data_V_data_13_V_empty_n => layer3_out_V_data_13_V_empty_n,
-        data_V_data_13_V_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_13_V_read,
+        data_V_data_13_V_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_13_V_read,
         data_V_data_14_V_dout => layer3_out_V_data_14_V_dout,
         data_V_data_14_V_empty_n => layer3_out_V_data_14_V_empty_n,
-        data_V_data_14_V_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_14_V_read,
+        data_V_data_14_V_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_14_V_read,
         data_V_data_15_V_dout => layer3_out_V_data_15_V_dout,
         data_V_data_15_V_empty_n => layer3_out_V_data_15_V_empty_n,
-        data_V_data_15_V_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_15_V_read,
-        res_V_data_0_V_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_0_V_din,
+        data_V_data_15_V_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_15_V_read,
+        res_V_data_0_V_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_0_V_din,
         res_V_data_0_V_full_n => layer4_out_V_data_0_V_full_n,
-        res_V_data_0_V_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_0_V_write,
-        res_V_data_1_V_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_1_V_din,
+        res_V_data_0_V_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_0_V_write,
+        res_V_data_1_V_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_1_V_din,
         res_V_data_1_V_full_n => layer4_out_V_data_1_V_full_n,
-        res_V_data_1_V_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_1_V_write,
-        res_V_data_2_V_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_2_V_din,
+        res_V_data_1_V_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_1_V_write,
+        res_V_data_2_V_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_2_V_din,
         res_V_data_2_V_full_n => layer4_out_V_data_2_V_full_n,
-        res_V_data_2_V_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_2_V_write,
-        res_V_data_3_V_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_3_V_din,
+        res_V_data_2_V_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_2_V_write,
+        res_V_data_3_V_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_3_V_din,
         res_V_data_3_V_full_n => layer4_out_V_data_3_V_full_n,
-        res_V_data_3_V_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_3_V_write,
-        res_V_data_4_V_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_4_V_din,
+        res_V_data_3_V_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_3_V_write,
+        res_V_data_4_V_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_4_V_din,
         res_V_data_4_V_full_n => layer4_out_V_data_4_V_full_n,
-        res_V_data_4_V_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_4_V_write,
-        res_V_data_5_V_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_5_V_din,
+        res_V_data_4_V_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_4_V_write,
+        res_V_data_5_V_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_5_V_din,
         res_V_data_5_V_full_n => layer4_out_V_data_5_V_full_n,
-        res_V_data_5_V_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_5_V_write,
-        res_V_data_6_V_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_6_V_din,
+        res_V_data_5_V_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_5_V_write,
+        res_V_data_6_V_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_6_V_din,
         res_V_data_6_V_full_n => layer4_out_V_data_6_V_full_n,
-        res_V_data_6_V_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_6_V_write,
-        res_V_data_7_V_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_7_V_din,
+        res_V_data_6_V_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_6_V_write,
+        res_V_data_7_V_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_7_V_din,
         res_V_data_7_V_full_n => layer4_out_V_data_7_V_full_n,
-        res_V_data_7_V_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_7_V_write,
-        res_V_data_8_V_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_8_V_din,
+        res_V_data_7_V_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_7_V_write,
+        res_V_data_8_V_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_8_V_din,
         res_V_data_8_V_full_n => layer4_out_V_data_8_V_full_n,
-        res_V_data_8_V_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_8_V_write,
-        res_V_data_9_V_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_9_V_din,
+        res_V_data_8_V_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_8_V_write,
+        res_V_data_9_V_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_9_V_din,
         res_V_data_9_V_full_n => layer4_out_V_data_9_V_full_n,
-        res_V_data_9_V_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_9_V_write,
-        res_V_data_10_V_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_10_V_din,
+        res_V_data_9_V_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_9_V_write,
+        res_V_data_10_V_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_10_V_din,
         res_V_data_10_V_full_n => layer4_out_V_data_10_V_full_n,
-        res_V_data_10_V_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_10_V_write,
-        res_V_data_11_V_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_11_V_din,
+        res_V_data_10_V_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_10_V_write,
+        res_V_data_11_V_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_11_V_din,
         res_V_data_11_V_full_n => layer4_out_V_data_11_V_full_n,
-        res_V_data_11_V_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_11_V_write,
-        res_V_data_12_V_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_12_V_din,
+        res_V_data_11_V_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_11_V_write,
+        res_V_data_12_V_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_12_V_din,
         res_V_data_12_V_full_n => layer4_out_V_data_12_V_full_n,
-        res_V_data_12_V_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_12_V_write,
-        res_V_data_13_V_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_13_V_din,
+        res_V_data_12_V_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_12_V_write,
+        res_V_data_13_V_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_13_V_din,
         res_V_data_13_V_full_n => layer4_out_V_data_13_V_full_n,
-        res_V_data_13_V_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_13_V_write,
-        res_V_data_14_V_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_14_V_din,
+        res_V_data_13_V_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_13_V_write,
+        res_V_data_14_V_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_14_V_din,
         res_V_data_14_V_full_n => layer4_out_V_data_14_V_full_n,
-        res_V_data_14_V_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_14_V_write,
-        res_V_data_15_V_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_15_V_din,
+        res_V_data_14_V_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_14_V_write,
+        res_V_data_15_V_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_15_V_din,
         res_V_data_15_V_full_n => layer4_out_V_data_15_V_full_n,
-        res_V_data_15_V_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_15_V_write);
+        res_V_data_15_V_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_15_V_write);
 
     pooling2d_cl_array_array_ap_fixed_16u_config5_U0 : component pooling2d_cl_array_array_ap_fixed_16u_config5_s
     port map (
@@ -2941,7 +2941,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst,
         ap_start => linear_array_array_ap_fixed_16u_linear_config7_U0_ap_start,
-        start_full_n => start_for_relu_array_array_ap_fixed_16u_relu_config8_U0_full_n,
+        start_full_n => start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0_full_n,
         ap_done => linear_array_array_ap_fixed_16u_linear_config7_U0_ap_done,
         ap_continue => linear_array_array_ap_fixed_16u_linear_config7_U0_ap_continue,
         ap_idle => linear_array_array_ap_fixed_16u_linear_config7_U0_ap_idle,
@@ -3045,114 +3045,114 @@ begin
         res_V_data_15_V_full_n => layer7_out_V_data_15_V_full_n,
         res_V_data_15_V_write => linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_15_V_write);
 
-    relu_array_array_ap_fixed_16u_relu_config8_U0 : component relu_array_array_ap_fixed_16u_relu_config8_s
+    relu_array_array_ap_ufixed_16u_relu_config8_U0 : component relu_array_array_ap_ufixed_16u_relu_config8_s
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => relu_array_array_ap_fixed_16u_relu_config8_U0_ap_start,
+        ap_start => relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_start,
         start_full_n => start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0_full_n,
-        ap_done => relu_array_array_ap_fixed_16u_relu_config8_U0_ap_done,
-        ap_continue => relu_array_array_ap_fixed_16u_relu_config8_U0_ap_continue,
-        ap_idle => relu_array_array_ap_fixed_16u_relu_config8_U0_ap_idle,
-        ap_ready => relu_array_array_ap_fixed_16u_relu_config8_U0_ap_ready,
-        start_out => relu_array_array_ap_fixed_16u_relu_config8_U0_start_out,
-        start_write => relu_array_array_ap_fixed_16u_relu_config8_U0_start_write,
+        ap_done => relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_done,
+        ap_continue => relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_continue,
+        ap_idle => relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_idle,
+        ap_ready => relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_ready,
+        start_out => relu_array_array_ap_ufixed_16u_relu_config8_U0_start_out,
+        start_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_start_write,
         data_V_data_0_V_dout => layer7_out_V_data_0_V_dout,
         data_V_data_0_V_empty_n => layer7_out_V_data_0_V_empty_n,
-        data_V_data_0_V_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_0_V_read,
+        data_V_data_0_V_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_0_V_read,
         data_V_data_1_V_dout => layer7_out_V_data_1_V_dout,
         data_V_data_1_V_empty_n => layer7_out_V_data_1_V_empty_n,
-        data_V_data_1_V_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_1_V_read,
+        data_V_data_1_V_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_1_V_read,
         data_V_data_2_V_dout => layer7_out_V_data_2_V_dout,
         data_V_data_2_V_empty_n => layer7_out_V_data_2_V_empty_n,
-        data_V_data_2_V_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_2_V_read,
+        data_V_data_2_V_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_2_V_read,
         data_V_data_3_V_dout => layer7_out_V_data_3_V_dout,
         data_V_data_3_V_empty_n => layer7_out_V_data_3_V_empty_n,
-        data_V_data_3_V_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_3_V_read,
+        data_V_data_3_V_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_3_V_read,
         data_V_data_4_V_dout => layer7_out_V_data_4_V_dout,
         data_V_data_4_V_empty_n => layer7_out_V_data_4_V_empty_n,
-        data_V_data_4_V_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_4_V_read,
+        data_V_data_4_V_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_4_V_read,
         data_V_data_5_V_dout => layer7_out_V_data_5_V_dout,
         data_V_data_5_V_empty_n => layer7_out_V_data_5_V_empty_n,
-        data_V_data_5_V_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_5_V_read,
+        data_V_data_5_V_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_5_V_read,
         data_V_data_6_V_dout => layer7_out_V_data_6_V_dout,
         data_V_data_6_V_empty_n => layer7_out_V_data_6_V_empty_n,
-        data_V_data_6_V_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_6_V_read,
+        data_V_data_6_V_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_6_V_read,
         data_V_data_7_V_dout => layer7_out_V_data_7_V_dout,
         data_V_data_7_V_empty_n => layer7_out_V_data_7_V_empty_n,
-        data_V_data_7_V_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_7_V_read,
+        data_V_data_7_V_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_7_V_read,
         data_V_data_8_V_dout => layer7_out_V_data_8_V_dout,
         data_V_data_8_V_empty_n => layer7_out_V_data_8_V_empty_n,
-        data_V_data_8_V_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_8_V_read,
+        data_V_data_8_V_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_8_V_read,
         data_V_data_9_V_dout => layer7_out_V_data_9_V_dout,
         data_V_data_9_V_empty_n => layer7_out_V_data_9_V_empty_n,
-        data_V_data_9_V_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_9_V_read,
+        data_V_data_9_V_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_9_V_read,
         data_V_data_10_V_dout => layer7_out_V_data_10_V_dout,
         data_V_data_10_V_empty_n => layer7_out_V_data_10_V_empty_n,
-        data_V_data_10_V_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_10_V_read,
+        data_V_data_10_V_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_10_V_read,
         data_V_data_11_V_dout => layer7_out_V_data_11_V_dout,
         data_V_data_11_V_empty_n => layer7_out_V_data_11_V_empty_n,
-        data_V_data_11_V_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_11_V_read,
+        data_V_data_11_V_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_11_V_read,
         data_V_data_12_V_dout => layer7_out_V_data_12_V_dout,
         data_V_data_12_V_empty_n => layer7_out_V_data_12_V_empty_n,
-        data_V_data_12_V_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_12_V_read,
+        data_V_data_12_V_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_12_V_read,
         data_V_data_13_V_dout => layer7_out_V_data_13_V_dout,
         data_V_data_13_V_empty_n => layer7_out_V_data_13_V_empty_n,
-        data_V_data_13_V_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_13_V_read,
+        data_V_data_13_V_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_13_V_read,
         data_V_data_14_V_dout => layer7_out_V_data_14_V_dout,
         data_V_data_14_V_empty_n => layer7_out_V_data_14_V_empty_n,
-        data_V_data_14_V_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_14_V_read,
+        data_V_data_14_V_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_14_V_read,
         data_V_data_15_V_dout => layer7_out_V_data_15_V_dout,
         data_V_data_15_V_empty_n => layer7_out_V_data_15_V_empty_n,
-        data_V_data_15_V_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_15_V_read,
-        res_V_data_0_V_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_0_V_din,
+        data_V_data_15_V_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_15_V_read,
+        res_V_data_0_V_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_0_V_din,
         res_V_data_0_V_full_n => layer8_out_V_data_0_V_full_n,
-        res_V_data_0_V_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_0_V_write,
-        res_V_data_1_V_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_1_V_din,
+        res_V_data_0_V_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_0_V_write,
+        res_V_data_1_V_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_1_V_din,
         res_V_data_1_V_full_n => layer8_out_V_data_1_V_full_n,
-        res_V_data_1_V_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_1_V_write,
-        res_V_data_2_V_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_2_V_din,
+        res_V_data_1_V_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_1_V_write,
+        res_V_data_2_V_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_2_V_din,
         res_V_data_2_V_full_n => layer8_out_V_data_2_V_full_n,
-        res_V_data_2_V_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_2_V_write,
-        res_V_data_3_V_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_3_V_din,
+        res_V_data_2_V_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_2_V_write,
+        res_V_data_3_V_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_3_V_din,
         res_V_data_3_V_full_n => layer8_out_V_data_3_V_full_n,
-        res_V_data_3_V_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_3_V_write,
-        res_V_data_4_V_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_4_V_din,
+        res_V_data_3_V_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_3_V_write,
+        res_V_data_4_V_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_4_V_din,
         res_V_data_4_V_full_n => layer8_out_V_data_4_V_full_n,
-        res_V_data_4_V_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_4_V_write,
-        res_V_data_5_V_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_5_V_din,
+        res_V_data_4_V_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_4_V_write,
+        res_V_data_5_V_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_5_V_din,
         res_V_data_5_V_full_n => layer8_out_V_data_5_V_full_n,
-        res_V_data_5_V_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_5_V_write,
-        res_V_data_6_V_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_6_V_din,
+        res_V_data_5_V_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_5_V_write,
+        res_V_data_6_V_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_6_V_din,
         res_V_data_6_V_full_n => layer8_out_V_data_6_V_full_n,
-        res_V_data_6_V_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_6_V_write,
-        res_V_data_7_V_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_7_V_din,
+        res_V_data_6_V_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_6_V_write,
+        res_V_data_7_V_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_7_V_din,
         res_V_data_7_V_full_n => layer8_out_V_data_7_V_full_n,
-        res_V_data_7_V_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_7_V_write,
-        res_V_data_8_V_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_8_V_din,
+        res_V_data_7_V_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_7_V_write,
+        res_V_data_8_V_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_8_V_din,
         res_V_data_8_V_full_n => layer8_out_V_data_8_V_full_n,
-        res_V_data_8_V_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_8_V_write,
-        res_V_data_9_V_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_9_V_din,
+        res_V_data_8_V_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_8_V_write,
+        res_V_data_9_V_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_9_V_din,
         res_V_data_9_V_full_n => layer8_out_V_data_9_V_full_n,
-        res_V_data_9_V_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_9_V_write,
-        res_V_data_10_V_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_10_V_din,
+        res_V_data_9_V_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_9_V_write,
+        res_V_data_10_V_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_10_V_din,
         res_V_data_10_V_full_n => layer8_out_V_data_10_V_full_n,
-        res_V_data_10_V_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_10_V_write,
-        res_V_data_11_V_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_11_V_din,
+        res_V_data_10_V_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_10_V_write,
+        res_V_data_11_V_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_11_V_din,
         res_V_data_11_V_full_n => layer8_out_V_data_11_V_full_n,
-        res_V_data_11_V_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_11_V_write,
-        res_V_data_12_V_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_12_V_din,
+        res_V_data_11_V_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_11_V_write,
+        res_V_data_12_V_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_12_V_din,
         res_V_data_12_V_full_n => layer8_out_V_data_12_V_full_n,
-        res_V_data_12_V_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_12_V_write,
-        res_V_data_13_V_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_13_V_din,
+        res_V_data_12_V_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_12_V_write,
+        res_V_data_13_V_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_13_V_din,
         res_V_data_13_V_full_n => layer8_out_V_data_13_V_full_n,
-        res_V_data_13_V_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_13_V_write,
-        res_V_data_14_V_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_14_V_din,
+        res_V_data_13_V_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_13_V_write,
+        res_V_data_14_V_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_14_V_din,
         res_V_data_14_V_full_n => layer8_out_V_data_14_V_full_n,
-        res_V_data_14_V_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_14_V_write,
-        res_V_data_15_V_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_15_V_din,
+        res_V_data_14_V_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_14_V_write,
+        res_V_data_15_V_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_15_V_din,
         res_V_data_15_V_full_n => layer8_out_V_data_15_V_full_n,
-        res_V_data_15_V_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_15_V_write);
+        res_V_data_15_V_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_15_V_write);
 
     pooling2d_cl_array_array_ap_fixed_16u_config9_U0 : component pooling2d_cl_array_array_ap_fixed_16u_config9_s
     port map (
@@ -3716,7 +3716,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_0_V_write,
         if_dout => layer3_out_V_data_0_V_dout,
         if_empty_n => layer3_out_V_data_0_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_0_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_0_V_read);
 
     layer3_out_V_data_1_V_U : component fifo_w12_d676_A
     port map (
@@ -3729,7 +3729,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_1_V_write,
         if_dout => layer3_out_V_data_1_V_dout,
         if_empty_n => layer3_out_V_data_1_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_1_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_1_V_read);
 
     layer3_out_V_data_2_V_U : component fifo_w12_d676_A
     port map (
@@ -3742,7 +3742,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_2_V_write,
         if_dout => layer3_out_V_data_2_V_dout,
         if_empty_n => layer3_out_V_data_2_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_2_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_2_V_read);
 
     layer3_out_V_data_3_V_U : component fifo_w12_d676_A
     port map (
@@ -3755,7 +3755,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_3_V_write,
         if_dout => layer3_out_V_data_3_V_dout,
         if_empty_n => layer3_out_V_data_3_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_3_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_3_V_read);
 
     layer3_out_V_data_4_V_U : component fifo_w12_d676_A
     port map (
@@ -3768,7 +3768,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_4_V_write,
         if_dout => layer3_out_V_data_4_V_dout,
         if_empty_n => layer3_out_V_data_4_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_4_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_4_V_read);
 
     layer3_out_V_data_5_V_U : component fifo_w12_d676_A
     port map (
@@ -3781,7 +3781,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_5_V_write,
         if_dout => layer3_out_V_data_5_V_dout,
         if_empty_n => layer3_out_V_data_5_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_5_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_5_V_read);
 
     layer3_out_V_data_6_V_U : component fifo_w12_d676_A
     port map (
@@ -3794,7 +3794,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_6_V_write,
         if_dout => layer3_out_V_data_6_V_dout,
         if_empty_n => layer3_out_V_data_6_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_6_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_6_V_read);
 
     layer3_out_V_data_7_V_U : component fifo_w12_d676_A
     port map (
@@ -3807,7 +3807,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_7_V_write,
         if_dout => layer3_out_V_data_7_V_dout,
         if_empty_n => layer3_out_V_data_7_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_7_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_7_V_read);
 
     layer3_out_V_data_8_V_U : component fifo_w12_d676_A
     port map (
@@ -3820,7 +3820,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_8_V_write,
         if_dout => layer3_out_V_data_8_V_dout,
         if_empty_n => layer3_out_V_data_8_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_8_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_8_V_read);
 
     layer3_out_V_data_9_V_U : component fifo_w12_d676_A
     port map (
@@ -3833,7 +3833,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_9_V_write,
         if_dout => layer3_out_V_data_9_V_dout,
         if_empty_n => layer3_out_V_data_9_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_9_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_9_V_read);
 
     layer3_out_V_data_10_V_U : component fifo_w12_d676_A
     port map (
@@ -3846,7 +3846,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_10_V_write,
         if_dout => layer3_out_V_data_10_V_dout,
         if_empty_n => layer3_out_V_data_10_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_10_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_10_V_read);
 
     layer3_out_V_data_11_V_U : component fifo_w12_d676_A
     port map (
@@ -3859,7 +3859,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_11_V_write,
         if_dout => layer3_out_V_data_11_V_dout,
         if_empty_n => layer3_out_V_data_11_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_11_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_11_V_read);
 
     layer3_out_V_data_12_V_U : component fifo_w12_d676_A
     port map (
@@ -3872,7 +3872,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_12_V_write,
         if_dout => layer3_out_V_data_12_V_dout,
         if_empty_n => layer3_out_V_data_12_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_12_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_12_V_read);
 
     layer3_out_V_data_13_V_U : component fifo_w12_d676_A
     port map (
@@ -3885,7 +3885,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_13_V_write,
         if_dout => layer3_out_V_data_13_V_dout,
         if_empty_n => layer3_out_V_data_13_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_13_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_13_V_read);
 
     layer3_out_V_data_14_V_U : component fifo_w12_d676_A
     port map (
@@ -3898,7 +3898,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_14_V_write,
         if_dout => layer3_out_V_data_14_V_dout,
         if_empty_n => layer3_out_V_data_14_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_14_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_14_V_read);
 
     layer3_out_V_data_15_V_U : component fifo_w12_d676_A
     port map (
@@ -3911,7 +3911,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config3_U0_res_V_data_15_V_write,
         if_dout => layer3_out_V_data_15_V_dout,
         if_empty_n => layer3_out_V_data_15_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config4_U0_data_V_data_15_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_data_V_data_15_V_read);
 
     layer4_out_V_data_0_V_U : component fifo_w3_d676_A
     port map (
@@ -3919,9 +3919,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_0_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_0_V_din,
         if_full_n => layer4_out_V_data_0_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_0_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_0_V_write,
         if_dout => layer4_out_V_data_0_V_dout,
         if_empty_n => layer4_out_V_data_0_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config5_U0_data_V_data_0_V_read);
@@ -3932,9 +3932,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_1_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_1_V_din,
         if_full_n => layer4_out_V_data_1_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_1_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_1_V_write,
         if_dout => layer4_out_V_data_1_V_dout,
         if_empty_n => layer4_out_V_data_1_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config5_U0_data_V_data_1_V_read);
@@ -3945,9 +3945,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_2_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_2_V_din,
         if_full_n => layer4_out_V_data_2_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_2_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_2_V_write,
         if_dout => layer4_out_V_data_2_V_dout,
         if_empty_n => layer4_out_V_data_2_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config5_U0_data_V_data_2_V_read);
@@ -3958,9 +3958,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_3_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_3_V_din,
         if_full_n => layer4_out_V_data_3_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_3_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_3_V_write,
         if_dout => layer4_out_V_data_3_V_dout,
         if_empty_n => layer4_out_V_data_3_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config5_U0_data_V_data_3_V_read);
@@ -3971,9 +3971,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_4_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_4_V_din,
         if_full_n => layer4_out_V_data_4_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_4_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_4_V_write,
         if_dout => layer4_out_V_data_4_V_dout,
         if_empty_n => layer4_out_V_data_4_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config5_U0_data_V_data_4_V_read);
@@ -3984,9 +3984,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_5_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_5_V_din,
         if_full_n => layer4_out_V_data_5_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_5_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_5_V_write,
         if_dout => layer4_out_V_data_5_V_dout,
         if_empty_n => layer4_out_V_data_5_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config5_U0_data_V_data_5_V_read);
@@ -3997,9 +3997,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_6_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_6_V_din,
         if_full_n => layer4_out_V_data_6_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_6_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_6_V_write,
         if_dout => layer4_out_V_data_6_V_dout,
         if_empty_n => layer4_out_V_data_6_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config5_U0_data_V_data_6_V_read);
@@ -4010,9 +4010,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_7_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_7_V_din,
         if_full_n => layer4_out_V_data_7_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_7_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_7_V_write,
         if_dout => layer4_out_V_data_7_V_dout,
         if_empty_n => layer4_out_V_data_7_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config5_U0_data_V_data_7_V_read);
@@ -4023,9 +4023,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_8_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_8_V_din,
         if_full_n => layer4_out_V_data_8_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_8_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_8_V_write,
         if_dout => layer4_out_V_data_8_V_dout,
         if_empty_n => layer4_out_V_data_8_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config5_U0_data_V_data_8_V_read);
@@ -4036,9 +4036,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_9_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_9_V_din,
         if_full_n => layer4_out_V_data_9_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_9_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_9_V_write,
         if_dout => layer4_out_V_data_9_V_dout,
         if_empty_n => layer4_out_V_data_9_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config5_U0_data_V_data_9_V_read);
@@ -4049,9 +4049,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_10_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_10_V_din,
         if_full_n => layer4_out_V_data_10_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_10_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_10_V_write,
         if_dout => layer4_out_V_data_10_V_dout,
         if_empty_n => layer4_out_V_data_10_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config5_U0_data_V_data_10_V_read);
@@ -4062,9 +4062,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_11_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_11_V_din,
         if_full_n => layer4_out_V_data_11_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_11_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_11_V_write,
         if_dout => layer4_out_V_data_11_V_dout,
         if_empty_n => layer4_out_V_data_11_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config5_U0_data_V_data_11_V_read);
@@ -4075,9 +4075,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_12_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_12_V_din,
         if_full_n => layer4_out_V_data_12_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_12_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_12_V_write,
         if_dout => layer4_out_V_data_12_V_dout,
         if_empty_n => layer4_out_V_data_12_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config5_U0_data_V_data_12_V_read);
@@ -4088,9 +4088,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_13_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_13_V_din,
         if_full_n => layer4_out_V_data_13_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_13_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_13_V_write,
         if_dout => layer4_out_V_data_13_V_dout,
         if_empty_n => layer4_out_V_data_13_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config5_U0_data_V_data_13_V_read);
@@ -4101,9 +4101,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_14_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_14_V_din,
         if_full_n => layer4_out_V_data_14_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_14_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_14_V_write,
         if_dout => layer4_out_V_data_14_V_dout,
         if_empty_n => layer4_out_V_data_14_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config5_U0_data_V_data_14_V_read);
@@ -4114,9 +4114,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_15_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_15_V_din,
         if_full_n => layer4_out_V_data_15_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config4_U0_res_V_data_15_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_res_V_data_15_V_write,
         if_dout => layer4_out_V_data_15_V_dout,
         if_empty_n => layer4_out_V_data_15_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config5_U0_data_V_data_15_V_read);
@@ -4548,7 +4548,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_0_V_write,
         if_dout => layer7_out_V_data_0_V_dout,
         if_empty_n => layer7_out_V_data_0_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_0_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_0_V_read);
 
     layer7_out_V_data_1_V_U : component fifo_w12_d121_A
     port map (
@@ -4561,7 +4561,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_1_V_write,
         if_dout => layer7_out_V_data_1_V_dout,
         if_empty_n => layer7_out_V_data_1_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_1_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_1_V_read);
 
     layer7_out_V_data_2_V_U : component fifo_w12_d121_A
     port map (
@@ -4574,7 +4574,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_2_V_write,
         if_dout => layer7_out_V_data_2_V_dout,
         if_empty_n => layer7_out_V_data_2_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_2_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_2_V_read);
 
     layer7_out_V_data_3_V_U : component fifo_w12_d121_A
     port map (
@@ -4587,7 +4587,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_3_V_write,
         if_dout => layer7_out_V_data_3_V_dout,
         if_empty_n => layer7_out_V_data_3_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_3_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_3_V_read);
 
     layer7_out_V_data_4_V_U : component fifo_w12_d121_A
     port map (
@@ -4600,7 +4600,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_4_V_write,
         if_dout => layer7_out_V_data_4_V_dout,
         if_empty_n => layer7_out_V_data_4_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_4_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_4_V_read);
 
     layer7_out_V_data_5_V_U : component fifo_w12_d121_A
     port map (
@@ -4613,7 +4613,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_5_V_write,
         if_dout => layer7_out_V_data_5_V_dout,
         if_empty_n => layer7_out_V_data_5_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_5_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_5_V_read);
 
     layer7_out_V_data_6_V_U : component fifo_w12_d121_A
     port map (
@@ -4626,7 +4626,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_6_V_write,
         if_dout => layer7_out_V_data_6_V_dout,
         if_empty_n => layer7_out_V_data_6_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_6_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_6_V_read);
 
     layer7_out_V_data_7_V_U : component fifo_w12_d121_A
     port map (
@@ -4639,7 +4639,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_7_V_write,
         if_dout => layer7_out_V_data_7_V_dout,
         if_empty_n => layer7_out_V_data_7_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_7_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_7_V_read);
 
     layer7_out_V_data_8_V_U : component fifo_w12_d121_A
     port map (
@@ -4652,7 +4652,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_8_V_write,
         if_dout => layer7_out_V_data_8_V_dout,
         if_empty_n => layer7_out_V_data_8_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_8_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_8_V_read);
 
     layer7_out_V_data_9_V_U : component fifo_w12_d121_A
     port map (
@@ -4665,7 +4665,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_9_V_write,
         if_dout => layer7_out_V_data_9_V_dout,
         if_empty_n => layer7_out_V_data_9_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_9_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_9_V_read);
 
     layer7_out_V_data_10_V_U : component fifo_w12_d121_A
     port map (
@@ -4678,7 +4678,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_10_V_write,
         if_dout => layer7_out_V_data_10_V_dout,
         if_empty_n => layer7_out_V_data_10_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_10_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_10_V_read);
 
     layer7_out_V_data_11_V_U : component fifo_w12_d121_A
     port map (
@@ -4691,7 +4691,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_11_V_write,
         if_dout => layer7_out_V_data_11_V_dout,
         if_empty_n => layer7_out_V_data_11_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_11_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_11_V_read);
 
     layer7_out_V_data_12_V_U : component fifo_w12_d121_A
     port map (
@@ -4704,7 +4704,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_12_V_write,
         if_dout => layer7_out_V_data_12_V_dout,
         if_empty_n => layer7_out_V_data_12_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_12_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_12_V_read);
 
     layer7_out_V_data_13_V_U : component fifo_w12_d121_A
     port map (
@@ -4717,7 +4717,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_13_V_write,
         if_dout => layer7_out_V_data_13_V_dout,
         if_empty_n => layer7_out_V_data_13_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_13_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_13_V_read);
 
     layer7_out_V_data_14_V_U : component fifo_w12_d121_A
     port map (
@@ -4730,7 +4730,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_14_V_write,
         if_dout => layer7_out_V_data_14_V_dout,
         if_empty_n => layer7_out_V_data_14_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_14_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_14_V_read);
 
     layer7_out_V_data_15_V_U : component fifo_w12_d121_A
     port map (
@@ -4743,7 +4743,7 @@ begin
         if_write => linear_array_array_ap_fixed_16u_linear_config7_U0_res_V_data_15_V_write,
         if_dout => layer7_out_V_data_15_V_dout,
         if_empty_n => layer7_out_V_data_15_V_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config8_U0_data_V_data_15_V_read);
+        if_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_data_V_data_15_V_read);
 
     layer8_out_V_data_0_V_U : component fifo_w3_d121_A
     port map (
@@ -4751,9 +4751,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_0_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_0_V_din,
         if_full_n => layer8_out_V_data_0_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_0_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_0_V_write,
         if_dout => layer8_out_V_data_0_V_dout,
         if_empty_n => layer8_out_V_data_0_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config9_U0_data_V_data_0_V_read);
@@ -4764,9 +4764,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_1_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_1_V_din,
         if_full_n => layer8_out_V_data_1_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_1_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_1_V_write,
         if_dout => layer8_out_V_data_1_V_dout,
         if_empty_n => layer8_out_V_data_1_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config9_U0_data_V_data_1_V_read);
@@ -4777,9 +4777,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_2_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_2_V_din,
         if_full_n => layer8_out_V_data_2_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_2_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_2_V_write,
         if_dout => layer8_out_V_data_2_V_dout,
         if_empty_n => layer8_out_V_data_2_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config9_U0_data_V_data_2_V_read);
@@ -4790,9 +4790,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_3_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_3_V_din,
         if_full_n => layer8_out_V_data_3_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_3_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_3_V_write,
         if_dout => layer8_out_V_data_3_V_dout,
         if_empty_n => layer8_out_V_data_3_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config9_U0_data_V_data_3_V_read);
@@ -4803,9 +4803,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_4_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_4_V_din,
         if_full_n => layer8_out_V_data_4_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_4_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_4_V_write,
         if_dout => layer8_out_V_data_4_V_dout,
         if_empty_n => layer8_out_V_data_4_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config9_U0_data_V_data_4_V_read);
@@ -4816,9 +4816,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_5_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_5_V_din,
         if_full_n => layer8_out_V_data_5_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_5_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_5_V_write,
         if_dout => layer8_out_V_data_5_V_dout,
         if_empty_n => layer8_out_V_data_5_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config9_U0_data_V_data_5_V_read);
@@ -4829,9 +4829,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_6_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_6_V_din,
         if_full_n => layer8_out_V_data_6_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_6_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_6_V_write,
         if_dout => layer8_out_V_data_6_V_dout,
         if_empty_n => layer8_out_V_data_6_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config9_U0_data_V_data_6_V_read);
@@ -4842,9 +4842,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_7_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_7_V_din,
         if_full_n => layer8_out_V_data_7_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_7_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_7_V_write,
         if_dout => layer8_out_V_data_7_V_dout,
         if_empty_n => layer8_out_V_data_7_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config9_U0_data_V_data_7_V_read);
@@ -4855,9 +4855,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_8_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_8_V_din,
         if_full_n => layer8_out_V_data_8_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_8_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_8_V_write,
         if_dout => layer8_out_V_data_8_V_dout,
         if_empty_n => layer8_out_V_data_8_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config9_U0_data_V_data_8_V_read);
@@ -4868,9 +4868,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_9_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_9_V_din,
         if_full_n => layer8_out_V_data_9_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_9_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_9_V_write,
         if_dout => layer8_out_V_data_9_V_dout,
         if_empty_n => layer8_out_V_data_9_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config9_U0_data_V_data_9_V_read);
@@ -4881,9 +4881,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_10_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_10_V_din,
         if_full_n => layer8_out_V_data_10_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_10_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_10_V_write,
         if_dout => layer8_out_V_data_10_V_dout,
         if_empty_n => layer8_out_V_data_10_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config9_U0_data_V_data_10_V_read);
@@ -4894,9 +4894,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_11_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_11_V_din,
         if_full_n => layer8_out_V_data_11_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_11_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_11_V_write,
         if_dout => layer8_out_V_data_11_V_dout,
         if_empty_n => layer8_out_V_data_11_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config9_U0_data_V_data_11_V_read);
@@ -4907,9 +4907,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_12_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_12_V_din,
         if_full_n => layer8_out_V_data_12_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_12_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_12_V_write,
         if_dout => layer8_out_V_data_12_V_dout,
         if_empty_n => layer8_out_V_data_12_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config9_U0_data_V_data_12_V_read);
@@ -4920,9 +4920,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_13_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_13_V_din,
         if_full_n => layer8_out_V_data_13_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_13_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_13_V_write,
         if_dout => layer8_out_V_data_13_V_dout,
         if_empty_n => layer8_out_V_data_13_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config9_U0_data_V_data_13_V_read);
@@ -4933,9 +4933,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_14_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_14_V_din,
         if_full_n => layer8_out_V_data_14_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_14_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_14_V_write,
         if_dout => layer8_out_V_data_14_V_dout,
         if_empty_n => layer8_out_V_data_14_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config9_U0_data_V_data_14_V_read);
@@ -4946,9 +4946,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_15_V_din,
+        if_din => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_15_V_din,
         if_full_n => layer8_out_V_data_15_V_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config8_U0_res_V_data_15_V_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_res_V_data_15_V_write,
         if_dout => layer8_out_V_data_15_V_dout,
         if_empty_n => layer8_out_V_data_15_V_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config9_U0_data_V_data_15_V_read);
@@ -5434,18 +5434,18 @@ begin
         if_empty_n => start_for_linear_array_array_ap_fixed_16u_linear_config3_U0_empty_n,
         if_read => linear_array_array_ap_fixed_16u_linear_config3_U0_ap_ready);
 
-    start_for_relu_array_array_ap_fixed_16u_relu_config4_U0_U : component start_for_relu_array_array_ap_fixed_16u_relu_config4_U0
+    start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0_U : component start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0
     port map (
         clk => ap_clk,
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => start_for_relu_array_array_ap_fixed_16u_relu_config4_U0_din,
-        if_full_n => start_for_relu_array_array_ap_fixed_16u_relu_config4_U0_full_n,
+        if_din => start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0_din,
+        if_full_n => start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0_full_n,
         if_write => linear_array_array_ap_fixed_16u_linear_config3_U0_start_write,
-        if_dout => start_for_relu_array_array_ap_fixed_16u_relu_config4_U0_dout,
-        if_empty_n => start_for_relu_array_array_ap_fixed_16u_relu_config4_U0_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config4_U0_ap_ready);
+        if_dout => start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0_dout,
+        if_empty_n => start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0_empty_n,
+        if_read => relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_ready);
 
     start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0_U : component start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0
     port map (
@@ -5455,7 +5455,7 @@ begin
         if_write_ce => ap_const_logic_1,
         if_din => start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0_din,
         if_full_n => start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config4_U0_start_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config4_U0_start_write,
         if_dout => start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0_dout,
         if_empty_n => start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config5_U0_ap_ready);
@@ -5486,18 +5486,18 @@ begin
         if_empty_n => start_for_linear_array_array_ap_fixed_16u_linear_config7_U0_empty_n,
         if_read => linear_array_array_ap_fixed_16u_linear_config7_U0_ap_ready);
 
-    start_for_relu_array_array_ap_fixed_16u_relu_config8_U0_U : component start_for_relu_array_array_ap_fixed_16u_relu_config8_U0
+    start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0_U : component start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0
     port map (
         clk => ap_clk,
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => start_for_relu_array_array_ap_fixed_16u_relu_config8_U0_din,
-        if_full_n => start_for_relu_array_array_ap_fixed_16u_relu_config8_U0_full_n,
+        if_din => start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0_din,
+        if_full_n => start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0_full_n,
         if_write => linear_array_array_ap_fixed_16u_linear_config7_U0_start_write,
-        if_dout => start_for_relu_array_array_ap_fixed_16u_relu_config8_U0_dout,
-        if_empty_n => start_for_relu_array_array_ap_fixed_16u_relu_config8_U0_empty_n,
-        if_read => relu_array_array_ap_fixed_16u_relu_config8_U0_ap_ready);
+        if_dout => start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0_dout,
+        if_empty_n => start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0_empty_n,
+        if_read => relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_ready);
 
     start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0_U : component start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0
     port map (
@@ -5507,7 +5507,7 @@ begin
         if_write_ce => ap_const_logic_1,
         if_din => start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0_din,
         if_full_n => start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0_full_n,
-        if_write => relu_array_array_ap_fixed_16u_relu_config8_U0_start_write,
+        if_write => relu_array_array_ap_ufixed_16u_relu_config8_U0_start_write,
         if_dout => start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0_dout,
         if_empty_n => start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0_empty_n,
         if_read => pooling2d_cl_array_array_ap_fixed_16u_config9_U0_ap_ready);
@@ -5571,7 +5571,7 @@ begin
     end process;
 
     ap_done <= softmax_array_array_ap_fixed_10u_softmax_config13_U0_ap_done;
-    ap_idle <= (softmax_array_array_ap_fixed_10u_softmax_config13_U0_ap_idle and relu_array_array_ap_fixed_16u_relu_config8_U0_ap_idle and relu_array_array_ap_fixed_16u_relu_config4_U0_ap_idle and pooling2d_cl_array_array_ap_fixed_16u_config9_U0_ap_idle and pooling2d_cl_array_array_ap_fixed_16u_config5_U0_ap_idle and linear_array_array_ap_fixed_16u_linear_config7_U0_ap_idle and linear_array_array_ap_fixed_16u_linear_config3_U0_ap_idle and linear_array_array_ap_fixed_10u_linear_config12_U0_ap_idle and dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_U0_ap_idle and conv_2d_cl_array_array_ap_fixed_16u_config6_U0_ap_idle and conv_2d_cl_array_array_ap_fixed_16u_config2_U0_ap_idle);
+    ap_idle <= (softmax_array_array_ap_fixed_10u_softmax_config13_U0_ap_idle and relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_idle and relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_idle and pooling2d_cl_array_array_ap_fixed_16u_config9_U0_ap_idle and pooling2d_cl_array_array_ap_fixed_16u_config5_U0_ap_idle and linear_array_array_ap_fixed_16u_linear_config7_U0_ap_idle and linear_array_array_ap_fixed_16u_linear_config3_U0_ap_idle and linear_array_array_ap_fixed_10u_linear_config12_U0_ap_idle and dense_array_array_ap_fixed_12_6_5_3_0_10u_config11_U0_ap_idle and conv_2d_cl_array_array_ap_fixed_16u_config6_U0_ap_idle and conv_2d_cl_array_array_ap_fixed_16u_config2_U0_ap_idle);
     ap_ready <= internal_ap_ready;
     ap_sync_continue <= ap_continue;
     ap_sync_done <= softmax_array_array_ap_fixed_10u_softmax_config13_U0_ap_done;
@@ -5624,10 +5624,10 @@ begin
         end if; 
     end process;
 
-    relu_array_array_ap_fixed_16u_relu_config4_U0_ap_continue <= ap_const_logic_1;
-    relu_array_array_ap_fixed_16u_relu_config4_U0_ap_start <= start_for_relu_array_array_ap_fixed_16u_relu_config4_U0_empty_n;
-    relu_array_array_ap_fixed_16u_relu_config8_U0_ap_continue <= ap_const_logic_1;
-    relu_array_array_ap_fixed_16u_relu_config8_U0_ap_start <= start_for_relu_array_array_ap_fixed_16u_relu_config8_U0_empty_n;
+    relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_continue <= ap_const_logic_1;
+    relu_array_array_ap_ufixed_16u_relu_config4_U0_ap_start <= start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0_empty_n;
+    relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_continue <= ap_const_logic_1;
+    relu_array_array_ap_ufixed_16u_relu_config8_U0_ap_start <= start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0_empty_n;
     softmax_array_array_ap_fixed_10u_softmax_config13_U0_ap_continue <= ap_continue;
     softmax_array_array_ap_fixed_10u_softmax_config13_U0_ap_start <= start_for_softmax_array_array_ap_fixed_10u_softmax_config13_U0_empty_n;
     softmax_array_array_ap_fixed_10u_softmax_config13_U0_start_full_n <= ap_const_logic_1;
@@ -5639,8 +5639,8 @@ begin
     start_for_linear_array_array_ap_fixed_16u_linear_config7_U0_din <= (0=>ap_const_logic_1, others=>'-');
     start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0_din <= (0=>ap_const_logic_1, others=>'-');
     start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0_din <= (0=>ap_const_logic_1, others=>'-');
-    start_for_relu_array_array_ap_fixed_16u_relu_config4_U0_din <= (0=>ap_const_logic_1, others=>'-');
-    start_for_relu_array_array_ap_fixed_16u_relu_config8_U0_din <= (0=>ap_const_logic_1, others=>'-');
+    start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0_din <= (0=>ap_const_logic_1, others=>'-');
+    start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0_din <= (0=>ap_const_logic_1, others=>'-');
     start_for_softmax_array_array_ap_fixed_10u_softmax_config13_U0_din <= (0=>ap_const_logic_1, others=>'-');
     start_out <= real_start;
 

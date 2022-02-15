@@ -3,13 +3,13 @@
 ================================================================
 == Vivado HLS Report for 'shift_line_buffer_array_ap_ufixed_1u_config2_s'
 ================================================================
-* Date:           Tue Dec  7 00:24:55 2021
+* Date:           Tue Feb 15 18:33:04 2022
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        myproject_prj
 * Solution:       solution1
 * Product family: virtexuplus
-* Target device:  xcu50-fsvh2104-2L-e
+* Target device:  xcu50-fsvh2104-2-e
 
 
 ================================================================
@@ -184,7 +184,7 @@ ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%kernel_window_2_V_read_1 = call i8 
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%kernel_window_1_V_read_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %kernel_window_1_V_read)" [firmware/nnet_utils/nnet_conv_stream.h:209]   --->   Operation 7 'read' 'kernel_window_1_V_read_1' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%in_elem_data_V_read_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %in_elem_data_V_read)" [firmware/nnet_utils/nnet_conv_stream.h:209]   --->   Operation 8 'read' 'in_elem_data_V_read_1' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str10) nounwind" [firmware/nnet_utils/nnet_conv_stream.h:214]   --->   Operation 9 'specpipeline' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str46) nounwind" [firmware/nnet_utils/nnet_conv_stream.h:227]   --->   Operation 10 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str45) nounwind" [firmware/nnet_utils/nnet_conv_stream.h:227]   --->   Operation 10 'specloopname' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.61ns)   --->   "%DataOut_V = call i8 @"_ssdm_op_MemShiftRead.[28 x i8]P"(i8* getelementptr inbounds ([28 x i8]* @line_buffer_Array_V_1_0_0, i64 0, i64 27), i8 %in_elem_data_V_read_1, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:231]   --->   Operation 11 'memshiftread' 'DataOut_V' <Predicate = true> <Delay = 0.61> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 0.61> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 8> <Depth = 28> <ShiftMem>
 ST_1 : Operation 12 [1/1] (0.61ns)   --->   "%DataOut_V_1 = call i8 @"_ssdm_op_MemShiftRead.[28 x i8]P"(i8* getelementptr inbounds ([28 x i8]* @line_buffer_Array_V_1_1_0, i64 0, i64 27), i8 %DataOut_V, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:231]   --->   Operation 12 'memshiftread' 'DataOut_V_1' <Predicate = true> <Delay = 0.61> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 0.61> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 8> <Depth = 28> <ShiftMem>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%mrv_s = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8 } undef, i8 %kernel_window_1_V_read_1, 0" [firmware/nnet_utils/nnet_conv_stream.h:236]   --->   Operation 13 'insertvalue' 'mrv_s' <Predicate = true> <Delay = 0.00>
@@ -402,7 +402,7 @@ ret_ln236                (ret         ) [ 00]
 <pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str46"/></StgValue>
+<StgValue><ssdm name="p_str45"/></StgValue>
 </bind>
 </comp>
 

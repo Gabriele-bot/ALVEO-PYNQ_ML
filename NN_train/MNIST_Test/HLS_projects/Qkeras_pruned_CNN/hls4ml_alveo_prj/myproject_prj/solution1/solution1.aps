@@ -15,7 +15,7 @@
         <value string="myproject_prj"/>
     </project>
     <targetInfo>
-        <TargetInfo value="xcu50:-fsvh2104:-2L-e"/>
+        <TargetInfo value="xcu50:-fsvh2104:-2-e"/>
     </targetInfo>
     <libraryList>
         <library value="xilinx/virtexuplus/virtexuplus" name="DefaultPlatform"/>

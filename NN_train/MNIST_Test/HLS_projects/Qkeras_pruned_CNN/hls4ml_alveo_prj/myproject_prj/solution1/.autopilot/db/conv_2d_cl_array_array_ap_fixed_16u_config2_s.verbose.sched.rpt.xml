@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv_2d_cl_array_array_ap_fixed_16u_config2_s'" level="0">
-<item name = "Date">Tue Dec  7 00:22:50 2021
+<item name = "Date">Tue Feb 15 18:29:27 2022
 </item>
 <item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
 <item name = "Project">myproject_prj</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">virtexuplus</item>
-<item name = "Target device">xcu50-fsvh2104-2L-e</item>
+<item name = "Target device">xcu50-fsvh2104-2-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">

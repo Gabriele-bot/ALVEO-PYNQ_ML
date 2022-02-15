@@ -172,23 +172,23 @@ namespace std
 # 1 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/os_defines.h" 1 3
 # 40 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/os_defines.h" 3
 # 1 "/usr/include/features.h" 1 3 4
-# 402 "/usr/include/features.h" 3 4
+# 439 "/usr/include/features.h" 3 4
 # 1 "/usr/include/stdc-predef.h" 1 3 4
-# 403 "/usr/include/features.h" 2 3 4
-# 424 "/usr/include/features.h" 3 4
+# 440 "/usr/include/features.h" 2 3 4
+# 461 "/usr/include/features.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
-# 427 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+# 452 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 428 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 453 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
-# 429 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
-# 425 "/usr/include/features.h" 2 3 4
-# 448 "/usr/include/features.h" 3 4
+# 454 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 462 "/usr/include/features.h" 2 3 4
+# 485 "/usr/include/features.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
 # 10 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
 # 11 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
-# 449 "/usr/include/features.h" 2 3 4
+# 486 "/usr/include/features.h" 2 3 4
 # 41 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/os_defines.h" 2 3
 # 394 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/c++config.h" 2 3
 
@@ -283,13 +283,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
 # 24 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
 # 25 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 2 3 4
-# 207 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+# 214 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
 typedef float _Float32;
-# 244 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+# 251 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
 typedef double _Float64;
-# 261 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+# 268 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
 typedef double _Float32x;
-# 278 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+# 285 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
 typedef long double _Float64x;
 # 121 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 2 3 4
 # 31 "/usr/include/wchar.h" 2 3 4
@@ -810,7 +810,24 @@ extern int wscanf (const wchar_t *__restrict __format, ...)
 extern int swscanf (const wchar_t *__restrict __s,
       const wchar_t *__restrict __format, ...)
      throw () ;
-# 673 "/usr/include/wchar.h" 3 4
+
+
+
+
+
+
+extern int fwscanf (__FILE *__restrict __stream, const wchar_t *__restrict __format, ...) __asm__ ("" "__isoc99_fwscanf")
+
+
+                                                          ;
+extern int wscanf (const wchar_t *__restrict __format, ...) __asm__ ("" "__isoc99_wscanf")
+
+                                                          ;
+extern int swscanf (const wchar_t *__restrict __s, const wchar_t *__restrict __format, ...) throw () __asm__ ("" "__isoc99_swscanf")
+
+
+                                                          ;
+# 671 "/usr/include/wchar.h" 3 4
 extern int vfwscanf (__FILE *__restrict __s,
        const wchar_t *__restrict __format,
        __gnuc_va_list __arg)
@@ -827,7 +844,24 @@ extern int vswscanf (const wchar_t *__restrict __s,
        const wchar_t *__restrict __format,
        __gnuc_va_list __arg)
      throw () ;
-# 727 "/usr/include/wchar.h" 3 4
+
+
+
+
+
+
+extern int vfwscanf (__FILE *__restrict __s, const wchar_t *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vfwscanf")
+
+
+                                                          ;
+extern int vwscanf (const wchar_t *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vwscanf")
+
+                                                          ;
+extern int vswscanf (const wchar_t *__restrict __s, const wchar_t *__restrict __format, __gnuc_va_list __arg) throw () __asm__ ("" "__isoc99_vswscanf")
+
+
+                                                          ;
+# 726 "/usr/include/wchar.h" 3 4
 extern wint_t fgetwc (__FILE *__stream);
 extern wint_t getwc (__FILE *__stream);
 
@@ -873,7 +907,7 @@ extern int fputws (const wchar_t *__restrict __ws,
 
 
 extern wint_t ungetwc (wint_t __wc, __FILE *__stream);
-# 782 "/usr/include/wchar.h" 3 4
+# 781 "/usr/include/wchar.h" 3 4
 extern wint_t getwc_unlocked (__FILE *__stream);
 extern wint_t getwchar_unlocked (void);
 
@@ -892,10 +926,10 @@ extern wint_t fgetwc_unlocked (__FILE *__stream);
 
 
 extern wint_t fputwc_unlocked (wchar_t __wc, __FILE *__stream);
-# 808 "/usr/include/wchar.h" 3 4
+# 807 "/usr/include/wchar.h" 3 4
 extern wint_t putwc_unlocked (wchar_t __wc, __FILE *__stream);
 extern wint_t putwchar_unlocked (wchar_t __wc);
-# 818 "/usr/include/wchar.h" 3 4
+# 817 "/usr/include/wchar.h" 3 4
 extern wchar_t *fgetws_unlocked (wchar_t *__restrict __ws, int __n,
      __FILE *__restrict __stream);
 
@@ -924,7 +958,7 @@ extern size_t wcsftime_l (wchar_t *__restrict __s, size_t __maxsize,
      const wchar_t *__restrict __format,
      const struct tm *__restrict __tp,
      locale_t __loc) throw ();
-# 857 "/usr/include/wchar.h" 3 4
+# 856 "/usr/include/wchar.h" 3 4
 }
 # 46 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cwchar" 2 3
 # 63 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cwchar" 3
@@ -6140,6 +6174,8 @@ namespace std __attribute__ ((__visibility__ ("default")))
 # 27 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
 # 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
+# 29 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
 
 
 typedef unsigned char __u_char;
@@ -6163,6 +6199,16 @@ typedef unsigned long int __uint64_t;
 
 
 
+typedef __int8_t __int_least8_t;
+typedef __uint8_t __uint_least8_t;
+typedef __int16_t __int_least16_t;
+typedef __uint16_t __uint_least16_t;
+typedef __int32_t __int_least32_t;
+typedef __uint32_t __uint_least32_t;
+typedef __int64_t __int_least64_t;
+typedef __uint64_t __uint_least64_t;
+
+
 
 typedef long int __quad_t;
 typedef unsigned long int __u_quad_t;
@@ -6175,9 +6221,11 @@ typedef unsigned long int __u_quad_t;
 
 typedef long int __intmax_t;
 typedef unsigned long int __uintmax_t;
-# 130 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 141 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/typesizes.h" 1 3 4
-# 131 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 142 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/time64.h" 1 3 4
+# 143 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
 
 
 typedef unsigned long int __dev_t;
@@ -6279,40 +6327,38 @@ typedef __uint64_t uint64_t;
 
 
 
-typedef signed char int_least8_t;
-typedef short int int_least16_t;
-typedef int int_least32_t;
-
-typedef long int int_least64_t;
-
+typedef __int_least8_t int_least8_t;
+typedef __int_least16_t int_least16_t;
+typedef __int_least32_t int_least32_t;
+typedef __int_least64_t int_least64_t;
 
 
+typedef __uint_least8_t uint_least8_t;
+typedef __uint_least16_t uint_least16_t;
+typedef __uint_least32_t uint_least32_t;
+typedef __uint_least64_t uint_least64_t;
 
 
 
-typedef unsigned char uint_least8_t;
-typedef unsigned short int uint_least16_t;
-typedef unsigned int uint_least32_t;
 
-typedef unsigned long int uint_least64_t;
-# 68 "/usr/include/stdint.h" 3 4
+
 typedef signed char int_fast8_t;
 
 typedef long int int_fast16_t;
 typedef long int int_fast32_t;
 typedef long int int_fast64_t;
-# 81 "/usr/include/stdint.h" 3 4
+# 71 "/usr/include/stdint.h" 3 4
 typedef unsigned char uint_fast8_t;
 
 typedef unsigned long int uint_fast16_t;
 typedef unsigned long int uint_fast32_t;
 typedef unsigned long int uint_fast64_t;
-# 97 "/usr/include/stdint.h" 3 4
+# 87 "/usr/include/stdint.h" 3 4
 typedef long int intptr_t;
 
 
 typedef unsigned long int uintptr_t;
-# 111 "/usr/include/stdint.h" 3 4
+# 101 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
 # 34 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
@@ -6753,44 +6799,10 @@ namespace std __attribute__ ((__visibility__ ("default")))
 # 28 "/usr/include/ctype.h" 3 4
 extern "C" {
 # 39 "/usr/include/ctype.h" 3 4
-# 1 "/usr/include/endian.h" 1 3 4
-# 36 "/usr/include/endian.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/endian.h" 1 3 4
-# 37 "/usr/include/endian.h" 2 3 4
-# 60 "/usr/include/endian.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 1 3 4
-# 28 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 29 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 2 3 4
-
-
-
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/byteswap-16.h" 1 3 4
-# 36 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 2 3 4
-# 61 "/usr/include/endian.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/uintn-identity.h" 1 3 4
-# 32 "/usr/include/x86_64-linux-gnu/bits/uintn-identity.h" 3 4
-static __inline __uint16_t
-__uint16_identity (__uint16_t __x)
-{
-  return __x;
-}
-
-static __inline __uint32_t
-__uint32_identity (__uint32_t __x)
-{
-  return __x;
-}
-
-static __inline __uint64_t
-__uint64_identity (__uint64_t __x)
-{
-  return __x;
-}
-# 62 "/usr/include/endian.h" 2 3 4
+# 35 "/usr/include/x86_64-linux-gnu/bits/endian.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/endianness.h" 1 3 4
+# 36 "/usr/include/x86_64-linux-gnu/bits/endian.h" 2 3 4
 # 40 "/usr/include/ctype.h" 2 3 4
 
 
@@ -7072,7 +7084,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 # 1 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/gthr-default.h" 1 3
 # 41 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/gthr-default.h" 3
 # 1 "/usr/include/pthread.h" 1 3 4
-# 23 "/usr/include/pthread.h" 3 4
+# 22 "/usr/include/pthread.h" 3 4
 # 1 "/usr/include/sched.h" 1 3 4
 # 29 "/usr/include/sched.h" 3 4
 # 1 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
@@ -7088,18 +7100,15 @@ namespace std __attribute__ ((__visibility__ ("default")))
 typedef __time_t time_t;
 # 32 "/usr/include/sched.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 1 3 4
-
-
-
-
-
-
-
-
+# 10 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 3 4
 struct timespec
 {
   __time_t tv_sec;
+
+
+
   __syscall_slong_t tv_nsec;
+# 26 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 3 4
 };
 # 33 "/usr/include/sched.h" 2 3 4
 
@@ -7114,11 +7123,14 @@ typedef __pid_t pid_t;
 
 
 # 1 "/usr/include/x86_64-linux-gnu/bits/sched.h" 1 3 4
-# 75 "/usr/include/x86_64-linux-gnu/bits/sched.h" 3 4
+# 76 "/usr/include/x86_64-linux-gnu/bits/sched.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h" 1 3 4
+# 23 "/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h" 3 4
 struct sched_param
 {
   int sched_priority;
 };
+# 77 "/usr/include/x86_64-linux-gnu/bits/sched.h" 2 3 4
 
 extern "C" {
 
@@ -7132,6 +7144,9 @@ extern int unshare (int __flags) throw ();
 
 
 extern int sched_getcpu (void) throw ();
+
+
+extern int getcpu (unsigned int *, unsigned int *) throw ();
 
 
 extern int setns (int __fd, int __nstype) throw ();
@@ -7205,7 +7220,7 @@ extern int sched_getaffinity (__pid_t __pid, size_t __cpusetsize,
 
 
 }
-# 24 "/usr/include/pthread.h" 2 3 4
+# 23 "/usr/include/pthread.h" 2 3 4
 # 1 "/usr/include/time.h" 1 3 4
 # 29 "/usr/include/time.h" 3 4
 # 1 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
@@ -7461,13 +7476,7 @@ extern void tzset (void) throw ();
 
 extern int daylight;
 extern long int timezone;
-
-
-
-
-
-extern int stime (const time_t *__when) throw ();
-# 196 "/usr/include/time.h" 3 4
+# 190 "/usr/include/time.h" 3 4
 extern time_t timegm (struct tm *__tp) throw ();
 
 
@@ -7475,7 +7484,7 @@ extern time_t timelocal (struct tm *__tp) throw ();
 
 
 extern int dysize (int __year) throw () __attribute__ ((__const__));
-# 211 "/usr/include/time.h" 3 4
+# 205 "/usr/include/time.h" 3 4
 extern int nanosleep (const struct timespec *__requested_time,
         struct timespec *__remaining);
 
@@ -7530,27 +7539,66 @@ extern int timer_getoverrun (timer_t __timerid) throw ();
 
 extern int timespec_get (struct timespec *__ts, int __base)
      throw () __attribute__ ((__nonnull__ (1)));
-# 280 "/usr/include/time.h" 3 4
+# 274 "/usr/include/time.h" 3 4
 extern int getdate_err;
-# 289 "/usr/include/time.h" 3 4
+# 283 "/usr/include/time.h" 3 4
 extern struct tm *getdate (const char *__string);
-# 303 "/usr/include/time.h" 3 4
+# 297 "/usr/include/time.h" 3 4
 extern int getdate_r (const char *__restrict __string,
         struct tm *__restrict __resbufp);
 
 
 }
-# 25 "/usr/include/pthread.h" 2 3 4
+# 24 "/usr/include/pthread.h" 2 3 4
+
 
 # 1 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 1 3 4
 # 23 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 1 3 4
-# 77 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
+# 44 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h" 1 3 4
 # 21 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
 # 22 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h" 2 3 4
-# 65 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h" 3 4
+# 45 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
+
+
+
+
+typedef struct __pthread_internal_list
+{
+  struct __pthread_internal_list *__prev;
+  struct __pthread_internal_list *__next;
+} __pthread_list_t;
+
+typedef struct __pthread_internal_slist
+{
+  struct __pthread_internal_slist *__next;
+} __pthread_slist_t;
+# 74 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/struct_mutex.h" 1 3 4
+# 22 "/usr/include/x86_64-linux-gnu/bits/struct_mutex.h" 3 4
+struct __pthread_mutex_s
+{
+  int __lock;
+  unsigned int __count;
+  int __owner;
+
+  unsigned int __nusers;
+
+
+
+  int __kind;
+
+  short __spins;
+  short __elision;
+  __pthread_list_t __list;
+# 53 "/usr/include/x86_64-linux-gnu/bits/struct_mutex.h" 3 4
+};
+# 75 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
+# 87 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h" 1 3 4
+# 23 "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h" 3 4
 struct __pthread_rwlock_arch_t
 {
   unsigned int __readers;
@@ -7574,37 +7622,9 @@ struct __pthread_rwlock_arch_t
 
 
   unsigned int __flags;
-# 99 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h" 3 4
+# 55 "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h" 3 4
 };
-# 78 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
-
-
-
-
-typedef struct __pthread_internal_list
-{
-  struct __pthread_internal_list *__prev;
-  struct __pthread_internal_list *__next;
-} __pthread_list_t;
-# 118 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
-struct __pthread_mutex_s
-{
-  int __lock ;
-  unsigned int __count;
-  int __owner;
-
-  unsigned int __nusers;
-# 148 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
-  int __kind;
-
-
-
-
-
-  short __spins; short __elision;
-  __pthread_list_t __list;
-# 166 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
-};
+# 88 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
 
 
 
@@ -7798,7 +7818,7 @@ enum
   PTHREAD_PRIO_INHERIT,
   PTHREAD_PRIO_PROTECT
 };
-# 115 "/usr/include/pthread.h" 3 4
+# 100 "/usr/include/pthread.h" 3 4
 enum
 {
   PTHREAD_RWLOCK_PREFER_READER_NP,
@@ -7806,7 +7826,7 @@ enum
   PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP,
   PTHREAD_RWLOCK_DEFAULT_NP = PTHREAD_RWLOCK_PREFER_READER_NP
 };
-# 156 "/usr/include/pthread.h" 3 4
+# 120 "/usr/include/pthread.h" 3 4
 enum
 {
   PTHREAD_INHERIT_SCHED,
@@ -7834,7 +7854,7 @@ enum
   PTHREAD_PROCESS_SHARED
 
 };
-# 191 "/usr/include/pthread.h" 3 4
+# 155 "/usr/include/pthread.h" 3 4
 struct _pthread_cleanup_buffer
 {
   void (*__routine) (void *);
@@ -7858,7 +7878,7 @@ enum
   PTHREAD_CANCEL_ASYNCHRONOUS
 
 };
-# 229 "/usr/include/pthread.h" 3 4
+# 193 "/usr/include/pthread.h" 3 4
 extern "C" {
 
 
@@ -7895,6 +7915,10 @@ extern int pthread_tryjoin_np (pthread_t __th, void **__thread_return) throw ();
 
 
 extern int pthread_timedjoin_np (pthread_t __th, void **__thread_return,
+     const struct timespec *__abstime);
+# 238 "/usr/include/pthread.h" 3 4
+extern int pthread_clockjoin_np (pthread_t __th, void **__thread_return,
+                                 clockid_t __clockid,
      const struct timespec *__abstime);
 
 
@@ -8113,10 +8137,10 @@ extern int pthread_setaffinity_np (pthread_t __th, size_t __cpusetsize,
 extern int pthread_getaffinity_np (pthread_t __th, size_t __cpusetsize,
        cpu_set_t *__cpuset)
      throw () __attribute__ ((__nonnull__ (3)));
-# 495 "/usr/include/pthread.h" 3 4
+# 470 "/usr/include/pthread.h" 3 4
 extern int pthread_once (pthread_once_t *__once_control,
     void (*__init_routine) (void)) __attribute__ ((__nonnull__ (1, 2)));
-# 507 "/usr/include/pthread.h" 3 4
+# 482 "/usr/include/pthread.h" 3 4
 extern int pthread_setcancelstate (int __state, int *__oldstate);
 
 
@@ -8143,7 +8167,7 @@ typedef struct
   } __cancel_jmp_buf[1];
   void *__pad[4];
 } __pthread_unwind_buf_t __attribute__ ((__aligned__));
-# 541 "/usr/include/pthread.h" 3 4
+# 516 "/usr/include/pthread.h" 3 4
 struct __pthread_cleanup_frame
 {
   void (*__cancel_routine) (void *);
@@ -8151,16 +8175,16 @@ struct __pthread_cleanup_frame
   int __do_it;
   int __cancel_type;
 };
-# 681 "/usr/include/pthread.h" 3 4
+# 656 "/usr/include/pthread.h" 3 4
 extern void __pthread_register_cancel (__pthread_unwind_buf_t *__buf)
                             ;
-# 693 "/usr/include/pthread.h" 3 4
+# 668 "/usr/include/pthread.h" 3 4
 extern void __pthread_unregister_cancel (__pthread_unwind_buf_t *__buf)
                          ;
-# 716 "/usr/include/pthread.h" 3 4
+# 691 "/usr/include/pthread.h" 3 4
 extern void __pthread_register_cancel_defer (__pthread_unwind_buf_t *__buf)
                             ;
-# 729 "/usr/include/pthread.h" 3 4
+# 704 "/usr/include/pthread.h" 3 4
 extern void __pthread_unregister_cancel_restore (__pthread_unwind_buf_t *__buf)
                          ;
 
@@ -8206,6 +8230,13 @@ extern int pthread_mutex_timedlock (pthread_mutex_t *__restrict __mutex,
 
 
 
+extern int pthread_mutex_clocklock (pthread_mutex_t *__restrict __mutex,
+        clockid_t __clockid,
+        const struct timespec *__restrict
+        __abstime) throw () __attribute__ ((__nonnull__ (1, 3)));
+
+
+
 extern int pthread_mutex_unlock (pthread_mutex_t *__mutex)
      throw () __attribute__ ((__nonnull__ (1)));
 
@@ -8231,7 +8262,7 @@ extern int pthread_mutex_consistent (pthread_mutex_t *__mutex)
 
 extern int pthread_mutex_consistent_np (pthread_mutex_t *__mutex)
      throw () __attribute__ ((__nonnull__ (1)));
-# 807 "/usr/include/pthread.h" 3 4
+# 789 "/usr/include/pthread.h" 3 4
 extern int pthread_mutexattr_init (pthread_mutexattr_t *__attr)
      throw () __attribute__ ((__nonnull__ (1)));
 
@@ -8305,7 +8336,7 @@ extern int pthread_mutexattr_setrobust (pthread_mutexattr_t *__attr,
 extern int pthread_mutexattr_setrobust_np (pthread_mutexattr_t *__attr,
         int __robustness)
      throw () __attribute__ ((__nonnull__ (1)));
-# 889 "/usr/include/pthread.h" 3 4
+# 871 "/usr/include/pthread.h" 3 4
 extern int pthread_rwlock_init (pthread_rwlock_t *__restrict __rwlock,
     const pthread_rwlockattr_t *__restrict
     __attr) throw () __attribute__ ((__nonnull__ (1)));
@@ -8330,6 +8361,13 @@ extern int pthread_rwlock_timedrdlock (pthread_rwlock_t *__restrict __rwlock,
 
 
 
+extern int pthread_rwlock_clockrdlock (pthread_rwlock_t *__restrict __rwlock,
+           clockid_t __clockid,
+           const struct timespec *__restrict
+           __abstime) throw () __attribute__ ((__nonnull__ (1, 3)));
+
+
+
 extern int pthread_rwlock_wrlock (pthread_rwlock_t *__rwlock)
      throw () __attribute__ ((__nonnull__ (1)));
 
@@ -8342,6 +8380,13 @@ extern int pthread_rwlock_trywrlock (pthread_rwlock_t *__rwlock)
 extern int pthread_rwlock_timedwrlock (pthread_rwlock_t *__restrict __rwlock,
            const struct timespec *__restrict
            __abstime) throw () __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+extern int pthread_rwlock_clockwrlock (pthread_rwlock_t *__restrict __rwlock,
+           clockid_t __clockid,
+           const struct timespec *__restrict
+           __abstime) throw () __attribute__ ((__nonnull__ (1, 3)));
 
 
 
@@ -8410,11 +8455,18 @@ extern int pthread_cond_broadcast (pthread_cond_t *__cond)
 extern int pthread_cond_wait (pthread_cond_t *__restrict __cond,
          pthread_mutex_t *__restrict __mutex)
      __attribute__ ((__nonnull__ (1, 2)));
-# 1001 "/usr/include/pthread.h" 3 4
+# 997 "/usr/include/pthread.h" 3 4
 extern int pthread_cond_timedwait (pthread_cond_t *__restrict __cond,
        pthread_mutex_t *__restrict __mutex,
        const struct timespec *__restrict __abstime)
      __attribute__ ((__nonnull__ (1, 2, 3)));
+# 1010 "/usr/include/pthread.h" 3 4
+extern int pthread_cond_clockwait (pthread_cond_t *__restrict __cond,
+       pthread_mutex_t *__restrict __mutex,
+       __clockid_t __clock_id,
+       const struct timespec *__restrict __abstime)
+     __attribute__ ((__nonnull__ (1, 2, 4)));
+
 
 
 
@@ -8447,7 +8499,7 @@ extern int pthread_condattr_getclock (const pthread_condattr_t *
 extern int pthread_condattr_setclock (pthread_condattr_t *__attr,
           __clockid_t __clock_id)
      throw () __attribute__ ((__nonnull__ (1)));
-# 1045 "/usr/include/pthread.h" 3 4
+# 1056 "/usr/include/pthread.h" 3 4
 extern int pthread_spin_init (pthread_spinlock_t *__lock, int __pshared)
      throw () __attribute__ ((__nonnull__ (1)));
 
@@ -8504,7 +8556,7 @@ extern int pthread_barrierattr_getpshared (const pthread_barrierattr_t *
 extern int pthread_barrierattr_setpshared (pthread_barrierattr_t *__attr,
         int __pshared)
      throw () __attribute__ ((__nonnull__ (1)));
-# 1112 "/usr/include/pthread.h" 3 4
+# 1123 "/usr/include/pthread.h" 3 4
 extern int pthread_key_create (pthread_key_t *__key,
           void (*__destr_function) (void *))
      throw () __attribute__ ((__nonnull__ (1)));
@@ -8525,19 +8577,19 @@ extern int pthread_setspecific (pthread_key_t __key,
 extern int pthread_getcpuclockid (pthread_t __thread_id,
       __clockid_t *__clock_id)
      throw () __attribute__ ((__nonnull__ (2)));
-# 1146 "/usr/include/pthread.h" 3 4
+# 1157 "/usr/include/pthread.h" 3 4
 extern int pthread_atfork (void (*__prepare) (void),
       void (*__parent) (void),
       void (*__child) (void)) throw ();
-# 1160 "/usr/include/pthread.h" 3 4
+# 1171 "/usr/include/pthread.h" 3 4
 }
 # 42 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/gthr-default.h" 2 3
 # 1 "/usr/include/unistd.h" 1 3 4
 # 27 "/usr/include/unistd.h" 3 4
 extern "C" {
-# 205 "/usr/include/unistd.h" 3 4
+# 202 "/usr/include/unistd.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/posix_opt.h" 1 3 4
-# 206 "/usr/include/unistd.h" 2 3 4
+# 203 "/usr/include/unistd.h" 2 3 4
 
 
 
@@ -8545,8 +8597,8 @@ extern "C" {
 # 22 "/usr/include/x86_64-linux-gnu/bits/environments.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
 # 23 "/usr/include/x86_64-linux-gnu/bits/environments.h" 2 3 4
-# 210 "/usr/include/unistd.h" 2 3 4
-# 223 "/usr/include/unistd.h" 3 4
+# 207 "/usr/include/unistd.h" 2 3 4
+# 220 "/usr/include/unistd.h" 3 4
 typedef __ssize_t ssize_t;
 
 
@@ -8555,7 +8607,7 @@ typedef __ssize_t ssize_t;
 
 
 # 1 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
-# 230 "/usr/include/unistd.h" 2 3 4
+# 227 "/usr/include/unistd.h" 2 3 4
 
 
 
@@ -8585,9 +8637,9 @@ typedef __off64_t off64_t;
 
 
 typedef __useconds_t useconds_t;
-# 277 "/usr/include/unistd.h" 3 4
+# 274 "/usr/include/unistd.h" 3 4
 typedef __socklen_t socklen_t;
-# 290 "/usr/include/unistd.h" 3 4
+# 287 "/usr/include/unistd.h" 3 4
 extern int access (const char *__name, int __type) throw () __attribute__ ((__nonnull__ (1)));
 
 
@@ -8607,9 +8659,9 @@ extern int eaccess (const char *__name, int __type)
 
 extern int faccessat (int __fd, const char *__file, int __type, int __flag)
      throw () __attribute__ ((__nonnull__ (2))) ;
-# 337 "/usr/include/unistd.h" 3 4
+# 334 "/usr/include/unistd.h" 3 4
 extern __off_t lseek (int __fd, __off_t __offset, int __whence) throw ();
-# 348 "/usr/include/unistd.h" 3 4
+# 345 "/usr/include/unistd.h" 3 4
 extern __off64_t lseek64 (int __fd, __off64_t __offset, int __whence)
      throw ();
 
@@ -8632,7 +8684,7 @@ extern ssize_t read (int __fd, void *__buf, size_t __nbytes) ;
 
 
 extern ssize_t write (int __fd, const void *__buf, size_t __n) ;
-# 379 "/usr/include/unistd.h" 3 4
+# 376 "/usr/include/unistd.h" 3 4
 extern ssize_t pread (int __fd, void *__buf, size_t __nbytes,
         __off_t __offset) ;
 
@@ -8643,7 +8695,7 @@ extern ssize_t pread (int __fd, void *__buf, size_t __nbytes,
 
 extern ssize_t pwrite (int __fd, const void *__buf, size_t __n,
          __off_t __offset) ;
-# 407 "/usr/include/unistd.h" 3 4
+# 404 "/usr/include/unistd.h" 3 4
 extern ssize_t pread64 (int __fd, void *__buf, size_t __nbytes,
    __off64_t __offset) ;
 
@@ -8663,9 +8715,9 @@ extern int pipe (int __pipedes[2]) throw () ;
 
 
 extern int pipe2 (int __pipedes[2], int __flags) throw () ;
-# 435 "/usr/include/unistd.h" 3 4
+# 432 "/usr/include/unistd.h" 3 4
 extern unsigned int alarm (unsigned int __seconds) throw ();
-# 447 "/usr/include/unistd.h" 3 4
+# 444 "/usr/include/unistd.h" 3 4
 extern unsigned int sleep (unsigned int __seconds);
 
 
@@ -8683,7 +8735,7 @@ extern __useconds_t ualarm (__useconds_t __value, __useconds_t __interval)
 
 
 extern int usleep (__useconds_t __useconds);
-# 472 "/usr/include/unistd.h" 3 4
+# 469 "/usr/include/unistd.h" 3 4
 extern int pause (void);
 
 
@@ -8717,7 +8769,7 @@ extern int chdir (const char *__path) throw () __attribute__ ((__nonnull__ (1)))
 
 
 extern int fchdir (int __fd) throw () ;
-# 514 "/usr/include/unistd.h" 3 4
+# 511 "/usr/include/unistd.h" 3 4
 extern char *getcwd (char *__buf, size_t __size) throw () ;
 
 
@@ -9471,7 +9523,7 @@ enum
     _CS_V7_ENV
 
   };
-# 613 "/usr/include/unistd.h" 2 3 4
+# 610 "/usr/include/unistd.h" 2 3 4
 
 
 extern long int pathconf (const char *__path, int __name)
@@ -9509,7 +9561,7 @@ extern __pid_t getpgid (__pid_t __pid) throw ();
 
 
 extern int setpgid (__pid_t __pid, __pid_t __pgid) throw ();
-# 663 "/usr/include/unistd.h" 3 4
+# 660 "/usr/include/unistd.h" 3 4
 extern int setpgrp (void) throw ();
 
 
@@ -9754,7 +9806,7 @@ extern int getopt (int ___argc, char *const *___argv, const char *__shortopts)
 extern "C" {
 # 49 "/usr/include/x86_64-linux-gnu/bits/getopt_posix.h" 3 4
 }
-# 873 "/usr/include/unistd.h" 2 3 4
+# 870 "/usr/include/unistd.h" 2 3 4
 
 
 
@@ -9867,17 +9919,17 @@ extern int getpagesize (void) throw () __attribute__ ((__const__));
 
 
 extern int getdtablesize (void) throw ();
-# 994 "/usr/include/unistd.h" 3 4
+# 991 "/usr/include/unistd.h" 3 4
 extern int truncate (const char *__file, __off_t __length)
      throw () __attribute__ ((__nonnull__ (1))) ;
-# 1006 "/usr/include/unistd.h" 3 4
+# 1003 "/usr/include/unistd.h" 3 4
 extern int truncate64 (const char *__file, __off64_t __length)
      throw () __attribute__ ((__nonnull__ (1))) ;
-# 1017 "/usr/include/unistd.h" 3 4
+# 1014 "/usr/include/unistd.h" 3 4
 extern int ftruncate (int __fd, __off_t __length) throw () ;
-# 1027 "/usr/include/unistd.h" 3 4
+# 1024 "/usr/include/unistd.h" 3 4
 extern int ftruncate64 (int __fd, __off64_t __length) throw () ;
-# 1038 "/usr/include/unistd.h" 3 4
+# 1035 "/usr/include/unistd.h" 3 4
 extern int brk (void *__addr) throw () ;
 
 
@@ -9885,13 +9937,13 @@ extern int brk (void *__addr) throw () ;
 
 
 extern void *sbrk (intptr_t __delta) throw ();
-# 1059 "/usr/include/unistd.h" 3 4
+# 1056 "/usr/include/unistd.h" 3 4
 extern long int syscall (long int __sysno, ...) throw ();
-# 1082 "/usr/include/unistd.h" 3 4
+# 1079 "/usr/include/unistd.h" 3 4
 extern int lockf (int __fd, int __cmd, __off_t __len) ;
-# 1092 "/usr/include/unistd.h" 3 4
+# 1089 "/usr/include/unistd.h" 3 4
 extern int lockf64 (int __fd, int __cmd, __off64_t __len) ;
-# 1110 "/usr/include/unistd.h" 3 4
+# 1107 "/usr/include/unistd.h" 3 4
 ssize_t copy_file_range (int __infd, __off64_t *__pinoff,
     int __outfd, __off64_t *__poutoff,
     size_t __length, unsigned int __flags);
@@ -9901,20 +9953,10 @@ ssize_t copy_file_range (int __infd, __off64_t *__pinoff,
 
 
 extern int fdatasync (int __fildes);
-
-
-
-
-
-
-
+# 1124 "/usr/include/unistd.h" 3 4
 extern char *crypt (const char *__key, const char *__salt)
      throw () __attribute__ ((__nonnull__ (1, 2)));
 
-
-
-extern void encrypt (char *__glibc_block, int __edflag)
-     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
@@ -9923,14 +9965,13 @@ extern void encrypt (char *__glibc_block, int __edflag)
 
 extern void swab (const void *__restrict __from, void *__restrict __to,
     ssize_t __n) throw () __attribute__ ((__nonnull__ (1, 2)));
-# 1167 "/usr/include/unistd.h" 3 4
+# 1161 "/usr/include/unistd.h" 3 4
 int getentropy (void *__buffer, size_t __length) ;
-
-
-
-
-
-
+# 1170 "/usr/include/unistd.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/unistd_ext.h" 1 3 4
+# 34 "/usr/include/x86_64-linux-gnu/bits/unistd_ext.h" 3 4
+extern __pid_t gettid (void) throw ();
+# 1171 "/usr/include/unistd.h" 2 3 4
 
 }
 # 43 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/gthr-default.h" 2 3
@@ -13381,9 +13422,8 @@ typedef __u_quad_t u_quad_t;
 typedef __fsid_t fsid_t;
 
 
-
-
 typedef __loff_t loff_t;
+
 
 
 
@@ -13400,16 +13440,16 @@ typedef __ino64_t ino64_t;
 
 
 typedef __dev_t dev_t;
-# 70 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 69 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
 typedef __mode_t mode_t;
 
 
 
 
 typedef __nlink_t nlink_t;
-# 104 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 103 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
 typedef __id_t id_t;
-# 115 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 114 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
 typedef __daddr_t daddr_t;
 typedef __caddr_t caddr_t;
 
@@ -13418,7 +13458,7 @@ typedef __caddr_t caddr_t;
 
 
 typedef __key_t key_t;
-# 139 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 138 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
 typedef __suseconds_t suseconds_t;
 
 
@@ -13427,21 +13467,90 @@ typedef __suseconds_t suseconds_t;
 
 
 # 1 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
-# 146 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
+# 145 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
 
 typedef unsigned long int ulong;
 typedef unsigned short int ushort;
 typedef unsigned int uint;
-# 178 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
-typedef unsigned int u_int8_t __attribute__ ((__mode__ (__QI__)));
-typedef unsigned int u_int16_t __attribute__ ((__mode__ (__HI__)));
-typedef unsigned int u_int32_t __attribute__ ((__mode__ (__SI__)));
-typedef unsigned int u_int64_t __attribute__ ((__mode__ (__DI__)));
+
+
+
+
+
+
+
+typedef __uint8_t u_int8_t;
+typedef __uint16_t u_int16_t;
+typedef __uint32_t u_int32_t;
+typedef __uint64_t u_int64_t;
+
 
 typedef int register_t __attribute__ ((__mode__ (__word__)));
-# 197 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 176 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 1 "/usr/include/endian.h" 1 3 4
+# 35 "/usr/include/endian.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 1 3 4
+# 33 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 3 4
+static __inline __uint16_t
+__bswap_16 (__uint16_t __bsx)
+{
+
+
+
+  return ((__uint16_t) ((((__bsx) >> 8) & 0xff) | (((__bsx) & 0xff) << 8)));
+
+}
+
+
+
+
+
+
+static __inline __uint32_t
+__bswap_32 (__uint32_t __bsx)
+{
+
+
+
+  return ((((__bsx) & 0xff000000u) >> 24) | (((__bsx) & 0x00ff0000u) >> 8) | (((__bsx) & 0x0000ff00u) << 8) | (((__bsx) & 0x000000ffu) << 24));
+
+}
+# 69 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 3 4
+__extension__ static __inline __uint64_t
+__bswap_64 (__uint64_t __bsx)
+{
+
+
+
+  return ((((__bsx) & 0xff00000000000000ull) >> 56) | (((__bsx) & 0x00ff000000000000ull) >> 40) | (((__bsx) & 0x0000ff0000000000ull) >> 24) | (((__bsx) & 0x000000ff00000000ull) >> 8) | (((__bsx) & 0x00000000ff000000ull) << 8) | (((__bsx) & 0x0000000000ff0000ull) << 24) | (((__bsx) & 0x000000000000ff00ull) << 40) | (((__bsx) & 0x00000000000000ffull) << 56));
+
+}
+# 36 "/usr/include/endian.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/uintn-identity.h" 1 3 4
+# 32 "/usr/include/x86_64-linux-gnu/bits/uintn-identity.h" 3 4
+static __inline __uint16_t
+__uint16_identity (__uint16_t __x)
+{
+  return __x;
+}
+
+static __inline __uint32_t
+__uint32_identity (__uint32_t __x)
+{
+  return __x;
+}
+
+static __inline __uint64_t
+__uint64_identity (__uint64_t __x)
+{
+  return __x;
+}
+# 37 "/usr/include/endian.h" 2 3 4
+# 177 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
+
+
 # 1 "/usr/include/x86_64-linux-gnu/sys/select.h" 1 3 4
 # 30 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/select.h" 1 3 4
@@ -13506,28 +13615,7 @@ extern int pselect (int __nfds, fd_set *__restrict __readfds,
       const __sigset_t *__restrict __sigmask);
 # 126 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
 }
-# 198 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
-
-
-
-
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/sys/sysmacros.h" 1 3 4
-# 41 "/usr/include/x86_64-linux-gnu/sys/sysmacros.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/sysmacros.h" 1 3 4
-# 42 "/usr/include/x86_64-linux-gnu/sys/sysmacros.h" 2 3 4
-# 71 "/usr/include/x86_64-linux-gnu/sys/sysmacros.h" 3 4
-extern "C" {
-
-extern unsigned int gnu_dev_major (__dev_t __dev) throw () __attribute__ ((__const__));
-extern unsigned int gnu_dev_minor (__dev_t __dev) throw () __attribute__ ((__const__));
-extern __dev_t gnu_dev_makedev (unsigned int __major, unsigned int __minor) throw () __attribute__ ((__const__));
-# 85 "/usr/include/x86_64-linux-gnu/sys/sysmacros.h" 3 4
-}
-# 206 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
-
+# 180 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
 
@@ -13549,11 +13637,11 @@ typedef __fsblkcnt_t fsblkcnt_t;
 
 
 typedef __fsfilcnt_t fsfilcnt_t;
-# 246 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 219 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
 typedef __blkcnt64_t blkcnt64_t;
 typedef __fsblkcnt64_t fsblkcnt64_t;
 typedef __fsfilcnt64_t fsfilcnt64_t;
-# 257 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 230 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
 }
 # 395 "/usr/include/stdlib.h" 2 3 4
 
@@ -13700,7 +13788,8 @@ extern int lcong48_r (unsigned short int __param[7],
 
 
 
-extern void *malloc (size_t __size) throw () __attribute__ ((__malloc__)) ;
+extern void *malloc (size_t __size) throw () __attribute__ ((__malloc__))
+                                         ;
 
 extern void *calloc (size_t __nmemb, size_t __size)
      throw () __attribute__ ((__malloc__)) ;
@@ -13711,7 +13800,7 @@ extern void *calloc (size_t __nmemb, size_t __size)
 
 
 extern void *realloc (void *__ptr, size_t __size)
-     throw () __attribute__ ((__warn_unused_result__));
+     throw () __attribute__ ((__warn_unused_result__)) ;
 
 
 
@@ -13720,7 +13809,8 @@ extern void *realloc (void *__ptr, size_t __size)
 
 
 extern void *reallocarray (void *__ptr, size_t __nmemb, size_t __size)
-     throw () __attribute__ ((__warn_unused_result__));
+     throw () __attribute__ ((__warn_unused_result__))
+                                      ;
 
 
 
@@ -13746,13 +13836,14 @@ extern void *alloca (size_t __size) throw ();
 
 
 }
-# 567 "/usr/include/stdlib.h" 2 3 4
+# 569 "/usr/include/stdlib.h" 2 3 4
 
 
 
 
 
-extern void *valloc (size_t __size) throw () __attribute__ ((__malloc__)) ;
+extern void *valloc (size_t __size) throw () __attribute__ ((__malloc__))
+                                         ;
 
 
 
@@ -13779,7 +13870,7 @@ extern int atexit (void (*__func) (void)) throw () __attribute__ ((__nonnull__ (
 
 extern "C++" int at_quick_exit (void (*__func) (void))
      throw () __asm ("at_quick_exit") __attribute__ ((__nonnull__ (1)));
-# 607 "/usr/include/stdlib.h" 3 4
+# 610 "/usr/include/stdlib.h" 3 4
 extern int on_exit (void (*__func) (int __status, void *__arg), void *__arg)
      throw () __attribute__ ((__nonnull__ (1)));
 
@@ -13835,30 +13926,30 @@ extern int unsetenv (const char *__name) throw () __attribute__ ((__nonnull__ (1
 
 
 extern int clearenv (void) throw ();
-# 672 "/usr/include/stdlib.h" 3 4
+# 675 "/usr/include/stdlib.h" 3 4
 extern char *mktemp (char *__template) throw () __attribute__ ((__nonnull__ (1)));
-# 685 "/usr/include/stdlib.h" 3 4
+# 688 "/usr/include/stdlib.h" 3 4
 extern int mkstemp (char *__template) __attribute__ ((__nonnull__ (1))) ;
-# 695 "/usr/include/stdlib.h" 3 4
+# 698 "/usr/include/stdlib.h" 3 4
 extern int mkstemp64 (char *__template) __attribute__ ((__nonnull__ (1))) ;
-# 707 "/usr/include/stdlib.h" 3 4
+# 710 "/usr/include/stdlib.h" 3 4
 extern int mkstemps (char *__template, int __suffixlen) __attribute__ ((__nonnull__ (1))) ;
-# 717 "/usr/include/stdlib.h" 3 4
+# 720 "/usr/include/stdlib.h" 3 4
 extern int mkstemps64 (char *__template, int __suffixlen)
      __attribute__ ((__nonnull__ (1))) ;
-# 728 "/usr/include/stdlib.h" 3 4
+# 731 "/usr/include/stdlib.h" 3 4
 extern char *mkdtemp (char *__template) throw () __attribute__ ((__nonnull__ (1))) ;
-# 739 "/usr/include/stdlib.h" 3 4
+# 742 "/usr/include/stdlib.h" 3 4
 extern int mkostemp (char *__template, int __flags) __attribute__ ((__nonnull__ (1))) ;
-# 749 "/usr/include/stdlib.h" 3 4
+# 752 "/usr/include/stdlib.h" 3 4
 extern int mkostemp64 (char *__template, int __flags) __attribute__ ((__nonnull__ (1))) ;
-# 759 "/usr/include/stdlib.h" 3 4
+# 762 "/usr/include/stdlib.h" 3 4
 extern int mkostemps (char *__template, int __suffixlen, int __flags)
      __attribute__ ((__nonnull__ (1))) ;
-# 771 "/usr/include/stdlib.h" 3 4
+# 774 "/usr/include/stdlib.h" 3 4
 extern int mkostemps64 (char *__template, int __suffixlen, int __flags)
      __attribute__ ((__nonnull__ (1))) ;
-# 781 "/usr/include/stdlib.h" 3 4
+# 784 "/usr/include/stdlib.h" 3 4
 extern int system (const char *__command) ;
 
 
@@ -13867,7 +13958,7 @@ extern int system (const char *__command) ;
 
 extern char *canonicalize_file_name (const char *__name)
      throw () __attribute__ ((__nonnull__ (1))) ;
-# 797 "/usr/include/stdlib.h" 3 4
+# 800 "/usr/include/stdlib.h" 3 4
 extern char *realpath (const char *__restrict __name,
          char *__restrict __resolved) throw () ;
 
@@ -13929,7 +14020,7 @@ extern ldiv_t ldiv (long int __numer, long int __denom)
 __extension__ extern lldiv_t lldiv (long long int __numer,
         long long int __denom)
      throw () __attribute__ ((__const__)) ;
-# 869 "/usr/include/stdlib.h" 3 4
+# 872 "/usr/include/stdlib.h" 3 4
 extern char *ecvt (double __value, int __ndigit, int *__restrict __decpt,
      int *__restrict __sign) throw () __attribute__ ((__nonnull__ (3, 4))) ;
 
@@ -14005,17 +14096,11 @@ extern size_t wcstombs (char *__restrict __s,
 
 
 extern int rpmatch (const char *__response) throw () __attribute__ ((__nonnull__ (1))) ;
-# 954 "/usr/include/stdlib.h" 3 4
+# 957 "/usr/include/stdlib.h" 3 4
 extern int getsubopt (char **__restrict __optionp,
         char *const *__restrict __tokens,
         char **__restrict __valuep)
      throw () __attribute__ ((__nonnull__ (1, 2, 3))) ;
-
-
-
-
-
-extern void setkey (const char *__key) throw () __attribute__ ((__nonnull__ (1)));
 
 
 
@@ -14060,10 +14145,10 @@ extern int getpt (void);
 
 extern int getloadavg (double __loadavg[], int __nelem)
      throw () __attribute__ ((__nonnull__ (1)));
-# 1016 "/usr/include/stdlib.h" 3 4
+# 1013 "/usr/include/stdlib.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdlib-float.h" 1 3 4
-# 1017 "/usr/include/stdlib.h" 2 3 4
-# 1026 "/usr/include/stdlib.h" 3 4
+# 1014 "/usr/include/stdlib.h" 2 3 4
+# 1023 "/usr/include/stdlib.h" 3 4
 }
 # 66 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstdlib" 2 3
 # 97 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstdlib" 3
@@ -14224,33 +14309,30 @@ extern "C" {
 
 
 
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/libio.h" 1 3 4
-# 35 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/_G_config.h" 1 3 4
-# 19 "/usr/include/x86_64-linux-gnu/bits/_G_config.h" 3 4
-# 1 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
-# 20 "/usr/include/x86_64-linux-gnu/bits/_G_config.h" 2 3 4
-
-
-
-
-
-
-typedef struct
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h" 1 3 4
+# 10 "/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h" 3 4
+typedef struct _G_fpos_t
 {
   __off_t __pos;
   __mbstate_t __state;
-} _G_fpos_t;
-typedef struct
+} __fpos_t;
+# 40 "/usr/include/stdio.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h" 1 3 4
+# 10 "/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h" 3 4
+typedef struct _G_fpos64_t
 {
   __off64_t __pos;
   __mbstate_t __state;
-} _G_fpos64_t;
-# 36 "/usr/include/x86_64-linux-gnu/bits/libio.h" 2 3 4
-# 149 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
-struct _IO_jump_t; struct _IO_FILE;
+} __fpos64_t;
+# 41 "/usr/include/stdio.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h" 1 3 4
+# 35 "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h" 3 4
+struct _IO_FILE;
+struct _IO_marker;
+struct _IO_codecvt;
+struct _IO_wide_data;
 
 
 
@@ -14261,39 +14343,20 @@ typedef void _IO_lock_t;
 
 
 
-struct _IO_marker {
-  struct _IO_marker *_next;
-  struct _IO_FILE *_sbuf;
-
-
-
-  int _pos;
-# 177 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
-};
-
-
-enum __codecvt_result
+struct _IO_FILE
 {
-  __codecvt_ok,
-  __codecvt_partial,
-  __codecvt_error,
-  __codecvt_noconv
-};
-# 245 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
-struct _IO_FILE {
   int _flags;
 
 
+  char *_IO_read_ptr;
+  char *_IO_read_end;
+  char *_IO_read_base;
+  char *_IO_write_base;
+  char *_IO_write_ptr;
+  char *_IO_write_end;
+  char *_IO_buf_base;
+  char *_IO_buf_end;
 
-
-  char* _IO_read_ptr;
-  char* _IO_read_end;
-  char* _IO_read_base;
-  char* _IO_write_base;
-  char* _IO_write_ptr;
-  char* _IO_write_end;
-  char* _IO_buf_base;
-  char* _IO_buf_end;
 
   char *_IO_save_base;
   char *_IO_backup_base;
@@ -14304,63 +14367,40 @@ struct _IO_FILE {
   struct _IO_FILE *_chain;
 
   int _fileno;
-
-
-
   int _flags2;
-
   __off_t _old_offset;
-
 
 
   unsigned short _cur_column;
   signed char _vtable_offset;
   char _shortbuf[1];
 
-
-
   _IO_lock_t *_lock;
-# 293 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
+
+
+
+
+
+
+
   __off64_t _offset;
 
-
-
-
-
-
-
-  void *__pad1;
-  void *__pad2;
-  void *__pad3;
-  void *__pad4;
-
+  struct _IO_codecvt *_codecvt;
+  struct _IO_wide_data *_wide_data;
+  struct _IO_FILE *_freeres_list;
+  void *_freeres_buf;
   size_t __pad5;
   int _mode;
 
   char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];
-
 };
+# 44 "/usr/include/stdio.h" 2 3 4
 
 
-
-
-
-struct _IO_FILE_plus;
-
-extern struct _IO_FILE_plus _IO_2_1_stdin_;
-extern struct _IO_FILE_plus _IO_2_1_stdout_;
-extern struct _IO_FILE_plus _IO_2_1_stderr_;
-# 337 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
-typedef __ssize_t __io_read_fn (void *__cookie, char *__buf, size_t __nbytes);
-
-
-
-
-
-
-
-typedef __ssize_t __io_write_fn (void *__cookie, const char *__buf,
-     size_t __n);
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h" 3 4
+typedef __ssize_t cookie_read_function_t (void *__cookie, char *__buf,
+                                          size_t __nbytes);
 
 
 
@@ -14368,95 +14408,55 @@ typedef __ssize_t __io_write_fn (void *__cookie, const char *__buf,
 
 
 
-typedef int __io_seek_fn (void *__cookie, __off64_t *__pos, int __w);
-
-
-typedef int __io_close_fn (void *__cookie);
-
+typedef __ssize_t cookie_write_function_t (void *__cookie, const char *__buf,
+                                           size_t __nbytes);
 
 
 
-typedef __io_read_fn cookie_read_function_t;
-typedef __io_write_fn cookie_write_function_t;
-typedef __io_seek_fn cookie_seek_function_t;
-typedef __io_close_fn cookie_close_function_t;
 
 
-typedef struct
+
+
+typedef int cookie_seek_function_t (void *__cookie, __off64_t *__pos, int __w);
+
+
+typedef int cookie_close_function_t (void *__cookie);
+
+
+
+
+
+
+typedef struct _IO_cookie_io_functions_t
 {
-  __io_read_fn *read;
-  __io_write_fn *write;
-  __io_seek_fn *seek;
-  __io_close_fn *close;
-} _IO_cookie_io_functions_t;
-typedef _IO_cookie_io_functions_t cookie_io_functions_t;
+  cookie_read_function_t *read;
+  cookie_write_function_t *write;
+  cookie_seek_function_t *seek;
+  cookie_close_function_t *close;
+} cookie_io_functions_t;
+# 47 "/usr/include/stdio.h" 2 3 4
 
-struct _IO_cookie_file;
-
-
-extern void _IO_cookie_init (struct _IO_cookie_file *__cfile, int __read_write,
-        void *__cookie, _IO_cookie_io_functions_t __fns);
-
-
-
-
-extern "C" {
-
-
-extern int __underflow (_IO_FILE *);
-extern int __uflow (_IO_FILE *);
-extern int __overflow (_IO_FILE *, int);
-# 433 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
-extern int _IO_getc (_IO_FILE *__fp);
-extern int _IO_putc (int __c, _IO_FILE *__fp);
-extern int _IO_feof (_IO_FILE *__fp) throw ();
-extern int _IO_ferror (_IO_FILE *__fp) throw ();
-
-extern int _IO_peekc_locked (_IO_FILE *__fp);
-
-
-
-
-
-extern void _IO_flockfile (_IO_FILE *) throw ();
-extern void _IO_funlockfile (_IO_FILE *) throw ();
-extern int _IO_ftrylockfile (_IO_FILE *) throw ();
-# 462 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
-extern int _IO_vfscanf (_IO_FILE * __restrict, const char * __restrict,
-   __gnuc_va_list, int *__restrict);
-extern int _IO_vfprintf (_IO_FILE *__restrict, const char *__restrict,
-    __gnuc_va_list);
-extern __ssize_t _IO_padn (_IO_FILE *, int, __ssize_t);
-extern size_t _IO_sgetn (_IO_FILE *, void *, size_t);
-
-extern __off64_t _IO_seekoff (_IO_FILE *, __off64_t, int, int);
-extern __off64_t _IO_seekpos (_IO_FILE *, __off64_t, int);
-
-extern void _IO_free_backup_area (_IO_FILE *) throw ();
-# 524 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
-}
-# 42 "/usr/include/stdio.h" 2 3 4
 
 
 
 
 typedef __gnuc_va_list va_list;
-# 78 "/usr/include/stdio.h" 3 4
-typedef _G_fpos_t fpos_t;
+# 84 "/usr/include/stdio.h" 3 4
+typedef __fpos_t fpos_t;
 
 
 
 
-typedef _G_fpos64_t fpos64_t;
-# 131 "/usr/include/stdio.h" 3 4
+typedef __fpos64_t fpos64_t;
+# 133 "/usr/include/stdio.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
-# 132 "/usr/include/stdio.h" 2 3 4
+# 134 "/usr/include/stdio.h" 2 3 4
 
 
 
-extern struct _IO_FILE *stdin;
-extern struct _IO_FILE *stdout;
-extern struct _IO_FILE *stderr;
+extern FILE *stdin;
+extern FILE *stdout;
+extern FILE *stderr;
 
 
 
@@ -14471,6 +14471,9 @@ extern int rename (const char *__old, const char *__new) throw ();
 
 extern int renameat (int __oldfd, const char *__old, int __newfd,
        const char *__new) throw ();
+# 164 "/usr/include/stdio.h" 3 4
+extern int renameat2 (int __oldfd, const char *__old, int __newfd,
+        const char *__new, unsigned int __flags) throw ();
 
 
 
@@ -14479,7 +14482,7 @@ extern int renameat (int __oldfd, const char *__old, int __newfd,
 
 
 extern FILE *tmpfile (void) ;
-# 169 "/usr/include/stdio.h" 3 4
+# 183 "/usr/include/stdio.h" 3 4
 extern FILE *tmpfile64 (void) ;
 
 
@@ -14490,7 +14493,7 @@ extern char *tmpnam (char *__s) throw () ;
 
 
 extern char *tmpnam_r (char *__s) throw () ;
-# 190 "/usr/include/stdio.h" 3 4
+# 204 "/usr/include/stdio.h" 3 4
 extern char *tempnam (const char *__dir, const char *__pfx)
      throw () __attribute__ ((__malloc__)) ;
 
@@ -14506,11 +14509,11 @@ extern int fclose (FILE *__stream);
 
 
 extern int fflush (FILE *__stream);
-# 213 "/usr/include/stdio.h" 3 4
+# 227 "/usr/include/stdio.h" 3 4
 extern int fflush_unlocked (FILE *__stream);
-# 223 "/usr/include/stdio.h" 3 4
+# 237 "/usr/include/stdio.h" 3 4
 extern int fcloseall (void);
-# 232 "/usr/include/stdio.h" 3 4
+# 246 "/usr/include/stdio.h" 3 4
 extern FILE *fopen (const char *__restrict __filename,
       const char *__restrict __modes) ;
 
@@ -14520,7 +14523,7 @@ extern FILE *fopen (const char *__restrict __filename,
 extern FILE *freopen (const char *__restrict __filename,
         const char *__restrict __modes,
         FILE *__restrict __stream) ;
-# 256 "/usr/include/stdio.h" 3 4
+# 270 "/usr/include/stdio.h" 3 4
 extern FILE *fopen64 (const char *__restrict __filename,
         const char *__restrict __modes) ;
 extern FILE *freopen64 (const char *__restrict __filename,
@@ -14538,7 +14541,7 @@ extern FILE *fdopen (int __fd, const char *__modes) throw () ;
 
 extern FILE *fopencookie (void *__restrict __magic_cookie,
      const char *__restrict __modes,
-     _IO_cookie_io_functions_t __io_funcs) throw () ;
+     cookie_io_functions_t __io_funcs) throw () ;
 
 
 
@@ -14652,7 +14655,19 @@ extern int scanf (const char *__restrict __format, ...) ;
 
 extern int sscanf (const char *__restrict __s,
      const char *__restrict __format, ...) throw ();
-# 420 "/usr/include/stdio.h" 3 4
+
+
+
+
+
+
+extern int fscanf (FILE *__restrict __stream, const char *__restrict __format, ...) __asm__ ("" "__isoc99_fscanf") ;
+
+
+extern int scanf (const char *__restrict __format, ...) __asm__ ("" "__isoc99_scanf") ;
+
+extern int sscanf (const char *__restrict __s, const char *__restrict __format, ...) throw () __asm__ ("" "__isoc99_sscanf");
+# 432 "/usr/include/stdio.h" 3 4
 extern int vfscanf (FILE *__restrict __s, const char *__restrict __format,
       __gnuc_va_list __arg)
      __attribute__ ((__format__ (__scanf__, 2, 0))) ;
@@ -14668,7 +14683,24 @@ extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg)
 extern int vsscanf (const char *__restrict __s,
       const char *__restrict __format, __gnuc_va_list __arg)
      throw () __attribute__ ((__format__ (__scanf__, 2, 0)));
-# 477 "/usr/include/stdio.h" 3 4
+
+
+
+
+extern int vfscanf (FILE *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vfscanf")
+
+
+
+     __attribute__ ((__format__ (__scanf__, 2, 0))) ;
+extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vscanf")
+
+     __attribute__ ((__format__ (__scanf__, 1, 0))) ;
+extern int vsscanf (const char *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) throw () __asm__ ("" "__isoc99_vsscanf")
+
+
+
+     __attribute__ ((__format__ (__scanf__, 2, 0)));
+# 485 "/usr/include/stdio.h" 3 4
 extern int fgetc (FILE *__stream);
 extern int getc (FILE *__stream);
 
@@ -14677,12 +14709,17 @@ extern int getc (FILE *__stream);
 
 
 extern int getchar (void);
-# 495 "/usr/include/stdio.h" 3 4
+
+
+
+
+
+
 extern int getc_unlocked (FILE *__stream);
 extern int getchar_unlocked (void);
-# 506 "/usr/include/stdio.h" 3 4
+# 510 "/usr/include/stdio.h" 3 4
 extern int fgetc_unlocked (FILE *__stream);
-# 517 "/usr/include/stdio.h" 3 4
+# 521 "/usr/include/stdio.h" 3 4
 extern int fputc (int __c, FILE *__stream);
 extern int putc (int __c, FILE *__stream);
 
@@ -14728,11 +14765,11 @@ extern char *fgets_unlocked (char *__restrict __s, int __n,
         FILE *__restrict __stream) ;
 # 603 "/usr/include/stdio.h" 3 4
 extern __ssize_t __getdelim (char **__restrict __lineptr,
-          size_t *__restrict __n, int __delimiter,
-          FILE *__restrict __stream) ;
+                             size_t *__restrict __n, int __delimiter,
+                             FILE *__restrict __stream) ;
 extern __ssize_t getdelim (char **__restrict __lineptr,
-        size_t *__restrict __n, int __delimiter,
-        FILE *__restrict __stream) ;
+                           size_t *__restrict __n, int __delimiter,
+                           FILE *__restrict __stream) ;
 
 
 
@@ -14741,8 +14778,8 @@ extern __ssize_t getdelim (char **__restrict __lineptr,
 
 
 extern __ssize_t getline (char **__restrict __lineptr,
-       size_t *__restrict __n,
-       FILE *__restrict __stream) ;
+                          size_t *__restrict __n,
+                          FILE *__restrict __stream) ;
 
 
 
@@ -14919,7 +14956,10 @@ extern int ftrylockfile (FILE *__stream) throw () ;
 
 
 extern void funlockfile (FILE *__stream) throw ();
-# 868 "/usr/include/stdio.h" 3 4
+# 858 "/usr/include/stdio.h" 3 4
+extern int __uflow (FILE *);
+extern int __overflow (FILE *, int);
+# 873 "/usr/include/stdio.h" 3 4
 }
 # 44 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstdio" 2 3
 # 91 "/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstdio" 3
@@ -15032,11 +15072,10 @@ extern char *program_invocation_name;
 extern char *program_invocation_short_name;
 
 
-
-
-
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/error_t.h" 1 3 4
+# 22 "/usr/include/x86_64-linux-gnu/bits/types/error_t.h" 3 4
 typedef int error_t;
-
+# 49 "/usr/include/errno.h" 2 3 4
 
 
 
@@ -30816,14 +30855,14 @@ typedef nnet::array<ap_fixed<12,6>, 16*1> layer2_t;
 typedef ap_fixed<4,2> weight2_t;
 typedef ap_fixed<7,1> bias2_t;
 typedef nnet::array<ap_fixed<12,6,AP_RND,AP_SAT>, 16*1> layer3_t;
-typedef nnet::array<ap_fixed<3,2,AP_RND,AP_SAT>, 16*1> layer4_t;
+typedef nnet::array<ap_ufixed<3,1,AP_RND,AP_SAT>, 16*1> layer4_t;
 typedef ap_fixed<3,2> maxp_default_t;
 typedef nnet::array<ap_fixed<3,2>, 16*1> layer5_t;
 typedef nnet::array<ap_fixed<12,6>, 16*1> layer6_t;
 typedef ap_fixed<5,1> weight6_t;
 typedef ap_fixed<6,1> bias6_t;
 typedef nnet::array<ap_fixed<12,6,AP_RND,AP_SAT>, 16*1> layer7_t;
-typedef nnet::array<ap_fixed<3,2,AP_RND,AP_SAT>, 16*1> layer8_t;
+typedef nnet::array<ap_ufixed<3,1,AP_RND,AP_SAT>, 16*1> layer8_t;
 typedef ap_fixed<3,2> maxp_1_default_t;
 typedef nnet::array<ap_fixed<3,2>, 16*1> layer9_t;
 typedef nnet::array<ap_fixed<12,6>, 10*1> layer11_t;
@@ -31072,7 +31111,7 @@ extern double copysign (double __x, double __y) throw () __attribute__ ((__const
 
 
 
-extern double nan (const char *__tagb) throw () __attribute__ ((__const__)); extern double __nan (const char *__tagb) throw () __attribute__ ((__const__));
+extern double nan (const char *__tagb) throw (); extern double __nan (const char *__tagb) throw ();
 # 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
 extern double j0 (double) throw (); extern double __j0 (double) throw ();
 extern double j1 (double) throw (); extern double __j1 (double) throw ();
@@ -31228,15 +31267,19 @@ extern double fmaxmag (double __x, double __y) throw () __attribute__ ((__const_
 extern double fminmag (double __x, double __y) throw () __attribute__ ((__const__)); extern double __fminmag (double __x, double __y) throw () __attribute__ ((__const__));
 
 
-extern int totalorder (double __x, double __y) throw ()
-     __attribute__ ((__const__));
-
-
-extern int totalordermag (double __x, double __y) throw ()
-     __attribute__ ((__const__));
-
-
 extern int canonicalize (double *__cx, const double *__x) throw ();
+
+
+
+
+extern int totalorder (const double *__x, const double *__y) throw ()
+
+     __attribute__ ((__pure__));
+
+
+extern int totalordermag (const double *__x, const double *__y) throw ()
+
+     __attribute__ ((__pure__));
 
 
 extern double getpayload (const double *__x) throw (); extern double __getpayload (const double *__x) throw ();
@@ -31425,7 +31468,7 @@ extern float copysignf (float __x, float __y) throw () __attribute__ ((__const__
 
 
 
-extern float nanf (const char *__tagb) throw () __attribute__ ((__const__)); extern float __nanf (const char *__tagb) throw () __attribute__ ((__const__));
+extern float nanf (const char *__tagb) throw (); extern float __nanf (const char *__tagb) throw ();
 # 211 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
 extern int isnanf (float __value) throw () __attribute__ ((__const__));
 
@@ -31587,15 +31630,19 @@ extern float fmaxmagf (float __x, float __y) throw () __attribute__ ((__const__)
 extern float fminmagf (float __x, float __y) throw () __attribute__ ((__const__)); extern float __fminmagf (float __x, float __y) throw () __attribute__ ((__const__));
 
 
-extern int totalorderf (float __x, float __y) throw ()
-     __attribute__ ((__const__));
-
-
-extern int totalordermagf (float __x, float __y) throw ()
-     __attribute__ ((__const__));
-
-
 extern int canonicalizef (float *__cx, const float *__x) throw ();
+
+
+
+
+extern int totalorderf (const float *__x, const float *__y) throw ()
+
+     __attribute__ ((__pure__));
+
+
+extern int totalordermagf (const float *__x, const float *__y) throw ()
+
+     __attribute__ ((__pure__));
 
 
 extern float getpayloadf (const float *__x) throw (); extern float __getpayloadf (const float *__x) throw ();
@@ -31784,7 +31831,7 @@ extern long double copysignl (long double __x, long double __y) throw () __attri
 
 
 
-extern long double nanl (const char *__tagb) throw () __attribute__ ((__const__)); extern long double __nanl (const char *__tagb) throw () __attribute__ ((__const__));
+extern long double nanl (const char *__tagb) throw (); extern long double __nanl (const char *__tagb) throw ();
 # 211 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
 extern int isnanl (long double __value) throw () __attribute__ ((__const__));
 
@@ -31946,15 +31993,19 @@ extern long double fmaxmagl (long double __x, long double __y) throw () __attrib
 extern long double fminmagl (long double __x, long double __y) throw () __attribute__ ((__const__)); extern long double __fminmagl (long double __x, long double __y) throw () __attribute__ ((__const__));
 
 
-extern int totalorderl (long double __x, long double __y) throw ()
-     __attribute__ ((__const__));
-
-
-extern int totalordermagl (long double __x, long double __y) throw ()
-     __attribute__ ((__const__));
-
-
 extern int canonicalizel (long double *__cx, const long double *__x) throw ();
+
+
+
+
+extern int totalorderl (const long double *__x, const long double *__y) throw ()
+
+     __attribute__ ((__pure__));
+
+
+extern int totalordermagl (const long double *__x, const long double *__y) throw ()
+
+     __attribute__ ((__pure__));
 
 
 extern long double getpayloadl (const long double *__x) throw (); extern long double __getpayloadl (const long double *__x) throw ();
@@ -32098,7 +32149,7 @@ extern _Float32 copysignf32 (_Float32 __x, _Float32 __y) throw () __attribute__ 
 
 
 
-extern _Float32 nanf32 (const char *__tagb) throw () __attribute__ ((__const__)); extern _Float32 __nanf32 (const char *__tagb) throw () __attribute__ ((__const__));
+extern _Float32 nanf32 (const char *__tagb) throw (); extern _Float32 __nanf32 (const char *__tagb) throw ();
 # 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
 extern _Float32 j0f32 (_Float32) throw (); extern _Float32 __j0f32 (_Float32) throw ();
 extern _Float32 j1f32 (_Float32) throw (); extern _Float32 __j1f32 (_Float32) throw ();
@@ -32242,15 +32293,19 @@ extern _Float32 fmaxmagf32 (_Float32 __x, _Float32 __y) throw () __attribute__ (
 extern _Float32 fminmagf32 (_Float32 __x, _Float32 __y) throw () __attribute__ ((__const__)); extern _Float32 __fminmagf32 (_Float32 __x, _Float32 __y) throw () __attribute__ ((__const__));
 
 
-extern int totalorderf32 (_Float32 __x, _Float32 __y) throw ()
-     __attribute__ ((__const__));
-
-
-extern int totalordermagf32 (_Float32 __x, _Float32 __y) throw ()
-     __attribute__ ((__const__));
-
-
 extern int canonicalizef32 (_Float32 *__cx, const _Float32 *__x) throw ();
+
+
+
+
+extern int totalorderf32 (const _Float32 *__x, const _Float32 *__y) throw ()
+
+     __attribute__ ((__pure__));
+
+
+extern int totalordermagf32 (const _Float32 *__x, const _Float32 *__y) throw ()
+
+     __attribute__ ((__pure__));
 
 
 extern _Float32 getpayloadf32 (const _Float32 *__x) throw (); extern _Float32 __getpayloadf32 (const _Float32 *__x) throw ();
@@ -32386,7 +32441,7 @@ extern _Float64 copysignf64 (_Float64 __x, _Float64 __y) throw () __attribute__ 
 
 
 
-extern _Float64 nanf64 (const char *__tagb) throw () __attribute__ ((__const__)); extern _Float64 __nanf64 (const char *__tagb) throw () __attribute__ ((__const__));
+extern _Float64 nanf64 (const char *__tagb) throw (); extern _Float64 __nanf64 (const char *__tagb) throw ();
 # 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
 extern _Float64 j0f64 (_Float64) throw (); extern _Float64 __j0f64 (_Float64) throw ();
 extern _Float64 j1f64 (_Float64) throw (); extern _Float64 __j1f64 (_Float64) throw ();
@@ -32530,15 +32585,19 @@ extern _Float64 fmaxmagf64 (_Float64 __x, _Float64 __y) throw () __attribute__ (
 extern _Float64 fminmagf64 (_Float64 __x, _Float64 __y) throw () __attribute__ ((__const__)); extern _Float64 __fminmagf64 (_Float64 __x, _Float64 __y) throw () __attribute__ ((__const__));
 
 
-extern int totalorderf64 (_Float64 __x, _Float64 __y) throw ()
-     __attribute__ ((__const__));
-
-
-extern int totalordermagf64 (_Float64 __x, _Float64 __y) throw ()
-     __attribute__ ((__const__));
-
-
 extern int canonicalizef64 (_Float64 *__cx, const _Float64 *__x) throw ();
+
+
+
+
+extern int totalorderf64 (const _Float64 *__x, const _Float64 *__y) throw ()
+
+     __attribute__ ((__pure__));
+
+
+extern int totalordermagf64 (const _Float64 *__x, const _Float64 *__y) throw ()
+
+     __attribute__ ((__pure__));
 
 
 extern _Float64 getpayloadf64 (const _Float64 *__x) throw (); extern _Float64 __getpayloadf64 (const _Float64 *__x) throw ();
@@ -32674,7 +32733,7 @@ extern _Float32x copysignf32x (_Float32x __x, _Float32x __y) throw () __attribut
 
 
 
-extern _Float32x nanf32x (const char *__tagb) throw () __attribute__ ((__const__)); extern _Float32x __nanf32x (const char *__tagb) throw () __attribute__ ((__const__));
+extern _Float32x nanf32x (const char *__tagb) throw (); extern _Float32x __nanf32x (const char *__tagb) throw ();
 # 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
 extern _Float32x j0f32x (_Float32x) throw (); extern _Float32x __j0f32x (_Float32x) throw ();
 extern _Float32x j1f32x (_Float32x) throw (); extern _Float32x __j1f32x (_Float32x) throw ();
@@ -32818,15 +32877,19 @@ extern _Float32x fmaxmagf32x (_Float32x __x, _Float32x __y) throw () __attribute
 extern _Float32x fminmagf32x (_Float32x __x, _Float32x __y) throw () __attribute__ ((__const__)); extern _Float32x __fminmagf32x (_Float32x __x, _Float32x __y) throw () __attribute__ ((__const__));
 
 
-extern int totalorderf32x (_Float32x __x, _Float32x __y) throw ()
-     __attribute__ ((__const__));
-
-
-extern int totalordermagf32x (_Float32x __x, _Float32x __y) throw ()
-     __attribute__ ((__const__));
-
-
 extern int canonicalizef32x (_Float32x *__cx, const _Float32x *__x) throw ();
+
+
+
+
+extern int totalorderf32x (const _Float32x *__x, const _Float32x *__y) throw ()
+
+     __attribute__ ((__pure__));
+
+
+extern int totalordermagf32x (const _Float32x *__x, const _Float32x *__y) throw ()
+
+     __attribute__ ((__pure__));
 
 
 extern _Float32x getpayloadf32x (const _Float32x *__x) throw (); extern _Float32x __getpayloadf32x (const _Float32x *__x) throw ();
@@ -32962,7 +33025,7 @@ extern _Float64x copysignf64x (_Float64x __x, _Float64x __y) throw () __attribut
 
 
 
-extern _Float64x nanf64x (const char *__tagb) throw () __attribute__ ((__const__)); extern _Float64x __nanf64x (const char *__tagb) throw () __attribute__ ((__const__));
+extern _Float64x nanf64x (const char *__tagb) throw (); extern _Float64x __nanf64x (const char *__tagb) throw ();
 # 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
 extern _Float64x j0f64x (_Float64x) throw (); extern _Float64x __j0f64x (_Float64x) throw ();
 extern _Float64x j1f64x (_Float64x) throw (); extern _Float64x __j1f64x (_Float64x) throw ();
@@ -33106,15 +33169,19 @@ extern _Float64x fmaxmagf64x (_Float64x __x, _Float64x __y) throw () __attribute
 extern _Float64x fminmagf64x (_Float64x __x, _Float64x __y) throw () __attribute__ ((__const__)); extern _Float64x __fminmagf64x (_Float64x __x, _Float64x __y) throw () __attribute__ ((__const__));
 
 
-extern int totalorderf64x (_Float64x __x, _Float64x __y) throw ()
-     __attribute__ ((__const__));
-
-
-extern int totalordermagf64x (_Float64x __x, _Float64x __y) throw ()
-     __attribute__ ((__const__));
-
-
 extern int canonicalizef64x (_Float64x *__cx, const _Float64x *__x) throw ();
+
+
+
+
+extern int totalorderf64x (const _Float64x *__x, const _Float64x *__y) throw ()
+
+     __attribute__ ((__pure__));
+
+
+extern int totalordermagf64x (const _Float64x *__x, const _Float64x *__y) throw ()
+
+     __attribute__ ((__pure__));
 
 
 extern _Float64x getpayloadf64x (const _Float64x *__x) throw (); extern _Float64x __getpayloadf64x (const _Float64x *__x) throw ();
@@ -33125,9 +33192,135 @@ extern int setpayloadf64x (_Float64x *__x, _Float64x __payload) throw ();
 
 extern int setpayloadsigf64x (_Float64x *__x, _Float64x __payload) throw ();
 # 458 "/usr/include/math.h" 2 3 4
-# 489 "/usr/include/math.h" 3 4
+# 503 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+extern float fadd (double __x, double __y) throw ();
+
+
+extern float fdiv (double __x, double __y) throw ();
+
+
+extern float fmul (double __x, double __y) throw ();
+
+
+extern float fsub (double __x, double __y) throw ();
+# 504 "/usr/include/math.h" 2 3 4
+# 517 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+extern float faddl (long double __x, long double __y) throw ();
+
+
+extern float fdivl (long double __x, long double __y) throw ();
+
+
+extern float fmull (long double __x, long double __y) throw ();
+
+
+extern float fsubl (long double __x, long double __y) throw ();
+# 518 "/usr/include/math.h" 2 3 4
+# 537 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+extern double daddl (long double __x, long double __y) throw ();
+
+
+extern double ddivl (long double __x, long double __y) throw ();
+
+
+extern double dmull (long double __x, long double __y) throw ();
+
+
+extern double dsubl (long double __x, long double __y) throw ();
+# 538 "/usr/include/math.h" 2 3 4
+# 616 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+extern _Float32 f32addf32x (_Float32x __x, _Float32x __y) throw ();
+
+
+extern _Float32 f32divf32x (_Float32x __x, _Float32x __y) throw ();
+
+
+extern _Float32 f32mulf32x (_Float32x __x, _Float32x __y) throw ();
+
+
+extern _Float32 f32subf32x (_Float32x __x, _Float32x __y) throw ();
+# 617 "/usr/include/math.h" 2 3 4
+# 626 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+extern _Float32 f32addf64 (_Float64 __x, _Float64 __y) throw ();
+
+
+extern _Float32 f32divf64 (_Float64 __x, _Float64 __y) throw ();
+
+
+extern _Float32 f32mulf64 (_Float64 __x, _Float64 __y) throw ();
+
+
+extern _Float32 f32subf64 (_Float64 __x, _Float64 __y) throw ();
+# 627 "/usr/include/math.h" 2 3 4
+# 636 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+extern _Float32 f32addf64x (_Float64x __x, _Float64x __y) throw ();
+
+
+extern _Float32 f32divf64x (_Float64x __x, _Float64x __y) throw ();
+
+
+extern _Float32 f32mulf64x (_Float64x __x, _Float64x __y) throw ();
+
+
+extern _Float32 f32subf64x (_Float64x __x, _Float64x __y) throw ();
+# 637 "/usr/include/math.h" 2 3 4
+# 666 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+extern _Float32x f32xaddf64 (_Float64 __x, _Float64 __y) throw ();
+
+
+extern _Float32x f32xdivf64 (_Float64 __x, _Float64 __y) throw ();
+
+
+extern _Float32x f32xmulf64 (_Float64 __x, _Float64 __y) throw ();
+
+
+extern _Float32x f32xsubf64 (_Float64 __x, _Float64 __y) throw ();
+# 667 "/usr/include/math.h" 2 3 4
+# 676 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+extern _Float32x f32xaddf64x (_Float64x __x, _Float64x __y) throw ();
+
+
+extern _Float32x f32xdivf64x (_Float64x __x, _Float64x __y) throw ();
+
+
+extern _Float32x f32xmulf64x (_Float64x __x, _Float64x __y) throw ();
+
+
+extern _Float32x f32xsubf64x (_Float64x __x, _Float64x __y) throw ();
+# 677 "/usr/include/math.h" 2 3 4
+# 706 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+extern _Float64 f64addf64x (_Float64x __x, _Float64x __y) throw ();
+
+
+extern _Float64 f64divf64x (_Float64x __x, _Float64x __y) throw ();
+
+
+extern _Float64 f64mulf64x (_Float64x __x, _Float64x __y) throw ();
+
+
+extern _Float64 f64subf64x (_Float64x __x, _Float64x __y) throw ();
+# 707 "/usr/include/math.h" 2 3 4
+# 773 "/usr/include/math.h" 3 4
 extern int signgam;
-# 569 "/usr/include/math.h" 3 4
+# 853 "/usr/include/math.h" 3 4
 enum
   {
     FP_NAN =
@@ -33146,7 +33339,7 @@ enum
 
       4
   };
-# 684 "/usr/include/math.h" 3 4
+# 973 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/iscanonical.h" 1 3 4
 # 23 "/usr/include/x86_64-linux-gnu/bits/iscanonical.h" 3 4
 extern int __iscanonicall (long double __x)
@@ -33160,8 +33353,8 @@ inline int iscanonical (long double __val) { return __iscanonicall (__val); }
 
 
 }
-# 685 "/usr/include/math.h" 2 3 4
-# 696 "/usr/include/math.h" 3 4
+# 974 "/usr/include/math.h" 2 3 4
+# 985 "/usr/include/math.h" 3 4
 extern "C++" {
 inline int issignaling (float __val) { return __issignalingf (__val); }
 inline int issignaling (double __val) { return __issignaling (__val); }
@@ -33177,10 +33370,12 @@ issignaling (long double __val)
 
 
 
+
+
 }
-# 725 "/usr/include/math.h" 3 4
+# 1016 "/usr/include/math.h" 3 4
 extern "C++" {
-# 754 "/usr/include/math.h" 3 4
+# 1047 "/usr/include/math.h" 3 4
 template <class __T> inline bool
 iszero (__T __val)
 {
@@ -33188,7 +33383,7 @@ iszero (__T __val)
 }
 
 }
-# 1205 "/usr/include/math.h" 3 4
+# 1278 "/usr/include/math.h" 3 4
 extern "C++" {
 template<typename> struct __iseqsig_type;
 
@@ -33219,7 +33414,7 @@ template<> struct __iseqsig_type<long double>
 
   }
 };
-# 1246 "/usr/include/math.h" 3 4
+# 1321 "/usr/include/math.h" 3 4
 template<typename _T1, typename _T2>
 inline int
 iseqsig (_T1 __x, _T2 __y) throw ()
@@ -60205,10 +60400,10 @@ void init_invert_table_legacy(typename CONFIG_T::table_t table_out[N_TABLE])
 
     for (int ii = 0; ii < N_TABLE; ii++) {
 
- float in_val = 64.0*ii/float(N_TABLE);
+        float in_val = 64.0*ii/float(N_TABLE);
 
- if (in_val > 0.0) table_out[ii] = 1.0/in_val;
- else table_out[ii] = 0.0;
+        if (in_val > 0.0) table_out[ii] = 1.0/in_val;
+        else table_out[ii] = 0.0;
     }
 }
 
@@ -60243,33 +60438,34 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
     int data_round;
     int index;
     for (int ii=0; ii<CONFIG_T::n_in; ii++) {
-      data_cache[ii] = data[ii];
-      exp_res[ii] = 0;
+        data_cache[ii] = data[ii];
+        exp_res[ii] = 0;
     }
+
     for (int ii=0; ii<CONFIG_T::n_in; ii++) {
-      if (CONFIG_T::io_type == io_serial){
+        if (CONFIG_T::io_type == io_serial) {
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
  }
-      for (int jj=0; jj<CONFIG_T::n_in; jj++) {
- if (ii==jj) exp_diff_res = 1;
- else {
-   data_round = (data_cache[jj]-data_cache[ii])*CONFIG_T::table_size/16;
-   index = data_round + 8*CONFIG_T::table_size/16;
-   if (index < 0) index = 0;
-   if (index > CONFIG_T::table_size-1) index = CONFIG_T::table_size-1;
-   exp_diff_res = exp_table[index];
- }
- exp_res[ii] += exp_diff_res;
-      }
+        for (int jj=0; jj<CONFIG_T::n_in; jj++) {
+            if (ii==jj) exp_diff_res = 1;
+            else {
+                data_round = (data_cache[jj]-data_cache[ii])*CONFIG_T::table_size/16;
+                index = data_round + 8*CONFIG_T::table_size/16;
+                if (index < 0) index = 0;
+                if (index > CONFIG_T::table_size-1) index = CONFIG_T::table_size-1;
+                exp_diff_res = exp_table[index];
+            }
+            exp_res[ii] += exp_diff_res;
+        }
     }
 
 
     for (int ii=0; ii<CONFIG_T::n_in; ii++) {
-      int exp_res_index = exp_res[ii]*CONFIG_T::table_size/64;
-      if (exp_res_index < 0) exp_res_index = 0;
-      if (exp_res_index > CONFIG_T::table_size-1) exp_res_index = CONFIG_T::table_size-1;
+        int exp_res_index = exp_res[ii]*CONFIG_T::table_size/64;
+        if (exp_res_index < 0) exp_res_index = 0;
+        if (exp_res_index > CONFIG_T::table_size-1) exp_res_index = CONFIG_T::table_size-1;
 
-      res[ii] = (res_T) invert_table[exp_res_index];
+        res[ii] = (res_T) invert_table[exp_res_index];
     }
 
 }
@@ -60587,7 +60783,7 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
 template<class data_T, class res_T, typename CONFIG_T>
 void elu(data_T data[CONFIG_T::n_in], res_T res[CONFIG_T::n_in])
 {
- elu<data_T, res_T, CONFIG_T>(data, 1.0, res);
+    elu<data_T, res_T, CONFIG_T>(data, 1.0, res);
 }
 
 
@@ -60677,26 +60873,22 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
 template<class data_T, class res_T, typename CONFIG_T>
 void binary_tanh(data_T data[CONFIG_T::n_in], res_T res[CONFIG_T::n_in])
 {
-
- if (CONFIG_T::io_type == io_parallel){
+    if (CONFIG_T::io_type == io_parallel){
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
  }
 
- data_T datareg;
- res_T cache;
- for (int ii=0; ii<CONFIG_T::n_in; ii++) {
-
-  if (CONFIG_T::io_type == io_serial){
+    data_T datareg;
+    res_T cache;
+    for (int ii=0; ii<CONFIG_T::n_in; ii++) {
+        if (CONFIG_T::io_type == io_serial){
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
  }
-  datareg = data[ii];
-  if( datareg > 0 ) cache = 1;
-  else cache = -1;
+        datareg = data[ii];
+        if( datareg > 0 ) cache = 1;
+        else cache = -1;
 
-  res[ii] = (res_T) cache;
-
- }
-
+        res[ii] = (res_T) cache;
+    }
 }
 
 
@@ -60706,25 +60898,23 @@ template<class data_T, class res_T, typename CONFIG_T>
 void ternary_tanh(data_T data[CONFIG_T::n_in], res_T res[CONFIG_T::n_in])
 {
 
- if (CONFIG_T::io_type == io_parallel){
+    if (CONFIG_T::io_type == io_parallel){
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
  }
 
- data_T datareg;
- res_T cache;
- for (int ii=0; ii<CONFIG_T::n_in; ii++) {
-
-  if (CONFIG_T::io_type == io_serial){
+    data_T datareg;
+    res_T cache;
+    for (int ii=0; ii<CONFIG_T::n_in; ii++) {
+        if (CONFIG_T::io_type == io_serial) {
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
  }
-  datareg = 2*data[ii];
-  if( datareg > 1 ) cache = 1;
-  else if( datareg > -1 && datareg <= 1) cache=0;
-  else cache = -1;
+        datareg = 2*data[ii];
+        if( datareg > 1 ) cache = 1;
+        else if( datareg > -1 && datareg <= 1) cache=0;
+        else cache = -1;
 
-  res[ii] = (res_T) cache;
-
- }
+        res[ii] = (res_T) cache;
+    }
 
 }
 
@@ -60973,40 +61163,36 @@ void softmax_latency(hls::stream<data_T> &data, hls::stream<res_T> &res){
         initialized = true;
     }
 
-    constexpr unsigned multiplier_limit = ((CONFIG_T::n_in + CONFIG_T::reuse_factor - 1) / CONFIG_T::reuse_factor);
-    constexpr unsigned ii = CONFIG_T::n_in / multiplier_limit;
+    constexpr unsigned multiplier_limit = ((data_T::size + CONFIG_T::reuse_factor - 1) / CONFIG_T::reuse_factor);
+    constexpr unsigned ii = data_T::size / multiplier_limit;
 
 
-    typename CONFIG_T::exp_table_t exp_res[CONFIG_T::n_in];
+    typename CONFIG_T::exp_table_t exp_res[data_T::size];
 _ssdm_SpecArrayPartition( exp_res, 1, "COMPLETE", 0, "");
  typename CONFIG_T::exp_table_t exp_sum(0);
     SoftmaxExpLoop: for(unsigned i = 0; i < CONFIG_T::n_in / data_T::size; i++){
-        if (CONFIG_T::n_in / data_T::size > 1) {
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- }
-        data_T in_pack = data.read();
+_ssdm_op_SpecPipeline(ii, 1, 1, 0, "");
+
+ data_T in_pack = data.read();
         SoftmaxExpPackLoop: for(unsigned j = 0; j < data_T::size; j++){
 _ssdm_Unroll(0,0,0, "");
  unsigned x = softmax_idx_from_real_val<typename data_T::value_type, CONFIG_T>(in_pack[j]);
-            exp_res[i * data_T::size + j] = exp_table[x];
+            exp_res[j] = exp_table[x];
         }
-    }
 
 
 
-    Op_add<typename CONFIG_T::exp_table_t> op_add;
-    exp_sum = reduce<typename CONFIG_T::exp_table_t, CONFIG_T::n_in, Op_add<typename CONFIG_T::exp_table_t>>(exp_res, op_add);
+        Op_add<typename CONFIG_T::exp_table_t> op_add;
+        exp_sum = reduce<typename CONFIG_T::exp_table_t, data_T::size, Op_add<typename CONFIG_T::exp_table_t>>(exp_res, op_add);
 
-    typename CONFIG_T::inv_table_t inv_exp_sum = invert_table[softmax_idx_from_real_val<typename CONFIG_T::exp_table_t,CONFIG_T>(exp_sum)];
-    SoftmaxInvLoop: for(unsigned i = 0; i < CONFIG_T::n_in / res_T::size; i++){
-_ssdm_op_SpecPipeline(ii, 1, 1, 0, "");
+        typename CONFIG_T::inv_table_t inv_exp_sum = invert_table[softmax_idx_from_real_val<typename CONFIG_T::exp_table_t,CONFIG_T>(exp_sum)];
 
- res_T out_pack;
+        res_T out_pack;
 _ssdm_DataPack( &out_pack, 0, 0, "", "", "");
  SoftmaxInvPackLoop: for(unsigned j = 0; j < res_T::size; j++){
 _ssdm_Unroll(0,0,0, "");
 _ssdm_op_SpecResourceLimit(multiplier_limit, "mul", "", "", "");
- out_pack[i * res_T::size + j] = exp_res[i * res_T::size + j] * inv_exp_sum;
+ out_pack[j] = exp_res[j] * inv_exp_sum;
         }
         res.write(out_pack);
     }
@@ -61033,58 +61219,54 @@ void softmax_stable(hls::stream<data_T> &data, hls::stream<res_T> &res){
         initialized = true;
     }
 
-    constexpr unsigned multiplier_limit = ((CONFIG_T::n_in + CONFIG_T::reuse_factor - 1) / CONFIG_T::reuse_factor);
-    constexpr unsigned ii = CONFIG_T::n_in / multiplier_limit;
+    constexpr unsigned multiplier_limit = ((data_T::size + CONFIG_T::reuse_factor - 1) / CONFIG_T::reuse_factor);
+    constexpr unsigned ii = data_T::size / multiplier_limit;
 
-    typename data_T::value_type data_array[CONFIG_T::n_in];
+    typename data_T::value_type data_array[data_T::size];
 _ssdm_SpecArrayPartition( data_array, 1, "COMPLETE", 0, "");
  SoftmaxArrayLoop: for(unsigned i = 0; i < CONFIG_T::n_in / data_T::size; i++){
-        if (CONFIG_T::n_in / data_T::size > 1) {
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- }
-        data_T in_pack = data.read();
-        SoftmaxArrayPackLoop: for(unsigned j = 0; j < data_T::size; j++){
-_ssdm_Unroll(0,0,0, "");
- data_array[i * data_T::size + j] = in_pack[j];
-        }
-    }
-
-
-    Op_max<typename data_T::value_type> op_max;
-    typename data_T::value_type x_max = reduce<typename data_T::value_type, CONFIG_T::n_in, Op_max<typename data_T::value_type>>(data_array, op_max);
-
-
-    ap_fixed<data_T::value_type::width, data_T::value_type::iwidth,AP_RND,AP_SAT> d_xi_xmax[CONFIG_T::n_in];
-    for(unsigned i = 0; i < CONFIG_T::n_in; i++){
-_ssdm_Unroll(0,0,0, "");
- d_xi_xmax[i] = data_array[i] - x_max;
-    }
-
-
-    typename CONFIG_T::exp_table_t exp_res[CONFIG_T::n_in];
-_ssdm_SpecArrayPartition( exp_res, 1, "COMPLETE", 0, "");
- typename CONFIG_T::exp_table_t exp_sum(0);
-    for(unsigned i = 0; i < CONFIG_T::n_in; i++){
-_ssdm_Unroll(0,0,0, "");
- unsigned x = softmax_idx_from_real_val<typename data_T::value_type, CONFIG_T>(d_xi_xmax[i]);
-        exp_res[i] = exp_table[x];
-    }
-
-
-
-    Op_add<typename CONFIG_T::exp_table_t> op_add;
-    exp_sum = reduce<typename CONFIG_T::exp_table_t, CONFIG_T::n_in, Op_add<typename CONFIG_T::exp_table_t>>(exp_res, op_add);
-
-    typename CONFIG_T::inv_table_t inv_exp_sum = invert_table[softmax_idx_from_real_val<typename CONFIG_T::exp_table_t,CONFIG_T>(exp_sum)];
-    SoftmaxInvLoop: for(unsigned i = 0; i < CONFIG_T::n_in / res_T::size; i++){
 _ssdm_op_SpecPipeline(ii, 1, 1, 0, "");
 
- res_T out_pack;
+ data_T in_pack = data.read();
+        SoftmaxArrayPackLoop: for(unsigned j = 0; j < data_T::size; j++){
+_ssdm_Unroll(0,0,0, "");
+ data_array[j] = in_pack[j];
+        }
+
+
+        Op_max<typename data_T::value_type> op_max;
+        typename data_T::value_type x_max = reduce<typename data_T::value_type, data_T::size, Op_max<typename data_T::value_type>>(data_array, op_max);
+
+
+        ap_fixed<data_T::value_type::width, data_T::value_type::iwidth,AP_RND,AP_SAT> d_xi_xmax[data_T::size];
+        for(unsigned j = 0; j < data_T::size; j++){
+_ssdm_Unroll(0,0,0, "");
+ d_xi_xmax[j] = data_array[j] - x_max;
+        }
+
+
+        typename CONFIG_T::exp_table_t exp_res[data_T::size];
+_ssdm_SpecArrayPartition( exp_res, 1, "COMPLETE", 0, "");
+ typename CONFIG_T::exp_table_t exp_sum(0);
+        for(unsigned j = 0; j < data_T::size; j++){
+_ssdm_Unroll(0,0,0, "");
+ unsigned x = softmax_idx_from_real_val<typename data_T::value_type, CONFIG_T>(d_xi_xmax[j]);
+            exp_res[j] = exp_table[x];
+        }
+
+
+
+        Op_add<typename CONFIG_T::exp_table_t> op_add;
+        exp_sum = reduce<typename CONFIG_T::exp_table_t, data_T::size, Op_add<typename CONFIG_T::exp_table_t>>(exp_res, op_add);
+
+        typename CONFIG_T::inv_table_t inv_exp_sum = invert_table[softmax_idx_from_real_val<typename CONFIG_T::exp_table_t,CONFIG_T>(exp_sum)];
+
+        res_T out_pack;
 _ssdm_DataPack( &out_pack, 0, 0, "", "", "");
  SoftmaxInvPackLoop: for(unsigned j = 0; j < res_T::size; j++){
 _ssdm_Unroll(0,0,0, "");
 _ssdm_op_SpecResourceLimit(multiplier_limit, "mul", "", "", "");
- out_pack[i * res_T::size + j] = exp_res[i * res_T::size + j] * inv_exp_sum;
+ out_pack[j] = exp_res[j] * inv_exp_sum;
         }
         res.write(out_pack);
     }
@@ -61109,52 +61291,48 @@ void softmax_legacy(hls::stream<data_T> &data, hls::stream<res_T> &res) {
     }
 
 
-    typename CONFIG_T::table_t exp_res[CONFIG_T::n_in];
+    typename CONFIG_T::table_t exp_res[data_T::size];
     typename CONFIG_T::table_t exp_diff_res;
-    typename data_T::value_type data_cache[CONFIG_T::n_in];
+    typename data_T::value_type data_cache[data_T::size];
 
-    SoftmaxInitLoop: for(unsigned i = 0; i < CONFIG_T::n_in / data_T::size; i++) {
+    SoftmaxInitLoop: for(unsigned s = 0; s < CONFIG_T::n_in / data_T::size; s++) {
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
  data_T in_pack = data.read();
         SoftmaxInitPackLoop: for(unsigned j = 0; j < data_T::size; j++) {
 _ssdm_Unroll(0,0,0, "");
- data_cache[i * data_T::size + j] = in_pack[j];
-            exp_res[i * data_T::size + j] = 0;
+ data_cache[j] = in_pack[j];
+            exp_res[j] = 0;
         }
-    }
 
-    SoftmaxExpLoop: for (int i = 0; i < CONFIG_T::n_in; i++) {
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- SoftmaxExpInner: for (int j = 0; j < CONFIG_T::n_in; j++) {
+        SoftmaxExpLoop: for (int i = 0; i < data_T::size; i++) {
+_ssdm_Unroll(0,0,0, "");
+ SoftmaxExpInner: for (int j = 0; j < data_T::size; j++) {
 _ssdm_Unroll(0,0,0, "");
 
  if (i == j) {
-                exp_diff_res = 1;
-            } else {
-                int data_round = (data_cache[j] - data_cache[i]) * CONFIG_T::table_size / 16;
-                int index = data_round + 8 * CONFIG_T::table_size / 16;
-                if (index < 0) index = 0;
-                if (index > CONFIG_T::table_size - 1) index = CONFIG_T::table_size - 1;
-                exp_diff_res = exp_table[index];
+                    exp_diff_res = 1;
+                } else {
+                    int data_round = (data_cache[j] - data_cache[i]) * CONFIG_T::table_size / 16;
+                    int index = data_round + 8 * CONFIG_T::table_size / 16;
+                    if (index < 0) index = 0;
+                    if (index > CONFIG_T::table_size - 1) index = CONFIG_T::table_size - 1;
+                    exp_diff_res = exp_table[index];
+                }
+
+                exp_res[i] += exp_diff_res;
             }
-
-            exp_res[i] += exp_diff_res;
         }
-    }
 
-    SoftmaxInvLoop: for(unsigned i = 0; i < CONFIG_T::n_in / res_T::size; i++) {
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
-
- res_T out_pack;
+        res_T out_pack;
 _ssdm_DataPack( &out_pack, 0, 0, "", "", "");
  SoftmaxInvPackLoop: for(unsigned j = 0; j < res_T::size; j++) {
 _ssdm_Unroll(0,0,0, "");
 
- int exp_res_index = exp_res[i * res_T::size + j] * CONFIG_T::table_size / 64;
+ int exp_res_index = exp_res[j] * CONFIG_T::table_size / 64;
             if (exp_res_index < 0) exp_res_index = 0;
             if (exp_res_index > CONFIG_T::table_size - 1) exp_res_index = CONFIG_T::table_size - 1;
 
-            out_pack[i * res_T::size + j] = (typename res_T::value_type) invert_table[exp_res_index];
+            out_pack[j] = (typename res_T::value_type) invert_table[exp_res_index];
         }
         res.write(out_pack);
     }
@@ -61162,6 +61340,8 @@ _ssdm_Unroll(0,0,0, "");
 
 template<class data_T, class res_T, typename CONFIG_T>
 void softmax(hls::stream<data_T> &data, hls::stream<res_T> &res){
+    (static_cast <bool> (CONFIG_T::axis == -1) ? void (0) : __assert_fail ("CONFIG_T::axis == -1", "firmware/nnet_utils/nnet_activation_stream.h", 319, __extension__ __PRETTY_FUNCTION__));
+
     switch(CONFIG_T::implementation){
     case softmax_implementation::latency:
         softmax_latency<data_T, res_T, CONFIG_T>(data, res);
@@ -62568,20 +62748,18 @@ void im2col_2d_cl(
     const int col)
 {
     int index = 0;
-    for (int channel = CONFIG_T::n_chan; channel--; data++) {
+    for (int kernel_row = 0; kernel_row < CONFIG_T::filt_height; kernel_row++) {
 _ssdm_Unroll(0,0,0, "");
- for (int kernel_row = 0; kernel_row < CONFIG_T::filt_height; kernel_row++) {
-            int input_row = -CONFIG_T::pad_top + kernel_row * CONFIG_T::dilation_height + row * CONFIG_T::stride_height;
-            for (int kernel_col = 0; kernel_col < CONFIG_T::filt_width; kernel_col++) {
+ int input_row = -CONFIG_T::pad_top + kernel_row * CONFIG_T::dilation_height + row * CONFIG_T::stride_height;
+        for (int kernel_col = 0; kernel_col < CONFIG_T::filt_width; kernel_col++) {
+            for (int channel = 0; channel < CONFIG_T::n_chan; channel++) {
                 if (input_row < 0 || input_row >= CONFIG_T::in_height) {
                     data_col[index++] = 0;
                 } else {
                     int input_col = -CONFIG_T::pad_left + kernel_col * CONFIG_T::dilation_width + col * CONFIG_T::stride_width;
                     if (input_col >= 0 && input_col < CONFIG_T::in_width) {
-
-                        data_col[index++] = data[input_row * CONFIG_T::in_width * CONFIG_T::n_chan + input_col * CONFIG_T::n_chan];
+                        data_col[index++] = data[input_row * CONFIG_T::in_width * CONFIG_T::n_chan + input_col * CONFIG_T::n_chan + channel];
                     } else {
-
                         data_col[index++] = 0;
                     }
                 }
@@ -62623,7 +62801,6 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
             FiltLoop:
             for (int k = 0; k < CONFIG_T::n_filt; k++) {
                 res[i * CONFIG_T::out_width * CONFIG_T::n_filt + j * CONFIG_T::n_filt + k] = res_col[k];
-
             }
         }
     }
@@ -65441,6 +65618,7 @@ struct softmax_config13 : nnet::activ_config {
     static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_stream;
     static const unsigned reuse_factor = 1;
+    static const unsigned axis = -1;
     static const nnet::softmax_implementation implementation = nnet::softmax_implementation::stable;
     typedef ap_fixed<12,4> exp_table_t;
     typedef ap_fixed<12,2> inv_table_t;
@@ -65465,6 +65643,9 @@ _ssdm_op_SpecDataflowPipeline(-1, 0, "");
 _ssdm_SpecStream( &layer2_out, 0, 676, "");
  nnet::conv_2d_cl<input_t, layer2_t, config2>(layer0, layer2_out, w2, b2);
 
+
+
+
     hls::stream<layer3_t> layer3_out("layer3_out");
 _ssdm_SpecStream( &layer3_out, 0, 676, "");
  nnet::linear<layer2_t, layer3_t, linear_config3>(layer2_out, layer3_out);
@@ -65477,9 +65658,15 @@ _ssdm_SpecStream( &layer4_out, 0, 676, "");
 _ssdm_SpecStream( &layer5_out, 0, 169, "");
  nnet::pooling2d_cl<layer4_t, layer5_t, config5>(layer4_out, layer5_out);
 
+
+
+
     hls::stream<layer6_t> layer6_out("layer6_out");
 _ssdm_SpecStream( &layer6_out, 0, 121, "");
  nnet::conv_2d_cl<layer5_t, layer6_t, config6>(layer5_out, layer6_out, w6, b6);
+
+
+
 
     hls::stream<layer7_t> layer7_out("layer7_out");
 _ssdm_SpecStream( &layer7_out, 0, 121, "");
@@ -65493,14 +65680,23 @@ _ssdm_SpecStream( &layer8_out, 0, 121, "");
 _ssdm_SpecStream( &layer9_out, 0, 25, "");
  nnet::pooling2d_cl<layer8_t, layer9_t, config9>(layer8_out, layer9_out);
 
+
+
+
     hls::stream<layer11_t> layer11_out("layer11_out");
 _ssdm_SpecStream( &layer11_out, 0, 1, "");
  nnet::dense<layer9_t, layer11_t, config11>(layer9_out, layer11_out, w11, b11);
+
+
+
 
     hls::stream<layer12_t> layer12_out("layer12_out");
 _ssdm_SpecStream( &layer12_out, 0, 1, "");
  nnet::linear<layer11_t, layer12_t, linear_config12>(layer11_out, layer12_out);
 
     nnet::softmax<layer12_t, result_t, softmax_config13>(layer12_out, layer13_out);
+
+
+
 
 }

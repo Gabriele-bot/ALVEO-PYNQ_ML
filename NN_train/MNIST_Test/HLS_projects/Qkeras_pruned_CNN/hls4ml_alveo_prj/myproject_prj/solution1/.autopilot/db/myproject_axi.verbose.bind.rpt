@@ -3,13 +3,13 @@
 ================================================================
 == Vivado HLS Report for 'myproject_axi'
 ================================================================
-* Date:           Tue Dec  7 00:24:50 2021
+* Date:           Tue Feb 15 18:32:59 2022
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        myproject_prj
 * Solution:       solution1
 * Product family: virtexuplus
-* Target device:  xcu50-fsvh2104-2L-e
+* Target device:  xcu50-fsvh2104-2-e
 
 
 ================================================================
@@ -144,25 +144,25 @@ ST_9 : Operation 42 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBits
 ST_9 : Operation 43 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([14 x i8]* @myproject_axi_str) nounwind"   --->   Operation 43 'spectopmodule' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 44 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecChannel([21 x i8]* @in_local_OC_V_OC_data_LF_0_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 784, i32 784, i8* %in_local_V_data_0_V, i8* %in_local_V_data_0_V)"   --->   Operation 44 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 45 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %in_local_V_data_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 45 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 46 [1/1] (0.00ns)   --->   "%empty_50 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_0_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_0_V, i16* %out_local_V_data_0_V)"   --->   Operation 46 'specchannel' 'empty_50' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 46 [1/1] (0.00ns)   --->   "%empty_52 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_0_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_0_V, i16* %out_local_V_data_0_V)"   --->   Operation 46 'specchannel' 'empty_52' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 47 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_local_V_data_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 47 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 48 [1/1] (0.00ns)   --->   "%empty_51 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_1_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_1_V, i16* %out_local_V_data_1_V)"   --->   Operation 48 'specchannel' 'empty_51' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 48 [1/1] (0.00ns)   --->   "%empty_53 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_1_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_1_V, i16* %out_local_V_data_1_V)"   --->   Operation 48 'specchannel' 'empty_53' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 49 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_local_V_data_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 49 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 50 [1/1] (0.00ns)   --->   "%empty_52 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_2_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_2_V, i16* %out_local_V_data_2_V)"   --->   Operation 50 'specchannel' 'empty_52' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 50 [1/1] (0.00ns)   --->   "%empty_54 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_2_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_2_V, i16* %out_local_V_data_2_V)"   --->   Operation 50 'specchannel' 'empty_54' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 51 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_local_V_data_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 51 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 52 [1/1] (0.00ns)   --->   "%empty_53 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_3_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_3_V, i16* %out_local_V_data_3_V)"   --->   Operation 52 'specchannel' 'empty_53' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 52 [1/1] (0.00ns)   --->   "%empty_55 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_3_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_3_V, i16* %out_local_V_data_3_V)"   --->   Operation 52 'specchannel' 'empty_55' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 53 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_local_V_data_3_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 53 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 54 [1/1] (0.00ns)   --->   "%empty_54 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_4_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_4_V, i16* %out_local_V_data_4_V)"   --->   Operation 54 'specchannel' 'empty_54' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 54 [1/1] (0.00ns)   --->   "%empty_56 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_4_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_4_V, i16* %out_local_V_data_4_V)"   --->   Operation 54 'specchannel' 'empty_56' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_local_V_data_4_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 55 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 56 [1/1] (0.00ns)   --->   "%empty_55 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_5_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_5_V, i16* %out_local_V_data_5_V)"   --->   Operation 56 'specchannel' 'empty_55' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 56 [1/1] (0.00ns)   --->   "%empty_57 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_5_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_5_V, i16* %out_local_V_data_5_V)"   --->   Operation 56 'specchannel' 'empty_57' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 57 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_local_V_data_5_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 57 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 58 [1/1] (0.00ns)   --->   "%empty_56 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_6_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_6_V, i16* %out_local_V_data_6_V)"   --->   Operation 58 'specchannel' 'empty_56' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 58 [1/1] (0.00ns)   --->   "%empty_58 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_6_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_6_V, i16* %out_local_V_data_6_V)"   --->   Operation 58 'specchannel' 'empty_58' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 59 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_local_V_data_6_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 59 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 60 [1/1] (0.00ns)   --->   "%empty_57 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_7_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_7_V, i16* %out_local_V_data_7_V)"   --->   Operation 60 'specchannel' 'empty_57' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 60 [1/1] (0.00ns)   --->   "%empty_59 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_7_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_7_V, i16* %out_local_V_data_7_V)"   --->   Operation 60 'specchannel' 'empty_59' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 61 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_local_V_data_7_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 61 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 62 [1/1] (0.00ns)   --->   "%empty_58 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_8_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_8_V, i16* %out_local_V_data_8_V)"   --->   Operation 62 'specchannel' 'empty_58' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 62 [1/1] (0.00ns)   --->   "%empty_60 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_8_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_8_V, i16* %out_local_V_data_8_V)"   --->   Operation 62 'specchannel' 'empty_60' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 63 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_local_V_data_8_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 63 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 64 [1/1] (0.00ns)   --->   "%empty_59 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_9_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_9_V, i16* %out_local_V_data_9_V)"   --->   Operation 64 'specchannel' 'empty_59' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 64 [1/1] (0.00ns)   --->   "%empty_61 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @out_local_OC_V_OC_data_LF_9_NF_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 10, i32 10, i16* %out_local_V_data_9_V, i16* %out_local_V_data_9_V)"   --->   Operation 64 'specchannel' 'empty_61' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 65 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_local_V_data_9_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 65 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 66 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %in_data, i1* %in_last_V, [5 x i8]* @p_str4, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)" [firmware/myproject_axi.cpp:8]   --->   Operation 66 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 67 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %out_data, i1* %out_last_V, [5 x i8]* @p_str4, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)" [firmware/myproject_axi.cpp:9]   --->   Operation 67 'specinterface' <Predicate = true> <Delay = 0.00>
@@ -476,10 +476,6 @@ specbitsmap_ln0           (specbitsmap         ) [ 0000000000]
 spectopmodule_ln0         (spectopmodule       ) [ 0000000000]
 empty                     (specchannel         ) [ 0000000000]
 specinterface_ln0         (specinterface       ) [ 0000000000]
-empty_50                  (specchannel         ) [ 0000000000]
-specinterface_ln0         (specinterface       ) [ 0000000000]
-empty_51                  (specchannel         ) [ 0000000000]
-specinterface_ln0         (specinterface       ) [ 0000000000]
 empty_52                  (specchannel         ) [ 0000000000]
 specinterface_ln0         (specinterface       ) [ 0000000000]
 empty_53                  (specchannel         ) [ 0000000000]
@@ -495,6 +491,10 @@ specinterface_ln0         (specinterface       ) [ 0000000000]
 empty_58                  (specchannel         ) [ 0000000000]
 specinterface_ln0         (specinterface       ) [ 0000000000]
 empty_59                  (specchannel         ) [ 0000000000]
+specinterface_ln0         (specinterface       ) [ 0000000000]
+empty_60                  (specchannel         ) [ 0000000000]
+specinterface_ln0         (specinterface       ) [ 0000000000]
+empty_61                  (specchannel         ) [ 0000000000]
 specinterface_ln0         (specinterface       ) [ 0000000000]
 specinterface_ln8         (specinterface       ) [ 0000000000]
 specinterface_ln9         (specinterface       ) [ 0000000000]
@@ -5215,12 +5215,12 @@ ret_ln42                  (ret                 ) [ 0000000000]
 |----------|--------------------------------------------------|---------|---------|---------|---------|
 | Operation|                  Functional Unit                 |  DSP48E |  Delay  |    FF   |   LUT   |
 |----------|--------------------------------------------------|---------|---------|---------|---------|
-|          |               grp_myproject_fu_666               |    10   | 262.305 |  51561  |  93987  |
+|          |               grp_myproject_fu_666               |    10   | 262.305 |  51657  |  93731  |
 |   call   |              grp_Loop_2_proc_fu_1185             |    0    |  0.603  |   356   |   862   |
 |          |            grp_Loop_1_proc406_fu_1204            |    0    |  0.603  |   401   |   563   |
 |          | call_ln0_Block_myproject_axi_exit36_proc_fu_1213 |    0    |    0    |    0    |    0    |
 |----------|--------------------------------------------------|---------|---------|---------|---------|
-|   Total  |                                                  |    10   | 263.511 |  52318  |  95412  |
+|   Total  |                                                  |    10   | 263.511 |  52414  |  95156  |
 |----------|--------------------------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -5343,10 +5343,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+
 |           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+--------+
-|  Function |    -   |   10   |   263  |  52318 |  95412 |
+|  Function |    -   |   10   |   263  |  52414 |  95156 |
 |   Memory  |   284  |    -   |    -   |  4224  |  2112  |
 |Multiplexer|    -   |    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |   329  |    -   |
 +-----------+--------+--------+--------+--------+--------+
-|   Total   |   284  |   10   |   263  |  56871 |  97524 |
+|   Total   |   284  |   10   |   263  |  56967 |  97268 |
 +-----------+--------+--------+--------+--------+--------+

@@ -10,7 +10,7 @@
     "Family": "virtexuplushbm",
     "Device": "xcu50",
     "Package": "-fsvh2104",
-    "Speed": "-2L-e"
+    "Speed": "-2-e"
   },
   "HlsSolution": {"Config": [
       "config_array_partition -maximum_size=4096",
@@ -133,16 +133,16 @@
       "impl\/vhdl\/pooling2d_cl_array_array_ap_fixed_16u_config5_s.vhd",
       "impl\/vhdl\/pooling2d_cl_array_array_ap_fixed_16u_config9_s.vhd",
       "impl\/vhdl\/regslice_core.vhd",
-      "impl\/vhdl\/relu_array_array_ap_fixed_16u_relu_config4_s.vhd",
-      "impl\/vhdl\/relu_array_array_ap_fixed_16u_relu_config8_s.vhd",
-      "impl\/vhdl\/shift_line_buffer_array_ap_fixed_16u_config5_s.vhd",
-      "impl\/vhdl\/shift_line_buffer_array_ap_fixed_16u_config5_s_line_buffedEe.vhd",
+      "impl\/vhdl\/relu_array_array_ap_ufixed_16u_relu_config4_s.vhd",
+      "impl\/vhdl\/relu_array_array_ap_ufixed_16u_relu_config8_s.vhd",
       "impl\/vhdl\/shift_line_buffer_array_ap_fixed_16u_config6_s.vhd",
       "impl\/vhdl\/shift_line_buffer_array_ap_fixed_16u_config6_s_line_buffetde.vhd",
-      "impl\/vhdl\/shift_line_buffer_array_ap_fixed_16u_config9_s.vhd",
-      "impl\/vhdl\/shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio.vhd",
       "impl\/vhdl\/shift_line_buffer_array_ap_ufixed_1u_config2_s.vhd",
       "impl\/vhdl\/shift_line_buffer_array_ap_ufixed_1u_config2_s_line_buffebkb.vhd",
+      "impl\/vhdl\/shift_line_buffer_array_ap_ufixed_16u_config5_s.vhd",
+      "impl\/vhdl\/shift_line_buffer_array_ap_ufixed_16u_config5_s_line_buffdEe.vhd",
+      "impl\/vhdl\/shift_line_buffer_array_ap_ufixed_16u_config9_s.vhd",
+      "impl\/vhdl\/shift_line_buffer_array_ap_ufixed_16u_config9_s_line_buffZio.vhd",
       "impl\/vhdl\/softmax_array_array_ap_fixed_10u_softmax_config13_s.vhd",
       "impl\/vhdl\/softmax_stable_array_array_softmax_config13_s.vhd",
       "impl\/vhdl\/softmax_stable_array_array_softmax_config13_s_exp_table1.vhd",
@@ -156,8 +156,8 @@
       "impl\/vhdl\/start_for_myproject_U0.vhd",
       "impl\/vhdl\/start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0.vhd",
       "impl\/vhdl\/start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0.vhd",
-      "impl\/vhdl\/start_for_relu_array_array_ap_fixed_16u_relu_config4_U0.vhd",
-      "impl\/vhdl\/start_for_relu_array_array_ap_fixed_16u_relu_config8_U0.vhd",
+      "impl\/vhdl\/start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0.vhd",
+      "impl\/vhdl\/start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0.vhd",
       "impl\/vhdl\/start_for_softmax_array_array_ap_fixed_10u_softmax_configbhl.vhd",
       "impl\/vhdl\/myproject_axi.vhd"
     ],
@@ -192,16 +192,16 @@
       "impl\/verilog\/pooling2d_cl_array_array_ap_fixed_16u_config5_s.v",
       "impl\/verilog\/pooling2d_cl_array_array_ap_fixed_16u_config9_s.v",
       "impl\/verilog\/regslice_core.v",
-      "impl\/verilog\/relu_array_array_ap_fixed_16u_relu_config4_s.v",
-      "impl\/verilog\/relu_array_array_ap_fixed_16u_relu_config8_s.v",
-      "impl\/verilog\/shift_line_buffer_array_ap_fixed_16u_config5_s.v",
-      "impl\/verilog\/shift_line_buffer_array_ap_fixed_16u_config5_s_line_buffedEe.v",
+      "impl\/verilog\/relu_array_array_ap_ufixed_16u_relu_config4_s.v",
+      "impl\/verilog\/relu_array_array_ap_ufixed_16u_relu_config8_s.v",
       "impl\/verilog\/shift_line_buffer_array_ap_fixed_16u_config6_s.v",
       "impl\/verilog\/shift_line_buffer_array_ap_fixed_16u_config6_s_line_buffetde.v",
-      "impl\/verilog\/shift_line_buffer_array_ap_fixed_16u_config9_s.v",
-      "impl\/verilog\/shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio.v",
       "impl\/verilog\/shift_line_buffer_array_ap_ufixed_1u_config2_s.v",
       "impl\/verilog\/shift_line_buffer_array_ap_ufixed_1u_config2_s_line_buffebkb.v",
+      "impl\/verilog\/shift_line_buffer_array_ap_ufixed_16u_config5_s.v",
+      "impl\/verilog\/shift_line_buffer_array_ap_ufixed_16u_config5_s_line_buffdEe.v",
+      "impl\/verilog\/shift_line_buffer_array_ap_ufixed_16u_config9_s.v",
+      "impl\/verilog\/shift_line_buffer_array_ap_ufixed_16u_config9_s_line_buffZio.v",
       "impl\/verilog\/softmax_array_array_ap_fixed_10u_softmax_config13_s.v",
       "impl\/verilog\/softmax_stable_array_array_softmax_config13_s.v",
       "impl\/verilog\/softmax_stable_array_array_softmax_config13_s_exp_table1.v",
@@ -217,16 +217,16 @@
       "impl\/verilog\/start_for_myproject_U0.v",
       "impl\/verilog\/start_for_pooling2d_cl_array_array_ap_fixed_16u_config5_U0.v",
       "impl\/verilog\/start_for_pooling2d_cl_array_array_ap_fixed_16u_config9_U0.v",
-      "impl\/verilog\/start_for_relu_array_array_ap_fixed_16u_relu_config4_U0.v",
-      "impl\/verilog\/start_for_relu_array_array_ap_fixed_16u_relu_config8_U0.v",
+      "impl\/verilog\/start_for_relu_array_array_ap_ufixed_16u_relu_config4_U0.v",
+      "impl\/verilog\/start_for_relu_array_array_ap_ufixed_16u_relu_config8_U0.v",
       "impl\/verilog\/start_for_softmax_array_array_ap_fixed_10u_softmax_configbhl.v",
       "impl\/verilog\/myproject_axi.v"
     ],
     "Misc": ["impl\/misc\/logo.png"],
     "Subcore": ["impl\/misc\/myproject_axi_ap_fpext_0_no_dsp_32_ip.tcl"],
-    "DesignXml": "\/home\/gabri-bot\/University\/Git_hub\/ALVEO-PYNQ_ML\/NN_train\/MNIST_Test\/HLS_projects\/Qkeras_pruned_CNN\/hls4ml_alveo_prj\/myproject_prj\/solution1\/.autopilot\/db\/myproject_axi.design.xml",
-    "DebugDir": "\/home\/gabri-bot\/University\/Git_hub\/ALVEO-PYNQ_ML\/NN_train\/MNIST_Test\/HLS_projects\/Qkeras_pruned_CNN\/hls4ml_alveo_prj\/myproject_prj\/solution1\/.debug",
-    "ProtoInst": ["\/home\/gabri-bot\/University\/Git_hub\/ALVEO-PYNQ_ML\/NN_train\/MNIST_Test\/HLS_projects\/Qkeras_pruned_CNN\/hls4ml_alveo_prj\/myproject_prj\/solution1\/.debug\/myproject_axi.protoinst"]
+    "DesignXml": "\/home\/gabriele\/University\/GitHub\/ALVEO-PYNQ_ML\/NN_train\/MNIST_Test\/HLS_projects\/Qkeras_pruned_CNN\/hls4ml_alveo_prj\/myproject_prj\/solution1\/.autopilot\/db\/myproject_axi.design.xml",
+    "DebugDir": "\/home\/gabriele\/University\/GitHub\/ALVEO-PYNQ_ML\/NN_train\/MNIST_Test\/HLS_projects\/Qkeras_pruned_CNN\/hls4ml_alveo_prj\/myproject_prj\/solution1\/.debug",
+    "ProtoInst": ["\/home\/gabriele\/University\/GitHub\/ALVEO-PYNQ_ML\/NN_train\/MNIST_Test\/HLS_projects\/Qkeras_pruned_CNN\/hls4ml_alveo_prj\/myproject_prj\/solution1\/.debug\/myproject_axi.protoinst"]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -375,27 +375,27 @@
                 }]
             },
             {
-              "ModuleName": "relu_array_array_ap_fixed_16u_relu_config4_s",
-              "InstanceName": "relu_array_array_ap_fixed_16u_relu_config4_U0"
+              "ModuleName": "relu_array_array_ap_ufixed_16u_relu_config4_s",
+              "InstanceName": "relu_array_array_ap_ufixed_16u_relu_config4_U0"
             },
             {
-              "ModuleName": "relu_array_array_ap_fixed_16u_relu_config8_s",
-              "InstanceName": "relu_array_array_ap_fixed_16u_relu_config8_U0"
+              "ModuleName": "relu_array_array_ap_ufixed_16u_relu_config8_s",
+              "InstanceName": "relu_array_array_ap_ufixed_16u_relu_config8_U0"
             },
             {
               "ModuleName": "pooling2d_cl_array_array_ap_fixed_16u_config5_s",
               "InstanceName": "pooling2d_cl_array_array_ap_fixed_16u_config5_U0",
               "Instances": [{
-                  "ModuleName": "shift_line_buffer_array_ap_fixed_16u_config5_s",
-                  "InstanceName": "call_ret_shift_line_buffer_array_ap_fixed_16u_config5_s_fu_326"
+                  "ModuleName": "shift_line_buffer_array_ap_ufixed_16u_config5_s",
+                  "InstanceName": "call_ret_shift_line_buffer_array_ap_ufixed_16u_config5_s_fu_328"
                 }]
             },
             {
               "ModuleName": "pooling2d_cl_array_array_ap_fixed_16u_config9_s",
               "InstanceName": "pooling2d_cl_array_array_ap_fixed_16u_config9_U0",
               "Instances": [{
-                  "ModuleName": "shift_line_buffer_array_ap_fixed_16u_config9_s",
-                  "InstanceName": "call_ret_shift_line_buffer_array_ap_fixed_16u_config9_s_fu_326"
+                  "ModuleName": "shift_line_buffer_array_ap_ufixed_16u_config9_s",
+                  "InstanceName": "call_ret_shift_line_buffer_array_ap_ufixed_16u_config9_s_fu_328"
                 }]
             },
             {
@@ -463,14 +463,14 @@
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
-      "relu_array_array_ap_fixed_16u_relu_config4_s": {
+      "relu_array_array_ap_ufixed_16u_relu_config4_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
-      "shift_line_buffer_array_ap_fixed_16u_config5_s": {
+      "shift_line_buffer_array_ap_ufixed_16u_config5_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "0",
@@ -505,14 +505,14 @@
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
-      "relu_array_array_ap_fixed_16u_relu_config8_s": {
+      "relu_array_array_ap_ufixed_16u_relu_config8_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
-      "shift_line_buffer_array_ap_fixed_16u_config9_s": {
+      "shift_line_buffer_array_ap_ufixed_16u_config9_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "0",
@@ -700,7 +700,7 @@
           "URAM": "0"
         }
       },
-      "relu_array_array_ap_fixed_16u_relu_config4_s": {
+      "relu_array_array_ap_ufixed_16u_relu_config4_s": {
         "Latency": {
           "LatencyBest": "679",
           "LatencyAvg": "679",
@@ -712,7 +712,7 @@
         "Timing": {
           "Target": "2.00",
           "Uncertainty": "0.25",
-          "Estimate": "1.531"
+          "Estimate": "1.725"
         },
         "Loops": [{
             "Name": "ReLUActLoop",
@@ -722,14 +722,14 @@
             "PipelineDepth": "3"
           }],
         "Area": {
-          "FF": "340",
-          "LUT": "1440",
+          "FF": "324",
+          "LUT": "1328",
           "BRAM_18K": "0",
           "DSP48E": "0",
           "URAM": "0"
         }
       },
-      "shift_line_buffer_array_ap_fixed_16u_config5_s": {
+      "shift_line_buffer_array_ap_ufixed_16u_config5_s": {
         "Latency": {
           "LatencyBest": "0",
           "LatencyAvg": "0",
@@ -774,8 +774,8 @@
           }],
         "Area": {
           "BRAM_18K": "0",
-          "FF": "1545",
-          "LUT": "1925",
+          "FF": "1640",
+          "LUT": "1943",
           "DSP48E": "0",
           "URAM": "0"
         }
@@ -860,7 +860,7 @@
           "URAM": "0"
         }
       },
-      "relu_array_array_ap_fixed_16u_relu_config8_s": {
+      "relu_array_array_ap_ufixed_16u_relu_config8_s": {
         "Latency": {
           "LatencyBest": "124",
           "LatencyAvg": "124",
@@ -872,7 +872,7 @@
         "Timing": {
           "Target": "2.00",
           "Uncertainty": "0.25",
-          "Estimate": "1.531"
+          "Estimate": "1.725"
         },
         "Loops": [{
             "Name": "ReLUActLoop",
@@ -882,14 +882,14 @@
             "PipelineDepth": "3"
           }],
         "Area": {
-          "FF": "337",
-          "LUT": "1436",
+          "FF": "321",
+          "LUT": "1324",
           "BRAM_18K": "0",
           "DSP48E": "0",
           "URAM": "0"
         }
       },
-      "shift_line_buffer_array_ap_fixed_16u_config9_s": {
+      "shift_line_buffer_array_ap_ufixed_16u_config9_s": {
         "Latency": {
           "LatencyBest": "0",
           "LatencyAvg": "0",
@@ -934,8 +934,8 @@
           }],
         "Area": {
           "BRAM_18K": "0",
-          "FF": "1542",
-          "LUT": "1921",
+          "FF": "1637",
+          "LUT": "1939",
           "DSP48E": "0",
           "URAM": "0"
         }
@@ -1083,8 +1083,8 @@
         "Area": {
           "BRAM_18K": "364",
           "DSP48E": "10",
-          "FF": "67565",
-          "LUT": "126514",
+          "FF": "67723",
+          "LUT": "126326",
           "URAM": "0"
         }
       },
@@ -1156,8 +1156,8 @@
         "Area": {
           "BRAM_18K": "365",
           "DSP48E": "10",
-          "FF": "68634",
-          "LUT": "129199",
+          "FF": "68792",
+          "LUT": "129011",
           "URAM": "0"
         }
       }
@@ -1173,7 +1173,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2021-12-07 00:27:01 CET",
+    "Time": "2022-02-15 18:35:50 CET",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.1"
   }

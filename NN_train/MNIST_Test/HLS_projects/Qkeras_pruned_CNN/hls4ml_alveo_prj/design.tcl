@@ -1,59 +1,109 @@
-#@todo: try to remove startgroup and endgroup and see if it work
 set tcldir [file dirname [info script]]
 source [file join $tcldir project.tcl]
 
-create_project project_1 ${myproject}_vivado_accelerator -part xc7z020clg400-1 -force
+create_project project_1 ${myproject}_vivado_accelerator -part xcu50-fsvh2104-2-e -force
 
-set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
 set_property  ip_repo_paths  ${myproject}_prj [current_project]
 update_ip_catalog
 
-create_bd_design "design_1"
 
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
-endgroup
+add_files -scan_for_includes {src/krnl_rtl_int.sv src/krnl_rtl_axi_read_master.sv src/krnl_rtl_counter.sv src/myproject_kernel.v src/krnl_rtl_axi_write_master.sv src/krnl_rtl_control_s_axi.v}
+import_files {src/krnl_rtl_int.sv src/krnl_rtl_axi_read_master.sv src/krnl_rtl_counter.sv src/myproject_kernel.v src/krnl_rtl_axi_write_master.sv src/krnl_rtl_control_s_axi.v}
 
-apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
 
-startgroup
-set_property -dict [list CONFIG.PCW_USE_S_AXI_HP0 {1}] [get_bd_cells processing_system7_0]
-endgroup
 
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
-endgroup
+create_ip -vlnv xilinx.com:hls:${myproject}_axi:1.0 -module_name ${myproject}_axi_0
 
-set_property -dict [list CONFIG.c_s_axis_s2mm_tdata_width.VALUE_SRC USER] [get_bd_cells axi_dma_0]
-set_property -dict [list CONFIG.c_include_sg {0} CONFIG.c_sg_length_width {26} CONFIG.c_sg_include_stscntrl_strm {0} CONFIG.c_m_axi_mm2s_data_width ${bit_width_hls_input} CONFIG.c_m_axis_mm2s_tdata_width ${bit_width_hls_input} CONFIG.c_mm2s_burst_size {256} CONFIG.c_s_axis_s2mm_tdata_width ${bit_width_hls_output} CONFIG.c_s_axis_s2mm_data_width ${bit_width_hls_output} CONFIG.c_s2mm_burst_size {256}] [get_bd_cells axi_dma_0]
 
-startgroup
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+ipx::package_project -root_dir hls4ml_IP -vendor fastmachinelearning.org -library hls4ml -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core hls4ml_IP/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory hls4ml_IP hls4ml_IP/component.xml
+ipx::associate_bus_interfaces -busif m_axi_gmem -clock ap_clk [ipx::current_core]
+ipx::associate_bus_interfaces -busif s_axi_control -clock ap_clk [ipx::current_core]
+ipx::add_bus_parameter FREQ_HZ [ipx::get_bus_interfaces ap_clk -of_objects [ipx::current_core]]
 
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/axi_dma_0/M_AXI_MM2S} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
-endgroup
 
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/axi_dma_0/M_AXI_S2MM} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins axi_dma_0/M_AXI_S2MM]
 
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:hls:${myproject}_axi:1.0 ${myproject}_axi_0
-endgroup
+set_property value_resolve_type user [ipx::get_bus_parameters -of [::ipx::get_bus_interfaces -of [ipx::current_core] *clk*] "FREQ_HZ"]
 
-connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins ${myproject}_axi_0/in_r]
-connect_bd_intf_net [get_bd_intf_pins ${myproject}_axi_0/out_r] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
 
-apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins ${myproject}_axi_0/ap_clk]
 
-group_bd_cells hier_0 [get_bd_cells axi_dma_0] [get_bd_cells ${myproject}_axi_0]
+ipx::add_register CTRL [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]
+ipx::add_register GIER [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]
+ipx::add_register IP_IER [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]
+ipx::add_register IP_ISR [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]
+ipx::add_register fifo_in [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]
+ipx::add_register fifo_out [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]
+ipx::add_register length_r_in [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]
+ipx::add_register length_r_out [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]
 
-make_wrapper -files [get_files ./${myproject}_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
 
-add_files -norecurse ./${myproject}_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+# Commands to set the descrtiprion, address offset and size
 
-reset_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run -timeout 360 impl_1
+# CTRL register properties
+set_property Description "Control Signals" [ipx::get_registers CTRL -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+set_property Address_Offset 0x000 [ipx::get_registers CTRL -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+set_property Size 32 [ipx::get_registers CTRL -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
 
-open_run impl_1
-report_utilization -file util.rpt -hierarchical -hierarchical_percentages
+# GIER register properties
+set_property Description "Global Interrupt Enable Register" [ipx::get_registers GIER -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+set_property Address_Offset 0x004 [ipx::get_registers GIER -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+set_property Size 32 [ipx::get_registers GIER -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+
+# IP_IER register properties
+set_property Description "IP Interrupt Enable Register" [ipx::get_registers IP_IER -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+set_property Address_Offset 0x008 [ipx::get_registers IP_IER -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+set_property Size 32 [ipx::get_registers IP_IER -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+
+# IP_ISR register properties
+set_property Description "IP Interrupt Status Register" [ipx::get_registers IP_ISR -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+set_property Address_Offset 0x00C [ipx::get_registers IP_ISR -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+set_property Size 32 [ipx::get_registers IP_ISR -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+
+# fifo_in register properties
+set_property Description "fifo_in pointer argument" [ipx::get_registers fifo_in -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+set_property Address_Offset 0x010 [ipx::get_registers fifo_in -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+set_property Size 64 [ipx::get_registers fifo_in -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+
+# fifo_out register properties
+set_property Description "fifo_out pointer argument" [ipx::get_registers fifo_out -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+set_property Address_Offset 0x01C [ipx::get_registers fifo_out -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+set_property Size 64 [ipx::get_registers fifo_out -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+
+# length_r_in register properties
+set_property Description "length_r_in value" [ipx::get_registers length_r_in -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+set_property Address_Offset 0x028 [ipx::get_registers length_r_in -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+set_property Size 32 [ipx::get_registers length_r_in -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+
+# length_r_out register properties
+set_property Description "length_r_out value" [ipx::get_registers length_r_out -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+set_property Address_Offset 0x030 [ipx::get_registers length_r_out -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+set_property Size 32 [ipx::get_registers length_r_out -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+
+ipx::add_register_parameter ASSOCIATED_BUSIF [ipx::get_registers fifo_in -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+ipx::add_register_parameter ASSOCIATED_BUSIF [ipx::get_registers fifo_out -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]
+
+# Commands to set m_axi_gmem as value in the register ASSOCIATED_BUSIF parameters
+set_property Value m_axi_gmem [ipx::get_register_parameters ASSOCIATED_BUSIF -of_objects [ipx::get_registers fifo_in -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]]
+set_property Value m_axi_gmem [ipx::get_register_parameters ASSOCIATED_BUSIF -of_objects [ipx::get_registers fifo_out -of_objects [ipx::get_address_blocks reg0 -of_objects [ipx::get_memory_maps s_axi_control -of_objects [ipx::current_core]]]]]
+
+set core [ipx::current_core]
+
+
+set_property xpm_libraries {XPM_CDC XPM_MEMORY XPM_FIFO} $core
+set_property sdx_kernel true $core
+set_property sdx_kernel_type rtl $core
+
+
+
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core hls4ml_IP/fastmachinelearning.org_hls4ml_krnl_rtl_1.0.zip [ipx::current_core]
+current_project project_1
+
+
+package_xo  -force -xo_path xo_files/${myproject}_kernel.xo -kernel_name krnl_rtl -ip_directory hls4ml_IP

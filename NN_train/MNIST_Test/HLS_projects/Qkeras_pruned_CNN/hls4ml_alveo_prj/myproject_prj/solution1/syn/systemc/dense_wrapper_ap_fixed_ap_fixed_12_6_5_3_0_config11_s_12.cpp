@@ -3582,7 +3582,7 @@ void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_sext_ln703_12
 }
 
 void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_sext_ln703_1243_fu_81634_p1() {
-    sext_ln703_1243_fu_81634_p1 = esl_sext<10,4>(tmp_1_fu_81626_p3.read());
+    sext_ln703_1243_fu_81634_p1 = esl_sext<10,4>(tmp_2007_fu_81626_p3.read());
 }
 
 void dense_wrapper_ap_fixed_ap_fixed_12_6_5_3_0_config11_s::thread_sext_ln703_1244_fu_97914_p1() {
