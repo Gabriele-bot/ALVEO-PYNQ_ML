@@ -66,13 +66,21 @@ The files are organized as follows
 ## Results
 
 The tests are performed on a Alveo u50 board.  
+ 
+### Resources [MNIST classification]
+
+|Model                |BRAM[Blocks]|DSP|FF[k]|LUT[k]|
+|---------------------|------------|---|-----|------|
+|Platform             |178         |4  |123.4|100.2 |
+|Quntized+Pruned CNN  |42          |10 |28.7 |22.6  |
+|Quntized+Pruned Dense|92          |10 |54.4 |38.7  |
 
 ### Results
   
 |MODEL              |Accuracy [\%]|Rate[Images\s]|t<sub>img</sub>[&#956;s]|
 |-------------------|-------------|--------------|------------------------|
-|CNN                |97.51        |47100         |21                      |
-|DNN                |91.42        |113000        |9                       |
+|CNN                |97.11        |52600         |19                      |
+|DNN                |91.31        |125000        |8                       |
   
 ### Comparisons
   
@@ -83,5 +91,5 @@ Here are presented the prediction times for different devices (10000 samples dat
 |CPU[3700X]         |95                                    |24                                    |
 |GPU[RX 580]        |30                                    |22                                    |
 |ZYNQ[PYNQ_Z2]      |87                                    |85                                    |
-|ALVEO[u50]         |21                                    |9                                     |
+|ALVEO[u50]         |19                                    |8                                     |
 
