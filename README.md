@@ -32,12 +32,13 @@ pip install pynq
 ## Install hls4ml
 It is used a modified version of **`hls4ml`** (v0.6.0), to install it run the following command:  
 ```
-pip install hls4ml[profiling]
+pip install git+https://github.com/Gabriele-bot/hls4ml.git@Alveo_backend#egg=hls4ml[profiling]
 ```
-This the latest version of hls4ml, with the Alveo accelerator board. 
+That's the latest version of hls4ml with a small addition to produce the .xclbin file required for the Alveo accelerator board. 
 
-## Neural network IP
-Following the notebook the IP can be generated (with axi stream interface).  
+## Neural network IP and binary generation
+Following the notebook the IP can be generated (with axi stream interface) and the .xclbin file can be generated here (this should take ~1h).  
+Or you can fallow the steps below to produce and customize your own .xclbin file (e.g. kernel frequency, target memory bank, registers property, ...).
 
 ## Kernel packaging
 Now the kernel IP mus be packaged, to do so use the files provided in **`Alveo_files/src`** and substitute the NN_inference with your custom block.  
