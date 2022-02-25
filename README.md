@@ -15,7 +15,7 @@ cd Drivers/XRT/
 sudo -H apt install ./xrt_202120.2.12.427_20.04-amd64-xrt.deb  
 cd ../..
 ```
-Than the platform files must be installed.  
+Then the platform files must be installed.  
 ```
 cd Drivers/Platform/Xilinx_u50-gen3x16-xdma-201920_3-3-all.deb  
 sudo apt install ./*.deb  
@@ -41,7 +41,7 @@ Following the notebook the IP can be generated (with axi stream interface) and t
 Or you can fallow the steps below to produce and customize your own .xclbin file (e.g. kernel frequency, target memory bank, registers property, ...).
 
 ## Kernel packaging
-Now the kernel IP mus be packaged, to do so use the files provided in **`Alveo_files/src`** and substitute the NN_inference with your custom block.  
+If you chose to pakcage the IP following the RTL kernel workflow use the files provided in **`Alveo_files/src`** and substitute the NN_inference with your custom block.  
 Follow the instructions given in the [Vitis Application Acceleration Developement Flow Tutorial](https://xilinx.github.io/Vitis-Tutorials/2020-1/docs/getting-started-rtl-kernels/package_ip.html) to produce a **`file.xo`** (Xilinx object).  
 
 ### Link the packaged IP to FPGA resources
@@ -63,11 +63,19 @@ The files are organized as follows
 - **`PYNQ`** : notebook with the kernel tests
 
 
-## Results
+## General results
 
 The tests are performed on a Alveo u50 board.  
  
-### Resources [MNIST classification]
+### Vivado HLS resource utilization [MNIST classification]
+
+|Model                |BRAM[Blocks]|DSP|FF[k]|LUT[k]|
+|---------------------|------------|---|-----|------|
+|Platform             |/           |/  |/    |/     |
+|Quntized+Pruned CNN  |365         |10 |68.8 |129.0 |
+|Quntized+Pruned Dense|418         |10 |51.3 |188.4 |
+ 
+### Post-implementation resource utilization [MNIST classification]
 
 |Model                |BRAM[Blocks]|DSP|FF[k]|LUT[k]|
 |---------------------|------------|---|-----|------|
@@ -75,7 +83,7 @@ The tests are performed on a Alveo u50 board.
 |Quntized+Pruned CNN  |42          |10 |28.7 |22.6  |
 |Quntized+Pruned Dense|92          |10 |54.4 |38.7  |
 
-### Results
+### NN performance
   
 |MODEL              |Accuracy [\%]|Rate[Images\s]|t<sub>img</sub>[&#956;s]|
 |-------------------|-------------|--------------|------------------------|
