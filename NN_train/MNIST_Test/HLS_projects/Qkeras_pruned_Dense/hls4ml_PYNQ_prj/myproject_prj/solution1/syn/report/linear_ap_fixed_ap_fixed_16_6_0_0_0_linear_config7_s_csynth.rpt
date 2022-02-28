@@ -1,0 +1,168 @@
+
+
+================================================================
+== Vivado HLS Report for 'linear_ap_fixed_ap_fixed_16_6_0_0_0_linear_config7_s'
+================================================================
+* Date:           Wed Feb 16 12:11:31 2022
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: virtexuplus
+* Target device:  xcu50-fsvh2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 2.00 ns |   0 ns   |   0.25 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+--------+-----+
+|         Name        | BRAM_18K| DSP48E|    FF   |   LUT  | URAM|
++---------------------+---------+-------+---------+--------+-----+
+|DSP                  |        -|      -|        -|       -|    -|
+|Expression           |        -|      -|        0|       2|    -|
+|FIFO                 |        -|      -|        -|       -|    -|
+|Instance             |        -|      -|        -|       -|    -|
+|Memory               |        -|      -|        -|       -|    -|
+|Multiplexer          |        -|      -|        -|      99|    -|
+|Register             |        -|      -|      102|       -|    -|
++---------------------+---------+-------+---------+--------+-----+
+|Total                |        0|      0|      102|     101|    0|
++---------------------+---------+-------+---------+--------+-----+
+|Available SLR        |     1344|   2976|   871680|  435840|  320|
++---------------------+---------+-------+---------+--------+-----+
+|Utilization SLR (%)  |        0|      0|    ~0   |   ~0   |    0|
++---------------------+---------+-------+---------+--------+-----+
+|Available            |     2688|   5952|  1743360|  871680|  640|
++---------------------+---------+-------+---------+--------+-----+
+|Utilization (%)      |        0|      0|    ~0   |   ~0   |    0|
++---------------------+---------+-------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |ap_block_state1  |    or    |      0|  0|   2|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |Total            |          |      0|  0|   2|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------+----+-----------+-----+-----------+
+    |     Name    | LUT| Input Size| Bits| Total Bits|
+    +-------------+----+-----------+-----+-----------+
+    |ap_done      |   9|          2|    1|          2|
+    |ap_return_0  |   9|          2|   10|         20|
+    |ap_return_1  |   9|          2|   10|         20|
+    |ap_return_2  |   9|          2|   10|         20|
+    |ap_return_3  |   9|          2|   10|         20|
+    |ap_return_4  |   9|          2|   10|         20|
+    |ap_return_5  |   9|          2|   10|         20|
+    |ap_return_6  |   9|          2|   10|         20|
+    |ap_return_7  |   9|          2|   10|         20|
+    |ap_return_8  |   9|          2|   10|         20|
+    |ap_return_9  |   9|          2|   10|         20|
+    +-------------+----+-----------+-----+-----------+
+    |Total        |  99|         22|  101|        202|
+    +-------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------+----+----+-----+-----------+
+    |       Name       | FF | LUT| Bits| Const Bits|
+    +------------------+----+----+-----+-----------+
+    |ap_CS_fsm         |   1|   0|    1|          0|
+    |ap_done_reg       |   1|   0|    1|          0|
+    |ap_return_0_preg  |  10|   0|   16|          6|
+    |ap_return_1_preg  |  10|   0|   16|          6|
+    |ap_return_2_preg  |  10|   0|   16|          6|
+    |ap_return_3_preg  |  10|   0|   16|          6|
+    |ap_return_4_preg  |  10|   0|   16|          6|
+    |ap_return_5_preg  |  10|   0|   16|          6|
+    |ap_return_6_preg  |  10|   0|   16|          6|
+    |ap_return_7_preg  |  10|   0|   16|          6|
+    |ap_return_8_preg  |  10|   0|   16|          6|
+    |ap_return_9_preg  |  10|   0|   16|          6|
+    +------------------+----+----+-----+-----------+
+    |Total             | 102|   0|  162|         60|
+    +------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------+-----+-----+------------+------------------------------------------------------+--------------+
+|   RTL Ports   | Dir | Bits|  Protocol  |                     Source Object                    |    C Type    |
++---------------+-----+-----+------------+------------------------------------------------------+--------------+
+|ap_clk         |  in |    1| ap_ctrl_hs | linear<ap_fixed,ap_fixed<16,6,0,0,0>,linear_config7> | return value |
+|ap_rst         |  in |    1| ap_ctrl_hs | linear<ap_fixed,ap_fixed<16,6,0,0,0>,linear_config7> | return value |
+|ap_start       |  in |    1| ap_ctrl_hs | linear<ap_fixed,ap_fixed<16,6,0,0,0>,linear_config7> | return value |
+|ap_done        | out |    1| ap_ctrl_hs | linear<ap_fixed,ap_fixed<16,6,0,0,0>,linear_config7> | return value |
+|ap_continue    |  in |    1| ap_ctrl_hs | linear<ap_fixed,ap_fixed<16,6,0,0,0>,linear_config7> | return value |
+|ap_idle        | out |    1| ap_ctrl_hs | linear<ap_fixed,ap_fixed<16,6,0,0,0>,linear_config7> | return value |
+|ap_ready       | out |    1| ap_ctrl_hs | linear<ap_fixed,ap_fixed<16,6,0,0,0>,linear_config7> | return value |
+|ap_return_0    | out |   16| ap_ctrl_hs | linear<ap_fixed,ap_fixed<16,6,0,0,0>,linear_config7> | return value |
+|ap_return_1    | out |   16| ap_ctrl_hs | linear<ap_fixed,ap_fixed<16,6,0,0,0>,linear_config7> | return value |
+|ap_return_2    | out |   16| ap_ctrl_hs | linear<ap_fixed,ap_fixed<16,6,0,0,0>,linear_config7> | return value |
+|ap_return_3    | out |   16| ap_ctrl_hs | linear<ap_fixed,ap_fixed<16,6,0,0,0>,linear_config7> | return value |
+|ap_return_4    | out |   16| ap_ctrl_hs | linear<ap_fixed,ap_fixed<16,6,0,0,0>,linear_config7> | return value |
+|ap_return_5    | out |   16| ap_ctrl_hs | linear<ap_fixed,ap_fixed<16,6,0,0,0>,linear_config7> | return value |
+|ap_return_6    | out |   16| ap_ctrl_hs | linear<ap_fixed,ap_fixed<16,6,0,0,0>,linear_config7> | return value |
+|ap_return_7    | out |   16| ap_ctrl_hs | linear<ap_fixed,ap_fixed<16,6,0,0,0>,linear_config7> | return value |
+|ap_return_8    | out |   16| ap_ctrl_hs | linear<ap_fixed,ap_fixed<16,6,0,0,0>,linear_config7> | return value |
+|ap_return_9    | out |   16| ap_ctrl_hs | linear<ap_fixed,ap_fixed<16,6,0,0,0>,linear_config7> | return value |
+|data_0_V_read  |  in |    8|   ap_none  |                     data_0_V_read                    |    scalar    |
+|data_1_V_read  |  in |    8|   ap_none  |                     data_1_V_read                    |    scalar    |
+|data_2_V_read  |  in |    8|   ap_none  |                     data_2_V_read                    |    scalar    |
+|data_3_V_read  |  in |    8|   ap_none  |                     data_3_V_read                    |    scalar    |
+|data_4_V_read  |  in |    8|   ap_none  |                     data_4_V_read                    |    scalar    |
+|data_5_V_read  |  in |    8|   ap_none  |                     data_5_V_read                    |    scalar    |
+|data_6_V_read  |  in |    8|   ap_none  |                     data_6_V_read                    |    scalar    |
+|data_7_V_read  |  in |    8|   ap_none  |                     data_7_V_read                    |    scalar    |
+|data_8_V_read  |  in |    8|   ap_none  |                     data_8_V_read                    |    scalar    |
+|data_9_V_read  |  in |    8|   ap_none  |                     data_9_V_read                    |    scalar    |
++---------------+-----+-----+------------+------------------------------------------------------+--------------+
+

@@ -1,0 +1,13 @@
+Wed Feb 16 12:14:03 2022: Server was asked to start on port: '41359'
+Wed Feb 16 12:14:03 2022: Server is using token UUID: 'b0ad50ef-dfd5-48c3-a4a0-a794a0205ec5'
+Wed Feb 16 12:14:03 2022: Attempting to start server on port '41359'
+Wed Feb 16 12:14:03 2022: XRC main fifo: created main fifo '/tmp/xrcmainb0ad50ef-dfd5-48c3-a4a0-a794a0205ec5', fd read = 13
+Wed Feb 16 12:14:03 2022: Running Rule Check Server
+Wed Feb 16 12:14:03 2022: Version 1.6.1
+Wed Feb 16 12:14:04 2022: Rule Check Server: Accepted socket connection from client
+Wed Feb 16 12:14:04 2022: EXCHANGE_TOKEN received, server token: b0ad50ef-dfd5-48c3-a4a0-a794a0205ec5, passed token: b0ad50ef-dfd5-48c3-a4a0-a794a0205ec5
+Wed Feb 16 12:14:04 2022: SESSION_MGR: creating session with session uuid: '41425e85-67c6-4fbf-92a4-67822db353d0' and name 'v++_link_myproject_kernel'
+Wed Feb 16 12:14:07 2022: Rule Check Server: Accepted socket connection from client
+Wed Feb 16 12:14:28 2022: Rule Check Server: Accepted socket connection from client
+Wed Feb 16 12:31:15 2022: Rule Check Server: Accepted socket connection from client
+Wed Feb 16 13:43:52 2022: SESSION_MGR: closing session for UUID '41425e85-67c6-4fbf-92a4-67822db353d0' with name 'v++_link_myproject_kernel'

@@ -1,0 +1,294 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/reports/link
+	Log files: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/logs/link
+INFO: [v++ 60-1657] Initializing dispatch client.
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/myproject_kernel.xclbin.link_summary, at Tue Feb 15 18:36:41 2022
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Tue Feb 15 18:36:41 2022
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/reports/link/v++_link_myproject_kernel_guidance.html', at Tue Feb 15 18:36:42 2022
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/hw.xsa'
+INFO: [v++ 60-629] Linking for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u50_gen3x16_xdma_201920_3
+INFO: [v++ 60-1332] Run 'run_link' status: Not started
+INFO: [v++ 60-1443] [18:36:44] Run run_link: Step system_link: Started
+INFO: [v++ 60-1453] Command Line: system_link --xo /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xo_files/myproject_kernel.xo --xpfm /opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm --target hw --output_dir /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int --temp_dir /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/sys_link
+INFO: [v++ 60-1454] Run Directory: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/run_link
+INFO: [SYSTEM_LINK 60-1316] Initiating connection to rulecheck server, at Tue Feb 15 18:36:46 2022
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xo_files/myproject_kernel.xo
+INFO: [SYSTEM_LINK 82-53] Creating IP database /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-38] [18:36:46] build_xd_ip_db started: /tools/Xilinx/Vitis/2020.1/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/sys_link/hw.hpfm -clkid 0 -ip /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/sys_link/iprepo/fastmachinelearning_org_hls4ml_krnl_rtl_1_0,krnl_rtl -o /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [18:36:49] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1431.059 ; gain = 0.000 ; free physical = 5544 ; free virtual = 14561
+INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
+INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [18:36:49] cfgen started: /tools/Xilinx/Vitis/2020.1/bin/cfgen -dmclkid 0 -r /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [CFGEN 83-0] Kernel Specs: 
+INFO: [CFGEN 83-0]   kernel: krnl_rtl, num: 1  {krnl_rtl_1}
+INFO: [CFGEN 83-2226] Inferring mapping for argument krnl_rtl_1.fifo_in to HBM[0]
+INFO: [CFGEN 83-2226] Inferring mapping for argument krnl_rtl_1.fifo_out to HBM[0]
+INFO: [SYSTEM_LINK 82-37] [18:36:51] cfgen finished successfully
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1431.059 ; gain = 0.000 ; free physical = 5521 ; free virtual = 14560
+INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
+INFO: [SYSTEM_LINK 82-38] [18:36:51] cf2bd started: /tools/Xilinx/Vitis/2020.1/bin/cf2bd  --linux --trace_buffer 1024 --input_file /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/sys_link/_sysl/.xsd --temp_dir /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/sys_link --output_dir /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int --target_bd ulp.bd
+INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml -r /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
+INFO: [CF2BD 82-28] cf2xd finished successfully
+INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -bd ulp.bd -dn dr -dp /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/sys_link/_sysl/.xsd
+INFO: [CF2BD 82-28] cf_xsd finished successfully
+INFO: [SYSTEM_LINK 82-37] [18:36:53] cf2bd finished successfully
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1431.059 ; gain = 0.000 ; free physical = 5532 ; free virtual = 14557
+INFO: [v++ 60-1441] [18:36:53] Run run_link: Step system_link: Completed
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1340.246 ; gain = 0.000 ; free physical = 5563 ; free virtual = 14584
+INFO: [v++ 60-1443] [18:36:53] Run run_link: Step cf2sw: Started
+INFO: [v++ 60-1453] Command Line: cf2sw -sdsl /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/sdsl.dat -rtd /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/cf2sw.rtd -xclbin /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/xclbin_orig.xml -o /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/xclbin_orig.1.xml
+INFO: [v++ 60-1454] Run Directory: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/run_link
+INFO: [v++ 60-1441] [18:36:53] Run run_link: Step cf2sw: Completed
+Time (s): cpu = 00:00:00.67 ; elapsed = 00:00:00.72 . Memory (MB): peak = 1340.246 ; gain = 0.000 ; free physical = 5563 ; free virtual = 14585
+INFO: [v++ 60-1443] [18:36:53] Run run_link: Step rtd2_system_diagram: Started
+INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram
+INFO: [v++ 60-1454] Run Directory: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/run_link
+INFO: [v++ 60-1441] [18:36:54] Run run_link: Step rtd2_system_diagram: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.93 . Memory (MB): peak = 1340.246 ; gain = 0.000 ; free physical = 5188 ; free virtual = 14210
+INFO: [v++ 60-1443] [18:36:54] Run run_link: Step vpl: Started
+INFO: [v++ 60-1453] Command Line: vpl -t hw -f xilinx_u50_gen3x16_xdma_201920_3 --remote_ip_cache /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/.ipcache --user_ip_repo_paths /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/myproject_prj/solution1/impl/ip --output_dir /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int --log_dir /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/logs/link --report_dir /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/reports/link --config /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/vplConfig.ini -k /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link --no-info --iprepo /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/xo/ip_repo/fastmachinelearning_org_hls4ml_krnl_rtl_1_0 --messageDb /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/run_link/vpl.pb /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/dr.bd.tcl
+INFO: [v++ 60-1454] Run Directory: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/run_link
+
+****** vpl v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+INFO: [VPL 60-839] Read in kernel information from file '/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/kernel_info.dat'.
+INFO: [VPL 60-423]   Target device: xilinx_u50_gen3x16_xdma_201920_3
+INFO: [VPL 60-1032] Extracting hardware platform to /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/vivado/vpl/.local/hw_platform
+[18:37:08] Run vpl: Step create_project: Started
+Creating Vivado project.
+[18:37:10] Run vpl: Step create_project: Completed
+[18:37:10] Run vpl: Step create_bd: Started
+[18:38:18] Run vpl: Step create_bd: Completed
+[18:38:18] Run vpl: Step update_bd: Started
+[18:38:18] Run vpl: Step update_bd: Completed
+[18:38:18] Run vpl: Step generate_target: Started
+[18:38:52] Run vpl: Step generate_target: Completed
+[18:38:52] Run vpl: Step config_hw_runs: Started
+[18:38:53] Run vpl: Step config_hw_runs: Completed
+[18:38:53] Run vpl: Step synth: Started
+[18:39:24] Block-level synthesis in progress, 0 of 6 jobs complete, 4 jobs running.
+[18:39:55] Block-level synthesis in progress, 0 of 6 jobs complete, 4 jobs running.
+[18:40:25] Block-level synthesis in progress, 0 of 6 jobs complete, 4 jobs running.
+[18:40:55] Block-level synthesis in progress, 0 of 6 jobs complete, 4 jobs running.
+[18:41:25] Block-level synthesis in progress, 3 of 6 jobs complete, 1 job running.
+[18:41:56] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:42:26] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:42:56] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:43:26] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:43:56] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:44:26] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:44:56] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:45:26] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:45:56] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:46:26] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:46:57] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:47:27] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:47:57] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:48:27] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:48:57] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:49:27] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:49:57] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:50:27] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:50:57] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:51:27] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:51:57] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:52:27] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:52:58] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:53:28] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[18:53:58] Block-level synthesis in progress, 6 of 6 jobs complete, 0 jobs running.
+[18:54:28] Top-level synthesis in progress.
+[18:54:58] Top-level synthesis in progress.
+[18:55:28] Top-level synthesis in progress.
+[18:55:34] Run vpl: Step synth: Completed
+[18:55:34] Run vpl: Step impl: Started
+[18:59:36] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 00h 22m 39s 
+
+[18:59:36] Starting logic optimization..
+[19:00:06] Phase 1 Retarget
+[19:00:36] Phase 2 Constant propagation
+[19:00:36] Phase 3 Sweep
+[19:01:06] Phase 4 BUFG optimization
+[19:01:06] Phase 5 Shift Register Optimization
+[19:01:06] Phase 6 Post Processing Netlist
+[19:01:37] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 02m 00s 
+
+[19:01:37] Starting logic placement..
+[19:02:07] Phase 1 Placer Initialization
+[19:02:07] Phase 1.1 Placer Initialization Netlist Sorting
+[19:03:37] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+[19:04:37] Phase 1.3 Build Placer Netlist Model
+[19:05:38] Phase 1.4 Constrain Clocks/Macros
+[19:05:38] Phase 2 Global Placement
+[19:05:38] Phase 2.1 Floorplanning
+[19:06:08] Phase 2.1.1 Partition Driven Placement
+[19:06:08] Phase 2.1.1.1 PBP: Partition Driven Placement
+[19:06:08] Phase 2.1.1.2 PBP: Clock Region Placement
+[19:06:38] Phase 2.1.1.3 PBP: Compute Congestion
+[19:06:38] Phase 2.1.1.4 PBP: UpdateTiming
+[19:06:38] Phase 2.1.1.5 PBP: Add part constraints
+[19:07:09] Phase 2.2 Global Placement Core
+[19:11:11] Phase 2.2.1 Physical Synthesis In Placer
+[19:12:11] Phase 3 Detail Placement
+[19:12:11] Phase 3.1 Commit Multi Column Macros
+[19:12:11] Phase 3.2 Commit Most Macros & LUTRAMs
+[19:12:42] Phase 3.3 Area Swap Optimization
+[19:12:42] Phase 3.4 Pipeline Register Optimization
+[19:12:42] Phase 3.5 IO Cut Optimizer
+[19:12:42] Phase 3.6 Fast Optimization
+[19:13:12] Phase 3.7 Small Shape DP
+[19:13:12] Phase 3.7.1 Small Shape Clustering
+[19:13:12] Phase 3.7.2 Flow Legalize Slice Clusters
+[19:13:12] Phase 3.7.3 Slice Area Swap
+[19:13:42] Phase 3.8 Place Remaining
+[19:13:42] Phase 3.9 Re-assign LUT pins
+[19:14:12] Phase 3.10 Pipeline Register Optimization
+[19:14:12] Phase 3.11 Fast Optimization
+[19:14:43] Phase 4 Post Placement Optimization and Clean-Up
+[19:14:43] Phase 4.1 Post Commit Optimization
+[19:15:13] Phase 4.1.1 Post Placement Optimization
+[19:15:13] Phase 4.1.1.1 BUFG Insertion
+[19:15:13] Phase 1 Physical Synthesis Initialization
+[19:15:43] Phase 4.1.1.2 BUFG Replication
+[19:15:43] Phase 4.1.1.3 Replication
+[19:16:13] Phase 4.2 Post Placement Cleanup
+[19:16:44] Phase 4.3 Placer Reporting
+[19:16:44] Phase 4.4 Final Placement Cleanup
+[19:17:44] Finished 4th of 6 tasks (FPGA logic placement). Elapsed time: 00h 16m 07s 
+
+[19:17:44] Starting logic routing..
+[19:18:15] Phase 1 Build RT Design
+[19:22:16] Phase 2 Router Initialization
+[19:22:16] Phase 2.1 Create Timer
+[19:22:16] Phase 2.2 Fix Topology Constraints
+[19:22:47] Phase 2.3 Pre Route Cleanup
+[19:22:47] Phase 2.4 Global Clock Net Routing
+[19:22:47] Phase 2.5 Update Timing
+[19:24:18] Phase 2.6 Update Timing for Bus Skew
+[19:24:18] Phase 2.6.1 Update Timing
+[19:24:48] Phase 3 Initial Routing
+[19:25:18] Phase 4 Rip-up And Reroute
+[19:25:18] Phase 4.1 Global Iteration 0
+[19:26:49] Phase 4.2 Global Iteration 1
+[19:27:49] Phase 4.3 Global Iteration 2
+[19:27:49] Phase 5 Delay and Skew Optimization
+[19:27:49] Phase 5.1 Delay CleanUp
+[19:27:49] Phase 5.1.1 Update Timing
+[19:28:20] Phase 5.2 Clock Skew Optimization
+[19:28:50] Phase 6 Post Hold Fix
+[19:28:50] Phase 6.1 Hold Fix Iter
+[19:28:50] Phase 6.1.1 Update Timing
+[19:29:20] Phase 7 Leaf Clock Prog Delay Opt
+[19:29:50] Phase 8 Route finalize
+[19:29:50] Phase 9 Verifying routed nets
+[19:29:50] Phase 10 Depositing Routes
+[19:29:50] Phase 11 Post Router Timing
+[19:29:50] Finished 5th of 6 tasks (FPGA routing). Elapsed time: 00h 12m 05s 
+
+[19:29:50] Starting bitstream generation..
+[19:35:23] Creating bitmap...
+[19:39:55] Writing bitstream ./level0_i_ulp_my_rm_partial.bit...
+[19:39:55] Finished 6th of 6 tasks (FPGA bitstream generation). Elapsed time: 00h 10m 04s 
+[19:40:03] Run vpl: Step impl: Completed
+[19:40:04] Run vpl: FINISHED. Run Status: impl Complete!
+INFO: [v++ 60-1441] [19:40:04] Run run_link: Step vpl: Completed
+Time (s): cpu = 00:00:25 ; elapsed = 01:03:10 . Memory (MB): peak = 1340.246 ; gain = 0.000 ; free physical = 9379 ; free virtual = 12059
+INFO: [v++ 60-1443] [19:40:04] Run run_link: Step rtdgen: Started
+INFO: [v++ 60-1453] Command Line: rtdgen
+INFO: [v++ 60-1454] Run Directory: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/run_link
+INFO: [v++ 60-991] clock name 'clk_kernel2_in' (clock ID '1') is being mapped to clock name 'KERNEL_CLK' in the xclbin
+INFO: [v++ 60-991] clock name 'clk_kernel_in' (clock ID '0') is being mapped to clock name 'DATA_CLK' in the xclbin
+INFO: [v++ 60-991] clock name 'hbm_aclk' (clock ID '') is being mapped to clock name 'hbm_aclk' in the xclbin
+INFO: [v++ 60-1230] The compiler selected the following frequencies for the runtime controllable kernel clock(s) and scalable system clock(s): System (SYSTEM) clock: hbm_aclk = 450, Kernel (KERNEL) clock: clk_kernel2_in = 500, Kernel (DATA) clock: clk_kernel_in = 300
+INFO: [v++ 60-1453] Command Line: cf2sw -a /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/address_map.xml -sdsl /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/sdsl.dat -xclbin /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/xclbin_orig.xml -rtd /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/myproject_kernel.rtd -o /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/myproject_kernel.xml
+INFO: [v++ 60-1652] Cf2sw returned exit code: 0
+INFO: [v++ 60-2311] HPISystemDiagram::writeSystemDiagramAfterRunningVivado, rtdInputFilePath: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/myproject_kernel.rtd
+INFO: [v++ 60-2312] HPISystemDiagram::writeSystemDiagramAfterRunningVivado, systemDiagramOutputFilePath: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/systemDiagramModelSlrBaseAddress.json
+INFO: [v++ 60-1618] Launching 
+INFO: [v++ 60-1441] [19:40:05] Run run_link: Step rtdgen: Completed
+Time (s): cpu = 00:00:00.69 ; elapsed = 00:00:00.75 . Memory (MB): peak = 1340.246 ; gain = 0.000 ; free physical = 9372 ; free virtual = 12058
+INFO: [v++ 60-1443] [19:40:05] Run run_link: Step xclbinutil: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --add-section BITSTREAM:RAW:/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/myproject_kernel.rtd --append-section :JSON:/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/myproject_kernel_xml.rtd --add-section BUILD_METADATA:JSON:/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/myproject_kernel_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/myproject_kernel.xml --add-section SYSTEM_METADATA:RAW:/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u50_gen3x16_xdma_201920_3 --output /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/myproject_kernel.xclbin
+INFO: [v++ 60-1454] Run Directory: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/run_link
+XRT Build Version: 2.6.0 (Vitis)
+       Build Date: 2020-05-07 15:30:09
+          Hash ID: 9d35aca9e6be09a5402ec036a5607d26e74e01cc
+Creating a default 'in-memory' xclbin image.
+
+Section: 'BITSTREAM'(0) was successfully added.
+Size   : 32439940 bytes
+Format : RAW
+File   : '/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/partial.bit'
+
+Section: 'MEM_TOPOLOGY'(6) was successfully added.
+Format : JSON
+File   : 'mem_topology'
+
+Section: 'IP_LAYOUT'(8) was successfully added.
+Format : JSON
+File   : 'ip_layout'
+
+Section: 'CONNECTIVITY'(7) was successfully added.
+Format : JSON
+File   : 'connectivity'
+
+Section: 'CLOCK_FREQ_TOPOLOGY'(11) was successfully added.
+Size   : 410 bytes
+Format : JSON
+File   : '/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/myproject_kernel_xml.rtd'
+
+Section: 'BUILD_METADATA'(14) was successfully added.
+Size   : 2180 bytes
+Format : JSON
+File   : '/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/myproject_kernel_build.rtd'
+
+Section: 'EMBEDDED_METADATA'(2) was successfully added.
+Size   : 2876 bytes
+Format : RAW
+File   : '/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/myproject_kernel.xml'
+
+Section: 'SYSTEM_METADATA'(22) was successfully added.
+Size   : 11578 bytes
+Format : RAW
+File   : '/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/int/systemDiagramModelSlrBaseAddress.json'
+
+Section: 'PARTITION_METADATA'(20) was successfully appended to.
+Format : JSON
+File   : 'partition_metadata'
+
+Section: 'IP_LAYOUT'(8) was successfully appended to.
+Format : JSON
+File   : 'ip_layout'
+Successfully wrote (32476906 bytes) to the output file: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/myproject_kernel.xclbin
+Leaving xclbinutil.
+INFO: [v++ 60-1441] [19:40:05] Run run_link: Step xclbinutil: Completed
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1340.246 ; gain = 0.000 ; free physical = 9339 ; free virtual = 12057
+INFO: [v++ 60-1443] [19:40:05] Run run_link: Step xclbinutilinfo: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --quiet --force --info /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/myproject_kernel.xclbin.info --input /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/myproject_kernel.xclbin
+INFO: [v++ 60-1454] Run Directory: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/run_link
+INFO: [v++ 60-1441] [19:40:05] Run run_link: Step xclbinutilinfo: Completed
+Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.28 . Memory (MB): peak = 1340.246 ; gain = 0.000 ; free physical = 9341 ; free virtual = 12059
+INFO: [v++ 60-1443] [19:40:05] Run run_link: Step generate_sc_driver: Started
+INFO: [v++ 60-1453] Command Line: 
+INFO: [v++ 60-1454] Run Directory: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/link/run_link
+INFO: [v++ 60-1441] [19:40:05] Run run_link: Step generate_sc_driver: Completed
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1340.246 ; gain = 0.000 ; free physical = 9341 ; free virtual = 12059
+INFO: [v++ 60-244] Generating system estimate report...
+INFO: [v++ 60-1092] Generated system estimate report: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/reports/link/system_estimate_myproject_kernel.xtxt
+INFO: [v++ 60-586] Created /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/myproject_kernel.ltx
+INFO: [v++ 60-586] Created myproject_kernel.xclbin
+INFO: [v++ 60-1307] Run completed. Additional information can be found in:
+	Guidance: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/reports/link/v++_link_myproject_kernel_guidance.html
+	Timing Report: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/reports/link/imp/hw_bb_locked_timing_summary_routed.rpt
+	Utilizations Report: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/reports/link/imp/kernel_util_routed.rpt
+	Vivado Log: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/logs/link/vivado.log
+	Steps Log File: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/_x/logs/link/link.steps.log
+
+INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+    vitis_analyzer /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_CNN/hls4ml_alveo_prj/xclbin_files/myproject_kernel.xclbin.link_summary 
+INFO: [v++ 60-791] Total elapsed time: 1h 3m 34s
+INFO: [v++ 60-1653] Closing dispatch client.

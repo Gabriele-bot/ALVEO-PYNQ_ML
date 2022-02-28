@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+
+<html>
+<!-- Styles -->
+<style>
+    #chartdiv {
+      width: 100%;
+      height: 1000px;
+    }
+</style>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>OPTraceViewer</title>
+  <script src="https://www.amcharts.com/lib/3/amcharts.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/serial.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/gantt.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/themes/light.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js">
+  </script>
+  <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all"/>
+
+  <form name="userInputForm" action="javascript:userInputFormCallback()">
+    <fieldset>
+    <legend>Graph Filters:</legend>
+    <table style="width:100%">
+      <col width="50"></col>
+      <col width="20"></col>
+      <col width="60"></col>
+      <tr>
+        <td style="text-align: center"; colspan="3"><input type="number" name="userDurationFilterSecInput" id="userDurationFilterSecInput" value="2" min="0" max="6000" step="1"> sec</td>
+        <td>Filter out run durations lower than this value</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td style="text-align: center"><input type="checkbox" name="userGroupPidSortSelected" id="userGroupPidSortSelected"></td>
+        <td>Group sort by process ID</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#0099ff"></td>
+        <td style="text-align: center"><input type="checkbox" name="userRollupSelected" id="userRollupSelected"></td>
+        <td>Show rollup entries</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#8dc49f"></td>
+        <td style="text-align: center"><input type="checkbox" name="userIndividualEntrySelected" id="userIndividualEntrySelected"></td>
+        <td>Show individual entries</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#cd82ad"></td>
+        <td style="text-align: center"><input type="checkbox" name="userCheckpointEntrySelected" id="userCheckpointEntrySelected"></td>
+        <td>Show checkpoints entry</td>
+      </tr>
+       <tr>
+        <td></td>
+        <td bgcolor="#b9783f"></td>
+        <td style="text-align: center"><input type="checkbox" name="userReportEntrySelected" id="userReportEntrySelected"></td>
+        <td>Show report entry</td>
+      </tr>
+
+    </table>
+    <br>
+    <input name="Submit" type="submit" value="Update Graph">
+    </fieldset>
+  </form> 
+
+  <div id="chartdiv">
+  </div>
+
+  <script>
+  </script>
+
+</head>
+
+
+<body>
+<table id="myDynamicTable" cellpadding="2" cellspacing="2" border="1" onclick="tester()">
+  <tr>
+  <td>Task</td>
+  <td>Start</td>
+  <td>Duration</td>
+  </tr>
+</table>
+<script>
+  // Default User Selected variables
+  var m_secondFilter = 1;
+  var m_groupPidSort = true;
+  var m_showRollup = true;
+  var m_showIndividualEntry = false;
+  var m_showCheckpointEntry = false;
+  var m_showReportEntry = false;
+
+  function SetDefaultUserValues()
+  {
+    document.getElementById("userDurationFilterSecInput").value = m_secondFilter;
+    document.getElementById("userGroupPidSortSelected").checked = m_groupPidSort;
+    document.getElementById("userRollupSelected").checked = m_showRollup;
+    document.getElementById("userIndividualEntrySelected").checked = m_showIndividualEntry;
+    document.getElementById("userCheckpointEntrySelected").checked = m_showCheckpointEntry;
+    document.getElementById("userReportEntrySelected").checked = m_showReportEntry;
+  }
+
+  window.onload = function(){
+    SetDefaultUserValues();
+  }
+
+
+
+
+  // Header
+  var header = "Keyword|pid|Entry|SrcFile|Catagory|TimeStampMSec|Action|Task|Tags|Misc";
+                         
+  // Insert Raw Data Here
+  // Note: Do not change the following signature. 
+  var csvData =    [
+      "[OPTRACE]|10061|150|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1645010978947|START|my_rm_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|10061|151|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1645010978948|START|Creating in-memory project|",
+      "[OPTRACE]|10061|152|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1645010984550|END|Creating in-memory project|",
+      "[OPTRACE]|10061|153|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1645010984550|START|Adding files|",
+      "[OPTRACE]|10061|154|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1645010989251|END|Adding files|",
+      "[OPTRACE]|10061|155|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1645010989260|START|synth_design|",
+      "[OPTRACE]|10061|156|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1645011062491|END|synth_design|",
+      "[OPTRACE]|10061|157|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1645011062516|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|10061|158|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1645011062859|END|write_checkpoint|",
+      "[OPTRACE]|10061|159|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1645011062859|START|synth reports|REPORT",
+      "[OPTRACE]|10061|160|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1645011062860|END|synth reports|",
+      "[OPTRACE]|10061|161|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.tcl|vivado_synth|1645011063310|END|my_rm_synth_1|",
+      "[OPTRACE]|10251|162|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011075521|START|Implementation|ROLLUP_1",
+      "[OPTRACE]|10251|163|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011075521|START|Phase: Init Design|ROLLUP_AUTO",
+      "[OPTRACE]|10251|164|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011075522|START|Design Initialization: pre hook|",
+      "[OPTRACE]|10251|165|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011075544|END|Design Initialization: pre hook|",
+      "[OPTRACE]|10251|166|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011075544|START|create in-memory project|",
+      "[OPTRACE]|10251|167|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011077186|END|create in-memory project|",
+      "[OPTRACE]|10251|168|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011077186|START|set parameters|",
+      "[OPTRACE]|10251|169|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011081063|END|set parameters|",
+      "[OPTRACE]|10251|170|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011081064|START|add files|",
+      "[OPTRACE]|10251|171|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011085976|START|read constraints: implementation|",
+      "[OPTRACE]|10251|172|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011085978|END|read constraints: implementation|",
+      "[OPTRACE]|10251|173|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011085978|END|add files|",
+      "[OPTRACE]|10251|174|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011085978|START|link_design|",
+      "[OPTRACE]|10251|175|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011285076|END|link_design|",
+      "[OPTRACE]|10251|176|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011285077|START|gray box cells|",
+      "[OPTRACE]|10251|177|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011285077|END|gray box cells|",
+      "[OPTRACE]|10251|178|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011285077|START|Design Initialization: post hook|",
+      "[OPTRACE]|10251|179|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011285130|END|Design Initialization: post hook|",
+      "[OPTRACE]|10251|180|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011285131|START|init_design_reports|REPORT",
+      "[OPTRACE]|10251|181|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011285131|END|init_design_reports|",
+      "[OPTRACE]|10251|182|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011285131|START|init_design_write_hwdef|",
+      "[OPTRACE]|10251|183|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011285131|END|init_design_write_hwdef|",
+      "[OPTRACE]|10251|184|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011285131|END|Phase: Init Design|",
+      "[OPTRACE]|10251|185|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011285131|START|Phase: Opt Design|ROLLUP_AUTO",
+      "[OPTRACE]|10251|186|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011285131|START|Opt Design: pre hook|",
+      "[OPTRACE]|10251|187|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011306339|END|Opt Design: pre hook|",
+      "[OPTRACE]|10251|188|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011306340|START|read constraints: opt_design|",
+      "[OPTRACE]|10251|189|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011306340|END|read constraints: opt_design|",
+      "[OPTRACE]|10251|190|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011306340|START|opt_design|",
+      "[OPTRACE]|10251|191|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011427688|END|opt_design|",
+      "[OPTRACE]|10251|192|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011427688|START|read constraints: opt_design_post|",
+      "[OPTRACE]|10251|193|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011427688|END|read constraints: opt_design_post|",
+      "[OPTRACE]|10251|194|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011427688|START|Opt Design: post hook|",
+      "[OPTRACE]|10251|195|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011427703|END|Opt Design: post hook|",
+      "[OPTRACE]|10251|196|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011427703|START|opt_design reports|REPORT",
+      "[OPTRACE]|10251|197|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011427703|END|opt_design reports|",
+      "[OPTRACE]|10251|198|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011427704|END|Phase: Opt Design|",
+      "[OPTRACE]|10251|199|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011427704|START|Phase: Place Design|ROLLUP_AUTO",
+      "[OPTRACE]|10251|200|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011427704|START|Place Design: pre hook|",
+      "[OPTRACE]|10251|201|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011427731|END|Place Design: pre hook|",
+      "[OPTRACE]|10251|202|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011427732|START|read constraints: place_design|",
+      "[OPTRACE]|10251|203|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011427732|END|read constraints: place_design|",
+      "[OPTRACE]|10251|204|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011427732|START|implement_debug_core|",
+      "[OPTRACE]|10251|205|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011427750|END|implement_debug_core|",
+      "[OPTRACE]|10251|206|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645011427750|START|place_design|",
+      "[OPTRACE]|10251|207|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012462316|END|place_design|",
+      "[OPTRACE]|10251|208|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012462317|START|read constraints: place_design_post|",
+      "[OPTRACE]|10251|209|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012462317|END|read constraints: place_design_post|",
+      "[OPTRACE]|10251|210|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012462317|START|Place Design: post hook|",
+      "[OPTRACE]|10251|211|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012473845|END|Place Design: post hook|",
+      "[OPTRACE]|10251|212|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012473845|START|place_design reports|REPORT",
+      "[OPTRACE]|10251|213|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012473845|END|place_design reports|",
+      "[OPTRACE]|10251|214|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012473846|END|Phase: Place Design|",
+      "[OPTRACE]|10251|215|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012473846|START|Phase: Physical Opt Design|ROLLUP_AUTO",
+      "[OPTRACE]|10251|216|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012473846|START|read constraints: phys_opt_design|",
+      "[OPTRACE]|10251|217|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012473846|END|read constraints: phys_opt_design|",
+      "[OPTRACE]|10251|218|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012473846|START|phys_opt_design|",
+      "[OPTRACE]|10251|219|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012669736|END|phys_opt_design|",
+      "[OPTRACE]|10251|220|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012669736|START|read constraints: phys_opt_design_post|",
+      "[OPTRACE]|10251|221|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012669736|END|read constraints: phys_opt_design_post|",
+      "[OPTRACE]|10251|222|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012669736|START|phys_opt_design report|REPORT",
+      "[OPTRACE]|10251|223|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012669736|END|phys_opt_design report|",
+      "[OPTRACE]|10251|224|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012669737|END|Phase: Physical Opt Design|",
+      "[OPTRACE]|10251|225|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012669737|START|Phase: Route Design|ROLLUP_AUTO",
+      "[OPTRACE]|10251|226|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012669737|START|read constraints: route_design|",
+      "[OPTRACE]|10251|227|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012669738|END|read constraints: route_design|",
+      "[OPTRACE]|10251|228|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645012669738|START|route_design|",
+      "[OPTRACE]|10251|229|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645014829658|END|route_design|",
+      "[OPTRACE]|10251|230|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645014829659|START|read constraints: route_design_post|",
+      "[OPTRACE]|10251|231|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645014829659|END|read constraints: route_design_post|",
+      "[OPTRACE]|10251|232|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645014829659|START|Route Design: post hook|",
+      "[OPTRACE]|10251|233|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645014928723|END|Route Design: post hook|",
+      "[OPTRACE]|10251|234|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645014928724|START|Route Design: write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|10251|235|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015008791|END|Route Design: write_checkpoint|",
+      "[OPTRACE]|10251|236|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015008792|START|route_design reports|REPORT",
+      "[OPTRACE]|10251|237|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015022090|END|route_design reports|",
+      "[OPTRACE]|10251|238|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015022090|START|route_design misc|",
+      "[OPTRACE]|10251|239|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015022091|START|route_design write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|10251|240|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015022091|END|route_design write_checkpoint|",
+      "[OPTRACE]|10251|241|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015022092|END|route_design misc|",
+      "[OPTRACE]|10251|242|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015022092|END|Phase: Route Design|",
+      "[OPTRACE]|10251|243|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015022092|START|Phase: Write Bitstream|ROLLUP_AUTO",
+      "[OPTRACE]|10251|244|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015022092|START|write_bitstream setup|",
+      "[OPTRACE]|10251|245|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015022092|START|Write Bitstream: pre hook|",
+      "[OPTRACE]|10251|246|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015022093|END|Write Bitstream: pre hook|",
+      "[OPTRACE]|10251|247|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015022093|START|read constraints: write_bitstream|",
+      "[OPTRACE]|10251|248|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015022093|END|read constraints: write_bitstream|",
+      "[OPTRACE]|10251|249|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015022094|END|write_bitstream setup|",
+      "[OPTRACE]|10251|250|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015022095|START|write_bitstream|",
+      "[OPTRACE]|10251|251|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015425583|END|write_bitstream|",
+      "[OPTRACE]|10251|252|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015425583|START|write_bitstream misc|",
+      "[OPTRACE]|10251|253|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015425583|START|read constraints: write_bitstream_post|",
+      "[OPTRACE]|10251|254|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015425583|END|read constraints: write_bitstream_post|",
+      "[OPTRACE]|10251|255|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015425583|START|Write Bitstream: post hook|",
+      "[OPTRACE]|10251|256|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015425587|END|Write Bitstream: post hook|",
+      "[OPTRACE]|10251|257|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015425590|END|write_bitstream misc|",
+      "[OPTRACE]|10251|258|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015425590|END|Phase: Write Bitstream|",
+      "[OPTRACE]|10251|259|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper.tcl|vivado_impl|1645015425591|END|Implementation|",
+      "[OPTRACE]|8664|10|run|cpp|1645010046319|START|OCL_LINK|",
+      "[OPTRACE]|8664|11|setupBinaryForLink|cpp|1645010046319|START|Create Binary|",
+      "[OPTRACE]|8664|12||cpp|1645010046320|END|Create Binary|",
+      "[OPTRACE]|8664|13|setupBinaryForLink|cpp|1645010046320|START|Extract Kernels|",
+      "[OPTRACE]|8664|14||cpp|1645010046330|END|Extract Kernels|",
+      "[OPTRACE]|8664|15|launchStep_|cpp|1645010046383|START|Launch Step: system_link|",
+      "[OPTRACE]|8664|16||cpp|1645010053982|END|Launch Step: system_link|",
+      "[OPTRACE]|8664|17|launchStep_|cpp|1645010053982|START|Launch Step: cf2sw|",
+      "[OPTRACE]|8664|18||cpp|1645010054662|END|Launch Step: cf2sw|",
+      "[OPTRACE]|8664|19|launchStep_|cpp|1645010054662|START|Launch Step: rtd2_system_diagram|",
+      "[OPTRACE]|8664|1|main|cpp|1645010032942|START|v++|ROLLUP_0",
+      "[OPTRACE]|8664|20||cpp|1645010055534|END|Launch Step: rtd2_system_diagram|",
+      "[OPTRACE]|8664|21|launchStep_|cpp|1645010055535|START|Launch Step: vpl|",
+      "[OPTRACE]|8664|264||cpp|1645015431507|END|Launch Step: vpl|",
+      "[OPTRACE]|8664|265|launchStep_|cpp|1645015431509|START|Launch Step: rtdgen|",
+      "[OPTRACE]|8664|266|launchCf2sw_|cpp|1645015431523|START|Launch cf2sw|",
+      "[OPTRACE]|8664|267||cpp|1645015432260|END|Launch cf2sw|",
+      "[OPTRACE]|8664|268|writeSystemDiagram|cpp|1645015432260|START|writeSystemDiagram|",
+      "[OPTRACE]|8664|269||cpp|1645015432265|END|writeSystemDiagram|",
+      "[OPTRACE]|8664|270||cpp|1645015432266|END|Launch Step: rtdgen|",
+      "[OPTRACE]|8664|271|launchStep_|cpp|1645015432267|START|Launch Step: xclbinutil|",
+      "[OPTRACE]|8664|272||cpp|1645015432392|END|Launch Step: xclbinutil|",
+      "[OPTRACE]|8664|273|launchStep_|cpp|1645015432392|START|Launch Step: xclbinutilinfo|",
+      "[OPTRACE]|8664|274||cpp|1645015432673|END|Launch Step: xclbinutilinfo|",
+      "[OPTRACE]|8664|275|launchStep_|cpp|1645015432673|START|Launch Step: generate_sc_driver|",
+      "[OPTRACE]|8664|276||cpp|1645015432677|END|Launch Step: generate_sc_driver|",
+      "[OPTRACE]|8664|277||cpp|1645015432682|END|OCL_LINK|",
+      "[OPTRACE]|8664|278||cpp|1645015432871|END|v++|",
+      "[OPTRACE]|8664|2|run|cpp|1645010032942|START|Validate Kernels|",
+      "[OPTRACE]|8664|3||cpp|1645010032983|END|Validate Kernels|",
+      "[OPTRACE]|8664|4|prepareProject|cpp|1645010033027|START|Create Solution|",
+      "[OPTRACE]|8664|5||cpp|1645010044039|END|Create Solution|",
+      "[OPTRACE]|8664|6|prepareProject|cpp|1645010044039|START|Add Device|",
+      "[OPTRACE]|8664|7|addDevice|cpp|1645010044039|START|Find & Load Device|",
+      "[OPTRACE]|8664|8||cpp|1645010044231|END|Find & Load Device|",
+      "[OPTRACE]|8664|9||cpp|1645010046311|END|Add Device|",
+      "[OPTRACE]|9013|22|main|cpp|1645010057160|START|vpl|",
+      "[OPTRACE]|9013|23|runPlatformLinker|cpp|1645010057204|START|runPlatformLinker|",
+      "[OPTRACE]|9013|24|setupBinaryForLink|cpp|1645010057204|START|Create Solution|",
+      "[OPTRACE]|9013|25||cpp|1645010057208|END|Create Solution|",
+      "[OPTRACE]|9013|260|runPlatformLinker|cpp|1645015431383|START|Generate Resource Availability Report|",
+      "[OPTRACE]|9013|261||cpp|1645015431383|END|Generate Resource Availability Report|",
+      "[OPTRACE]|9013|262||cpp|1645015431383|END|runPlatformLinker|",
+      "[OPTRACE]|9013|263||cpp|1645015431488|END|vpl|",
+      "[OPTRACE]|9013|26|setupBinaryForLink|cpp|1645010057208|START|Add platform|",
+      "[OPTRACE]|9013|27||cpp|1645010059699|END|Add platform|",
+      "[OPTRACE]|9013|28|setupBinaryForLink|cpp|1645010059699|START|Create Binary|",
+      "[OPTRACE]|9013|29||cpp|1645010059700|END|Create Binary|",
+      "[OPTRACE]|9013|30|setupBinaryForLink|cpp|1645010059700|START|Create Kernels|",
+      "[OPTRACE]|9013|31||cpp|1645010059701|END|Create Kernels|",
+      "[OPTRACE]|9013|32|runPlatformLinker|cpp|1645010059712|START|Process Kernels|",
+      "[OPTRACE]|9013|33||cpp|1645010059713|END|Process Kernels|",
+      "[OPTRACE]|9013|34|runPlatformLinker|cpp|1645010059713|START|Process Kernel Debug|",
+      "[OPTRACE]|9013|35||cpp|1645010059713|END|Process Kernel Debug|",
+      "[OPTRACE]|9013|36|runPlatformLinker|cpp|1645010059713|START|Set Kernel Debug|",
+      "[OPTRACE]|9013|37||cpp|1645010059713|END|Set Kernel Debug|",
+      "[OPTRACE]|9013|38|runPlatformLinker|cpp|1645010059713|START|Set Miscellaneous|",
+      "[OPTRACE]|9013|39||cpp|1645010059714|END|Set Miscellaneous|",
+      "[OPTRACE]|9013|40|run|cpp|1645010059714|START|Extract Platform|",
+      "[OPTRACE]|9013|41||cpp|1645010061221|END|Extract Platform|",
+      "[OPTRACE]|9092|42|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/vpl.tcl|vivado_impl|1645010068707|START|Implementation|ROLLUP_1",
+      "[OPTRACE]|9092|43|ipirun.tcl|vpl|1645010068728|START|ipirun|ROLLUP_0",
+      "[OPTRACE]|9092|44|ipirun.tcl|vpl|1645010068729|END|ipirun|",
+      "[OPTRACE]|9092|45|ipirun.tcl|vpl|1645010068743|START|Source pre_sys_link Tcl script|",
+      "[OPTRACE]|9092|46|ipirun.tcl|vpl|1645010068744|END|Source pre_sys_link Tcl script|",
+      "[OPTRACE]|9092|47|ipirun.tcl|vpl|1645010068744|START|Create project|",
+      "[OPTRACE]|9092|48|ipirun.tcl|vpl|1645010070781|END|Create project|",
+      "[OPTRACE]|9092|49|ipirun.tcl|vpl|1645010070785|START|Create IP caching environment|",
+      "[OPTRACE]|9092|50|ipirun.tcl|vpl|1645010074681|END|Create IP caching environment|",
+      "[OPTRACE]|9092|51|ipirun.tcl|vpl|1645010074681|START|Import/add dynamic BD|",
+      "[OPTRACE]|9092|52|ipirun.tcl|vpl|1645010086147|END|Import/add dynamic BD|",
+      "[OPTRACE]|9092|53|ipirun.tcl|vpl|1645010086147|START|Open BD and insert kernels|",
+      "[OPTRACE]|9092|54|ipirun.tcl|vpl|1645010135392|END|Open BD and insert kernels|",
+      "[OPTRACE]|9092|55|ipirun.tcl|vpl|1645010135393|START|Add debug/profiling support|",
+      "[OPTRACE]|9092|56|ipirun.tcl|vpl|1645010135473|END|Add debug/profiling support|",
+      "[OPTRACE]|9092|57|ipirun.tcl|vpl|1645010135473|START|IPI address assignments|",
+      "[OPTRACE]|9092|58|ipirun.tcl|vpl|1645010135479|END|IPI address assignments|",
+      "[OPTRACE]|9092|59|ipirun.tcl|vpl|1645010135480|START|Sourcing hardware platform post_sys_link Tcl script|",
+      "[OPTRACE]|9092|60|ipirun.tcl|vpl|1645010135530|END|Sourcing hardware platform post_sys_link Tcl script|",
+      "[OPTRACE]|9092|61|ipirun.tcl|vpl|1645010135533|START|Save BD|",
+      "[OPTRACE]|9092|62|ipirun.tcl|vpl|1645010135632|END|Save BD|",
+      "[OPTRACE]|9092|63|ipirun.tcl|vpl|1645010135632|START|Create address map and debug IP profile files|",
+      "[OPTRACE]|9092|64|ipirun.tcl|vpl|1645010135642|END|Create address map and debug IP profile files|",
+      "[OPTRACE]|9092|65|ipirun.tcl|vpl|1645010135643|START|Generate output products|",
+      "[OPTRACE]|9092|66|ipirun.tcl|vpl|1645010168299|END|Generate output products|",
+      "[OPTRACE]|9092|67|ipirun.tcl|vpl|1645010168301|START|Source report_commands_tcl|",
+      "[OPTRACE]|9092|68|ipirun.tcl|vpl|1645010168415|END|Source report_commands_tcl|",
+      "[OPTRACE]|9092|69|ipirun.tcl|vpl|1645010168416|START|Source synth_props_tcl|",
+      "[OPTRACE]|9443|112|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1645010316326|END|synth_design|",
+      "[OPTRACE]|9443|113|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1645010316326|START|Write IP Cache|",
+      "[OPTRACE]|9443|119|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1645010316913|END|Write IP Cache|",
+      "[OPTRACE]|9443|120|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1645010316913|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|9443|121|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1645010316995|END|write_checkpoint|",
+      "[OPTRACE]|9443|122|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1645010316996|START|synth reports|REPORT",
+      "[OPTRACE]|9443|124|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1645010317157|END|synth reports|",
+      "[OPTRACE]|9443|125|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1645010317517|END|bd_22c0_clk_kernel2_adapt_0_synth_1|",
+      "[OPTRACE]|9443|70|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1645010183646|START|bd_22c0_clk_kernel2_adapt_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|9443|71|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1645010183647|START|Creating in-memory project|",
+      "[OPTRACE]|9443|82|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1645010193508|END|Creating in-memory project|",
+      "[OPTRACE]|9443|83|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1645010193508|START|Adding files|",
+      "[OPTRACE]|9443|90|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1645010193831|END|Adding files|",
+      "[OPTRACE]|9443|91|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1645010193832|START|Configure IP Cache|",
+      "[OPTRACE]|9443|92|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1645010193833|END|Configure IP Cache|",
+      "[OPTRACE]|9443|93|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_adapt_0_synth_1/bd_22c0_clk_kernel2_adapt_0.tcl|vivado_synth|1645010193834|START|synth_design|",
+      "[OPTRACE]|9444|102|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1645010314589|END|synth_design|",
+      "[OPTRACE]|9444|103|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1645010314589|START|Write IP Cache|",
+      "[OPTRACE]|9444|104|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1645010315317|END|Write IP Cache|",
+      "[OPTRACE]|9444|105|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1645010315318|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|9444|106|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1645010315408|END|write_checkpoint|",
+      "[OPTRACE]|9444|107|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1645010315408|START|synth reports|REPORT",
+      "[OPTRACE]|9444|108|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1645010315620|END|synth reports|",
+      "[OPTRACE]|9444|111|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1645010316118|END|bd_22c0_clk_hbm_adapt_0_synth_1|",
+      "[OPTRACE]|9444|73|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1645010183649|START|bd_22c0_clk_hbm_adapt_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|9444|75|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1645010183650|START|Creating in-memory project|",
+      "[OPTRACE]|9444|78|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1645010193424|END|Creating in-memory project|",
+      "[OPTRACE]|9444|79|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1645010193424|START|Adding files|",
+      "[OPTRACE]|9444|86|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1645010193774|END|Adding files|",
+      "[OPTRACE]|9444|87|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1645010193775|START|Configure IP Cache|",
+      "[OPTRACE]|9444|88|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1645010193776|END|Configure IP Cache|",
+      "[OPTRACE]|9444|89|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_hbm_adapt_0_synth_1/bd_22c0_clk_hbm_adapt_0.tcl|vivado_synth|1645010193777|START|synth_design|",
+      "[OPTRACE]|9445|100|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1645010193868|END|Configure IP Cache|",
+      "[OPTRACE]|9445|101|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1645010193868|START|synth_design|",
+      "[OPTRACE]|9445|109|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1645010315687|END|synth_design|",
+      "[OPTRACE]|9445|110|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1645010315687|START|Write IP Cache|",
+      "[OPTRACE]|9445|114|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1645010316369|END|Write IP Cache|",
+      "[OPTRACE]|9445|115|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1645010316370|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|9445|116|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1645010316447|END|write_checkpoint|",
+      "[OPTRACE]|9445|117|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1645010316447|START|synth reports|REPORT",
+      "[OPTRACE]|9445|118|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1645010316628|END|synth reports|",
+      "[OPTRACE]|9445|123|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1645010317045|END|bd_22c0_clk_kernel_cont_adapt_0_synth_1|",
+      "[OPTRACE]|9445|76|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1645010183699|START|bd_22c0_clk_kernel_cont_adapt_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|9445|77|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1645010183700|START|Creating in-memory project|",
+      "[OPTRACE]|9445|84|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1645010193515|END|Creating in-memory project|",
+      "[OPTRACE]|9445|85|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1645010193515|START|Adding files|",
+      "[OPTRACE]|9445|96|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1645010193866|END|Adding files|",
+      "[OPTRACE]|9445|99|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_cont_adapt_0_synth_1/bd_22c0_clk_kernel_cont_adapt_0.tcl|vivado_synth|1645010193867|START|Configure IP Cache|",
+      "[OPTRACE]|9446|142|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_krnl_rtl_1_0_synth_1/ulp_krnl_rtl_1_0.tcl|vivado_synth|1645010928254|END|synth_design|",
+      "[OPTRACE]|9446|143|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_krnl_rtl_1_0_synth_1/ulp_krnl_rtl_1_0.tcl|vivado_synth|1645010928254|START|Write IP Cache|",
+      "[OPTRACE]|9446|144|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_krnl_rtl_1_0_synth_1/ulp_krnl_rtl_1_0.tcl|vivado_synth|1645010948138|END|Write IP Cache|",
+      "[OPTRACE]|9446|145|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_krnl_rtl_1_0_synth_1/ulp_krnl_rtl_1_0.tcl|vivado_synth|1645010948160|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|9446|146|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_krnl_rtl_1_0_synth_1/ulp_krnl_rtl_1_0.tcl|vivado_synth|1645010961697|END|write_checkpoint|",
+      "[OPTRACE]|9446|147|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_krnl_rtl_1_0_synth_1/ulp_krnl_rtl_1_0.tcl|vivado_synth|1645010961697|START|synth reports|REPORT",
+      "[OPTRACE]|9446|148|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_krnl_rtl_1_0_synth_1/ulp_krnl_rtl_1_0.tcl|vivado_synth|1645010962153|END|synth reports|",
+      "[OPTRACE]|9446|149|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_krnl_rtl_1_0_synth_1/ulp_krnl_rtl_1_0.tcl|vivado_synth|1645010968572|END|ulp_krnl_rtl_1_0_synth_1|",
+      "[OPTRACE]|9446|72|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_krnl_rtl_1_0_synth_1/ulp_krnl_rtl_1_0.tcl|vivado_synth|1645010183648|START|ulp_krnl_rtl_1_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|9446|74|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_krnl_rtl_1_0_synth_1/ulp_krnl_rtl_1_0.tcl|vivado_synth|1645010183649|START|Creating in-memory project|",
+      "[OPTRACE]|9446|80|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_krnl_rtl_1_0_synth_1/ulp_krnl_rtl_1_0.tcl|vivado_synth|1645010193449|END|Creating in-memory project|",
+      "[OPTRACE]|9446|81|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_krnl_rtl_1_0_synth_1/ulp_krnl_rtl_1_0.tcl|vivado_synth|1645010193449|START|Adding files|",
+      "[OPTRACE]|9446|94|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_krnl_rtl_1_0_synth_1/ulp_krnl_rtl_1_0.tcl|vivado_synth|1645010193861|END|Adding files|",
+      "[OPTRACE]|9446|95|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_krnl_rtl_1_0_synth_1/ulp_krnl_rtl_1_0.tcl|vivado_synth|1645010193862|START|Configure IP Cache|",
+      "[OPTRACE]|9446|97|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_krnl_rtl_1_0_synth_1/ulp_krnl_rtl_1_0.tcl|vivado_synth|1645010193866|END|Configure IP Cache|",
+      "[OPTRACE]|9446|98|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_krnl_rtl_1_0_synth_1/ulp_krnl_rtl_1_0.tcl|vivado_synth|1645010193867|START|synth_design|",
+      "[OPTRACE]|9900|128|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1645010330650|START|bd_22c0_clk_kernel_adapt_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|9900|129|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1645010330650|START|Creating in-memory project|",
+      "[OPTRACE]|9900|136|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1645010339024|END|Creating in-memory project|",
+      "[OPTRACE]|9900|137|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1645010339025|START|Adding files|",
+      "[OPTRACE]|9900|138|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1645010339269|END|Adding files|",
+      "[OPTRACE]|9900|139|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1645010339269|START|Configure IP Cache|",
+      "[OPTRACE]|9900|140|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1645010339273|END|Configure IP Cache|",
+      "[OPTRACE]|9900|141|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel_adapt_0_synth_1/bd_22c0_clk_kernel_adapt_0.tcl|vivado_synth|1645010339274|END|bd_22c0_clk_kernel_adapt_0_synth_1|",
+      "[OPTRACE]|9902|126|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_cont_adapt_0_synth_1/bd_22c0_clk_kernel2_cont_adapt_0.tcl|vivado_synth|1645010330126|START|bd_22c0_clk_kernel2_cont_adapt_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|9902|127|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_cont_adapt_0_synth_1/bd_22c0_clk_kernel2_cont_adapt_0.tcl|vivado_synth|1645010330127|START|Creating in-memory project|",
+      "[OPTRACE]|9902|130|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_cont_adapt_0_synth_1/bd_22c0_clk_kernel2_cont_adapt_0.tcl|vivado_synth|1645010338649|END|Creating in-memory project|",
+      "[OPTRACE]|9902|131|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_cont_adapt_0_synth_1/bd_22c0_clk_kernel2_cont_adapt_0.tcl|vivado_synth|1645010338649|START|Adding files|",
+      "[OPTRACE]|9902|132|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_cont_adapt_0_synth_1/bd_22c0_clk_kernel2_cont_adapt_0.tcl|vivado_synth|1645010338938|END|Adding files|",
+      "[OPTRACE]|9902|133|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_cont_adapt_0_synth_1/bd_22c0_clk_kernel2_cont_adapt_0.tcl|vivado_synth|1645010338939|START|Configure IP Cache|",
+      "[OPTRACE]|9902|134|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_cont_adapt_0_synth_1/bd_22c0_clk_kernel2_cont_adapt_0.tcl|vivado_synth|1645010338944|END|Configure IP Cache|",
+      "[OPTRACE]|9902|135|/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_Dense/hls4ml_PYNQ_prj/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/bd_22c0_clk_kernel2_cont_adapt_0_synth_1/bd_22c0_clk_kernel2_cont_adapt_0.tcl|vivado_synth|1645010338944|END|bd_22c0_clk_kernel2_cont_adapt_0_synth_1|"
+      ];
+
+  var legendData = [
+  { "title": "Report Generation",
+    "color": "#b9783f"
+  }, {
+    "title": "Write Checkpoint",
+    "color": "#cd82ad"
+  },
+  {
+    "title": "Incomplete Data",
+    "color": "#cc4748"
+  } ];
+
+  // -- Convert Raw data into something we can use ---------------------------
+  console.log("Convert log data (%s entries) to Javascript 'JSON' objects...", csvData.length);
+  var jsonData = csvArrayToJSON(header, csvData, "|");
+
+  // -- Clean up the JSON objects --------------------------------------------
+  for (var i = 0; i < jsonData.length; i++) {
+    jsonData[i].Action = jsonData[i].Action.toUpperCase();
+    jsonData[i].Tags = jsonData[i].Tags.toUpperCase();
+    jsonData[i].Tags = jsonData[i].Tags.trim();
+    jsonData[i].TimeStampMSec = parseInt(jsonData[i].TimeStampMSec, 10);
+    jsonData[i].pid = parseInt(jsonData[i].pid, 10);
+  }
+
+  // -- Sort JSON array ------------------------------------------------------
+  console.log("Sorting JSON objects (%s objects) according to timestamps...", jsonData.length);
+  jsonData.sort(compareByTimeStamp);
+
+  // Record the PID grouping order
+  var pidOrder = new Map();
+  for (var i = 0; i < jsonData.length; i++) {
+    if (pidOrder.has(jsonData[i].pid) == false) {
+      pidOrder.set(jsonData[i].pid, i);    // Simple ordering (lower is first)
+    }
+  }
+
+  // -- Create secondary data array for the chart data array -----------------
+  console.log("Preparing graph data...");
+
+  // Task limits
+  var m_startTS = 0;      // Earliest Timestamp
+  var m_endTS = 0;        // Latest Timestamp
+
+  if (jsonData.length > 0) {
+    m_startTS = jsonData[0].TimeStampMSec;
+    m_endTS = jsonData[jsonData.length - 1].TimeStampMSec;
+  }
+
+
+  var chartData = [ ];   // Empty JSON array
+
+
+  populateChartData();
+  tableCreate( chartData );
+
+  filterChartEntries();
+
+  // -- Search for "holes"
+  // -- Sort by common PID
+  // -- Create groupings by process
+
+  console.log("done");
+
+  var chart = AmCharts.makeChart("chartdiv", {
+    "type": "gantt",
+    "theme": "light",
+    "titles": [
+    { "text": "OPTrace", "size": 15}],
+    "marginRight": 70,
+    "period": "fff",                                     // X-Axis
+    "balloonDateFormat": "JJ:NN:SS",
+    "columnWidth": 0.5,                                 // Bar thickness
+    "valueAxis": {
+      "type": "numeric",
+      "title": "Time [HH:MM::SS]",
+      "duration": "ss",
+      "durationUnits": { DD: 'd. ', hh: ':', mm: ':', ss: '' },
+    },
+    "brightnessStep": 10,
+    "graph": {
+      "fillAlphas": 1,
+      "labelFunction": barLabelCallBack,
+      "labelText": " ",
+      "labelPosition": "right",
+      "balloonFunction": ballonLabelCallBack,
+      "balloonText": "<p align='left'> Task: [[task]]<br/>Start:[[start]]<br/>End:[[end]]<br/>Duration:[[duration]]</p>",
+      "bulletField": "bullet",
+      "bulletSize": 8
+    },
+    "rotate": true,
+    "categoryField": "category",
+    "segmentsField": "segments",
+    "colorField": "color",
+    "startDate": "2015-01-01 00:00:00",
+    "startField": "start",
+    "endField": "end",
+    "durationField": "duration",
+    "dataProvider": chartData,
+    "valueScrollbar": {
+      "autoGridCount": true
+    },
+    "chartScrollbar": {
+      "enable": true
+    },
+    "chartCursor": {
+      "cursorColor": "#55bb76",
+      "valueBalloonsEnabled": false,
+      "cursorAlpha": 0.1,
+      "valueLineAlpha": 0.5,
+      "valueLineBalloonEnabled": true,
+      "valueLineEnabled": true,
+      "zoomable": true,
+      "valueZoomable": true,
+      "fullWidth": true
+    },
+    "legend": {
+      "data": legendData,
+    },
+    "export": {
+      "enabled": true
+    }
+  });
+
+  // =========================================================================
+  // Call back methods
+  // =========================================================================
+function ballonLabelCallBack( _graphDataItem )
+{
+  var start = _graphDataItem.values.open;
+  var end = _graphDataItem.values.value;
+  var duration = end - start;
+
+  var result = "<p align='left'>Task: " + _graphDataItem.category + "<br/>Start: " + secondsToHHMMSS(start) + "<br/>End: " + secondsToHHMMSS( end ) + "<br/>Duration: " + secondsToHHMMSS( duration ) + "</p>";
+  return result;
+}
+
+
+function barLabelCallBack( _graphDataItem )
+{
+   var duration = _graphDataItem.values.value - _graphDataItem.values.open;
+
+   return secondsToHHMMSS( duration);
+}
+
+
+function userInputFormCallback()
+{
+  // Second filter
+  m_secondFilter = document.getElementById("userDurationFilterSecInput").value;
+  console.log("Setting second filter to: " + m_secondFilter + " seconds");
+
+  // Group PID Sort
+  m_groupPidSort = document.getElementById("userGroupPidSortSelected").checked;
+  console.log("Group PID filter is set to: " + m_groupPidSort);
+
+  // Rollup filter
+  m_showRollup = document.getElementById("userRollupSelected").checked;
+  console.log("Rollup filter is set to: " + m_showRollup);
+
+  // Individual filter
+  m_showIndividualEntry = document.getElementById("userIndividualEntrySelected").checked;
+  console.log("Individual filter is set to: " + m_showIndividualEntry);
+
+  // Checkpoint Report Entries filter
+  m_showCheckpointEntry = document.getElementById("userCheckpointEntrySelected").checked;
+  console.log("Checkpoint Entry filter is set to: " + m_showCheckpointEntry);
+
+  // Checkpoint Report Entries filter
+  m_showReportEntry = document.getElementById("userReportEntrySelected").checked;
+  console.log("Report Entry filter is set to: " + m_showReportEntry);
+
+  populateChartData();
+  filterChartEntries()
+  chart.dataProvider = chartData;
+  chart.validateData();
+}
+
+  // =========================================================================
+  // Utilities
+  // =========================================================================
+
+
+function populateChartData()
+{
+  chartData = [ ];
+  if (m_groupPidSort == false) {
+    jsonData.sort(compareByTimeStamp);
+  } else {
+    jsonData.sort(compareByGroupTimeStamp);
+  }
+
+  for (var i = 0; i < jsonData.length; i++) {
+    var timestamp = parseInt(jsonData[0].TimeStampMSec, 10);
+
+    if (m_startTS > timestamp) m_startTS = timestamp;
+    if (m_endTS < timestamp) m_endTS = timestamp;
+
+    for (var i = 0; i < jsonData.length; i++) {
+      switch (jsonData[i].Action) {
+      case "START":
+        var categoryEntry = { };
+        categoryEntry["category"] = jsonData[i].Task;
+        categoryEntry["pid"] = jsonData[i].pid;
+
+        var segmentEntry = { };
+        // Normalize entry and convert to seconds
+        segmentEntry["start"] = (jsonData[i].TimeStampMSec - m_startTS) / 1000;
+        segmentEntry["color"] = getTaskBarColor(jsonData[i].Tags)
+        segmentEntry["task"] = jsonData[i].Task;
+        segmentEntry["tags"] = jsonData[i].Tags;
+        segmentEntry["duration"] = -1;
+
+        categoryEntry["segments"] = [ ];
+        categoryEntry["segments"].push(segmentEntry);
+        chartData.push(categoryEntry);
+        break;
+
+      case "END":
+        var catagory = findCatagory(jsonData[i].pid, jsonData[i].Task, chartData);
+        if (catagory != null) {
+          var segmentsEntry = catagory.segments[0];
+          segmentsEntry["end"] = (jsonData[i].TimeStampMSec - m_startTS) / 1000;
+          segmentsEntry["duration"] = segmentsEntry.end - segmentsEntry.start;
+        } else {
+          console.log("Null entry found: pid:%s, Task: %s", jsonData[i].pid, jsonData[i].Task);
+        }
+
+        break;
+
+      default:
+        console.log("Default");
+        break;
+      }
+    }
+  }
+}
+
+function filterChartEntries()
+{
+  for(var i = chartData.length - 1; i >= 0; i--) {
+    var segment = chartData[i].segments[0];
+
+    // -- Remove entries less than 1 seconds
+    if ( segment["duration"] == -1) {
+      segment["bullet"] = "xError";
+      segment["color"] = "#cc4748";
+      segment["duration"] = ((m_endTS - m_startTS) / 1000) - segment["start"];
+    } else if (segment["duration"] <  m_secondFilter) {
+      chartData.splice(i, 1);
+      continue;
+    }
+  
+
+    // Filter by tags
+    var bHasRollup = false;
+    var bHasCheckpoint = false;
+    var bHasReport = false;
+
+    var tags = segment["tags"];
+    console.log("Tag: " + tags);
+    if (tags.search(/ROLLUP_/i) != -1) { bHasRollup = true; }
+    if (tags.search(/CHECKPOINT/i) != -1) { bHasCheckpoint = true; }
+    if (tags.search(/REPORT/i) != -1) { bHasReport = true; }
+
+    var bRemoveEntry = false;
+
+    // Remove rollups
+    if ((m_showRollup == false) && (bHasRollup == true)) {
+      bRemoveEntry = true;
+    }
+    
+    // Remove checkpoints    
+    if ((m_showCheckpointEntry == false) && (bHasCheckpoint == true)) {
+      bRemoveEntry = true;
+    }
+
+    // Remove reports
+    if ((m_showReportEntry == false) && (bHasReport == true)) {
+      bRemoveEntry = true;
+    }
+
+    // Remove individual entry
+    if (((m_showIndividualEntry == false) && 
+         ((bHasRollup == false) &&
+          (bHasCheckpoint == false) &&
+          (bHasReport == false)))) {
+      bRemoveEntry = true;
+    }
+
+    if (bRemoveEntry == true) {
+      chartData.splice(i, 1);
+      continue;
+    }
+  }
+
+  console.log("ChartData.length: " + chartData.length);
+}
+
+
+function getTaskBarColor( _tags )
+{
+  if (_tags == null)
+    return "#8dc49f";
+
+  if (_tags.search(/ROLLUP_AUTO/i) != -1){ return "#0099ff"; }
+  if (_tags.search(/ROLLUP_0/i) != -1)   { return "#006699"; }
+  if (_tags.search(/ROLLUP_1/i) != -1)   { return "#009933"; }
+  if (_tags.search(/ROLLUP_2/i) != -1)   { return "#66ccff"; }
+  if (_tags.search(/REPORT/i) != -1)     { return "#b9783f"; }
+  if (_tags.search(/CHECKPOINT/i) != -1) { return "#cd82ad"; }
+
+  return "#8dc49f"
+}
+
+
+function tableCreate( _chartData ){
+    var myTableDiv = document.getElementById("myDynamicTable");
+
+
+    for ( var i = 0; i < _chartData.length; i++) {
+      var tr = myTableDiv.insertRow();
+
+      var td_task = tr.insertCell();
+      td_task.appendChild(document.createTextNode( _chartData[i].category ));
+
+      var segmentEntry = _chartData[i].segments;
+      var td_start = tr.insertCell();
+      td_start.appendChild(document.createTextNode( secondsToHHMMSS(segmentEntry[0].start) ));
+
+      var td_duration = tr.insertCell();
+      td_duration.appendChild(document.createTextNode( secondsToHHMMSS(segmentEntry[0].duration) ));
+
+    }
+}
+
+function secondsToHHMMSS( _seconds )
+{
+  var hours = Math.floor(_seconds / 3600);
+  var minutes = Math.floor(_seconds % 3600 / 60);
+  var seconds = Math.floor(_seconds % 3600 % 60);
+
+  var result = hours + ":" + (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds; 
+
+  return result;
+}
+
+
+  function findCatagory(_pid, _category, _catagoryArray) {
+    for (var i = (_catagoryArray.length - 1); i >= 0; i--) {
+      if (_pid == _catagoryArray[i].pid) {
+        if (_catagoryArray[i].category == _category) {
+          return  _catagoryArray[i];
+        }
+      }
+    }
+    return null;
+  }
+
+
+  // Compares the timestamps between to JSON objects
+  function compareByTimeStamp(_a, _b) {
+    if (_a.TimeStampMSec < _b.TimeStampMSec) return -1;
+    if (_a.TimeStampMSec > _b.TimeStampMSec) return 1;
+
+    if (_a.pid == _b.pid) {
+      if ((_a.Action == "START") && (_b.Action == "END")) return -1;
+      if ((_a.Action == "END") && (_b.Action == "START")) return 1;
+
+      if(_a.Entry < _b.Entry) return -1;
+      if(_a.Entry > _b.Entry) return 1;
+    }
+
+    return 0;
+  }
+
+
+  // Compares the timestamps between to JSON objects
+  function compareByGroupTimeStamp(_a, _b) {
+    if (pidOrder.get(_a.pid) < pidOrder.get(_b.pid)) return -1;
+
+    if (pidOrder.get(_a.pid) > pidOrder.get(_b.pid)) return 1;
+
+    return compareByTimeStamp(_a, _b);
+  }
+
+
+  // Return array of string values, or NULL if CSV string not well formed.
+  function CSVtoArray(_text, _sep) {
+    // Regex expressions
+    var re_valid_default = /^\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*(?:,\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*)*$/;
+    var re_value_default = /(?!\s*$)\s*(?:'([^'\\]*(?:\\[\S\s][^'\\]*)*)'|"([^"\\]*(?:\\[\S\s][^"\\]*)*)"|([^,'"\s\\]*(?:\s+[^,'"\s\\]+)*))\s*(?:,|$)/g;
+    var re_special_default = /,\s*$/;
+
+    // Algorithm:
+    //   1) Convert regex expression to a string.
+    //   2) Remove leading regex escape character (e.g., '\')
+    //   3) Remove training regex escape character(s) (e.g., '\' or "\g")
+    //   4) Replace the comma (',') character witht he new delimiter character
+    //   5) Build the regex command
+
+    // Check delimiter, if special insert escapes
+    if (_sep == "|") _sep = "\\|";
+
+    var re_valid = new RegExp(re_valid_default.toString().substr(1).slice(0, -1).replace(/,/g, _sep));
+    var re_value = new RegExp(re_value_default.toString().substr(1).slice(0, -2).replace(/,/g, _sep), 'g');
+    var re_special = new RegExp(re_special_default.toString().substr(1).slice(0, -1).replace(/,/g, _sep));
+
+    // Validate the input string to determine if it is well formed
+    if (!re_valid.test(_text)) return null;
+
+    var a = [ ];                     // Initialize array to receive values.
+    _text.replace(re_value,           // "Walk" the string using replace with callback.
+                  function(m0, m1, m2, m3) {
+                      // Remove backslash from \' in single quoted values.
+                      if      (m1 !== undefined) a.push(m1.replace(/\\'/g, "'"));
+                      // Remove backslash from \" in double quoted values.
+                      else if (m2 !== undefined) a.push(m2.replace(/\\"/g, '"'));
+                      else if (m3 !== undefined) a.push(m3);
+                      return ''; // Return empty string.
+                  });
+
+    // Handle special case of empty last value.
+    if (re_special.test(_text)) a.push('');
+
+    return a;
+  };
+
+
+  // Converts the given CSV array & header into a JSON array
+  function csvArrayToJSON(_header, _csvArray, _sep) {
+    var result = [ ];
+    var headers = CSVtoArray(_header, _sep);
+
+    for (var i = 0; i < _csvArray.length; i++) {
+
+      var obj = { };
+      var currentline = CSVtoArray(_csvArray[i], _sep);
+
+      for (var j = 0; j < headers.length; j++) {
+        obj[headers[j]] = currentline[j];
+      }
+
+      result.push(obj);
+
+    }
+
+    return result; //JavaScript object
+  }
+
+
+</script>
+</body>
+
+</html>
+

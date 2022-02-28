@@ -1,0 +1,29 @@
+Tue Feb 15 18:36:32 2022: Server was asked to start on port: '37877'
+Tue Feb 15 18:36:32 2022: Server is using token UUID: '9ea26995-6acc-42ed-a80e-66e5edf8b9b1'
+Tue Feb 15 18:36:32 2022: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Tue Feb 15 18:36:32 2022: Attempting to start server on port '37877'
+Tue Feb 15 18:36:32 2022: XCD main fifo: created main fifo '/tmp/xcdmain9ea26995-6acc-42ed-a80e-66e5edf8b9b1', fd read = 13
+Tue Feb 15 18:36:32 2022: Running Dispatch Server
+Tue Feb 15 18:36:32 2022: Version 2.0.0
+Tue Feb 15 18:36:41 2022: Dispatch Server: Accepted socket connection from client
+Tue Feb 15 18:36:41 2022: EXCHANGE_TOKEN received, server token: 9ea26995-6acc-42ed-a80e-66e5edf8b9b1, passed token: 9ea26995-6acc-42ed-a80e-66e5edf8b9b1
+Tue Feb 15 18:36:41 2022: SESSION_MGR: creating session with session uuid: '6dfab459-c292-41c4-b526-aba1357cb32a' and name 'v++_link_myproject_kernel'
+Tue Feb 15 18:36:53 2022: Dispatch Server: Accepted socket connection from client
+Tue Feb 15 18:36:56 2022: Dispatch Server: Accepted socket connection from client
+Tue Feb 15 18:37:08 2022: Dispatch Server: Accepted socket connection from client
+Tue Feb 15 18:39:08 2022: Dispatch Server: Accepted socket connection from client
+Tue Feb 15 18:39:08 2022: Dispatch Server: Accepted socket connection from client
+Tue Feb 15 18:39:08 2022: Dispatch Server: Accepted socket connection from client
+Tue Feb 15 18:39:08 2022: Dispatch Server: Accepted socket connection from client
+Tue Feb 15 18:41:38 2022: Dispatch Server: Accepted socket connection from client
+Tue Feb 15 18:41:38 2022: Dispatch Server: Accepted socket connection from client
+Tue Feb 15 18:54:06 2022: Dispatch Server: Accepted socket connection from client
+Tue Feb 15 18:55:43 2022: Dispatch Server: Accepted socket connection from client
+Tue Feb 15 18:59:15 2022: Entering handleUtilizationDuringVivadoRunRequest
+Tue Feb 15 18:59:15 2022: Leaving handleUtilizationDuringVivadoRunRequest
+Tue Feb 15 19:16:52 2022: Entering handleUtilizationDuringVivadoRunRequest
+Tue Feb 15 19:16:52 2022: Leaving handleUtilizationDuringVivadoRunRequest
+Tue Feb 15 19:30:25 2022: Entering handleUtilizationDuringVivadoRunRequest
+Tue Feb 15 19:30:25 2022: Leaving handleUtilizationDuringVivadoRunRequest
+Tue Feb 15 19:40:05 2022: Dispatch Server: Accepted socket connection from client
+Tue Feb 15 19:40:06 2022: SESSION_MGR: closing session for UUID '6dfab459-c292-41c4-b526-aba1357cb32a' with name 'v++_link_myproject_kernel'

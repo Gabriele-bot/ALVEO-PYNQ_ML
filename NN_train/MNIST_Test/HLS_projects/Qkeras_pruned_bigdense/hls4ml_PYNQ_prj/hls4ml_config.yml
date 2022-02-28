@@ -1,0 +1,65 @@
+AcceleratorConfig:
+  Board: alveo-u50
+  Driver: python
+  Interface: axi_stream
+  Precision:
+    Input: float
+    Output: float
+Backend: VivadoAccelerator
+Board: alveo-u50
+ClockPeriod: 2
+HLSConfig:
+  LayerName:
+    layer0:
+      Precision: ap_ufixed<8,3>
+    q_dense:
+      Precision:
+        bias: ap_fixed<7,1>
+        result: ap_fixed<9,4>
+        weight: ap_fixed<7,1>
+      ReuseFactor: 28
+      Trace: true
+    q_dense_1:
+      Precision:
+        bias: ap_fixed<7,1>
+        result: ap_fixed<8,4>
+        weight: ap_fixed<7,1>
+      ReuseFactor: 20
+      Trace: true
+    q_dense_2:
+      Precision:
+        bias: ap_fixed<4,1>
+        result: ap_fixed<9,5>
+        weight: ap_fixed<5,2>
+      ReuseFactor: 20
+      Trace: true
+    q_relu:
+      Precision:
+        result: ap_ufixed<2,0>
+      ReuseFactor: 1
+    q_relu_1:
+      Precision:
+        result: ap_ufixed<2,0>
+      ReuseFactor: 1
+    q_relu_2:
+      Precision:
+        result: ap_ufixed<3,1>
+      ReuseFactor: 1
+    softmax:
+      Precision: ap_fixed<14,2>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: true
+      exp_table_t: ap_fixed<12,4>
+      inv_table_t: ap_fixed<12,2>
+      table_size: 1024
+  Model:
+    Precision: ap_fixed<16,6>
+    ReuseFactor: 36
+    Strategy: Resource
+IOType: io_parallel
+KerasModel: !keras_model '/home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_bigdense/hls4ml_PYNQ_prj/keras_model.h5'
+OutputDir: /home/gabriele/University/GitHub/ALVEO-PYNQ_ML/NN_train/MNIST_Test/HLS_projects/Qkeras_pruned_bigdense/hls4ml_PYNQ_prj
+ProjectName: myproject
+Stamp: 766a561a
+XilinxPart: xcu50-fsvh2104-2-e

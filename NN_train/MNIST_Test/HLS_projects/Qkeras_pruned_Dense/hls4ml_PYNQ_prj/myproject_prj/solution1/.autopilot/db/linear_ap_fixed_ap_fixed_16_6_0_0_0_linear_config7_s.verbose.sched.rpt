@@ -1,0 +1,151 @@
+
+
+================================================================
+== Vivado HLS Report for 'linear_ap_fixed_ap_fixed_16_6_0_0_0_linear_config7_s'
+================================================================
+* Date:           Wed Feb 16 12:07:48 2022
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: virtexuplus
+* Target device:  xcu50-fsvh2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 2.00 ns |   0 ns   |   0.25 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%data_9_V_read_3 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %data_9_V_read)" [firmware/nnet_utils/nnet_activation.h:49]   --->   Operation 2 'read' 'data_9_V_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%data_8_V_read_3 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %data_8_V_read)" [firmware/nnet_utils/nnet_activation.h:49]   --->   Operation 3 'read' 'data_8_V_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%data_7_V_read_3 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %data_7_V_read)" [firmware/nnet_utils/nnet_activation.h:49]   --->   Operation 4 'read' 'data_7_V_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%data_6_V_read_3 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %data_6_V_read)" [firmware/nnet_utils/nnet_activation.h:49]   --->   Operation 5 'read' 'data_6_V_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%data_5_V_read_3 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %data_5_V_read)" [firmware/nnet_utils/nnet_activation.h:49]   --->   Operation 6 'read' 'data_5_V_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%data_4_V_read_3 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %data_4_V_read)" [firmware/nnet_utils/nnet_activation.h:49]   --->   Operation 7 'read' 'data_4_V_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%data_3_V_read_3 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %data_3_V_read)" [firmware/nnet_utils/nnet_activation.h:49]   --->   Operation 8 'read' 'data_3_V_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%data_2_V_read_3 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %data_2_V_read)" [firmware/nnet_utils/nnet_activation.h:49]   --->   Operation 9 'read' 'data_2_V_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%data_1_V_read_3 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %data_1_V_read)" [firmware/nnet_utils/nnet_activation.h:49]   --->   Operation 10 'read' 'data_1_V_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%data_0_V_read_3 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %data_0_V_read)" [firmware/nnet_utils/nnet_activation.h:49]   --->   Operation 11 'read' 'data_0_V_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str10)" [firmware/nnet_utils/nnet_activation.h:51]   --->   Operation 12 'specregionbegin' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str5) nounwind" [firmware/nnet_utils/nnet_activation.h:52]   --->   Operation 13 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str10, i32 %tmp)" [firmware/nnet_utils/nnet_activation.h:53]   --->   Operation 14 'specregionend' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%shl_ln = call i14 @_ssdm_op_BitConcatenate.i14.i8.i6(i8 %data_0_V_read_3, i6 0)" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 15 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%sext_ln728 = sext i14 %shl_ln to i16" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 16 'sext' 'sext_ln728' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%shl_ln728_1 = call i14 @_ssdm_op_BitConcatenate.i14.i8.i6(i8 %data_1_V_read_3, i6 0)" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 17 'bitconcatenate' 'shl_ln728_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%sext_ln728_1 = sext i14 %shl_ln728_1 to i16" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 18 'sext' 'sext_ln728_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%shl_ln728_2 = call i14 @_ssdm_op_BitConcatenate.i14.i8.i6(i8 %data_2_V_read_3, i6 0)" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 19 'bitconcatenate' 'shl_ln728_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%sext_ln728_2 = sext i14 %shl_ln728_2 to i16" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 20 'sext' 'sext_ln728_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%shl_ln728_3 = call i14 @_ssdm_op_BitConcatenate.i14.i8.i6(i8 %data_3_V_read_3, i6 0)" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 21 'bitconcatenate' 'shl_ln728_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%sext_ln728_3 = sext i14 %shl_ln728_3 to i16" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 22 'sext' 'sext_ln728_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%shl_ln728_4 = call i14 @_ssdm_op_BitConcatenate.i14.i8.i6(i8 %data_4_V_read_3, i6 0)" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 23 'bitconcatenate' 'shl_ln728_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%sext_ln728_4 = sext i14 %shl_ln728_4 to i16" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 24 'sext' 'sext_ln728_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%shl_ln728_5 = call i14 @_ssdm_op_BitConcatenate.i14.i8.i6(i8 %data_5_V_read_3, i6 0)" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 25 'bitconcatenate' 'shl_ln728_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%sext_ln728_5 = sext i14 %shl_ln728_5 to i16" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 26 'sext' 'sext_ln728_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%shl_ln728_6 = call i14 @_ssdm_op_BitConcatenate.i14.i8.i6(i8 %data_6_V_read_3, i6 0)" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 27 'bitconcatenate' 'shl_ln728_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%sext_ln728_6 = sext i14 %shl_ln728_6 to i16" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 28 'sext' 'sext_ln728_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%shl_ln728_7 = call i14 @_ssdm_op_BitConcatenate.i14.i8.i6(i8 %data_7_V_read_3, i6 0)" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 29 'bitconcatenate' 'shl_ln728_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%sext_ln728_7 = sext i14 %shl_ln728_7 to i16" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 30 'sext' 'sext_ln728_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%shl_ln728_8 = call i14 @_ssdm_op_BitConcatenate.i14.i8.i6(i8 %data_8_V_read_3, i6 0)" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 31 'bitconcatenate' 'shl_ln728_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%sext_ln728_8 = sext i14 %shl_ln728_8 to i16" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 32 'sext' 'sext_ln728_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%shl_ln728_9 = call i14 @_ssdm_op_BitConcatenate.i14.i8.i6(i8 %data_9_V_read_3, i6 0)" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 33 'bitconcatenate' 'shl_ln728_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%sext_ln728_9 = sext i14 %shl_ln728_9 to i16" [firmware/nnet_utils/nnet_activation.h:59]   --->   Operation 34 'sext' 'sext_ln728_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%mrv = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } undef, i16 %sext_ln728, 0" [firmware/nnet_utils/nnet_activation.h:61]   --->   Operation 35 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv, i16 %sext_ln728_1, 1" [firmware/nnet_utils/nnet_activation.h:61]   --->   Operation 36 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_1, i16 %sext_ln728_2, 2" [firmware/nnet_utils/nnet_activation.h:61]   --->   Operation 37 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%mrv_3 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_2, i16 %sext_ln728_3, 3" [firmware/nnet_utils/nnet_activation.h:61]   --->   Operation 38 'insertvalue' 'mrv_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%mrv_4 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_3, i16 %sext_ln728_4, 4" [firmware/nnet_utils/nnet_activation.h:61]   --->   Operation 39 'insertvalue' 'mrv_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%mrv_5 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_4, i16 %sext_ln728_5, 5" [firmware/nnet_utils/nnet_activation.h:61]   --->   Operation 40 'insertvalue' 'mrv_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%mrv_6 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_5, i16 %sext_ln728_6, 6" [firmware/nnet_utils/nnet_activation.h:61]   --->   Operation 41 'insertvalue' 'mrv_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%mrv_7 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_6, i16 %sext_ln728_7, 7" [firmware/nnet_utils/nnet_activation.h:61]   --->   Operation 42 'insertvalue' 'mrv_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%mrv_8 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_7, i16 %sext_ln728_8, 8" [firmware/nnet_utils/nnet_activation.h:61]   --->   Operation 43 'insertvalue' 'mrv_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%mrv_9 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_8, i16 %sext_ln728_9, 9" [firmware/nnet_utils/nnet_activation.h:61]   --->   Operation 44 'insertvalue' 'mrv_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "ret { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_9" [firmware/nnet_utils/nnet_activation.h:61]   --->   Operation 45 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 2ns, clock uncertainty: 0.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
