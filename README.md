@@ -1,5 +1,9 @@
 # ALVEO_ML
 
+Alveo support code has been merged in hls4ml repo. [Alveo support commit](https://github.com/fastmachinelearning/hls4ml/commit/aa7ce78a7bcede545b41422a3f35ed393475ee30).   
+
+
+
 Here is presented an example of FPGA neural network inference deployed on alveo u50 board with Vivado 2020.1 .  
 
 ## Install alveo drivers
